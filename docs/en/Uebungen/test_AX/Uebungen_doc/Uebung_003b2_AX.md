@@ -1,6 +1,6 @@
 # Exercise_003b2_AX: Wireless 16 Buttons on DataPanel 16
 
-[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003b2_AX`. This exercise demonstrates the system's scalability using the example of linking 15 wireless buttons with 15 digital outputs, implemented through untyped sub-applications (or reused typed sub-applications, which were manually placed here)
 ----
 
