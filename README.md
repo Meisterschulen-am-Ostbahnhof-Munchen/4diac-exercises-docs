@@ -12,7 +12,13 @@ ein paar Monaten wieder gegen das ReadTheDocs-Zeitlimit läuft.
 
 ## Dokumentation
 
+- [📖 Dokumentation (ReadTheDocs, Deutsch)](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/de/latest/)
+- [📖 Documentation (ReadTheDocs, English)](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/)
+- [📄 PDF-Handbuch (Deutsch)](https://meisterschulen-am-ostbahnhof-munchen.github.io/4diac-exercises-docs/de/pdf/4diac-exercises-docs-de.pdf)
+- [📄 PDF handbook (English)](https://meisterschulen-am-ostbahnhof-munchen.github.io/4diac-exercises-docs/en/pdf/4diac-exercises-docs-en.pdf)
 - [GitHub Repository](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-exercises-docs)
+
+Siehe auch: [Wiki 4 – Visuelle Programmiersprachen: Low-Code](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs) (Grundlagen, Design Patterns) und [Wiki 4.1 – 4diac Bibliotheken: FB- & Adapter-Referenz](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-library-reference-docs).
 
 ---
 *Powered by Eclipse 4diac*
