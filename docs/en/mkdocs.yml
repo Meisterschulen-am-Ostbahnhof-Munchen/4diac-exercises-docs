@@ -1,0 +1,58 @@
+docs_dir: .
+site_name: 'Exercises: 4diac Training Solutions (4.2)'
+site_url: https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/
+extra:
+  alternate:
+  - lang: de
+    link: /de/latest/
+    name: Deutsch
+  - lang: en
+    link: /en/latest/
+    name: English
+repo_url: https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-exercises-docs
+edit_uri: edit/main/docs/en/
+view_uri: blob/main/docs/en/
+theme:
+  name: material
+  language: en
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+  - navigation.sections
+  - navigation.expand
+  - search.suggest
+  - search.highlight
+  - content.action.edit
+  - content.action.view
+plugins:
+- search
+
+extra_javascript:
+- _static/js/expand_tabs.js
+- _static/js/nav-toggle.js
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format
+- attr_list
+- md_in_html
+- tables
+- fenced_code
+- toc:
+    permalink: true
