@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+/docs/combined.md
+/docs/*/combined.md
+/docs/book.typ
+/docs/*/book.typ
+/docs/img/downloaded/
+/docs/*/img/downloaded/
+site/
