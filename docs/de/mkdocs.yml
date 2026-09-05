@@ -1,6 +1,6 @@
 docs_dir: .
 site_name: 'Übungsaufgaben: 4diac Trainingslösungen (4.2)'
-site_url: https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/
+site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/
 extra:
   alternate:
   - lang: de

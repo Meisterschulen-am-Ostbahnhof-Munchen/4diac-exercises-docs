@@ -22,7 +22,7 @@ This exercise is the **simpler precursor** to [`InputOutputTesterButton_AI_Calib
 - **Type**: SubAppType (`MyLib::sys`)
 - **Functionality**: The physical analog input (`logiBUS_AI_IDA`) feeds the raw value and a linearly converted percent value directly to a VT number field with bargraph, as well as publishing both via OPC-UA (`ID_RAW_WRITE`, `ID_PERCENT_WRITE`) to the web client. Unlike the Calibrate variant, there is no adaptive calibration chain (`AR_CALIBRATE_SQ_REF`), no reference values, and no remotely-triggerable calibration steps - the block is a pure publish path with no write-back capability.
 
-### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (outputs)
+### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (outputs)
 
 Unchanged from the DIDO example - see its description there.
 
