@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a4`. It demonstrates how a single event can be used to sequentially trigger multiple independent processes using a `E_SPLIT` function block
+
 -----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a4.SUB` uses a push button to switch two separate toggle flip-flops simultaneously[cite: 1].
+The subapplication `Uebung_004a4.SUB` uses a push button to switch two separate toggle flip-flops simultaneously.
 
 ### Function Blocks (FBs)
 
@@ -32,8 +33,6 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 <Connection Source="E_SPLIT.EO1" Destination="E_T_FF_Q1.CLK"/>
 <Connection Source="E_SPLIT.EO2" Destination="E_T_FF_Q2.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. A click on button 1 sends an event to `E_SPLIT.EI`.
 2. `E_SPLIT` then **first** sends an event to `EO1` ➡️ `E_T_FF_Q1` toggles.

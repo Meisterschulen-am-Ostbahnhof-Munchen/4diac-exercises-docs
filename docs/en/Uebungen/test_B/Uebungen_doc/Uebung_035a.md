@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_035a`. Here, the control of a traffic light system is implemented using a timed sequence
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of a complex timing sequence with overlapping states. The standar
 
 ## Description and Components
 
-[cite_start]In `Uebung_035a.SUB`, a 4-step sequencer is used as the clock generator[cite: 1].
+In `Uebung_035a.SUB`, a 4-step sequencer is used as the clock generator.
 
 ### Functionality
 

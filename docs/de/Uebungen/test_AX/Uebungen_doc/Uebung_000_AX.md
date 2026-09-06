@@ -14,13 +14,13 @@ Das Ziel ist die Platzierung und Parametrierung eines Standard-Bausteins der IEC
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_000_AX.SUB` enthält lediglich einen Rechenbaustein[cite: 1].
+Die Subapplikation `Uebung_000_AX.SUB` enthält lediglich einen Rechenbaustein.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_000_AX_network](./Uebung_000_AX_network.svg)
 
-  - **`ADD_2`**: Typ `iec61131::arithmetic::ADD_2`. [cite_start]Addiert zwei Ganzzahlen (`IN1` und `IN2`)[cite: 1].
+  - **`ADD_2`**: Typ `iec61131::arithmetic::ADD_2`. Addiert zwei Ganzzahlen (`IN1` und `IN2`).
 
 -----
 

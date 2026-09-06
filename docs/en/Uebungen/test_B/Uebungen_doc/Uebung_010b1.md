@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_010b1`. It introduces the third pillar of ISOBUS operation: Auxiliary Functions (AUX-N)
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Connecting AUX input devices (e.g., ISOBUS joystick).
 
 ## Description and Components
 
-[cite_start]In `Uebung_010b1.SUB`, an Auxiliary Function is used to switch an output.[cite: 1]
+In `Uebung_010b1.SUB`, an Auxiliary Function is used to switch an output.
 
 ### Function Blocks (FBs)
 

@@ -1,5 +1,3 @@
-Here is the documentation for exercise **Exercise_126b2** based on the provided data.
-
 # Exercise_126b2: ISOBUS Send Message Cyclic (with CB) Sine Function Plotting
 
 ![Uebung_126b2_network](./Uebung_126b2_network.svg)
@@ -58,10 +56,12 @@ As soon as the transmit block in the main network is ready to send, it triggers 
 
 - First, module `NmGetCfInfo_1` is executed to load the network configuration for `NODE1`.
 - Once the information is available (`IND` event), the cyclic transmitter `AlPgnTxNew8Bcycl_REQ` is initialized via the input `install`.
+
 1. **Cyclic Transmission**:
 
 - The `AlPgnTxNew8Bcycl_REQ` is set to a cycle time of **500 ms**.
 - The transmission process is initiated every 500 ms.
+
 1. **Data Generation (Callback)**:
 
 - The transmitter is connected to the sub-module `DataSupply` via an adapter connection (`CB`, <->, `PLUG1`).

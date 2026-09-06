@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_151_AX`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Calculation of a time-dependent change (differential quotient) from pulse values
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_151_AX.SUB` extends the pulse counter with mathematical functions[cite: 1].
+The subapplication `Uebung_151_AX.SUB` extends the pulse counter with mathematical functions.
 
 ### Function Blocks (FBs)
 

@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML data.
-
 # Exercise_010b5_sub_AX: IX to QX (generic)
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ The flow within this sub-application is controlled by direct connections and ada
 - The sub-application has two inputs: `u16ObjId` (of type `UINT`) and `Output` (of type `logiBUS::io::DQ::logiBUS_DO_S`).
 - The value of `u16ObjId` is passed directly to the function block `IXA` to determine which softkey is being monitored.
 - The definition of `Output` is passed directly to the function block `QXA` to define the output to be controlled.
+
 1. **Adapter Connection**:
 
 - An **adapter connection** exists between `IXA.IN` (source) and `QXA.OUT` (destination).

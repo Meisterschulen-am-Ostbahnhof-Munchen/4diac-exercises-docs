@@ -14,14 +14,14 @@ Das Ziel dieser Übung ist die Anwendung des `AX_TP` Bausteins. Ein Impulsglied 
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020f_AX.SUB` nutzt einen Adapter-Timer vom Typ `AX_TP`[cite: 1].
+Die Subapplikation `Uebung_020f_AX.SUB` nutzt einen Adapter-Timer vom Typ `AX_TP`.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_020f_AX_network](./Uebung_020f_AX_network.svg)
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Der Auslöser.
-  - **`AX_TP`**: [cite_start]Erzeugt bei einer steigenden Flanke am Eingang einen Impuls der Länge `PT` (hier 5 Sekunden) am Ausgang `Q`[cite: 1].
+  - **`AX_TP`**: Erzeugt bei einer steigenden Flanke am Eingang einen Impuls der Länge `PT` (hier 5 Sekunden) am Ausgang `Q`.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Der Aktor.
 
 -----

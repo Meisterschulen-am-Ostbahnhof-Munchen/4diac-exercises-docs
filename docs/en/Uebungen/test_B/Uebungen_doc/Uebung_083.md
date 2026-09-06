@@ -21,7 +21,7 @@ Exercise #083: Example for E_CTUD_UDINT
 
 ## Overview
 
-[cite_start]This exercise uses the function block `E_CTUD_UDINT`[cite: 1]. Unlike the standard counter (which usually only counts up to 65,535), this type uses the data type `UDINT` (Unsigned Double Integer). This allows events with a value of over 4 billion to be counted.
+This exercise uses the function block `E_CTUD_UDINT`. Unlike the standard counter (which usually only counts up to 65,535), this type uses the data type `UDINT` (Unsigned Double Integer). This allows events with a value of over 4 billion to be counted.
 
 In addition to controlling the lamps `Q1` and `Q2`, the current counter reading (`CV`) is sent directly to a numeric display on the ISOBUS terminal. This enables precise monitoring of the counting process in real time.
 

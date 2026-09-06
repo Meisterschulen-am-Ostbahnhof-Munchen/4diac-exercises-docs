@@ -14,7 +14,7 @@ Kombination von Input-Events und Speichergliedern.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006d_AX.SUB` definiert eine asymmetrische Bedienung[cite: 1].
+Die Subapplikation `Uebung_006d_AX.SUB` definiert eine asymmetrische Bedienung.
 
 ### Funktionsbausteine (FBs)
 

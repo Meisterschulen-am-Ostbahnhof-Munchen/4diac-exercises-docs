@@ -14,7 +14,7 @@ Dynamische Auswahl zwischen verschiedenen Verarbeitungslogiken (Tastend, Rastend
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_103.SUB` nutzt ein ISOBUS-Zahlenfeld, um zwischen drei Logik-Zweigen zu wählen[cite: 1].
+Die Subapplikation `Uebung_103.SUB` nutzt ein ISOBUS-Zahlenfeld, um zwischen drei Logik-Zweigen zu wählen.
 
 ### Funktionsbausteine (FBs)
 

@@ -19,7 +19,7 @@ Using the module `I_RPTO` (Rear PTO). This section demonstrates how to handle a 
 
 ## Description and Components
 
-[cite_start]In `Uebung_074.SUB`, a safety selector is used to guarantee a clean zero display[cite: 1].
+In `Uebung_074.SUB`, a safety selector is used to guarantee a clean zero display.
 
 ### Function Blocks (FBs)
 

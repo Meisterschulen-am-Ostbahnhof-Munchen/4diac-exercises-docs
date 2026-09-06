@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_035a2_AX` based on the provided data.
-
 # Exercise_035a2_AX: Traffic Light System Austria (AX) with Sequence T05
 
 ![Uebung_035a2_AX_network](./Uebung_035a2_AX_network.svg)
@@ -43,15 +41,18 @@ The program is started by clicking the button (`Input_I1`), which triggers the e
 
 - `Seq` activates output `DO_S1`.
 - Signal goes to `OR_Red` -> `Light_Red_Q1` lights up.
+
 1. **Phase 2 (Red & Yellow - 2s):**
 
 - `Seq` activates output `DO_S2`.
 - Signal goes to `AX_SPLIT_2`.
 - `AX_SPLIT_2` sends a signal to `OR_Red` (red remains on) and `OR_Yellow` (yellow lights up).
+
 1. **Phase 3 (Green - 6s):**
 
 - `Seq` activates output `DO_S3`.
 - Signal goes to `OR_Green` -> `Light_Green_Q3` is constantly lit.
+
 1. **Phase 4 (Green Flashing - 4s):**
 
 - `Seq` activates output `DO_S4`.
@@ -59,6 +60,7 @@ The program is started by clicking the button (`Input_I1`), which triggers the e
 - `E_TRAIN` sends pulses to the toggle flip-flop `AX_T_FF`.
 - The flip-flop's output `Q` changes its state every 500ms and is connected to `OR_Green`.
 - Result: The green light flashes 4 times (controlled by parameter N=4).
+
 1. **Phase 5 (Yellow - 2s):**
 
 - `Seq` activates output `DO_S5`.

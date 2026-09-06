@@ -19,7 +19,7 @@ Using the building block `E_PERMIT`. The objective is to make the execution of a
 
 ## Functionality
 
-[cite_start]The subapplication `Uebung_094.SUB` uses a switch to enable a push button[cite: 1].
+The subapplication `Uebung_094.SUB` uses a switch to enable a push button.
 
 - Push button **I2** provides the trigger pulse.
 - Switch **I1** provides the enable signal (`PERMIT`).

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006a4_AX`. It is an optimization of `Uebung_006a3_AX` using a pre-built module
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using libraries ("Don't reinvent the wheel").
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a4_AX.SUB` replaces the complex network of gates and subapplication from the previous exercise with the module `LinksRechts_AX`[cite: 1].
+The subapplication `Uebung_006a4_AX.SUB` replaces the complex network of gates and subapplication from the previous exercise with the module `LinksRechts_AX`.
 
 ### Function Blocks (FBs)
 

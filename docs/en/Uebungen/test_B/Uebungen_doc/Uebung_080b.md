@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_080b`. It demonstrates how to artificially double the number of incoming events
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Manipulation of event streams using `E_SPLIT`.
 
 ## Functionality
 
-[cite_start]In `Uebung_080b.SUB`, an event splitter is placed before the counter[cite: 1].
+In `Uebung_080b.SUB`, an event splitter is placed before the counter.
 
 ![Uebung_080b_network](./Uebung_080b_network.svg)
 

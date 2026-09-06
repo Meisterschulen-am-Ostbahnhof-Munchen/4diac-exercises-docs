@@ -78,6 +78,7 @@ This exercise demonstrates the output of the wheel-based machine speed (WBSD) to
 
 - The flip-flop output `Q` is connected to the qualifier input `QI` of **I_WBSD** and to the data input `OUT` of the digital output **DigitalOutput_Q2**.
 - When the flip-flop changes state, the event `EO` is triggered simultaneously, which initializes **I_WBSD** (`INIT`) and updates the digital output (`REQ`).
+
 1. **Value Output**:
 
 - The initialized **I_WBSD** outputs the current speed (16-bit) via `WHEELBASEDMACHINESPEED`.

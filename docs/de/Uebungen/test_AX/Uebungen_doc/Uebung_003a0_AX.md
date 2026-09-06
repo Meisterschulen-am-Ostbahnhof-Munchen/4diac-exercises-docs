@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist es, Möglichkeiten zur rein visuellen Strukturie
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003a0_AX.SUB` enthält zwei eingebettete Sub-Applikationen (`SubApp` und `SubApp_1`), die jeweils einen eigenen Signalpfad beinhalten[cite: 1].
+Die Subapplikation `Uebung_003a0_AX.SUB` enthält zwei eingebettete Sub-Applikationen (`SubApp` und `SubApp_1`), die jeweils einen eigenen Signalpfad beinhalten.
 
 ### Untypisierte Sub-Applikationen
 
@@ -22,11 +22,11 @@ Anders als bei typisierten SubApps, die auf einer externen Definition basieren, 
 
 1.  **Container `SubApp`**:
     -   Beinhaltet die Logik für Kanal 2.
-    -   Intern: [cite_start]`DigitalInput_I2` verbunden mit `DigitalOutput_Q2`[cite: 1].
+    -   Intern: `DigitalInput_I2` verbunden mit `DigitalOutput_Q2`.
 
 2.  **Container `SubApp_1`**:
     -   Beinhaltet die Logik für Kanal 1.
-    -   Intern: [cite_start]`DigitalInput_I1` verbunden mit `DigitalOutput_Q1`[cite: 1].
+    -   Intern: `DigitalInput_I1` verbunden mit `DigitalOutput_Q1`.
 
 ### Funktionsbausteine (FBs)
 
@@ -64,8 +64,6 @@ Die Logik ist identisch zur parallelen Steuerung, jedoch ist die Ansicht hierarc
     </SubApp>
 </SubAppNetwork>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 Die Kapselung hat keinen Einfluss auf die Laufzeit-Ausführung. Die Bausteine verhalten sich exakt so, als wären sie alle auf der obersten Ebene platziert.

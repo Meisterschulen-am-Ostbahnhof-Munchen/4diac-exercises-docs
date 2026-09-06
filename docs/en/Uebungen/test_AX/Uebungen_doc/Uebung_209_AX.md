@@ -48,10 +48,12 @@ The wiring in `SubAppNetwork` is done via adapter connections:
 - `DigitalInput_S1` provides the set command for `ILOCK_RS_1` (S1).
 - `DigitalInput_R1` provides the reset command for `ILOCK_RS_1` (R1).
 - Similarly for the second group: `DigitalInput_S2` → `ILOCK_RS_2.SET1`, `DigitalInput_R2` → `ILOCK_RS_2.RESET`.
+
 1. **Interlock Chaining**:
 
 - Output `ILOCK_RS_1.ILOCK_OUT` is connected to `ILOCK_RS_2.ILOCK_IN`.
 - This connection ensures that `ILOCK_RS_2` can only be set if `ILOCK_RS_1` is not active (or vice versa, since the second block would also have to specify its ILOCK_OUT – in this configuration, only one direction is explicitly wired, but the internal logic takes the mutual locking into account).
+
 1. **Output Control**:
 
 - `ILOCK_RS_1.Q1` controls output Q1 via `DigitalOutput_Q1`.

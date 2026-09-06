@@ -4,7 +4,7 @@
 
 ## Übersicht
 
-[cite_start]In dieser Übung wird eine zeitgesteuerte Ventil-Abfolge unter Verwendung von Impulsgebern (`E_TP`) realisiert[cite: 1].
+In dieser Übung wird eine zeitgesteuerte Ventil-Abfolge unter Verwendung von Impulsgebern (`E_TP`) realisiert.
 
 ![Uebung_039b_network](./Uebung_039b_network.svg)
 

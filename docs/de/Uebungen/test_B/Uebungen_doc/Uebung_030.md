@@ -23,7 +23,7 @@ Verwendung des Bausteins `logiBUS_LED_PWM_QX`. Es wird gezeigt, wie man weiche L
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_030.SUB` werden vier Taster genutzt, um verschiedene PWM-Effekte auf einer LED (`Q1`) auszulösen[cite: 1].
+In `Uebung_030.SUB` werden vier Taster genutzt, um verschiedene PWM-Effekte auf einer LED (`Q1`) auszulösen.
 
 ### Funktionsbausteine (FBs)
 

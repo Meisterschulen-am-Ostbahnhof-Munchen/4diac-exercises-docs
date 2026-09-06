@@ -14,7 +14,7 @@ Testen eines spezifischen Pfads der MUX/DEMUX Struktur.
 
 ## Beschreibung
 
-[cite_start]Im Vergleich zu `Uebung_103` wurde das Eingabefeld entfernt[cite: 1]. Der Selektionswert wird stattdessen über einen `F_MOVE` Baustein fest auf den Wert `UINT#1` (Index 1 -> Zweig 2 "rastend") gesetzt.
+Im Vergleich zu `Uebung_103` wurde das Eingabefeld entfernt. Der Selektionswert wird stattdessen über einen `F_MOVE` Baustein fest auf den Wert `UINT#1` (Index 1 -> Zweig 2 "rastend") gesetzt.
 
 -----
 

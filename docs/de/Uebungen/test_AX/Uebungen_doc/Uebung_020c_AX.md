@@ -14,7 +14,7 @@ Kennenlernen des Timer-Bausteins `AX_TON`.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020c_AX.SUB` verzögert das Einschaltsignal[cite: 1].
+Die Subapplikation `Uebung_020c_AX.SUB` verzögert das Einschaltsignal.
 
 ### Funktionsbausteine (FBs)
 

@@ -10,4 +10,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010bA4`.
 
 ![Uebung_010bA4_network](./Uebung_010bA4_network.svg)
 
-[cite_start]Nutzt `AuxFunction2_X1` mit `AuxHeld_START`[cite: 1]. Unabhängig vom Typ des Bedienelements wird dieses Ereignis nur **einmal** beim Erreichen der Zeitschwelle gesendet. Es ist die bevorzugte Wahl für Long-Press-Funktionen an ISOBUS-Joysticks.
+Nutzt `AuxFunction2_X1` mit `AuxHeld_START`. Unabhängig vom Typ des Bedienelements wird dieses Ereignis nur **einmal** beim Erreichen der Zeitschwelle gesendet. Es ist die bevorzugte Wahl für Long-Press-Funktionen an ISOBUS-Joysticks.

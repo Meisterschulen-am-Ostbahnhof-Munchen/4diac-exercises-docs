@@ -14,7 +14,7 @@ Verständnis der Reset-Priorität.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006b.SUB` nutzt einen `E_RS` Baustein[cite: 1].
+Die Subapplikation `Uebung_006b.SUB` nutzt einen `E_RS` Baustein.
 
 ### Funktionsbausteine (FBs)
 

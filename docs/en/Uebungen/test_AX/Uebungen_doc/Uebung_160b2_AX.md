@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_160b2_AX` based on the provided file contents.
-
 # Exercise_160b2_AX: Motor Forward/Reverse Rotation Automation IXA
 
 ![Uebung_160b2_AX_network](./Uebung_160b2_AX_network.svg)
@@ -75,6 +73,7 @@ The circuit implements a classic reversing contactor control with a special feat
 
 - The signal from **Input_I1** sets the memory **AX_SR_A**.
 - The output of **AX_SR_A** is routed directly to **Output_Q5** via a splitter (**AX_SPLIT_2_A**). The motor runs in direction 1.
+
 1. **Switching / Start Direction 2 (Q6):**
 
 - The signal from **Input_I2** is routed to a splitter (**AX_SPLIT_2**).
@@ -82,9 +81,11 @@ The circuit implements a classic reversing contactor control with a special feat
 - **Branch 2:** The signal starts the timer **AX_TON**. After 50 ms (parameter `PT`), the memory **AX_SR_B** is set.
 - The output of **AX_SR_B** activates **Output_Q6** via **AX_SPLIT_2_B**. The motor now runs in direction 2.
 - *Note:* The 50ms delay serves as a locking time to prevent a short circuit between the phases during direct switching.
+
 1. **Stop Direction 2:**
 
 - The signal from **Input_I3** resets the memory **AX_SR_B**, which switches off **Output_Q6**.
+
 1. **Operating Indicator (Q56):**
 
 - The signals from both directions of rotation (coming from splitters A and B) are combined in the **AX_OR_2** function block.

@@ -19,12 +19,12 @@ Using the function block `Q_BackgroundColour`. This is an alternative to color c
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_016.SUB` toggles the color of the softkey `F7` based on the selections made via `F1` and `F2`[cite: 1].
+The sub-application `Uebung_016.SUB` toggles the color of the softkey `F7` based on the selections made via `F1` and `F2`.
 
 ### Function Blocks (FBs)
 
 - **`F_SEL`**: Selects between two color constants.
-- **`Q_BackgroundColour`**: The initial function block. [cite_start]It sets the background color for the object `SoftKey_F7`[cite: 1].
+- **`Q_BackgroundColour`**: The initial function block. It sets the background color for the object `SoftKey_F7`.
 
 -----
 

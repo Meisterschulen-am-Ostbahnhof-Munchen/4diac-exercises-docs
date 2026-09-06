@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006d`. Here, an asymmetric operating logic for protecting the system is implemented
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Combining complex input events (double-click) with memory blocks.
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006d.SUB` implements an on/off logic with different hurdles[cite: 1].
+The sub-application `Uebung_006d.SUB` implements an on/off logic with different hurdles.
 
 ### Function Blocks (FBs)
 

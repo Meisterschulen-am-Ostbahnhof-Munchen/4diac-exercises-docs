@@ -14,7 +14,7 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a4.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops gleichzeitig zu schalten[cite: 1].
+Die Subapplikation `Uebung_004a4.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops gleichzeitig zu schalten.
 
 ### Funktionsbausteine (FBs)
 
@@ -36,8 +36,6 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
     <Connection Source="E_SPLIT.EO2" Destination="E_T_FF_Q2.CLK"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  Ein Klick auf Taster 1 sendet ein Event an `E_SPLIT.EI`.
 2.  `E_SPLIT` sendet daraufhin **zuerst** ein Event an `EO1` ➡️ `E_T_FF_Q1` schaltet um.

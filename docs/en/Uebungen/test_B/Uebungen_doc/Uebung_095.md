@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_095`. It demonstrates the selection between two different event sources
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Use of the function block `E_SELECT`. This acts as a switch for incoming events 
 
 ## Functionality
 
-[cite_start]In `Uebung_095.SUB`, two pushbuttons and a selector switch determine the logic[cite: 1].
+In `Uebung_095.SUB`, two pushbuttons and a selector switch determine the logic.
 
 ![Uebung_095_network](./Uebung_095_network.svg)
 

@@ -3,6 +3,7 @@
 ![Uebung_011b6_network](./Uebung_011b6_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_011b6** is the direct fix for [Exercise_011b3](Uebung_011b3.md): the same

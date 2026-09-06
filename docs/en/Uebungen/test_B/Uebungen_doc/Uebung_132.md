@@ -2,11 +2,12 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_132`
+
 ----
 
 ## Overview
 
-[cite_start]This exercise uses the function block `AlPgnRxNew8B_REQ`[cite: 1].
+This exercise uses the function block `AlPgnRxNew8B_REQ`.
 
 ![Uebung_132_network](./Uebung_132_network.svg)
 

@@ -14,14 +14,14 @@ Verwendung des Bausteins `RangeBasedPulse`. Es wird gezeigt, wie man ein periodi
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_071b.SUB` liest die kumulierte Wegstrecke vom Traktor ein und erzeugt daraus Impulse[cite: 1].
+Die Subapplikation `Uebung_071b.SUB` liest die kumulierte Wegstrecke vom Traktor ein und erzeugt daraus Impulse.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_071b_network](./Uebung_071b_network.svg)
 
   - **`I_WBSD`**: Liefert den Wert `WHEELBASEDMACHINEDISTANCE`.
-  - **`RangeBasedPulse`**: [cite_start]Dieser Baustein erzeugt einen Pegelwechsel am Ausgang `Q`, sobald eine definierte Distanz (hier 5000 mm = 5 Meter) überschritten wurde[cite: 1].
+  - **`RangeBasedPulse`**: Dieser Baustein erzeugt einen Pegelwechsel am Ausgang `Q`, sobald eine definierte Distanz (hier 5000 mm = 5 Meter) überschritten wurde.
   - **`E_D_FF`**: Synchronisiert den Puls für den Hardware-Ausgang.
 
 -----

@@ -14,7 +14,7 @@ Implementierung einer bedingten Navigationssteuerung. Der Wechsel der Bildschirm
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_019c.SUB` nutzt mehrere `E_SWITCH` Bausteine als "Türsteher" für die Ereignisse[cite: 1].
+Die Subapplikation `Uebung_019c.SUB` nutzt mehrere `E_SWITCH` Bausteine als "Türsteher" für die Ereignisse.
 
 ### Funktionsbausteine (FBs)
 

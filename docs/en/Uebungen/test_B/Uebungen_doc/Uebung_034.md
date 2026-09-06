@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_034`. Here, an analog measurement is used to continuously control the power of an actuator
+
 ----
 
 ## Objective of the Exercise
@@ -12,14 +13,14 @@ Connecting an analog input (`logiBUS_AI`) to a PWM output (`logiBUS_QD_PWM`). It
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_034.SUB` reads a potentiometer and uses it to control the brightness of a lamp or the speed of a motor[cite: 1].
+The subapplication `Uebung_034.SUB` reads a potentiometer and uses it to control the brightness of a lamp or the speed of a motor.
 
 ### Function Blocks (FBs)
 
 ![Uebung_034_network](./Uebung_034_network.svg)
 
 - **`AnalogInput_I7`**: Reads the voltage at the input.
-- **`F_SHL`**: A shift register (Shift Left). [cite_start]It is used here for scaling by shifting the input value one bit to the left [corresponding to multiplication by 2](cite: 1).
+- **`F_SHL`**: A shift register (Shift Left). It is used here for scaling by shifting the input value one bit to the left [corresponding to multiplication by 2](cite: 1).
 - **`PWMOutput_Q4`**: A pulse-width modulated output for power control.
 
 -----

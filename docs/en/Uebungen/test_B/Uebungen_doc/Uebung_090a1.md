@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_090a1`. It demonstrates the selection of a data value based on an address
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `F_MUX_2` (multiplexer). It shows how to switch between
 
 ## Description and Components
 
-[cite_start]In `Uebung_090a1.SUB`, a binary selector switch is used to switch between two inputs[cite: 1].
+In `Uebung_090a1.SUB`, a binary selector switch is used to switch between two inputs.
 
 ### Function Blocks (FBs)
 

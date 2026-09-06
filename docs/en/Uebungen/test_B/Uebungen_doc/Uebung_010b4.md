@@ -11,4 +11,4 @@ This article describes the logiBUS® exercise `Uebung_010b4`.
 
 ## Overview
 
-[cite_start]This exercise demonstrates the mass mapping of 8 ISOBUS softkeys to 8 hardware outputs using untyped sub-applications (`Uebung_010b4_sub`)[cite: 1]. This results in an extremely clean main diagram while maintaining a high channel count.
+This exercise demonstrates the mass mapping of 8 ISOBUS softkeys to 8 hardware outputs using untyped sub-applications (`Uebung_010b4_sub`). This results in an extremely clean main diagram while maintaining a high channel count.

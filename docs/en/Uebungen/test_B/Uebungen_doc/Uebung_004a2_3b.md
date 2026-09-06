@@ -63,10 +63,12 @@ As soon as one of the three buttons is pressed, `E_MERGE_3` generates an event a
 This event is forwarded to the clock input `CLK` of `E_T_FF`.
 
 - The `E_T_FF` toggles with each event: Its output `Q` switches between TRUE and FALSE. Simultaneously, the event `EO` of the flip-flop is triggered.
+
 1. **Data Chaining**
 
 - The state of the flip-flop (data output `Q`) is directly fed to the data input `OUT` of the output block `DigitalOutput_Q1`.
 - The event `EO` of the flip-flop triggers the `REQ` input of the output block, so that the current value is written to the physical output **Output_Q1**.
+
 1. **Summary of the Process**
 
 - Each individual button press (on I1, I2, or I3) toggles the output.

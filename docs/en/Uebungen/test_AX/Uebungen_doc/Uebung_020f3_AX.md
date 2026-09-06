@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020f3_AX`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the `AX_BLINK` block for asymmetric flashing.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020f3_AX.SUB` uses a specialized flasher block[cite: 1].
+The subapplication `Uebung_020f3_AX.SUB` uses a specialized flasher block.
 
 ### Function Blocks (FBs)
 

@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_160b2_AX` basierend auf den bereitgestellten Dateiinhalten.
-
 # Uebung_160b2_AX: Motor Links/Rechtslauf Automatisierung IXA
 
 ![Uebung_160b2_AX_network](./Uebung_160b2_AX_network.svg)

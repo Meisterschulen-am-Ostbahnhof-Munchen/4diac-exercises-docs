@@ -3,6 +3,7 @@
 ![Uebung_011b7_network](./Uebung_011b7_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_011b7** performs a division of two numeric values read from the ISOBUS

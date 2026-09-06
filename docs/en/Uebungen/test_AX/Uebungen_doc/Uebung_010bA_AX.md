@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010bA_AX`
+
 ----
 
 ## Purpose of the exercise
@@ -12,7 +13,7 @@ Difference to `STILL_HELD`.
 
 ## Description
 
-[cite_start]Uses `Button_A1` with `BT_STILL_HELD_START`[cite: 1].
+Uses `Button_A1` with `BT_STILL_HELD_START`.
 
 -----
 

@@ -20,7 +20,7 @@ Erlernen der Ereignisverkettung. Das Ende eines Prozesses (Erreichen der Endlage
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_022.SUB` werden zwei Speicherglieder so verschaltet, dass eine Kaskade entsteht[cite: 1].
+In `Uebung_022.SUB` werden zwei Speicherglieder so verschaltet, dass eine Kaskade entsteht.
 
 ### Funktionsbausteine (FBs)
 
@@ -41,8 +41,6 @@ Erlernen der Ereignisverkettung. Das Ende eines Prozesses (Erreichen der Endlage
     <Connection Source="SoftKey_F3_DOWN.IND" Destination="E_SR_Cyl_2.R"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der Ablauf:
 

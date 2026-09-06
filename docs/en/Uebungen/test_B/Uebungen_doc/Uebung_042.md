@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_042`. It demonstrates the mathematical conversion of value ranges
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `SCALE`. In automation technology, raw values (e.g., 4-
 
 ## Description and Components
 
-[cite_start]In `Uebung_042.SUB`, a test scenario for the Scaling function block is set up[cite: 1].
+In `Uebung_042.SUB`, a test scenario for the Scaling function block is set up.
 
 ### Function Blocks (FBs)
 

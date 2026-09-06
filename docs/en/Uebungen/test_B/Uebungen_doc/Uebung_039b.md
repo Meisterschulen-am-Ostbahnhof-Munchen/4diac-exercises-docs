@@ -4,7 +4,7 @@
 
 ## Overview
 
-[cite_start]In this exercise, a time-controlled valve sequence is implemented using pulse generators (`E_TP`)[cite: 1].
+In this exercise, a time-controlled valve sequence is implemented using pulse generators (`E_TP`).
 ![Uebung_039b_network](./Uebung_039b_network.svg)
 A click on the softkey **F1** starts a chain of events:
 

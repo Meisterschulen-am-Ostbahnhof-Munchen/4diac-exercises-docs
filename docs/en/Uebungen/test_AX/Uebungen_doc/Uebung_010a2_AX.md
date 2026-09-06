@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010a2_AX`. In addition to softkeys (F-keys), ISOBUS also uses buttons (switches in the data mask area)
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Using `Button_IXA`.
 
 ## Description and components
 
-[cite_start]The subapplication `Uebung_010a2_AX.SUB` uses a button instead of a softkey[cite: 1].
+The subapplication `Uebung_010a2_AX.SUB` uses a button instead of a softkey.
 
 ### Function Blocks (FBs)
 

@@ -23,13 +23,13 @@ Using the function block `Q_ObjHideShow` to control the visibility of ISOBUS obj
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_014.SUB` uses two softkeys to set or clear a memory location whose state controls the visibility of a container[cite: 1].
+The subapplication `Uebung_014.SUB` uses two softkeys to set or clear a memory location whose state controls the visibility of a container.
 
 ### Function Blocks (FBs)
 
 - **`SoftKey_UP_F1` & `F2`**: Terminal input (On/Off).
 - **`E_SR`**: Memory for the visibility status.
-- **`Q_ObjHideShow`**: The ISOBUS output block. [cite_start]It controls the "Visibility" property of the object with the ID `Container_B`[cite: 1].
+- **`Q_ObjHideShow`**: The ISOBUS output block. It controls the "Visibility" property of the object with the ID `Container_B`.
 
 -----
 

@@ -14,7 +14,7 @@ Unterschied zu `STILL_HELD`.
 
 ## Beschreibung
 
-[cite_start]Nutzt `Button_A1` mit `BT_STILL_HELD_START`[cite: 1].
+Nutzt `Button_A1` mit `BT_STILL_HELD_START`.
 
 -----
 

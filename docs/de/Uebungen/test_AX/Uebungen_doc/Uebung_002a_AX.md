@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist die Implementierung einer grundlegenden logische
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002a_AX.SUB` verknüpft zwei digitale Eingänge über einen Logik-Baustein mit einem digitalen Ausgang[cite: 1].
+Die Subapplikation `Uebung_002a_AX.SUB` verknüpft zwei digitale Eingänge über einen Logik-Baustein mit einem digitalen Ausgang.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,13 +22,13 @@ Folgende Bausteine werden verwendet:
 
 ![Uebung_002a_AX_network](./Uebung_002a_AX_network.svg)
 
-  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden[cite: 1].
-  - **`AX_AND_2`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Dieser Baustein führt die logische UND-Operation direkt auf den Adapter-Schnittstellen aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`)[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1` basierend auf dem Ergebnis der Logik[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden.
+  - **`AX_AND_2`**: Eine Instanz des Typs `AX_AND_2`. Dieser Baustein führt die logische UND-Operation direkt auf den Adapter-Schnittstellen aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`).
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein steuert den Hardware-Ausgang `Output_Q1` basierend auf dem Ergebnis der Logik.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Die gesamte Signalverarbeitung erfolgt über den Adapter-Typ `AX`, wodurch Ereignisse und Datenwerte effizient durch das Netzwerk geleitet werden[cite: 2].
+Die gesamte Signalverarbeitung erfolgt über den Adapter-Typ `AX`, wodurch Ereignisse und Datenwerte effizient durch das Netzwerk geleitet werden.
 
 -----
 
@@ -43,8 +43,6 @@ Die Logik wird durch die Verschaltung der Adapter-Anschlüsse in der Subapplikat
     <Connection Source="AX_AND_2.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
 

@@ -29,6 +29,7 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 
 - `Input_CD.IND` (signal from button I1) is connected to `FB_CTD_UDINT.REQ`.
 - `Input_LD.IND` (signal from button I2) is also connected to `FB_CTD_UDINT.REQ`.
+
 1. **Event Sink:**
 
 - `FB_CTD_UDINT.CNF` (counter confirmation) triggers two actions:

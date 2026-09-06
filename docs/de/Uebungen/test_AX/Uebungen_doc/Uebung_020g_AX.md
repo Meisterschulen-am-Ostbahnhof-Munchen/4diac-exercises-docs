@@ -14,14 +14,14 @@ Das Ziel ist es, ein Signal in beide Richtungen zeitlich zu filtern. Kurze Impul
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020g_AX.SUB` nutzt den Baustein `AX_TONOF`[cite: 1].
+Die Subapplikation `Uebung_020g_AX.SUB` nutzt den Baustein `AX_TONOF`.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_020g_AX_network](./Uebung_020g_AX_network.svg)
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`.
-  - **`AX_TONOF`**: [cite_start]Vereint Einschaltverzögerung (`PT_ON`) und Ausschaltverzögerung (`PT_OFF`) in einem Baustein. Hier sind beide Zeiten auf 5 Sekunden eingestellt[cite: 1].
+  - **`AX_TONOF`**: Vereint Einschaltverzögerung (`PT_ON`) und Ausschaltverzögerung (`PT_OFF`) in einem Baustein. Hier sind beide Zeiten auf 5 Sekunden eingestellt.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`.
 
 -----

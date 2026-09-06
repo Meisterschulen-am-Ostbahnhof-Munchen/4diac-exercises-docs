@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_055`. It introduces a key logiBUS concept for transmitting extended status information: the "Quarter" (2-bit information)
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Understanding extended signal states. In professional control systems, a simple 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_055.SUB` demonstrates the conversion between simple Boolean values and logiBUS quarters[cite: 1].
+The subapplication `Uebung_055.SUB` demonstrates the conversion between simple Boolean values and logiBUS quarters.
 
 ### Function Blocks (FBs)
 

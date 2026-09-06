@@ -14,7 +14,7 @@ Realisierung einer Steuerung für Linkslauf, Rechtslauf und ein Summensignal (Mo
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_160.SUB` werden zwei Taster auf drei Ausgänge gemappt[cite: 1].
+In `Uebung_160.SUB` werden zwei Taster auf drei Ausgänge gemappt.
 
 ### Funktionsbausteine (FBs)
 

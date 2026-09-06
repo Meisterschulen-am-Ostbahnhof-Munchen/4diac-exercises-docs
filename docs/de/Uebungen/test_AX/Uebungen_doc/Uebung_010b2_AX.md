@@ -20,7 +20,7 @@ Verwendung von `Softkey_IE` (Event) anstelle von `Softkey_IXA` (Zustand).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010b2_AX.SUB` nutzt einen Softkey, um ein Flip-Flop zu toggeln[cite: 1].
+Die Subapplikation `Uebung_010b2_AX.SUB` nutzt einen Softkey, um ein Flip-Flop zu toggeln.
 
 ### Funktionsbausteine (FBs)
 

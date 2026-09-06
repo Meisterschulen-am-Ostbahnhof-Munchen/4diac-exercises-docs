@@ -20,13 +20,13 @@ Erlernen der persistenten Datenspeicherung. Es wird demonstriert, wie ein am Ter
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_012.SUB` verbindet Eingabe, Speicherung und Anzeige zu einem geschlossenen Kreislauf[cite: 1].
+Die Subapplikation `Uebung_012.SUB` verbindet Eingabe, Speicherung und Anzeige zu einem geschlossenen Kreislauf.
 
 ### Funktionsbausteine (FBs)
 
   - **`InputNumber_I1`**: Numerisches Eingabefeld am Terminal.
-  - **`NVS`**: Typ `logiBUS::storage::esp32_nvs::NVS`. [cite_start]Dieser Baustein verwaltet den Zugriff auf den nicht-flüchtigen Speicher. Er speichert Werte unter einem eindeutigen `KEY` ab[cite: 1].
-  - **`CbVtStatus`**: Ein Statusbaustein des Terminals. [cite_start]Er feuert ein Ereignis (`IND`), wenn das Terminal neu startet oder die Verbindung wiederhergestellt wird[cite: 1].
+  - **`NVS`**: Typ `logiBUS::storage::esp32_nvs::NVS`. Dieser Baustein verwaltet den Zugriff auf den nicht-flüchtigen Speicher. Er speichert Werte unter einem eindeutigen `KEY` ab.
+  - **`CbVtStatus`**: Ein Statusbaustein des Terminals. Er feuert ein Ereignis (`IND`), wenn das Terminal neu startet oder die Verbindung wiederhergestellt wird.
   - **`Q_NumericValue`**: Die numerische Anzeige am Terminal.
 
 -----

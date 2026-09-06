@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006b_AX`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Understand the difference between SR (Set Priority) and RS (Reset Priority).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006b_AX.SUB` uses a `AX_RS` function block[cite: 1].
+The subapplication `Uebung_006b_AX.SUB` uses a `AX_RS` function block.
 
 ### Function Blocks (FBs)
 

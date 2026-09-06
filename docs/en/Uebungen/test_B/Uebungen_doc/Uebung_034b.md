@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_034b`. Here, the PWM power is controlled via button interactions ("accelerating")
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Combining repeating events (`HOLD`) and counters to control a PWM stage. The use
 
 ## Description and Components
 
-[cite_start]In `Uebung_034b.SUB`, an up/down counter is used as a digital integrator[cite: 1].
+In `Uebung_034b.SUB`, an up/down counter is used as a digital integrator.
 
 ### Function Blocks (FBs)
 

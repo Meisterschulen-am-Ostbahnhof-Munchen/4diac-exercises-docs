@@ -14,7 +14,7 @@ Aufräumen des Diagramms.
 
 ## Beschreibung
 
-[cite_start]Die Logik aus `Uebung_010c_AX` (Input + Output + Feedback + Splitter) wird komplett in eine untypisierte Sub-Applikation `Uebung_10c2_sub_AX` verschoben[cite: 1].
+Die Logik aus `Uebung_010c_AX` (Input + Output + Feedback + Splitter) wird komplett in eine untypisierte Sub-Applikation `Uebung_10c2_sub_AX` verschoben.
 
 -----
 

@@ -20,7 +20,7 @@ Verwendung eines `Softkey`-Bausteins zur Steuerung eines Ausgangs.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010_AX.SUB` verbindet eine Softkey-Instanz mit einem digitalen Ausgang[cite: 1].
+Die Subapplikation `Uebung_010_AX.SUB` verbindet eine Softkey-Instanz mit einem digitalen Ausgang.
 
 ### Funktionsbausteine (FBs)
 

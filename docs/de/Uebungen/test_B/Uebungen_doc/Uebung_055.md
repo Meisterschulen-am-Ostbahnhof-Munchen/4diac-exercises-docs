@@ -14,7 +14,7 @@ Verständnis von erweiterten Signalzuständen. In professionellen Steuerungen re
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_055.SUB` demonstriert die Wandlung zwischen einfachen booleschen Werten und logiBUS-Quartalen[cite: 1].
+Die Subapplikation `Uebung_055.SUB` demonstriert die Wandlung zwischen einfachen booleschen Werten und logiBUS-Quartalen.
 
 ### Funktionsbausteine (FBs)
 

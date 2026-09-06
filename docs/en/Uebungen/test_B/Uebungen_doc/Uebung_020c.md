@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020c`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the standardized timer block `E_TON`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020c.SUB` uses the `E_TON` block from the Event Timer Library[cite: 1].
+The subapplication `Uebung_020c.SUB` uses the `E_TON` block from the Event Timer Library.
 
 ### Function Blocks (FBs)
 

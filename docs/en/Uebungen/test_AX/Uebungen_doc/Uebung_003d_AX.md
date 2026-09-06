@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003d_AX`. This exercise is structurally almost identical to `Uebung_003_AX` and serves to reinforce the understanding of parallel signal paths
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The objective is to review direct I/O linking using adapter technology. It ensur
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_003d_AX.SUB` connects two inputs to two outputs[cite: 1].
+The sub-application `Uebung_003d_AX.SUB` connects two inputs to two outputs.
 
 ### Function Blocks (FBs)
 

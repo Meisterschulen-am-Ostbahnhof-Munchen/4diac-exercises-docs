@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002a2`. This exercise is functionally identical to `Uebung_002a`, but demonstrates the use of the generic function block `F_AND` instead of the type-specific `AND_2`
+
 -----
 
 ## Objective of the Exercise
@@ -10,15 +11,15 @@ The objective is to understand the use of generic function blocks (F-FBs) in IEC
 
 ## Description and Components
 
-[cite_start]In the subapplication `Uebung_002a2.SUB`, two digital inputs are linked using a generic AND gate[cite: 1].
+In the subapplication `Uebung_002a2.SUB`, two digital inputs are linked using a generic AND gate.
 
 ### Function Blocks (FBs)
 
 ![Uebung_002a2_network](./Uebung_002a2_network.svg)
 
-- **`DigitalInput_I1` & `DigitalInput_I2`**: Standard input blocks of type `logiBUS_IX`[cite: 1].
-- **`F_AND`**: A generic function block of type `F_AND`. [cite_start]It calculates the logical AND operation on its inputs `IN1` and `IN2` as soon as it receives an event at input `REQ`, and outputs the result at output `OUT` as well as an acknowledgment event at port `CNF`[cite: 1].
-- **`DigitalOutput_Q1`**: Standard output block of type `logiBUS_QX`[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Standard input blocks of type `logiBUS_IX`.
+- **`F_AND`**: A generic function block of type `F_AND`. It calculates the logical AND operation on its inputs `IN1` and `IN2` as soon as it receives an event at input `REQ`, and outputs the result at output `OUT` as well as an acknowledgment event at port `CNF`.
+- **`DigitalOutput_Q1`**: Standard output block of type `logiBUS_QX`.
 
 -----
 

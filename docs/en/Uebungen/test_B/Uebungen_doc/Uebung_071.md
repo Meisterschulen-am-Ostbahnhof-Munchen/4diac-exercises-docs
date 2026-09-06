@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_071`. Here, the tractor speed is not only displayed but also used directly to control an actuator
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of threshold logic based on TECU data. The output should be activ
 
 ## Description and Components
 
-[cite_start]In `Uebung_071.SUB`, the wheel-based speed is compared to a fixed value[cite: 1].
+In `Uebung_071.SUB`, the wheel-based speed is compared to a fixed value.
 
 ### Function Blocks (FBs)
 

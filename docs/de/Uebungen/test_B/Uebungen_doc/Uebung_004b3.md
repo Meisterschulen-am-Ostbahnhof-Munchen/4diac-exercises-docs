@@ -14,7 +14,7 @@ Implementierung einer exklusiven Auswahl-Logik. Das Einschalten eines Kanals mus
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004b3.SUB` basiert auf dem Aufbau von 004b2, führt jedoch zusätzliche Ereignisverbindungen zur Verriegelung ein[cite: 1].
+Die Subapplikation `Uebung_004b3.SUB` basiert auf dem Aufbau von 004b2, führt jedoch zusätzliche Ereignisverbindungen zur Verriegelung ein.
 
 ### Funktionsbausteine (FBs)
 
@@ -41,8 +41,6 @@ Die Besonderheit liegt in der "Über-Kreuz-Verbindung" der Setz-Ereignisse:
     <Connection Source="E_SWITCH_I2.EO0" Destination="E_SR_I1.R"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 

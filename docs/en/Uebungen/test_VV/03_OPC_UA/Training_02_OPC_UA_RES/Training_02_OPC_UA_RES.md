@@ -3,6 +3,7 @@
 ![Training_02_OPC_UA_RES_network](./Training_02_OPC_UA_RES_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `Training_02_OPC_UA_RES` shows the basic `Input_I1` → `Output_Q1` pattern
@@ -120,4 +121,4 @@ connection.
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

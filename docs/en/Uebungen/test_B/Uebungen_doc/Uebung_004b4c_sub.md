@@ -75,6 +75,7 @@ If `Q = TRUE` (flip-flop is set), the event is forwarded to output `EO0`.
 - `E_SWITCH_I1.EO1` goes to `E_SR_I1.R` (reset).
 - Additionally, both outputs are connected to the AE2 converters to send the events externally.
 - The adapter converters are cross-connected (see EventConnections), so an event from `AE2_E_TO_EVENT` is passed to `AE2_EVENT_TO_E` and vice versa. This enables bidirectional communication via the adapter.
+
 1. After processing the set or reset event, the output `EO` is triggered by `E_SR_I1` and made available as the sub-application output `EO`.
 
 2. The current state `Q` is directly output as `Q` by the sub-application.

@@ -23,11 +23,11 @@ Using the function block `I_WBSD` (Wheel Based Speed and Distance). The objectiv
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_070.SUB` reads the ISOBUS message WBSD and forwards it to a numerical display[cite: 1].
+The subapplication `Uebung_070.SUB` reads the ISOBUS message WBSD and forwards it to a numerical display.
 
 ### Function Blocks (FBs)
 
-- **`I_WBSD`**: Type `isobus::tecu::I_WBSD`. [cite_start]This module listens on the CAN bus for the standardized TECU messages for wheel-based speed and distance[cite: 1].
+- **`I_WBSD`**: Type `isobus::tecu::I_WBSD`. This module listens on the CAN bus for the standardized TECU messages for wheel-based speed and distance.
 - **`Q_NumericValue`**: Sends the value to the object `NumberVariable_Wheel_based_machine_speed` in the terminal pool.
 
 -----

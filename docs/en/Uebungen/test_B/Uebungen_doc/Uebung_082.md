@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_082`. Here, both counting directions are combined in a single function block
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `E_CTUD` (Event Count Up/Down). It demonstrates how to 
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_082.SUB` uses four pushbuttons for complete control of the counter[cite: 1].
+The sub-application `Uebung_082.SUB` uses four pushbuttons for complete control of the counter.
 
 ### Function Blocks (FBs)
 

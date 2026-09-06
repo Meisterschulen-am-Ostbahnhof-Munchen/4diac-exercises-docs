@@ -67,6 +67,7 @@ The sub-application has two event inputs (`IND` and `RESET`), two event outputs 
 
 - If `Q` = FALSE, the event is passed on to `EO0`, setting `E_SR` (Q becomes TRUE) and simultaneously activating the output `SET`.
 - If `Q` = TRUE, the event is passed on to `EO1`, resetting `E_SR` (Q becomes FALSE).
+
 1. After each state change of `E_SR`, an event is output to `EO`.
 2. An external event at input `RESET` forces the reset of `E_SR` (regardless of its current state) and also triggers an event at `EO`.
 

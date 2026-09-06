@@ -14,7 +14,7 @@ Konfiguration eines n-fach Klicks unter Verwendung von Argumenten.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004c6.SUB` nutzt den Bausteintyp `logiBUS_IE2` mit dem Ereignis `BUTTON_MULTIPLE_CLICK` und dem Argument `arg = 3`[cite: 1].
+Die Subapplikation `Uebung_004c6.SUB` nutzt den Bausteintyp `logiBUS_IE2` mit dem Ereignis `BUTTON_MULTIPLE_CLICK` und dem Argument `arg = 3`.
 
 -----
 

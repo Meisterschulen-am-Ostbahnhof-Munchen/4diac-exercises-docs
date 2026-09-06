@@ -8,7 +8,7 @@
 
 ## Overview
 
-[cite_start]This sub-app type is used for the structured connection of ISOBUS softkeys to hardware outputs[cite: 1].
+This sub-app type is used for the structured connection of ISOBUS softkeys to hardware outputs.
 
 It combines a `Softkey_IX` instance and a `DigitalOutput_QX` block. The mapping between the virtual button and the physical lamp/valve can be configured directly in the sub-app using the parameters `u16ObjId` and `Output`. This allows for the creation of large operator matrices (as shown in Exercise 010b4) with minimal wiring effort in the main diagram.
 

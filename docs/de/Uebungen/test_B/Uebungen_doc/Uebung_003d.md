@@ -14,7 +14,7 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Ereignis- un
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003d.SUB` verbindet zwei Eingangsbausteine direkt mit zwei Ausgangsbausteinen[cite: 1].
+Die Subapplikation `Uebung_003d.SUB` verbindet zwei Eingangsbausteine direkt mit zwei Ausgangsbausteinen.
 
 ### Funktionsbausteine (FBs)
 

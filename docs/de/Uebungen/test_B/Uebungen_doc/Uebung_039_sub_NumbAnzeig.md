@@ -1,5 +1,3 @@
-Hier ist die generierte Dokumentation basierend auf dem bereitgestellten XML-Code:
-
 # Uebung_039_sub_NumbAnzeig: Spiegelabfolge V2 mit Schrittkette SUB Num
 
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)

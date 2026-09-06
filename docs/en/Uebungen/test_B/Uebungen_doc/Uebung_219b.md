@@ -50,12 +50,14 @@ The flow is controlled by event and data connections:
 
 - If **CD = TRUE** and **LD = FALSE**, the counter value is decremented.
 - If **LD = TRUE** (regardless of CD), the preset value (10) is loaded.
+
 1. **Output after processing**
 
 After the counter operation is complete, the **CNF** event of the counter is triggered. This is connected to two subsequent function blocks:
 
 - `Output_Q1.REQ`: The current state of `FB_CTD_ULINT.Q` (counter reading = 0 → TRUE) is written to the digital output `Output_Q1`.
 - `F_ULINT_TO_LREAL.REQ`: The current counter value (`FB_CTD_ULINT.CV`) is converted into an LREAL number.
+
 1. **Terminal output**
 
 After the conversion, `F_ULINT_TO_LREAL.CNF` triggers the function block `Q_NumericValue_PHYS_LREAL.REQ`. The converted value (`F_ULINT_TO_LREAL.OUT`) is displayed as a physical floating-point number at the terminal under `OutputNumber_N3`.

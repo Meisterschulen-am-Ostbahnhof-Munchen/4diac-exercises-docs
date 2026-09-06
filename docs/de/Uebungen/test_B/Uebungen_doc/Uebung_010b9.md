@@ -14,6 +14,6 @@ Nutzung repetierender Ereignisse zur Erzeugung von Blinksignalen oder Inkrement-
 
 ## Funktionsweise
 
-[cite_start]Nutzt `Button_A1` mit dem Ereignis `BT_STILL_HELD`[cite: 1]. Wie im Kommentar vermerkt, wird dieses Ereignis alle 200ms wiederholt, solange der Finger auf dem Button bleibt. Da das Signal an ein Toggle-Flip-Flop geleitet wird, blinkt der Hardware-Ausgang mit einer Periode von 400ms (200ms an, 200ms aus), solange gedrückt wird.
+Nutzt `Button_A1` mit dem Ereignis `BT_STILL_HELD`. Wie im Kommentar vermerkt, wird dieses Ereignis alle 200ms wiederholt, solange der Finger auf dem Button bleibt. Da das Signal an ein Toggle-Flip-Flop geleitet wird, blinkt der Hardware-Ausgang mit einer Periode von 400ms (200ms an, 200ms aus), solange gedrückt wird.
 
 ![Uebung_010b9_network](./Uebung_010b9_network.svg)

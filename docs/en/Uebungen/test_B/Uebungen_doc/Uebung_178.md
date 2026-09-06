@@ -1,5 +1,3 @@
-Here is the documentation for Exercise 178, based on the provided XML data.
-
 # Exercise_178: Example for FB_F_TRIG (Falling Edge Detection)
 
 ![Uebung_178_network](./Uebung_178_network.svg)
@@ -46,6 +44,7 @@ The output signal `Q` of the edge trigger is connected to the input `IN` of the 
 
 - As soon as the falling edge is detected, the timer `E_TP` starts.
 - The timer generates a pulse with a duration of **1 second** (defined by `PT = T#1s`).
+
 1. **Signal Output:**
 
 The output `Q` of the timer controls the input `OUT` of the timer `DigitalOutput_Q1`.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_009a`. It demonstrates the complex control of a numerical value using various button interactions
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Control of a ramp function block (`RampLimitFS`). It shows how different event t
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_009a.SUB` uses a ramp function block for stepless control of a numerical value between 0 and 100[cite: 1].
+The subapplication `Uebung_009a.SUB` uses a ramp function block for stepless control of a numerical value between 0 and 100.
 
 ### Function Blocks (FBs)
 

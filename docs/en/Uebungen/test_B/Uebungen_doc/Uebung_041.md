@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_041`. Here, the manual control of an 8-step sequence is reduced to a single button
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Optimization of the operating logic from Exercise 040. It demonstrates how, by c
 
 ## Description and Components
 
-[cite_start]In `Uebung_041.SUB`, a central event path is used to control the sequencer `sequence_E_08_loop`[cite: 1].
+In `Uebung_041.SUB`, a central event path is used to control the sequencer `sequence_E_08_loop`.
 
 ### Function Blocks (FBs)
 

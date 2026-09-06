@@ -19,7 +19,7 @@ Reaction when pressed.
 
 ## Description
 
-[cite_start]Uses the event `SK_PRESSED`[cite: 1].
+Uses the event `SK_PRESSED`.
 
 -----
 

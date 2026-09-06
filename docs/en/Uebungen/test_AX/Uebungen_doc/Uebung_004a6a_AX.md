@@ -69,6 +69,7 @@ The SubApp uses the following (sub)blocks:
 1. **Event Detection:**
 
 - The three button inputs (`Input_I1`, `Input_I2`, `Input_I3`) are monitored by the `DigitalInput_CLK_IX` function blocks. Each simple button press (event `BUTTON_SINGLE_CLICK`) activates the event output `IND`.
+
 1. **Rendezvous (Event Synchronization):**
 
 - The events from `I1` and `I2` are forwarded to `EI1` and `EI2` of the `RT_E_REND` block.
@@ -79,6 +80,7 @@ The SubApp uses the following (sub)blocks:
 
 - If the rendezvous is successful, `RT_E_REND` sends an event to the `CLK` input of `AX_T_FF`.
 - The flip-flop changes its internal state (from `FALSE` to `TRUE` or vice versa) and outputs it via the adapter output `Q`.
+
 1. **Output:**
 
 - The state of the flip-flop (`Q`) is connected to the `OUT` adapter input of the `DigitalOutput_Q1` device. This controls the physical output `Output_Q1` accordingly.

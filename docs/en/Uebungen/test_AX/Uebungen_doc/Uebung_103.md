@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_103`. This is a complex example that demonstrates how to switch the signal path of a push button at runtime
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Dynamic selection between different processing logics (momentary, latching, dela
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_103.SUB` uses an ISOBUS numeric keypad to select between three logic branches[cite: 1].
+The subapplication `Uebung_103.SUB` uses an ISOBUS numeric keypad to select between three logic branches.
 
 ### Function Blocks (FBs)
 

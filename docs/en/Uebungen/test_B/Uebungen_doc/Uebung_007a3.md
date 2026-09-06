@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_007a3`. It presents the "clean" solution for a switchable flasher that is guaranteed to enter the "OFF" state when switched off
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of a flasher with defined stop behavior. It demonstrates how even
 
 ## Description and Components
 
-[cite_start]In `Uebung_007a3.SUB`, the flasher logic is manually constructed from a switch and memory to ensure full control over the reset process.[cite: 1]
+In `Uebung_007a3.SUB`, the flasher logic is manually constructed from a switch and memory to ensure full control over the reset process.
 
 ### Function Blocks (FBs)
 
@@ -38,8 +39,6 @@ Safety is achieved through a dual assignment of the stop signal:
 <!-- Die entscheidende Verbindung für die Sicherheit: -->
 <Connection Source="STOP.IND" Destination="E_SR.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. **Blinking Operation**: The `E_CYCLE` triggers the `E_SWITCH/E_SR` combination, resulting in periodic switching.
 2. **Shutdown**: When the user presses `STOP`, two things happen simultaneously:

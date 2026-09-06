@@ -24,7 +24,7 @@ Verwendung der RGB-Bibliothek für den ESP32. Es wird demonstriert, wie man Farb
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_031.SUB` nutzt einen Konvertierungsbaustein und einen Streifen-Treiber[cite: 1].
+Die Subapplikation `Uebung_031.SUB` nutzt einen Konvertierungsbaustein und einen Streifen-Treiber.
 
 ### Funktionsbausteine (FBs)
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_130`. It demonstrates the counterpart to sending: the targeted reception of manufacturer-specific messages
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `AlPgnRxNew8B`. It demonstrates how to listen for a spe
 
 ## Description and Components
 
-[cite_start]In `Uebung_130.SUB`, a receive filter for a manufacturer-specific PGN is configured[cite: 1].
+In `Uebung_130.SUB`, a receive filter for a manufacturer-specific PGN is configured.
 
 ### Function Blocks (FBs)
 

@@ -38,6 +38,7 @@ The network for this exercise is designed as a **task (TODO)**.
 1. Analyze the required inputs and outputs of `E_TABLE_CTRL`.
 
 - 1. Connect the necessary event and data lines according to the task description (implicitly given here by the "TODO").
+
 1. Configure the function block's parameters, if necessary.
 
 ## Summary

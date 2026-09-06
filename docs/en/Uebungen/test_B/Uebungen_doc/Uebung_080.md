@@ -19,13 +19,13 @@ Using the function block `E_CTU` (Event Count Up). It demonstrates how to record
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_080.SUB` uses a counter block with set and reset logic[cite: 1].
+The subapplication `Uebung_080.SUB` uses a counter block with set and reset logic.
 
 ### Function Blocks (FBs)
 
 - **`DigitalInput_I1` (Count)**: Each click increments the counter.
 - **`DigitalInput_I2` (Reset)**: Resets the counter to zero.
-- **`E_CTU`**: The counter block. [cite_start]The parameter `PV` (Preset Value) is set to 5[cite: 1].
+- **`E_CTU`**: The counter block. The parameter `PV` (Preset Value) is set to 5.
 - **`DigitalOutput_Q1`**: Displays the counter status.
 
 -----

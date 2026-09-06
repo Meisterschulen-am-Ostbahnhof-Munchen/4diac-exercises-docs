@@ -14,7 +14,7 @@ Verwendung des Bausteins `I_VDS` (Vehicle Direction and Speed).
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_073.SUB` werden die Radar-Geschwindigkeit (GBSD) und die GPS-Geschwindigkeit (VDS) parallel verarbeitet[cite: 1].
+In `Uebung_073.SUB` werden die Radar-Geschwindigkeit (GBSD) und die GPS-Geschwindigkeit (VDS) parallel verarbeitet.
 
 ### Funktionsbausteine (FBs)
 

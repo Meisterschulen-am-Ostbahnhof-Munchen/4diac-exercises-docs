@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_177_AX`, based on the provided data.
-
 # Exercise_177_AX: Example for AX_FB_R_TRIG (Rising Edge Detection)
 
 ![Uebung_177_AX_network](./Uebung_177_AX_network.svg)
@@ -57,6 +55,7 @@ The circuit flow is as follows:
 
 - When the button at I1 is pressed, `AX_FB_R_TRIG` detects the rising edge.
 - The trigger's output `Q` is briefly activated.
+
 1. **Time Control**: This signal is forwarded to the input `IN` of the timer `AX_TP`.
 2. **Output**: The timer activates its output `Q` for exactly **1 second** (`PT=T#1s`). This signal controls `DigitalOutput_Q1`.
 

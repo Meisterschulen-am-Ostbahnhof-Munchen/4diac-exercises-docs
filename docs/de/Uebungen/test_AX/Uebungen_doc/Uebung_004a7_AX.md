@@ -14,7 +14,7 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a7_AX.SUB` verwendet zwei Taster zum "Scharfschalten" (Rendezvous) und einen dritten zum expliziten Rücksetzen[cite: 1].
+Die Subapplikation `Uebung_004a7_AX.SUB` verwendet zwei Taster zum "Scharfschalten" (Rendezvous) und einen dritten zum expliziten Rücksetzen.
 
 ### Funktionsbausteine (FBs)
 
@@ -38,8 +38,6 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
     <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_REND.R"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  Um die Lampe (`Q1`) einzuschalten (oder umzuschalten), müssen `I1` und `I2` gedrückt werden (Rendezvous -> `CLK`).
 2.  Der Taster `I3` ist der "Not-Aus" oder "Alles Löschen". Er ist verbunden mit:

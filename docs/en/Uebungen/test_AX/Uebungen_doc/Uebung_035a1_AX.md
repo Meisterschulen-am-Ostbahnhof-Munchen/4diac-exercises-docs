@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_035a1_AX` based on the provided data.
-
 # Exercise_035a1_AX: Traffic Light Control with Pattern Sequencer (AX)
 
 ![Uebung_035a1_AX_network](./Uebung_035a1_AX_network.svg)
@@ -75,6 +73,7 @@ The `PatternSeq` block controls the traffic light phases based on the configured
 - **Phase 2 (Red-Yellow)**: Duration 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (binary `011`) activates `Q1` and `Q2` -> **Red and Yellow Lights**.
 - **Phase 3 (Green)**: Duration 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (binary `100`) activates `Q3` -> **Green Light**.
 - **Phase 4 (Yellow)**: Duration 1s (`DT_S4_S1`). Parameter `P_S4 = 2` (binary `010`) activates `Q2` -> **Yellow Light**.
+
 1. **Connections**:
 
 - The logic uses **adapter connections** (recognizable by the `logiBUS_QXA` type and the nested connections), which makes the wiring in the diagram clearer, as data and events are transmitted in bundles.

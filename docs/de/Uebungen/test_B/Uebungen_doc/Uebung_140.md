@@ -20,11 +20,11 @@ Verwendung des Bausteins `SYS_ONTIME`. Ziel ist es, die kumulierte Zeit zu erfas
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_140.SUB` nutzt einen speziellen Messbaustein zur Zeitüberwachung[cite: 1].
+Die Subapplikation `Uebung_140.SUB` nutzt einen speziellen Messbaustein zur Zeitüberwachung.
 
 ### Funktionsbausteine (FBs)
 
-  - **`SYS_ONTIME`**: Typ `logiBUS::signalprocessing::measurement::SYS_ONTIME`. [cite_start]Dieser Baustein misst die Zeit seit dem letzten Systemstart oder die kumulierte Gesamtzeit [je nach Implementierung](cite: 1).
+  - **`SYS_ONTIME`**: Typ `logiBUS::signalprocessing::measurement::SYS_ONTIME`. Dieser Baustein misst die Zeit seit dem letzten Systemstart oder die kumulierte Gesamtzeit [je nach Implementierung](cite: 1).
 
 -----
 

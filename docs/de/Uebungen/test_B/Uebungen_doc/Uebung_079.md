@@ -14,7 +14,7 @@ Erlernen der gesamten Palette an TECU-Schnittstellenbausteinen. Ein ISOBUS-Trakt
 
 ## Übersicht der Bausteine (FBs)
 
-[cite_start]In `Uebung_079.SUB` sind alle relevanten TECU-Eingangsbausteine platziert[cite: 1]:
+In `Uebung_079.SUB` sind alle relevanten TECU-Eingangsbausteine platziert:
 
 ![Uebung_079_network](./Uebung_079_network.svg)
 

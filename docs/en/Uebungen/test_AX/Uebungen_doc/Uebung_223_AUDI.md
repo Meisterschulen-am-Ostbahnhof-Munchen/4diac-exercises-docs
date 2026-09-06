@@ -72,11 +72,13 @@ At system startup (INITO of the input block Input_LD), the block `AUDI_UDINT_TO_
 - **CD** (Input I2): On a rising edge, the counter decrements by 1.
 - **R** (Input I3): On a rising edge, the counter is reset to 0.
 - **LD** (Input I4): On a rising edge, the counter is loaded to the current PV value (5).
+
 1. **Output Signals**
 
 - **QU** (Output Q1): Becomes HIGH when the counter reaches its maximum value (overflow).
 - **QD** (Output Q2): Becomes HIGH when the counter reaches its minimum value (underflow).
 - The current counter value (CV) is transmitted to the terminal (OutputNumber_N1) via the function block `Q_NumericValue_AUDI` and displayed numerically there.
+
 1. **Note on Debouncing**
 
 A comment on the network suggests inserting AX_D_FF blocks (T flip-flops) between the digital inputs and the counter to reduce the event rate by damping the rising edge. This is not implemented in this exercise but can be added if needed.

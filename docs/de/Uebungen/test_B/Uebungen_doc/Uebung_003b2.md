@@ -14,11 +14,11 @@ Das Ziel dieser Übung ist die effiziente Verwaltung einer großen Anzahl von Ha
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003b2.SUB` instanziiert 15 mal den spezialisierten Sub-Typ `Uebung_003b2_sub` (benannt `F1` bis `F15`)[cite: 1].
+Die Subapplikation `Uebung_003b2.SUB` instanziiert 15 mal den spezialisierten Sub-Typ `Uebung_003b2_sub` (benannt `F1` bis `F15`).
 
 ### Typisierte Sub-Applikation: `Uebung_003b2_sub`
 
-[cite_start]Dieser Baustein dient als universeller "Kanal-Treiber" für die Funk-zu-CAN-Kommunikation[cite: 2]. Er verfügt über folgende Parameter:
+Dieser Baustein dient als universeller "Kanal-Treiber" für die Funk-zu-CAN-Kommunikation. Er verfügt über folgende Parameter:
 
   - **`Input`**: Der Name der Funk-Taste (z.B. `Key_01`, `START`, `STOP`).
   - **`u8SAMember`**: Die CAN-Adresse des DataPanels (hier fest auf `MI_00` gesetzt).

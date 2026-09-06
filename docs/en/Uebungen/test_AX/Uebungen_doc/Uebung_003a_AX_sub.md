@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML data:
-
 # Exercise_003a_AX_sub: IX to QX (generic)
 
 ![Uebung_003a_AX_sub_network](./Uebung_003a_AX_sub_network.svg)
@@ -38,11 +36,13 @@ The flow within the sub-application is as follows:
 
 - The input `Input` (type: `logiBUS_DI_S`) determines which physical input (e.g., I1..I8) is to be read. This value is passed to the internal block `IX`.
 - The input `Output` (type: `logiBUS_DO_S`) determines which physical output (e.g., Q1..Q8) is to be switched. This value is passed to the internal block `QX`.
+
 1. **Signal Processing**:
 
 - The actual signal transmission takes place via an adapter connection.
 - The adapter output `IN` of the input block `IX` is directly connected to the adapter input `OUT` of the output block `QX`.
 - This direct connection mirrors the logical state of the configured input directly to the configured output.
+
 1. **Initialization**:
 
 - Both internal blocks (`IX` and `QX`) are permanently enabled because their `QI` inputs are fixed to `TRUE`.

@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_020j2_AX`, based on the provided XML data.
-
 # Exercise_020j2_AX: DigitalInput_I1 to DigitalOutput_Q1/2; 2xAX_TP; Pulse Shaping with SUB
 
 ![Uebung_020j2_AX_network](./Uebung_020j2_AX_network.svg)
@@ -59,6 +57,7 @@ The system reads the state of the digital input `Input_I1` via the function bloc
 - Two independent timers are started, their time values defined via parameters in the main network:
 - **Path 1**: Duration `T#800ms` (parameter `TQ1`).
 - **Path 2**: Duration `T#1200ms` (parameter `TQ2`).
+
 1. **Signal Output**:
 
 - The output `Q1` of the sub-application (800ms pulse) controls `DigitalOutput_Q1`.

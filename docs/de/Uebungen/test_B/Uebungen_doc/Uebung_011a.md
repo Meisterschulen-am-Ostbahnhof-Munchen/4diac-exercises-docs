@@ -14,7 +14,7 @@ Nutzung des `BUTTON_PRESS_REPEAT_DONE` Ereignisses zur Aktualisierung eines Anze
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_011a.SUB` wird ein Byte-Wert von einem Taster eingelesen und an eine numerische Anzeige am Terminal gesendet[cite: 1].
+In `Uebung_011a.SUB` wird ein Byte-Wert von einem Taster eingelesen und an eine numerische Anzeige am Terminal gesendet.
 
 ### Funktionsbausteine (FBs)
 

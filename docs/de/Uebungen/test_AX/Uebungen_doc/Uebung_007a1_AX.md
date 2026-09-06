@@ -14,7 +14,7 @@ Starten und Stoppen des Blinkers.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_007a1_AX.SUB` nutzt die Eingänge `START` und `STOP` des `E_CYCLE` Bausteins[cite: 1].
+Die Subapplikation `Uebung_007a1_AX.SUB` nutzt die Eingänge `START` und `STOP` des `E_CYCLE` Bausteins.
 
 ### Funktionsbausteine (FBs)
 

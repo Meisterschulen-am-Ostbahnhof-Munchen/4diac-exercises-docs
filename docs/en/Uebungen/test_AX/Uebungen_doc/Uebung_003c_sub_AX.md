@@ -1,5 +1,3 @@
-Here is the documentation for the sub-application `Uebung_003c_sub_AX` based on the provided data.
-
 # Exercise_003c_sub_AX: IX to QX (generic)
 
 <Bild der Übung, falls vorhanden>

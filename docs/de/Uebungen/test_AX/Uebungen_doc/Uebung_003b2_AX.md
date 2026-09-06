@@ -14,11 +14,11 @@ Das Ziel dieser Übung ist es, eine große Anzahl von gleichartigen Verbindungen
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003b2_AX.SUB` instanziiert 15 mal den Sub-Typ `Uebung_003b2_sub_AX` (hier als `F1` bis `F15` benannt)[cite: 1].
+Die Subapplikation `Uebung_003b2_AX.SUB` instanziiert 15 mal den Sub-Typ `Uebung_003b2_sub_AX` (hier als `F1` bis `F15` benannt).
 
 ### Sub-Komponente: `Uebung_003b2_sub_AX`
 
-[cite_start]Dieser Sub-Baustein verbindet einen Funkeingang (`Funk_IXA`) mit einem DataPanel-Ausgang (`DataPanel_MI_QXA`)[cite: 2]. Er verfügt über Parameter zur Konfiguration:
+Dieser Sub-Baustein verbindet einen Funkeingang (`Funk_IXA`) mit einem DataPanel-Ausgang (`DataPanel_MI_QXA`). Er verfügt über Parameter zur Konfiguration:
 
   - **`Input`**: Der Funk-Taster (z.B. `DigitalInput_Key_START`).
   - **`Output`**: Der physische Ausgang (z.B. `DigitalOutput_1B`).

@@ -14,11 +14,11 @@ Das Hauptziel ist die Demonstration der Skalierbarkeit durch Typisierung. Es wir
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003b.SUB` verwendet vier Instanzen des Typs `Uebung_003b_sub` (identisch zu `Uebung_003a_sub`), um vier I/O-Paare zu verknüpfen[cite: 1].
+Die Subapplikation `Uebung_003b.SUB` verwendet vier Instanzen des Typs `Uebung_003b_sub` (identisch zu `Uebung_003a_sub`), um vier I/O-Paare zu verknüpfen.
 
 ### Typisierte Sub-Applikation: `Uebung_003b_sub`
 
-[cite_start]Dieser Baustein kapselt die 1:1 Weiterleitung von einem digitalen Eingang (`IX`) zu einem digitalen Ausgang (`QX`)[cite: 2]. Er stellt zwei Parameter für die Konfiguration bereit:
+Dieser Baustein kapselt die 1:1 Weiterleitung von einem digitalen Eingang (`IX`) zu einem digitalen Ausgang (`QX`). Er stellt zwei Parameter für die Konfiguration bereit:
 
   - **`Input`**: Auswahl des physischen Eingangs (z.B. `Input_I1` bis `Input_I4`).
   - **`Output`**: Auswahl des physischen Ausgangs (z.B. `Output_Q1` bis `Output_Q4`).
@@ -49,8 +49,6 @@ Die Logik ist vollständig in den Sub-Applikationen gekapselt. Die Hauptanwendun
     <Parameter Name="Output" Value="Output_Q4"/>
 </SubApp>
 ```
-
-[cite_start][cite: 1]
 
 Jeder Kanal arbeitet völlig autark. Wenn an Eingang `I3` eine Änderung erkannt wird, reagiert ausschließlich die Instanz `F3` und schaltet den Ausgang `Q3`. Die anderen Kanäle bleiben davon unberührt.
 

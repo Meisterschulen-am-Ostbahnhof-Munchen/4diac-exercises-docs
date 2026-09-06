@@ -14,7 +14,7 @@ Verwendung von `BOOLS_TO_ARR08X` und `ARR08X_TO_BOOLS`.
 
 ## Beschreibung
 
-[cite_start]In `Uebung_054.SUB` werden vier Digitalsignale in ein Array (eine indizierte Liste von Werten) verpackt[cite: 1].
+In `Uebung_054.SUB` werden vier Digitalsignale in ein Array (eine indizierte Liste von Werten) verpackt.
 Im Gegensatz zur Struktur (wo jeder Kanal einen Namen hat, z.B. `X_00`) greift man bei einem Array über die Position (Index 0 bis 7) auf die Daten zu. Dies ist besonders vorteilhaft, wenn Signalpfade in Programmschleifen verarbeitet werden sollen.
 
 ![Uebung_054_network](./Uebung_054_network.svg)

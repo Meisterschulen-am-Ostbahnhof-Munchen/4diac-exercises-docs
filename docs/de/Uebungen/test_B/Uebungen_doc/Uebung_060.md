@@ -20,7 +20,7 @@ Anbindung an einen ISOBUS Task Controller (TC). Es wird demonstriert, wie die au
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_060.SUB` werden Sollwerte vom Task Controller empfangen und Istwerte zurückgemeldet[cite: 1].
+In `Uebung_060.SUB` werden Sollwerte vom Task Controller empfangen und Istwerte zurückgemeldet.
 
 ### Funktionsbausteine (FBs)
 

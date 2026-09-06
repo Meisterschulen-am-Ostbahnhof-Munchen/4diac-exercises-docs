@@ -14,7 +14,7 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a9_AX.SUB` verteilt das Signal eines Tasters auf drei separate Toggle-Flip-Flops und somit auf drei Ausgänge[cite: 1].
+Die Subapplikation `Uebung_004a9_AX.SUB` verteilt das Signal eines Tasters auf drei separate Toggle-Flip-Flops und somit auf drei Ausgänge.
 
 ### Funktionsbausteine (FBs)
 
@@ -37,8 +37,6 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
     <Connection Source="E_SPLIT_3.EO3" Destination="AX_T_FF_Q3.CLK"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 Ein einzelner Klick auf den Taster löst eine Kaskade aus:
 

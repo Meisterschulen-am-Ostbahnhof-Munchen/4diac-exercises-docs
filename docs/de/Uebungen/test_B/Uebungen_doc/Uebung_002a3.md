@@ -14,15 +14,15 @@ Das Hauptziel dieser Übung ist es, die Funktionsweise einer ODER-Verknüpfung i
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002a3.SUB` führt zwei digitale Eingangssignale über einen ODER-Logik-Baustein zusammen[cite: 1].
+Die Subapplikation `Uebung_002a3.SUB` führt zwei digitale Eingangssignale über einen ODER-Logik-Baustein zusammen.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_002a3_network](./Uebung_002a3_network.svg)
 
-  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IX`. [cite_start]Diese Bausteine erfassen die Zustände der physischen Eingänge `Input_I1` und `Input_I2`[cite: 1].
-  - **`OR_2`**: Eine Instanz des Typs `OR_2` (aus der IEC 61131-Bibliothek). [cite_start]Dieser Baustein führt die logische ODER-Operation aus. Er besitzt zwei Dateneingänge (`IN1`, `IN2`) und einen Datenausgang (`OUT`)[cite: 1]. Wie der AND-Baustein reagiert er auf ein Ereignis am Port `REQ` und quittiert dies mit `CNF`.
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein setzt den physischen Ausgang `Output_Q1` basierend auf dem Ergebnis der ODER-Verknüpfung[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IX`. Diese Bausteine erfassen die Zustände der physischen Eingänge `Input_I1` und `Input_I2`.
+  - **`OR_2`**: Eine Instanz des Typs `OR_2` (aus der IEC 61131-Bibliothek). Dieser Baustein führt die logische ODER-Operation aus. Er besitzt zwei Dateneingänge (`IN1`, `IN2`) und einen Datenausgang (`OUT`). Wie der AND-Baustein reagiert er auf ein Ereignis am Port `REQ` und quittiert dies mit `CNF`.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. Dieser Baustein setzt den physischen Ausgang `Output_Q1` basierend auf dem Ergebnis der ODER-Verknüpfung.
 
 -----
 
@@ -42,8 +42,6 @@ Die Logik wird durch die Verschaltung von Ereignis- und Datenverbindungen defini
     <Connection Source="OR_2.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
 

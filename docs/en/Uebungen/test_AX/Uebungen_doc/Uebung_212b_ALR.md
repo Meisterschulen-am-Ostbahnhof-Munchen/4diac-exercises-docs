@@ -98,6 +98,7 @@ This exercise implements a counting counter with terminal output. The connection
 
 - The counter's output `Q` is routed via `Output_Q1` to the digital output `Output_Q1`. This output becomes TRUE as soon as the counter reading is >= 5.
 - The current counter reading (`CV`) is converted to an LREAL value via `ALI_TO_ALR` and displayed on the terminal `OutputNumber_N3` via `Q_NumericValue_PHYSA_LREAL`.The counter reading is output. This allows the counter reading to be displayed in a visualization or on a screen.
+
 1. **Special Features**: A comment in the network indicates that negative counter readings are possible (e.g., due to overflow or incorrect usage). It is also recommended to insert an AX_D_FF block if necessary to reduce the number of events (especially with rapid counting pulses) and decrease the system load.
 
 **Learning Objectives**: Understanding the IEC 61131-3 counter (CTU) in the adapter version, working with constants and conversion blocks, connecting digital inputs and outputs as well as physical terminal outputs.

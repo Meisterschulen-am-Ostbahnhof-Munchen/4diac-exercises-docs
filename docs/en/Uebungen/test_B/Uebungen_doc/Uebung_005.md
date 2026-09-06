@@ -19,7 +19,7 @@ Understanding edge detection using event switches. This section demonstrates how
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_005.SUB` combines a standard input (`IX`) with an event gate to clock a flip-flop[cite: 1].
+The subapplication `Uebung_005.SUB` combines a standard input (`IX`) with an event gate to clock a flip-flop.
 
 ### Function Blocks (FBs)
 
@@ -40,8 +40,6 @@ The circuit uses the data connection from the input to the gate of the switch:
 <DataConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="E_SWITCH.G"/>
 </DataConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence:
 

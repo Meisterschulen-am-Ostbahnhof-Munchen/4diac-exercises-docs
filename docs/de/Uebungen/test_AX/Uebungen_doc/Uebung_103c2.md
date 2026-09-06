@@ -14,6 +14,6 @@ Variation der Modus-Selektion.
 
 ## Beschreibung
 
-[cite_start]Eine weitere Variante der MUX/DEMUX Übung[cite: 1]. Hier wird die interne Verschaltung der Pfade (z.B. `tastend2`) leicht variiert, um unterschiedliche Kombinationen zu testen.
+Eine weitere Variante der MUX/DEMUX Übung. Hier wird die interne Verschaltung der Pfade (z.B. `tastend2`) leicht variiert, um unterschiedliche Kombinationen zu testen.
 
 ![Uebung_103c2_network](./Uebung_103c2_network.svg)

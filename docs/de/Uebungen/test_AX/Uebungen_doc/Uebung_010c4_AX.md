@@ -18,7 +18,7 @@ Beweis der Wiederverwendbarkeit.
 
 ## Beschreibung
 
-[cite_start]Die Subapplikation `Uebung_010c4_AX.SUB` instanziiert den Typ `Uebung_010c4_sub_AX` (vermutlich identisch zu c3) zweimal[cite: 1].
+Die Subapplikation `Uebung_010c4_AX.SUB` instanziiert den Typ `Uebung_010c4_sub_AX` (vermutlich identisch zu c3) zweimal.
 
 -   Instanz 1: F1 auf Q1.
 -   Instanz 2: F2 auf Q2.

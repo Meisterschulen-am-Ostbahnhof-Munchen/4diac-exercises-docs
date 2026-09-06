@@ -63,6 +63,7 @@ A comment on the network points out that the conversion ``F_LINT_TO_UDINT`` is u
 - An input event of `Input_CD.IND` or `Input_LD.IND` triggers `REQ` of the counter `FB_CTD_LINT`.
 - After processing the counter (output `CNF`), the output `Output_Q1` (via `REQ`) and the conversion `F_LINT_TO_UDINT` (via `REQ`) are called simultaneously.
 - After the conversion (`CNF`) is complete, the terminal output `Q_NumericValue` (via `REQ`) is updated.
+
 1. **Data Connections**:
 
 - `Input_CD.IN` → `FB_CTD_LINT.CD`: The value of digital input I1 controls whether the counter counts down.
@@ -70,6 +71,7 @@ A comment on the network points out that the conversion ``F_LINT_TO_UDINT`` is u
 - `FB_CTD_LINT.Q` → `Output_Q1.OUT`: The counter's output signal is directly connected to digital output Q1.
 - `FB_CTD_LINT.CV` → `F_LINT_TO_UDINT.IN`: The current counter reading (LINT) is forwarded for conversion.
 - `F_LINT_TO_UDINT.OUT` → `Q_NumericValue.u32NewValue`: The converted value (UDINT) is sent to the terminal for display.
+
 1. **Note on Conversion**:
 
 Using `F_LINT_TO_UDINT` is not suitable for negative counter values, as the UDINT value range only includes non-negative numbers. With a negative counter value, an unexpected result will be displayed, or the conversion may fail. In practice, a different representation (e.g., signed) should be used.

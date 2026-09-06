@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_010c4_sub_AX` basierend auf den bereitgestellten XML-Inhalten.
-
 # Uebung_010c4_sub_AX: SoftKey_F1/_F2 auf DigitalOutput_Q1/_Q2 mit GreenWhiteBackground mit Typed Subapp
 
 ![Uebung_010c4_sub_AX_network](./Uebung_010c4_sub_AX_network.svg)

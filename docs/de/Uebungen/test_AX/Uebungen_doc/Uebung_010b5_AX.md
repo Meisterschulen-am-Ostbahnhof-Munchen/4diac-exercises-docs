@@ -18,4 +18,4 @@ Erweiterung auf 10 Kanäle.
 
 ## Beschreibung
 
-[cite_start]Identisch zu `Uebung_010b4_AX`, aber für 10 Softkeys (`F1` bis `F10`) auf 10 Ausgänge[cite: 1].
+Identisch zu `Uebung_010b4_AX`, aber für 10 Softkeys (`F1` bis `F10`) auf 10 Ausgänge.

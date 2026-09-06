@@ -51,6 +51,7 @@ The subapp operates in two main phases:
 - This immediately reads the stored value from the INI file.
 - The read value is passed via `VALUEO` to `Q_NumericValue_PHYS` and to the output of the subapp.
 - The event `GETO` is also sent to the output `IND` of the subapp.
+
 1. **Cyclic Operation (on Value Change)**:
 
 - `NumericValue_PHYS` captures a new physical value upon activation.

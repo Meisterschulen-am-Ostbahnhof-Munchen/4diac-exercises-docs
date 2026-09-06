@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006a_AX`. This exercise demonstrates a versatile component
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To become familiar with `AX_T_FF_SR`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a_AX.SUB` uses three pushbuttons[cite: 1].
+The subapplication `Uebung_006a_AX.SUB` uses three pushbuttons.
 
 ### Function Blocks (FBs)
 

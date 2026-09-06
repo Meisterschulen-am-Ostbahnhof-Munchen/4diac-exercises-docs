@@ -14,7 +14,7 @@ Ansteuerung eines Rampen-Bausteins (`RampLimitFS`). Es wird gezeigt, wie verschi
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_009a.SUB` nutzt einen Rampen-Baustein zur stufenlosen Steuerung eines numerischen Werts zwischen 0 und 100[cite: 1].
+Die Subapplikation `Uebung_009a.SUB` nutzt einen Rampen-Baustein zur stufenlosen Steuerung eines numerischen Werts zwischen 0 und 100.
 
 ### Funktionsbausteine (FBs)
 

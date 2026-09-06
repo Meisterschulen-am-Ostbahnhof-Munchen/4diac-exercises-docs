@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006a`. It uses a highly flexible memory module that combines three different operating modes
+
 ----
 
 ![Schematic of Exercise 006a Combined Flip-Flop](Uebung_006a.png)
@@ -14,7 +15,7 @@ Introduction of the `E_T_FF_SR` module. This module combines the functions of a 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a.SUB` links three separate pushbuttons to a central memory element[cite: 1].
+The subapplication `Uebung_006a.SUB` links three separate pushbuttons to a central memory element.
 
 ### Function Blocks (FBs)
 

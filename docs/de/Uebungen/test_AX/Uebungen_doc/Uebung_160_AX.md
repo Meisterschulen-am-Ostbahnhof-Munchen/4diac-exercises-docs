@@ -14,7 +14,7 @@ Kombination von Einzelausgängen und einer Sammelmeldung.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_160_AX.SUB` steuert zwei Drehrichtungen und einen gemeinsamen Status-Ausgang[cite: 1].
+Die Subapplikation `Uebung_160_AX.SUB` steuert zwei Drehrichtungen und einen gemeinsamen Status-Ausgang.
 
 ### Funktionsbausteine (FBs)
 

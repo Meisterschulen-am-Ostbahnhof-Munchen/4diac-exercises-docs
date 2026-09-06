@@ -14,7 +14,7 @@ Das Ziel ist die Reduktion der visuellen Komplexität. Es wird demonstriert, das
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a3_AX.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops[cite: 1].
+Die Subapplikation `Uebung_004a3_AX.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops.
 
 ### Funktionsbausteine (FBs)
 
@@ -36,8 +36,6 @@ Der Baustein `E_MERGE` fehlt hier bewusst.
     <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_T_FF.CLK"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 Die Funktionsweise ist identisch zur Übung mit `E_MERGE`:
 Jedes eintreffende Event an `E_T_FF.CLK` – egal ob von `I1` oder `I2` kommend – triggert die Ausführung des Funktionsbausteins. Die 4diac IDE und Runtime unterstützen diese "Fan-In"-Verbindungen für Events.

@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_160b_AX` based on the provided XML data.
-
 # Exercise_160b_AX: Motor Forward/Reverse Automation IE
 
 ![Uebung_160b_AX_network](./Uebung_160b_AX_network.svg)
@@ -66,11 +64,13 @@ The network implements a latched control with the following sequence:
 - The signal from `AX_SR_A` is split by **AX_SPLIT_2_A**:
 - One path directly activates **DigitalOutput_Q5**.
 - The second path goes to the OR gate **AX_OR_2**, which activates **DigitalOutput_Q56** (power indicator).
+
 1. **Switch/Stop Left (I2):**
 
 - The event `BUTTON_PRESS_DOWN` at **Input_I2** has two functions:
 - It resets **AX_SR_A**. The motor at Q5 stops immediately.
 - Simultaneously, it starts the timer **E_DELAY**.
+
 1. **Start Motor Right (Q6) (Delayed):**
 
 - After the delay (50ms) set by **E_DELAY**, the event `EO` is triggered.
@@ -78,6 +78,7 @@ The network implements a latched control with the following sequence:
 - The signal from `AX_SR_B` is split by **AX_SPLIT_2_B**:
 - One path goes to the OR gate **AX_OR_2** and keeps **DigitalOutput_Q56** active.
 - The second path activates **DigitalOutput_Q6**.
+
 1. **Stop Right Motor (I3):**
 
 - The event `BUTTON_PRESS_DOWN` at **Input_I3** resets **AX_SR_B**. The motor at Q6 stops and Q56 goes out (unless Q5 is active).

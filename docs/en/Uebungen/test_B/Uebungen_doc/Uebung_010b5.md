@@ -11,4 +11,4 @@ This article describes the logiBUS® exercise `Uebung_010b5`.
 
 ## Overview
 
-[cite_start]Extension of the previous exercise to a total of 10 parallel softkey channels[cite: 1]. Each sub-application encapsulates the logic for exactly one softkey (F1 to F10).
+Extension of the previous exercise to a total of 10 parallel softkey channels. Each sub-application encapsulates the logic for exactly one softkey (F1 to F10).

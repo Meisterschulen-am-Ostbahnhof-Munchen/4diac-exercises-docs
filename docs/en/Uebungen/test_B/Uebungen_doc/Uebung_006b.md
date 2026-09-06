@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006b`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Understanding reset priority.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006b.SUB` uses a function block `E_RS`[cite: 1].
+The subapplication `Uebung_006b.SUB` uses a function block `E_RS`.
 
 ### Function Blocks (FBs)
 

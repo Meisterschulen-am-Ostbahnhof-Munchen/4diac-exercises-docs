@@ -45,10 +45,12 @@ The flow within the subapplication is as follows:
 
 - `AX_SPLIT_2.OUT1` → connected to `AX_TP_Q1.IN`
 - `AX_SPLIT_2.OUT2` → connected to `AX_TP_Q2.IN`
+
 1. Simultaneously, the time values are passed from the data parameters of the subapplication:
 
 - `TQ1` (data input of the subapplication) → `AX_TP_Q1.PT`
 - `TQ2` (data input of the subapplication) → `AX_TP_Q2.PT`
+
 1. Each timer generates an output event after its respective time has elapsed:
 
 - `AX_TP_Q1.Q` → connected to adapter output `Q1`

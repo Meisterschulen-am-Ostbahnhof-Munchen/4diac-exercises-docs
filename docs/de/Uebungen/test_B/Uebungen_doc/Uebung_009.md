@@ -14,14 +14,14 @@ Erlernen der ereignisbasierten Zählung (`E_CTUD`) und der Darstellung von Werte
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_009.SUB` wird ein Taktgeber genutzt, um einen Aufwärtszähler anzusteuern, dessen Wert an ein ISOBUS-Terminal gesendet wird[cite: 1].
+In `Uebung_009.SUB` wird ein Taktgeber genutzt, um einen Aufwärtszähler anzusteuern, dessen Wert an ein ISOBUS-Terminal gesendet wird.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_009_network](./Uebung_009_network.svg)
 
   - **`E_CYCLE` & `E_SR`**: Erzeugen einen permanenten Takt (wie in Übung 008).
-  - **`E_PERMIT`**: Ein Ereignis-Gatter. [cite_start]Es lässt Ereignisse am Eingang `EI` nur dann zum Ausgang `EO` durch, wenn der Dateneingang `PERMIT` auf `TRUE` steht[cite: 1].
+  - **`E_PERMIT`**: Ein Ereignis-Gatter. Es lässt Ereignisse am Eingang `EI` nur dann zum Ausgang `EO` durch, wenn der Dateneingang `PERMIT` auf `TRUE` steht.
   - **`E_CTUD_UDINT`**: Ein Vorwärts-/Rückwärtszähler für große Ganzzahlen.
   - **`Q_NumericValue`**: Ein ISOBUS-Ausgangsbaustein zur Anzeige einer Zahl auf dem Bildschirm.
 

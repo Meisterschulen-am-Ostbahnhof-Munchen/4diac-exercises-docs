@@ -70,6 +70,7 @@ The exercise proceeds as follows:
 
 - `DigitalInput_I1.IN` → `ILOCK_BLOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_BLOCK_AX.DOWN_IN`
+
 1. The interlock logic is executed in `ILOCK_BLOCK_AX`:
 
 - When `UP_IN` is activated, `UP_OUT` is set to TRUE and `DOWN_OUT` is set to FALSE.
@@ -77,10 +78,12 @@ The exercise proceeds as follows:
 - When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
 
 - If both inputs are active simultaneously, the internal logic ensures a defined priority (usually the one detected first).
+
 1. The output adapters of the interlock block are connected to the output modules:
 
 - `ILOCK_BLOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_BLOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
+
 1. The output modules forward the signals to the physical outputs `Output_Q1` and `Output_Q2`.
 
 **Learning Objectives:**

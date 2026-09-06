@@ -1,5 +1,3 @@
-Here is the generated documentation based on the provided XML code:
-
 # Exercise_039_sub_NumbDisplay: Mirror Sequence V2 with Step Chain SUB Num
 
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)

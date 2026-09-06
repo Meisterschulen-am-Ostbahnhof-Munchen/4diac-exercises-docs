@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_132`.
 
 ## Übersicht
 
-[cite_start]In dieser Übung wird der Baustein `AlPgnRxNew8B_REQ` verwendet[cite: 1].
+In dieser Übung wird der Baustein `AlPgnRxNew8B_REQ` verwendet.
 
 ![Uebung_132_network](./Uebung_132_network.svg)
 

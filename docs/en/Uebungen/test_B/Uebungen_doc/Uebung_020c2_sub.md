@@ -4,7 +4,7 @@
 
 ## Overview
 
-[cite_start]This sub-app type is a specialized version of `Uebung_012a_sub`, optimized for managing numerical time values at the ISOBUS terminal[cite: 1]. It handles all the logic from user input and power-failure-proof storage to the continuous provision of the value for subsequent timers (as shown in Exercise 020c2).
+This sub-app type is a specialized version of `Uebung_012a_sub`, optimized for managing numerical time values at the ISOBUS terminal. It handles all the logic from user input and power-failure-proof storage to the continuous provision of the value for subsequent timers (as shown in Exercise 020c2).
 
 ## 🛠️ Related Exercises
 

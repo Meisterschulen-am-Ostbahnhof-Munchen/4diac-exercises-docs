@@ -24,7 +24,7 @@ Verwendung eines `Softkey`-Bausteins zur direkten Steuerung eines digitalen Ausg
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010.SUB` verbindet eine Softkey-Instanz mit einem Standard-Ausgangsbaustein[cite: 1].
+Die Subapplikation `Uebung_010.SUB` verbindet eine Softkey-Instanz mit einem Standard-Ausgangsbaustein.
 
 ### Funktionsbausteine (FBs)
 
@@ -49,8 +49,6 @@ Die Kommunikation erfolgt über die standardmäßige Trennung von Trigger und We
     <Connection Source="SoftKey_F1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 Wenn der Bediener den Softkey am Terminal drückt:
 

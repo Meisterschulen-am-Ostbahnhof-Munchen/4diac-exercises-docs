@@ -85,10 +85,12 @@ The blinker operates event-driven according to the following scheme:
 
 - If the state `false` (flip-flop reset) is reached, an event is output to `EO0`.
 - If the state `true` (flip-flop set) is reached, an event is output to `EO1`.
+
 1. **SR Flip-Flop**:
 
 - An event from `AX_SWITCH.EO0` reaches the set input `S` of `AX_SR`. This sets the flip-flop → output `Q` becomes `true`.
 - An event from `AX_SWITCH.EO1` reaches the reset input `R` of `AX_SR`. This resets the flip-flop → output `Q` becomes `false`.
+
 1. **Output**: The state `Q` is distributed to two paths via `AX_SPLIT_2`:
 
 - `OUT1` → Feedback to `AX_AE_MERGE` (as described)

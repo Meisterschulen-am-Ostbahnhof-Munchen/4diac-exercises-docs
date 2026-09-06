@@ -100,6 +100,7 @@ After the counter is processed, the event `CNF` is triggered. This triggers two 
 
 - `Output_Q1.REQ` – the digital output Q1 is set by the value of `FB_CTU_DINT.Q`.
 - `F_DINT_TO_UDINT.REQ` – the current counter value (CV) is converted from `DINT` to `UDINT`.
+
 1. **Terminal Output:**
 
 The converted number (`UDINT`) is passed to the function block `Q_NumericValue`, which is triggered after the conversion event `CNF`. This updates the value on the terminal (e.g., control panel) with the object ID `OutputNumber_N1`.

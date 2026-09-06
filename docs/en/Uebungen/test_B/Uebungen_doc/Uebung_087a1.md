@@ -41,10 +41,12 @@ This exercise demonstrates the use of the E_DEMUX_4 function block in a control 
 
 - Three digital inputs (I2, I3, I4) are converted to UINT values via F_BOOL_TO_UINT
 - A dedicated clock input (CLK_I1) with single-click detection
+
 1. **Calculation**:
 
 - The three UINT values are summed in the ADD_3 block
 - The result determines the output channel of E_DEMUX_4
+
 1. **Event Distribution**:
 
 - E_DEMUX_4 distributes the clock event to one of four outputs based on the sum:
@@ -52,6 +54,7 @@ This exercise demonstrates the use of the E_DEMUX_4 function block in a control 
 - 1 active button → Q2
 - 2 active buttons → Q3
 - 3 active buttons → Q4
+
 1. **Output Control**:
 
 - Four T flip-flops (E_T_FF) switch the corresponding outputs (Q1-Q4) on each clock event.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_007a1`. Here, the exercise attempts to switch the flasher from exercise 007 on and off using external pushbuttons
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Controlling a clock generator using start and stop events.
 
 ## Description and components
 
-[cite_start]In `Uebung_007a1.SUB`, the control inputs of the `E_CYCLE` block are used[cite: 1].
+In `Uebung_007a1.SUB`, the control inputs of the `E_CYCLE` block are used.
 
 ### Function Blocks (FBs)
 

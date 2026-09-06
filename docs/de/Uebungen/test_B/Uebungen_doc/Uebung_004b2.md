@@ -14,7 +14,7 @@ Vertiefung des Verständnisses für parallele, rückgekoppelte Logikstrukturen. 
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_004b2.SUB` sind zwei identische Logik-Stränge (Switch + Speicher) nebeneinander aufgebaut[cite: 1].
+In `Uebung_004b2.SUB` sind zwei identische Logik-Stränge (Switch + Speicher) nebeneinander aufgebaut.
 
 ### Funktionsbausteine (FBs)
 
@@ -36,7 +36,5 @@ Die beiden Kanäle arbeiten nach dem gleichen Prinzip wie in Übung 004b: Der Au
 <Connection Source="E_SWITCH_I1.EO1" Destination="E_SR_I1.R"/>
 <Connection Source="E_SR_I1.Q" Destination="E_SWITCH_I1.G"/>
 ```
-
-[cite_start][cite: 1]
 
 Da keine Querverbindungen zwischen den Strängen existieren, beeinflusst die Bedienung von Taster 1 niemals den Zustand von Lampe 2 und umgekehrt.

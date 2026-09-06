@@ -14,14 +14,14 @@ Das Hauptziel dieser Übung ist es, zu zeigen, wie Ereignis- und Datenverbindung
 
 ## Beschreibung und Komponenten
 
-[cite_start]In der Subapplikation `Uebung_002.SUB` wird ein digitaler Eingang eingelesen und direkt an zwei digitale Ausgänge weitergereicht[cite: 1].
+In der Subapplikation `Uebung_002.SUB` wird ein digitaler Eingang eingelesen und direkt an zwei digitale Ausgänge weitergereicht.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_002_network](./Uebung_002_network.svg)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
-  - **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QX`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. Dieser Baustein liest den Hardware-Eingang `Input_I1`.
+  - **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QX`. Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`.
 
 -----
 
@@ -39,8 +39,6 @@ Die Signalverteilung wird durch das Ziehen von jeweils zwei Verbindungen von der
     <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q2.OUT"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der Signalweg verläuft dabei in folgenden Schritten:
 

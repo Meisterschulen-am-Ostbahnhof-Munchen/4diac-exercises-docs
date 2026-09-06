@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020h`.
 
 ## Übersicht
 
-[cite_start]Diese Übung zeigt die Ansteuerung des Bausteins `E_PULSE` durch einen Ereignis-Eingang (`logiBUS_IE`)[cite: 1].
+Diese Übung zeigt die Ansteuerung des Bausteins `E_PULSE` durch einen Ereignis-Eingang (`logiBUS_IE`).
 Jeder erkannte Einzelklick am Taster löst am Ausgang einen exakt 5 Sekunden langen Impuls aus. Da `E_PULSE` ein reiner Event-Baustein ist, benötigt er kein dauerhaftes Datensignal am Eingang, sondern nur den Start-Trigger.
 
 ![Uebung_020h_network](./Uebung_020h_network.svg)

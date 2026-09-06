@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006_AX`. Here, the classic RS gate (memory gate) is implemented
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of a circuit with separate pushbuttons for "On" and "Off".
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006_AX.SUB` uses two pushbuttons and one `AX_SR` block[cite: 1].
+The sub-application `Uebung_006_AX.SUB` uses two pushbuttons and one `AX_SR` block.
 
 ### Function Blocks (FBs)
 

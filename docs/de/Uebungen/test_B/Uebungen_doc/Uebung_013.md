@@ -24,7 +24,7 @@ Realisierung einer Ein/Aus-Schaltung mit getrennten virtuellen Tasten.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_013.SUB` nutzt zwei Softkeys zur Steuerung eines SR-Flip-Flops[cite: 1].
+Die Subapplikation `Uebung_013.SUB` nutzt zwei Softkeys zur Steuerung eines SR-Flip-Flops.
 
 ### Funktionsbausteine (FBs)
 

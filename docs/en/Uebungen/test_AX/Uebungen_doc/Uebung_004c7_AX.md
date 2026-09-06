@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004c7_AX`. Here, `logiBUS_IE2` is also used to adjust the duration for a "long press"
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Definition of a specific hold time.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c7_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_LONG_PRESS_START` and `arg = 3000` [ms](cite: 1).
+The subapplication `Uebung_004c7_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_LONG_PRESS_START` and `arg = 3000` [ms](cite: 1).
 
 -----
 

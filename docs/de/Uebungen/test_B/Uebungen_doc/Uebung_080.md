@@ -20,13 +20,13 @@ Verwendung des Bausteins `E_CTU` (Event Count Up). Es wird gezeigt, wie man eine
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_080.SUB` nutzt einen Zählerbaustein mit Set- und Reset-Logik[cite: 1].
+Die Subapplikation `Uebung_080.SUB` nutzt einen Zählerbaustein mit Set- und Reset-Logik.
 
 ### Funktionsbausteine (FBs)
 
   - **`DigitalInput_I1` (Count)**: Jeder Klick erhöht den Zähler.
   - **`DigitalInput_I2` (Reset)**: Setzt den Zählerstand auf Null zurück.
-  - **`E_CTU`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` (Preset Value) ist auf 5 eingestellt[cite: 1].
+  - **`E_CTU`**: Der Zähler-Baustein. Der Parameter `PV` (Preset Value) ist auf 5 eingestellt.
   - **`DigitalOutput_Q1`**: Zeigt den Status des Zählers an.
 
 -----

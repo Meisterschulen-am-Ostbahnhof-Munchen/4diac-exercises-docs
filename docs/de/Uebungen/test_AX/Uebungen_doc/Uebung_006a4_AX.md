@@ -14,7 +14,7 @@ Nutzung von Bibliotheken ("Don't reinvent the wheel").
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a4_AX.SUB` ersetzt das komplexe Netzwerk aus Gatter und SubApp der vorherigen Übung durch den Baustein `LinksRechts_AX`[cite: 1].
+Die Subapplikation `Uebung_006a4_AX.SUB` ersetzt das komplexe Netzwerk aus Gatter und SubApp der vorherigen Übung durch den Baustein `LinksRechts_AX`.
 
 ### Funktionsbausteine (FBs)
 

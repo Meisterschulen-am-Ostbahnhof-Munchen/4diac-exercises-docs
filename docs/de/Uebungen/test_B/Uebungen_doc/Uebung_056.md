@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_056`. Hier wird das Quart
 
 ## Übersicht
 
-[cite_start]Die Subapplikation `Uebung_056.SUB` zeigt eine vollständige Diagnose-Pipeline[cite: 1]:
+Die Subapplikation `Uebung_056.SUB` zeigt eine vollständige Diagnose-Pipeline:
 
 ![Uebung_056_network](./Uebung_056_network.svg)
 

@@ -108,10 +108,12 @@ The following description explains the signal flow within the subapplication.
 
 - The `E_CYCLE` generates an event at its output `EO` every 10 ms.
 - This event is fed to the input `EI` of the `E_SPLIT_4`. The splitter distributes the event to all four outputs (`EO1` to `EO4`).
+
 1. **Combination**
 
 - The four outputs of the splitter are connected to the four inputs (`EI1` to `EI4`) of the `E_MERGE_4`. This ensures that every event, regardless of the path it takes, is immediately forwarded to the output `EO` of the merger.
 - The connection from the splitter to the merger via all four paths serves here purely as passthrough (redundancy), but could be used for future expansions.
+
 1. **Toggle Flip-Flop**
 
 - The output event of `E_MERGE_4` is fed to the clock input `CLK` of `E_T_FF`.

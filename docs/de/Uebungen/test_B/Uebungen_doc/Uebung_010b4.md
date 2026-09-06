@@ -12,4 +12,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b4`.
 
 ## Übersicht
 
-[cite_start]Diese Übung demonstriert das Massen-Mapping von 8 ISOBUS-Softkeys auf 8 Hardware-Ausgänge unter Verwendung von untypisierten Sub-Applikationen (`Uebung_010b4_sub`)[cite: 1]. Dies sorgt für ein extrem aufgeräumtes Hauptdiagramm bei gleichzeitig hoher Kanalanzahl.
+Diese Übung demonstriert das Massen-Mapping von 8 ISOBUS-Softkeys auf 8 Hardware-Ausgänge unter Verwendung von untypisierten Sub-Applikationen (`Uebung_010b4_sub`). Dies sorgt für ein extrem aufgeräumtes Hauptdiagramm bei gleichzeitig hoher Kanalanzahl.

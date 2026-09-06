@@ -4,7 +4,7 @@
 
 ## Overview
 
-[cite_start]This sub-app type is identical to `Uebung_003a_sub` and serves to demonstrate the multiple use of the same logical pattern for different exercise scenarios[cite: 1]. It encapsulates the direct connection between hardware input and hardware output.
+This sub-app type is identical to `Uebung_003a_sub` and serves to demonstrate the multiple use of the same logical pattern for different exercise scenarios. It encapsulates the direct connection between hardware input and hardware output.
 
 ## 🛠️ Related Exercises
 

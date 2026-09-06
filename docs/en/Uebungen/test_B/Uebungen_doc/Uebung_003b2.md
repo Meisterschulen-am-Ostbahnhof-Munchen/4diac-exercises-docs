@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003b2`. This exercise demonstrates the system's scalability by mapping 15 buttons of a wireless remote control to 15 digital outputs of a DataPanel
+
 ----
 
 ## Objective of the Exercise
@@ -10,11 +11,11 @@ The objective of this exercise is the efficient management of a large number of 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003b2.SUB` instantiates the specialized subtype `Uebung_003b2_sub` (named `F1` to `F15`) 15 times [cite: 1].
+The subapplication `Uebung_003b2.SUB` instantiates the specialized subtype `Uebung_003b2_sub` (named `F1` to `F15`) 15 times .
 
 ### Typed Subapplication: `Uebung_003b2_sub`
 
-[cite_start]This component serves as a universal "channel driver" for radio-to-CAN communication [cite: 2]. It has the following parameters:
+This component serves as a universal "channel driver" for radio-to-CAN communication . It has the following parameters:
 
 - **`Input`**: The name of the radio button (e.g., `Key_01`, `START`, `STOP`).
 - **`u8SAMember`**: The CAN address of the DataPanel (here fixed to `MI_00`).

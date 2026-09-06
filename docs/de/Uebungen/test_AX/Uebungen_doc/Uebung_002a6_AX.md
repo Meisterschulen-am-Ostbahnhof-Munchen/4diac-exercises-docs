@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist die Umsetzung einer komplexeren Bedingungslogik.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002a6_AX.SUB` nutzt einen 3-fach-UND-Baustein, um drei digitale Eingänge mit einem Ausgang zu verknüpfen[cite: 1].
+Die Subapplikation `Uebung_002a6_AX.SUB` nutzt einen 3-fach-UND-Baustein, um drei digitale Eingänge mit einem Ausgang zu verknüpfen.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,13 +22,13 @@ Folgende Bausteine werden verwendet:
 
 ![Uebung_002a6_AX_network](./Uebung_002a6_AX_network.svg)
 
-  - **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese erfassen die Zustände der physischen Eingänge `Input_I1` bis `Input_I3`[cite: 1].
-  - **`AX_AND_3`**: Eine Instanz des Typs `AX_AND_3`. [cite_start]Dieser Baustein führt die logische UND-Operation für drei Adapter-Eingänge (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
+  - **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. Diese erfassen die Zustände der physischen Eingänge `Input_I1` bis `Input_I3`.
+  - **`AX_AND_3`**: Eine Instanz des Typs `AX_AND_3`. Dieser Baustein führt die logische UND-Operation für drei Adapter-Eingänge (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Wie in den vorherigen Übungen wird der Adapter-Typ `AX` verwendet, um Ereignisse und Datenwerte gekapselt durch die Logik zu leiten[cite: 2].
+Wie in den vorherigen Übungen wird der Adapter-Typ `AX` verwendet, um Ereignisse und Datenwerte gekapselt durch die Logik zu leiten.
 
 -----
 
@@ -44,8 +44,6 @@ Die Logik wird durch die Verschaltung der drei Eingangsbausteine mit dem UND-Log
     <Connection Source="AX_AND_3.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 

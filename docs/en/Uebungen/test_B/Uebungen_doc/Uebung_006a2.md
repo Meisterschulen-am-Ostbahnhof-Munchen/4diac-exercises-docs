@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006a2`
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Implementation of a "central off" function for multiple independent memory eleme
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a2.SUB` controls two separate lamps (`Q1`, `Q2`) via two pushbuttons (`I1`, `I2`), which can be reset together by a third pushbutton (`I3`)[cite: 1].
+The subapplication `Uebung_006a2.SUB` controls two separate lamps (`Q1`, `Q2`) via two pushbuttons (`I1`, `I2`), which can be reset together by a third pushbutton (`I3`).
 
 ### Function Blocks (FBs)
 

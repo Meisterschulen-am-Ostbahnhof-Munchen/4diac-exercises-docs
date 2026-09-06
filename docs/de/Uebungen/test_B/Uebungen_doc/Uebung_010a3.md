@@ -14,7 +14,7 @@ Umgang mit zustandshaltenden Bedienelementen des Universal Terminals.
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_010a3.SUB` wird ein `Button_L1` (Latching) verwendet[cite: 1].
+In `Uebung_010a3.SUB` wird ein `Button_L1` (Latching) verwendet.
 
 -----
 

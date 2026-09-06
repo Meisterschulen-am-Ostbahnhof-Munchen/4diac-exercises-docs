@@ -14,7 +14,7 @@ Die Sequenzer-Bausteine ermöglichen die Implementierung von Schrittketten (Sequ
 
 Diese Bausteine schalten zum nächsten Schritt, wenn entweder ein externes Ereignis (`S1_S2`, `S2_S3`, etc.) eintritt oder eine definierte Zeit (`DT_S*_S*`) abgelaufen ist.
 
-### Verfügbare Typen
+### Verfügbare Typen (Event-gesteuert)
 
 - `sequence_ET_04_AX`: 4 Schritte, 4 Ausgänge.
 - `sequence_ET_04_loop_AX`: 4 Schritte, zyklisch (loop).
@@ -29,7 +29,7 @@ Diese Bausteine schalten zum nächsten Schritt, wenn entweder ein externes Ereig
 
 Diese Bausteine schalten automatisch nach Ablauf der für den jeweiligen Schritt definierten Zeit weiter.
 
-### Verfügbare Typen
+### Verfügbare Typen (Zeit-gesteuert)
 
 - `sequence_T_04_AX`: 4 Schritte, zeitgesteuert.
 - `sequence_T_04_loop_AX`: 4 Schritte, zyklisch.
@@ -44,7 +44,7 @@ Diese Bausteine schalten automatisch nach Ablauf der für den jeweiligen Schritt
 
 Die Pattern-Sequenzer (`sequence_Pattern_xx_AX`) ermöglichen es, für jeden Schritt ein individuelles Bitmuster (Pattern) für die Ausgänge zu definieren. Dies ist ideal für Anwendungen, bei denen in einem Schritt mehrere Aktoren gleichzeitig in bestimmten Mustern geschaltet werden müssen.
 
-### Verfügbare Typen
+### Verfügbare Typen (Pattern)
 
 - **[sequence_Pattern_04_04_loop_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX/)**: 4 Schritte, 4 Ausgänge, zyklisch.
 - **[sequence_Pattern_08_08_loop_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX/)**: 8 Schritte, 8 Ausgänge, zyklisch.
@@ -65,7 +65,7 @@ Beim Übergang in einen neuen Zustand wird das entsprechende Muster sofort an di
 
 Im Gegensatz zur `ET`-Serie besitzen diese Bausteine **keine integrierte Zeitüberwachung**. Ein Weiterschalten erfolgt ausschließlich durch externe Ereignis-Signale.
 
-### Verfügbare Typen
+### Verfügbare Typen (Event, ohne Zeitüberwachung)
 
 - `sequence_E_04_AX`: 4 Schritte.
 - `sequence_E_04_loop_AX`: 4 Schritte, zyklisch.

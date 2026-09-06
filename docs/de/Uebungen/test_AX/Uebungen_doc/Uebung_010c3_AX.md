@@ -14,7 +14,7 @@ Wiederverwendbarkeit durch Typisierung.
 
 ## Beschreibung
 
-[cite_start]Hier wurde aus der untypisierten SubApp ein echter Typ `Uebung_010c3_sub_AX` erstellt[cite: 1].
+Hier wurde aus der untypisierten SubApp ein echter Typ `Uebung_010c3_sub_AX` erstellt.
 Er hat Parameter `u16ObjId` (welcher Softkey?) und `Output` (welcher Ausgang?).
 
 -----

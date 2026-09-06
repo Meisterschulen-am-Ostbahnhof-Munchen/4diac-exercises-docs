@@ -3,6 +3,7 @@
 ![Training_02_OPC_UA_RES_network](./Training_02_OPC_UA_RES_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `Training_02_OPC_UA_RES` zeigt das Grundmuster `Input_I1` → `Output_Q1` aus
@@ -120,4 +121,4 @@ dotted-path-Adapterverbindung über die Mapping-Grenze hinweg verknüpft.
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

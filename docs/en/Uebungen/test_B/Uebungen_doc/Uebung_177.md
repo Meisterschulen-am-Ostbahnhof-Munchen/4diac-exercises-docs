@@ -1,5 +1,3 @@
-Here is the documentation for Exercise 177, based on the provided data.
-
 # Exercise_177: Example for FB_R_TRIG (Rising Edge Detection)
 
 ![Uebung_177_network](./Uebung_177_network.svg)
@@ -37,6 +35,7 @@ The control process is as follows:
 - 1. **Time Control**:
 - The short-term signal from `FB_R_TRIG.Q` triggers the input `IN` of the timer `E_TP`.
 - The timer `E_TP` then starts a pulse. Its output `Q` is set to TRUE for a duration of 1 second (`PT=T#1s`), regardless of whether the input signal is still present at the button or not.
+
 1. **Output**:
 
 - The state of the timer (`E_TP.Q`) is passed to `DigitalOutput_Q1.OUT`.

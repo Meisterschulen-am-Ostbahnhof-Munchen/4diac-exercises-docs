@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_12x_sub` basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_12x_sub: Subapplication Type
 
 * * * * * * * * * *

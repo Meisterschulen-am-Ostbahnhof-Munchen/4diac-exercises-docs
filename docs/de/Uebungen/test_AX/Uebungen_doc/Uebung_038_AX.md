@@ -14,7 +14,7 @@ Realisierung einer automatischen Abfolge von 8 Schritten.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_038_AX.SUB` verwendet einen Sequenzer-Baustein, um 8 Ausgänge nacheinander zu schalten[cite: 1].
+Die Subapplikation `Uebung_038_AX.SUB` verwendet einen Sequenzer-Baustein, um 8 Ausgänge nacheinander zu schalten.
 
 ### Funktionsbausteine (FBs)
 

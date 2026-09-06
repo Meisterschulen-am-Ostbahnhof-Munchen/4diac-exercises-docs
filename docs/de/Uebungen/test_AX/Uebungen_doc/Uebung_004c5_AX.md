@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_PRESS_END`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c5_AX.SUB` ist auf `BUTTON_PRESS_END` konfiguriert[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c5_AX.SUB` ist auf `BUTTON_PRESS_END` konfiguriert.
 
 ![Uebung_004c5_AX_network](./Uebung_004c5_AX_network.svg)
 

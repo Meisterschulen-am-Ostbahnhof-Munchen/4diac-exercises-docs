@@ -61,6 +61,7 @@ The subapp operates in several steps, linked together via event and data connect
 - This event is forwarded to the conversion module `F_DWORD_TO_UDINT.REQ`.
 - Simultaneously, the read DWORD value from `ID.IN` is passed to `F_DWORD_TO_UDINT.IN`.
 - After successful conversion, `F_DWORD_TO_UDINT` sends the event `CNF`, and the converted UDINT value appears at `OUT`.
+
 1. **Save Value**
 
 - The event `F_DWORD_TO_UDINT.CNF` triggers the `INI.SET` input.
@@ -77,6 +78,7 @@ The subapp operates in several steps, linked together via event and data connect
 - To the function block `Q_NumericValue.REQ`, which takes the value (`INI.VALUEO` → `Q_NumericValue.u32NewValue`).
 - To the subapp output `IND` (invisible connection), so that the parent application is informed of the update.
 - The object ID for `Q_NumericValue` comes from the subapp input `u16ObjId`.
+
 1. **Subapp Output**
 
 - The stored value `VALUEO` is passed through in parallel to the subapp output `VALUEO`.

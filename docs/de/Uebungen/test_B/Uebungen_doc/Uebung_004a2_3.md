@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_004a2_3` basierend auf den bereitgestellten Daten.
-
 # Uebung_004a2_3: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK mit E_MERGE
 
 ![Uebung_004a2_3_network](./Uebung_004a2_3_network.svg)

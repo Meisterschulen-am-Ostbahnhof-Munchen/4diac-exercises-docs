@@ -40,6 +40,7 @@ This exercise implements an asynchronous toggle flip-flop (T-FF) using a logiBUS
 - This event is forwarded to the clock input of the T-FF via the event connection `DigitalInput_CLK_I1.IND → AX_T_FF.CLK`.
 - The T-FF then toggles its internal state: `TRUE` becomes `FALSE` (or vice versa).
 - The new state is transmitted to the output module via the adapter connection, which then sets the physical output accordingly.
+
 1. **Repeated Pressing**: Each subsequent press of `BUTTON_SINGLE_CLICK` triggers another toggle, so the output switches back and forth between `TRUE` and `FALSE`.
 
 **Connection Overview**:

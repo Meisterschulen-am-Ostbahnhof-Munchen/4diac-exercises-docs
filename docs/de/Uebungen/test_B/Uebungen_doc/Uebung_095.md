@@ -14,7 +14,7 @@ Verwendung des Bausteins `E_SELECT`. Dieser fungiert als Weiche für eintreffend
 
 ## Funktionsweise
 
-[cite_start]In `Uebung_095.SUB` bestimmen zwei Taster und ein Wahlschalter die Logik[cite: 1].
+In `Uebung_095.SUB` bestimmen zwei Taster und ein Wahlschalter die Logik.
 
 ![Uebung_095_network](./Uebung_095_network.svg)
 

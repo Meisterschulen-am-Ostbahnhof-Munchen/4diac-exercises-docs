@@ -23,12 +23,12 @@ The objective of this introductory exercise is to route a signal from a physical
 
 ## Description and Components
 
-[cite_start]The exercise consists of a subapplication (`Uebung_001.SUB`) that links an input block and an output block via two separate connection types[cite: 1].
+The exercise consists of a subapplication (`Uebung_001.SUB`) that links an input block and an output block via two separate connection types.
 
 ### Function Blocks (FBs)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block represents the physical input `Input_I1`[cite: 1]. It provides both the logical state (`IN`) and a notification event (`IND`).
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This function block controls the physical output `Output_Q1`[cite: 1]. It requires a data value (`OUT`) and a trigger command (`REQ`).
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. This block represents the physical input `Input_I1`. It provides both the logical state (`IN`) and a notification event (`IND`).
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. This function block controls the physical output `Output_Q1`. It requires a data value (`OUT`) and a trigger command (`REQ`).
 
 -----
 

@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung basierend auf der bereitgestellten XML-Datei:
-
 # Uebung_003b3_sub_AX: IX auf QX (generisch)
 
 ![Uebung_003b3_sub_AX_network](./Uebung_003b3_sub_AX_network.svg)

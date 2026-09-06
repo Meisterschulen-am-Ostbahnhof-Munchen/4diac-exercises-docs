@@ -1,6 +1,7 @@
 # Exercise_009_AX: Ticker (AX Adapter Based)
 
 This article describes the logiBUS® exercise `Uebung_009_AX`. It demonstrates the functionality of an event-based counter and a numerical display using an AX adapter, resulting in more compact and organized wiring
+
 ----
 
 ## Exercise Objective

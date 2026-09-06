@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a`. It demonstrates an advanced approach to structuring IEC 61499 applications: encapsulating logic in reusable, typed sub-applications ("Typed SubApps")
+
 ----
 
 ## Objective of the Exercise
@@ -14,11 +15,11 @@ The main objective is to avoid redundant code. -----
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003a.SUB` uses two instances of a user-defined sub-application type to implement two signal paths[cite: 1].
+The subapplication `Uebung_003a.SUB` uses two instances of a user-defined sub-application type to implement two signal paths.
 
 ### Typed Subapplication: `Uebung_003a_sub`
 
-[cite_start]This component encapsulates the basic logic of signal routing[cite: 2]. It has two parameters for hardware assignment:
+This component encapsulates the basic logic of signal routing. It has two parameters for hardware assignment:
 
 - **`Input`**: Determines the physical input (e.g., `Input_I1`).
 - **`Output`**: Determines the physical output (e.g., `Output_Q1`).
@@ -29,8 +30,8 @@ Inside the type are a `logiBUS_IX` and a `logiBUS_QX` block, which are permanent
 
 Two instances of this type are placed in `Uebung_003a`:
 
-- **`F1`**: [cite_start]Parameterized for the path `I1` to `Q1`[cite: 1].
-- **`F2`**: [cite_start]Parameterized for the path `I2` to `Q2`[cite: 1].
+- **`F1`**: Parameterized for the path `I1` to `Q1`.
+- **`F2`**: Parameterized for the path `I2` to `Q2`.
 
 -----
 
@@ -46,8 +47,6 @@ The complexity of the individual connections is hidden within the sub-applicatio
 <Parameter Name="Input" Value="Input_I2"/>
 <Parameter Name="Output" Value="Output_Q2"/>
 </SubApp>
-
-[cite_start][cite: 1]
 
 Functionally, the application behaves exactly like the flat structure in Exercise 003. Each instance operates as an independent block that reacts to events at its assigned hardware input and updates the hardware output.
 

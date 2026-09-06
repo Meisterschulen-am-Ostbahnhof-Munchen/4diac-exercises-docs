@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_004b_AX_ASR` based on the provided information.
-
 # Exercise_004b_AX_ASR: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 
 ![Uebung_004b_AX_ASR_network](./Uebung_004b_AX_ASR_network.svg)
@@ -59,6 +57,7 @@ The flow simulates a T-flip-flop using a feedback loop:
 
 - The **AX_SWITCH** receives the signal.
 - Depending on the current state (feedback), either output `EO0` (connected to `AX_SR.S` -> Set) or `EO1` (connected to `AX_SR.R` -> Reset) is activated.
+
 1. **Storage**: The **AX_SR** block changes its state accordingly (toggling).
 2. **Output**: The new state is available at the adapter output `Q` of **AX_SR**.
 3. **Distribution**:

@@ -14,7 +14,7 @@ Das Hauptziel ist die Demonstration der Interoperabilität. Während spezialisie
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002a2_AX.SUB` nutzt Konvertierungsbausteine, um zwei Eingangs-Adapter für ein UND-Gatter aufzubereiten[cite: 1].
+Die Subapplikation `Uebung_002a2_AX.SUB` nutzt Konvertierungsbausteine, um zwei Eingangs-Adapter für ein UND-Gatter aufzubereiten.
 
 ### Funktionsbausteine (FBs)
 

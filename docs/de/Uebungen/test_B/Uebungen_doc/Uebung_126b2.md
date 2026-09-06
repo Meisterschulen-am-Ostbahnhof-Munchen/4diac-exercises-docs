@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung **Uebung_126b2** basierend auf den bereitgestellten Daten.
-
 # Uebung_126b2: Übung zu ISOBUS Send Message Cyclic (mit CB) SINUS-Funktion Plotten
 
 ![Uebung_126b2_network](./Uebung_126b2_network.svg)

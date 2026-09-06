@@ -19,7 +19,7 @@ Simultaneous processing of wheel-based (WBSD) and ground-based (GBSD) speed.
 
 ## Description and Components
 
-[cite_start]In `Uebung_072.SUB`, two different TECU input blocks are used and their values are displayed on the terminal[cite: 1].
+In `Uebung_072.SUB`, two different TECU input blocks are used and their values are displayed on the terminal.
 
 ### Function Blocks (FBs)
 

@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist das Verständnis des Initialisierungsvorgangs in
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Übung nutzt die Subapplikation `Uebung_001c_AX.SUB`, um eine Verbindung zwischen einem digitalen Eingang und einem Ausgang herzustellen, ergänzt um eine Selbst-Triggerung für den Systemstart[cite: 1].
+Die Übung nutzt die Subapplikation `Uebung_001c_AX.SUB`, um eine Verbindung zwischen einem digitalen Eingang und einem Ausgang herzustellen, ergänzt um eine Selbst-Triggerung für den Systemstart.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,12 +22,12 @@ In der Subapplikation werden zwei zentrale Bausteine verwendet:
 
 ![Uebung_001c_AX_network](./Uebung_001c_AX_network.svg)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Zusätzlich zur Standardfunktion wird hier der Ereignisausgang `INITO` (Initialization Output) genutzt, um eine einmalige Abfrage beim Start auszulösen[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt den initial abgefragten Wert über die Adapterverbindung und setzt den Ausgang `Output_Q1` entsprechend[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. Zusätzlich zur Standardfunktion wird hier der Ereignisausgang `INITO` (Initialization Output) genutzt, um eine einmalige Abfrage beim Start auszulösen.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein empfängt den initial abgefragten Wert über die Adapterverbindung und setzt den Ausgang `Output_Q1` entsprechend.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Die Kommunikation zwischen den Bausteinen erfolgt über den bekannten Adapter-Typ `AX`, der das Ereignis `E1` und den Datenwert `D1` überträgt[cite: 2].
+Die Kommunikation zwischen den Bausteinen erfolgt über den bekannten Adapter-Typ `AX`, der das Ereignis `E1` und den Datenwert `D1` überträgt.
 
 -----
 
@@ -43,8 +43,6 @@ Die Besonderheit dieser Übung liegt in der Ereignisverbindung, die eine Rückko
     <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf ist wie folgt:
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002a3_AX`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The main objective of this exercise is to demonstrate the functionality of an OR
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002a3_AX.SUB` combines two digital input signals using an OR logic block[cite: 1].
+The subapplication `Uebung_002a3_AX.SUB` combines two digital input signals using an OR logic block.
 
 ### Function Blocks (FBs)
 
@@ -20,13 +21,13 @@ The following blocks are used:
 
 ![Uebung_002a3_AX_network](./Uebung_002a3_AX_network.svg)
 
-- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These blocks detect the states of the physical inputs `Input_I1` and `Input_I2`[cite: 1].
-- **`AX_OR_2`**: An instance of type `AX_OR_2`. This function block performs the logical OR operation at the adapter level. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This function block sets the physical output `Output_Q1` based on the result of the OR operation[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. These blocks detect the states of the physical inputs `Input_I1` and `Input_I2`.
+- **`AX_OR_2`**: An instance of type `AX_OR_2`. This function block performs the logical OR operation at the adapter level. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`).
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This function block sets the physical output `Output_Q1` based on the result of the OR operation.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]By using the adapter type `AX`, state changes (events) and Boolean values (data) are passed together through the logic blocks[cite: 2].
+By using the adapter type `AX`, state changes (events) and Boolean values (data) are passed together through the logic blocks.
 
 ----
 

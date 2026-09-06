@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010c3_AX`
+
 ----
 
 ## Goal of the Exercise
@@ -12,7 +13,7 @@ Reusability through typing.
 
 ## Description
 
-[cite_start]Here, a real type `Uebung_010c3_sub_AX` was created from the untyped subapp[cite: 1].
+Here, a real type `Uebung_010c3_sub_AX` was created from the untyped subapp.
 
 It has parameters `u16ObjId` (which softkey?) and `Output` (which output?).
 

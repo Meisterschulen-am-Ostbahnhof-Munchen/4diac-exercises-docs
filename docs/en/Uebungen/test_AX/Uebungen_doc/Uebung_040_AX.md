@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_040_AX`. Unlike exercise 038, this sequence of steps does not advance automatically but waits for events
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Manual advancement of a sequence of steps.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_040_AX.SUB` uses `sequence_E_08_loop_AX`. Here, the inputs for the transitions (`S1_S2`, `S2_S3`, ...) are brought out as event inputs[cite: 1].
+The subapplication `Uebung_040_AX.SUB` uses `sequence_E_08_loop_AX`. Here, the inputs for the transitions (`S1_S2`, `S2_S3`, ...) are brought out as event inputs.
 
 ### Logic for Step Advancement
 

@@ -90,6 +90,7 @@ The logical connections (via adapters) establish the data flow:
 - `Input_CD.IN` → `ALI_FB_CTUD.CD`
 - `Input_R.IN` → `ALI_FB_CTUD.R`
 - `Input_LD.IN` → `ALI_FB_CTUD.LD`
+
 1. **Start Value (PV)**
 
 - `Input_LD.INITO` (Event) → `ALI_LINT_TO_LI.REQ`
@@ -101,6 +102,7 @@ The starting value is set on the loading screen (edge at `LD`).
 
 - `ALI_FB_CTUD.QU` → `Output_QU.OUT`
 - `ALI_FB_CTUD.QD` → `Output_QD.OUT`
+
 1. **Counter Reading Output (Terminal)**
 
 - `ALI_FB_CTUD.CV` → `ALI_TO_ALR.ALI_IN`

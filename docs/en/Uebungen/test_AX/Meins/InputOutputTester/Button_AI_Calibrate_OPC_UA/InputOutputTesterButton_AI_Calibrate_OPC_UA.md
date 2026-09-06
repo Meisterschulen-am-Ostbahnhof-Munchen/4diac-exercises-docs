@@ -3,6 +3,7 @@
 ![InputOutputTesterButton_AI_Calibrate_OPC_UA_network](./InputOutputTesterButton_AI_Calibrate_OPC_UA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `InputOutputTesterButton_AI_Calibrate_OPC_UA` is the training example for **8 analog inputs with 2-point calibration**, controllable both via the ISOBUS Virtual Terminal and via OPC-UA (web client). The 12 digital outputs are carried over unchanged from the [`InputOutputTesterButton_DIDO_OPC_UA`](../Button_DIDO_OPC_UA/InputOutputTesterButton_DIDO_OPC_UA.md) example; the only new part is the calibration logic for the 8 analog inputs.
@@ -72,4 +73,4 @@ The web client `apixon-ai-calibrate-client` (Vue 3, `ApixonAICalibrate.vue`) is 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

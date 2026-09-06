@@ -57,12 +57,14 @@ Network connections:
 - `DigitalInput_I2.IN` → `ILOCK_AX_2.IN`
 - `DigitalInput_I3.IN` → `ILOCK_AX_3.IN`
 - `DigitalInput_I4.IN` → `ILOCK_AX_4.IN`
+
 1. **Output Side**: Each `ILOCK_AX` forwards its release signal via the adapter `OUT` to the corresponding `DigitalOutput`.
 
 - `ILOCK_AX_1.OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX_2.OUT` → `DigitalOutput_Q2.OUT`
 - `ILOCK_AX_3.OUT` → `DigitalOutput_Q3.OUT`
 - `ILOCK_AX_4.OUT` → `DigitalOutput_Q4.OUT`
+
 1. **Interlocking Interlock**:
 
 - `ILOCK_AX_1.ILOCK_OUT` → `ILOCK_AX_2.ILOCK_IN`

@@ -14,7 +14,7 @@ Implementierung eines autarken Blink-Schaltkreises.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_008.SUB` nutzt die Kombination aus `E_CYCLE`, `E_SWITCH` und `E_SR` ohne externe Steuereingänge[cite: 1].
+Die Subapplikation `Uebung_008.SUB` nutzt die Kombination aus `E_CYCLE`, `E_SWITCH` und `E_SR` ohne externe Steuereingänge.
 
 Der Taktgeber `E_CYCLE` läuft (nach einmaliger Initialisierung durch das System) permanent durch. Die Logik sorgt dafür, dass der Ausgang `Q1` im Sekundentakt zwischen `TRUE` und `FALSE` wechselt. Da keine Stopp-Logik vorhanden ist, dient dieser Aufbau als permanenter Herzschlag des Programms.
 

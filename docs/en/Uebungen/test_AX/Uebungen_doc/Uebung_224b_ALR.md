@@ -42,11 +42,13 @@ This exercise does not use any further sub-blocks; all function blocks are locat
 - **Count Down**: Pulse at input I2 → Input_CD → Adapter CD → Counter decrements CV by 1 (negative values are possible!).
 - **Reset**: Pulse at input I3 → Input_R → Adapter R → Counter is reset to 0.
 - **Load**: Pulse at input I4 → Input_LD → Adapter LD → Counter loads the value from PV (currently 5) into CV.
+
 1. **Output**:
 
 - On overflow (QU), Output_Q1 is signaled.
 - In case of underflow (QD), Output_Q2 is signaled.
 - The current counter value CV is output to the terminal via the converter chain (AULI_TO_ALR → Q_NumericValue_PHYSA_LREAL).
+
 1. **Notes**: The XML contains two comments:
 
 - "Negative values are possible here!" – this refers to the counter, which can go below zero when counting backwards.

@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML data.
-
 # Exercise_039a_sub_Outputs: Subapplication Type
 
 ![Image of the exercise, if available]
@@ -65,12 +63,15 @@ The flow within this sub-application can be described as follows:
 - The **E_SWITCH** checks the current state of the system (feedback from **E_SR.Q** to **E_SWITCH.G**).
 - If the output is currently OFF (Q=FALSE), the event is sent to the **Set** input of the **E_SR** -> The output is switched ON.
 - If the output is currently ON (Q=TRUE), the event is routed to the **Reset** input of the **E_SR** -> The output is switched OFF.
+
 1. **External Control**:
 
 - The state of the **E_SR** block can be directly manipulated via the external event inputs `SET` and `RESET`, independent of softkey activation.
+
 1. **Output Control**:
 
 - Every state change at the **E_SR** triggers the **QX** block, which writes the value to the hardware output.
+
 1. **Visual Feedback**:
 
 - After the **QX** block sends the confirmation (`CNF`), the sub-application **GreenWhiteBackground** is triggered.

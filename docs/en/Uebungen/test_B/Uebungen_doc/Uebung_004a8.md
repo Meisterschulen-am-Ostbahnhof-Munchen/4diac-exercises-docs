@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a8`. This is a variant of exercise 004a4, in which a specific function block is used for two outputs
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To become familiar with type-specific splitter function blocks. While `E_SPLIT` 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a8.SUB` uses a `E_SPLIT_2` function block for event distribution[cite: 1].
+The subapplication `Uebung_004a8.SUB` uses a `E_SPLIT_2` function block for event distribution.
 
 ### Function Blocks (FBs)
 

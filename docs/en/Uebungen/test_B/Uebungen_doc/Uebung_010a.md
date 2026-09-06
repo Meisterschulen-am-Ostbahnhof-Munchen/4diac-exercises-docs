@@ -19,7 +19,7 @@ Extending ISOBUS control to multiple channels.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a.SUB` controls two independent hardware outputs via two softkeys on the terminal[cite: 1].
+The subapplication `Uebung_010a.SUB` controls two independent hardware outputs via two softkeys on the terminal.
 
 ### Function Blocks (FBs)
 

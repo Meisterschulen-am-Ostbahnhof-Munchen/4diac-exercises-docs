@@ -14,15 +14,15 @@ Das Ziel ist es, die Verwendung von generischen Funktionsbausteinen (F-FBs) in d
 
 ## Beschreibung und Komponenten
 
-[cite_start]In der Subapplikation `Uebung_002a2.SUB` werden zwei digitale Eingänge über ein generisches UND-Gatter verknüpft[cite: 1].
+In der Subapplikation `Uebung_002a2.SUB` werden zwei digitale Eingänge über ein generisches UND-Gatter verknüpft.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_002a2_network](./Uebung_002a2_network.svg)
 
-  - **`DigitalInput_I1` & `DigitalInput_I2`**: Standard-Eingangsbausteine vom Typ `logiBUS_IX`[cite: 1].
-  - **`F_AND`**: Ein generischer Funktionsbaustein vom Typ `F_AND`. [cite_start]Er berechnet das logische UND seiner Eingänge `IN1` und `IN2`, sobald er ein Ereignis am Eingang `REQ` empfängt, und gibt das Ergebnis am Ausgang `OUT` sowie ein Bestätigungs-Ereignis am Port `CNF` aus[cite: 1].
-  - **`DigitalOutput_Q1`**: Standard-Ausgangsbaustein vom Typ `logiBUS_QX`[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Standard-Eingangsbausteine vom Typ `logiBUS_IX`.
+  - **`F_AND`**: Ein generischer Funktionsbaustein vom Typ `F_AND`. Er berechnet das logische UND seiner Eingänge `IN1` und `IN2`, sobald er ein Ereignis am Eingang `REQ` empfängt, und gibt das Ergebnis am Ausgang `OUT` sowie ein Bestätigungs-Ereignis am Port `CNF` aus.
+  - **`DigitalOutput_Q1`**: Standard-Ausgangsbaustein vom Typ `logiBUS_QX`.
 
 -----
 
@@ -42,8 +42,6 @@ Der Aufbau in `Uebung_002a2.SUB` folgt dem bewährten Muster der Ereigniskette:
     <Connection Source="F_AND.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 

@@ -14,7 +14,7 @@ Verwendung des Bausteins `NmGetCfInfo`. Jedes ISOBUS-Gerät besitzt einen weltwe
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_120.SUB` wird das Netzwerk nach aktiven Control Functions (CF) durchsucht[cite: 1].
+In `Uebung_120.SUB` wird das Netzwerk nach aktiven Control Functions (CF) durchsucht.
 
 ### Funktionsbausteine (FBs)
 

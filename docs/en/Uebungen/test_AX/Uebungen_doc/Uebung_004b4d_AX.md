@@ -25,6 +25,7 @@ No sub-blocks are defined within this sub-app. All FB types used are from the li
 
 - The three buttons (`DigitalInput_CLK_I1`, `I2`, `I3`) generate an event `IND` upon single-click.
 - This event is forwarded directly to the CLK input of the corresponding `ILOCK_T_FF_AX`.
+
 1. **Adapter Connections (Locking Chain)**
 
 - `ILOCK_T_FF_AX1.ILOCK_OUT` → `ILOCK_T_FF_AX2.ILOCK_IN`
@@ -35,6 +36,7 @@ No sub-blocks are defined within this sub-app. All FB types used are from the li
 
 - Each `ILOCK_T_FF_AX` has an output adapter `Q`, which is connected to the corresponding digital output (`DigitalOutput_Q1`…`Q3`).
 - The outputs indicate the state of the active flip-flop.
+
 1. **Operation**
 
 - Pressing button I1, I2, or I3 toggles the respective flip-flop.

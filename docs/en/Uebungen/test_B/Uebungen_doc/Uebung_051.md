@@ -22,7 +22,7 @@ Use of `STRUCT_MUX` and `STRUCT_DEMUX`. In large systems, it's impractical to ru
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_051.SUB` uses structured data types for signal transmission[cite: 1].
+The subapplication `Uebung_051.SUB` uses structured data types for signal transmission.
 
 ### Function Blocks (FBs)
 

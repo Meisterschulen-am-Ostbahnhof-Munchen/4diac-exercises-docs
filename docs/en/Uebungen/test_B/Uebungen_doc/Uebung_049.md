@@ -17,7 +17,7 @@ This article describes the logiBUS® exercise `Uebung_049`. This exercise is des
 
 ## Overview
 
-[cite_start]In IEC 61499, four digital inputs (QZMsdocsQZ to QZMsdocsQZ) are directly mapped to four digital outputs [QZMsdocsQZ to QZMsdocsQZ](cite: 1). This is the basic form of signal routing without logic or structuring, where each channel has its own event and data connections. It primarily serves as training for manual wiring in the 4diac IDE.
+In IEC 61499, four digital inputs (QZMsdocsQZ to QZMsdocsQZ) are directly mapped to four digital outputs [QZMsdocsQZ to QZMsdocsQZ](cite: 1). This is the basic form of signal routing without logic or structuring, where each channel has its own event and data connections. It primarily serves as training for manual wiring in the 4diac IDE.
 
 ---
 

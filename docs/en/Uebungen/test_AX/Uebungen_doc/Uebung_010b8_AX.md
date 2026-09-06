@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010b8_AX`
+
 ----
 
 ## Purpose of the Exercise
@@ -12,7 +13,7 @@ Events for latching buttons.
 
 ## Description
 
-[cite_start]Uses `Button_A1` with `BT_PRESSED_LATCHED`[cite: 1].
+Uses `Button_A1` with `BT_PRESSED_LATCHED`.
 
 -----
 

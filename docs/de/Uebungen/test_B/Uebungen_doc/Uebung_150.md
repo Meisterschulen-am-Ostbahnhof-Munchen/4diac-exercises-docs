@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_150` basierend auf den bereitgestellten Daten.
-
 # Uebung_150: Impulszähler
 
 ![Uebung_150_network](./Uebung_150_network.svg)

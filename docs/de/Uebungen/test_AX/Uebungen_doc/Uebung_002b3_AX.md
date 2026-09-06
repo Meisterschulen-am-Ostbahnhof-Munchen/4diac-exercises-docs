@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist die hierarchische Verknüpfung von Logikbaustein
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002b3_AX.SUB` realisiert die logische Funktion `Q1 = (I1 AND I2) OR I3` unter Verwendung von Adapter-Logikbausteinen[cite: 1].
+Die Subapplikation `Uebung_002b3_AX.SUB` realisiert die logische Funktion `Q1 = (I1 AND I2) OR I3` unter Verwendung von Adapter-Logikbausteinen.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,14 +22,14 @@ In der Subapplikation werden folgende Komponenten instanziiert:
 
 ![Uebung_002b3_AX_network](./Uebung_002b3_AX_network.svg)
 
-  - **`DigitalInput_I1`, `I2`, `I3`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Sie liefern die Eingangssignale für die Logikkette[cite: 1].
-  - **`AND_2_BOOL`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Verknüpft die Eingänge `I1` und `I2`[cite: 1].
-  - **`OR_2_BOOL`**: Eine Instanz des Typs `AX_OR_2`. [cite_start]Verknüpft das Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Gibt das Endergebnis der kombinatorischen Logik an den Hardware-Ausgang aus[cite: 1].
+  - **`DigitalInput_I1`, `I2`, `I3`**: Instanzen des Typs `logiBUS_IXA`. Sie liefern die Eingangssignale für die Logikkette.
+  - **`AND_2_BOOL`**: Eine Instanz des Typs `AX_AND_2`. Verknüpft die Eingänge `I1` und `I2`.
+  - **`OR_2_BOOL`**: Eine Instanz des Typs `AX_OR_2`. Verknüpft das Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Gibt das Endergebnis der kombinatorischen Logik an den Hardware-Ausgang aus.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Durch die konsequente Verwendung von Adapter-Bausteinen kann auf explizite Event-Daten-Konverter (wie `F_MOVE`) verzichtet werden, da die `AX`-Bausteine beides intern handhaben[cite: 1].
+Durch die konsequente Verwendung von Adapter-Bausteinen kann auf explizite Event-Daten-Konverter (wie `F_MOVE`) verzichtet werden, da die `AX`-Bausteine beides intern handhaben.
 
 -----
 
@@ -46,8 +46,6 @@ Die hierarchische Struktur der Logik wird durch die Verschaltung der Adapter-Ver
     <Connection Source="OR_2_BOOL.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 

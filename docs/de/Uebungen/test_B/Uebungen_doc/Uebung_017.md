@@ -24,7 +24,7 @@ Verwendung des Bausteins `Q_CtrlAudioSignal`. Es wird demonstriert, wie ein Erei
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_017.SUB` löst bei Betätigung eines Softkeys ein Tonsignal aus[cite: 1].
+Die Subapplikation `Uebung_017.SUB` löst bei Betätigung eines Softkeys ein Tonsignal aus.
 
 ### Funktionsbausteine (FBs)
 

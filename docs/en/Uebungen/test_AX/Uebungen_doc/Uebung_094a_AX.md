@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_094a_AX`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the `QI` (Qualifier Input) parameter for runtime control of function block
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_094a_AX.SUB` activates or deactivates an input path[cite: 1].
+The subapplication `Uebung_094a_AX.SUB` activates or deactivates an input path.
 
 ### Function Blocks (FBs)
 

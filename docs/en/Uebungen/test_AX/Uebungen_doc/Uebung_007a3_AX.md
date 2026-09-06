@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_007a3_AX`. This exercise demonstrates the "clean" solution for a switchable turn signal
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Ensure that the turn signal always stops in the "OFF" state.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_007a3_AX.SUB` uses more complex logic[cite: 1]:
+The subapplication `Uebung_007a3_AX.SUB` uses more complex logic:
 
 - **`AX_CYCLE`**: The clock generator (starts/stops).
 - **`E_SR`**: A memory location ("Blinker is active").

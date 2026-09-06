@@ -15,4 +15,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020e`.
 
 ## Übersicht
 
-[cite_start]Verwendung des standardisierten ereignisbasierten Timers `E_TOF`[cite: 1]. Die Logik entspricht der Übung 020d, ist aber in einem einzigen Baustein gekapselt. Ein Signal am Eingang `IN` wird sofort zum Ausgang `Q` durchgereicht. Fällt `IN` weg, bleibt `Q` noch für die Zeit `PT` (hier 5 Sekunden) auf `TRUE`.
+Verwendung des standardisierten ereignisbasierten Timers `E_TOF`. Die Logik entspricht der Übung 020d, ist aber in einem einzigen Baustein gekapselt. Ein Signal am Eingang `IN` wird sofort zum Ausgang `Q` durchgereicht. Fällt `IN` weg, bleibt `Q` noch für die Zeit `PT` (hier 5 Sekunden) auf `TRUE`.

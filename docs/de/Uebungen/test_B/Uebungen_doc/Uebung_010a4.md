@@ -20,7 +20,7 @@ Kombination verschiedener logiBUS-Teilsysteme.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a4.SUB` verbindet einen ISOBUS-Softkey mit einem physikalischen Ausgang eines DataPanels[cite: 1].
+Die Subapplikation `Uebung_010a4.SUB` verbindet einen ISOBUS-Softkey mit einem physikalischen Ausgang eines DataPanels.
 
 ### Funktionsbausteine (FBs)
 

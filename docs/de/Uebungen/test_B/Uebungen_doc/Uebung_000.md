@@ -21,7 +21,7 @@ Verwendung eines Standard-Mathematikbausteins (`ADD_2`). Es wird gezeigt, wie ko
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_000.SUB` wird ein Additions-Baustein zur Berechnung einer Summe genutzt[cite: 1].
+In `Uebung_000.SUB` wird ein Additions-Baustein zur Berechnung einer Summe genutzt.
 
 ### Funktionsbausteine (FBs)
 

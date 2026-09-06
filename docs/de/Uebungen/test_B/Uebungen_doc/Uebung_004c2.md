@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_START`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c2.SUB` reagiert auf langes Drücken[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c2.SUB` reagiert auf langes Drücken.
 
 Das Ereignis `IND` wird genau in dem Moment gefeuert, in dem die vordefinierte Zeit für einen "langen Druck" (z.B. 1 Sekunde) abgelaufen ist – auch wenn der Taster danach noch weiter gedrückt bleibt. Ein kurzes Tippen löst hier kein Ereignis aus.
 

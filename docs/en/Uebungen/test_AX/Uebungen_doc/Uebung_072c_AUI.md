@@ -38,11 +38,13 @@ This exercise demonstrates the behavior of the function blocks `IA_GBSD` (Ground
 1. **Speed Acquisition**
 
 - The function blocks `IA_GBSD` and `IA_WBSD` are operated with `QI` active and continuously deliver current speed values as UINT data at their adapter outputs `SPEED`.
+
 1. **Scaling**
 
 - The output `SPEED` of `IA_GBSD` is connected to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` via an adapter connection.
 - Similarly, `SPEED` from `IA_WBSD` is connected to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_WBSD`.
 - Both scaling blocks multiply the incoming UINT value by `0.001` (no offset) and output the result as a REAL value.
+
 1. **Output on the UT**
 
 - The scaled value (output `OUT` of the scaling block) is fed as a data source to the `rPhys` input of the respective `Q_NumericValue_PHYSA` block.

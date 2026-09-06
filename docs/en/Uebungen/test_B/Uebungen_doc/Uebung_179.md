@@ -1,5 +1,3 @@
-Here is the documentation for Exercise 179, based on the information provided.
-
 # Exercise_179: Example for E_REND_2 (Rendezvous of Two Events)
 
 ![Uebung_179_network](./Uebung_179_network.svg)
@@ -37,10 +35,12 @@ The exercise proceeds as follows:
 - The button **I2** (`DigitalInput_CLK_I2`) is connected to the second event input `EI2` of the `E_REND_2` block.
 - Pressing only one of these two buttons initially has no effect on the output. The module "remembers" the event.
 - Only when **both** buttons (I1 and I2) have been pressed (the event "rendezvous" is complete) does the `E_REND_2` trigger the output event `EO`.
+
 1. **Processing (Toggle):**
 
 - The output event `EO` of the `E_REND_2` is connected to the clock input `CLK` of the `E_T_FF_SR`.
 - Once the rendezvous has occurred, the flip-flop is triggered and toggles the output Q1 (light on or off).
+
 1. **Reset Function:**
 
 - The button **I3** (`DigitalInput_CLK_I3`) acts as the central reset.

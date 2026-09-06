@@ -4,7 +4,7 @@
 
 ## Übersicht
 
-[cite_start]Dieser Baustein dient als universelle Schnittstelle für Benutzereingaben, die dauerhaft im NVS (Non Volatile Storage) gespeichert werden sollen[cite: 1].
+Dieser Baustein dient als universelle Schnittstelle für Benutzereingaben, die dauerhaft im NVS (Non Volatile Storage) gespeichert werden sollen.
 Er bündelt folgende Funktionen:
 
 ![Uebung_012a_sub_network](./Uebung_012a_sub_network.svg)

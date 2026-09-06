@@ -44,12 +44,14 @@ The process is started by the digital input `Input_I1`:
 
 - **OUT1** → connected to `DigitalOutput_Q1.OUT` → the digital output `Output_Q1` is set.
 - **OUT2** → connected to `AnalogInput_I4.SREQ` → triggers the analog sampling.
+
 1. **Analog Measurement Value**: After sampling, `AnalogInput_I4` outputs an analog data adapter via its output `IN`. This is then passed to `AD_TO_AUDI.AD_IN`.
 2. **Conversion Chain**:
 
 - `AD_TO_AUDI` converts the analog data adapter into a universal analog value adapter (`AUDI_OUT`).
 - `AUDI_TO_AR` converts this into a real-value adapter (`AR_OUT`).
 - The real-value adapter is then passed to the calibration input `CALIBRATE.X`.
+
 1. **Calibration**: Simultaneously, input `Input_I2` (via `DigitalInput_I2_CO`) and input `Input_I3` (via `DigitalInput_I3_CS`) are present at `CALIBRATE.CO`. Depending on the activated control signal, `CALIBRATE` calculates the new offset or the new scale. The default settings (Y_Offset = 100.0, Y_Scale = 600.0) serve as the basis.
 2. **Persistent Storage**:
 

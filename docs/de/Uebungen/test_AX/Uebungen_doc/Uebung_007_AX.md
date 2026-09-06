@@ -14,7 +14,7 @@ Erzeugung eines periodischen Blinksignals.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_007_AX.SUB` nutzt einen `E_CYCLE` Baustein in Kombination mit einem Flip-Flop[cite: 1].
+Die Subapplikation `Uebung_007_AX.SUB` nutzt einen `E_CYCLE` Baustein in Kombination mit einem Flip-Flop.
 
 ### Funktionsbausteine (FBs)
 

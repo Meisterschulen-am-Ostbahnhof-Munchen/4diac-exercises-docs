@@ -14,7 +14,7 @@ Manuelles Weiterschalten einer Schrittkette.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_040_AX.SUB` nutzt `sequence_E_08_loop_AX`. Hier sind die Eingänge für die Transitionen (`S1_S2`, `S2_S3`, ...) als Event-Inputs herausgeführt[cite: 1].
+Die Subapplikation `Uebung_040_AX.SUB` nutzt `sequence_E_08_loop_AX`. Hier sind die Eingänge für die Transitionen (`S1_S2`, `S2_S3`, ...) als Event-Inputs herausgeführt.
 
 ### Logik zum Weiterschalten
 

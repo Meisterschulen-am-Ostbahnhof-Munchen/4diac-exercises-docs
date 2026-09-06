@@ -14,7 +14,7 @@ Umgang mit rastenden Tasten (Latching Buttons).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a3_AX.SUB` verwendet `Button_L1`[cite: 1].
+Die Subapplikation `Uebung_010a3_AX.SUB` verwendet `Button_L1`.
 
 ### Funktionsbausteine (FBs)
 

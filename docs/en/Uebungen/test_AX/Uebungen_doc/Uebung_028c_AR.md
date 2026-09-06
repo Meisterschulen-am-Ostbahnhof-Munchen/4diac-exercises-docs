@@ -2,6 +2,7 @@
 
 ![Uebung_028c_AR_network](./Uebung_028c_AR_network.svg)
 *Image of the exercise to follow*
+
 ---
 
 ## Introduction
@@ -61,6 +62,7 @@ The calibrated value `Y` is distributed via `AR_SPLIT_2` to two paths:
 
 - Path 1 to `Q_NumericValue_PHYSA` (display)
 - Path 2 to the hysteresis block `Hysteresis_AR_AX` (input `INPUT`)
+
 1. **Hysteresis**:
 
 The subapps `THRESHOLD` and `HYSTERESIS` read the parameters (threshold and hysteresis band) from the INI configuration (section `'HYSTERESIS'`). These values are passed to the hysteresis block. The hysteresis block compares the calibrated value with the threshold, taking the hysteresis band into account, and outputs a digital signal (`OUTPUT`).
@@ -69,6 +71,7 @@ The subapps `THRESHOLD` and `HYSTERESIS` read the parameters (threshold and hyst
 
 - `DigitalInput_I1` is split via `AX_SPLIT_2`: One branch controls `DigitalOutput_Q1`, the other branch triggers the analog input (`SREQ`) to initiate a sample.
 - The result of the hysteresis (`Hysteresis_AR_AX.OUTPUT`) is directly fed to `DigitalOutput_Q2`.
+
 1. **Special Feature**:
 
 The double conversion (`AD_TO_AUDI` → `AUDI_TO_AR`) is necessary because the analog (AD) value cannot be directly converted into an AR adapter. The AUDI adapter serves as an intermediate format.

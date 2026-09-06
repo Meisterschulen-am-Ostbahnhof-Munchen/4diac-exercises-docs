@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_110`. It demonstrates an important phenomenon in digital data processing: variable overflow
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Understanding the limitations of data types. It shows what happens when the resu
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_110.SUB` uses the data type `USINT` [Unsigned Short Integer](cite: 1). This has a value range from 0 to 255.
+The subapplication `Uebung_110.SUB` uses the data type `USINT` [Unsigned Short Integer](cite: 1). This has a value range from 0 to 255.
 
 ### Function Blocks (FBs)
 

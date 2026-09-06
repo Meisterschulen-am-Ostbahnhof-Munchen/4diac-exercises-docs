@@ -23,12 +23,12 @@ Erlernen der Verwendung von `Object Pointer` Objekten. Ein Pointer ist ein Platz
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_015.SUB` wird ein Object Pointer (`ObjectPointer_P1`) zwischen einer Schaltfläche (`Button_A1`) und einem leeren Zustand (`ID_NULL`) umgeschaltet[cite: 1].
+In `Uebung_015.SUB` wird ein Object Pointer (`ObjectPointer_P1`) zwischen einer Schaltfläche (`Button_A1`) und einem leeren Zustand (`ID_NULL`) umgeschaltet.
 
 ### Funktionsbausteine (FBs)
 
   - **`SoftKey_UP_F1` & `F2`**: Steuern die Auswahl.
-  - **`F_SEL`**: Ein Auswahl-Baustein (Selection). [cite_start]Je nach Eingang `G` (vom Speicher `E_SR`) gibt er entweder den Wert `ID_NULL` (0) oder die Objekt-ID von `Button_A1` aus[cite: 1].
+  - **`F_SEL`**: Ein Auswahl-Baustein (Selection). Je nach Eingang `G` (vom Speicher `E_SR`) gibt er entweder den Wert `ID_NULL` (0) oder die Objekt-ID von `Button_A1` aus.
   - **`Q_NumericValue`**: Wird hier zweckentfremdet, um die ID an den Pointer zu senden (da ein Pointer-Update technisch das Senden einer neuen ID an die Pointer-Objekt-ID ist).
 
 -----

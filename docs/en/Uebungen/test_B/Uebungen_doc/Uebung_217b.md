@@ -43,6 +43,7 @@ The exercise is event-driven:
 - Both events are routed to the event input `REQ` of the counter `FB_CTD_LINT`.
 - After processing the counter (output `CNF`), the output `Output_Q1` (via `REQ`) and the conversion `F_LINT_TO_LREAL` (via `REQ`) are triggered.
 - After the conversion, the event is forwarded to the terminal output `Q_NumericValue_PHYS_LREAL`.
+
 1. **Data Path**:
 
 - The digital value of `Input_CD.IN` (Boolean) is assigned to the data input `CD` of the counter.

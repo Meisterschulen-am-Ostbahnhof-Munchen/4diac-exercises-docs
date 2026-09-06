@@ -14,7 +14,7 @@ Verwendung des Bausteins `E_CTUD` (Event Count Up/Down). Es wird gezeigt, wie ma
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_082.SUB` nutzt vier Taster zur vollständigen Kontrolle des Zählers[cite: 1].
+Die Subapplikation `Uebung_082.SUB` nutzt vier Taster zur vollständigen Kontrolle des Zählers.
 
 ### Funktionsbausteine (FBs)
 

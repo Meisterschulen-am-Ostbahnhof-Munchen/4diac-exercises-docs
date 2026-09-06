@@ -73,6 +73,7 @@ The preset value `PV` is set to `ULINT#10` – a comparison with this value sets
 - Handling digital inputs/outputs via logiBUS.
 - Use of conversion blocks and terminal output.
 - Awareness of event collisions and possible solutions using `E_D_FF`.
+
 1. **Difficulty Level:** Medium
 
 **Prerequisites:** Basic knowledge of the 4diac IDE, experience with logiBUS I/O modules, and event wiring.

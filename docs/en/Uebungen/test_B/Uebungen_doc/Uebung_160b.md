@@ -1,5 +1,3 @@
-Here is the documentation for Exercise 160b, based on the provided XML data.
-
 # Exercise_160b: Motor Reverse/Forward Rotation Automation via IE
 
 ![Uebung_160b_network](./Uebung_160b_network.svg)
@@ -91,10 +89,12 @@ The network implements motor control with the following properties:
 - After 50 ms (`DT=T#50ms`), `E_DELAY` sends an event to the set input (S) of `E_SR_B`.
 - - `E_SR_B` sets its output Q to TRUE, thereby activating `DigitalOutput_Q6`.
 - *Note:* I2 here acts as a switch from A to B with a short dead time.
+
 1. **Stop towards B (Q6):**
 
 - When `Input_I3` is pressed (push), `DigitalInput_CLK_I3` sends an event to the reset input (R) of `E_SR_B`.
 - `DigitalOutput_Q6` is switched off.
+
 1. **Operating Indicator (Q56):**
 
 - The data outputs (Q) of `E_SR_A` and `E_SR_B` are connected to the inputs of the `OR_2_BOOL` block.

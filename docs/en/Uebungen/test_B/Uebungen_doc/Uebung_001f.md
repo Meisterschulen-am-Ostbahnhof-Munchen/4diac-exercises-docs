@@ -36,6 +36,7 @@ The exercise network operates using event-driven logic:
 
 - The output events `IND` and `CNF` of DigitalInput_I1 are both routed to the event input `REQ` of F_NOT_BOOL_INIT.
 - The acknowledgment event `CNF` of F_NOT_BOOL_INIT is routed to the event input `REQ` of DigitalOutput_Q1.
+
 1. **Data Connections:**
 
 - The data output `IN` of DigitalInput_I1 is connected to the data input `IN` of F_NOT_BOOL_INIT.

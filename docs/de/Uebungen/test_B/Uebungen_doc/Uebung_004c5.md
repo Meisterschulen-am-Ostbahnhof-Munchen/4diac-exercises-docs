@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_PRESS_END`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reagiert auf jede fallende Flanke[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reagiert auf jede fallende Flanke.
 
 ![Uebung_004c5_network](./Uebung_004c5_network.svg)
 

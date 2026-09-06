@@ -14,7 +14,7 @@ Realisierung eines Blinkers mit definiertem Stopp-Verhalten. Es wird demonstrier
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_007a3.SUB` wird die Blinklogik manuell aus Weiche und Speicher aufgebaut, um die volle Kontrolle über den Reset-Vorgang zu haben[cite: 1].
+In `Uebung_007a3.SUB` wird die Blinklogik manuell aus Weiche und Speicher aufgebaut, um die volle Kontrolle über den Reset-Vorgang zu haben.
 
 ### Funktionsbausteine (FBs)
 
@@ -42,8 +42,6 @@ Die Sicherheit wird durch eine doppelte Belegung des Stopp-Signals erreicht:
     <Connection Source="STOP.IND" Destination="E_SR.R"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  **Blinkbetrieb**: Der `E_CYCLE` triggert die `E_SWITCH/E_SR` Kombination, was zum periodischen Umschalten führt.
 2.  **Ausschalten**: Wenn der Nutzer `STOP` drückt, passieren zwei Dinge gleichzeitig:

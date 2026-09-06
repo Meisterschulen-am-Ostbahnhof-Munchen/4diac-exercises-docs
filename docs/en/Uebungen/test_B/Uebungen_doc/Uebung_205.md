@@ -20,7 +20,6 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Sets the first digital output (hardware address `Output_Q1`) to the value of the data input `OUT` when the event `REQ` occurs. |
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q2` | Sets the second digital output (hardware address `Output_Q2`) to the value of the data input `OUT` when the event `REQ` occurs. |
 | `E_TimeOut` | `iec61499::events::E_TimeOut` | – | Timer module connected to `ILOCK` via adapter `timeOut`. It monitors compliance with the protection time. |
-...
 
 ## Program Flow and Connections
 
@@ -31,15 +30,18 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 - Upon successful switching, `ILOCK` generates the event `EO_UP` (for the upper output) or `EO_DOWN` (for the lower output).
 - `ILOCK.EO_UP` is connected to `DigitalOutput_Q1.REQ` (output Q1 switches).
 - `ILOCK.EO_DOWN` is connected to `DigitalOutput_Q2.REQ` (output Q2 switches).
+
 1. **Data Path:**
 
 - The value of input `DigitalInput_I1.IN` is transferred to `ILOCK.DI_UP`.
 - The value of `DigitalInput_I2.IN` is transferred to `ILOCK.DI_DOWN`.
 - The ILOCK transmits the state for the upper output (1 = active) to `DigitalOutput_Q1.OUT` via `DO_UP`.
 - Accordingly, `DO_DOWN` passes the status to `DigitalOutput_Q2.OUT`.
+
 1. **Protection Time Monitoring:**
 
 - The `ILOCK_SWITCH_PROTECT` has an adapter port, `timeOut`, which is connected to the `E_TimeOut.TimeOutSocket`. This adapter allows the `E_TimeOut` to monitor the protection time (here, 1 second) and, if necessary, generate an event when it expires.
+
 1. **Interlock Functionality:**
 
 - The `ILOCK_SWITCH_PROTECT` operates with priority: Whichever input becomes active first sets the corresponding output. As long as the protection time (`DT_PROTECT = 1s`) is running, the other input is ignored. Switching is only possible again after the protection time has expired.

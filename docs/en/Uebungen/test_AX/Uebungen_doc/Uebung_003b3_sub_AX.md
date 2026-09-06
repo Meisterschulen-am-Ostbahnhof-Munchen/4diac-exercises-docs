@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML file:
-
 # Exercise_003b3_sub_AX: IX to QX (generic)
 
 ![Uebung_003b3_sub_AX_network](./Uebung_003b3_sub_AX_network.svg)
@@ -51,9 +49,11 @@ The logic of this sub-application is based on the direct transmission of signals
 - **Input**: Defines the source of the signal (e.g., `DigitalInput_Key_01`).
 - **u8SAMember**: Determines the network node (Node SA 224..239) for the output module.
 - **Output**: Defines the specific output on the DataPanel (e.g., `DigitalOutput_1A..8B`).
+
 1. **Data Flow**:
 
 - The configuration data is forwarded directly from the inputs of the sub-application to the internal function blocks `IXA` and `QXA`.
+
 1. **Signal Flow (Adapter)**:
 
 - There is a direct **adapter connection** between `IXA.IN` and `QXA.OUT`.

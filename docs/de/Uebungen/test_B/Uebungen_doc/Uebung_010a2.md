@@ -14,7 +14,7 @@ Verwendung eines `Button_IX` Bausteins.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a2.SUB` nutzt einen Button anstelle eines Softkeys zur Steuerung eines Ausgangs[cite: 1].
+Die Subapplikation `Uebung_010a2.SUB` nutzt einen Button anstelle eines Softkeys zur Steuerung eines Ausgangs.
 
 ### Funktionsbausteine (FBs)
 

@@ -14,7 +14,7 @@ Kennenlernen des `AX_T_FF_SR`.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a_AX.SUB` nutzt drei Taster[cite: 1].
+Die Subapplikation `Uebung_006a_AX.SUB` nutzt drei Taster.
 
 ### Funktionsbausteine (FBs)
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display
+
 ----
 
 ## Objective of the Exercise
@@ -12,14 +13,14 @@ To learn event-based counting (`E_CTUD`) and how to display values on a terminal
 
 ## Description and Components
 
-[cite_start]In `Uebung_009.SUB`, a clock generator is used to control an up counter, the value of which is sent to an ISOBUS terminal[cite: 1].
+In `Uebung_009.SUB`, a clock generator is used to control an up counter, the value of which is sent to an ISOBUS terminal.
 
 ### Function Blocks (FBs)
 
 ![Uebung_009_network](./Uebung_009_network.svg)
 
 - **`E_CYCLE` & `E_SR`**: Generate a continuous clock signal (as in Exercise 008).
-- **`E_PERMIT`**: An event gate. [cite_start]It only allows events at input `EI` to pass to output `EO` if the data input `PERMIT` is set to `TRUE`[cite: 1].
+- **`E_PERMIT`**: An event gate. It only allows events at input `EI` to pass to output `EO` if the data input `PERMIT` is set to `TRUE`.
 - **`E_CTUD_UDINT`**: A forward/downward counter for large integers.
 - **`Q_NumericValue`**: An ISOBUS output module for displaying a number on the screen.
 

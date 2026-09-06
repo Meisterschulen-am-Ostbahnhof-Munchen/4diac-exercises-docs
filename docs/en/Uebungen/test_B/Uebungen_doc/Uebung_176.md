@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML data:
-
 # Exercise_176: Exercise for E_TRIG
 
 ![Image of the exercise, if available]

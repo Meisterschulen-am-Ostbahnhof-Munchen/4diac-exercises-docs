@@ -19,7 +19,7 @@ Combining different logiBUS subsystems.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a4.SUB` connects an ISOBUS softkey to a physical output of a DataPanel[cite: 1].
+The subapplication `Uebung_010a4.SUB` connects an ISOBUS softkey to a physical output of a DataPanel.
 
 ### Function Blocks (FBs)
 

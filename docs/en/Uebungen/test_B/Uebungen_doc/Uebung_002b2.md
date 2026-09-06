@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002b2`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR), using a `F_MOVE` block for explicit data forwarding
+
 -----
 
 ## Objective of the Exercise
@@ -12,16 +13,16 @@ The main objective of this exercise is the hierarchical linking of logic blocks.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002b2.SUB` implements the logical function `Q1 = (I1 AND I2) OR I3` using standard logic blocks[cite: 1].
+The subapplication `Uebung_002b2.SUB` implements the logical function `Q1 = (I1 AND I2) OR I3` using standard logic blocks.
 
 ### Function Blocks (FBs)
 
 ![Uebung_002b2_network](./Uebung_002b2_network.svg)
 
-- **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They provide the input signals for the logic chain[cite: 1].
-- **`AND_2`**: One instance of type `AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
-- **`F_MOVE`**: A data transfer block. [cite_start]It receives the value at input `IN` and outputs it unchanged at output `OUT` upon the event `REQ`[cite: 1]. It serves as a buffer between the logic stages.
-- **`OR_2`**: An instance of type `OR_2`. [cite_start]Combines the (buffered) result of the AND block with the third input `I3`[cite: 1].
+- **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. They provide the input signals for the logic chain.
+- **`AND_2`**: One instance of type `AND_2`. Combines the inputs `I1` and `I2`.
+- **`F_MOVE`**: A data transfer block. It receives the value at input `IN` and outputs it unchanged at output `OUT` upon the event `REQ`. It serves as a buffer between the logic stages.
+- **`OR_2`**: An instance of type `OR_2`. Combines the (buffered) result of the AND block with the third input `I3`.
 - **`DigitalOutput_Q1`**: Outputs the final result of the logic to the hardware output.
 
 -----
@@ -46,8 +47,6 @@ The hierarchical structure of the logic is clearly illustrated by the event chai
 <Connection Source="DigitalInput_I3.IN" Destination="OR_2.IN2"/>
 <Connection Source="OR_2.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence:
 

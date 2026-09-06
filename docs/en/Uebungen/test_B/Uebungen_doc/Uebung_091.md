@@ -21,7 +21,7 @@ Using the building block `E_TRAIN`. The goal is to trigger a defined sequence of
 
 ## Description and Components
 
-[cite_start]In `Uebung_091.SUB`, an event train is used to control a flip-flop[cite: 1].
+In `Uebung_091.SUB`, an event train is used to control a flip-flop.
 
 ### Functionality
 

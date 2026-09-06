@@ -14,11 +14,11 @@ Das Hauptziel ist es zu zeigen, wie redundanter Code vermieden werden kann. Anst
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003a_AX.SUB` verwendet zwei Instanzen eines selbst definierten Sub-Typs, um zwei Signalpfade zu realisieren[cite: 1].
+Die Subapplikation `Uebung_003a_AX.SUB` verwendet zwei Instanzen eines selbst definierten Sub-Typs, um zwei Signalpfade zu realisieren.
 
 ### Typisierte Sub-Applikation: `Uebung_003a_AX_sub`
 
-[cite_start]Dieser Baustein kapselt die grundlegende Logik: "Lies einen Eingang und schreibe auf einen Ausgang"[cite: 2]. Er verfügt über Schnittstellen zur Parametrierung:
+Dieser Baustein kapselt die grundlegende Logik: "Lies einen Eingang und schreibe auf einen Ausgang". Er verfügt über Schnittstellen zur Parametrierung:
 
   - **`Input`**: Bestimmt, welcher physische Eingang gelesen werden soll (z.B. `Input_I1`).
   - **`Output`**: Bestimmt, welcher physische Ausgang geschaltet werden soll (z.B. `Output_Q1`).
@@ -33,8 +33,8 @@ Intern enthält dieser Sub-Typ:
 
 In `Uebung_003a_AX` werden zwei Instanzen dieses Typs erzeugt:
 
-  - **`F1`**: [cite_start]Konfiguriert für `Input_I1` auf `Output_Q1`[cite: 1].
-  - **`F2`**: [cite_start]Konfiguriert für `Input_I2` auf `Output_Q2`[cite: 1].
+  - **`F1`**: Konfiguriert für `Input_I1` auf `Output_Q1`.
+  - **`F2`**: Konfiguriert für `Input_I2` auf `Output_Q2`.
 
 -----
 
@@ -52,8 +52,6 @@ Die Logik ist im Inneren der Sub-Applikation versteckt ("Information Hiding"). D
     <Parameter Name="Output" Value="Output_Q2"/>
 </SubApp>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf entspricht exakt dem der `Uebung_003_AX` (parallele Steuerung), jedoch ist die Implementierung modularer. Jede Instanz (`F1`, `F2`) arbeitet als eigenständiger, isolierter Block, der seine interne Adapter-Logik ausführt.
 

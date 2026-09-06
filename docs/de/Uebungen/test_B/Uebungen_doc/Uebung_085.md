@@ -20,13 +20,13 @@ Verwendung des Bausteins `E_D_FF`. Ziel ist es, einen Datenwert (TRUE/FALSE) ers
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_085.SUB` nutzt einen Daten-Eingang und einen Klick-Ereignis-Eingang[cite: 1].
+Die Subapplikation `Uebung_085.SUB` nutzt einen Daten-Eingang und einen Klick-Ereignis-Eingang.
 
 ### Funktionsbausteine (FBs)
 
   - **`I1` (Data)**: Liefert den Soll-Zustand.
   - **`I2` (Clock)**: Liefert den Übernahme-Impuls.
-  - **`E_D_FF`**: Der Speicherbaustein. [cite_start]Er übernimmt den Wert am Eingang `D` nur dann an den Ausgang `Q`, wenn ein Ereignis am Eingang `CLK` empfängt[cite: 1].
+  - **`E_D_FF`**: Der Speicherbaustein. Er übernimmt den Wert am Eingang `D` nur dann an den Ausgang `Q`, wenn ein Ereignis am Eingang `CLK` empfängt.
 
 -----
 

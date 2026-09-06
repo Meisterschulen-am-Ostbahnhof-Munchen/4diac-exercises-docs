@@ -14,7 +14,7 @@ Manipulation von Ereignisströmen unter Verwendung von `E_T_FF` und `E_PERMIT`.
 
 ## Funktionsweise
 
-[cite_start]In `Uebung_080c.SUB` wird ein Toggle-Flip-Flop als Gate-Wächter genutzt[cite: 1].
+In `Uebung_080c.SUB` wird ein Toggle-Flip-Flop als Gate-Wächter genutzt.
 
 ![Uebung_080c_network](./Uebung_080c_network.svg)
 

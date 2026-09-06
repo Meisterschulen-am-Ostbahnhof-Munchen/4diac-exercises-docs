@@ -7,6 +7,7 @@
 ## Introduction
 
 This exercise demonstrates the use of the IEC 61131-3 function block **FB_CTU_LINT** (Upward Counter for Large Integer Values) in a 4diac IDE subapplication. The counter value is converted and output to a terminal. Additionally, a digital output is set as soon as the counter reaches the predefined maximum value
+
 ---
 
 ## Function Blocks Used
@@ -51,6 +52,7 @@ Only predefined library blocks are used; no other sub-blocks are included.
 - **Output_Q1.REQ** (sets the digital output according to the counter Q signal)
 - **F_LINT_TO_UDINT.REQ** (starts the conversion of the counter reading)
 - **Q_NumericValue.REQ** (is triggered after successful conversion via the chain `F_LINT_TO_UDINT.CNF → Q_NumericValue.REQ`).
+
 1. **Data Connections**
 
 - `Input_CU.IN` → `FB_CTU_LINT.CU` (Count pulse)
@@ -58,12 +60,14 @@ Only predefined library blocks are used; no other sub-blocks are included.
 - `FB_CTU_LINT.Q` → `Output_Q1.OUT` (Output signal when preset value is reached)
 - `FB_CTU_LINT.CV` (Current counter reading) → `F_LINT_TO_UDINT.IN`
 - `F_LINT_TO_UDINT.OUT` (Converted value) → `Q_NumericValue.u32NewValue` (Display on terminal)
+
 1. **Operating the Counter**
 
 - The counter increments on each rising edge of the CU input, as long as no reset occurs.
 - If the reset input is set to TRUE, the counter reading is reset to zero.
 - As soon as the counter reading reaches the value **PV = 5**, the output `Q` is set to TRUE (active high).
 - The current counter reading is continuously sent to the terminal as soon as the value changes.
+
 1. **Learning Objectives / Difficulty**
 
 - Introduction to the IEC 61131-3 counter family

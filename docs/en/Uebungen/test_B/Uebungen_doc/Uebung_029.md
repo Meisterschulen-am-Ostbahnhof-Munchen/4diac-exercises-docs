@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_029`. It introduces a specialized function block for controlling status LEDs, which handles the flashing at a low hardware level
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `logiBUS_LED_DO_QX`. It demonstrates how to operate an 
 
 ## Description and Components
 
-[cite_start]In `Uebung_029.SUB`, three pushbuttons are used to control a single LED (`Q1`) in three different modes[cite: 1].
+In `Uebung_029.SUB`, three pushbuttons are used to control a single LED (`Q1`) in three different modes.
 
 ### Function Blocks (FBs)
 

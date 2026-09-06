@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_053`
+
 ----
 
 ## Purpose of the Exercise
@@ -12,7 +13,7 @@ Combining bits into a byte. This is a low-level form of data bundling, often use
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_053.SUB` uses conversion blocks for the data type `BYTE`[cite: 1].
+The subapplication `Uebung_053.SUB` uses conversion blocks for the data type `BYTE`.
 
 ### Function Blocks (FBs)
 

@@ -14,7 +14,7 @@ Realisierung eines Nachlauf-Verhaltens. Der Ausgang soll beim Drücken des Taste
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_020d.SUB` wird die TOF-Logik durch geschickte Verknüpfung von `E_DELAY` und `E_RS` implementiert[cite: 1].
+In `Uebung_020d.SUB` wird die TOF-Logik durch geschickte Verknüpfung von `E_DELAY` und `E_RS` implementiert.
 
 ### Funktionsweise
 

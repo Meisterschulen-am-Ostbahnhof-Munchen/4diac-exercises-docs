@@ -3,6 +3,7 @@
 ![Uebung_011b3_network](./Uebung_011b3_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_011b3** performs a simple subtraction of two numeric values read from the

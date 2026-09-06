@@ -51,6 +51,7 @@ The sub-app is connected as follows:
 
 - `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`
+
 1. **Interlock Processing**: The FB `ILOCK_AX` evaluates the signals. As long as no interlock is active, the outputs `UP_OUT` and `DOWN_OUT` are set according to the inputs. If the switching time exceeds the set protection time (`DT_PROTECT`), the output `timeOut` becomes active.
 2. **Outputs**: The enabled signals are routed to the logiBUS digital output adapters via adapter connections:
 

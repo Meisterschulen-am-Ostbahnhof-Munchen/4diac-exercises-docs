@@ -1,5 +1,3 @@
-Here is the documentation for Exercise 151 based on the provided data.
-
 # Exercise_151: Pulse Counter
 
 ![Uebung_151_network](./Uebung_151_network.svg)

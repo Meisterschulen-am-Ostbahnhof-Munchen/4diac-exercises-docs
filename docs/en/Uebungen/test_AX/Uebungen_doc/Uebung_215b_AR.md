@@ -80,6 +80,7 @@ The program flow consists of an event-driven and a data-flow-driven part.
 - A rising signal at `Input_I2` (LD) triggers `AI_INT_TO_I` again and loads the preset value into the counter.
 - The counter's output `Q` is directly connected to `Output_Q1`: As soon as the counter reaches 0, the output is set.
 - The current counter value `CV` is converted into an array via `AI_TO_AR` and passed to the terminal block, which displays the numerical value on the screen.
+
 1. **Notes from the comments**:
 
 - Negative values can also occur with this configuration (CD signals when CV=0).

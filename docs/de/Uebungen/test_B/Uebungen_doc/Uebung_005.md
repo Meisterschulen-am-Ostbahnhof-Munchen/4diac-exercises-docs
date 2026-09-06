@@ -20,7 +20,7 @@ Verständnis der Flankenauswertung unter Verwendung von Ereignisweichen. Es wird
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_005.SUB` kombiniert einen Standard-Eingang (`IX`) mit einer Ereignis-Weiche, um ein Flip-Flop zu takten[cite: 1].
+Die Subapplikation `Uebung_005.SUB` kombiniert einen Standard-Eingang (`IX`) mit einer Ereignis-Weiche, um ein Flip-Flop zu takten.
 
 ### Funktionsbausteine (FBs)
 
@@ -43,8 +43,6 @@ Die Schaltung nutzt die Datenverbindung vom Eingang zum Gate der Weiche:
     <Connection Source="DigitalInput_I1.IN" Destination="E_SWITCH.G"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der funktionale Ablauf:
 

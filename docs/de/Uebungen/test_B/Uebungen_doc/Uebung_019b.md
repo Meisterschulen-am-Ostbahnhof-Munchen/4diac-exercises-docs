@@ -14,7 +14,7 @@ Verknüpfung von UI-Zuständen mit Hardware-Speichern. Es soll sichergestellt we
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_019b.SUB` wird zusätzlich zur Maskenumschaltung ein SR-Flip-Flop für den Alarm-Status verwendet[cite: 1].
+In `Uebung_019b.SUB` wird zusätzlich zur Maskenumschaltung ein SR-Flip-Flop für den Alarm-Status verwendet.
 
 ### Funktionsbausteine (FBs)
 

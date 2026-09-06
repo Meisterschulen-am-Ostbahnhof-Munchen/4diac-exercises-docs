@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_004b_AX_ASR_X`.
-
 # Exercise_004b_AX_ASR_X: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 
 ![Uebung_004b_AX_ASR_X_network](./Uebung_004b_AX_ASR_X_network.svg)
@@ -73,11 +71,13 @@ The logic of this exercise is based on feedback of the current state to determin
 - The memory is set via `EO0` (`S`).
 - The memory is reset via `EO1` (`R`).
 - The path taken depends on the current state of the feedback.
+
 1. **Output and Feedback**:
 
 - The output of memory `AX_SR` goes to splitter `AX_SPLIT_2`.
 - **Branch 1 (`OUT1`)**: Goes directly to `DigitalOutput_Q1` to switch the lamp.
 - **Branch 2 (`OUT2`)**: Is fed back. It runs via `AX_X_TO_BOOL` (conversion) back to `AX_BOOL_TO_X`.
+
 1. **The Cycle**: This feedback loop allows the system to "know" its current state upon the next click, and the `AX_SWITCH` switches to the opposite state accordingly.
 
 ## Summary

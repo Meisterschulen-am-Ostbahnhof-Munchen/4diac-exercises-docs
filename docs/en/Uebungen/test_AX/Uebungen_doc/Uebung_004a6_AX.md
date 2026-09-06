@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a6_AX`. It introduces a more complex event handling pattern: the rendezvous. An event is only passed on when two conditions (events) have occurred
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Understanding the `E_REND` function block. This function block acts like an "AND
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a6_AX.SUB` uses `E_REND` to ensure that two buttons have been pressed before the light switches.[cite: 1]
+The subapplication `Uebung_004a6_AX.SUB` uses `E_REND` to ensure that two buttons have been pressed before the light switches.
 
 ### Function Blocks (FBs)
 
@@ -32,8 +33,6 @@ Understanding the `E_REND` function block. This function block acts like an "AND
 <Connection Source="E_REND.EO" Destination="E_T_FF.CLK"/>
 <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_REND.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. Pressing only button 1 (`I1`) does nothing at the output. `E_REND` internally registers "EI1 was present."
 2. Pressing button 2 (`I2`) then completes the condition (both were present). `E_REND` fires `EO`.

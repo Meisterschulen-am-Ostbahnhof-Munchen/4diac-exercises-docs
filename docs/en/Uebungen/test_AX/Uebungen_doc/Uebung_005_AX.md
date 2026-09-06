@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_005_AX`. This exercise demonstrates how to use a state-based input (`IXA`) to control an event-based flip-flop
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Demonstration of converting data to events for control purposes.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_005_AX.SUB` uses a standard digital input (`logiBUS_IXA`) instead of an event input (`logiBUS_IE`)[cite: 1].
+The subapplication `Uebung_005_AX.SUB` uses a standard digital input (`logiBUS_IXA`) instead of an event input (`logiBUS_IE`).
 
 ### Function Blocks (FBs)
 

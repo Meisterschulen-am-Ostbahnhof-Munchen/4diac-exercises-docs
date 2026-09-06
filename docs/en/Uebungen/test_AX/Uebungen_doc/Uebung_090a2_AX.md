@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_090a2_AX`
+
 ----
 
 ## Purpose of the exercise
@@ -12,7 +13,7 @@ Extension of the multiplexer.
 
 ## Description
 
-[cite_start]Structurally identical to `Uebung_090a1_AX`, but with a `AX_MUX_3`[cite: 1].
+Structurally identical to `Uebung_090a1_AX`, but with a `AX_MUX_3`.
 
 -----
 

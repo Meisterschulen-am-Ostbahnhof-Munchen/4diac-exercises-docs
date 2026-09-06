@@ -4,8 +4,9 @@
 
 ## Overview
 
-[cite_start]Variant of Exercise 034a1_Q1, configured for the hardware output `Q4`[cite: 1].
+Variant of Exercise 034a1_Q1, configured for the hardware output `Q4`.
 ![Uebung_034a1_Q4_network](./Uebung_034a1_Q4_network.svg)
+
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de

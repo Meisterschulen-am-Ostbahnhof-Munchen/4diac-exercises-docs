@@ -14,7 +14,7 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_081.SUB` wird ein Down-Counter zur Steuerung eines Ausgangs verwendet[cite: 1].
+In `Uebung_081.SUB` wird ein Down-Counter zur Steuerung eines Ausgangs verwendet.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,7 +22,7 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
   - **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
   - **`I2` (Load)**: Lädt den Zähler mit dem Vorgabewert (`PV`).
-  - **`E_CTD`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` ist auf 5 eingestellt[cite: 1].
+  - **`E_CTD`**: Der Zähler-Baustein. Der Parameter `PV` ist auf 5 eingestellt.
   - **`DigitalOutput_Q1`**: Signalisiert das Erreichen der Nullgrenze.
 
 -----

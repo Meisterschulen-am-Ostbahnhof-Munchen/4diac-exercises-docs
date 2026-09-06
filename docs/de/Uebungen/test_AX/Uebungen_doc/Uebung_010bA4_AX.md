@@ -14,7 +14,7 @@ Verhalten von `AuxHeld_START`.
 
 ## Beschreibung
 
-[cite_start]Nutzt `AuxFunction2_X1` mit `AuxHeld_START`[cite: 1].
+Nutzt `AuxFunction2_X1` mit `AuxHeld_START`.
 
 -----
 

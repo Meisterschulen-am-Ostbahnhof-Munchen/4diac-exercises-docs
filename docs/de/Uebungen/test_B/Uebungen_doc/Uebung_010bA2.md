@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010bA2`. Hier geht es um 
 
 ## Funktionsweise
 
-[cite_start]Verwendet `AuxFunction2_X1` mit dem Event `AuxEnabled`[cite: 1]. Das Verhalten hängt vom Typ des zugewiesenen Bedienelements (Joystick-Taste) ab:
+Verwendet `AuxFunction2_X1` mit dem Event `AuxEnabled`. Das Verhalten hängt vom Typ des zugewiesenen Bedienelements (Joystick-Taste) ab:
 
 ![Uebung_010bA2_network](./Uebung_010bA2_network.svg)
 

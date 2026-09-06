@@ -14,7 +14,7 @@ Dynamische Anpassung von Timer-Zeiten zur Laufzeit.
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_020c2.SUB` wird die Verzögerungszeit (`PT`) nicht fest im Programm hinterlegt, sondern vom ISOBUS-Terminal eingelesen[cite: 1].
+In `Uebung_020c2.SUB` wird die Verzögerungszeit (`PT`) nicht fest im Programm hinterlegt, sondern vom ISOBUS-Terminal eingelesen.
 
 ### Funktionsbausteine (FBs)
 

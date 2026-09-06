@@ -14,7 +14,7 @@ Das Ziel ist die Implementierung eines Teach-In-Verfahrens. Anstatt die Zeit `PT
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020i_AX.SUB` nutzt eine Stoppuhr, um die Zeitvorgabe für einen Puls-Baustein dynamisch zu ändern[cite: 1].
+Die Subapplikation `Uebung_020i_AX.SUB` nutzt eine Stoppuhr, um die Zeitvorgabe für einen Puls-Baustein dynamisch zu ändern.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,7 +22,7 @@ Das Ziel ist die Implementierung eines Teach-In-Verfahrens. Anstatt die Zeit `PT
 
   - **`DigitalInput_I2` (Teach-Taste)**: Typ `logiBUS_IXA`. Misst, wie lange der Taster gedrückt wird.
   - **`AX_SWITCH`**: Wandelt das Drücken/Loslassen von `I2` in Start/Stopp-Signale für die Stoppuhr um.
-  - **`E_STOPWATCH`**: [cite_start]Misst die Zeit zwischen `START` und `STOP` und gibt die Dauer am Ausgang `TD` aus[cite: 1].
+  - **`E_STOPWATCH`**: Misst die Zeit zwischen `START` und `STOP` und gibt die Dauer am Ausgang `TD` aus.
   - **`AX_PULSE`**: Der Impuls-Baustein. Sein Zeitparameter `PT` ist mit dem gemessenen Wert `TD` der Stoppuhr verbunden.
   - **`DigitalInput_CLK_I1` (Start-Taste)**: Typ `logiBUS_IE`. Löst den Puls aus.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.

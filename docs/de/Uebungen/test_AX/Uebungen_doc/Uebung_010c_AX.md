@@ -20,7 +20,7 @@ Rückmeldung an den Bediener (Farbumschlag).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010c_AX.SUB` erweitert die einfache Softkey-Schaltung um einen Feedback-Baustein[cite: 1].
+Die Subapplikation `Uebung_010c_AX.SUB` erweitert die einfache Softkey-Schaltung um einen Feedback-Baustein.
 
 ### Funktionsbausteine (FBs)
 

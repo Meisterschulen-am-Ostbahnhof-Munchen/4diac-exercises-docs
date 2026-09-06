@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020g`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Use of the function block `E_TONOF`, which provides both an on and off delay in 
 
 ## Functionality
 
-[cite_start]The module reacts to the level at input `IN`[cite: 1]:
+The module reacts to the level at input `IN`:
 
 ![Uebung_020g_network](./Uebung_020g_network.svg)
 

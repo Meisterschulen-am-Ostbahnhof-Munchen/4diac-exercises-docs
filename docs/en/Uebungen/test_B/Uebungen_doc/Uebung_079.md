@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_079`. This is a comprehensive exercise that introduces all available function blocks for acquiring tractor information
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To learn the entire range of TECU interface function blocks. An ISOBUS tractor r
 
 ## Overview of the Function Blocks (FBs)
 
-[cite_start]All relevant TECU input function blocks are located in `Uebung_079.SUB`[cite: 1]:
+All relevant TECU input function blocks are located in `Uebung_079.SUB`:
 
 ![Uebung_079_network](./Uebung_079_network.svg)
 

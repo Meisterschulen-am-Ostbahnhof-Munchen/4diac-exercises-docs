@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_011a`. It delves deeper into the interaction between button events and numeric displays on the terminal
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the `BUTTON_PRESS_REPEAT_DONE` event to update a display object.
 
 ## Description and Components
 
-[cite_start]In `Uebung_011a.SUB`, a byte value is read from a button and sent to a numeric display on the terminal.[cite: 1]
+In `Uebung_011a.SUB`, a byte value is read from a button and sent to a numeric display on the terminal.
 
 ### Function Blocks (FBs)
 

@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_UP`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c3_AX.SUB` ist auf `BUTTON_LONG_PRESS_UP` konfiguriert[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c3_AX.SUB` ist auf `BUTTON_LONG_PRESS_UP` konfiguriert.
 
 ![Uebung_004c3_AX_network](./Uebung_004c3_AX_network.svg)
 

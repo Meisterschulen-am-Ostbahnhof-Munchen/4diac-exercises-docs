@@ -13,6 +13,6 @@ This article describes the logiBUS® exercise `Uebung_089`.
 
 ## Overview
 
-[cite_start]Counterpart to the previous exercise using the building block `E_R_TRIG` [Rising Edge Trigger](cite: 1).
+Counterpart to the previous exercise using the building block `E_R_TRIG` [Rising Edge Trigger](cite: 1).
 
-[cite_start] The flip-flop is triggered precisely when an OR condition (`I1 OR I2`) becomes true. This means that as soon as the **first** of the two buttons is pressed, the lamp toggles. Pressing the second button (while the first is still held) has no effect, as the logic is already set to TRUE and no further rising edge is generated.
+ The flip-flop is triggered precisely when an OR condition (`I1 OR I2`) becomes true. This means that as soon as the **first** of the two buttons is pressed, the lamp toggles. Pressing the second button (while the first is still held) has no effect, as the logic is already set to TRUE and no further rising edge is generated.

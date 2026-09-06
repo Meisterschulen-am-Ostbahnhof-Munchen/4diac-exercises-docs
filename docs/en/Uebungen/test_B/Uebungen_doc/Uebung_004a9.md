@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a9`. Here, the concept of sequential event splitting is extended to three objectives
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a9.SUB` distributes the signal from a button to three separate toggle flip-flops and thus to three outputs[cite: 1].
+The subapplication `Uebung_004a9.SUB` distributes the signal from a button to three separate toggle flip-flops and thus to three outputs.
 
 ### Function Blocks (FBs)
 

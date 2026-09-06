@@ -55,6 +55,7 @@ The function block `DigitalInput_I1` provides the physical signal `Input_I1` (e.
 This signal is directly connected to the `IN` adapter of the timer `AX_TON`.
 
 - The timer starts on a rising edge (ON).
+
 1. **Variable Timer Time**
 
 The sub-block `Uebung_012e_sub_AR` outputs the numeric value loaded from the NVS via its AR output `VALUEO`.

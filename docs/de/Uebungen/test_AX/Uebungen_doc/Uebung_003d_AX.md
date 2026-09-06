@@ -14,7 +14,7 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Adapter-Tech
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003d_AX.SUB` verbindet zwei Eingänge mit zwei Ausgängen[cite: 1].
+Die Subapplikation `Uebung_003d_AX.SUB` verbindet zwei Eingänge mit zwei Ausgängen.
 
 ### Funktionsbausteine (FBs)
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a8_AX`. This is a variant of `Uebung_004a4_AX`, which uses a specific function block `E_SPLIT_2` explicitly designed for two outputs
+
 ----
 
 ## Objective of the Exercise
@@ -10,7 +11,7 @@ To become familiar with the specific splitter function blocks. `E_SPLIT` is ofte
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a8_AX.SUB` uses `E_SPLIT_2` to distribute a button click to two independent flip-flops[cite: 1].
+The subapplication `Uebung_004a8_AX.SUB` uses `E_SPLIT_2` to distribute a button click to two independent flip-flops.
 
 ### Function Blocks (FBs)
 
@@ -29,8 +30,6 @@ To become familiar with the specific splitter function blocks. `E_SPLIT` is ofte
 <Connection Source="E_SPLIT_2.EO1" Destination="AX_T_FF_Q1.CLK"/>
 <Connection Source="E_SPLIT_2.EO2" Destination="AX_T_FF_Q2.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 Functionally identical to `Uebung_004a4_AX`: An input event triggers two output events sequentially, ensuring both flip-flops are controlled reliably and in a defined manner.
 

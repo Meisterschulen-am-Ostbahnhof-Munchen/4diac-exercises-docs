@@ -19,7 +19,7 @@ Learning about event chaining. The end of a process (reaching the final position
 
 ## Description and Components
 
-[cite_start]In `Uebung_022.SUB`, two memory elements are connected to create a cascade[cite: 1].
+In `Uebung_022.SUB`, two memory elements are connected to create a cascade.
 
 ### Function Blocks (FBs)
 
@@ -38,8 +38,6 @@ Learning about event chaining. The end of a process (reaching the final position
 <Connection Source="SoftKey_F2_DOWN.IND" Destination="E_SR_Cyl_2.S"/>
 <Connection Source="SoftKey_F3_DOWN.IND" Destination="E_SR_Cyl_2.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 The sequence:
 

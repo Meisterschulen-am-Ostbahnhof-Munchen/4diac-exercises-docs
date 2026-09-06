@@ -28,6 +28,7 @@ The flow is defined by the event and data connections in the SubApp network:
 1. **Initialization**
 
 - Upon booting, `DigitalInput_I1` sends the event `INITO` to its own `REQ` input. This causes the input to be read once immediately after startup.
+
 1. **Input Reading and Negation**
 
 - Each time a new value is present at the input, `DigitalInput_I1` sends the event `IND`.

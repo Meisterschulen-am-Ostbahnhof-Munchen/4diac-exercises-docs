@@ -59,6 +59,7 @@ An additional **low-side driver** is activated for each active direction of rota
 
 - `DigitalInput_I1.IND` → `ILOCK.EI_UP` | `DigitalInput_I1.IN` → `ILOCK.DI_UP`
 - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN` | `DigitalInput_I2.IN` → `ILOCK.DI_DOWN`
+
 1. The output of `ILOCK_SWITCH` determines which output is activated according to **last-wins** logic:
 
 - Upon an event at `EI_UP`, `DO_UP = DI_UP` is set and `DO_DOWN` is reset (provided both inputs are active).
@@ -74,6 +75,7 @@ The output `DO_UP` is fed to the data output **Right Rotation** (`OUT`), and its
 - `ILOCK.DO_UP` → `OR_2_BOOL.IN1`
 - `ILOCK.DO_DOWN` → `OR_2_BOOL.IN2`
 - The events `EO_UP` and `EO_DOWN` are combined into `OR_2_BOOL.REQ`.
+
 1. As soon as at least one of the two data values is `TRUE`, `OR_2_BOOL.OUT = TRUE` is output. The confirmation event `CNF` then activates the **LowSide_Driver** (`REQ`), which switches on the shared power supply to the load (e.g., motor voltage) via `Output_Q56`.
 
 This circuit ensures:

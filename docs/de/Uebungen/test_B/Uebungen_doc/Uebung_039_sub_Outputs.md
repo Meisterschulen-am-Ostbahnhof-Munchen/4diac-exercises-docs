@@ -1,5 +1,3 @@
-Hier ist die Dokumentationsseite für die bereitgestellte Übungsdatei.
-
 # Uebung_039_sub_Outputs: Spiegelabfolge V2 mit Schrittkette SUB Out
 
 ![Uebung_039_sub_Outputs_network](./Uebung_039_sub_Outputs_network.svg)

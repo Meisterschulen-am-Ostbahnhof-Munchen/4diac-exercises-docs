@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_084`. Here, the counter is not controlled manually, but by a clock generator
+
 ----
 
 ## Purpose of the Exercise
@@ -12,7 +13,7 @@ Combination of a time base (`E_CYCLE`) and an event counter (`E_CTU`).
 
 ## Functionality
 
-[cite_start]In `Uebung_084.SUB`, the counter is automatically incremented every second[cite: 1].
+In `Uebung_084.SUB`, the counter is automatically incremented every second.
 
 ![Uebung_084_network](./Uebung_084_network.svg)
 

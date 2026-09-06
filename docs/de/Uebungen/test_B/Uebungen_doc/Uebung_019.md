@@ -28,13 +28,13 @@ Verwendung des Bausteins `Q_ActiveMask` zur Navigation auf dem Terminal. Es wird
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_019.SUB` nutzt zwei physische Taster, um zwischen zwei Arbeitsmasken zu wählen[cite: 1].
+Die Subapplikation `Uebung_019.SUB` nutzt zwei physische Taster, um zwischen zwei Arbeitsmasken zu wählen.
 
 ### Funktionsbausteine (FBs)
 
   - **`I1` & `I2`**: Physische Eingangs-Taster.
   - **`F_SEL_E_2`**: Ein Ereignis-Selektor. Er hat zwei `REQ`-Eingänge und gibt beim jeweiligen Trigger die zugeordnete Konstante am Datenausgang aus.
-  - **`Q_ActiveMask`**: Der ISOBUS-Ausgangsbaustein. [cite_start]Er sendet den Befehl zum Wechseln der Maske an das Terminal[cite: 1].
+  - **`Q_ActiveMask`**: Der ISOBUS-Ausgangsbaustein. Er sendet den Befehl zum Wechseln der Maske an das Terminal.
 
 -----
 

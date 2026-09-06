@@ -37,6 +37,7 @@ The logical flow of the exercise is as follows:
 - `DigitalInput_SET.IN` → `SR_T_FF.SET1`
 - `DigitalInput_RESET.IN` → `SR_T_FF.RESET`
 - `DigitalInput_CLK.IN` → `SR_T_FF.CLK`
+
 1. **Output**: The output `SR_T_FF.Q1` is transferred to the digital output `DigitalOutput_Q1.OUT` and output to `Output_Q1`.
 
 **How the SR_T_FF Works**:

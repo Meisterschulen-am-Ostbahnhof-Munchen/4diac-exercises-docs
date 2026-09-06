@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002b3_AX`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR) to fulfill a more complex switching condition
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The main objective of this exercise is the hierarchical linking of logic blocks.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002b3_AX.SUB` implements the logical function `Q1 = (I1 AND I2) OR I3` using adapter logic blocks[cite: 1].
+The subapplication `Uebung_002b3_AX.SUB` implements the logical function `Q1 = (I1 AND I2) OR I3` using adapter logic blocks.
 
 ### Function Blocks (FBs)
 
@@ -20,14 +21,14 @@ The following components are instantiated in the subapplication:
 
 ![Uebung_002b3_AX_network](./Uebung_002b3_AX_network.svg)
 
-- **`DigitalInput_I1`, `I2`, `I3`**: Instances of type `logiBUS_IXA`. [cite_start]They provide the input signals for the logic chain[cite: 1].
-- **`AND_2_BOOL`**: An instance of type `AX_AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
-- **`OR_2_BOOL`**: An instance of type `AX_OR_2`. [cite_start]Combines the result of the AND gate with the third input `I3`[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]Outputs the final result of the combinational logic to the hardware output[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Instances of type `logiBUS_IXA`. They provide the input signals for the logic chain.
+- **`AND_2_BOOL`**: An instance of type `AX_AND_2`. Combines the inputs `I1` and `I2`.
+- **`OR_2_BOOL`**: An instance of type `AX_OR_2`. Combines the result of the AND gate with the third input `I3`.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. Outputs the final result of the combinational logic to the hardware output.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]By consistently using adapter blocks, explicit event data converters (such as `F_MOVE`) are unnecessary, as the `AX` blocks handle both internally[cite: 1].
+By consistently using adapter blocks, explicit event data converters (such as `F_MOVE`) are unnecessary, as the `AX` blocks handle both internally.
 
 -----
 

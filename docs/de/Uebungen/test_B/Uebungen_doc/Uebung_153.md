@@ -14,7 +14,7 @@ Präzisere Regelung durch einen PID-Algorithmus.
 
 ## Beschreibung
 
-[cite_start]Strukturell identisch zu `Uebung_152`, jedoch wird der Baustein `CTRL_PID` verwendet[cite: 1].
+Strukturell identisch zu `Uebung_152`, jedoch wird der Baustein `CTRL_PID` verwendet.
 Zusätzlich zum P- und I-Anteil verfügt dieser über einen D-Anteil (`TV` Parameter), der auf die Änderungsgeschwindigkeit der Regelabweichung reagiert. Dies ermöglicht ein schnelleres Einregeln bei plötzlichen Störungen, erfordert aber eine sorgfältigere Parametrierung.
 
 ![Uebung_153_network](./Uebung_153_network.svg)

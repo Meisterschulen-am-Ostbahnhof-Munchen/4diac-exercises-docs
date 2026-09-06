@@ -14,7 +14,7 @@ Wiederholende Events.
 
 ## Beschreibung
 
-[cite_start]Nutzt `Button_A1` mit `BT_STILL_HELD`[cite: 1].
+Nutzt `Button_A1` mit `BT_STILL_HELD`.
 
 -----
 

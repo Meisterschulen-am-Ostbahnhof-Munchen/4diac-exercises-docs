@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010b9_AX`
+
 ----
 
 ## Purpose of the Exercise
@@ -12,7 +13,7 @@ Repeating events.
 
 ## Description
 
-[cite_start]Utilizes `Button_A1` with `BT_STILL_HELD`[cite: 1].
+Utilizes `Button_A1` with `BT_STILL_HELD`.
 
 -----
 

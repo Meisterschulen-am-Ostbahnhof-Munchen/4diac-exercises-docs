@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML content.
-
 # Exercise_010c3_sub_AX: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground using a Typed Subapp
 
 ![Uebung_010c3_sub_AX_network](./Uebung_010c3_sub_AX_network.svg)

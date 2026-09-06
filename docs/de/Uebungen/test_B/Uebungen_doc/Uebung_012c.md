@@ -14,7 +14,7 @@ Umgang mit dem Datentyp `STRING` bei der Speicherung.
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_012c.SUB` wird ein String-Wert über einen INI-Baustein verwaltet[cite: 1].
+In `Uebung_012c.SUB` wird ein String-Wert über einen INI-Baustein verwaltet.
 
 ### Funktionsbausteine (FBs)
 

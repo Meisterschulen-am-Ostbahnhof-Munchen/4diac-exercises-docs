@@ -14,11 +14,11 @@ Das Hauptziel ist die Vermeidung von redundantem Code. Anstatt für jeden Kanal 
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003a.SUB` verwendet zwei Instanzen eines selbst definierten Sub-App-Typs, um zwei Signalpfade zu realisieren[cite: 1].
+Die Subapplikation `Uebung_003a.SUB` verwendet zwei Instanzen eines selbst definierten Sub-App-Typs, um zwei Signalpfade zu realisieren.
 
 ### Typisierte Sub-Applikation: `Uebung_003a_sub`
 
-[cite_start]Dieser Baustein kapselt die grundlegende Logik der Signalweiterleitung[cite: 2]. Er besitzt zwei Parameter zur Hardware-Zuordnung:
+Dieser Baustein kapselt die grundlegende Logik der Signalweiterleitung. Er besitzt zwei Parameter zur Hardware-Zuordnung:
 
   - **`Input`**: Bestimmt den physischen Eingang (z.B. `Input_I1`).
   - **`Output`**: Bestimmt den physischen Ausgang (z.B. `Output_Q1`).
@@ -29,8 +29,8 @@ Im Inneren des Typs befinden sich ein `logiBUS_IX` und ein `logiBUS_QX` Baustein
 
 In `Uebung_003a` werden zwei Instanzen dieses Typs platziert:
 
-  - **`F1`**: [cite_start]Parametriert für den Pfad `I1` zu `Q1`[cite: 1].
-  - **`F2`**: [cite_start]Parametriert für den Pfad `I2` zu `Q2`[cite: 1].
+  - **`F1`**: Parametriert für den Pfad `I1` zu `Q1`.
+  - **`F2`**: Parametriert für den Pfad `I2` zu `Q2`.
 
 -----
 
@@ -48,8 +48,6 @@ Die Komplexität der Einzelverbindungen ist im Inneren der Sub-Applikation verbo
     <Parameter Name="Output" Value="Output_Q2"/>
 </SubApp>
 ```
-
-[cite_start][cite: 1]
 
 Funktional verhält sich die Anwendung exakt wie die flache Struktur in Übung 003. Jede Instanz arbeitet als eigenständiger Block, der auf Ereignisse an seinem zugewiesenen Hardware-Eingang reagiert und den Hardware-Ausgang aktualisiert.
 

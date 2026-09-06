@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the sub-app type `Uebung_003a_sub`. This block serves as a reusable template for the one-to-one connection of a digital input to a digital output
+
 ----
 
 ## Purpose of the exercise
@@ -12,7 +13,7 @@ Encapsulation of the logiBUS I/O logic. By creating a custom type, the complexit
 
 ## Description and components
 
-[cite_start]The type `Uebung_003a_sub` bundles an input and an output block[cite: 1].
+The type `Uebung_003a_sub` bundles an input and an output block.
 
 ### Internal Function Blocks (FBs)
 
@@ -23,7 +24,7 @@ Encapsulation of the logiBUS I/O logic. By creating a custom type, the complexit
 
 ## Interfaces
 
-[cite_start]The block has two configuration inputs[cite: 1]:
+The block has two configuration inputs:
 
 - **`Input`**: Expects a constant of type `logiBUS_DI_S` (e.g., `Input_I1`). ...07qz**: Type `logiBUS_QX`. Switches the hardware pin assigned via the parameter `Output`.
 - - **`Output`**: Expects a constant of type `logiBUS_DO_S` (e.g., `Output_Q1`).

@@ -26,12 +26,12 @@ Learn how to use `Object Pointer` objects. A pointer is a placeholder on the scr
 
 ## Description and Components
 
-[cite_start]In `Uebung_015.SUB`, an object pointer (`ObjectPointer_P1`) is toggled between a button (`Button_A1`) and an empty state (`ID_NULL`)[cite: 1].
+In `Uebung_015.SUB`, an object pointer (`ObjectPointer_P1`) is toggled between a button (`Button_A1`) and an empty state (`ID_NULL`).
 
 ### Function Blocks (FBs)
 
 - **`SoftKey_UP_F1` & `F2`**: Control the selection.
-- **`F_SEL`**: A selection block. [cite_start]Depending on the input `G` (from memory `E_SR`), it outputs either the value `ID_NULL` (0) or the object ID of `Button_A1`[cite: 1].
+- **`F_SEL`**: A selection block. Depending on the input `G` (from memory `E_SR`), it outputs either the value `ID_NULL` (0) or the object ID of `Button_A1`.
 - **`Q_NumericValue`**: Used here for a different purpose, to send the ID to the pointer (since a pointer update technically involves sending a new ID to the pointer's object ID).
 
 - -----

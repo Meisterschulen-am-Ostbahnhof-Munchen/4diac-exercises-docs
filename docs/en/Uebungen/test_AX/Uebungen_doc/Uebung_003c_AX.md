@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices
+
 ----
 
 ## Objective of the Exercise
@@ -12,11 +13,11 @@ The objective is to make local hardware inputs (`I1` to `I4`) available to the I
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003c_AX.SUB` uses untyped (or reused typed) subapplications to define four channels[cite: 1].
+The subapplication `Uebung_003c_AX.SUB` uses untyped (or reused typed) subapplications to define four channels.
 
 ### Subcomponent: `Uebung_003c_sub_AX`
 
-[cite_start]This sub-block connects a local digital input to an ISOBUS auxiliary output block[cite: 2].
+This sub-block connects a local digital input to an ISOBUS auxiliary output block.
 
 - **Input**: `logiBUS_IXA` (Reads the local pin)
 - **Output**: `Aux_QXA` (Sends the status as an ISOBUS AUX message)

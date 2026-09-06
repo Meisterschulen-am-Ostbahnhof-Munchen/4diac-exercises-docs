@@ -44,6 +44,7 @@ Wiring within the SubApp network is done exclusively via **adapter connections**
 routes the signal for the right turn signal to digital output Q1.
 
 - **`IA_Lighting.LEFT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q2.OUT`** routes the signal for the left turn signal to digital output Q2.
+
 1. The third output module, `DigitalOutput_Q3`, remains unused in this exercise (it can be used as a spare or for future expansion).
 
 Thanks to the adapter technology, complex parameter transfer is eliminated – signal propagation is standardized and automatic.

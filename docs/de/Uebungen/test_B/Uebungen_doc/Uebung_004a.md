@@ -16,15 +16,15 @@ Das Ziel ist es, den Unterschied zwischen zustandsorientierter (Pegel) und ereig
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a.SUB` verwendet einen speziellen Eingangsbaustein, der Klick-Ereignisse generiert, und ein Toggle-Flip-Flop[cite: 1].
+Die Subapplikation `Uebung_004a.SUB` verwendet einen speziellen Eingangsbaustein, der Klick-Ereignisse generiert, und ein Toggle-Flip-Flop.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_004a_network](./Uebung_004a_network.svg)
 
-  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE` (Input Event). [cite_start]Im Gegensatz zum Standard-Eingang liefert dieser Baustein kein kontinuierliches Signal, sondern feuert ein einzelnes Ereignis (`IND`), wenn eine bestimmte Bedingung erfüllt ist. Hier ist er auf `BUTTON_SINGLE_CLICK` konfiguriert[cite: 1].
-  - **`E_T_FF`**: Typ `E_T_FF` (Standard-IEC-Event-Baustein). [cite_start]Dieser Baustein hat einen Takteingang (`CLK`). Bei jedem empfangenen Ereignis wechselt er seinen internen Zustand und gibt diesen über den Daten-Ausgang `Q` sowie ein Bestätigungs-Event `EO` aus[cite: 1].
-  - **`DigitalOutput_Q1`**: Typ `logiBUS_QX`. [cite_start]Schaltet den physischen Ausgang `Q1` basierend auf dem Zustand des Flip-Flops[cite: 1].
+  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE` (Input Event). Im Gegensatz zum Standard-Eingang liefert dieser Baustein kein kontinuierliches Signal, sondern feuert ein einzelnes Ereignis (`IND`), wenn eine bestimmte Bedingung erfüllt ist. Hier ist er auf `BUTTON_SINGLE_CLICK` konfiguriert.
+  - **`E_T_FF`**: Typ `E_T_FF` (Standard-IEC-Event-Baustein). Dieser Baustein hat einen Takteingang (`CLK`). Bei jedem empfangenen Ereignis wechselt er seinen internen Zustand und gibt diesen über den Daten-Ausgang `Q` sowie ein Bestätigungs-Event `EO` aus.
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QX`. Schaltet den physischen Ausgang `Q1` basierend auf dem Zustand des Flip-Flops.
 
 -----
 
@@ -41,8 +41,6 @@ Die Logik basiert auf der Umwandlung eines flüchtigen Tastendrucks in einen dau
     <Connection Source="E_T_FF.Q" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  Der Benutzer drückt den Taster an `I1` kurz ("Klick").
 2.  Der `DigitalInput_CLK_I1` erkennt das Muster "Einzelklick" und sendet ein `IND`-Ereignis.

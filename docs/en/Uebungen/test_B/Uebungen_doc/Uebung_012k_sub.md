@@ -54,6 +54,7 @@ The sub-application has the following interfaces:
 - The event output `IND` of the `StringValue_IS` block triggers the `SET` input of the INI block as soon as a new string arrives.
 - Simultaneously, the string value from `StringValue_IS.IN` is passed to the `VALUE` input of the INI block.
 - The parameters `KEY`, `SECTION`, and `u16ObjId` are passed directly from the SubApp inputs to the corresponding function blocks (`KEY` → INI.KEY, `SECTION` → INI.SECTION, `u16ObjId` → StringValue_IS.u16ObjId and Q_StringValue.u16ObjId).
+
 1. **Output**:
 
 - After successful saving (or retrieval), the INI function block returns the event `SETO` and/or `GETO`.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_038_AX`. We will build a classic sequencer
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of an automatic sequence of 8 steps.
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_038_AX.SUB` uses a sequencer module to switch 8 outputs sequentially.[cite: 1]
+The sub-application `Uebung_038_AX.SUB` uses a sequencer module to switch 8 outputs sequentially.
 
 ### Function Blocks (FBs)
 

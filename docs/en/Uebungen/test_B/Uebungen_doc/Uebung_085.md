@@ -19,13 +19,13 @@ Using the function block `E_D_FF`. The goal is to only accept a data value (TRUE
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_085.SUB` uses one data input and one click event input[cite: 1].
+The subapplication `Uebung_085.SUB` uses one data input and one click event input.
 
 ### Function Blocks (FBs)
 
 - **`I1` (Data)**: Provides the target state.
 - **`I2` (Clock)**: Provides the takeover pulse.
-- **`E_D_FF`**: The memory block. [cite_start]It only transfers the value at input `D` to output `Q` if an event is received at input `CLK`[cite: 1].
+- **`E_D_FF`**: The memory block. It only transfers the value at input `D` to output `Q` if an event is received at input `CLK`.
 
 -----
 

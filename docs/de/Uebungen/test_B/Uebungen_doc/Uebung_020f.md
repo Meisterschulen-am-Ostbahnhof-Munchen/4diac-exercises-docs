@@ -14,7 +14,7 @@ Nutzung des impulsformenden Timers `E_TP` (Timer Pulse).
 
 ## Funktionsweise
 
-[cite_start]Sobald der Eingang `IN` auf `TRUE` wechselt, schaltet der Ausgang `Q` für exakt die Zeit `PT` (hier 5 Sekunden) ein[cite: 1].
+Sobald der Eingang `IN` auf `TRUE` wechselt, schaltet der Ausgang `Q` für exakt die Zeit `PT` (hier 5 Sekunden) ein.
 Das Besondere: Der Ausgang bleibt für die volle Zeit aktiv, auch wenn der Eingang `IN` zwischendurch wieder abfällt oder mehrfach gedrückt wird (nicht re-triggerbar).
 
 -----

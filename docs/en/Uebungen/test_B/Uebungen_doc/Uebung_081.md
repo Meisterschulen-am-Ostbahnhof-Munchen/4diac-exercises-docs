@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_081`. It demonstrates the principle of counting down until the zero limit is reached
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the function block `E_CTD` (Event Count Down). It demonstrates how a count
 
 ## Description and Components
 
-[cite_start]In `Uebung_081.SUB`, a down counter is used to control an output [cite: 1].
+In `Uebung_081.SUB`, a down counter is used to control an output .
 
 ### Function Blocks (FBs)
 
@@ -20,7 +21,7 @@ Using the function block `E_CTD` (Event Count Down). It demonstrates how a count
 
 - **`I1` (Count Down)**: Decrements the counter value with each click.
 - **`I2` (Load)**: Loads the counter with the default value (`PV`).
-- **`E_CTD`**: The counter block. [cite_start]The parameter `PV` is set to 5[cite: 1].
+- **`E_CTD`**: The counter block. The parameter `PV` is set to 5.
 - **`DigitalOutput_Q1`**: Signals that the zero limit has been reached.
 
 -----

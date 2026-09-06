@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_039a_sub_Outputs: Subapplication Type
 
 ![Bild der Übung, falls vorhanden]

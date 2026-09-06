@@ -14,13 +14,13 @@ Nutzung von spezialisierten Dienstbausteinen zur Reduktion der Diagramm-Komplexi
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_006a4.SUB` wird das Netzwerk aus Gattern und Sub-Apps durch den Baustein `LinksRechts` ersetzt[cite: 1].
+In `Uebung_006a4.SUB` wird das Netzwerk aus Gattern und Sub-Apps durch den Baustein `LinksRechts` ersetzt.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_006a4_network](./Uebung_006a4_network.svg)
 
-  - **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]Dieser Baustein übernimmt die komplette Verwaltung der zwei Ausgänge inklusive der internen Richtungs-Logik[cite: 1].
+  - **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts`. Dieser Baustein übernimmt die komplette Verwaltung der zwei Ausgänge inklusive der internen Richtungs-Logik.
   - **`E_T_FF_SR`**: Liefert weiterhin das Startsignal an den Eingang `EI_ON`.
 
 -----

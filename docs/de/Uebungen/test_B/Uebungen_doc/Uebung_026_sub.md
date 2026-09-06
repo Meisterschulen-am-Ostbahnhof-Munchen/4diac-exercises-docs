@@ -14,7 +14,7 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 
 ## Beschreibung und Komponenten
 
-[cite_start]Der Typ `Uebung_026_sub` kombiniert einen Speicher mit einer Plausibilitätsprüfung[cite: 1].
+Der Typ `Uebung_026_sub` kombiniert einen Speicher mit einer Plausibilitätsprüfung.
 
 ### Interne Funktionsbausteine (FBs)
 
@@ -22,13 +22,13 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 
   - **`E_SR`**: Speichert, ob der Aktor gerade aktiv sein soll.
   - **`QX`**: Typ `logiBUS_QX`. Steuert den physischen Port an.
-  - **`E_SWITCH`**: Dient als Rückmelde-Gatter. [cite_start]Nur wenn der Speicher tatsächlich auf TRUE steht, wird das Bestätigungs-Event am Ausgang `EO1` weitergegeben[cite: 1].
+  - **`E_SWITCH`**: Dient als Rückmelde-Gatter. Nur wenn der Speicher tatsächlich auf TRUE steht, wird das Bestätigungs-Event am Ausgang `EO1` weitergegeben.
 
 -----
 
 ## Schnittstellen
 
-[cite_start]Der Baustein bietet eine klare Event-Schnittstelle[cite: 1]:
+Der Baustein bietet eine klare Event-Schnittstelle:
 
 -   **`SET`**: Schaltet den Aktor ein.
 -   **`RESET`**: Schaltet den Aktor aus.

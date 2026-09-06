@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_150` based on the provided data.
-
 # Exercise_150: Pulse Counter
 
 ![Uebung_150_network](./Uebung_150_network.svg)

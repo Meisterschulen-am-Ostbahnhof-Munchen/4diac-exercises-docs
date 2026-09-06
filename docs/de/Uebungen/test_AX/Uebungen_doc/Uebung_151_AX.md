@@ -14,7 +14,7 @@ Berechnung einer zeitlichen Änderung (Differenzialquotient) aus Impulswerten.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_151_AX.SUB` erweitert den Impulszähler um mathematische Funktionen[cite: 1].
+Die Subapplikation `Uebung_151_AX.SUB` erweitert den Impulszähler um mathematische Funktionen.
 
 ### Funktionsbausteine (FBs)
 

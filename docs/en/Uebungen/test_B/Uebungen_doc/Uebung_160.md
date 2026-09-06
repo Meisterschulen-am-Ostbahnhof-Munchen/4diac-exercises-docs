@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_160`. It demonstrates the simple logic function for controlling a reversible drive
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Implementation of a control system for left rotation, right rotation, and a summ
 
 ## Description and Components
 
-[cite_start]In `Uebung_160.SUB`, two pushbuttons are mapped to three outputs[cite: 1].
+In `Uebung_160.SUB`, two pushbuttons are mapped to three outputs.
 
 ### Function Blocks (FBs)
 

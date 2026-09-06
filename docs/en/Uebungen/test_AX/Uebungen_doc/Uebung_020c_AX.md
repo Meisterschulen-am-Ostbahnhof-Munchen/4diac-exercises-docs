@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020c_AX`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To become familiar with the timer block `AX_TON`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020c_AX.SUB` delays the on-signal[cite: 1].
+The subapplication `Uebung_020c_AX.SUB` delays the on-signal.
 
 ### Function Blocks (FBs)
 

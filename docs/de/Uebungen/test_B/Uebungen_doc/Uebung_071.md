@@ -14,14 +14,14 @@ Implementierung einer Schwellwert-Logik basierend auf TECU-Daten. Der Ausgang so
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_071.SUB` wird die radbasierte Geschwindigkeit mit einem festen Wert verglichen[cite: 1].
+In `Uebung_071.SUB` wird die radbasierte Geschwindigkeit mit einem festen Wert verglichen.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_071_network](./Uebung_071_network.svg)
 
   - **`I_WBSD`**: Liefert die aktuelle Geschwindigkeit.
-  - **`F_GT`**: Ein Vergleichs-Baustein (Greater Than). [cite_start]Er prüft, ob der Eingangswert größer als 0 ist[cite: 1].
+  - **`F_GT`**: Ein Vergleichs-Baustein (Greater Than). Er prüft, ob der Eingangswert größer als 0 ist.
   - **`DigitalOutput_Q1`**: Der Hardware-Ausgang.
 
 -----

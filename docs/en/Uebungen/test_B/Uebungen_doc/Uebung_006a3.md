@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006a3`. This is a more complex application for controlling a motor with two directions of rotation and automatic switching
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To build a control system for forward and reverse operation with software interl
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006a3.SUB` combines a main on/off memory with logic for direction selection[cite: 1].
+The sub-application `Uebung_006a3.SUB` combines a main on/off memory with logic for direction selection.
 
 ### Function Blocks (FBs)
 

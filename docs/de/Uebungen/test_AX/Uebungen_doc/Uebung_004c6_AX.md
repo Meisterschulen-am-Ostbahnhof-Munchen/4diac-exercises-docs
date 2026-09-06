@@ -14,7 +14,7 @@ Konfiguration eines n-fach Klicks.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004c6_AX.SUB` nutzt `logiBUS_IE2` mit `InputEvent = BUTTON_MULTIPLE_CLICK` und `arg = 3`[cite: 1].
+Die Subapplikation `Uebung_004c6_AX.SUB` nutzt `logiBUS_IE2` mit `InputEvent = BUTTON_MULTIPLE_CLICK` und `arg = 3`.
 
 ### Funktionsbausteine (FBs)
 

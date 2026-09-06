@@ -1,5 +1,3 @@
-Here is the documentation page for exercise `Uebung_006e1` based on the provided data.
-
 # Exercise_006e1: SR Flip-Flop with 2x IX
 
 ![Uebung_006e1_network](./Uebung_006e1_network.svg)
@@ -60,6 +58,7 @@ The network links the physical inputs and outputs using the logical SR function:
 - If `S1` is TRUE, the output `Q1` is set to TRUE.
 - If `R` is TRUE, the output `Q1` is set to FALSE.
 - - (Note: For SR elements, the set state is usually dominant when both inputs are TRUE simultaneously. However, this depends on the specific implementation of the IEC 61131 library; typically, an SR element is reset-dominant if it is designated as SR, but the IEC standard defines SR as set-dominant. In 4diac/IEC61499, `FB_SR` is defined as follows: If S1 and R are both 1, then Q1 = 1).
+
 1. **Output Processing**:
 
 - The result `Q1` of the flip-flop is routed to the data input `OUT` of `DigitalOutput_Q1`.

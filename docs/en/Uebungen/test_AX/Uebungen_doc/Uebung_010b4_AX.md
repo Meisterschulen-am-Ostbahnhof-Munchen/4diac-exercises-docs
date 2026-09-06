@@ -17,7 +17,7 @@ Efficiently connecting many softkeys.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010b4_AX.SUB` uses untyped subapplications (`Uebung_010b4_sub_AX`) to map 8 softkeys to 8 outputs[cite: 1].
+The subapplication `Uebung_010b4_AX.SUB` uses untyped subapplications (`Uebung_010b4_sub_AX`) to map 8 softkeys to 8 outputs.
 
 The structure is analogous to `Uebung_003b2_AX`, but with ISOBUS softkeys as the source.
 

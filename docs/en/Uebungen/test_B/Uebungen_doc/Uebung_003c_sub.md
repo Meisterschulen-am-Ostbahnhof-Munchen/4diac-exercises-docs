@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the sub-application type `Uebung_003c_sub`. This function block serves as a bridge between local hardware and the ISOBUS auxiliary input system
+
 ----
 
 ## Purpose of the Exercise
@@ -12,7 +13,7 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 ## Description and Components
 
-[cite_start]The type `Uebung_003c_sub` contains a local input function block and an ISOBUS output function block[cite: 1].
+The type `Uebung_003c_sub` contains a local input function block and an ISOBUS output function block.
 
 ### Internal Function Blocks (FBs)
 
@@ -25,7 +26,7 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 ## Interfaces
 
-[cite_start]The function block is configured via two parameters[cite: 1]:
+The function block is configured via two parameters:
 
 - **`Input`**: The physical button on the controller.
 - **`iInpNr`**: The sequential number (index) in the ISOBUS auxiliary pool.

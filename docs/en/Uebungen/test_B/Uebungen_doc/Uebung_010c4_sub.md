@@ -8,7 +8,7 @@
 
 ## Overview
 
-[cite_start]This type is functionally identical to `Uebung_010c3_sub` and serves to cleanly structure multi-channel feedback applications[cite: 1]. By encapsulating it in a single type, any number of softkey output combinations with integrated color changes can be created quickly and without errors.
+This type is functionally identical to `Uebung_010c3_sub` and serves to cleanly structure multi-channel feedback applications. By encapsulating it in a single type, any number of softkey output combinations with integrated color changes can be created quickly and without errors.
 
 ## 🛠️ Related exercises
 

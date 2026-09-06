@@ -65,15 +65,18 @@ The flow is controlled via event and adapter connections:
 
 - `DigitalInput_CLK_I1` sends the clock signal (CLK) via `X_TO_B_I1` to `E_CYCLE.START` (event CNF).
 - `DigitalInput_RST_I2` sends the reset signal (RST) via `X_TO_B_I2` to `E_CTU.R` and simultaneously to `E_CYCLE.STOP`.
+
 1. **Cyclic Counter**
 
 - Every 1 ms, `E_CYCLE` generates an event `EO` as soon as `START` is active. This event is then passed to `E_CTU.CU`. The counter increments its value `CV` with each event.
 - When the reset input (RST) is activated, the counter is reset and the cycle is stopped.
+
 1. **Counter Value Output**
 
 - The current counter value `CV` from `E_CTU` is passed to `AUI_D_FF_TMIN.I` via the adapter.
 - After a delay of at least 1 second, `AUI_D_FF_TMIN` passes this value as an event to `AUI_D_FF_TMIN.Q` (event brake).
 - Via `UI_TO_UDI_N1` (conversion), the value is passed to `Q_NumericValue` and output to the numeric output `N1`.
+
 1. **Digital Output**
 
 - When the counter reaches its end value, `E_CTU.Q` sets an event. This is stored by `AX_D_FF` and passed to the digital output `DigitalOutput_Q1`.

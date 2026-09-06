@@ -14,7 +14,7 @@ Auswahl einer Event-Quelle (Gegenteil von `E_SPLIT` oder `E_SWITCH`).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_095_AX.SUB` nutzt einen `AX_SELECT` Baustein[cite: 1].
+Die Subapplikation `Uebung_095_AX.SUB` nutzt einen `AX_SELECT` Baustein.
 
 ### Funktionsbausteine (FBs)
 

@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_HOLD`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c4.SUB` ist auf permanentes Halten konfiguriert[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c4.SUB` ist auf permanentes Halten konfiguriert.
 
 ![Uebung_004c4_network](./Uebung_004c4_network.svg)
 

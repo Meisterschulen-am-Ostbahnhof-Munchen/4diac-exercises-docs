@@ -74,6 +74,7 @@ I_WBSD.IND` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.REQ` → `FIELDBUS_UINT_TO_SIGNA
 
 - The fieldbus block generates the event `IND` when a new wheel speed value is received, which triggers the conversion.
 - After successful conversion, `CNF` signals the UT block to display the updated value.
+
 1. **Data Flow**
 
 I_WBSD.WHEELBASEDMACHINESPEED` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.IN`

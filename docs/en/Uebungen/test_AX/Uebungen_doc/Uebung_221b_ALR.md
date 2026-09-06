@@ -75,6 +75,7 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 - `CD` (Count Down) from `Input_CD`: An event at `I2` decrements the counter by 1.
 - `R` (Reset) from `Input_R`: An event at `I3` resets the counter to 0.
 - `LD` (Load) from `Input_LD`: An event on `I4` loads the preset value (PV) into the counter.
+
 1. **Preset Value (PV)**: The function block `ADI_DINT_TO_DI` is activated on the INIT event of `Input_LD` (event connection `Input_LD.INITO → ADI_DINT_TO_DI.REQ`). It passes the constant value `DINT#5` to the adapter input `PV` of the counter. Thus, the counter is set to 5 with each load.
 2. **Outputs**:
 

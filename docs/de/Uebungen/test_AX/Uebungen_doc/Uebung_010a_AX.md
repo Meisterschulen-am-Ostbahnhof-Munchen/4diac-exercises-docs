@@ -20,7 +20,7 @@ Erweiterung auf mehrere Softkeys.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a_AX.SUB` steuert zwei Ausgänge über zwei Softkeys[cite: 1].
+Die Subapplikation `Uebung_010a_AX.SUB` steuert zwei Ausgänge über zwei Softkeys.
 
 ### Funktionsbausteine (FBs)
 

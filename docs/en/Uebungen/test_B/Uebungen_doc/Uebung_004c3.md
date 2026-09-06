@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004c3`
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Using the event `BUTTON_LONG_PRESS_UP`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c3.SUB` detects the end of a long press[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c3.SUB` detects the end of a long press.
 
 ![Uebung_004c3_network](./Uebung_004c3_network.svg)
 

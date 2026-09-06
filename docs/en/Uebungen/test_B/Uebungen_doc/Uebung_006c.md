@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006c`. Here, a complex channel control is implemented using byte data and event demultiplexers
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ To learn about addressed event distribution. Instead of running a separate line 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006c.SUB` controls 8 lamp memory units via two central selector switches[cite: 1].
+The subapplication `Uebung_006c.SUB` controls 8 lamp memory units via two central selector switches.
 
 ### Function Blocks (FBs)
 

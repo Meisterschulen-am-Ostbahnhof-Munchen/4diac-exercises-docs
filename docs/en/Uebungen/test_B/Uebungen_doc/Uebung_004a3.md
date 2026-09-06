@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a3`. This exercise demonstrates a simplification compared to `Uebung_004a2`: In IEC 61499, multiple event sources can often be directly connected to the same event input
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The objective is to reduce the visual complexity of the network diagram. It demo
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a3.SUB` connects two event sources directly to the clock input of the flip-flop[cite: 1].
+The subapplication `Uebung_004a3.SUB` connects two event sources directly to the clock input of the flip-flop.
 
 ### Function Blocks (FBs)
 
@@ -32,8 +33,6 @@ The function block `E_MERGE` from the previous exercise is intentionally omitted
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF.CLK"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_T_FF.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 The functionality is identical to the exercise with `E_MERGE`: Every incoming event at `E_T_FF.CLK` – regardless of whether it originates from `I1` or `I2` – triggers the execution of the function block. 4diac natively supports this multiple connection for events.
 

@@ -14,7 +14,7 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a7.SUB` nutzt drei Taster zur Steuerung eines Lampenzustands[cite: 1].
+Die Subapplikation `Uebung_004a7.SUB` nutzt drei Taster zur Steuerung eines Lampenzustands.
 
 ### Funktionsbausteine (FBs)
 
@@ -38,8 +38,6 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
     <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_T_FF.R"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  Um das Licht (`Q1`) umzuschalten, müssen beide Taster `I1` und `I2` betätigt worden sein. Das Rendezvous feuert dann den Takt (`CLK`) für das Flip-Flop.
 2.  Der Taster `I3` fungiert als **Alles-Aus-Taste**:

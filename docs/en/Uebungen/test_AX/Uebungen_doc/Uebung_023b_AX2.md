@@ -61,6 +61,7 @@ The control system is divided into two independent cycles:
 - Release softkey **F1** → The event at the `IND` output of `SoftKey_UP_F1` is forwarded to the `S` input of `AX_SR_Ausfahren_Cyl_1`.
 - Press softkey **F2** → The event at `SoftKey_F2_DOWN.IND` is forwarded to the `R` input of `AX_SR_Ausfahren_Cyl_1`.
 - The state `Q` of `AX_SR_Ausfahren_Cyl_1` is passed via the adapter to the OUT input of `DigitalOutput_Q1` → **Output Q1** switches.
+
 1. **Extend cylinder 2**
 
 - Press softkey **F2** → The event from `SoftKey_F2_DOWN.IND` is routed to the `S` input of `AX_SR_Ausfahren_Cyl_2`.
@@ -74,6 +75,7 @@ The control system is divided into two independent cycles:
 - Press softkey **F8** → The event from `SoftKey_F8_DOWN.IND` is passed to the `S` input of `AX_SR_Einfahren_Cyl_1`.
 - Press softkey **F9** → The event from `SoftKey_F9_DOWN.IND` is passed to the `R` input of `AX_SR_Einfahren_Cyl_1`.
 - The state `Q` from `AX_SR_Einfahren_Cyl_1` is passed to `DigitalOutput_Q4` → **Output Q4** switches.
+
 1. **Retract cylinder 2**
 
 - Press softkey **F7** → The event from `SoftKey_F7_UP.IND` is forwarded to the `S` input of `AX_SR_Einfahren_Cyl_2`.

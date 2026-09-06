@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_040_2` basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_040_2: Lauflicht 8
 
 ![Uebung_040_2_network](./Uebung_040_2_network.svg)

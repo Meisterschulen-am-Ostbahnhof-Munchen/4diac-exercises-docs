@@ -31,13 +31,13 @@ Using the function block `Q_ActiveMask` for navigation on the terminal. It demon
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_019.SUB` uses two physical buttons to select between two user interface screens[cite: 1].
+The subapplication `Uebung_019.SUB` uses two physical buttons to select between two user interface screens.
 
 ### Function Blocks (FBs)
 
 - **`I1` & `I2`**: Physical input buttons.
 - **`F_SEL_E_2`**: An event selector. It has two `REQ` inputs and outputs the corresponding constant at the data output when triggered.
-- **`Q_ActiveMask`**: The ISOBUS output block. [cite_start]It sends the command to change the mask to the terminal[cite: 1].
+- **`Q_ActiveMask`**: The ISOBUS output block. It sends the command to change the mask to the terminal.
 
 -----
 

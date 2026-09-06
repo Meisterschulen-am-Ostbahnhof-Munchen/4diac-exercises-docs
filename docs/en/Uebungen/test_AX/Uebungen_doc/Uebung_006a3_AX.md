@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006a3_AX`. This is a more complex application for controlling a motor with two directions of rotation
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Implementation of a reversing contactor control with software interlock. "Left" 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a3_AX.SUB` uses a combination of a flip-flop, a splitter, and a custom sub-application (`Uebung_006a3_sub_AX`)[cite: 1].
+The subapplication `Uebung_006a3_AX.SUB` uses a combination of a flip-flop, a splitter, and a custom sub-application (`Uebung_006a3_sub_AX`).
 
 ### Function Blocks (FBs)
 

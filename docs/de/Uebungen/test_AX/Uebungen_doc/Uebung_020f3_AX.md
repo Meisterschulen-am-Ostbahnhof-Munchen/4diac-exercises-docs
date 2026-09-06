@@ -14,7 +14,7 @@ Verwendung des `AX_BLINK` Bausteins für asymmetrisches Blinken.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020f3_AX.SUB` nutzt einen spezialisierten Blinker-Baustein[cite: 1].
+Die Subapplikation `Uebung_020f3_AX.SUB` nutzt einen spezialisierten Blinker-Baustein.
 
 ### Funktionsbausteine (FBs)
 

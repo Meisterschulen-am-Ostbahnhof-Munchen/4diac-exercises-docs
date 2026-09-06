@@ -49,11 +49,13 @@ Terminal output block. Parameter: `u16ObjId = OutputNumber_N1`. Displays the rec
 - Each rising edge at `Input_CD` decrements the counter by 1.
 - A positive signal at `Input_R` resets the counter to 0.
 - A positive signal at `Input_LD` sets the counter to the current preset value (here, 5).
+
 1. **Outputs**:
 
 - The output `Output_QU` (overflow) is activated when the counter reaches its maximum DINT value and another forward pulse occurs.
 - The output `Output_QD` (underflow) is activated when the counter reaches the minimum DINT value and another reverse pulse occurs.
 - The current counter value (CV) is output via `ADI_TO_AUDI` and `Q_NumericValue_AUDI` to a terminal (object ID `OutputNumber_N1`).
+
 1. **Data Connections** (Adapter Connections):
 
 - The counter's adapter inputs `CU`, `CD`, `R`, and `LD` are directly connected to the corresponding logiBUS inputs.
@@ -63,6 +65,7 @@ Terminal output block. Parameter: `u16ObjId = OutputNumber_N1`. Displays the rec
 - The adapter output `CV` (count value) is connected to `ADI_TO_AUDI.ADI_IN`.
 - The AUDI output of `ADI_TO_AUDI` is connected to `Q_NumericValue_AUDI.u32NewValue`.
 - The fixed preset value of `ADI_DINT_TO_DI` is transferred to `ADI_FB_CTUD.PV`.
+
 1. **Notes**:
 
 - The conversion used, `ADI_TO_AUDI`, cannot represent negative numbers (see comment in the network). If the counter displays negative values, the terminal output will be incorrect.

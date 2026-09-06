@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_007a1_AX`
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Starting and stopping the flasher.
 
 ## Description and components
 
-[cite_start]The subapplication `Uebung_007a1_AX.SUB` uses the inputs `START` and `STOP` of the `E_CYCLE` block[cite: 1].
+The subapplication `Uebung_007a1_AX.SUB` uses the inputs `START` and `STOP` of the `E_CYCLE` block.
 
 ### Function Blocks (FBs)
 

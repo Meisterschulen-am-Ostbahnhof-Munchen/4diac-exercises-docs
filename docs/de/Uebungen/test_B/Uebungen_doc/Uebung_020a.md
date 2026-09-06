@@ -14,7 +14,7 @@ Verständnis der Flankenerkennung. Es wird gezeigt, wie man mit einer Ereignis-W
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020a.SUB` nutzt einen `logiBUS_IX` Eingang, um einen `E_RS` Speicher zu steuern[cite: 1].
+Die Subapplikation `Uebung_020a.SUB` nutzt einen `logiBUS_IX` Eingang, um einen `E_RS` Speicher zu steuern.
 
 ### Funktionsbausteine (FBs)
 

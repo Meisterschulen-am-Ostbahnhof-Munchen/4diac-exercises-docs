@@ -14,7 +14,7 @@ Demonstration der Konvertierung von Daten zu Ereignissen für Steuerungszwecke.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_005_AX.SUB` verwendet einen Standard-Digitaleingang (`logiBUS_IXA`) anstelle eines Event-Eingangs (`logiBUS_IE`)[cite: 1].
+Die Subapplikation `Uebung_005_AX.SUB` verwendet einen Standard-Digitaleingang (`logiBUS_IXA`) anstelle eines Event-Eingangs (`logiBUS_IE`).
 
 ### Funktionsbausteine (FBs)
 

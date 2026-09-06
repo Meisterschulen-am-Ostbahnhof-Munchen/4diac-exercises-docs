@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004c6_AX`. It uses the extended `logiBUS_IE2` function block, which accepts arguments
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ Configuration of a multi-click operation.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c6_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_MULTIPLE_CLICK` and `arg = 3`[cite: 1].
+The subapplication `Uebung_004c6_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_MULTIPLE_CLICK` and `arg = 3`.
 
 ### Function Blocks (FBs)
 

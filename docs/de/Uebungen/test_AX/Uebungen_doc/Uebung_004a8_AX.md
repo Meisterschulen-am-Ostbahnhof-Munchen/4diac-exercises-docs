@@ -14,7 +14,7 @@ Kennenlernen der spezifischen Splitter-Bausteine. `E_SPLIT` ist oft der generisc
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a8_AX.SUB` nutzt `E_SPLIT_2`, um einen Tasterklick auf zwei unabhängige Flip-Flops zu verteilen[cite: 1].
+Die Subapplikation `Uebung_004a8_AX.SUB` nutzt `E_SPLIT_2`, um einen Tasterklick auf zwei unabhängige Flip-Flops zu verteilen.
 
 ### Funktionsbausteine (FBs)
 
@@ -35,8 +35,6 @@ Kennenlernen der spezifischen Splitter-Bausteine. `E_SPLIT` ist oft der generisc
     <Connection Source="E_SPLIT_2.EO2" Destination="AX_T_FF_Q2.CLK"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 Funktional identisch zu `Uebung_004a4_AX`: Ein Eingangsevent löst nacheinander zwei Ausgangsevents aus, wodurch beide Flip-Flops sicher und definiert angesteuert werden.
 

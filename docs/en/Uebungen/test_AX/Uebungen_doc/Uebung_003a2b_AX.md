@@ -70,6 +70,7 @@ The goal is to understand the interaction of monostable elements (R_IO) with har
 - Pressing I1 or I2 activates the corresponding output, which then remains on (self-holding).
 - Pressing I3 deactivates both outputs ("caretaker off").
 - The network specifies that I3 should be a **latching** switch, otherwise the output will only be off while the button is pressed. Alternatively, an enabling switch could be implemented using an AND gate (see comments).
+
 1. **Special Features**:
 
 - The logiBUS modules require a `QI` signal (`TRUE`) to be active.

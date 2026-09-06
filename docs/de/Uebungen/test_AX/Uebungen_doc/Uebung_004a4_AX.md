@@ -14,7 +14,7 @@ Das Ziel ist das Verständnis der sequenziellen Event-Verarbeitung. In IEC 61499
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a4_AX.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops zu schalten[cite: 1].
+Die Subapplikation `Uebung_004a4_AX.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops zu schalten.
 
 ### Funktionsbausteine (FBs)
 
@@ -36,8 +36,6 @@ Das Ziel ist das Verständnis der sequenziellen Event-Verarbeitung. In IEC 61499
     <Connection Source="E_SPLIT.EO2" Destination="E_T_FF_Q2.CLK"/>
 </EventConnections>
 ```
-
-[cite_start][cite: 1]
 
 1.  Ein Klick auf Taster 1 sendet ein Event an `E_SPLIT`.
 2.  `E_SPLIT` sendet **zuerst** ein Event an `EO1` -> `E_T_FF_Q1` schaltet um.

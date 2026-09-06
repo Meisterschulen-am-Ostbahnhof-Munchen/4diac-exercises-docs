@@ -14,7 +14,7 @@ Erlernen der adressierten Ereignisverteilung. Anstatt für jeden Kanal eine eige
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006c.SUB` steuert 8 Lampenspeicher über zwei zentrale Wahlschalter[cite: 1].
+Die Subapplikation `Uebung_006c.SUB` steuert 8 Lampenspeicher über zwei zentrale Wahlschalter.
 
 ### Funktionsbausteine (FBs)
 

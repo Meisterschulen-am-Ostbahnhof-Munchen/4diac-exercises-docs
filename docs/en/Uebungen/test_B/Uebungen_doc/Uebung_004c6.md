@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004c6`. Here, the extended function block `logiBUS_IE2` is used to evaluate a specific number of clicks
+
 ----
 
 ## Objective of the exercise
@@ -12,7 +13,7 @@ Configuration of an n-click using arguments.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c6.SUB` uses the function block type `logiBUS_IE2` with the event `BUTTON_MULTIPLE_CLICK` and the argument `arg = 3`[cite: 1].
+The subapplication `Uebung_004c6.SUB` uses the function block type `logiBUS_IE2` with the event `BUTTON_MULTIPLE_CLICK` and the argument `arg = 3`.
 
 ----
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020i_AX`. This exercise combines time measurement and time control into a self-learning pulse function
+
 ----
 
 ## Objective of the Exercise
@@ -10,7 +11,7 @@ The objective is to implement a teach-in procedure. Instead of hardcoding the ti
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020i_AX.SUB` uses a stopwatch to dynamically change the time setting for a pulse block[cite: 1].
+The subapplication `Uebung_020i_AX.SUB` uses a stopwatch to dynamically change the time setting for a pulse block.
 
 ### Function Blocks (FBs)
 
@@ -18,7 +19,7 @@ The objective is to implement a teach-in procedure. Instead of hardcoding the ti
 
 - **`DigitalInput_I2` (Teach Button)**: Type `logiBUS_IXA`. Measures how long the button is pressed.
 - **`AX_SWITCH`**: Converts the press/release of `I2` into start/stop signals for the stopwatch.
-- **`E_STOPWATCH`**: [cite_start]Measures the time between `START` and `STOP` and outputs the duration at output `TD`[cite: 1].
+- **`E_STOPWATCH`**: Measures the time between `START` and `STOP` and outputs the duration at output `TD`.
 - **`AX_PULSE`**: The pulse module. Its time parameter `PT` is linked to the measured value `TD` of the stopwatch.
 - **`DigitalInput_CLK_I1` (Start button)**: Type `logiBUS_IE`. Triggers the pulse.
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
@@ -35,6 +36,7 @@ The user presses and holds button `I2` for the desired duration (e.g., 3.5 secon
 
 - Pressing the button starts `E_STOPWATCH`.
 - Releasing the button stops the measurement. The value (3.5 seconds) is now present at input `PT` of `AX_PULSE`.
+
 1. **Execute**:
 
 The user briefly clicks button `I1`.

@@ -52,14 +52,17 @@ This exercise implements analog input calibration with offset and scaling adjust
 
 - Path 1 → `DigitalOutput_Q1` (direct output)
 - Path 2 → `AnalogInput_I4.SREQ` (event for reading the analog value)
+
 1. **Analog Value Processing**:
 
 - The analog input `AnalogInput_I4` is read, and the value is passed via the adapter chain `AD_TO_AUDI` → `AUDI_TO_AR` to the calibration module `CALIBRATE.X` (Note: A double conversion is necessary because a direct `AD_TO_AR` (as a `reinterpret_cast` would behave.)
+
 1. **Calibration**:
 
 - The calibration process is started via the digital inputs `DigitalInput_I2_CO` (offset calibration) and `DigitalInput_I3_CS` (scale calibration).
 - `CALIBRATE` calculates the offset and scale based on the reference values `Y_Offset=100.0` and `Y_Scale=600.0`.
 - The calculated parameters are transferred to `NVS_OFFSET` and `NVS_SCALE` and stored.
+
 1. **Hysteresis Control**:
 
 - The calibrated value `CALIBRATE.Y` is passed to the hysteresis controller `Hysteresis_AR_AX.INPUT`.

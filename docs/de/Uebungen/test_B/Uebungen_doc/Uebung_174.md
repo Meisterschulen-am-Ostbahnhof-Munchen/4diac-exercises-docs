@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_174`, basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_174: Exercise for E_RESTART
 
 ![Uebung_174_network](./Uebung_174_network.svg)

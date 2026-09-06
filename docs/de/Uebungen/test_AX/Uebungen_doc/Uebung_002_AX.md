@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist es, zu zeigen, wie Adapterverbindungen in der IE
 
 ## Beschreibung und Komponenten
 
-[cite_start]In der Subapplikation `Uebung_002_AX.SUB` wird ein digitaler Eingang eingelesen und über einen Adapter-Splitter an zwei digitale Ausgänge weitergereicht[cite: 1].
+In der Subapplikation `Uebung_002_AX.SUB` wird ein digitaler Eingang eingelesen und über einen Adapter-Splitter an zwei digitale Ausgänge weitergereicht.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,13 +22,13 @@ Folgende Bausteine kommen zum Einsatz:
 
 ![Uebung_002_AX_network](./Uebung_002_AX_network.svg)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
-  - **`AX_SPLIT`**: Eine Instanz des Typs `AX_SPLIT_2`. [cite_start]Dieser Baustein verfügt über einen Adapter-Eingang (`IN`) und zwei identische Adapter-Ausgänge (`OUT1`, `OUT2`) und fungiert somit als Signalvervielfältiger[cite: 1].
-  - **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QXA`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. Dieser Baustein liest den Hardware-Eingang `Input_I1`.
+  - **`AX_SPLIT`**: Eine Instanz des Typs `AX_SPLIT_2`. Dieser Baustein verfügt über einen Adapter-Eingang (`IN`) und zwei identische Adapter-Ausgänge (`OUT1`, `OUT2`) und fungiert somit als Signalvervielfältiger.
+  - **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QXA`. Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Auch in dieser Übung wird der unidirektionale Adapter-Typ `AX` verwendet, der Ereignisse und Datenwerte für die Übertragung bündelt[cite: 2].
+Auch in dieser Übung wird der unidirektionale Adapter-Typ `AX` verwendet, der Ereignisse und Datenwerte für die Übertragung bündelt.
 
 -----
 
@@ -43,8 +43,6 @@ Die Signalverteilung wird durch die zentrale Position des `AX_SPLIT`-Bausteins i
     <Connection Source="AX_SPLIT.OUT2" Destination="DigitalOutput_Q2.OUT"/>
 </AdapterConnections>
 ```
-
-[cite_start][cite: 1]
 
 Der Signalweg verläuft dabei in folgenden Schritten:
 

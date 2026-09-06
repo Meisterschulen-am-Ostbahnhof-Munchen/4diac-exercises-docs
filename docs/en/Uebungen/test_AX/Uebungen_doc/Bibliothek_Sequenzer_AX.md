@@ -1,6 +1,7 @@
 # 📚 Libraries: Sequencer (AX Adapter)
 
 This section describes the sequencer blocks available in the logiBUS® library that are optimized for use with the **AX Adapter**
+
 ---
 
 ## ℹ️ General Information
@@ -13,7 +14,7 @@ The sequencer blocks enable the implementation of sequential function charts (SF
 
 These function blocks advance to the next step when either an external event (`S1_S2`, `S2_S3`, etc.) occurs or a defined time (`DT_S*_S*`) has elapsed.
 
-### Available types
+### Available Types (Event-driven)
 
 - `sequence_ET_04_AX`: 4 steps, 4 outputs.
 - `sequence_ET_04_loop_AX`: 4 steps, cyclic (loop).
@@ -28,7 +29,7 @@ These function blocks advance to the next step when either an external event (`S
 
 These function blocks advance automatically after the time defined for the respective step has elapsed.
 
-### Available types
+### Available Types (Time-controlled)
 
 - `sequence_T_04_AX`: 4 steps, time-controlled.
 - `sequence_T_04_loop_AX`: 4 steps, cyclic.
@@ -43,7 +44,7 @@ These function blocks advance automatically after the time defined for the respe
 
 The pattern sequencers (`sequence_Pattern_xx_AX`) allow you to define an individual bit pattern for the outputs for each step. This is ideal for applications where multiple actuators need to be switched simultaneously in specific patterns within a single step.
 
-### Available Types
+### Available Types (Pattern)
 
 - **[sequence_Pattern_04_04_loop_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX/)**: 4 steps, 4 outputs, cyclic.
 - **[sequence_Pattern_08_08_loop_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX/)**: 8 steps, 8 outputs, cyclic.
@@ -64,7 +65,7 @@ Upon transitioning to a new state, the corresponding pattern is immediately appl
 
 Unlike the `ET` series, these components **do not have integrated timing**. Advancement occurs exclusively via external event signals.
 
-### Available Types
+### Available Types (Event only, no timeout)
 
 - `sequence_E_04_AX`: 4 steps.
 - `sequence_E_04_loop_AX`: 4 steps, cyclic.

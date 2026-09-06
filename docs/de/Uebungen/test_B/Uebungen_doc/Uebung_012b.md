@@ -14,13 +14,13 @@ Verwendung des `INI` Bausteins zur strukturierten Datenspeicherung. Im Gegensatz
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_012b.SUB` nutzt einen INI-Speicher-Baustein[cite: 1].
+Die Subapplikation `Uebung_012b.SUB` nutzt einen INI-Speicher-Baustein.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_012b_network](./Uebung_012b_network.svg)
 
-  - **`INI`**: Typ `eclipse4diac::storage::INI`. [cite_start]Dieser Baustein speichert Werte in einer dateibasierten Struktur ab[cite: 1]. Er benötigt zusätzlich zum `KEY` eine `SECTION`.
+  - **`INI`**: Typ `eclipse4diac::storage::INI`. Dieser Baustein speichert Werte in einer dateibasierten Struktur ab. Er benötigt zusätzlich zum `KEY` eine `SECTION`.
   - **Parameter**:
     - `SECTION`: "SECTION_I1_STORE"
     - `KEY`: "KEY_I1_STORE"

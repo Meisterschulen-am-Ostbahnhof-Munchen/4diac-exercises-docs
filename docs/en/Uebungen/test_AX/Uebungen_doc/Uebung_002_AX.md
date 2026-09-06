@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching
+
 ----
 
 ## Objective of the Exercise
@@ -12,7 +13,7 @@ The main objective of this exercise is to demonstrate how adapter connections ca
 
 ## Description and Components
 
-[cite_start]In the subapplication `Uebung_002_AX.SUB`, a digital input is read and passed on to two digital outputs via an adapter splitter[cite: 1].
+In the subapplication `Uebung_002_AX.SUB`, a digital input is read and passed on to two digital outputs via an adapter splitter.
 
 ### Function Blocks (FBs)
 
@@ -20,13 +21,13 @@ The following function blocks are used:
 
 ![Uebung_002_AX_network](./Uebung_002_AX_network.svg)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]This function block reads the hardware input `Input_I1`[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This function block reads the hardware input `Input_I1`.
 - **`AX_SPLIT`**: An instance of type `AX_SPLIT_2`. This component has one adapter input (`IN`) and two identical adapter outputs (`OUT1`, `OUT2`) and thus functions as a signal multiplier.
 - **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instances of type `logiBUS_QXA`. These represent the physical outputs `Output_Q1` and `Output_Q2`.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]This exercise also uses the unidirectional adapter type `AX`, which bundles events and data values for transmission[cite: 2].
+This exercise also uses the unidirectional adapter type `AX`, which bundles events and data values for transmission.
 
 -----
 
