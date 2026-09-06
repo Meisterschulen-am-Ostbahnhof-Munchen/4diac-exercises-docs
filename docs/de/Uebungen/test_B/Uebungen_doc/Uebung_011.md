@@ -46,8 +46,6 @@ Die Logik wartet auf die Bestätigung der Eingabe am Terminal:
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Der Nutzer tippt am Terminal auf das Zahlenfeld `I1`, gibt z.B. "42" ein und drückt "Enter".
 2.  Das Terminal sendet den Wert über den CAN-Bus an die Steuerung.
 3.  Der Baustein `InputNumber_I1` empfängt den Wert und löst das Ereignis `IND` aus.

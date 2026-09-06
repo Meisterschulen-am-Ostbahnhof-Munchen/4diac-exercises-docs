@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_172`, basierend auf den bereitgestellten Daten.
-
 # Uebung_172: Exercise for E_MUX_2
 
 ![Uebung_172_network](./Uebung_172_network.svg)

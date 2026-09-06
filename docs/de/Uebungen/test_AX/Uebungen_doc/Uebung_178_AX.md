@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_178_AX` basierend auf den bereitgestellten Daten.
-
 # Uebung_178_AX: Beispiel für AX_FB_F_TRIG (Falling Edge Detection)
 
 ![Uebung_178_AX_network](./Uebung_178_AX_network.svg)

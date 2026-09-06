@@ -46,6 +46,7 @@ A digital output **Q1** is activated as soon as the counter reading reaches 0. S
 - Input I1 or I2 triggers the `REQ` input of the counter via the `IND` event output.
 - After successful processing (CNF), the output block `Output_Q1` and the conversion `F_DINT_TO_UDINT` are triggered simultaneously.
 - After the conversion, the value is passed to the terminal block `Q_NumericValue`.
+
 1. **Data Concatenation**
 
 - `Input_CD.IN` → `FB_CTD_DINT.CD` (Decrement)
@@ -53,6 +54,7 @@ A digital output **Q1** is activated as soon as the counter reading reaches 0. S
 - `FB_CTD_DINT.Q` → `Output_Q1.OUT` (Set Output at Counter Value 0)
 - `FB_CTD_DINT.CV` → `F_DINT_TO_UDINT.IN` (Current Counter Value)
 - `F_DINT_TO_UDINT.OUT` → `Q_NumericValue.u32NewValue` (Terminal Output)
+
 1. **Functionality**
 
 - On each rising edge at I1, the counter value is decremented by 1.

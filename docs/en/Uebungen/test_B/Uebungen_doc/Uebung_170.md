@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_170` based on the provided XML data.
-
 # Exercise_170: Exercise for ARTimeOut
 
 ![Uebung_170_network](./Uebung_170_network.svg)

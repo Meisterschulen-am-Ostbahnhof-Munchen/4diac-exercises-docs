@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a`. In this exercise, we move beyond simple data forwarding and use events to implement a memory function: a classic impulse switch
+
 ----
 
 ![Schematic of Exercise 004a Toggle Flip-Flop](Uebung_004a.png)
@@ -37,8 +38,6 @@ The logic is based on converting a momentary key press into a persistent memory 
 <DataConnections>
 <Connection Source="E_T_FF.Q" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
-
-[cite_start][cite: 1]
 
 1. The user briefly presses the button on `I1` ("click").
 2. The `DigitalInput_CLK_I1` recognizes the "single click" pattern and sends a `IND` event.

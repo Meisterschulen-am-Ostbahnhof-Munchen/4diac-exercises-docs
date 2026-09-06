@@ -1,5 +1,3 @@
-Here is the documentation page for exercise `Uebung_006e2_AX`, based on the provided XML data.
-
 # Exercise_006e2_AX: RS Flip-Flop with 2x IXA
 
 ![Uebung_006e2_AX_network](./Uebung_006e2_AX_network.svg)
@@ -46,10 +44,12 @@ The program flow is implemented through adapter connections (`AdapterConnections
 
 - The adapter `DigitalInput_I1.IN` is connected to the adapter input `AX_FB_RS.SET`.
 - When the input `Input_I1` is activated, the RS flip-flop is set.
+
 1. **Reset the Memory:**
 
 - Adapter `DigitalInput_I2.IN` is connected to adapter input `AX_FB_RS.RESET1`.
 - When input `Input_I2` is activated, the RS flip-flop is reset.
+
 1. **State Output:**
 
 - Adapter output `AX_FB_RS.Q1` is connected to adapter `DigitalOutput_Q1.OUT`.

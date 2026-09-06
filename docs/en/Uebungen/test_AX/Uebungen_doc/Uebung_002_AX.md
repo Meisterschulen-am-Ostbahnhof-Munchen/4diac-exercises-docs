@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching
+
 ----
 
 ## Objective of the Exercise

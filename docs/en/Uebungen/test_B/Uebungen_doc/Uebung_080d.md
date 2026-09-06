@@ -38,6 +38,7 @@ The following function blocks are included in the subapplication network:
 
 - Button **I1** (Single-Click) is connected to `DigitalInput_CLK_I1` and generates an event at output `IND`.
 - Button **I2** (Single-Click) is connected to `DigitalInput_CLK_I2` and also generates an event at `IND`.
+
 1. **Counter E_CTU**
 
 - The event output of `DigitalInput_CLK_I1` is routed to input `CU` (Count Up) of the counter.
@@ -51,6 +52,7 @@ The following function blocks are included in the subapplication network:
 - This combined event serves as the clock signal (`CLK`) for the two flip-flops:
 - **E_D_FF_ANY** stores the current counter value (`CV`) and outputs it on each clock signal.
 - **E_D_FF** stores the Boolean output (`Q`) of the counter and also outputs it on each clock cycle.
+
 1. **Outputs**
 
 - The stored counter value of `E_D_FF_ANY` is output as a numeric value on the display `OutputNumber_N1` via the **Q_NumericValue** function block.

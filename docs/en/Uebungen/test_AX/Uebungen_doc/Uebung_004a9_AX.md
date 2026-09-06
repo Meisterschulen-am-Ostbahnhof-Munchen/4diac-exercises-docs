@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a9_AX`. Here, the concept of event splitting is extended to three objectives
+
 ----
 
 ## Objective of the Exercise
@@ -33,8 +34,6 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 <Connection Source="E_SPLIT_3.EO2" Destination="AX_T_FF_Q2.CLK"/>
 <Connection Source="E_SPLIT_3.EO3" Destination="AX_T_FF_Q3.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 A single click of the button triggers a cascade:
 

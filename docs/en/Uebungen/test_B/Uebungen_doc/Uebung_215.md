@@ -96,12 +96,14 @@ The exercise flow is determined by the event and data connections in the FBNetwo
 
 - The two digital inputs `Input_CD` and `Input_LD` generate the event `IND` upon a signal change.
 - Both events are routed to the **same** event input `REQ` of the counter `FB_CTD`. This means: Every key press (regardless of whether it's a CD or LD) triggers a recalculation of the counter.
+
 1. **Data Coupling**
 
 - The **count pulse** (`CD`) is routed directly from the output `IN` of the input block `Input_CD` to the data input `FB_CTD.CD`.
 - The **charge pulse** (`LD`) is connected from the output `IN` of the input block `Input_LD` to `FB_CTD.LD`.
 - The **counter output Q** is passed on to the output block `Output_Q1.OUT`.
 - The **current counter reading `CV`** is sent to the terminal `Q_NumericValue.u32NewValue` via the conversion block `F_INT_TO_UDINT`.
+
 1. **Terminal Update**
 
 - Once the counter calculation is complete, the event `CNF` is triggered by `FB_CTD`.

@@ -42,8 +42,6 @@ Erlernen der Ereignisverkettung. Das Ende eines Prozesses (Erreichen der Endlage
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Ablauf:
 
 1.  Klick auf **F1** ➡️ Zylinder 1 fährt aus (`Q1`).

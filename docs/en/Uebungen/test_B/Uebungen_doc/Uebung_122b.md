@@ -1,5 +1,3 @@
-Here is the documentation page for exercise **Exercise_122b** based on the provided XML data.
-
 # Exercise_122b: ISOBUS Name Exercise
 
 ![Uebung_122b_network](./Uebung_122b_network.svg)
@@ -78,6 +76,7 @@ The outputs `sNetEv` (Network Events) and `sCfInfo` (Control Function Info) are 
 - This `cfName` is then forwarded directly to the respective `NmSetNF` block.
 - The `NmSetNF` block decodes the name.
 - The result (the structure with the readable fields) is displayed in detail in the `SD_C` block. This allows you to see, for example, which manufacturer is behind a device.
+
 1. **Processing Path B (Information Display)**:
 
 - In parallel, the general CF information is routed from `LOG_16B` to the `SD_B` blocks. This presumably serves to diagnose the addresses and status of the participants, independent of the name decoding.

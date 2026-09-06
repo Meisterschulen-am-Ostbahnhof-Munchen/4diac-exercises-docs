@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_128b` based on the provided data.
-
 # Exercise_128b: ISOBUS Send Message GLOBAL TP BAM
 
 ![Uebung_128b_network](./Uebung_128b_network.svg)

@@ -44,8 +44,6 @@ Der Schlüssel liegt in der Rückführung des Ausgangszustands zum Eingang der W
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  **Zustand AUS**: `E_SR.Q` ist FALSE, damit ist auch `E_SWITCH.G` auf FALSE.

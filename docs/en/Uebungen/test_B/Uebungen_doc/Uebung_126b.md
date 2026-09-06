@@ -1,5 +1,3 @@
-Here is the documentation page for Exercise 126b.
-
 # Exercise_126b: Exercise on ISOBUS Send Message Cyclic (with CB) Plotting a Sine Wave Function
 
 ![Uebung_126b_network](./Uebung_126b_network.svg)
@@ -76,11 +74,13 @@ As soon as `CallbackFB` receives an event (triggered by the cyclic transmitter i
 
 - The `AlPgnTxNew8Bcycl_REQ` module is set to a repetition rate of 500 ms.
 - Every 500 ms, it triggers a request via the adapter port `CB` (connected to `DataSupply.PLUG1`).
+
 1. **Data Processing**:
 
 - Within the sub-application `DataSupply`, the `CallbackFB` receives the request.
 - This triggers the signal chain: The sine wave generator `GEN_SIN` calculates the next value based on the current time.
 - Due to the parameters (amplitude 10, offset 5), the generator produces values in the range of -5.0 to +15.0. Since the conversion is performed on `USINT`, negative values are typically clipped to 0.
+
 1. **Return and Sending**:
 
 - The calculated value is placed in the first byte of the payload.

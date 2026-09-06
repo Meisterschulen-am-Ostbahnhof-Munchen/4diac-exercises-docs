@@ -22,6 +22,7 @@ The exercise consists of five function blocks that are wired in the SubApp netwo
 - `u16ObjId` = `SoftKey_F1`
 - `InputEvent` = `SK_RELEASED` (Event triggered when the F1 key is released)
 - **Event Output**: `IND` (Triggered when the key is pressed)
+
 1. **SoftKey_F2_DOWN**
 
 - **Type**: `Softkey_IE`
@@ -30,6 +31,7 @@ The exercise consists of five function blocks that are wired in the SubApp netwo
 - `u16ObjId` = `SoftKey_F2`
 - `InputEvent` = `SK_PRESSED` (Event on pressing the F2 key)
 - **Event Output**: `IND`
+
 1. **SoftKey_F3_DOWN**
 
 - **Type**: `Softkey_IE`
@@ -38,6 +40,7 @@ The exercise consists of five function blocks that are wired in the SubApp netwo
 - `u16ObjId` = `SoftKey_F3`
 - `InputEvent` = `SK_PRESSED` (Event on pressing the F3 key)
 - **Event output**: `IND`
+
 1. **AX_SR_Extend_Cyl_1**
 
 - **Type**: `adapter::events::unidirectional::AX_SR` (Set-Reset function block)
@@ -45,12 +48,14 @@ The exercise consists of five function blocks that are wired in the SubApp netwo
 - **Event inputs**:
 - `S` – Set (Output Q = TRUE)
 - `R` – Reset (Output Q = FALSE)
+
 1. **AX_SR_Extend_Cyl_2**
 
 - **Type**: `AX_SR` (identical to Cyl_1)
 - **Event Inputs**:
 - `S` – Set
 - `R` – Reset
+
 1. **DigitalOutput_Q1**
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -58,6 +63,7 @@ The exercise consists of five function blocks that are wired in the SubApp netwo
 - `QI` = `TRUE` (Output enabled)
 - `Output` = `Output_Q1` (physical output)
 - **Adapter input**: `OUT` – controls the output at `TRUE`
+
 1. **DigitalOutput_Q2**
 
 - **Type**: `logiBUS_QXA`
@@ -86,6 +92,7 @@ The control follows a fixed sequence:
 
 - `AX_SR_Ausfahren_Cyl_1.R` → **Cylinder 1 retracts** (Q1 = FALSE).
 - `AX_SR_Ausfahren_Cyl_2.S` → **Cylinder 2 extends** (Q2 = TRUE).
+
 1. **Press F3** → Event from `SoftKey_F3_DOWN.IND`
 
 → Sets `AX_SR_Ausfahren_Cyl_2.R` → **Cylinder 2 retracts** (Q2 = FALSE).

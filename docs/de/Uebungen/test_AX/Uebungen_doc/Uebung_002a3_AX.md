@@ -44,8 +44,6 @@ Die Logik wird durch die Verschaltung der Adapter-Anschlüsse in der Subapplikat
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Prozess folgt dieser Logik:
 
 1.  Der Baustein `AX_OR_2` überwacht beide Adapter-Eingänge.

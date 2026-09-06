@@ -4,6 +4,7 @@
 This article describes the logiBUS® exercise `Uebung_020c3`. It uses the classic IEC 61131-3 timer block `FB_TON`, which requires regular triggering (clock).
 ![Uebung_020c3_network](./Uebung_020c3_network.svg)
 **Important note: This block only functions correctly if it is called cyclically.**
+
 ----
 
 ## Objective of the exercise

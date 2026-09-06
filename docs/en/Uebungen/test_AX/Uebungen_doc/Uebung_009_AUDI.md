@@ -76,6 +76,7 @@ The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three ou
 - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
 
 - `OUT3` → to `AX_PERMIT.PERMIT`.
+
 1. **Allowance and Counter**
 
 AX_PERMIT` only forwards the event to `EO` if an event is present at the `PERMIT` input. This event is then sent to the counter `AUDI_CTUD_UDINT.CU`. The counter increments its value with each event.

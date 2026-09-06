@@ -62,10 +62,12 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - When CS (I3 = TRUE), a new calibration cycle is started: The current raw value (X) is measured, and the offset and scaling are calculated.
 - When CO (I2 = TRUE), the calculated values are written to the INI file (via INI_OFFSET and INI_SCALE).
 - The calibrated output Y is routed to the splitter AR_SPLIT_2.
+
 1. **Signal Distribution**:
 
 - AR_SPLIT_2.OUT1 routes the calibrated value to the display (Q_NumericValue_PHYSA).
 - AR_SPLIT_2.OUT2 routes the calibrated value to the hysteresis controller (Hysteresis_AR_AX).
+
 1. **Hysteresis Control**: The hysteresis controller compares the calibrated input value with the threshold (50.5) and the hysteresis value (15.3). The output becomes active when the value exceeds 50.5 + 15.3/2 (depending on the implementation; typically: activation at > 50.5, reset at < 50.5 - 15.3), and switches the digital output Q2.
 2. **Enable Signal**: The digital input I1 is routed via the splitter AX_SPLIT_2 to output Q1 (directly forwarded) and simultaneously to AnalogInput_I7 (as a trigger for the measurement). Therefore, the analog value can only be read when I1 is active.
 

@@ -45,8 +45,6 @@ Die Logik wird durch die Verschaltung der drei Eingänge mit dem Logik-Baustein 
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Der Baustein `AX_OR_3` überwacht kontinuierlich alle drei Adapter-Eingänge auf Zustandsänderungen.

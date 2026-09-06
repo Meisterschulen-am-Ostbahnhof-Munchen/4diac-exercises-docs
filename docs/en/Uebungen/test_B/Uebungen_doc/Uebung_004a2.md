@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a2`. Here, the impulse circuit is extended so that it can be operated by two different pushbuttons. This is achieved by logically combining the events from the two pushbuttons
+
 ----
 
 ## Objective of the Exercise
@@ -34,8 +35,6 @@ The circuit provides a logical OR for the trigger:
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_MERGE.EI2"/>
 <Connection Source="E_MERGE.EO" Destination="E_T_FF.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. When button 1 is pressed, `I1` sends an event to `E_MERGE.EI1`. `E_MERGE` forwards it to `EO` -> `E_T_FF` toggles.
 2. When button 2 is pressed, `I2` sends an event to `E_MERGE.EI2`. `E_MERGE` forwards it to `EO` -> `E_T_FF` toggles.

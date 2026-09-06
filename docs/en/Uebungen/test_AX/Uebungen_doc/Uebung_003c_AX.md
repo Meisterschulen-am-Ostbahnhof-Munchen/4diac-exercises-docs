@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices
+
 ----
 
 ## Objective of the Exercise

@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung 178, basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_178: Beispiel für FB_F_TRIG (Falling Edge Detection)
 
 ![Uebung_178_network](./Uebung_178_network.svg)

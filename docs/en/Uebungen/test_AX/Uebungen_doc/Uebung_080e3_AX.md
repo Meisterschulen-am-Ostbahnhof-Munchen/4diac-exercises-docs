@@ -48,6 +48,7 @@ The clock generates a `EO` event every 1 ms, which increments the counter `E_CTU
 
 - The current counter reading (`CV`) is passed to the function block `AUI_D_FF_HYS`. This D flip-flop with hysteresis (hysteresis value = 25) stabilizes the value and passes it to the converter `UI_TO_UDI_N1`.
 - The converted value is then passed to `Q_NumericValue` and made available as a numeric output.
+
 1. **Overflow Signaling**
 
 When the counter reaches its maximum value (overflow, event output `Q`), the D flip-flop `AX_D_FF` is set. Its output `Q` activates the digital output `DigitalOutput_Q1`.

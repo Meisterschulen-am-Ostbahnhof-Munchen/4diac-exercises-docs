@@ -37,8 +37,6 @@ Der Baustein `E_MERGE` aus der vorherigen Übung fehlt hier bewusst.
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Die Funktionsweise ist identisch zur Übung mit `E_MERGE`: Jedes eintreffende Event an `E_T_FF.CLK` – egal ob von `I1` oder `I2` kommend – triggert die Ausführung des Funktionsbausteins. 4diac unterstützt diese Mehrfachverbindung für Events nativ.
 
 > **Wichtiger Hinweis:** Bei **Datenverbindungen** ist dies **nicht erlaubt**! Zwei Datenausgänge dürfen niemals direkt auf denselben Dateneingang schreiben, da dies zu Konflikten führen würde. Bei Events hingegen ist dies eine effiziente Methode für "ODER"-Verknüpfungen von Auslösern.

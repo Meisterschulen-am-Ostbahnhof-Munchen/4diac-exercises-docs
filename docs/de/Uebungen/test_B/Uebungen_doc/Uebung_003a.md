@@ -49,8 +49,6 @@ Die Komplexität der Einzelverbindungen ist im Inneren der Sub-Applikation verbo
 </SubApp>
 ```
 
-[cite_start][cite: 1]
-
 Funktional verhält sich die Anwendung exakt wie die flache Struktur in Übung 003. Jede Instanz arbeitet als eigenständiger Block, der auf Ereignisse an seinem zugewiesenen Hardware-Eingang reagiert und den Hardware-Ausgang aktualisiert.
 
 -----

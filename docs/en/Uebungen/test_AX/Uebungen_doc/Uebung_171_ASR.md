@@ -66,6 +66,7 @@ The flow is determined by the event and data connections in the SubApp network:
 
 - The converter `ASR_2EVENTS_TO_SR` sets the output adapter `ASR_OUT` according to the last incoming event (SET or RESET).
 - The adapter output is connected to the adapter input `S_R` of the ASR module `ASR_AX_SR_1`.
+
 1. **Memory and Output**:
 
 - The ASR module responds to the incoming adapter signal and updates its output `Q`.

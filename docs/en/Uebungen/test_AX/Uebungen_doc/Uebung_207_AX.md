@@ -32,11 +32,13 @@ This exercise does not use any user-defined sub-function blocks – all function
 - `DigitalInput_I1.IND` → `ILOCK_AX.CLK1` (Set Channel 1)
 - `DigitalInput_I2.IND` → `ILOCK_AX.CLK2` (Set Channel 2)
 - `DigitalInput_I3.IND` → `ILOCK_AX.R` (Common Reset)
+
 1. **Adapter Connections**
 
 - The outputs of the interlock module are passed to the digital outputs via adapter connections:
 - `ILOCK_AX.OUT1` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX.OUT2` → `DigitalOutput_Q2.OUT`
+
 1. **How it Works**
 
 - An event (single-click) on `I1` sets the output `Q1` and simultaneously clears `Q2` (mutual interlock).

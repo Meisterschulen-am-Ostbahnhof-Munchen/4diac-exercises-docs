@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004c1_AX`. From here on, we will focus on the advanced capabilities of the `logiBUS_IE` block, which can recognize complex button patterns
+
 ----
 
 ## Objective of the Exercise

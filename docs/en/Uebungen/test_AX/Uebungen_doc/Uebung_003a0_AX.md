@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003a0_AX`. Unlike the use of types (as in `Uebung_003a_AX`), this exercise demonstrates how to visually group logic without creating separate type definitions. This is achieved using so-called "untyped subapps."
+
 ----
 
 The main objective of this exercise is to demonstrate methods for structuring applications purely visually. Untyped subapps serve as "containers" or folders within a network to encapsulate related functions. They help to clean up complex diagrams ("clean up by collapsing") without having to worry about reusability or interface definitions.
@@ -20,6 +21,7 @@ Unlike typed subapplications, which are based on an external definition, the log
 
 - Contains the logic for channel 2.
 - Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
+
 1. **Container `SubApp_1`**:
 
 - Contains the logic for channel 1.

@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung 160b, basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_160b: Motor Links/Rechtslauf Automatisierung via IE
 
 ![Uebung_160b_network](./Uebung_160b_network.svg)

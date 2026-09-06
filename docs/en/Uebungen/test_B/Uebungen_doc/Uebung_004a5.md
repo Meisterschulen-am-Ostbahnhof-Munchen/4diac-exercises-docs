@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a5`. Similar to event merging, this exercise demonstrates that distributing an event to multiple destinations is often possible without an explicit function block
+
 ----
 
 ## Objective of the Exercise
@@ -27,8 +28,6 @@ Demonstration of the "fan-out" capability of event connections in 4diac. A singl
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF_Q1.CLK"/>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF_Q2.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 When `I1` fires an event, it is distributed to all connected targets. The processing order is not strictly defined in the IEC 61499 standard for this case (it usually occurs in the order in which the connections were established).
 

@@ -1,5 +1,3 @@
-Hier ist die Dokumentationsseite für die Übung `Uebung_173` basierend auf den bereitgestellten Daten.
-
 # Uebung_173: Exercise for E_MUX_8
 
 ![Uebung_173_network](./Uebung_173_network.svg)

@@ -42,6 +42,7 @@ The event outputs `.IND` trigger the corresponding event inputs of the interlock
 
 - `I1.IND` → `ILOCK.EI_UP`
 - `I2.IND` → `ILOCK.EI_DOWN`
+
 1. **Interlock Logic**
 
 The block `ILOCK` evaluates the data inputs `DI_UP` and `DI_DOWN`. It ensures that both outputs `DO_UP` and `DO_DOWN` are never **TRUE** simultaneously.
@@ -54,6 +55,7 @@ The events `EO_UP` and `EO_DOWN` signal when a direction is activated.
 - `ILOCK.EO_DOWN` and `DO_DOWN` control the **counterclockwise** output (Q6).
 - Both events `EO_UP` and `EO_DOWN` are connected to the OR gate `OR_2_BOOL`. As soon as one direction is active, the OR gate triggers the **LowSide Driver** (Q56).
 - Simultaneously, the data signals `DO_UP` and `DO_DOWN` are fed to the inputs `IN1` and `IN2` of the OR gate. The output `OR_2_BOOL.OUT` feeds the data input of the LowSide Driver.
+
 1. **Interrelationship**
 
 The LowSide Driver is only activated when either clockwise or counterclockwise rotation is active. This ensures that the motor's power supply is only enabled in these states.

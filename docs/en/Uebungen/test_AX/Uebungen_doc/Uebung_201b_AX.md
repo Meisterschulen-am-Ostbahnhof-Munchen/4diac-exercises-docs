@@ -54,6 +54,7 @@ The exact logic (e.g., edge processing or delay) is determined by the manufactur
 - `UP_OUT` → Clockwise (to `Rechtslauf.OUT`)
 - `DOWN_OUT` → Counterclockwise (to `Linkslauf.OUT`)
 - `OR_OUT` → Low-side driver (to `LowSide_Treiber.OUT`)
+
 1. **Output Blocks**: The three logiBUS_QXA blocks convert the adapter signals into physical outputs at `Output_Q5`, `Output_Q56`, and `Output_Q6`.
 
 **Learning Objectives**:

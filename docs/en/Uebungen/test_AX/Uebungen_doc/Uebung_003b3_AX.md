@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003b3_AX`. This exercise is the logical continuation of `Uebung_003b2_AX`. It uses explicitly parameterized, typed sub-applications to map 15 wireless buttons to 15 outputs
+
 ----
 
 ## Objective of the Exercise

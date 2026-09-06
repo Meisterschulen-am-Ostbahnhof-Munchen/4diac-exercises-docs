@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_160b2` in the requested format.
-
 # Exercise_160b2: Motor Forward/Reverse Rotation Automation IX
 
 ![Uebung_160b2_network](./Uebung_160b2_network.svg)
@@ -39,6 +37,7 @@ The circuit implements interlocked control of two outputs (e.g., motor left/righ
 - Output **Q5** is controlled via the block **FB_RS_A**.
 - Activating input **I1** sets the block and activates Q5.
 - Activating input **I2** resets the block and immediately deactivates Q5.
+
 1. **Switching and Control of Output Q6 (Second Path):**
 
 - Input **I2** has a dual function: It stops Q5 and starts the process for Q6.

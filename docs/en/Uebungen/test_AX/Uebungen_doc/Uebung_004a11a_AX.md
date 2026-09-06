@@ -37,6 +37,7 @@ The subapplication has no dedicated input/output interfaces; all connections are
 - The function block `INI_AX2` is activated and reads the value stored under the key `U004a11a_AX` from the INI file.
 - This value is then passed to the flip-flop via the adapter connection `AX_T_FF.Q_INIT → INI_AX2.VAL`, which sets its internal state accordingly.
 - The flip-flop then passes this state to the output via the adapter connection `AX_T_FF.Q → DigitalOutput_Q1.OUT`.
+
 1. **Operating Phase (Repeated Key Presses)**
 
 - With each key press at input `Input_I1`, the function block `DigitalInput_CLK_I1` generates the event `IND`.

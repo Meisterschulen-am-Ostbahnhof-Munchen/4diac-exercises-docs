@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a`. It demonstrates an advanced approach to structuring IEC 61499 applications: encapsulating logic in reusable, typed sub-applications ("Typed SubApps")
+
 ----
 
 ## Objective of the Exercise
@@ -46,8 +47,6 @@ The complexity of the individual connections is hidden within the sub-applicatio
 <Parameter Name="Input" Value="Input_I2"/>
 <Parameter Name="Output" Value="Output_Q2"/>
 </SubApp>
-
-[cite_start][cite: 1]
 
 Functionally, the application behaves exactly like the flat structure in Exercise 003. Each instance operates as an independent block that reacts to events at its assigned hardware input and updates the hardware output.
 

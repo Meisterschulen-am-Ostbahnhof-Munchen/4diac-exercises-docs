@@ -39,8 +39,6 @@ Verständnis des `E_REND` Bausteins. Dieser Baustein fungiert wie ein "UND" für
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Drückt man nur Taster 1 (`I1`), passiert nichts am Ausgang. `E_REND` merkt sich intern "EI1 war da".
 2.  Drückt man danach Taster 2 (`I2`), ist die Bedingung komplett (beide waren da). `E_REND` feuert `EO`.
 3.  Das Flip-Flop schaltet um, die Lampe ändert ihren Zustand.

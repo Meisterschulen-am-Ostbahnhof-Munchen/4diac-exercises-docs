@@ -18,6 +18,7 @@ This exercise uses three function blocks that are interconnected within the suba
 - `QI` = `TRUE`
 - `stObj` = `InputNumber_I3`
 - Function: Provides the physical input of a numeric value. The value is output via the data output `rPhys` as soon as an event occurs at the input `IND`.
+
 1. **NVS** – Type: `logiBUS::storage::esp32_nvs::NVS`
 
 - Parameters:
@@ -25,6 +26,7 @@ This exercise uses three function blocks that are interconnected within the suba
 - `KEY` = `KEY_I1_STORE` (imported from `Uebungen::const::NVS::NVS_Keys`)
 - `DEFAULT_VALUE` = `REAL#0.0`
 - Function: Non-volatile memory module. It stores a value under a predefined key (`KEY`) and can read it back as needed. The events `SET` and `GET` control the saving and reading operations, respectively. The outputs `VALUEO` provide the stored value.
+
 1. **Q_NumericValue** – Type: `isobus::UT::Q::Q_NumericValue_PHYS`
 
 - Parameters:
@@ -52,6 +54,7 @@ The flow is as follows:
 - This event is fed back to input `GET` of the NVS via an event connection (self-triggering).
 - The NVS then reads the stored value and places it at data output `VALUEO`.
 - Simultaneously, an event is generated at output `GETO`.
+
 1. **Output**
 
 - The event `NVS.GETO` is forwarded to input `REQ` of the output block `Q_NumericValue`.

@@ -43,8 +43,6 @@ Die Logik wird durch die Verschaltung der Ereignis- und Datenpfade in der Subapp
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Jeder Tastendruck an `I1` oder `I2` löst ein `IND`-Ereignis aus.

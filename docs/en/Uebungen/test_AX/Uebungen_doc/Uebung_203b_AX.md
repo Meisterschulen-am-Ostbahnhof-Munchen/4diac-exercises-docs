@@ -66,6 +66,7 @@ The logical flow follows a clear chain:
 - `UP_OUT` → `Rechtslauf` (Q5)
 - `DOWN_OUT` → `Linkslauf` (Q6)
 - `OR_OUT` → `LowSide_Treiber` (Q56) – becomes active as soon as a direction is active.
+
 1. **Output Stages**: The three output modules of type `logiBUS_QXA` convert the signals to the physical outputs of the logiBUS hardware.
 
 **Adapter Connections** (defined in the XML as `AdapterConnections`):

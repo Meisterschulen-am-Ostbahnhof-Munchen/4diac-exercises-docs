@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_072b`. Here, a complex position-dependent control system for multiple outputs is implemented
+
 ----
 
 ## Objective of the Exercise

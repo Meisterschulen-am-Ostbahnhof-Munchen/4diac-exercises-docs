@@ -90,10 +90,12 @@ The exercise consists of a network of six internal function blocks linked via ev
 - A rising edge on **CU** increments the internal counter **CV** by 1.
 - A TRUE on **R** sets **CV** to 0.
 - If **CV** exceeds the value of **PV** (here 5), **Q** is set to TRUE.
+
 1. **Output**: After the calculation, the counter sends the **CNF** event. This event is handled in parallel by two function blocks:
 
 - **Output_Q1** sets the digital output to the value of **FB_CTU_ULINT.Q**.
 - **F_ULINT_TO_UDINT** converts the current counter value **CV** from ULINT to UDINT.
+
 1. **Terminal Output**: After the conversion is complete, **F_ULINT_TO_UDINT.CNF** triggers the **REQ** event of **Q_NumericValue**. The converted value is passed to **u32NewValue** via the **OUT** data line and displayed on the terminal.
 2. **Notes from the exercise**:
 

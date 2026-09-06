@@ -53,6 +53,7 @@ The connections are made in a simple event and data chain:
 
 - `InputNumber_I3.IND` → `F_DWORD_TO_UDINT.REQ`
 - `F_DWORD_TO_UDINT.CNF` → `Q_NumericValue.REQ`
+
 1. **Data Connections**:
 
 - `InputNumber_I3.IN` → `F_DWORD_TO_UDINT.IN`

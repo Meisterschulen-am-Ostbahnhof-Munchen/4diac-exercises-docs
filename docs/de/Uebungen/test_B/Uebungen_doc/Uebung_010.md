@@ -50,8 +50,6 @@ Die Kommunikation erfolgt über die standardmäßige Trennung von Trigger und We
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Wenn der Bediener den Softkey am Terminal drückt:
 
 1.  Der Baustein `SoftKey_F1` erkennt die Betätigung über das CAN-Netzwerk.

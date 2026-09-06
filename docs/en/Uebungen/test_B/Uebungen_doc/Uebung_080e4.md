@@ -44,6 +44,7 @@ The counter outputs two events:
 
 - `CUO` (Counter Overflow) – becomes active when the counter value `CV` reaches the parameter `PV` (here 5).
 - `RO` (Reset Overflow) – is activated when the counter is reset and exceeds its range (not relevant here, but both events are used).
+
 1. **Event Distribution and Merging**
 
 CUO` and `RO` are jointly routed to input `EI` of `E_SPLIT_4`.

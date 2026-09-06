@@ -64,6 +64,7 @@ The circuit operates **event-driven** and utilizes both event and data connectio
 - The current value of `I1` (via `IN` from `DigitalInput_I1`) is passed to the data input `DI_UP` of the interlock.
 - The value of `I2` is passed to `DI_DOWN`.
 - The interlock block passes the enabled channel via the corresponding data outputs (`DO_UP` → `OUT` from `DigitalOutput_Q1`, `DO_DOWN` → `OUT` from `DigitalOutput_Q2`).
+
 1. **Functionality of `ILOCK_SWITCH`**:
 
 - In case of simultaneous or conflicting requests, the last received pulse wins (last wins).

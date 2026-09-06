@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_020j_AX` basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_020j_AX: DigitalInput_I1 auf DigitalOutput_Q1/2; 2xAX_TP; Impulsformend
 
 ![Uebung_020j_AX_network](./Uebung_020j_AX_network.svg)

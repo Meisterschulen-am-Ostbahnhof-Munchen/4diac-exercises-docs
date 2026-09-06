@@ -45,8 +45,6 @@ Die Logik wird durch die Verschaltung der Eingangsbausteine mit dem XOR-Logik-Ba
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Die XOR-Logik mit drei Eingängen verhält sich wie folgt:
 
 -   Der Ausgang ist **TRUE**, wenn genau **ein** Eingang aktiv ist.

@@ -1,5 +1,3 @@
-Here is the documentation page for the provided exercise file.
-
 # Exercise_039_sub_Outputs: Mirror Sequence V2 with Step Chain SUB Out
 
 ![Uebung_039_sub_Outputs_network](./Uebung_039_sub_Outputs_network.svg)
@@ -73,6 +71,7 @@ The data and event flow within the sub-application is as follows:
 
 - The result of the OR operation triggers the hardware output `QX`.
 - Simultaneously, the result is passed to the sub-application `GreenWhiteBackground`. As soon as the hardware output is active (confirmed by `QX.CNF`), the visualization is updated (the softkey will likely turn green).
+
 1. **Output and Feedback**:
 
 - The result of the OR operation triggers the hardware output `QX`.

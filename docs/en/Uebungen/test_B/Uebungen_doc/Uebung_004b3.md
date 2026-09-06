@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004b3`. This exercise extends the two-channel system with mutual interlocking: Only one lamp can be illuminated at a time
+
 ----
 
 ## Objective of the Exercise
@@ -37,8 +38,6 @@ The special feature lies in the "cross-connection" of the set events:
 <!-- Verriegelung: Wenn Kanal 2 einschaltet (EO0), schalte Kanal 1 aus! -->
 <Connection Source="E_SWITCH_I2.EO0" Destination="E_SR_I1.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence:
 

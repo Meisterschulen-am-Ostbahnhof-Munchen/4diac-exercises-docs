@@ -75,6 +75,7 @@ The flow is controlled via event connections:
 
 - If a change occurs at **Input_I1** (CD) or **Input_I2** (LD), the corresponding input block (`Input_CD.IND` or `Input_LD.IND`) triggers an event.
 - Both events are connected to the **REQ** input of the counter `FB_CTD_ULINT`. This triggers a counting operation at each of the two inputs.
+
 1. **Counter Operation**:
 
 - The counter `FB_CTD_ULINT` executes the following depending on the state of the data lines:

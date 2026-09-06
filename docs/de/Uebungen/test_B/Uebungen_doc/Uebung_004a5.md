@@ -34,8 +34,6 @@ Demonstration der "Fan-Out"-Fähigkeit von Ereignisverbindungen in 4diac. Ein ei
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Wenn `I1` ein Ereignis feuert, wird dieses an alle verbundenen Ziele verteilt. Die Reihenfolge der Abarbeitung ist in der IEC 61499 Norm für diesen Fall nicht strikt definiert (meistens erfolgt sie in der Reihenfolge, in der die Verbindungen erstellt wurden).
 
 **Wann nutzt man was?**

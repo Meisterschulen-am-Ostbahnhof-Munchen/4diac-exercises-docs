@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_010b5_sub_AX: IX auf QX (generisch)
 
 * * * * * * * * * *

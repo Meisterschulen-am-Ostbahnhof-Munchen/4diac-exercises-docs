@@ -35,8 +35,10 @@ This exercise demonstrates the use of adapter interfaces (AUI/AUDI) in 4diac to 
 
 1. The function block `IA_WBSD` provides the current machine speed as an AUI data signal.
 2. This signal is forwarded via an adapter connection to `AUI_SPLIT_2`, which splits it into two parallel paths:
+
 * **Path 1 (Display)**: The AUI signal is converted into an AUDI signal via `CONV_AUI_AUDI`. This is then passed to `Q_NumericValue_WBSD`, which displays the numerical value on the Universal Terminal (UT). The object ID `NumberVariable_Wheel_based_machine_speed` determines which parameter of the pool configuration is displayed.
 * **Path 2 (Threshold Check)**: The AUI signal is directly connected to the sub-block `AX_GT_0`. This checks whether the value is greater than zero.
+
 1. The result of the check (`AX_OUT`) is passed to the flip-flop block `AX_D_FF`. This stabilizes the signal and prevents momentary fluctuations.
 2. The output of `AX_D_FF` is routed to `DigitalOutput_Q1` via an adapter connection. If the speed is > 0, `DigitalOutput_Q1` activates the logiBUS output Q1; otherwise, Q1 remains off.
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002a7_AX`. In this exercise, an exclusive OR (XOR) operation with three inputs is implemented. The output is activated when an odd number of inputs are active
+
 ----
 
 ## Objective of the Exercise
@@ -40,8 +41,6 @@ The logic is defined by connecting the input blocks with the XOR logic block in 
 <Connection Source="DigitalInput_I3.IN" Destination="AX_XOR_3.IN3"/>
 <Connection Source="AX_XOR_3.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
-[cite_start][cite: 1]
-
 The three-input XOR logic behaves as follows:
 
 - The output is **TRUE** if exactly **one** input is active.

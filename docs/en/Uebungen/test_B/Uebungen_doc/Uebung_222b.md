@@ -45,16 +45,19 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 - FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN
 - F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys
 - The terminal thus displays the counter reading as a decimal floating-point number.
+
 1. **Learning Objectives**
 
 - Understanding the IEC 61131-3 CTUD function block (LINT).
 - Working with digital inputs/outputs in the logiBUS system.
 - Data type conversion from LINT to LREAL.
 - Visualizing process values via a terminal object.
+
 1. **Difficulty Level & Prior Knowledge**
 
 - **Difficulty:** Medium.
 - **Prior Knowledge:** Basic knowledge of the 4diac IDE, working with SubApp types, event and data connections, basic IEC 61131-3 knowledge.
+
 1. **Execution**
 
 - Load the exercise into the 4diac IDE.

@@ -37,8 +37,6 @@ Das Ziel ist das Verständnis der sequenziellen Event-Verarbeitung. In IEC 61499
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Ein Klick auf Taster 1 sendet ein Event an `E_SPLIT`.
 2.  `E_SPLIT` sendet **zuerst** ein Event an `EO1` -> `E_T_FF_Q1` schaltet um.
 3.  Danach (quasi zeitgleich, aber logisch danach) sendet `E_SPLIT` ein Event an `EO2` -> `E_T_FF_Q2` schaltet um.

@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_035a3_AX` basierend auf den bereitgestellten Daten.
-
 # Uebung_035a3_AX: Ampelschaltung Österreich (AX) mit Blinker
 
 ![Uebung_035a3_AX_network](./Uebung_035a3_AX_network.svg)

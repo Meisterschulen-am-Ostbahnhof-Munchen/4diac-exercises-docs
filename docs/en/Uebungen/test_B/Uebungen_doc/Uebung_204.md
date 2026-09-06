@@ -72,6 +72,7 @@ The exercise is set up as a SubAppType, in which all the logic runs. The connect
 
 - **No conflict:** The desired output (DO_UP or DO_DOWN) is set, and the corresponding output driver (Q1 or Q2) is switched.
 - **Conflict:** No output is set; instead, the trip output (DO_TRIP) is activated and output via `Trip_Anzeige`. Outputs Q1 and Q2 remain off.
+
 1. An applied reset signal (I3) can reset the trip and restore normal operation. As long as the conflict persists, a further reset will not release the device.
 
 ## Summary

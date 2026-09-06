@@ -38,8 +38,6 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Ein einzelner Klick auf den Taster löst eine Kaskade aus:
 
 1.  `EO1` feuert -> `Q1` toggelt.

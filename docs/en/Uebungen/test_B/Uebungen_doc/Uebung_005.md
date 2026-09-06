@@ -41,8 +41,6 @@ The circuit uses the data connection from the input to the gate of the switch:
 <Connection Source="DigitalInput_I1.IN" Destination="E_SWITCH.G"/>
 </DataConnections>
 
-[cite_start][cite: 1]
-
 The functional sequence:
 
 1. **Push**: `I1` changes from FALSE to TRUE. A `IND` event is sent. Since the input `G` of the switch is now TRUE, the event is forwarded to `EO1` ➡️ `CLK`. The light toggles.

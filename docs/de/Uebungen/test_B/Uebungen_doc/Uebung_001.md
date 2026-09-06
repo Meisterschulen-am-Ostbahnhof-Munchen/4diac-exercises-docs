@@ -46,8 +46,6 @@ Die Logik wird durch zwei parallele Verbindungen realisiert. Der Aufbau in `Uebu
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Prozess läuft wie folgt ab:
 
 1.  Der Baustein `DigitalInput_I1` erkennt eine Änderung am Hardware-Eingang `I1`.

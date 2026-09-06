@@ -37,8 +37,6 @@ Das Ziel ist es zu lernen, wie man asynchrone Ereignisströme vereint. Wenn zwei
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Drückt man Taster 1, sendet `I1` ein Event an `E_MERGE.EI1`. `E_MERGE` leitet es an `EO` weiter -> `E_T_FF` schaltet um.
 2.  Drückt man Taster 2, sendet `I2` ein Event an `E_MERGE.EI2`. `E_MERGE` leitet es an `EO` weiter -> `E_T_FF` schaltet um.
 

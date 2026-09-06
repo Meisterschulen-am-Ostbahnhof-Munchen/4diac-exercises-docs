@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003a_AX`. The exercise demonstrates an advanced approach to structuring IEC 61499 applications: the use of typed sub-applications ("Typed SubApps") for encapsulating and reusing logic
+
 ----
 
 ## Objective of the Exercise
@@ -48,8 +49,6 @@ The logic is hidden within the sub-application ("information hiding"). The main 
 <Parameter Name="Input" Value="Input_I2"/>
 <Parameter Name="Output" Value="Output_Q2"/>
 </SubApp>
-
-[cite_start][cite: 1]
 
 The functional flow corresponds exactly to that of `Uebung_003_AX` (parallel control), however, the implementation is more modular. Each instance (`F1`, `F2`) operates as an independent, isolated block that executes its internal adapter logic.
 

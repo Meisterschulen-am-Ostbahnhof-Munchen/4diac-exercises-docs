@@ -44,8 +44,6 @@ Die Besonderheit dieser Übung liegt in der Ereignisverbindung, die eine Rückko
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf ist wie folgt:
 
 1.  **Systemstart**: Beim Hochfahren der 4diac-Laufzeitumgebung wird der Baustein `DigitalInput_I1` initialisiert.

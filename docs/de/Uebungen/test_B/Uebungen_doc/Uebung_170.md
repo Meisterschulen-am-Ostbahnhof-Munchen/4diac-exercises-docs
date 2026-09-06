@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_170` basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_170: Exercise for ARTimeOut
 
 ![Uebung_170_network](./Uebung_170_network.svg)

@@ -42,8 +42,6 @@ Die Unabhängigkeit der beiden Kanäle wird durch die getrennten Adapter-Verbind
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Ändert sich der Zustand von `I1`, sendet `DigitalInput_I1` ein Ereignis direkt an `DigitalOutput_Q1`. Der Ausgang `Q1` schaltet.

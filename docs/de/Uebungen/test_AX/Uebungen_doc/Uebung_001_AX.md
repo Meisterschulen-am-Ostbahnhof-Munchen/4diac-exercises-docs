@@ -48,8 +48,6 @@ Die Logik wird ausschließlich durch die Verbindung der beiden Bausteine realisi
 </AdapterConnections>
 ```
 
-[cite\_start][cite: 1]
-
 Dieser einzelnen Zeile Code implementiert die gesamte Funktionalität:
 
 1.  Der Baustein `DigitalInput_I1` liest kontinuierlich den Zustand des physischen Eingangs `Input_I1`.

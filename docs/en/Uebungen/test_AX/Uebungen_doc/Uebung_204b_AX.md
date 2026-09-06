@@ -53,11 +53,13 @@ This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_A
 - `ILOCK_AX.UP_OUT` → `AX_2_TO_3.UP_IN`
 - `ILOCK_AX.DOWN_OUT` → `AX_2_TO_3.DOWN_IN`
 - `ILOCK_AX.TRIP_OUT` → `Trip_Anzeige.OUT`
+
 1. **Power Amplifier Control**: The sub-app `AX_2_TO_3` distributes the signals to the final outputs:
 
 - `AX_2_TO_3.UP_OUT` → `Rechtslauf.OUT`
 - `AX_2_TO_3.DOWN_OUT` → `Linkslauf.OUT`
 - `AX_2_TO_3.OR_OUT` → `LowSide_Treiber.OUT`
+
 1. **Reset Function**: The digital input **I3** (via `DigitalInput_Reset`) is connected to the event input **EI_RESET** of `ILOCK_AX` via a button press event (`BUTTON_SINGLE_CLICK`) to reset a triggered trip.
 
 **Exercise Notes**:

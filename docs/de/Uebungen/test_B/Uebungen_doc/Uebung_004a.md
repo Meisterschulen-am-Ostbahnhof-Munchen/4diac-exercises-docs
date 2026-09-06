@@ -42,8 +42,6 @@ Die Logik basiert auf der Umwandlung eines flüchtigen Tastendrucks in einen dau
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Der Benutzer drückt den Taster an `I1` kurz ("Klick").
 2.  Der `DigitalInput_CLK_I1` erkennt das Muster "Einzelklick" und sendet ein `IND`-Ereignis.
 3.  Das Ereignis erreicht den `CLK`-Eingang des `E_T_FF`.

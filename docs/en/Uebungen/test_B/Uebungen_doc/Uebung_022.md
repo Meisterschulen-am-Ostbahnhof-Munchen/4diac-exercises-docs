@@ -39,8 +39,6 @@ Learning about event chaining. The end of a process (reaching the final position
 <Connection Source="SoftKey_F3_DOWN.IND" Destination="E_SR_Cyl_2.R"/>
 </EventConnections>
 
-[cite_start][cite: 1]
-
 The sequence:
 
 1. Press **F1** ➡️ Cylinder 1 extends (`Q1`).

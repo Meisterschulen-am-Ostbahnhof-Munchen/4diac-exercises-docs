@@ -38,8 +38,6 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 -   Ein Klick auf Taster 1 ➡️ Speicher wird gesetzt ➡️ Lampe geht an.
 -   Ein Klick auf Taster 2 ➡️ Speicher wird gelöscht ➡️ Lampe geht aus.
 -   Erneutes Drücken von Taster 1, wenn das Licht bereits an ist, hat keine Auswirkung.

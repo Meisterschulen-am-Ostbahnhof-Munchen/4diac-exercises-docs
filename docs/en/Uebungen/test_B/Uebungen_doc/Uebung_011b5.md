@@ -3,6 +3,7 @@
 ![Uebung_011b5_network](./Uebung_011b5_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_011b5** performs a multiplication of two numeric values read from the ISOBUS

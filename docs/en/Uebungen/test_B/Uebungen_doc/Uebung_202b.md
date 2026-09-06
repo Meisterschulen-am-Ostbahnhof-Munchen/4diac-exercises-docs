@@ -79,6 +79,7 @@ The components are connected as follows:
 
 - ``DigitalInput_I1`` (Taster/Sensor für Rechtslauf) sendet über seinen Ereignisausgang IND ein Ereignis an den Ereigniseingang ``EI_UP`` des ILOCK. Gleichzeitig wird der Datenwert ``IN`` an den Dateneingang ``DI_UP`` is passed.
 - ``DigitalInput_I2`` (Taster/Sensor für Linkslauf) sendet analog an ``EI_DOWN`` und ``DI_DOWN``.
+
 1. **Interlock with Protection Time (ILOCK)**:
 
 The ILOCK block evaluates the input signals. Upon a valid command (e.g., DI_UP = TRUE and an event at EI_UP), the corresponding output (DO_UP) is activated, and an event is connected to the ``EO_UP`` ausgegeben. Gleichzeitig wird der andere Ausgang (DO_DOWN) deaktiviert. Die Schutzzeit ``DT_PROTECT = 1s`` verhindert einen sofortigen Richtungswechsel; erst nach Ablauf der Zeit darf die Gegenrichtung angenommen werden. Der Adapter ``timeOut`` ist mit dem ``E_TimeOut`` block, which implements the time monitoring.
@@ -88,6 +89,7 @@ The ILOCK block evaluates the input signals. Upon a valid command (e.g., DI_UP =
 - The event ``EO_UP`` des ILOCK triggert den ``Rechtslauf``-Baustein (Eingang REQ) und übergibt den Datenwert ``DO_UP`` an den Dateneingang OUT. Somit wird der Ausgang ``Output_Q5`` is set.
 - Similarly, the event ``EO_DOWN`` der ``Linkslauf``-Baustein aktiviert und ``Output_Q6`` is set.
 - Both events (EO_UP and EO_DOWN) are also sent to the REQ event input of the ``OR_2_BOOL``-Bausteins weitergeleitet. Der Datenwertausgang ``DO_UP`` geht auf IN1, ``DO_DOWN`` auf IN2 des ODER-Bausteins. Der Ausgang OUT des ODER-Bausteins wird an den ``LowSide_Treiber`` übergeben, sodass der gemeinsame Ausgang ``Output_Q56`` whenever either clockwise or counterclockwise rotation is active.
+
 1. **Time Monitoring**:
 
 The ``E_TimeOut`` block is connected to the ILOCK via an adapter and provides the necessary timing functionality for the protection time.

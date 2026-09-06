@@ -42,6 +42,7 @@ Event control is handled via the `IND` events of the digital inputs. Each key pr
 - `Input_R.IND` → `FB_CTUD_UDINT.REQ`
 - `Input_LD.IND` → `FB_CTUD_UDINT.REQ`
 - `FB_CTUD_UDINT.CNF` → `Output_QU.REQ`, `Output_QD.REQ`, `Q_NumericValue_PHYS_LREAL.REQ`
+
 1. **Data Connections**
 
 - `Input_CU.IN` → `FB_CTUD_UDINT.CU`

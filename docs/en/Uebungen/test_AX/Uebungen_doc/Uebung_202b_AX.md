@@ -56,11 +56,13 @@ The logic is implemented as a sub-application and uses an adapter-based data flo
 
 - The digital inputs `Input_I1` (Up) and `Input_I2` (Down) are read via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
 - Their signals are passed directly to the adapter inputs `UP_IN` and `DOWN_IN` of the `ILOCK_AX`.
+
 1. **Interlock Logic**
 
 - `ILOCK_AX` evaluates the incoming signals. When changing from one direction of rotation to the other, the parameterized **protection time DT_PROTECT = 1s** is activated.
 - Only after this time has elapsed is the new output signal switched to `UP_OUT` or `DOWN_OUT`.
 - Simultaneously, the timer signal `timeOut` is set to `TRUE` for the duration of the protection time and transmitted to `E_TimeOut`.
+
 1. **Signal Distribution via SubApp `AX_2_TO_3`**
 
 - The delayed outputs `UP_OUT` and `DOWN_OUT` from `ILOCK_AX` are routed to the subapp `AX_2_TO_3` via adapter connections.

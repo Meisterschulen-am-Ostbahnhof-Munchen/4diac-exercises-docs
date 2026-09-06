@@ -54,6 +54,7 @@ The hardware inputs (I1–I4) are read via the logiBUS DI blocks. The events and
 
 - `Input_CU.IN` → `ALI_FB_CTUD.CU` (Count up, rising edge)
 - `Input_CD.IN` → `ALI_FB_CTUD.CD` (Count down, rising edge)
+
 1. **Reset and Load**:
 
 - `Input_R.IN` → `ALI_FB_CTUD.R` (Sets the counter to 0)
@@ -63,10 +64,12 @@ The hardware inputs (I1–I4) are read via the logiBUS DI blocks. The events and
 The output is `ALI_LINT_TO_LI.REQ`. 3. **Preset Value**:
 
 - `ALI_LINT_TO_LI.ALI_OUT` → `ALI_FB_CTUD.PV`
+
 1. **Outputs**:
 
 - `ALI_FB_CTUD.QU` → `Output_QU.OUT` (switched to digital output Q1)
 - `ALI_FB_CTUD.QD` → `Output_QD.OUT` (switched to digital output Q2)
+
 1. **Count Value Output to Terminal**:
 
 - `ALI_FB_CTUD.CV` → `ALI_TO_AUDI.ALI_IN`

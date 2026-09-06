@@ -40,8 +40,6 @@ Die Logik verlangt die Bestätigung beider Quellen:
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Drückt man nur Taster 1 (`I1`), passiert am Ausgang nichts. `E_REND` speichert intern: "EI1 ist erledigt".

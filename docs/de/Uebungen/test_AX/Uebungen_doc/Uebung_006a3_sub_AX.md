@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_006a3_sub_AX` basierend auf den bereitgestellten Daten.
-
 # Uebung_006a3_sub_AX: Subapplication Type
 
 * * * * * * * * * *

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020d_AX`. Here, an off-delay (TOF) is constructed using discrete event and memory blocks
+
 ----
 
 ## Objective of the Exercise
@@ -43,8 +44,6 @@ When `I1` is released, the switch sends an event to `EO0`. This event starts the
 After 2 seconds, `E_DELAY.EO` fires. This event resets the memory (`AX_RS.R`) -> `Q1` switches off.
 
 As a result, the indicator light illuminates immediately upon pressing and remains on for exactly 2 seconds after release.
-...
-# 2 -----
 
 ## Application Example
 

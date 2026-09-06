@@ -42,8 +42,6 @@ Die Unabhängigkeit der beiden Kanäle wird durch die getrennten Ereignis- und D
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Ändert sich der Zustand von `I1`, feuert der erste Baustein ein `IND`-Event, welches `Q1` zur Aktualisierung auffordert.

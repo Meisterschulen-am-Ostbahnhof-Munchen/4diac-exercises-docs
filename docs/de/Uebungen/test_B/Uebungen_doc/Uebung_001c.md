@@ -40,8 +40,6 @@ Die Logik kombiniert die normale Signalweiterleitung mit einer Initialisierungss
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Ablauf gliedert sich in zwei Phasen:
 
 1.  **Initialisierungsphase (Boot)**:

@@ -1,5 +1,3 @@
-Here is the documentation for the exercise based on the provided XML data.
-
 # Exercise_035a1b_AX: Traffic Light Control with Pattern Sequencer (AX) and Bit Assembler
 
 ![Uebung_035a1b_AX_network](./Uebung_035a1b_AX_network.svg)
@@ -34,14 +32,17 @@ Four instances of this block are used to define the light patterns for the four 
 
 - **Purpose**: Defines the red phase.
 - **Parameters**: `BIT_00` = `TRUE` (Red active).
+
 1. **Instance `P2_RedYellow`**:
 
 - **Purpose**: Defines the red-yellow phase.
 - **Parameters**: `BIT_00` = `TRUE` (Red), `BIT_01` = `TRUE` (Yellow).
+
 1. **Instance `P3_Green`**:
 
 - **Purpose**: Defines the green phase.
 - **Parameter**: `BIT_02` = `TRUE` (Green).
+
 1. **Instance `P4_Yellow`**:
 
 - **Purpose**: Defines the yellow phase.

@@ -50,6 +50,7 @@ logiBUS_IBA` reads the current state of the digital input and provides it as AB 
 The adapter `AB_TO_AUDI` converts the AB format to the AUDI format. The connection is established via an adapter connection (`AdapterConnections`):
 
 - `Source="logiBUS_IBA.IN"` → `Destination="AB_TO_AUDI.AB_IN"`
+
 1. **Output on the Virtual Terminal**
 
 The converted value (AUDI format) is provided at output `AUDI_OUT` by `AB_TO_AUDI` and passed to the module `Q_NumericValue_AUDI` via another adapter connection:

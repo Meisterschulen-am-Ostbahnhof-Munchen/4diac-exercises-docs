@@ -92,6 +92,7 @@ Simultaneously, the current digital values are passed to `ILOCK` via the data co
 
 - `DigitalInput_I1.IN` → `ILOCK.DI_UP`
 - `DigitalInput_I2.IN` → `ILOCK.DI_DOWN`
+
 1. **Locking Logic**
 
 ILOCK_BLOCK` processes the incoming events and data. It sets the output `DO_UP` (or `DO_DOWN`) to the value of the corresponding input, provided the other channel is not already active. Internal logic ensures that only one channel can deliver the value `TRUE` at any given time. The output events `EO_UP` and `EO_DOWN` are generated accordingly.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a7`. Here, the rendezvous pattern is combined with an extended flip-flop type that has a dedicated reset function
+
 ----
 
 ## Objective of the Exercise
@@ -34,8 +35,6 @@ Demonstration of the interaction between complex event logic (`E_REND`) and a fl
 <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_REND.R"/>
 <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_T_FF.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. To toggle the light (`Q1`), both buttons `I1` and `I2` must be pressed. The rendezvous then fires the clock signal (`CLK`) for the flip-flop.
 2. The button `I3` acts as an **all-off button**:

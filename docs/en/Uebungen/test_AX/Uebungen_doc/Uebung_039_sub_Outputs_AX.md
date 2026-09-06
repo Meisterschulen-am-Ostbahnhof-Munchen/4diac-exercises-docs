@@ -55,12 +55,14 @@ The flow within the sub-application is greatly simplified by the AX adapter conn
 1. **Initialization**:
 
 - The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed to the corresponding function blocks.
+
 1. **Logical Link (AX_OR)**:
 
 - The function block `AX_OR` bundles the logic:
 - `IN1`: Softkey status.
 - `IN2`: External adapter input `OUT` (e.g., from a step sequence).
 - An external event `REQ` can additionally trigger the logic.
+
 1. **Output and Feedback**:
 
 - The output of `AX_OR` is directly connected to the hardware output `QX`.

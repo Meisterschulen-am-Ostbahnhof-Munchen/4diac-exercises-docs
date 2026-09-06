@@ -46,10 +46,12 @@ This exercise uses only the standard function blocks listed above. No other sub-
 - `DigitalInput_I2.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_01`
 - `DigitalInput_I3.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_02`
 - `DigitalInput_I4.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_03`
+
 1. The **assemble module** packs the four bits into a byte (least significant bit = BIT_00) and outputs this byte at its output `OUT`.
 2. This output is directly connected to the input `IN` of the module **`SPLIT_BYTE_INTO_BOOLS`**.
 
 - `ASSEMBLE_BYTE_FROM_BOOLS.OUT` → `SPLIT_BYTE_INTO_BOOLS.IN`
+
 1. The **Split Block** splits the byte back into four individual Boolean values at its output sockets `BIT_00` to `BIT_03`.
 
 2. These values are then connected to the **digital outputs** Q1 to Q4:

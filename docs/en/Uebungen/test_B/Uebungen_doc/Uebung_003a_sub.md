@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the sub-app type `Uebung_003a_sub`. This block serves as a reusable template for the one-to-one connection of a digital input to a digital output
+
 ----
 
 ## Purpose of the exercise

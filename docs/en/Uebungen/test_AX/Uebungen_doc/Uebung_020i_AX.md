@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020i_AX`. This exercise combines time measurement and time control into a self-learning pulse function
+
 ----
 
 ## Objective of the Exercise
@@ -35,6 +36,7 @@ The user presses and holds button `I2` for the desired duration (e.g., 3.5 secon
 
 - Pressing the button starts `E_STOPWATCH`.
 - Releasing the button stops the measurement. The value (3.5 seconds) is now present at input `PT` of `AX_PULSE`.
+
 1. **Execute**:
 
 The user briefly clicks button `I1`.

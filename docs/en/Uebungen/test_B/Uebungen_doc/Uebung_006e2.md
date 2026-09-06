@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_006e2`, based on the provided data.
-
 # Exercise_006e2: RS Flip-Flop with 2x IX
 
 ![Uebung_006e2_network](./Uebung_006e2_network.svg)
@@ -55,16 +53,19 @@ The program flow is determined by the event connections and the data connection:
 
 - The digital inputs `DigitalInput_I1` and `DigitalInput_I2` acquire signals from the hardware.
 - As soon as an input value changes or is updated, a `IND` event (Indication) is triggered.
+
 1. **Logic Processing (RS Flip-Flop)**:
 
 - The `IND` events of both inputs are connected to the `REQ` (Request) input of `FB_RS`. This means that any change to I1 or I2 triggers the flip-flop's calculation.
 - **Data Connection**:
 - The value of `DigitalInput_I1` (`IN`) is connected to the Set input (`S`) of `FB_RS`.
 - The value of `DigitalInput_I2` (`IN`) is connected to the reset input (`R1`) of `FB_RS`.
+
 1. **Output Processing**:
 
 - After the calculation of `FB_RS`, the `CNF` event (Confirmation) is triggered.
 - This event is connected to the `REQ` input of `DigitalOutput_Q1` to update the output.
+
 1. **Output Processing**:
 
 - After the calculation of `FB_RS`, the `CNF` event (Confirmation) is triggered.

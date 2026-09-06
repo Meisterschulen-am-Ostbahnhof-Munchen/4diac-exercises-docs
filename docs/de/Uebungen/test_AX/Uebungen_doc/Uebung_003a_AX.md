@@ -53,8 +53,6 @@ Die Logik ist im Inneren der Sub-Applikation versteckt ("Information Hiding"). D
 </SubApp>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf entspricht exakt dem der `Uebung_003_AX` (parallele Steuerung), jedoch ist die Implementierung modularer. Jede Instanz (`F1`, `F2`) arbeitet als eigenständiger, isolierter Block, der seine interne Adapter-Logik ausführt.
 
 -----

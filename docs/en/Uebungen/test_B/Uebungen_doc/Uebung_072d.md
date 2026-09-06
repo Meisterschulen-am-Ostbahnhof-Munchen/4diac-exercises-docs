@@ -33,20 +33,24 @@ This exercise demonstrates how to output the working width-based ground speed (W
 - Pressing a button on digital input I2 generates an event (`BUTTON_SINGLE_CLICK`).
 - This event is forwarded via `DigitalInput_CLK_I2.IND` to `E_T_FF.CLK`.
 - The T flip-flop `E_T_FF` changes its output `Q` with each button press.
+
 1. **Control of the QI and the Digital Output**
 
 - The state `Q` of the flip-flop is fed to two data connections:
 - To `I_GBSD.QI` (quality indicator of the speed sensor).
 - To `DigitalOutput_Q2.OUT` (switches output Q2 on/off).
+
 1. **Speed Acquisition and Conversion**
 
 - As long as `QI` = `TRUE`, `I_GBSD` sends an event `IND` on each update.
 - This event triggers `F_UINT_TO_UDINT.REQ`, which converts the 16-bit speed (`I_GBSD.GROUNDBASEDMACHINESPEED`) into a 32-bit value.
 - The converted value (`F_UINT_TO_UDINT.OUT`) is passed to `Q_NumericValue.u32NewValue`.
+
 1. **Output to the UT**
 
 - After successful conversion, `F_UINT_TO_UDINT` generates the event `CNF`, which triggers `Q_NumericValue.REQ`.
 - The function block `Q_NumericValue` sends the current speed value to the UT under the object ID `NumberVariable_Ground_based_machine_speed`.
+
 1. **Note**
 
 - The exercise **Exercise_094a** uses the same principle.

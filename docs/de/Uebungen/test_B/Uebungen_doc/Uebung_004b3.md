@@ -42,8 +42,6 @@ Die Besonderheit liegt in der "Über-Kreuz-Verbindung" der Setz-Ereignisse:
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Lampe 1 ist an, Lampe 2 ist aus.

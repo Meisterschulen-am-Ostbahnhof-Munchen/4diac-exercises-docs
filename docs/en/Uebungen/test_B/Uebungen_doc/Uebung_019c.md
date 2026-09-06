@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_019c`. This is the most complex navigation logic, where screen switching can be actively blocked by the hardware state
+
 ----
 
 ## Objective of the Exercise
@@ -33,6 +34,7 @@ The switches block the normal navigation commands:
 
 - If **no** alarm is present (`G=FALSE`), the event is passed to `EO0` ➡️ `F_SEL_E_4`. The page changes.
 - If an alarm is active (`G=TRUE`), the event lands at `EO1` (not connected). The page change is **ignored**.
+
 1. If an alarm occurs, the system immediately switches to the alarm screen and activates the horn.
 2. Only when the alarm sensor (`I3`) is FALSE **AND** the user presses the acknowledge button (`I4`) is the memory reset and navigation enabled again.
 

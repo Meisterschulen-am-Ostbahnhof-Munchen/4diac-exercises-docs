@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_060_sub_Outputs` based on the provided XML data.
-
 # Exercise_060_sub_Outputs: for TC-SC, i.e., Task Controller Section Control
 
 ![Uebung_060_sub_Outputs_network](./Uebung_060_sub_Outputs_network.svg)
@@ -36,6 +34,7 @@ The flow within the sub-application is purely event-driven and serves for direct
 
 - The main event `CNF` (Confirmation) at the input of the sub-application triggers the `REQ` input of all 8 included DigitalOutput blocks (`DigitalOutput_Q1` to `DigitalOutput_Q8`).
 - This ensures that all outputs are updated in the same cycle.
+
 1. **Data Mapping**:
 
 The input variables are mapped to the outputs with an index offset:

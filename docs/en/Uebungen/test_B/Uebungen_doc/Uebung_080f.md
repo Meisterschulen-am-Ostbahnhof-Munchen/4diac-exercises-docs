@@ -68,10 +68,12 @@ The flow is controlled by events:
 
 - A click on button I1 generates an event `IND` at the block `DigitalInput_CLK_I1`.
 - This event is directly routed to input `CU` of `E_CTU`. The counter increments by 1.
+
 1. **Reset**
 
 - Clicking button I2 generates an event `IND` at `DigitalInput_CLK_I2`.
 - This event is routed to input `R` of `E_CTU`. The counter is reset to 0.
+
 1. **Event Merging**
 
 - Both the output `CUO` (after counter increment) and `RO` (after reset) of `E_CTU` are connected to the inputs `EI1` and `EI2` of `E_MERGE_2`.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_103`. This is a complex example that demonstrates how to switch the signal path of a push button at runtime
+
 ----
 
 ## Objective of the Exercise

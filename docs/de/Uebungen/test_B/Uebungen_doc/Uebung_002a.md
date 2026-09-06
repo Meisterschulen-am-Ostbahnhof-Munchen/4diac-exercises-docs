@@ -43,8 +43,6 @@ Die Logik wird durch die Verschaltung von Ereignis- und Datenverbindungen festge
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Prozess folgt dieser Logik:
 
 1.  Ändert sich einer der beiden Eingänge (`I1` oder `I2`), sendet der jeweilige Baustein ein `IND`-Ereignis an den `REQ`-Port des `AND_2`-Bausteins.

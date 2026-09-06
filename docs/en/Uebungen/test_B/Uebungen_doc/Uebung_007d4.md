@@ -68,6 +68,7 @@ A valid switch generates an event at `EO`.
 - F_MOVE copies the current state `Q` (as REAL: 0.0 or 1.0?) to its output `OUT`.
 - The output `OUT` is passed to the data input `IN1` of the comparator block F_GT.
 - The event `CNF` from F_MOVE starts F_GT.
+
 1. **Threshold Comparison**
 
 F_GT checks if the copied value is greater than 0.49.

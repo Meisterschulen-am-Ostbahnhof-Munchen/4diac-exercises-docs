@@ -42,8 +42,6 @@ Die Logik wird durch die Verknüpfung der Ereignis-Ausgänge der Weiche mit den 
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Ablauf ist wie folgt:
 
 1.  **Drücken von I1**: Der `IXA`-Baustein sendet ein Event und den Wert `TRUE`. Der `AX_SWITCH` leitet das Event an `EO1` -> `AX_RS` wird gesetzt (`S`) -> `Q1` geht an.

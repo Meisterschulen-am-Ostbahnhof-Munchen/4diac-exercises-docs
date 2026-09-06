@@ -50,8 +50,6 @@ Die Logik ist vollständig in den Sub-Applikationen gekapselt. Die Hauptanwendun
 </SubApp>
 ```
 
-[cite_start][cite: 1]
-
 Jeder Kanal arbeitet völlig autark. Wenn an Eingang `I3` eine Änderung erkannt wird, reagiert ausschließlich die Instanz `F3` und schaltet den Ausgang `Q3`. Die anderen Kanäle bleiben davon unberührt.
 
 -----

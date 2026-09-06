@@ -37,8 +37,6 @@ Der Baustein `E_MERGE` fehlt hier bewusst.
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Die Funktionsweise ist identisch zur Übung mit `E_MERGE`:
 Jedes eintreffende Event an `E_T_FF.CLK` – egal ob von `I1` oder `I2` kommend – triggert die Ausführung des Funktionsbausteins. Die 4diac IDE und Runtime unterstützen diese "Fan-In"-Verbindungen für Events.
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_001c`. It demonstrates how to query a digital input immediately after system startup (boot process) to transfer the initial state to a digital output using standard event and data connections
+
 ----
 
 ## Objective of the Exercise
@@ -36,8 +37,6 @@ The logic combines normal signal forwarding with an initialization loop. The str
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 
-[cite_start][cite: 1]
-
 The process is divided into two phases:
 
 1. **Initialization Phase (Boot)**:
@@ -46,6 +45,7 @@ The process is divided into two phases:
 - This event is fed back to its own `REQ` input.
 - As a result, the function block immediately reads the physical state and acknowledges this with a `CNF` event.
 - The `CNF` event finally triggers `DigitalOutput_Q1.REQ`, so that the output already receives the correct value at startup.
+
 1. **Operating Phase (Runtime)**:
 
 - Any subsequent change to the input directly triggers the output via `IND -> REQ`, as in Exercise 001.

@@ -3,6 +3,7 @@
 ![Uebung_011b7_network](./Uebung_011b7_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Übung **Uebung_011b7** führt eine Division zweier über das ISOBUS-Netzwerk eingelesener

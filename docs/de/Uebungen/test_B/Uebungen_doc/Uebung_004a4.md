@@ -37,8 +37,6 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Ein Klick auf Taster 1 sendet ein Event an `E_SPLIT.EI`.
 2.  `E_SPLIT` sendet daraufhin **zuerst** ein Event an `EO1` ➡️ `E_T_FF_Q1` schaltet um.
 3.  Unmittelbar danach sendet `E_SPLIT` ein Event an `EO2` ➡️ `E_T_FF_Q2` schaltet um.

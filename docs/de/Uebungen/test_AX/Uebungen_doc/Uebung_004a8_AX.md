@@ -36,8 +36,6 @@ Kennenlernen der spezifischen Splitter-Bausteine. `E_SPLIT` ist oft der generisc
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Funktional identisch zu `Uebung_004a4_AX`: Ein Eingangsevent löst nacheinander zwei Ausgangsevents aus, wodurch beide Flip-Flops sicher und definiert angesteuert werden.
 
 -----

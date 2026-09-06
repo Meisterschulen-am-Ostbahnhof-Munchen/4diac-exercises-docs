@@ -47,8 +47,6 @@ Die hierarchische Struktur der Logik wird durch die Verschaltung der Adapter-Ver
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Das System berechnet zuerst das Teilergebnis der UND-Verknüpfung von `I1` und `I2`.

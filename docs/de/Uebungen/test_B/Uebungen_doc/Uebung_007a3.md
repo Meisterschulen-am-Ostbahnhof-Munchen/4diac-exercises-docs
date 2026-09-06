@@ -43,8 +43,6 @@ Die Sicherheit wird durch eine doppelte Belegung des Stopp-Signals erreicht:
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  **Blinkbetrieb**: Der `E_CYCLE` triggert die `E_SWITCH/E_SR` Kombination, was zum periodischen Umschalten führt.
 2.  **Ausschalten**: Wenn der Nutzer `STOP` drückt, passieren zwei Dinge gleichzeitig:
     -   Der `E_CYCLE` wird angehalten (keine neuen Takte mehr).

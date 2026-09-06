@@ -45,8 +45,6 @@ Die Logik wird durch die Verschaltung der drei Eingangsbausteine mit dem UND-Log
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Der Baustein `AX_AND_3` überwacht alle drei Adapter-Eingänge auf Zustandsänderungen.

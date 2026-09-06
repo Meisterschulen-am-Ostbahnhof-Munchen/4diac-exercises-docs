@@ -34,8 +34,6 @@ Demonstration der "Fan-Out"-Fähigkeit von Ereignisverbindungen in 4diac. Ein Qu
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 Wenn `I1` ein Event feuert, wird dieses an alle verbundenen Ziele verteilt. Die Reihenfolge der Abarbeitung ist in der IEC 61499 Norm nicht strikt für "Fan-Out" definiert (es ist implementationsabhängig, meistens in der Reihenfolge der Erstellung der Verbindung). Wenn die Reihenfolge kritisch ist, **muss** ein `E_SPLIT` verwendet werden. Wenn es egal ist (wie hier, wo nur zwei Lampen toggeln sollen), reicht die direkte Verbindung.
 
 -----

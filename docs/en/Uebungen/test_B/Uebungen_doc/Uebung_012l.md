@@ -51,45 +51,46 @@ The `NVS` block simultaneously generates an event at output `GETO`, which is con
 
 1. As soon as the value of `InputString_S1` is changed externally (e.g., via an operator terminal), `StringValue_IS` generates an event at `IND`.
 2. This event is connected to the `SET` input of the `NVS` module.
+3. `NVS` stores the current string (from `StringValue_IS.IN` via the data connection to `NVS.VALUE`) under the key `KEY_S1_STORE`.
+4. **Note:** After saving, `Q_StringValue` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
 
-### ... ##
-
-1. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
-
-`NVS``.
+### Data Connections Overview
 
 - **Events**:
-- `NVS.INITO` → `NVS.GET` (initial read operation)
-- `NVS.GETO` → `Q_StringValue.REQ` (output of the loaded string)
-- `StringValue_IS.IND` → `NVS.SET` (saving on change)
+  - `NVS.INITO` → `NVS.GET` (initial read operation)
+  - `NVS.GETO` → `Q_StringValue.REQ` (output of the loaded string)
+  - `StringValue_IS.IND` → `NVS.SET` (saving on change)
 - **Data**:
-- `NVS.VALUEO` → `Q_StringValue.pau8String` (string to be loaded)
-- `StringValue_IS.IN` → `NVS.VALUE` (string to be saved)
+  - `NVS.VALUEO` → `Q_StringValue.pau8String` (string to be loaded)
+  - `StringValue_IS.IN` → `NVS.VALUE` (string to be saved)
+
+### Important Constants
+
 - **`KEY_S1_STORE`**: The NVS key under which the string is stored.
 - **`InputString_S1`**: The ID of the ISOBUS string variable that serves as the source and destination.
+
+## Learning Objectives
+
 - Understanding non-volatile storage (NVS) on ESP32 systems.
 - Working with ISOBUS string variables in 4diac.
 - Event-driven processes: initialization and reactive storage.
 - Using predefined constants (keys, object IDs).
+
+## Prerequisites
+
 - Basic operation of the 4diac IDE.
 - Fundamentals of ISOBUS communication (object IDs, reading/writing values).
 - Basic understanding of event-driven systems.
+
+## Summary
 
 Exercise `Uebung_012l` demonstrates how to write an ISOBUS string to the NVS memory of the ESP32 and read it back upon system startup. The value is retained permanently, even after a restart or power failure. The application consists of three function blocks that interact via event and data connections and demonstrates a typical use case for persistent variable access in agricultural automation.
 
 ---
 
+### 🌐 Related topic subpages on ms-muc-docs.de
+
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 - [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-
-### Datenverbindungen im Überblick
-
-### Wichtige Konstanten
-
-## Learning Objectives
-
-## Benötigte Vorkenntnisse
-
-## Summary
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

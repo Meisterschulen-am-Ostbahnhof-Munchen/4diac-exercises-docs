@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a7_AX`. It combines the rendezvous pattern with an extended flip-flop type that provides set and reset functionality
+
 ----
 
 ## Objective of the Exercise
@@ -34,8 +35,6 @@ Demonstration of the interaction between event logic (`E_REND`) and state logic 
 <Connection Source="DigitalInput_CLK_I3.IND" Destination="AX_T_FF_SR.R"/>
 <Connection Source="DigitalInput_CLK_I3.IND" Destination="E_REND.R"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. To turn on (or toggle) the lamp (`Q1`), press `I1` and `I2` (Rendezvous -> `CLK`).
 2. The button `I3` is the "emergency stop" or "clear all" button. It is connected to:

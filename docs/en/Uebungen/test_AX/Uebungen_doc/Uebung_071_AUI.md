@@ -47,6 +47,7 @@ This SubApp checks if the incoming value (of type UINT) is greater than 0. If so
 
 - **OUT1** → `CONV_AUI_AUDI` → `Q_NumericValue_WBSD`: The speed is output as a numeric value via the UT (object reference `NumberVariable_Wheel_based_machine_speed`).
 - **OUT2** → `AX_GT_0_UINT`: The speed is checked for > 0.
+
 1. If the check is successful, the subapp `AX_GT_0_UINT` activates the output adapter `AX_OUT`.
 
 **OUT2** → `AX_GT_0_UINT` 4. The adapter output `AX_OUT` feeds the input `OUT` of the digital output module `DigitalOutput_Q1`, so that Q1 (e.g., a relay or a lamp) is switched on as long as the speed is greater than 0.

@@ -43,8 +43,6 @@ Die Logik wird durch die Verschaltung von Ereignis- und Datenverbindungen defini
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Prozess folgt dieser Logik:
 
 1.  Jede Änderung an den Tastern `I1` oder `I2` löst ein `IND`-Event aus.

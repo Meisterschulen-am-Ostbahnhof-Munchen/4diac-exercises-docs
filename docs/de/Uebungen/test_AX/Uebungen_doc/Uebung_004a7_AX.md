@@ -39,8 +39,6 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Um die Lampe (`Q1`) einzuschalten (oder umzuschalten), müssen `I1` und `I2` gedrückt werden (Rendezvous -> `CLK`).
 2.  Der Taster `I3` ist der "Not-Aus" oder "Alles Löschen". Er ist verbunden mit:
     -   `E_REND.R`: Löscht eventuell halb-fertige Rendezvous-Zustände.

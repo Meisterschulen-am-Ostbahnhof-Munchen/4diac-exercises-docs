@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung **Uebung_035c** im gewünschten Format.
-
 # Uebung_035c: Spiegelabfolge V2 mit Schrittkette
 
 ![Uebung_035c_network](./Uebung_035c_network.svg)

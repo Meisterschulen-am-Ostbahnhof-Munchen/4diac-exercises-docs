@@ -64,6 +64,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DigitalInput_I1` provides the clockwise rotation request (BOOL) and an event `IND`.
 - `DigitalInput_I2` provides the counterclockwise rotation request and an event `IND`.
 - `DigitalInput_Reset` provides the reset signal and an event `IND`.
+
 1. **Processing in the ILOCK block**:
 
 - The block `ILOCK` receives the events from the following inputs:
@@ -74,6 +75,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DI_UP` from `DigitalInput_I1.IN`
 - `DI_DOWN` from `DigitalInput_I2.IN`
 - The function block decides, based on its internal state logic, whether the request is valid, a conflict exists, or a reset is performed.
+
 1. **Output of Motor Directions**:
 
 - If a clockwise rotation request is valid, `ILOCK` generates an event `EO_UP` and sets the data output `DO_UP` to TRUE.
@@ -87,6 +89,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DO_UP` → `Rechtslauf.OUT`
 - `DO_DOWN` → `Linkslauf.OUT`
 - `DO_TRIP` → `Trip_Anzeige.OUT`
+
 1. **Low-Side Driver**:
 
 - The low-side driver (output Q56) is activated as soon as either clockwise or counterclockwise rotation is active.

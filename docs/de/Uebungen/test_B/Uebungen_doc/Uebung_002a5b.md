@@ -49,8 +49,6 @@ Die Schaltung nutzt ein zentrales Logik-Element als Knotenpunkt für alle Signal
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  **Eingangs-Trigger**: Jede Änderung an einem der drei Taster (`I1`, `I2`, `I3`) löst eine Neuberechnung der Logik aus.

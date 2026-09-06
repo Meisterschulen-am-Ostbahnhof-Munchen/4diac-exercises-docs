@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003b`. This exercise extends the modular control concept from `Uebung_003a` to a total of four independent channels
+
 ----
 
 ## Objective of the Exercise
@@ -45,8 +46,6 @@ The logic is completely encapsulated within the sub-applications. The main appli
 <Parameter Name="Input" Value="Input_I4"/>
 <Parameter Name="Output" Value="Output_Q4"/>
 </SubApp>
-
-[cite_start][cite: 1]
 
 Each channel operates completely independently. When a change is detected at input `I3`, only instance `F3` reacts and switches output `Q3`. The other channels remain unaffected.
 

@@ -79,6 +79,7 @@ This exercise uses three digital inputs (`I1`, `I2`, `I3`) and one digital outpu
 - When a key press is detected at `I2`, `DigitalInput_CLK_I2` sends an event via `IND` to the event input `EI2` of `RT_E_REND`.
 - The reset input `R` of `RT_E_REND` is activated via `DigitalInput_CLK_I3` (key press at `I3`).
 - If both events arrive at `EI1` and `EI2` within the deadline (20 ms), `RT_E_REND` generates an event at its `EO` output. This event is then sent to the `CLK` input of the flip-flop `E_T_FF`.
+
 1. **Data Chaining**:
 
 - The output `Q` of the flip-flop `E_T_FF` is passed via a data connection to the data input `OUT` of the output block `DigitalOutput_Q1`.

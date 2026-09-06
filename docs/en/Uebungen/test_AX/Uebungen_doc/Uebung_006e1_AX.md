@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_006e1_AX` based on the provided data.
-
 # Exercise_006e1_AX: SR Flip-Flop with 2x IXA
 
 ![Uebung_006e1_AX_network](./Uebung_006e1_AX_network.svg)
@@ -46,10 +44,12 @@ The network implements a memory function using an SR flip-flop. The process and 
 
 - The adapter output `IN` of **DigitalInput_I1** is connected to the adapter input `SET1` of the **AX_FB_SR** module.
 - When `Input_I1` is active, the flip-flop is set.
+
 1. **Reset:**
 
 - The adapter output `IN` of **DigitalInput_I2** is connected to the adapter input `RESET` of the **AX_FB_SR** module.
 - When `Input_I2` is active, the flip-flop is reset.
+
 1. **Output:**
 
 - The adapter output `Q1` of the **AX_FB_SR** block is connected to the adapter input `OUT` of **DigitalOutput_Q1**.

@@ -51,8 +51,6 @@ Die hierarchische Struktur der Logik wird durch die Verschaltung der Ereignisket
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Ändert sich `I1` oder `I2`, berechnet `AND_2` das Teilergebnis.

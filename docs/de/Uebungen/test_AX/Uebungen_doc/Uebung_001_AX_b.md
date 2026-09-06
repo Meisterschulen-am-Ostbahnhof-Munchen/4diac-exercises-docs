@@ -50,8 +50,6 @@ Die Logik wird durch die Verknüpfung von Adapter-, Ereignis- und Datenverbindun
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Ablauf gestaltet sich wie folgt:
 
 1.  Ändert sich der Zustand am Eingang `I1`, sendet `DigitalInput_I1` ein Adapter-Ereignis.

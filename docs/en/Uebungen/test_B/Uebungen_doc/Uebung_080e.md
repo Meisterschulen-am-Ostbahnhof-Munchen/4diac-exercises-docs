@@ -77,15 +77,18 @@ This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction wit
 
 - A single click on the button at `Input_I1` generates an event at `DigitalInput_CLK_I1.IND`.
 - A single click on the button at `Input_I2` generates an event at `DigitalInput_CLK_I2.IND`.
+
 1. **Counter Control**:
 
 - The event at `DigitalInput_CLK_I1.IND` is connected to the input at `E_CTU.CU` – increments the counter.
 - The event at `DigitalInput_CLK_I2.IND` is connected to the input at `E_CTU.R` – resets the counter.
+
 1. **Event Distribution and Merging**:
 
 - Outputs `E_CTU.CUO` and `E_CTU.RO` are connected to the common input `E_SPLIT_4.EI` (both events trigger the same split).
 - The four outputs `EO1`–`EO4` are connected to the four inputs `EI1`–`EI4` of `E_MERGE_4`. This ensures that each counter or reset event is passed through four times (redundantly here to serve all outputs).
 - The merge output `EO` combines these into a single event stream.
+
 1. **Event Brake (RT_E_REND)**:
 
 - The combined event is applied to the inputs `EI1` and `EI2` of all three `RT_E_REND` function blocks.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020b_AX`. Here, a power-on delay (TON) is not used as a ready-made block, but is built from discrete event and memory blocks
+
 ----
 
 ## Objective of the Exercise

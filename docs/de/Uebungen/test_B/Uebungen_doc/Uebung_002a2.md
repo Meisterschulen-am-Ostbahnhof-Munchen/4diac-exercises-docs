@@ -43,8 +43,6 @@ Der Aufbau in `Uebung_002a2.SUB` folgt dem bewährten Muster der Ereigniskette:
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 
 1.  Jede Änderung an den Tastern `I1` oder `I2` löst ein `IND`-Event aus.

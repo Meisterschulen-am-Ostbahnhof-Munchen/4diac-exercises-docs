@@ -40,8 +40,6 @@ Die Signalverteilung wird durch das Ziehen von jeweils zwei Verbindungen von der
 </DataConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Signalweg verläuft dabei in folgenden Schritten:
 
 1.  Der Baustein `DigitalInput_I1` detektiert eine Änderung am physischen Eingang.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the sub-application type `Uebung_006a3_sub`. It serves as an internal state machine for implementing an alternating direction change
+
 ----
 
 ## Overview

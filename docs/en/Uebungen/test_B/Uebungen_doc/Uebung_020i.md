@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020i`. This is a very practical exercise in which a time duration is learned not through numerical values, but through demonstration (teach-in)
+
 ----
 
 ## Objective of the Exercise

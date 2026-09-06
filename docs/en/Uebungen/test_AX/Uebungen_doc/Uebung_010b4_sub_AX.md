@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_010b4_sub_AX`, based on the provided XML data.
-
 # Exercise_010b4_sub_AX: IX to QX (generic)
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ The network within the sub-application is kept minimal and relies on abstraction
 
 - **u16ObjId (UINT)**: The ID of the softkey is passed here (initial value: `ID_NULL`). This variable is passed internally to `IXA.u16ObjId`.
 - **Output (logiBUS_DO_S)**: The target output is defined here (e.g., Output_Q1..Q8). This variable is passed internally to `QXA.Output`.
+
 1. **Internal Logic**:
 
 - The function block `IXA` initializes communication with the softkey under the specified ID.

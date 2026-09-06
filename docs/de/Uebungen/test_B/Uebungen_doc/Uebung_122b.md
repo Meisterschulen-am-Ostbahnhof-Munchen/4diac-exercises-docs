@@ -1,5 +1,3 @@
-Hier ist die Dokumentationsseite für die Übung **Uebung_122b** basierend auf den bereitgestellten XML-Daten.
-
 # Uebung_122b: Übung zu ISOBUS Name
 
 ![Uebung_122b_network](./Uebung_122b_network.svg)

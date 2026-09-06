@@ -49,10 +49,12 @@ This exercise demonstrates the calibration of an analog input signal using NVS (
 - `DigitalInput_I2_CO` → `CALIBRATE.CO` (Determine offset)
 
 - `DigitalInput_I3_CS` → `CALIBRATE.CS` (Determine scaling)
+
 1. **Split of the calibrated value**: The output `CALIBRATE.Y` is split via `AR_SPLIT_2` to two paths:
 
 - Path 1: Display → `Q_NumericValue_PHYSA.rPhys` (e.g., `InputNumber_PWM_DUTY_OUT`)
 - Path 2: Hysteresis → `Hysteresis_AR_AX.INPUT`
+
 1. **Hysteresis**: The sub-applications `THRESHOLD` and The threshold values are provided by `HYSTERESIS` (`THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` and `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`). The hysteresis block compares the input with these values and switches its output `OUTPUT`.
 2. **Digital Outputs**:
 

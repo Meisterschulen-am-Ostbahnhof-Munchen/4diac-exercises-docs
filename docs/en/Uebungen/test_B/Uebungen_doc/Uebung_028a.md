@@ -37,6 +37,7 @@ The flow is controlled by events:
 
 - **DigitalInput_I2** (button) sends a `IND` event to `EICO` from **CALIBRATE** → triggers offset calibration.
 - **DigitalInput_I3** (button) sends a `IND` event to `EICS` from **CALIBRATE** → triggers scaling calibration.
+
 1. **CALIBRATE** calculates the corrected value from the raw value and the current calibration parameters (offset and scaling). The new parameters are output at `OFFSET` and `SCALE`.
 2. These new parameters are written to the memory blocks **INI_OFFSET** and **INI_SCALE** via data connections (event `SET` is sent by **CALIBRATE** via `EOCO` and `EOCS`, respectively).
 3. After initialization (`INITO` → `GET`), the stored values are passed back to **CALIBRATE** via **SET_REAL_OFFSET** and **SET_REAL_SCALE**, thus ensuring the calibration is permanently maintained.

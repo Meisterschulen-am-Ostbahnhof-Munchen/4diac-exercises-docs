@@ -80,10 +80,12 @@ At startup, the event `Input_LD.INITO` is forwarded to `AI_INT_TO_I.REQ`. This t
 - `Input_CD.IN` → `AI_FB_CTUD.CD` (Count down on edge)
 - `Input_R.IN` → `AI_FB_CTUD.R` (Reset to 0)
 - `Input_LD.IN` → `AI_FB_CTUD.LD` (Load value from PV)
+
 1. **Counter Outputs**
 
 - `AI_FB_CTUD.QU` → `Output_QU.OUT` (Overflow)
 - `AI_FB_CTUD.QD` → `Output_QD.OUT` (underflow)
+
 1. **Counter Reading Output**
 
 The current counter value `CV` is converted via `AI_TO_AUDI` and sent to the output block `Q_NumericValue_AUDI.u32NewValue`. This displays the value on a configured terminal number (`u16ObjId = OutputNumber_N1`).

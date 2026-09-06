@@ -42,7 +42,7 @@ The following function blocks are used in the SubApp network:
 - **Parameters**: None
 - **Function**: Up counter with two event inputs: CU (Count Up) and R (Reset). The counter value is output as a Boolean value (when CV>0) via the adapter output `Q`, and the current counter value (data adapter) is output via `CV`.
 
-## `adapter::events::unidirectional::AUI_CTU` ##
+## `adapter::events::unidirectional::AUI_CTU`
 
 - **Parameters**: None
 - **Function**: Converts an AUI data adapter (here, the counter value CV) into an AUDI data adapter (u32), which can be processed by subsequent function blocks.
@@ -63,15 +63,18 @@ The following function blocks are used in the SubApp network:
 
 - When the button on `Input_I1` is pressed, `DigitalInput_CLK_I1` generates an event `IND`.
 - When the button on `Input_I2` is pressed, `DigitalInput_CLK_I2` generates an event `IND`.
+
 1. **Event Duplication**:
 
 - The `IND` event from I1 is routed to the `EI` input of `E_SPLIT`.
 - `E_SPLIT` outputs two identical events at its outputs `EO1` and `EO2`.
 - Both events are connected – via separate connections – to the CU input of `E_CTU`. **This means that each key press on I1 is counted as two counting pulses.**
+
 1. **Counter**:
 
 - Each CU event increments the internal counter of `E_CTU` by 1.
 - The `IND` event of I2 (reset button) is connected to the input `R` of `E_CTU` and resets the counter to 0.
+
 1. **Output**:
 
 - The counter output `Q` (adapter) is connected to the adapter input `OUT` of `DigitalOutput_Q1`. As long as the counter value is > 0, the digital output Q1 is active (TRUE).

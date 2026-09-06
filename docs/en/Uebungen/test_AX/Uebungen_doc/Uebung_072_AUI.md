@@ -91,6 +91,7 @@ Accordingly, `INITO` is connected to `IA_WBSD` and `INIT` to `Q_NumericValue_WBS
 - The converter `CONV_GBSD` converts the AUI interface into an AUDI interface and outputs it at its adapter output `AUDI_OUT`.
 - This output is connected to the data input `u32NewValue` of `Q_NumericValue_GBSD`.
 - The same applies to the wheel-based speed (`IA_WBSD` → `CONV_WBSD` → `Q_NumericValue_WBSD`).
+
 1. **Result**:
 
 Two numerical values appear on the UT: the vehicle-based speed (GBSD) and the wheel-based speed (WBSD). The values are provided via the configured object IDs in the TECU's variable pool.

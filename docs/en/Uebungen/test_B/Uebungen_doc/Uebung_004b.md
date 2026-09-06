@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004b`. It demonstrates how to manually construct the function of a toggle flip-flop from basic building blocks (switch and memory)
+
 ----
 
 ## Objective of the Exercise
@@ -39,8 +40,6 @@ The key lies in the feedback of the output state to the input of the switch:
 <Connection Source="E_SR.Q" Destination="DigitalOutput_Q1.OUT"/>
 <Connection Source="E_SR.Q" Destination="E_SWITCH.G"/>
 </DataConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence:
 

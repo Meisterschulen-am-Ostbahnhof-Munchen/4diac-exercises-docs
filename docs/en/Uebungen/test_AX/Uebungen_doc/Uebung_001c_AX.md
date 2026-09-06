@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_001c_AX`. It demonstrates how to query a digital input immediately after system startup (boot process) to transmit the initial state to a digital output
+
 ----
 
 ## Objective of the exercise
@@ -39,8 +40,6 @@ The special feature of this exercise lies in the event connection, which provide
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence is as follows:
 

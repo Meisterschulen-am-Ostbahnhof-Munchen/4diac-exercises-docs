@@ -65,8 +65,6 @@ Die Logik ist identisch zur parallelen Steuerung, jedoch ist die Ansicht hierarc
 </SubAppNetwork>
 ```
 
-[cite_start][cite: 1]
-
 Der funktionale Ablauf:
 Die Kapselung hat keinen Einfluss auf die Laufzeit-Ausführung. Die Bausteine verhalten sich exakt so, als wären sie alle auf der obersten Ebene platziert.
 

@@ -39,8 +39,6 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
 </EventConnections>
 ```
 
-[cite_start][cite: 1]
-
 1.  Um das Licht (`Q1`) umzuschalten, müssen beide Taster `I1` und `I2` betätigt worden sein. Das Rendezvous feuert dann den Takt (`CLK`) für das Flip-Flop.
 2.  Der Taster `I3` fungiert als **Alles-Aus-Taste**:
     -   Er setzt das Flip-Flop `E_T_FF_SR` sofort zurück (Ausgang wird `FALSE`).

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002b2`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR), using a `F_MOVE` block for explicit data forwarding
+
 -----
 
 ## Objective of the Exercise
@@ -46,8 +47,6 @@ The hierarchical structure of the logic is clearly illustrated by the event chai
 <Connection Source="DigitalInput_I3.IN" Destination="OR_2.IN2"/>
 <Connection Source="OR_2.OUT" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
-
-[cite_start][cite: 1]
 
 The functional sequence:
 

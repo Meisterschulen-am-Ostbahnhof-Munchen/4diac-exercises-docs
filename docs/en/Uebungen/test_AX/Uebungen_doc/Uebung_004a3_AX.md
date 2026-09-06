@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a3_AX`. This exercise demonstrates a simplification compared to `Uebung_004a2_AX`: In IEC 61499 (and specifically in 4diac), multiple event sources can often be directly connected to the same event input
+
 ----
 
 ## Purpose of the Exercise
@@ -32,8 +33,6 @@ The function block `E_MERGE` is intentionally omitted here.
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF.CLK"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_T_FF.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 The functionality is identical to the exercise with `E_MERGE`:
 

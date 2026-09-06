@@ -37,6 +37,4 @@ Die beiden Kanäle arbeiten nach dem gleichen Prinzip wie in Übung 004b: Der Au
 <Connection Source="E_SR_I1.Q" Destination="E_SWITCH_I1.G"/>
 ```
 
-[cite_start][cite: 1]
-
 Da keine Querverbindungen zwischen den Strängen existieren, beeinflusst die Bedienung von Taster 1 niemals den Zustand von Lampe 2 und umgekehrt.

@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_003b2_sub_AX`, based on the provided XML content.
-
 # Exercise_003b2_sub_AX: IX to QX (generic)
 
 ![Uebung_003b2_sub_AX_network](./Uebung_003b2_sub_AX_network.svg)
@@ -44,10 +42,12 @@ The flow within this module is purely signal-driven and serves for hardware abst
 
 - The input `Input` (type: `Funk_DI_S`) determines which wireless switch or button (e.g., DigitalInput_Key_01) is to be monitored.
 - This information is passed to the `IXA` module.
+
 1. **Signal Processing (Adapter)**:
 
 - No logical operation (such as AND/OR) takes place at the bit level in the visible network.
 - Instead, an adapter connection exists from `IXA.IN` to `QXA.OUT`. This indicates that the status object flow is routed directly from the input driver to the output driver.
+
 1. **Output Assignment**:
 
 - The node input (Node SA 224..239) is specified via the input `u8SAMember` (Type: `USINT`).

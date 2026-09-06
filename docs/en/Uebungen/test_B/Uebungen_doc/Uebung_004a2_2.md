@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_004a2_2`, based on the provided data.
-
 # Exercise_004a2_2: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 
 ![Uebung_004a2_2_network](./Uebung_004a2_2_network.svg)
@@ -60,10 +58,12 @@ The circuit flow is defined as follows:
 
 - The user presses either the button at input `Input_I1` or at input `Input_I2`.
 - The corresponding function blocks (`DigitalInput_CLK_I1` or `DigitalInput_CLK_I2`) detect the "single click" and send a `IND` event.
+
 1. **Merge**:
 
 - The event from `I1` (connected to `E_MERGE_2.EI1`) or the event from `I2` (connected to `E_MERGE_2.EI2`) reaches the merge block.
 - `E_MERGE_2` forwards the event to the flip-flop via `EO`.
+
 1. **Toggle**:
 
 - The event reaches the clock input `CLK` of `E_T_FF`.

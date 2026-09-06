@@ -44,8 +44,6 @@ Die Signalverteilung wird durch die zentrale Position des `AX_SPLIT`-Bausteins i
 </AdapterConnections>
 ```
 
-[cite_start][cite: 1]
-
 Der Signalweg verläuft dabei in folgenden Schritten:
 
 1.  Der Baustein `DigitalInput_I1` detektiert eine Änderung am physischen Eingang.

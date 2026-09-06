@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a2_AX`. Here, the impulse circuit is extended so that it can be operated by two different pushbuttons. This is achieved by merging the events from the two pushbuttons
+
 ----
 
 ## Objective of the Exercise
@@ -30,8 +31,6 @@ The objective is to learn how to combine asynchronous event streams. If two even
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_MERGE.EI2"/>
 <Connection Source="E_MERGE.EO" Destination="E_T_FF.CLK"/>
 </EventConnections>
-
-[cite_start][cite: 1]
 
 1. When button 1 is pressed, `I1` sends an event to `E_MERGE.EI1`. `E_MERGE` forwards it to `EO` -> `E_T_FF` switches the light on and off.
 2. When button 2 is pressed, `I2` sends an event to `E_MERGE.EI2`. `E_MERGE` forwards it to `EO` -> `E_T_FF` switches the light on and off.
