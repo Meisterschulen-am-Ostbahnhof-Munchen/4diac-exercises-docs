@@ -15,7 +15,7 @@ Introduction of the `E_T_FF_SR` module. This module combines the functions of a 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a.SUB` links three separate pushbuttons to a central memory element[cite: 1].
+The subapplication `Uebung_006a.SUB` links three separate pushbuttons to a central memory element.
 
 ### Function Blocks (FBs)
 

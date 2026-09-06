@@ -14,7 +14,7 @@ Unterschied zwischen SR (Set Priority) und RS (Reset Priority) verstehen.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006b_AX.SUB` nutzt einen `AX_RS` Baustein[cite: 1].
+Die Subapplikation `Uebung_006b_AX.SUB` nutzt einen `AX_RS` Baustein.
 
 ### Funktionsbausteine (FBs)
 

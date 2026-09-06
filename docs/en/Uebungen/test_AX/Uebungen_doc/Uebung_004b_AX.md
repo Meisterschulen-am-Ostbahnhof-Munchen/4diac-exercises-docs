@@ -15,7 +15,7 @@ Understanding the interaction between Boolean data and event flow control.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004b_AX.SUB` discretely builds a toggle mechanism[cite: 1].
+The subapplication `Uebung_004b_AX.SUB` discretely builds a toggle mechanism.
 
 ### Function Blocks (FBs)
 

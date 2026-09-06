@@ -14,7 +14,7 @@ Verwendung von `Aux_IE` (Event).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010b3_AX.SUB` toggelt ein Flip-Flop über AUX[cite: 1].
+Die Subapplikation `Uebung_010b3_AX.SUB` toggelt ein Flip-Flop über AUX.
 
 ### Funktionsbausteine (FBs)
 

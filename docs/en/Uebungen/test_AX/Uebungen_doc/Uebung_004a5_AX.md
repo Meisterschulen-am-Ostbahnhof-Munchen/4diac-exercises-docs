@@ -13,7 +13,7 @@ Demonstration of the "fan-out" capability of event connections in 4diac. A sourc
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a5_AX.SUB` removes the `E_SPLIT` block from the previous exercise and connects the button directly to both flip-flops[cite: 1].
+The subapplication `Uebung_004a5_AX.SUB` removes the `E_SPLIT` block from the previous exercise and connects the button directly to both flip-flops.
 
 ### Function Blocks (FBs)
 

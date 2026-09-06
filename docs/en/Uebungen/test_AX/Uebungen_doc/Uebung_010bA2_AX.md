@@ -13,7 +13,7 @@ Behavior of `AuxEnabled`.
 
 ## Description
 
-[cite_start]Uses `AuxFunction2_X1` with `AuxEnabled`[cite: 1].
+Uses `AuxFunction2_X1` with `AuxEnabled`.
 
 -----
 

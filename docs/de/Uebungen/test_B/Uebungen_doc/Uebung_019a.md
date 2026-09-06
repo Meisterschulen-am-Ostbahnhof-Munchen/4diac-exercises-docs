@@ -14,7 +14,7 @@ Erlernen des Umgangs mit Alarm-Masken. Im ISOBUS-Standard haben Alarme Vorrang v
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_019a.SUB` wird ein vierstufiger Selektor (`F_SEL_E_4`) zur Maskenwahl genutzt[cite: 1].
+In `Uebung_019a.SUB` wird ein vierstufiger Selektor (`F_SEL_E_4`) zur Maskenwahl genutzt.
 
 ### Funktionsbausteine (FBs)
 

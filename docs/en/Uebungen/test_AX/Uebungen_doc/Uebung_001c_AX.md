@@ -13,7 +13,7 @@ The main objective of this exercise is to understand the initialization process 
 
 ## Description and Components
 
-[cite_start]This exercise uses the subapplication `Uebung_001c_AX.SUB` to establish a connection between a digital input and an output, supplemented by self-triggering for system startup[cite: 1].
+This exercise uses the subapplication `Uebung_001c_AX.SUB` to establish a connection between a digital input and an output, supplemented by self-triggering for system startup.
 
 ### Function Blocks (FBs)
 
@@ -21,12 +21,12 @@ Two central function blocks are used in the subapplication:
 
 ![Uebung_001c_AX_network](./Uebung_001c_AX_network.svg)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]In addition to the standard function, the event output `INITO` (Initialization Output) is used here to trigger a one-time query at startup[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block receives the initially requested value via the adapter connection and sets the output `Output_Q1` accordingly[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. In addition to the standard function, the event output `INITO` (Initialization Output) is used here to trigger a one-time query at startup.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This function block receives the initially requested value via the adapter connection and sets the output `Output_Q1` accordingly.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]Communication between the function blocks takes place via the familiar adapter type `AX`, which transmits the event `E1` and the data value `D1`[cite: 2].
+Communication between the function blocks takes place via the familiar adapter type `AX`, which transmits the event `E1` and the data value `D1`.
 
 -----
 

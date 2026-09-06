@@ -14,7 +14,7 @@ Kapselung der ISOBUS-Kommunikation. Der Baustein verbirgt die Details des ISOBUS
 
 ## Beschreibung und Komponenten
 
-[cite_start]Der Typ `Uebung_003c_sub` enthält einen lokalen Eingangs-Baustein und einen ISOBUS-Ausgangs-Baustein[cite: 1].
+Der Typ `Uebung_003c_sub` enthält einen lokalen Eingangs-Baustein und einen ISOBUS-Ausgangs-Baustein.
 
 ### Interne Funktionsbausteine (FBs)
 
@@ -27,7 +27,7 @@ Kapselung der ISOBUS-Kommunikation. Der Baustein verbirgt die Details des ISOBUS
 
 ## Schnittstellen
 
-[cite_start]Der Baustein wird über zwei Parameter konfiguriert[cite: 1]:
+Der Baustein wird über zwei Parameter konfiguriert:
 
 -   **`Input`**: Der physische Taster an der Steuerung.
 -   **`iInpNr`**: Die fortlaufende Nummer (Index) im ISOBUS-Auxiliary-Pool.

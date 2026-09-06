@@ -13,7 +13,7 @@ Using the event `BUTTON_LONG_PRESS_HOLD`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c4_AX.SUB` is configured to `BUTTON_LONG_PRESS_HOLD`[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c4_AX.SUB` is configured to `BUTTON_LONG_PRESS_HOLD`.
 
 ![Uebung_004c4_AX_network](./Uebung_004c4_AX_network.svg)
 

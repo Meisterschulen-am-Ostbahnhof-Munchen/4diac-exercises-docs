@@ -11,7 +11,7 @@ The objective is to implement a teach-in procedure. Instead of hardcoding the ti
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020i_AX.SUB` uses a stopwatch to dynamically change the time setting for a pulse block[cite: 1].
+The subapplication `Uebung_020i_AX.SUB` uses a stopwatch to dynamically change the time setting for a pulse block.
 
 ### Function Blocks (FBs)
 
@@ -19,7 +19,7 @@ The objective is to implement a teach-in procedure. Instead of hardcoding the ti
 
 - **`DigitalInput_I2` (Teach Button)**: Type `logiBUS_IXA`. Measures how long the button is pressed.
 - **`AX_SWITCH`**: Converts the press/release of `I2` into start/stop signals for the stopwatch.
-- **`E_STOPWATCH`**: [cite_start]Measures the time between `START` and `STOP` and outputs the duration at output `TD`[cite: 1].
+- **`E_STOPWATCH`**: Measures the time between `START` and `STOP` and outputs the duration at output `TD`.
 - **`AX_PULSE`**: The pulse module. Its time parameter `PT` is linked to the measured value `TD` of the stopwatch.
 - **`DigitalInput_CLK_I1` (Start button)**: Type `logiBUS_IE`. Triggers the pulse.
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.

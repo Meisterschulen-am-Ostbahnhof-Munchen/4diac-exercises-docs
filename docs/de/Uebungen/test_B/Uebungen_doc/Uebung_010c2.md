@@ -8,4 +8,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010c2`.
 
 ## Übersicht
 
-[cite_start]Die komplette Feedback-Logik aus der vorherigen Übung wird in eine untypisierte Sub-Applikation `Uebung_10c2_sub` gekapselt[cite: 1]. Dies zeigt, wie man komplexe Interaktions-Logiken (Eingabe + Feedback + Hardware-Ausgabe) visuell gruppiert, um die Hauptansicht des Programms übersichtlich zu halten.
+Die komplette Feedback-Logik aus der vorherigen Übung wird in eine untypisierte Sub-Applikation `Uebung_10c2_sub` gekapselt. Dies zeigt, wie man komplexe Interaktions-Logiken (Eingabe + Feedback + Hardware-Ausgabe) visuell gruppiert, um die Hauptansicht des Programms übersichtlich zu halten.

@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist es, Möglichkeiten zur rein visuellen Strukturie
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003a0.SUB` enthält zwei eingebettete Sub-Applikationen (`SubApp` und `SubApp_1`), die jeweils einen eigenen Signalpfad beinhalten[cite: 1].
+Die Subapplikation `Uebung_003a0.SUB` enthält zwei eingebettete Sub-Applikationen (`SubApp` und `SubApp_1`), die jeweils einen eigenen Signalpfad beinhalten.
 
 ### Untypisierte Sub-Applikationen
 
@@ -22,11 +22,11 @@ Anders als bei typisierten SubApps, die auf einer externen Definition basieren, 
 
 1.  **Container `SubApp`**:
     -   Beinhaltet die Logik für Kanal 2.
-    -   Intern: [cite_start]`DigitalInput_I2` verbunden mit `DigitalOutput_Q2`[cite: 1].
+    -   Intern: `DigitalInput_I2` verbunden mit `DigitalOutput_Q2`.
 
 2.  **Container `SubApp_1`**:
     -   Beinhaltet die Logik für Kanal 1.
-    -   Intern: [cite_start]`DigitalInput_I1` verbunden mit `DigitalOutput_Q1`[cite: 1].
+    -   Intern: `DigitalInput_I1` verbunden mit `DigitalOutput_Q1`.
 
 ### Funktionsbausteine (FBs)
 

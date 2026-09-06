@@ -13,8 +13,7 @@ Variation of the mode selection.
 
 ## Description
 
-[cite_start]Another variation of the MUX/DEMUX exercise[cite: 1]. Here, the internal routing of the paths (e.g., `tastend2`) is slightly varied to test different combinations.
+Another variation of the MUX/DEMUX exercise. Here, the internal routing of the paths (e.g., `tastend2`) is slightly varied to test different combinations.
 
 ![Uebung_103c2_network](./Uebung_103c2_network.svg)
 
-[cite_start]

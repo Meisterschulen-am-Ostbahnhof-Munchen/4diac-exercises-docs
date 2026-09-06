@@ -18,7 +18,7 @@ This article describes the logiBUS® exercise `Uebung_086`.
 
 ## Overview
 
-[cite_start]Using the fundamental building block `E_SWITCH`[cite: 1].
+Using the fundamental building block `E_SWITCH`.
 
 This exercise demonstrates how an event stream (`EI`) is split into two different paths based on a logical state (`G`).
 

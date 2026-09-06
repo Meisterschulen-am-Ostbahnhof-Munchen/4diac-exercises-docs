@@ -19,7 +19,7 @@ Linking ISOBUS (UT) and hardware peripherals (DataPanel).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a4_AX.SUB` connects a softkey to an output of a DataPanel[cite: 1].
+The subapplication `Uebung_010a4_AX.SUB` connects a softkey to an output of a DataPanel.
 
 ### Function Blocks (FBs)
 

@@ -13,7 +13,7 @@ Implementation of a control system for left rotation, right rotation, and a summ
 
 ## Description and Components
 
-[cite_start]In `Uebung_160.SUB`, two pushbuttons are mapped to three outputs[cite: 1].
+In `Uebung_160.SUB`, two pushbuttons are mapped to three outputs.
 
 ### Function Blocks (FBs)
 

@@ -13,7 +13,7 @@ Demonstration of the interaction between event logic (`E_REND`) and state logic 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a7_AX.SUB` uses two pushbuttons for arming (rendezvous) and a third for explicit reset[cite: 1].
+The subapplication `Uebung_004a7_AX.SUB` uses two pushbuttons for arming (rendezvous) and a third for explicit reset.
 
 ### Function Blocks (FBs)
 

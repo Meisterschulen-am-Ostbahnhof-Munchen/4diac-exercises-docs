@@ -14,7 +14,7 @@ Untersuchung des Verhaltens.
 
 ## Beschreibung
 
-[cite_start]Strukturell sehr ähnlich zu `Uebung_007a1_AX`[cite: 1]. Auch hier besteht das Problem des undefinierten Endzustands der Lampe. Es dient vermutlich als Wiederholung oder Variation im Layout.
+Strukturell sehr ähnlich zu `Uebung_007a1_AX`. Auch hier besteht das Problem des undefinierten Endzustands der Lampe. Es dient vermutlich als Wiederholung oder Variation im Layout.
 
 -----
 

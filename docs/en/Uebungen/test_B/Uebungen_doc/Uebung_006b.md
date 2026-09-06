@@ -13,7 +13,7 @@ Understanding reset priority.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006b.SUB` uses a function block `E_RS`[cite: 1].
+The subapplication `Uebung_006b.SUB` uses a function block `E_RS`.
 
 ### Function Blocks (FBs)
 

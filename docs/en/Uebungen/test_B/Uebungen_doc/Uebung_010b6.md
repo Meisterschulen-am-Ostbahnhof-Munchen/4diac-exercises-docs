@@ -19,4 +19,4 @@ Reaction at the earliest possible point of interaction.
 
 ## Functionality
 
-[cite_start]Uses the event `SK_PRESSED`[cite: 1]. The flip-flop at the output toggles the moment the user touches the touchscreen. This minimizes perceived latency but prevents subsequent cancellation by removing the finger.
+Uses the event `SK_PRESSED`. The flip-flop at the output toggles the moment the user touches the touchscreen. This minimizes perceived latency but prevents subsequent cancellation by removing the finger.

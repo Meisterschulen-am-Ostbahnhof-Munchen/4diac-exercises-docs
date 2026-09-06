@@ -14,7 +14,7 @@ Implementierung einer exklusiven Auswahl-Logik. Das Einschalten eines Kanals mus
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004b3.SUB` basiert auf dem Aufbau von 004b2, führt jedoch zusätzliche Ereignisverbindungen zur Verriegelung ein[cite: 1].
+Die Subapplikation `Uebung_004b3.SUB` basiert auf dem Aufbau von 004b2, führt jedoch zusätzliche Ereignisverbindungen zur Verriegelung ein.
 
 ### Funktionsbausteine (FBs)
 

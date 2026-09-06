@@ -13,7 +13,7 @@ Extension of the multiplexer.
 
 ## Description
 
-[cite_start]Structurally identical to `Uebung_090a1_AX`, but with a `AX_MUX_3`[cite: 1].
+Structurally identical to `Uebung_090a1_AX`, but with a `AX_MUX_3`.
 
 -----
 

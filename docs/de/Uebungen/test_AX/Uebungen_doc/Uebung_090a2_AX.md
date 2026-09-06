@@ -14,7 +14,7 @@ Erweiterung des Multiplexers.
 
 ## Beschreibung
 
-[cite_start]Strukturell identisch zu `Uebung_090a1_AX`, jedoch mit einem `AX_MUX_3`[cite: 1].
+Strukturell identisch zu `Uebung_090a1_AX`, jedoch mit einem `AX_MUX_3`.
 
 -----
 

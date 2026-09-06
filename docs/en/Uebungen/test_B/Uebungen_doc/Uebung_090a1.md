@@ -13,7 +13,7 @@ Using the function block `F_MUX_2` (multiplexer). It shows how to switch between
 
 ## Description and Components
 
-[cite_start]In `Uebung_090a1.SUB`, a binary selector switch is used to switch between two inputs[cite: 1].
+In `Uebung_090a1.SUB`, a binary selector switch is used to switch between two inputs.
 
 ### Function Blocks (FBs)
 

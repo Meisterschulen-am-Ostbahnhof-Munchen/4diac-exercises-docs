@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist es, die Wandlung zwischen Adapter-Schnittstellen
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Übung basiert auf der Subapplikation `Uebung_001_AX_b.SUB`, die den Signalfluss von einem digitalen Eingang zu einem digitalen Ausgang über zwei zwischengeschaltete Wandler-Bausteine realisiert[cite: 1].
+Die Übung basiert auf der Subapplikation `Uebung_001_AX_b.SUB`, die den Signalfluss von einem digitalen Eingang zu einem digitalen Ausgang über zwei zwischengeschaltete Wandler-Bausteine realisiert.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,14 +22,14 @@ In der Subapplikation werden vier Funktionsbausteine instanziiert:
 
 ![Uebung_001_AX_b_network](./Uebung_001_AX_b_network.svg)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Zustand des physischen Eingangs `Input_I1` und stellt ihn über seinen Adapter-Anschluss `IN` bereit[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt Signale an seinem Adapter-Anschluss `OUT` und setzt entsprechend den physischen Ausgang `Output_Q1`[cite: 1].
-  - **`AX_X_TO_BOOL`**: [cite_start]Ein Wandler-Baustein, der ein am Adapter-Eingang `AX_IN` (Socket) empfangenes Signal in ein Ereignis `CNF` und einen booleschen Datenwert `IN` zerlegt[cite: 1].
-  - **`AX_BOOL_TO_X`**: [cite_start]Ein Wandler-Baustein, der aus einem Ereignis `REQ` und einem booleschen Datenwert `OUT` wieder ein Adapter-Signal am Ausgang `AX_OUT` (Plug) zusammensetzt[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. Dieser Baustein liest den Zustand des physischen Eingangs `Input_I1` und stellt ihn über seinen Adapter-Anschluss `IN` bereit.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein empfängt Signale an seinem Adapter-Anschluss `OUT` und setzt entsprechend den physischen Ausgang `Output_Q1`.
+  - **`AX_X_TO_BOOL`**: Ein Wandler-Baustein, der ein am Adapter-Eingang `AX_IN` (Socket) empfangenes Signal in ein Ereignis `CNF` und einen booleschen Datenwert `IN` zerlegt.
+  - **`AX_BOOL_TO_X`**: Ein Wandler-Baustein, der aus einem Ereignis `REQ` und einem booleschen Datenwert `OUT` wieder ein Adapter-Signal am Ausgang `AX_OUT` (Plug) zusammensetzt.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Wie in der Basisübung dient auch hier der Adapter-Typ `AX` als Schnittstelle, der das Ereignis `E1` und den booleschen Wert `D1` überträgt[cite: 2].
+Wie in der Basisübung dient auch hier der Adapter-Typ `AX` als Schnittstelle, der das Ereignis `E1` und den booleschen Wert `D1` überträgt.
 
 -----
 

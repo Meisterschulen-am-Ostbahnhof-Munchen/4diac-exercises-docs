@@ -14,7 +14,7 @@ Nutzung des `QI` (Qualifier Input) Parameters zur Laufzeit-Steuerung von Funktio
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_094a_AX.SUB` schaltet einen Eingangspfad aktiv oder inaktiv[cite: 1].
+Die Subapplikation `Uebung_094a_AX.SUB` schaltet einen Eingangspfad aktiv oder inaktiv.
 
 ### Funktionsbausteine (FBs)
 

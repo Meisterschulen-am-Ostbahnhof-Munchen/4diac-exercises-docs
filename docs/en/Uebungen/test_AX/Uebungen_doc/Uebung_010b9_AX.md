@@ -13,7 +13,7 @@ Repeating events.
 
 ## Description
 
-[cite_start]Utilizes `Button_A1` with `BT_STILL_HELD`[cite: 1].
+Utilizes `Button_A1` with `BT_STILL_HELD`.
 
 -----
 

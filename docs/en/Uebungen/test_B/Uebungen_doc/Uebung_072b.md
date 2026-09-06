@@ -13,7 +13,7 @@ Generation of time-delayed pulses based on the GBSD distance value.
 
 ## Description and Components
 
-[cite_start]In `Uebung_072b.SUB`, four `RangeBasedPulse` function blocks control four outputs (`Q1` to `Q4`)[cite: 1].
+In `Uebung_072b.SUB`, four `RangeBasedPulse` function blocks control four outputs (`Q1` to `Q4`).
 
 ### Functionality
 

@@ -15,7 +15,7 @@ The main objective of this exercise is to demonstrate the basic principle of dir
 
 ## Description and Components
 
-[cite\_start]The exercise consists of a sub-application (`Uebung_001_AX.SUB`) that links two function blocks via an adapter connection[cite: 1]. [cite\_start]The adapter type `AX.adp`[cite: 2] serves as the interface for this connection.
+[cite\_start]The exercise consists of a sub-application (`Uebung_001_AX.SUB`) that links two function blocks via an adapter connection. [cite\_start]The adapter type `AX.adp` serves as the interface for this connection.
 
 ### Function Blocks (FBs)
 
@@ -23,16 +23,16 @@ Two central function blocks are instantiated in the sub-application:
 
 ![Uebung_001_AX_network](./Uebung_001_AX_network.svg)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This block represents a physical digital input. [cite\_start]It is hardwired to the hardware input `logiBUS_DI::Input_I1` via the parameter `Input`[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This block represents a physical digital input. [cite\_start]It is hardwired to the hardware input `logiBUS_DI::Input_I1` via the parameter `Input`.
 - **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This block represents a physical digital output. Its parameter `Output` references the hardware output `logiBUS_DO::Output_Q1`.
 
 ### Adapter Interface: `AX.adp`
 
 The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value.
 
-The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value. * [cite\_start]**Event `E1`**: An event that signals a change of state[cite: 2].
+The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value. * [cite\_start]**Event `E1`**: An event that signals a change of state.
 
-- [cite\_start]**Variable `D1` (BOOL)**: The Boolean value (true/false) sent with the event `E1`[cite: 2].
+- [cite\_start]**Variable `D1` (BOOL)**: The Boolean value (true/false) sent with the event `E1`.
 
 -----
 

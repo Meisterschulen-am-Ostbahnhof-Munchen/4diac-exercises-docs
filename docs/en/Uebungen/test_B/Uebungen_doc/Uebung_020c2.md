@@ -13,7 +13,7 @@ Dynamic adjustment of timer times at runtime.
 
 ## Description and components
 
-[cite_start]In `Uebung_020c2.SUB`, the delay time (`PT`) is not hardcoded in the program, but is read from the ISOBUS terminal[cite: 1].
+In `Uebung_020c2.SUB`, the delay time (`PT`) is not hardcoded in the program, but is read from the ISOBUS terminal.
 
 ### Function Blocks (FBs)
 

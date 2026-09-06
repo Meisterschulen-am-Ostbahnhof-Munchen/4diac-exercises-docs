@@ -13,7 +13,7 @@ Difference to `STILL_HELD`.
 
 ## Description
 
-[cite_start]Uses `Button_A1` with `BT_STILL_HELD_START`[cite: 1].
+Uses `Button_A1` with `BT_STILL_HELD_START`.
 
 -----
 

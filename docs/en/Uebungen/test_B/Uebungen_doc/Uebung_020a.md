@@ -13,7 +13,7 @@ Understanding edge detection. It shows how to implement behavior using an event 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020a.SUB` uses a `logiBUS_IX` input to control a `E_RS` memory [cite: 1].
+The subapplication `Uebung_020a.SUB` uses a `logiBUS_IX` input to control a `E_RS` memory .
 
 ### Function Blocks (FBs)
 

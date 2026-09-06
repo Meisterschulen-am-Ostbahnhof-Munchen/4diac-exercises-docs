@@ -20,7 +20,7 @@ Verwendung des Bausteins `I_RPTO` (Rear PTO). Es wird gezeigt, wie man mit einer
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_074.SUB` wird ein Sicherheits-Selektor verwendet, um eine saubere Null-Anzeige zu garantieren[cite: 1].
+In `Uebung_074.SUB` wird ein Sicherheits-Selektor verwendet, um eine saubere Null-Anzeige zu garantieren.
 
 ### Funktionsbausteine (FBs)
 

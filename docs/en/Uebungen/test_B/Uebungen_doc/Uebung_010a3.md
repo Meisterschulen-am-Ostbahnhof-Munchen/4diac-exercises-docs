@@ -13,7 +13,7 @@ Working with stateful control elements of the Universal Terminal.
 
 ## Description and Components
 
-[cite_start]In `Uebung_010a3.SUB`, a `Button_L1` (Latching) is used[cite: 1].
+In `Uebung_010a3.SUB`, a `Button_L1` (Latching) is used.
 
 -----
 

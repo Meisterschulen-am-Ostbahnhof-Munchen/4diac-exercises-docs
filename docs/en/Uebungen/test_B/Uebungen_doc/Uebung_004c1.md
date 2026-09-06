@@ -13,7 +13,7 @@ Using the `BUTTON_DOUBLE_CLICK` event to control a memory function.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c1.SUB` toggles a lamp only on a double-click[cite: 1].
+The subapplication `Uebung_004c1.SUB` toggles a lamp only on a double-click.
 
 ### Function Blocks (FBs)
 

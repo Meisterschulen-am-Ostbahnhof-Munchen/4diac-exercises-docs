@@ -13,7 +13,7 @@ Manipulation of event streams using `E_T_FF` and `E_PERMIT`.
 
 ## Functionality
 
-[cite_start]In `Uebung_080c.SUB`, a toggle flip-flop is used as a gate monitor[cite: 1].
+In `Uebung_080c.SUB`, a toggle flip-flop is used as a gate monitor.
 
 ![Uebung_080c_network](./Uebung_080c_network.svg)
 

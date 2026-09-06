@@ -23,7 +23,7 @@ Verwendung des Bausteins `sequence_ET_04`. Es wird gezeigt, wie ein Prozess in v
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_035.SUB` steuert 4 Ausgänge in einer festen Reihenfolge[cite: 1].
+Die Subapplikation `Uebung_035.SUB` steuert 4 Ausgänge in einer festen Reihenfolge.
 
 ### Funktionsbausteine (FBs)
 

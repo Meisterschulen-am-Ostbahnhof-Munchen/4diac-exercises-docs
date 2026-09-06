@@ -13,7 +13,7 @@ Implementation of an automatic sequence of 8 steps.
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_038_AX.SUB` uses a sequencer module to switch 8 outputs sequentially.[cite: 1]
+The sub-application `Uebung_038_AX.SUB` uses a sequencer module to switch 8 outputs sequentially.
 
 ### Function Blocks (FBs)
 

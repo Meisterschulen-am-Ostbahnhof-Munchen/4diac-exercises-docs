@@ -21,7 +21,7 @@ Integration of time elements (`E_DELAY`) into an event chain.
 
 ## Functionality
 
-[cite_start]Compared to Exercise 023, a delay block is inserted between two steps[cite: 1].
+Compared to Exercise 023, a delay block is inserted between two steps.
 
 When cylinder 2 reaches its end position (`F3`), the next step is not triggered immediately. Instead, the input `E_DELAY.START` is triggered. Only after the time `DT` (here 2 seconds) has elapsed does the `EO` event fire and continue the sequence (e.g., starting the retraction).
 

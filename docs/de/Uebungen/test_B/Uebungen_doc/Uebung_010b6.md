@@ -20,4 +20,4 @@ Reaktion zum frühestmöglichen Zeitpunkt der Interaktion.
 
 ## Funktionsweise
 
-[cite_start]Verwendet das Event `SK_PRESSED`[cite: 1]. Das Flip-Flop am Ausgang toggelt bereits in dem Moment, in dem der Nutzer den Touchscreen berührt. Dies minimiert die gefühlte Latenz, verhindert aber ein nachträgliches Abbrechen durch Wegziehen des Fingers.
+Verwendet das Event `SK_PRESSED`. Das Flip-Flop am Ausgang toggelt bereits in dem Moment, in dem der Nutzer den Touchscreen berührt. Dies minimiert die gefühlte Latenz, verhindert aber ein nachträgliches Abbrechen durch Wegziehen des Fingers.

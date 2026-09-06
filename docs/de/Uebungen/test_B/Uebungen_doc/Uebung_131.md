@@ -18,5 +18,5 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_131`. Hier wird der Empfa
 
 ## Übersicht
 
-[cite_start]Verwendung des Bausteins `AlPgnRxNew8Bcylc`[cite: 1].
+Verwendung des Bausteins `AlPgnRxNew8Bcylc`.
 Dieser Baustein ist speziell für Nachrichten gedacht, die regelmäßig (zyklisch) erwartet werden. Über den Parameter `u16CtrlTime = 1500`ms wird eine Kontrollzeit definiert. Sollte der Partner für länger als 1,5 Sekunden keine Nachricht mehr senden, wird dies als Kommunikationsabbruch gewertet. Die Applikation kann auf diesen Fehlerfall reagieren, um die Maschine in einen sicheren Zustand zu bringen.

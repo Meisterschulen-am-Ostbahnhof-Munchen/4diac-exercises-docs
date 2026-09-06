@@ -23,7 +23,7 @@ Using the function block `Q_CtrlAudioSignal`. This demonstrates how an event (he
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_017.SUB` triggers an audio signal when a softkey is pressed[cite: 1].
+The subapplication `Uebung_017.SUB` triggers an audio signal when a softkey is pressed.
 
 ### Function Blocks (FBs)
 

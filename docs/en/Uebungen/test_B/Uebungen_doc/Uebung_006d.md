@@ -13,7 +13,7 @@ Combining complex input events (double-click) with memory blocks.
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006d.SUB` implements an on/off logic with different hurdles[cite: 1].
+The sub-application `Uebung_006d.SUB` implements an on/off logic with different hurdles.
 
 ### Function Blocks (FBs)
 

@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist es, die parallele Verarbeitung von Signalen in d
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003_AX.SUB` definiert zwei separate "Stränge" der Signalverarbeitung, die parallel existieren[cite: 1].
+Die Subapplikation `Uebung_003_AX.SUB` definiert zwei separate "Stränge" der Signalverarbeitung, die parallel existieren.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,12 +22,12 @@ Es werden zwei Paare von Ein- und Ausgangsbausteinen verwendet:
 
 ![Uebung_003_AX_network](./Uebung_003_AX_network.svg)
 
-  - **`DigitalInput_I1` & `DigitalOutput_Q1`**: Das erste Paar (Kanal 1). [cite_start]Verbindet Hardware-Eingang `I1` mit Hardware-Ausgang `Q1`[cite: 1].
-  - **`DigitalInput_I2` & `DigitalOutput_Q2`**: Das zweite Paar (Kanal 2). [cite_start]Verbindet Hardware-Eingang `I2` mit Hardware-Ausgang `Q2`[cite: 1].
+  - **`DigitalInput_I1` & `DigitalOutput_Q1`**: Das erste Paar (Kanal 1). Verbindet Hardware-Eingang `I1` mit Hardware-Ausgang `Q1`.
+  - **`DigitalInput_I2` & `DigitalOutput_Q2`**: Das zweite Paar (Kanal 2). Verbindet Hardware-Eingang `I2` mit Hardware-Ausgang `Q2`.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Beide Verbindungen nutzen die standardisierte Adapter-Schnittstelle `AX` für die Kommunikation[cite: 1].
+Beide Verbindungen nutzen die standardisierte Adapter-Schnittstelle `AX` für die Kommunikation.
 
 -----
 

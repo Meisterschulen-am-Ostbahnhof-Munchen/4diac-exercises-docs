@@ -14,7 +14,7 @@ Verstehen der Zeitsteuerung durch Ereignisverzögerung (`E_DELAY`). Es wird geze
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_020b.SUB` wird ein Verzögerungs-Baustein zwischen die Eingangs-Weiche und den Speicher geschaltet[cite: 1].
+In `Uebung_020b.SUB` wird ein Verzögerungs-Baustein zwischen die Eingangs-Weiche und den Speicher geschaltet.
 
 ### Funktionsbausteine (FBs)
 

@@ -8,4 +8,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010c3`.
 
 ## Übersicht
 
-[cite_start]Hier wird die Kapselung konsequent zu Ende geführt: Aus der Sub-Applikation wird ein echter Typ `Uebung_010c3_sub` erstellt[cite: 1]. Dieser Baustein kann nun wie ein Standard-Baustein aus der Bibliothek verwendet werden. Er verlangt lediglich die Angabe der Softkey-ID und des Hardware-Ausgangs als Parameter und erledigt die gesamte interne Verschaltung von Logik und Feedback automatisch.
+Hier wird die Kapselung konsequent zu Ende geführt: Aus der Sub-Applikation wird ein echter Typ `Uebung_010c3_sub` erstellt. Dieser Baustein kann nun wie ein Standard-Baustein aus der Bibliothek verwendet werden. Er verlangt lediglich die Angabe der Softkey-ID und des Hardware-Ausgangs als Parameter und erledigt die gesamte interne Verschaltung von Logik und Feedback automatisch.

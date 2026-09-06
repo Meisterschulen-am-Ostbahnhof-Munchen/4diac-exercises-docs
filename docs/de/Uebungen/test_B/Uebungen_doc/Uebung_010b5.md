@@ -12,4 +12,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b5`.
 
 ## Übersicht
 
-[cite_start]Erweiterung der vorherigen Übung auf insgesamt 10 parallele Softkey-Kanäle[cite: 1]. Jede Sub-Applikation kapselt die Logik für genau einen Softkey (F1 bis F10).
+Erweiterung der vorherigen Übung auf insgesamt 10 parallele Softkey-Kanäle. Jede Sub-Applikation kapselt die Logik für genau einen Softkey (F1 bis F10).

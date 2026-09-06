@@ -13,7 +13,7 @@ The main objective of this exercise is to implement a basic logical decision str
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002a_AX.SUB` links two digital inputs to a digital output via a logic block[cite: 1].
+The subapplication `Uebung_002a_AX.SUB` links two digital inputs to a digital output via a logic block.
 
 ### Function Blocks (FBs)
 
@@ -21,13 +21,13 @@ The following blocks are used:
 
 ![Uebung_002a_AX_network](./Uebung_002a_AX_network.svg)
 
-- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These represent the two hardware inputs that are monitored[cite: 1].
-- **`AX_AND_2`**: An instance of type `AX_AND_2`. [cite_start]This block performs the logical AND operation directly on the adapter interfaces. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component controls the hardware output `Output_Q1` based on the result of the logic[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. These represent the two hardware inputs that are monitored.
+- **`AX_AND_2`**: An instance of type `AX_AND_2`. This block performs the logical AND operation directly on the adapter interfaces. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`).
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This component controls the hardware output `Output_Q1` based on the result of the logic.
 
 ### Adapter interface: `AX.adp`
 
-[cite_start]All signal processing is handled by the adapter type `AX`, which efficiently routes events and data values through the network[cite: 2].
+All signal processing is handled by the adapter type `AX`, which efficiently routes events and data values through the network.
 
 -----
 

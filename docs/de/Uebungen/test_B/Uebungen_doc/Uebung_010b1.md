@@ -14,7 +14,7 @@ Anbindung von AUX-Eingabegeräten (z.B. ISOBUS-Joystick).
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_010b1.SUB` wird eine Auxiliary Function genutzt, um einen Ausgang zu schalten[cite: 1].
+In `Uebung_010b1.SUB` wird eine Auxiliary Function genutzt, um einen Ausgang zu schalten.
 
 ### Funktionsbausteine (FBs)
 

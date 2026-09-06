@@ -14,7 +14,7 @@ Demonstration einer Zentral-Aus-Funktion.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a2_AX.SUB` steuert zwei unabhängige Lampen, die gemeinsam gelöscht werden können[cite: 1].
+Die Subapplikation `Uebung_006a2_AX.SUB` steuert zwei unabhängige Lampen, die gemeinsam gelöscht werden können.
 
 ### Funktionsbausteine (FBs)
 

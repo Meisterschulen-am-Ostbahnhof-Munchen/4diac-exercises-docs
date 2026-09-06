@@ -13,7 +13,7 @@ The objective is to review direct I/O linking using event and data connections. 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003d.SUB` connects two input blocks directly to two output blocks[cite: 1].
+The subapplication `Uebung_003d.SUB` connects two input blocks directly to two output blocks.
 
 ### Function Blocks (FBs)
 

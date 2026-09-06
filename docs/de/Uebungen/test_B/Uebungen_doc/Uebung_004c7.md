@@ -14,7 +14,7 @@ Festlegung einer spezifischen Zeitdauer für einen langen Tastendruck.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004c7.SUB` nutzt `logiBUS_IE2` mit `BUTTON_LONG_PRESS_START` und dem Argument `arg = 3000`[cite: 1].
+Die Subapplikation `Uebung_004c7.SUB` nutzt `logiBUS_IE2` mit `BUTTON_LONG_PRESS_START` und dem Argument `arg = 3000`.
 
 -----
 

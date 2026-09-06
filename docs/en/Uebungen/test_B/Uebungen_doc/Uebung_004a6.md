@@ -15,7 +15,7 @@ Learning how to use the `E_REND` function block. This functions like a "memory A
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a6.SUB` uses `E_REND` to ensure that two buttons have been pressed before the output switches.[cite: 1]
+The subapplication `Uebung_004a6.SUB` uses `E_REND` to ensure that two buttons have been pressed before the output switches.
 
 ### Function Blocks (FBs)
 

@@ -13,7 +13,7 @@ Manipulation of event streams using `E_SPLIT`.
 
 ## Functionality
 
-[cite_start]In `Uebung_080b.SUB`, an event splitter is placed before the counter[cite: 1].
+In `Uebung_080b.SUB`, an event splitter is placed before the counter.
 
 ![Uebung_080b_network](./Uebung_080b_network.svg)
 

@@ -13,9 +13,9 @@ Using the pulse-shaping timer `E_TP` (Timer Pulse).
 
 ## Functionality
 
-[cite_start]As soon as the input `IN` switches to `TRUE`, the output `Q` switches on for exactly the time `PT` [here 5 seconds](cite: 1).
+As soon as the input `IN` switches to `TRUE`, the output `Q` switches on for exactly the time `PT` [here 5 seconds](cite: 1).
 
-[cite: 1] The special feature: The output remains active for the entire duration, even if the input `IN` drops out in the meantime or is pressed multiple times (not re-triggerable).
+ The special feature: The output remains active for the entire duration, even if the input `IN` drops out in the meantime or is pressed multiple times (not re-triggerable).
 
 -----
 

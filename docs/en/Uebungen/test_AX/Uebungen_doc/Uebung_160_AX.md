@@ -13,7 +13,7 @@ Combination of individual outputs and a collective message.
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_160_AX.SUB` controls two directions of rotation and a common status output[cite: 1].
+The sub-application `Uebung_160_AX.SUB` controls two directions of rotation and a common status output.
 
 ### Function Blocks (FBs)
 

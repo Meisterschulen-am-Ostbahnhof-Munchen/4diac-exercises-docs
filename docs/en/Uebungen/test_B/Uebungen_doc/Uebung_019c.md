@@ -13,7 +13,7 @@ Implementation of conditional navigation control. Switching between screen pages
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_019c.SUB` uses several `E_SWITCH` blocks as "gatekeepers" for the events[cite: 1].
+The subapplication `Uebung_019c.SUB` uses several `E_SWITCH` blocks as "gatekeepers" for the events.
 
 ### Function Blocks (FBs)
 

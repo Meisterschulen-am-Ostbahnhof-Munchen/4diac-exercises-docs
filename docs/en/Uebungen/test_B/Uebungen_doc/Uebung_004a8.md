@@ -13,7 +13,7 @@ To become familiar with type-specific splitter function blocks. While `E_SPLIT` 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a8.SUB` uses a `E_SPLIT_2` function block for event distribution[cite: 1].
+The subapplication `Uebung_004a8.SUB` uses a `E_SPLIT_2` function block for event distribution.
 
 ### Function Blocks (FBs)
 

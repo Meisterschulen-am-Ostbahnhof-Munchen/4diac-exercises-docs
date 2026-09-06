@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_START`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c2_AX.SUB` ist auf `BUTTON_LONG_PRESS_START` konfiguriert[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c2_AX.SUB` ist auf `BUTTON_LONG_PRESS_START` konfiguriert.
 
 ![Uebung_004c2_AX_network](./Uebung_004c2_AX_network.svg)
 

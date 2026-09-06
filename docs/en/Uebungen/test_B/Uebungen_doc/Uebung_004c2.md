@@ -13,7 +13,7 @@ Using the event `BUTTON_LONG_PRESS_START`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c2.SUB` responds to a long press[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c2.SUB` responds to a long press.
 
 The event `IND` is fired precisely when the predefined time for a "long press" (e.g., 1 second) has elapsed – even if the button remains pressed afterward. A short press does not trigger this event.
 

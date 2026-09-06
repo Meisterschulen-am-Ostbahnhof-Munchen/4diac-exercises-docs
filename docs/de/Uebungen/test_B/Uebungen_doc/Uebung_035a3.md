@@ -4,6 +4,6 @@
 
 ## Übersicht
 
-[cite_start]Strukturelle Variante der Übung 035a2[cite: 1]. Anstelle des `E_TRAIN` Bausteins wird hier der spezialisierte `E_BLINK_TRAIN` genutzt, um die Grün-Blinkphase noch präziser zu steuern. Die Logik der Zustandsüberlappung (Rot-Gelb) wird weiterhin über Sub-Applikations-ODER-Gatter realisiert.
+Strukturelle Variante der Übung 035a2. Anstelle des `E_TRAIN` Bausteins wird hier der spezialisierte `E_BLINK_TRAIN` genutzt, um die Grün-Blinkphase noch präziser zu steuern. Die Logik der Zustandsüberlappung (Rot-Gelb) wird weiterhin über Sub-Applikations-ODER-Gatter realisiert.
 
 ![Uebung_035a3_network](./Uebung_035a3_network.svg)

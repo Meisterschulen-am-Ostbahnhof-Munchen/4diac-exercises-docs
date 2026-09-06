@@ -14,7 +14,7 @@ Realisierung eines Blinkers mit definiertem Stopp-Verhalten. Es wird demonstrier
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_007a3.SUB` wird die Blinklogik manuell aus Weiche und Speicher aufgebaut, um die volle Kontrolle über den Reset-Vorgang zu haben[cite: 1].
+In `Uebung_007a3.SUB` wird die Blinklogik manuell aus Weiche und Speicher aufgebaut, um die volle Kontrolle über den Reset-Vorgang zu haben.
 
 ### Funktionsbausteine (FBs)
 

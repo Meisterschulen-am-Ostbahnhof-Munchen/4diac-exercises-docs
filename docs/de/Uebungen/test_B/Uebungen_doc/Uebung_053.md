@@ -14,7 +14,7 @@ Kombination von Bits zu einem Byte. Dies ist eine hardwarenahe Form der Bündelu
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_053.SUB` nutzt Konvertierungs-Bausteine für den Datentyp `BYTE`[cite: 1].
+Die Subapplikation `Uebung_053.SUB` nutzt Konvertierungs-Bausteine für den Datentyp `BYTE`.
 
 ### Funktionsbausteine (FBs)
 

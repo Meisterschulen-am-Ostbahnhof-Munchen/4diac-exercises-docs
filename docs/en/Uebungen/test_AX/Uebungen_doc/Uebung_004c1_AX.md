@@ -13,7 +13,7 @@ Using the event `BUTTON_DOUBLE_CLICK`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c1_AX.SUB` toggles a lamp only on a double-click[cite: 1].
+The subapplication `Uebung_004c1_AX.SUB` toggles a lamp only on a double-click.
 
 ### Function Blocks (FBs)
 

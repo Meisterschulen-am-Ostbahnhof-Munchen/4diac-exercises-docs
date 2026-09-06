@@ -14,7 +14,7 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a7.SUB` nutzt drei Taster zur Steuerung eines Lampenzustands[cite: 1].
+Die Subapplikation `Uebung_004a7.SUB` nutzt drei Taster zur Steuerung eines Lampenzustands.
 
 ### Funktionsbausteine (FBs)
 

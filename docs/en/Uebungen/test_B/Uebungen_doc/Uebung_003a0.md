@@ -13,19 +13,19 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003a0.SUB` contains two embedded subapplications (`SubApp` and `SubApp_1`), each with its own signal path[cite: 1].
+The subapplication `Uebung_003a0.SUB` contains two embedded subapplications (`SubApp` and `SubApp_1`), each with its own signal path.
 
 ### Untyped Subapplications
 
 Unlike typed subapplications, which are based on an external definition, the logic of these containers exists only within this specific instance. They have no external inputs or outputs in the interface (in this example) but access the hardware directly.
 
 - Contains the logic for channel 2.
-- Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
+- Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`.
 
 1. **Container `SubApp_1`**:
 
 - Contains the logic for channel 1.
-- Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
+- Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`.
 
 ### Function Blocks (FBs)
 

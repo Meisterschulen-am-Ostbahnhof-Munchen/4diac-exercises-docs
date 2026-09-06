@@ -20,7 +20,7 @@ Gleichzeitige Verarbeitung von radbasierter (WBSD) und grundbasierter (GBSD) Ges
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_072.SUB` werden zwei verschiedene TECU-Eingangsbausteine genutzt und deren Werte auf dem Terminal angezeigt[cite: 1].
+In `Uebung_072.SUB` werden zwei verschiedene TECU-Eingangsbausteine genutzt und deren Werte auf dem Terminal angezeigt.
 
 ### Funktionsbausteine (FBs)
 

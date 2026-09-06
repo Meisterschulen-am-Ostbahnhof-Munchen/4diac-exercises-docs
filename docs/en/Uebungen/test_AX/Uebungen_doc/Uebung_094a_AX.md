@@ -13,7 +13,7 @@ Using the `QI` (Qualifier Input) parameter for runtime control of function block
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_094a_AX.SUB` activates or deactivates an input path[cite: 1].
+The subapplication `Uebung_094a_AX.SUB` activates or deactivates an input path.
 
 ### Function Blocks (FBs)
 

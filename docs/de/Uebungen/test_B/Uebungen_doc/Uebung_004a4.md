@@ -14,7 +14,7 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a4.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops gleichzeitig zu schalten[cite: 1].
+Die Subapplikation `Uebung_004a4.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops gleichzeitig zu schalten.
 
 ### Funktionsbausteine (FBs)
 

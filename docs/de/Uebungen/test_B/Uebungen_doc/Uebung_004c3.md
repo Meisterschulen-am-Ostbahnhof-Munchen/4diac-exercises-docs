@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_UP`.
 
 ## Funktionsweise
 
-[cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c3.SUB` erkennt das Ende eines langen Drucks[cite: 1].
+Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c3.SUB` erkennt das Ende eines langen Drucks.
 
 ![Uebung_004c3_network](./Uebung_004c3_network.svg)
 

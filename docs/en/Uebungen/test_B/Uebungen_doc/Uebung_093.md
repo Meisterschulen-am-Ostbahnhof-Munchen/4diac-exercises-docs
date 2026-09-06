@@ -20,7 +20,7 @@ Using the function block `E_TABLE`. Unlike the constant timing of `E_TRAIN`, thi
 
 ## Description and Components
 
-[cite_start]A time array is stored in `Uebung_093.SUB`: `[T#0s, T#2s, T#3s, T#4s]`[cite: 1].
+A time array is stored in `Uebung_093.SUB`: `[T#0s, T#2s, T#3s, T#4s]`.
 
 ### Functionality
 

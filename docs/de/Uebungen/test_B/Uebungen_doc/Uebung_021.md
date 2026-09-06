@@ -21,12 +21,12 @@ Realisierung einer einfachen Folgesteuerung: Ein Prozess wird gestartet und stop
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_021.SUB` nutzt zwei Softkeys, um die Bewegung eines Aktors (`Q1`) zu steuern[cite: 1].
+Die Subapplikation `Uebung_021.SUB` nutzt zwei Softkeys, um die Bewegung eines Aktors (`Q1`) zu steuern.
 
 ### Funktionsbausteine (FBs)
 
-  - **`SoftKey_UP_F1`**: Fungiert als **START-Taster**. [cite_start]Er ist auf `SK_RELEASED` konfiguriert[cite: 1].
-  - **`SoftKey_F2_DOWN`**: Simuliert den **Endlagenschalter**. [cite_start]Er reagiert sofort beim Drücken (`SK_PRESSED`)[cite: 1].
+  - **`SoftKey_UP_F1`**: Fungiert als **START-Taster**. Er ist auf `SK_RELEASED` konfiguriert.
+  - **`SoftKey_F2_DOWN`**: Simuliert den **Endlagenschalter**. Er reagiert sofort beim Drücken (`SK_PRESSED`).
   - **`E_SR`**: Der Speicher für den Bewegungszustand.
   - **`DigitalOutput_Q1`**: Der Ausgang für das Zylinderventil.
 

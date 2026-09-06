@@ -14,7 +14,7 @@ Events von Buttons.
 
 ## Beschreibung
 
-[cite_start]Nutzt `Button_A1` mit `BT_RELEASED_UNLATCHED`[cite: 1].
+Nutzt `Button_A1` mit `BT_RELEASED_UNLATCHED`.
 
 -----
 

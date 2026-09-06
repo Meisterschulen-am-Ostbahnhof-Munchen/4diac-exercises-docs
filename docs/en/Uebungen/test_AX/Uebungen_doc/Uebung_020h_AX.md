@@ -13,14 +13,14 @@ The objective is to transform a single, short event (e.g., a mouse click or butt
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020h_AX.SUB` combines an event input with an adapter pulse block[cite: 1].
+The subapplication `Uebung_020h_AX.SUB` combines an event input with an adapter pulse block.
 
 ### Function Blocks (FBs)
 
 ![Uebung_020h_AX_network](./Uebung_020h_AX_network.svg)
 
 - **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. Returns an event on a single click (`BUTTON_SINGLE_CLICK`).
-- **`AX_PULSE`**: [cite_start]Starts a timer when an event arrives at the `REQ` input. The output `Q` remains TRUE for `PT` (5 seconds) [cite: 1].
+- **`AX_PULSE`**: Starts a timer when an event arrives at the `REQ` input. The output `Q` remains TRUE for `PT` (5 seconds) .
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`.
 
 -----

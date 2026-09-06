@@ -13,7 +13,7 @@ Button events.
 
 ## Description
 
-[cite_start]Uses `Button_A1` with `BT_RELEASED_UNLATCHED`[cite: 1].
+Uses `Button_A1` with `BT_RELEASED_UNLATCHED`.
 
 -----
 

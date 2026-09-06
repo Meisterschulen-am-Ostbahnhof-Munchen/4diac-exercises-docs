@@ -13,7 +13,7 @@ Understanding extended signal states. In professional control systems, a simple 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_055.SUB` demonstrates the conversion between simple Boolean values and logiBUS quarters[cite: 1].
+The subapplication `Uebung_055.SUB` demonstrates the conversion between simple Boolean values and logiBUS quarters.
 
 ### Function Blocks (FBs)
 

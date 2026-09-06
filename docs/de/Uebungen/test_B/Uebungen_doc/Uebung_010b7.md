@@ -8,6 +8,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b7`.
 
 ## Funktionsweise
 
-[cite_start]Nutzt `Button_A1` mit dem Ereignis `BT_RELEASED_UNLATCHED`[cite: 1]. Das Event wird gefeuert, wenn ein normaler (nicht-rastender) Button auf der Arbeitsmaske losgelassen wird. Dies entspricht einem klassischen Mausklick-Ereignis.
+Nutzt `Button_A1` mit dem Ereignis `BT_RELEASED_UNLATCHED`. Das Event wird gefeuert, wenn ein normaler (nicht-rastender) Button auf der Arbeitsmaske losgelassen wird. Dies entspricht einem klassischen Mausklick-Ereignis.
 
 ![Uebung_010b7_network](./Uebung_010b7_network.svg)

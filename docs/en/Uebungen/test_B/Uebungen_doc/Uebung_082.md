@@ -13,7 +13,7 @@ Using the function block `E_CTUD` (Event Count Up/Down). It demonstrates how to 
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_082.SUB` uses four pushbuttons for complete control of the counter[cite: 1].
+The sub-application `Uebung_082.SUB` uses four pushbuttons for complete control of the counter.
 
 ### Function Blocks (FBs)
 

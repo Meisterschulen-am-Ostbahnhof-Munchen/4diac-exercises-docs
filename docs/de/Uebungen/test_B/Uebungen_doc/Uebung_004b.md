@@ -14,14 +14,14 @@ Verständnis der inneren Logik eines Speicherbausteins. Anstatt den fertigen `E_
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004b.SUB` realisiert die Toggle-Funktion durch die Kombination einer Ereignis-Weiche und eines SR-Speichers[cite: 1].
+Die Subapplikation `Uebung_004b.SUB` realisiert die Toggle-Funktion durch die Kombination einer Ereignis-Weiche und eines SR-Speichers.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_004b_network](./Uebung_004b_network.svg)
 
   - **`DigitalInput_CLK_I1`**: Liefert ein Ereignis bei jedem Tastendruck.
-  - **`E_SWITCH`**: Eine Ereignis-Weiche. [cite_start]Je nach Zustand am Dateneingang `G` leitet sie das Ereignis `EI` entweder an `EO0` (wenn FALSE) oder an `EO1` (wenn TRUE) weiter[cite: 1].
+  - **`E_SWITCH`**: Eine Ereignis-Weiche. Je nach Zustand am Dateneingang `G` leitet sie das Ereignis `EI` entweder an `EO0` (wenn FALSE) oder an `EO1` (wenn TRUE) weiter.
   - **`E_SR`**: Ein ereignisbasierter SR-Speicher (Set/Reset).
   - **`DigitalOutput_Q1`**: Der Hardware-Ausgang.
 

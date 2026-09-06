@@ -13,7 +13,7 @@ Manual advancement of a sequence of steps.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_040_AX.SUB` uses `sequence_E_08_loop_AX`. Here, the inputs for the transitions (`S1_S2`, `S2_S3`, ...) are brought out as event inputs[cite: 1].
+The subapplication `Uebung_040_AX.SUB` uses `sequence_E_08_loop_AX`. Here, the inputs for the transitions (`S1_S2`, `S2_S3`, ...) are brought out as event inputs.
 
 ### Logic for Step Advancement
 

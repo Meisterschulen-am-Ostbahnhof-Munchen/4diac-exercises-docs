@@ -17,7 +17,7 @@ Proof of reusability.
 
 ## Description
 
-[cite_start]The subapplication `Uebung_010c4_AX.SUB` instantiates the type `Uebung_010c4_sub_AX` (presumably identical to c3) twice[cite: 1].
+The subapplication `Uebung_010c4_AX.SUB` instantiates the type `Uebung_010c4_sub_AX` (presumably identical to c3) twice.
 
 - Instance 1: F1 on Q1.
 - Instance 2: F2 on Q2.

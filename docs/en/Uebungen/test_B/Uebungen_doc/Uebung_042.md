@@ -13,7 +13,7 @@ Using the function block `SCALE`. In automation technology, raw values (e.g., 4-
 
 ## Description and Components
 
-[cite_start]In `Uebung_042.SUB`, a test scenario for the Scaling function block is set up[cite: 1].
+In `Uebung_042.SUB`, a test scenario for the Scaling function block is set up.
 
 ### Function Blocks (FBs)
 

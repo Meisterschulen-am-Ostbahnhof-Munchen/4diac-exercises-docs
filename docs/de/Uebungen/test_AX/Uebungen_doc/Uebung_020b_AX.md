@@ -14,15 +14,15 @@ Das Ziel dieser Übung ist es, das Verständnis für die zeitliche Steuerung von
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020b_AX.SUB` kombiniert eine Ereignis-Weiche, eine Zeitverzögerung und einen RS-Speicher[cite: 1].
+Die Subapplikation `Uebung_020b_AX.SUB` kombiniert eine Ereignis-Weiche, eine Zeitverzögerung und einen RS-Speicher.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_020b_AX_network](./Uebung_020b_AX_network.svg)
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
-  - **`AX_SWITCH`**: [cite_start]Leitet das Ereignis bei steigender Flanke an `EO1` und bei fallender Flanke an `EO0` weiter[cite: 1].
-  - **`E_DELAY`**: [cite_start]Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` [hier 2 Sekunden](cite: 1).
+  - **`AX_SWITCH`**: Leitet das Ereignis bei steigender Flanke an `EO1` und bei fallender Flanke an `EO0` weiter.
+  - **`E_DELAY`**: Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` [hier 2 Sekunden](cite: 1).
   - **`AX_RS`**: Der Ergebnisspeicher.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 

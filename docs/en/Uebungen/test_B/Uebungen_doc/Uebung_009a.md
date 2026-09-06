@@ -13,7 +13,7 @@ Control of a ramp function block (`RampLimitFS`). It shows how different event t
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_009a.SUB` uses a ramp function block for stepless control of a numerical value between 0 and 100[cite: 1].
+The subapplication `Uebung_009a.SUB` uses a ramp function block for stepless control of a numerical value between 0 and 100.
 
 ### Function Blocks (FBs)
 

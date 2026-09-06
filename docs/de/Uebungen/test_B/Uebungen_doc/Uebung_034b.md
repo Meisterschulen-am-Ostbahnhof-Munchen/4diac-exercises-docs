@@ -14,7 +14,7 @@ Kombination von repetierenden Ereignissen (`HOLD`) und Zählern zur Steuerung ei
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_034b.SUB` wird ein Up/Down-Zähler als digitaler Integrator genutzt[cite: 1].
+In `Uebung_034b.SUB` wird ein Up/Down-Zähler als digitaler Integrator genutzt.
 
 ### Funktionsbausteine (FBs)
 

@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_035a2`. Here, the traffic 
 
 ## Overview
 
-[cite_start]Using a 5-step sequencer, an additional state, "Flashing Green," is added[cite: 1].
+Using a 5-step sequencer, an additional state, "Flashing Green," is added.
 
 After the green phase (step 3), the sequencer starts a `E_TRAIN` block (step 4). This generates four short pulses at 500 ms intervals, which, via a toggle flip-flop, cause the green light to flash. Only after this flashing sequence is complete does the system switch to the yellow phase (step 5). This demonstrates the seamless integration of sub-sequences within a higher-level step sequence.
 

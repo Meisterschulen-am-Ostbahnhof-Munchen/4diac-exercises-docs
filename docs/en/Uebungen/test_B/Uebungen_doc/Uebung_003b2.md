@@ -11,11 +11,11 @@ The objective of this exercise is the efficient management of a large number of 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003b2.SUB` instantiates the specialized subtype `Uebung_003b2_sub` (named `F1` to `F15`) 15 times [cite: 1].
+The subapplication `Uebung_003b2.SUB` instantiates the specialized subtype `Uebung_003b2_sub` (named `F1` to `F15`) 15 times .
 
 ### Typed Subapplication: `Uebung_003b2_sub`
 
-[cite_start]This component serves as a universal "channel driver" for radio-to-CAN communication [cite: 2]. It has the following parameters:
+This component serves as a universal "channel driver" for radio-to-CAN communication . It has the following parameters:
 
 - **`Input`**: The name of the radio button (e.g., `Key_01`, `START`, `STOP`).
 - **`u8SAMember`**: The CAN address of the DataPanel (here fixed to `MI_00`).

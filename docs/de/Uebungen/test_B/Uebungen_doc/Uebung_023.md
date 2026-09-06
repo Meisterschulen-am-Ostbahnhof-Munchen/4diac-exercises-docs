@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_023`. Hier wird ein volls
 
 ## Übersicht
 
-[cite_start]Diese Übung erweitert die Logik auf insgesamt vier Phasen unter Verwendung von sechs Softkeys[cite: 1]:
+Diese Übung erweitert die Logik auf insgesamt vier Phasen unter Verwendung von sechs Softkeys:
 
 ![Uebung_023_network](./Uebung_023_network.svg)
 

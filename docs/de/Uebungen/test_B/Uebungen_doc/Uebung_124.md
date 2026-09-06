@@ -14,7 +14,7 @@ Verwendung des Bausteins `AlPgnTxNew8B`. Es wird gezeigt, wie man eine herstelle
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_124.SUB` kombiniert die Teilnehmer-Suche mit einem Sende-Baustein[cite: 1].
+Die Subapplikation `Uebung_124.SUB` kombiniert die Teilnehmer-Suche mit einem Sende-Baustein.
 
 ### Funktionsbausteine (FBs)
 

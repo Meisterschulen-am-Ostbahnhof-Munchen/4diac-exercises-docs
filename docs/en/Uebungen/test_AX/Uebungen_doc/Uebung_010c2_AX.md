@@ -13,7 +13,7 @@ Cleaning up the diagram.
 
 ## Description
 
-[cite_start]The logic from `Uebung_010c_AX` (Input + Output + Feedback + Splitter) is completely moved into an untyped sub-application `Uebung_10c2_sub_AX`[cite: 1].
+The logic from `Uebung_010c_AX` (Input + Output + Feedback + Splitter) is completely moved into an untyped sub-application `Uebung_10c2_sub_AX`.
 
 ----
 

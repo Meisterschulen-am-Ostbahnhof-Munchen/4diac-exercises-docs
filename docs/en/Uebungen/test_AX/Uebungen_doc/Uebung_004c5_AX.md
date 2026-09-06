@@ -13,7 +13,7 @@ Using the event `BUTTON_PRESS_END`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c5_AX.SUB` is configured to `BUTTON_PRESS_END`[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c5_AX.SUB` is configured to `BUTTON_PRESS_END`.
 
 ![Uebung_004c5_AX_network](./Uebung_004c5_AX_network.svg)
 

@@ -11,7 +11,7 @@ The main objective of this exercise is to demonstrate the parallel processing of
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003.SUB` defines two separate signal paths ("channels") that are processed in parallel[cite: 1].
+The subapplication `Uebung_003.SUB` defines two separate signal paths ("channels") that are processed in parallel.
 
 ### Function Blocks (FBs)
 
@@ -19,8 +19,8 @@ Two pairs of input and output blocks are used:
 
 ![Uebung_003_network](./Uebung_003_network.svg)
 
-- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (Channel 1). [cite_start]Connects hardware input `I1` with hardware output `Q1`[cite: 1].
-- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (Channel 2). [cite_start]Connects hardware input `I2` with hardware output `Q2`[cite: 1].
+- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (Channel 1). Connects hardware input `I1` with hardware output `Q1`.
+- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (Channel 2). Connects hardware input `I2` with hardware output `Q2`.
 
 -----
 

@@ -20,7 +20,7 @@ Verwendung des Bausteins `E_PERMIT`. Ziel ist es, die Ausführung einer Aktion (
 
 ## Funktionsweise
 
-[cite_start]Die Subapplikation `Uebung_094.SUB` nutzt einen Schalter als Freigabe für einen Taster[cite: 1].
+Die Subapplikation `Uebung_094.SUB` nutzt einen Schalter als Freigabe für einen Taster.
 
 -   Taster **I2** liefert den Auslöse-Impuls.
 -   Schalter **I1** liefert die Freigabe (`PERMIT`).

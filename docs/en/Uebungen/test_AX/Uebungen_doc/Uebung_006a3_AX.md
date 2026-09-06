@@ -13,7 +13,7 @@ Implementation of a reversing contactor control with software interlock. "Left" 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a3_AX.SUB` uses a combination of a flip-flop, a splitter, and a custom sub-application (`Uebung_006a3_sub_AX`)[cite: 1].
+The subapplication `Uebung_006a3_AX.SUB` uses a combination of a flip-flop, a splitter, and a custom sub-application (`Uebung_006a3_sub_AX`).
 
 ### Function Blocks (FBs)
 

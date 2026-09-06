@@ -19,7 +19,7 @@ Using a `Softkey` block to control an output.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010_AX.SUB` connects a softkey instance to a digital output[cite: 1].
+The subapplication `Uebung_010_AX.SUB` connects a softkey instance to a digital output.
 
 ### Function Blocks (FBs)
 

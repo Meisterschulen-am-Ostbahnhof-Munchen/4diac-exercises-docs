@@ -14,7 +14,7 @@ Verwendung eines `Button_IXA`.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a2_AX.SUB` nutzt einen Button anstelle eines Softkeys[cite: 1].
+Die Subapplikation `Uebung_010a2_AX.SUB` nutzt einen Button anstelle eines Softkeys.
 
 ### Funktionsbausteine (FBs)
 

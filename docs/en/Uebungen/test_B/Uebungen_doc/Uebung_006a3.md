@@ -13,7 +13,7 @@ To build a control system for forward and reverse operation with software interl
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006a3.SUB` combines a main on/off memory with logic for direction selection[cite: 1].
+The sub-application `Uebung_006a3.SUB` combines a main on/off memory with logic for direction selection.
 
 ### Function Blocks (FBs)
 

@@ -7,4 +7,4 @@ This article describes the logiBUS® exercise `Uebung_033`
 
 ## Overview
 
-[cite_start]This is the modular version of exercise 032[cite: 1]. The logic for a colored LED channel has been moved to a typed sub-application `Uebung_033_sub`. The main program instantiates this type four times and assigns it the pushbuttons `I1` to `I4` as well as the target colors. This again demonstrates the advantages of reusability with complex hardware components such as LED controllers.
+This is the modular version of exercise 032. The logic for a colored LED channel has been moved to a typed sub-application `Uebung_033_sub`. The main program instantiates this type four times and assigns it the pushbuttons `I1` to `I4` as well as the target colors. This again demonstrates the advantages of reusability with complex hardware components such as LED controllers.

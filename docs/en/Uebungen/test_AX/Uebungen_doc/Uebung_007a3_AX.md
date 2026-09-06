@@ -13,7 +13,7 @@ Ensure that the turn signal always stops in the "OFF" state.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_007a3_AX.SUB` uses more complex logic[cite: 1]:
+The subapplication `Uebung_007a3_AX.SUB` uses more complex logic:
 
 - **`AX_CYCLE`**: The clock generator (starts/stops).
 - **`E_SR`**: A memory location ("Blinker is active").

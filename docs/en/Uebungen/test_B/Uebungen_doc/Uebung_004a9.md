@@ -13,7 +13,7 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a9.SUB` distributes the signal from a button to three separate toggle flip-flops and thus to three outputs[cite: 1].
+The subapplication `Uebung_004a9.SUB` distributes the signal from a button to three separate toggle flip-flops and thus to three outputs.
 
 ### Function Blocks (FBs)
 

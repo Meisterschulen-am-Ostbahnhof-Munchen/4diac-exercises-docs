@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_093b`
 
 ## Overview
 
-[cite_start]Extension of the table concept using the function block `E_N_TABLE`[cite: 1].
+Extension of the table concept using the function block `E_N_TABLE`.
 
 Instead of sending all events to a common output, this function block has separate outputs (`EO0` to `EOn`) for each table entry.
 

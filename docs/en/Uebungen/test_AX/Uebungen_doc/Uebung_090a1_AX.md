@@ -13,7 +13,7 @@ Selecting a signal from multiple sources (switch).
 
 ## Description and components
 
-[cite_start]The subapplication `Uebung_090a1_AX.SUB` uses a `AX_MUX_2` function block[cite: 1].
+The subapplication `Uebung_090a1_AX.SUB` uses a `AX_MUX_2` function block.
 
 ### Function blocks (FBs)
 

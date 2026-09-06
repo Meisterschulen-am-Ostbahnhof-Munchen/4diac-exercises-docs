@@ -13,7 +13,7 @@ Implementation of a circuit with separate pushbuttons for "On" and "Off".
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_006_AX.SUB` uses two pushbuttons and one `AX_SR` block[cite: 1].
+The sub-application `Uebung_006_AX.SUB` uses two pushbuttons and one `AX_SR` block.
 
 ### Function Blocks (FBs)
 

@@ -13,14 +13,13 @@ The objective of this exercise is to efficiently manage a large number of simila
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003b2_AX.SUB` instantiates the subtype `Uebung_003b2_sub_AX` 15 times (here named `F1` to `F15`)[cite: 1].
+The subapplication `Uebung_003b2_AX.SUB` instantiates the subtype `Uebung_003b2_sub_AX` 15 times (here named `F1` to `F15`).
 
-[cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
+This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`). It has the following configuration parameters:
 
 - **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
 
 ### Sub-component: `Uebung_003b2_sub_AX`
-
 
 - **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
 - - **`Output`**: The physical output (e.g., `DigitalOutput_1B`).

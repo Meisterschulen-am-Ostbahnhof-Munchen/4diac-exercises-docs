@@ -14,7 +14,7 @@ Erzeugung von zeitversetzten Impulsen basierend auf dem GBSD-Distanzwert.
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_072b.SUB` steuern vier `RangeBasedPulse` Bausteine vier Ausgänge (`Q1` bis `Q4`) an[cite: 1].
+In `Uebung_072b.SUB` steuern vier `RangeBasedPulse` Bausteine vier Ausgänge (`Q1` bis `Q4`) an.
 
 ### Funktionsweise
 

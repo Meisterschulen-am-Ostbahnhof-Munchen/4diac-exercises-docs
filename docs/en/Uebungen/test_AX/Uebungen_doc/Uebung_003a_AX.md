@@ -13,11 +13,11 @@ The main objective is to show how redundant code can be avoided. Instead of draw
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003a_AX.SUB` uses two instances of a user-defined subtype to implement two signal paths[cite: 1].
+The subapplication `Uebung_003a_AX.SUB` uses two instances of a user-defined subtype to implement two signal paths.
 
 ### Typed Subapplication: `Uebung_003a_AX_sub`
 
-[cite_start]This function block encapsulates the basic logic: "Read an input and write to an output"[cite: 2]. It has interfaces for parameterization:
+This function block encapsulates the basic logic: "Read an input and write to an output". It has interfaces for parameterization:
 
 - **`Input`**: Determines which physical input is to be read (e.g., `Input_I1`).
 - **`Output`**: Determines which physical output is to be switched (e.g., `Output_Q1`).

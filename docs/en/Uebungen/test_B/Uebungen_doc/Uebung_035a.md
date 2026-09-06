@@ -13,7 +13,7 @@ Implementation of a complex timing sequence with overlapping states. The standar
 
 ## Description and Components
 
-[cite_start]In `Uebung_035a.SUB`, a 4-step sequencer is used as the clock generator[cite: 1].
+In `Uebung_035a.SUB`, a 4-step sequencer is used as the clock generator.
 
 ### Functionality
 

@@ -14,7 +14,7 @@ Manipulation von Ereignisströmen unter Verwendung von `E_SPLIT`.
 
 ## Funktionsweise
 
-[cite_start]In `Uebung_080b.SUB` wird ein Ereignis-Splitter vor den Zähler geschaltet[cite: 1].
+In `Uebung_080b.SUB` wird ein Ereignis-Splitter vor den Zähler geschaltet.
 
 ![Uebung_080b_network](./Uebung_080b_network.svg)
 

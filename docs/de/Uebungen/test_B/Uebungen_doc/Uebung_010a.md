@@ -20,7 +20,7 @@ Erweiterung der ISOBUS-Steuerung auf mehrere Kanäle.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a.SUB` steuert zwei unabhängige Hardware-Ausgänge über zwei Softkeys am Terminal[cite: 1].
+Die Subapplikation `Uebung_010a.SUB` steuert zwei unabhängige Hardware-Ausgänge über zwei Softkeys am Terminal.
 
 ### Funktionsbausteine (FBs)
 

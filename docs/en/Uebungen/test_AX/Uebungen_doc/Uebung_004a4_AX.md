@@ -13,7 +13,7 @@ The objective is to understand sequential event processing. In IEC 61499, an eve
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a4_AX.SUB` uses a push button to toggle two separate toggle flip-flops[cite: 1].
+The subapplication `Uebung_004a4_AX.SUB` uses a push button to toggle two separate toggle flip-flops.
 
 ### Function Blocks (FBs)
 

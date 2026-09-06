@@ -20,7 +20,7 @@ Getrennte Ein/Aus Tasten auf dem Touchscreen.
 
 ## Beschreibung
 
-[cite_start]Die Subapplikation `Uebung_013_AX.SUB` verwendet zwei Softkeys, um ein `AX_SR` Flip-Flop zu steuern[cite: 1].
+Die Subapplikation `Uebung_013_AX.SUB` verwendet zwei Softkeys, um ein `AX_SR` Flip-Flop zu steuern.
 
 ### Funktionsbausteine (FBs)
 

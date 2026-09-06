@@ -27,7 +27,7 @@ Implementation of an on/off switch with separate virtual buttons.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_013.SUB` uses two softkeys to control an SR flip-flop[cite: 1].
+The subapplication `Uebung_013.SUB` uses two softkeys to control an SR flip-flop.
 
 ### Function Blocks (FBs)
 

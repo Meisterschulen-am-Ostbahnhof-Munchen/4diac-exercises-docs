@@ -13,7 +13,7 @@ Capture of fast pulses (e.g., speed, flow rate).
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_150_AX.SUB` combines standard lighting logic with a pulse counter module[cite: 1].
+The sub-application `Uebung_150_AX.SUB` combines standard lighting logic with a pulse counter module.
 
 ### Function Blocks (FBs)
 

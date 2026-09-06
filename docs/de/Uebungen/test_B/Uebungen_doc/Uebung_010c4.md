@@ -8,4 +8,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010c4`.
 
 ## Übersicht
 
-[cite_start]Beweis der Skalierbarkeit: Der in Übung 010c3 erstellte Typ wird zweimal instanziiert, um zwei Softkeys (`F1`, `F2`) mit zwei Ausgängen (`Q1`, `Q2`) und jeweiligem individuellen Bildschirm-Feedback zu verknüpfen[cite: 1]. Dies demonstriert, wie effizient komplexe Maschinen-Interfaces mit IEC 61499 Bausteinen aufgebaut werden können.
+Beweis der Skalierbarkeit: Der in Übung 010c3 erstellte Typ wird zweimal instanziiert, um zwei Softkeys (`F1`, `F2`) mit zwei Ausgängen (`Q1`, `Q2`) und jeweiligem individuellen Bildschirm-Feedback zu verknüpfen. Dies demonstriert, wie effizient komplexe Maschinen-Interfaces mit IEC 61499 Bausteinen aufgebaut werden können.

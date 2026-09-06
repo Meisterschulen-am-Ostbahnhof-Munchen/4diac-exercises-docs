@@ -14,7 +14,7 @@ Realisierung eines komplexen Zeitablaufs mit überlappenden Zuständen. Es wird 
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_035a.SUB` wird ein 4-Schritt-Sequenzer als Taktgeber genutzt[cite: 1].
+In `Uebung_035a.SUB` wird ein 4-Schritt-Sequenzer als Taktgeber genutzt.
 
 ### Funktionsweise
 

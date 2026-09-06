@@ -14,7 +14,7 @@ Realisierung einer Schaltung mit getrennten Tastern für "Ein" und "Aus".
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006_AX.SUB` nutzt zwei Taster und einen `AX_SR` Baustein[cite: 1].
+Die Subapplikation `Uebung_006_AX.SUB` nutzt zwei Taster und einen `AX_SR` Baustein.
 
 ### Funktionsbausteine (FBs)
 

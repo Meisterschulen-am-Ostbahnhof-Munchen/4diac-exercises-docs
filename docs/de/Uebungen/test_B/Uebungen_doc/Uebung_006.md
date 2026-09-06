@@ -16,7 +16,7 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006.SUB` nutzt zwei ereignisbasierte Eingänge und einen SR-Speicher[cite: 1].
+Die Subapplikation `Uebung_006.SUB` nutzt zwei ereignisbasierte Eingänge und einen SR-Speicher.
 
 ### Funktionsbausteine (FBs)
 
@@ -24,7 +24,7 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 
   - **`I1` (Set)**: Taster zum Einschalten (konfiguriert auf Einzelklick).
   - **`I2` (Reset)**: Taster zum Ausschalten (konfiguriert auf Einzelklick).
-  - **`E_SR`**: Ein ereignisbasierter Speicherbaustein. [cite_start]Ein Event am Eingang `S` (Set) setzt den Ausgang `Q` auf TRUE, ein Event am Eingang `R` (Reset) setzt ihn auf FALSE[cite: 1].
+  - **`E_SR`**: Ein ereignisbasierter Speicherbaustein. Ein Event am Eingang `S` (Set) setzt den Ausgang `Q` auf TRUE, ein Event am Eingang `R` (Reset) setzt ihn auf FALSE.
 
 -----
 

@@ -13,7 +13,7 @@ Events for latching buttons.
 
 ## Description
 
-[cite_start]Uses `Button_A1` with `BT_PRESSED_LATCHED`[cite: 1].
+Uses `Button_A1` with `BT_PRESSED_LATCHED`.
 
 -----
 

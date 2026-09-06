@@ -14,7 +14,7 @@ Erfassung von schnellen Impulsen (z.B. Drehzahl, Durchfluss).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_150_AX.SUB` kombiniert eine Standard-Beleuchtungslogik mit einem Impulszähler-Baustein[cite: 1].
+Die Subapplikation `Uebung_150_AX.SUB` kombiniert eine Standard-Beleuchtungslogik mit einem Impulszähler-Baustein.
 
 ### Funktionsbausteine (FBs)
 

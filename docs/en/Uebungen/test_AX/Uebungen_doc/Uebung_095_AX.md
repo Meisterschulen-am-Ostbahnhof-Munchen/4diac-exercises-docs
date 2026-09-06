@@ -13,7 +13,7 @@ Selecting an event source (opposite of `E_SPLIT` or `E_SWITCH`).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_095_AX.SUB` uses a `AX_SELECT` function block[cite: 1].
+The subapplication `Uebung_095_AX.SUB` uses a `AX_SELECT` function block.
 
 ### Function Blocks (FBs)
 

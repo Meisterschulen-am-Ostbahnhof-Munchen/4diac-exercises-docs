@@ -27,6 +27,6 @@ Using `E_REND` to safeguard transitions. The goal is to ensure that a subsequent
 
 ## Functionality
 
-[cite_start]The exercise uses a `E_REND` block for each transition[cite: 1].
+The exercise uses a `E_REND` block for each transition.
 
 Additionally, `E_SWITCH` blocks are used for plausibility checks. An event is only accepted as a valid end position if the corresponding output (`Q`) of the controller is actually active at that time (feedback of the data to the gate of the switch). This prevents incorrect control due to defective or stuck sensors.

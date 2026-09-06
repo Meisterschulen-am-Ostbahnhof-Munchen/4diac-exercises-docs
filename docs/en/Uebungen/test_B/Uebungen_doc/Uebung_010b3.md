@@ -13,7 +13,7 @@ Using `Aux_IE` (Event) to control memory.
 
 ## Description
 
-[cite_start]In `Uebung_010b3.SUB`, an AUX function is used to toggle a flip-flop[cite: 1].
+In `Uebung_010b3.SUB`, an AUX function is used to toggle a flip-flop.
 
 ### Functionality
 

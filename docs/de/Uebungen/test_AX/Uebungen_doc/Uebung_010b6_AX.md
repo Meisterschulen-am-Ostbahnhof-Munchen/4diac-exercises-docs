@@ -20,7 +20,7 @@ Reaktion beim Drücken.
 
 ## Beschreibung
 
-[cite_start]Verwendet das Event `SK_PRESSED`[cite: 1].
+Verwendet das Event `SK_PRESSED`.
 
 -----
 

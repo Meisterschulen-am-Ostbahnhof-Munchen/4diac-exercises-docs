@@ -13,7 +13,7 @@ The main objective of this exercise is to demonstrate the conversion between ada
 
 ## Description and Components
 
-[cite_start]This exercise is based on the sub-application `Uebung_001_AX_b.SUB`, which implements the signal flow from a digital input to a digital output via two intermediate converter ICs[cite: 1].
+This exercise is based on the sub-application `Uebung_001_AX_b.SUB`, which implements the signal flow from a digital input to a digital output via two intermediate converter ICs.
 
 ### Function Blocks (FBs)
 
@@ -21,16 +21,16 @@ Four function blocks are instantiated in the sub-application:
 
 ![Uebung_001_AX_b_network](./Uebung_001_AX_b_network.svg)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]This block reads the state of the physical input `Input_I1` and makes it available via its adapter connection `IN`[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This block reads the state of the physical input `Input_I1` and makes it available via its adapter connection `IN`.
 
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component receives signals at its adapter input `OUT` and sets the corresponding physical output `Output_Q1`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This component receives signals at its adapter input `OUT` and sets the corresponding physical output `Output_Q1`.
 
-- **`AX_X_TO_BOOL`**: [cite_start]A converter component that decomposes a signal received at the adapter input `AX_IN` (socket) into an event `CNF` and a Boolean data value `IN`[cite: 1].
-- **`AX_BOOL_TO_X`**: [cite_start]A converter module that reassembles an adapter signal at output `AX_OUT` (Plug) from an event `REQ` and a Boolean data value `OUT`[cite: 1].
+- **`AX_X_TO_BOOL`**: A converter component that decomposes a signal received at the adapter input `AX_IN` (socket) into an event `CNF` and a Boolean data value `IN`.
+- **`AX_BOOL_TO_X`**: A converter module that reassembles an adapter signal at output `AX_OUT` (Plug) from an event `REQ` and a Boolean data value `OUT`.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]As in the basic exercise, the adapter type `AX` serves as the interface here as well, transmitting the event `E1` and the Boolean value `D1`[cite: 2].
+As in the basic exercise, the adapter type `AX` serves as the interface here as well, transmitting the event `E1` and the Boolean value `D1`.
 
 -----
 

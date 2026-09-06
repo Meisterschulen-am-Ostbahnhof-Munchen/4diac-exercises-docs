@@ -13,7 +13,7 @@ Investigation of the behavior.
 
 ## Description
 
-[cite_start]Structurally very similar to `Uebung_007a1_AX`[cite: 1]. Here, too, the problem of the lamp's undefined final state exists. It presumably serves as a repetition or variation in the layout.
+Structurally very similar to `Uebung_007a1_AX`. Here, too, the problem of the lamp's undefined final state exists. It presumably serves as a repetition or variation in the layout.
 
 -----
 

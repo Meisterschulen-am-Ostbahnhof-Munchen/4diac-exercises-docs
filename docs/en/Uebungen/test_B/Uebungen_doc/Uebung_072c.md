@@ -13,7 +13,7 @@ Using the function block `INTEGRAL`. It demonstrates how to manually calculate a
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_072c.SUB` calculates the distance by integrating the radar-based speed over time[cite: 1].
+The sub-application `Uebung_072c.SUB` calculates the distance by integrating the radar-based speed over time.
 
 ### Function Blocks (FBs)
 

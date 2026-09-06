@@ -4,7 +4,7 @@
 
 ## Overview
 
-[cite_start]This module serves as a universal interface for user input that is to be permanently stored in NVS [Non-Volatile Storage](cite: 1).
+This module serves as a universal interface for user input that is to be permanently stored in NVS [Non-Volatile Storage](cite: 1).
 It bundles the following functions:
 ![Uebung_012a_sub_network](./Uebung_012a_sub_network.svg)
 

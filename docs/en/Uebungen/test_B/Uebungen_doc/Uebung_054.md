@@ -13,8 +13,8 @@ Using `BOOLS_TO_ARR08X` and `ARR08X_TO_BOOLS`.
 
 ## Description
 
-[cite_start]In `Uebung_054.SUB`, four digital signals are packaged into an array [an indexed list of values](cite: 1).
+In `Uebung_054.SUB`, four digital signals are packaged into an array [an indexed list of values](cite: 1).
 
-[cite_start] Unlike a structure (where each channel has a name, e.g., `X_00`), an array accesses data by its position (index 0 to 7). This is particularly advantageous when processing signal paths in program loops.
+ Unlike a structure (where each channel has a name, e.g., `X_00`), an array accesses data by its position (index 0 to 7). This is particularly advantageous when processing signal paths in program loops.
 
 ![Uebung_054_network](./Uebung_054_network.svg)

@@ -14,7 +14,7 @@ Realisierung einer Wende-Schütz-Steuerung mit Software-Verriegelung. Es darf ni
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a3_AX.SUB` nutzt eine Kombination aus Flip-Flop, Splitter und einer custom Sub-App (`Uebung_006a3_sub_AX`)[cite: 1].
+Die Subapplikation `Uebung_006a3_AX.SUB` nutzt eine Kombination aus Flip-Flop, Splitter und einer custom Sub-App (`Uebung_006a3_sub_AX`).
 
 ### Funktionsbausteine (FBs)
 

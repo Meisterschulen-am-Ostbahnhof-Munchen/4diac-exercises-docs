@@ -14,13 +14,13 @@ Verwendung des `E_CYCLE` Bausteins zur Erzeugung einer Zeitbasis. Es wird demons
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_007.SUB` kombiniert einen Taktgeber mit einem Speicherglied[cite: 1].
+Die Subapplikation `Uebung_007.SUB` kombiniert einen Taktgeber mit einem Speicherglied.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_007_network](./Uebung_007_network.svg)
 
-  - **`E_CYCLE`**: Ein Ereignis-Generator. [cite_start]Er sendet periodisch Ereignisse am Ausgang `EO` aus. Der Parameter `DT` bestimmt das Zeitintervall (hier `T#1s` = 1 Sekunde)[cite: 1].
+  - **`E_CYCLE`**: Ein Ereignis-Generator. Er sendet periodisch Ereignisse am Ausgang `EO` aus. Der Parameter `DT` bestimmt das Zeitintervall (hier `T#1s` = 1 Sekunde).
   - **`E_T_FF`**: Das Toggle-Flip-Flop, welches bei jedem Takt seinen Zustand invertiert.
   - **`DigitalOutput_Q1`**: Die physische Lampe.
 

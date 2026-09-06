@@ -20,7 +20,7 @@ Verwendung des Bausteins `E_F_TRIG` (Falling Edge Trigger). Im Gegensatz zum ein
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_088.SUB` wird die Reaktion auf eine UND-Logik verglichen[cite: 1].
+In `Uebung_088.SUB` wird die Reaktion auf eine UND-Logik verglichen.
 
 ### Funktionsweise
 

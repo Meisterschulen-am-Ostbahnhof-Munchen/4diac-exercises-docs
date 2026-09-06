@@ -13,7 +13,7 @@ Implementation of a delay behavior. The output should activate immediately when 
 
 ## Description and Components
 
-[cite_start]In `Uebung_020d.SUB`, the TOF logic is implemented through a clever combination of `E_DELAY` and `E_RS`[cite: 1].
+In `Uebung_020d.SUB`, the TOF logic is implemented through a clever combination of `E_DELAY` and `E_RS`.
 
 ### Functionality
 

@@ -13,11 +13,11 @@ The objective is to make local hardware inputs (`I1` to `I4`) available to the I
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003c_AX.SUB` uses untyped (or reused typed) subapplications to define four channels[cite: 1].
+The subapplication `Uebung_003c_AX.SUB` uses untyped (or reused typed) subapplications to define four channels.
 
 ### Subcomponent: `Uebung_003c_sub_AX`
 
-[cite_start]This sub-block connects a local digital input to an ISOBUS auxiliary output block[cite: 2].
+This sub-block connects a local digital input to an ISOBUS auxiliary output block.
 
 - **Input**: `logiBUS_IXA` (Reads the local pin)
 - **Output**: `Aux_QXA` (Sends the status as an ISOBUS AUX message)

@@ -7,4 +7,4 @@ This article describes the logiBUS® exercise `Uebung_010c4`
 
 ## Overview
 
-[cite_start]Proof of Scalability: The type created in Exercise 010c3 is instantiated twice to link two softkeys (`F1`, `F2`) with two outputs (`Q1`, `Q2`) and their respective individual screen feedback [cite: 1]. This demonstrates how efficiently complex machine interfaces can be built using IEC 61499 components.
+Proof of Scalability: The type created in Exercise 010c3 is instantiated twice to link two softkeys (`F1`, `F2`) with two outputs (`Q1`, `Q2`) and their respective individual screen feedback . This demonstrates how efficiently complex machine interfaces can be built using IEC 61499 components.

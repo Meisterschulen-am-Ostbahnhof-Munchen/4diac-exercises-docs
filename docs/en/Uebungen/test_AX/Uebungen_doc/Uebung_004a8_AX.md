@@ -11,7 +11,7 @@ To become familiar with the specific splitter function blocks. `E_SPLIT` is ofte
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a8_AX.SUB` uses `E_SPLIT_2` to distribute a button click to two independent flip-flops[cite: 1].
+The subapplication `Uebung_004a8_AX.SUB` uses `E_SPLIT_2` to distribute a button click to two independent flip-flops.
 
 ### Function Blocks (FBs)
 

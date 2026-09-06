@@ -13,7 +13,7 @@ Demonstration of a central off function.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a2_AX.SUB` controls two independent lamps that can be switched off together[cite: 1].
+The subapplication `Uebung_006a2_AX.SUB` controls two independent lamps that can be switched off together.
 
 ### Function Blocks (FBs)
 

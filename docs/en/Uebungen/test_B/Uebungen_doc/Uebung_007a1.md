@@ -13,7 +13,7 @@ Controlling a clock generator using start and stop events.
 
 ## Description and components
 
-[cite_start]In `Uebung_007a1.SUB`, the control inputs of the `E_CYCLE` block are used[cite: 1].
+In `Uebung_007a1.SUB`, the control inputs of the `E_CYCLE` block are used.
 
 ### Function Blocks (FBs)
 

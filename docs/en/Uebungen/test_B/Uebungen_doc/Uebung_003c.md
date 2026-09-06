@@ -16,11 +16,11 @@ The objective is to make local physical switches (`I1` to `I4`) available for th
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003c.SUB` uses four instances of type `Uebung_003c_sub` to provide four channels for ISOBUS mapping[cite: 1].
+The subapplication `Uebung_003c.SUB` uses four instances of type `Uebung_003c_sub` to provide four channels for ISOBUS mapping.
 
 ### Typed Subapplication: `Uebung_003c_sub`
 
-[cite_start]This function block connects a standard digital input to an ISOBUS auxiliary output[cite: 2]. It has the following parameters:
+This function block connects a standard digital input to an ISOBUS auxiliary output. It has the following parameters:
 
 - **`Input`**: Selection of the local hardware pin (e.g., `Input_I1`).
 - **`iInpNr`**: The sequential number of the AUX input in the object pool (index 0 to n).

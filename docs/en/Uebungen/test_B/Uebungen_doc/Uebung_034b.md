@@ -13,7 +13,7 @@ Combining repeating events (`HOLD`) and counters to control a PWM stage. The use
 
 ## Description and Components
 
-[cite_start]In `Uebung_034b.SUB`, an up/down counter is used as a digital integrator[cite: 1].
+In `Uebung_034b.SUB`, an up/down counter is used as a digital integrator.
 
 ### Function Blocks (FBs)
 

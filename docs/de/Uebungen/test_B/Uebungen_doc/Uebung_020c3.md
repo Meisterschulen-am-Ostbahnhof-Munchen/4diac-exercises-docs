@@ -18,7 +18,7 @@ Das Ziel ist es, eine Einschaltverzögerung mit einem klassischen SPS-Verhalten 
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_020c3.SUB` wird ein Taktgeber verwendet, um den klassischen Timer anzutreiben[cite: 1].
+In `Uebung_020c3.SUB` wird ein Taktgeber verwendet, um den klassischen Timer anzutreiben.
 
 ### Funktionsbausteine (FBs)
 

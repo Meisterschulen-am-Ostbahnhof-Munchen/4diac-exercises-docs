@@ -13,13 +13,13 @@ Using the `INI` block for structured data storage. Unlike simple NVS key-value s
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_012b.SUB` uses an INI storage block[cite: 1].
+The subapplication `Uebung_012b.SUB` uses an INI storage block.
 
 ### Function Blocks (FBs)
 
 ![Uebung_012b_network](./Uebung_012b_network.svg)
 
-- **`INI`**: Type `eclipse4diac::storage::INI`. [cite_start]This block stores values in a file-based structure[cite: 1]. In addition to `KEY`, it requires `SECTION`.
+- **`INI`**: Type `eclipse4diac::storage::INI`. This block stores values in a file-based structure. In addition to `KEY`, it requires `SECTION`.
 - **Parameters**:
 - `SECTION`: "SECTION_I1_STORE"
 - `KEY`: "KEY_I1_STORE"

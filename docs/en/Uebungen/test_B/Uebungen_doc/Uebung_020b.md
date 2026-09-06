@@ -13,7 +13,7 @@ Understanding time control through event delay (`E_DELAY`). It demonstrates how 
 
 ## Description and Components
 
-[cite_start]In `Uebung_020b.SUB`, a delay block is connected between the input switch and the memory [cite: 1].
+In `Uebung_020b.SUB`, a delay block is connected between the input switch and the memory .
 
 ### Function Blocks (FBs)
 

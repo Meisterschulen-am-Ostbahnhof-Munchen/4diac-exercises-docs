@@ -14,7 +14,7 @@ Kennenlernen von typspezifischen Splitter-Bausteinen. Während `E_SPLIT` oft gen
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a8.SUB` nutzt einen `E_SPLIT_2` Baustein zur Ereignisverteilung[cite: 1].
+Die Subapplikation `Uebung_004a8.SUB` nutzt einen `E_SPLIT_2` Baustein zur Ereignisverteilung.
 
 ### Funktionsbausteine (FBs)
 

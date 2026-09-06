@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_056`. Here, the quarter co
 
 ## Overview
 
-[cite_start]The sub-application `Uebung_056.SUB` shows a complete diagnostic pipeline[cite: 1]:
+The sub-application `Uebung_056.SUB` shows a complete diagnostic pipeline:
 
 ![Uebung_056_network](./Uebung_056_network.svg)
 

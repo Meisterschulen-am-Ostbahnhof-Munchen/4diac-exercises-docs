@@ -4,7 +4,7 @@
 
 ## Overview
 
-[cite_start]Variant of Exercise 034a1_Q1, configured for the hardware output `Q2`[cite: 1]. Demonstrates the scalability of PWM control via the terminal.
+Variant of Exercise 034a1_Q1, configured for the hardware output `Q2`. Demonstrates the scalability of PWM control via the terminal.
 ![Uebung_034a1_Q2_network](./Uebung_034a1_Q2_network.svg)
 
 ---

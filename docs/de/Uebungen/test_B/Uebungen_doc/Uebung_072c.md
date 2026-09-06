@@ -14,7 +14,7 @@ Verwendung des Bausteins `INTEGRAL`. Es wird demonstriert, wie man einen Wegwert
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_072c.SUB` berechnet den Weg durch zeitliche Integration der radarbasierten Geschwindigkeit[cite: 1].
+Die Subapplikation `Uebung_072c.SUB` berechnet den Weg durch zeitliche Integration der radarbasierten Geschwindigkeit.
 
 ### Funktionsbausteine (FBs)
 

@@ -14,7 +14,7 @@ Demonstration der Skalierbarkeit von Ereignis-Verteilern. Mit `E_SPLIT_3` könne
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a9.SUB` verteilt das Signal eines Tasters auf drei separate Toggle-Flip-Flops und somit auf drei Ausgänge[cite: 1].
+Die Subapplikation `Uebung_004a9.SUB` verteilt das Signal eines Tasters auf drei separate Toggle-Flip-Flops und somit auf drei Ausgänge.
 
 ### Funktionsbausteine (FBs)
 

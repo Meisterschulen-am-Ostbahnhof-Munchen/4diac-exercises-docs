@@ -14,7 +14,7 @@ Verwendung des Bausteins `F_MUX_2` (Multiplexer). Es wird gezeigt, wie man zwisc
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_090a1.SUB` wird ein binärer Wahlschalter genutzt, um zwischen zwei Eingängen umzuschalten[cite: 1].
+In `Uebung_090a1.SUB` wird ein binärer Wahlschalter genutzt, um zwischen zwei Eingängen umzuschalten.
 
 ### Funktionsbausteine (FBs)
 

@@ -13,7 +13,7 @@ Implementation of a step chain without automatic time transitions.
 
 ## Functionality
 
-[cite_start]In `Uebung_036.SUB`, the time parameters `DT_S1_S2` and `DT_S2_S3` are set to the value `NO_TIME`[cite: 1].
+In `Uebung_036.SUB`, the time parameters `DT_S1_S2` and `DT_S2_S3` are set to the value `NO_TIME`.
 
 ![Uebung_036_network](./Uebung_036_network.svg)
 

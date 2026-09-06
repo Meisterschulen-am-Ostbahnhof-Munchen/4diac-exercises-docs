@@ -7,8 +7,8 @@ This article describes the logiBUS® exercise `Uebung_134`
 
 ## Overview
 
-[cite_start]This exercise demonstrates a solution for communicating with devices that do not perform standard-compliant ISOBUS address claiming [cite: 1].
+This exercise demonstrates a solution for communicating with devices that do not perform standard-compliant ISOBUS address claiming .
 
 Using the function block `BaseMemberExternAdd`, a communication handle for a fixed source address (here `u8SA = 55`) is manually created. This handle is used to receive messages from an "unclaimed partner" that does not disclose its identity via name management. This is often necessary when integrating simple sensors or legacy devices.
 
-[cite_start] ![Uebung_134_network](./Uebung_134_network.svg)
+ ![Uebung_134_network](./Uebung_134_network.svg)

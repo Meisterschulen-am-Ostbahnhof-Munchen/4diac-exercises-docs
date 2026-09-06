@@ -13,7 +13,7 @@ Using `E_DEMUX` (Event Demultiplexer). It shows how a central "execution event" 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_087.SUB` uses addition logic to control the selector input of the demultiplexer[cite: 1].
+The subapplication `Uebung_087.SUB` uses addition logic to control the selector input of the demultiplexer.
 
 ### Function Blocks (FBs)
 

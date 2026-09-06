@@ -14,4 +14,4 @@ This article describes the logiBUS® exercise `Uebung_020e`.
 
 ## Overview
 
-[cite_start]Using the standardized event-based timer `E_TOF`[cite: 1]. The logic corresponds to exercise 020d, but is encapsulated in a single module. A signal at input `IN` is immediately passed through to output `Q`. If `IN` is lost, `Q` remains at `PT` (here 5 seconds).
+Using the standardized event-based timer `E_TOF`. The logic corresponds to exercise 020d, but is encapsulated in a single module. A signal at input `IN` is immediately passed through to output `Q`. If `IN` is lost, `Q` remains at `PT` (here 5 seconds).

@@ -19,7 +19,7 @@ Using specialized ISOBUS events to control software flip-flops.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010b2.SUB` uses a flip-flop that is triggered by releasing a softkey[cite: 1].
+The subapplication `Uebung_010b2.SUB` uses a flip-flop that is triggered by releasing a softkey.
 
 ### Function Blocks (FBs)
 

@@ -14,7 +14,7 @@ Nutzung des standardisierten Timer-Bausteins `E_TON`.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020c.SUB` nutzt den `E_TON` Baustein aus der Event-Timer-Bibliothek[cite: 1].
+Die Subapplikation `Uebung_020c.SUB` nutzt den `E_TON` Baustein aus der Event-Timer-Bibliothek.
 
 ### Funktionsbausteine (FBs)
 

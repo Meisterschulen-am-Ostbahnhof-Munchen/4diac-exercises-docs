@@ -20,7 +20,7 @@ Use of a standard mathematical building block (`ADD_2`). This section demonstrat
 
 ## Description and Components
 
-[cite_start]In `Uebung_000.SUB`, an addition function block is used to calculate a sum.[cite: 1]
+In `Uebung_000.SUB`, an addition function block is used to calculate a sum.
 
 ### Function Blocks (FBs)
 

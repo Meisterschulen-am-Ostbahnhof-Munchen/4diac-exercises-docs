@@ -13,7 +13,7 @@ Connecting AUX input devices (e.g., ISOBUS joystick).
 
 ## Description and Components
 
-[cite_start]In `Uebung_010b1.SUB`, an Auxiliary Function is used to switch an output.[cite: 1]
+In `Uebung_010b1.SUB`, an Auxiliary Function is used to switch an output.
 
 ### Function Blocks (FBs)
 

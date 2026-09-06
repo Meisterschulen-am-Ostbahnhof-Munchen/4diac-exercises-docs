@@ -13,11 +13,11 @@ The objective is maximum reusability and clarity. By using typed sub-application
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003b3_AX.SUB` instantiates the type `Uebung_003b3_sub_AX` 15 times[cite: 1].
+The subapplication `Uebung_003b3_AX.SUB` instantiates the type `Uebung_003b3_sub_AX` 15 times.
 
 ### Typed Subapplication: `Uebung_003b3_sub_AX`
 
-[cite_start]This component is identical to the functionality in `Uebung_003b2_sub_AX`, however, the parameters `Input`, `Output`, and `u8SAMember` are clearly exposed[cite: 2].
+This component is identical to the functionality in `Uebung_003b2_sub_AX`, however, the parameters `Input`, `Output`, and `u8SAMember` are clearly exposed.
 
 ### Instance Configuration
 

@@ -13,7 +13,7 @@ Generating a periodic flashing signal.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_007_AX.SUB` uses a `E_CYCLE` function block in combination with a flip-flop[cite: 1].
+The subapplication `Uebung_007_AX.SUB` uses a `E_CYCLE` function block in combination with a flip-flop.
 
 ### Function Blocks (FBs)
 

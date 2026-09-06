@@ -13,7 +13,7 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a4.SUB` uses a push button to switch two separate toggle flip-flops simultaneously[cite: 1].
+The subapplication `Uebung_004a4.SUB` uses a push button to switch two separate toggle flip-flops simultaneously.
 
 ### Function Blocks (FBs)
 

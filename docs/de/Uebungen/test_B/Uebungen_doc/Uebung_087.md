@@ -14,7 +14,7 @@ Verwendung des `E_DEMUX` (Event Demultiplexer). Es wird gezeigt, wie ein zentral
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_087.SUB` nutzt eine Additions-Logik, um den Selektor-Eingang des Demultiplexers zu steuern[cite: 1].
+Die Subapplikation `Uebung_087.SUB` nutzt eine Additions-Logik, um den Selektor-Eingang des Demultiplexers zu steuern.
 
 ### Funktionsbausteine (FBs)
 

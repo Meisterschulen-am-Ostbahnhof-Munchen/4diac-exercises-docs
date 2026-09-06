@@ -13,7 +13,7 @@ Linking UI states with hardware memories. The goal is to ensure that an alarm st
 
 ## Description and Components
 
-[cite_start]In `Uebung_019b.SUB`, an SR flip-flop is used for the alarm status in addition to the mask switching [cite: 1].
+In `Uebung_019b.SUB`, an SR flip-flop is used for the alarm status in addition to the mask switching .
 
 ### Function Blocks (FBs)
 

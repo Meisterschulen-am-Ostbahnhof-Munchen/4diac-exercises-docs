@@ -15,19 +15,19 @@ The main objective of this exercise is to demonstrate XOR logic with more than t
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002a7_AX.SUB` uses a 3-way XOR gate to combine three digital inputs with one output[cite: 1].
+The subapplication `Uebung_002a7_AX.SUB` uses a 3-way XOR gate to combine three digital inputs with one output.
 
 ### Function Blocks (FBs)
 
 The following blocks are used:
 
-- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the hardware inputs `Input_I1` to `Input_I3`[cite: 1].
-- **`AX_XOR_3`**: An instance of type `AX_XOR_3`. [cite_start]This block performs the exclusive OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. These capture the hardware inputs `Input_I1` to `Input_I3`.
+- **`AX_XOR_3`**: An instance of type `AX_XOR_3`. This block performs the exclusive OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This block controls the hardware output `Output_Q1`.
 
 ### Adapter Interface: `AX.adp`
 
-[cite_start]The adapter type `AX` also bundles events and data values for efficient logic processing [cite: 2].
+The adapter type `AX` also bundles events and data values for efficient logic processing .
 
 -----
 

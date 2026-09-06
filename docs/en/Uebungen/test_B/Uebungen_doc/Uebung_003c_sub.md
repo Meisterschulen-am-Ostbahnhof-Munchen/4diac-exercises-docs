@@ -13,7 +13,7 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 ## Description and Components
 
-[cite_start]The type `Uebung_003c_sub` contains a local input function block and an ISOBUS output function block[cite: 1].
+The type `Uebung_003c_sub` contains a local input function block and an ISOBUS output function block.
 
 ### Internal Function Blocks (FBs)
 
@@ -26,7 +26,7 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 ## Interfaces
 
-[cite_start]The function block is configured via two parameters[cite: 1]:
+The function block is configured via two parameters:
 
 - **`Input`**: The physical button on the controller.
 - **`iInpNr`**: The sequential number (index) in the ISOBUS auxiliary pool.

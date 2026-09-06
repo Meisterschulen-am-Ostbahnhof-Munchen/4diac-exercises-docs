@@ -13,7 +13,7 @@ Using the `AX_BLINK` block for asymmetric flashing.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020f3_AX.SUB` uses a specialized flasher block[cite: 1].
+The subapplication `Uebung_020f3_AX.SUB` uses a specialized flasher block.
 
 ### Function Blocks (FBs)
 

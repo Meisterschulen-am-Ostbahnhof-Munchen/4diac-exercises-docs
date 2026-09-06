@@ -13,7 +13,7 @@ Combination of a time base (`E_CYCLE`) and an event counter (`E_CTU`).
 
 ## Functionality
 
-[cite_start]In `Uebung_084.SUB`, the counter is automatically incremented every second[cite: 1].
+In `Uebung_084.SUB`, the counter is automatically incremented every second.
 
 ![Uebung_084_network](./Uebung_084_network.svg)
 

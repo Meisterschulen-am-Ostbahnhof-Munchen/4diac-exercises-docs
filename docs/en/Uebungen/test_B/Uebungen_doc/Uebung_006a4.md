@@ -13,13 +13,13 @@ Using specialized service blocks to reduce diagram complexity.
 
 ## Description and Components
 
-[cite_start]In `Uebung_006a4.SUB`, the network of gates and sub-applications is replaced by the block `LinksRechts`[cite: 1].
+In `Uebung_006a4.SUB`, the network of gates and sub-applications is replaced by the block `LinksRechts`.
 
 ### Function Blocks (FBs)
 
 ![Uebung_006a4_network](./Uebung_006a4_network.svg)
 
-- **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]This block handles the complete management of the two outputs, including the internal direction logic[cite: 1].
+- **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts`. This block handles the complete management of the two outputs, including the internal direction logic.
 - **`E_T_FF_SR`**: Also provides the start signal to the input `EI_ON`.
 
 -----

@@ -19,7 +19,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_086`.
 
 ## Übersicht
 
-[cite_start]Verwendung des fundamentalen Bausteins `E_SWITCH`[cite: 1].
+Verwendung des fundamentalen Bausteins `E_SWITCH`.
 In dieser Übung wird demonstriert, wie ein Ereignis-Strom (`EI`) basierend auf einem logischen Zustand (`G`) auf zwei verschiedene Pfade aufgeteilt wird.
 
 -   Ist der Schalter `I1` auf `FALSE`, landet das `IND`-Ereignis am Ausgang `EO0`.

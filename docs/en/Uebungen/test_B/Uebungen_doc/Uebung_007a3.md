@@ -13,7 +13,7 @@ Implementation of a flasher with defined stop behavior. It demonstrates how even
 
 ## Description and Components
 
-[cite_start]In `Uebung_007a3.SUB`, the flasher logic is manually constructed from a switch and memory to ensure full control over the reset process.[cite: 1]
+In `Uebung_007a3.SUB`, the flasher logic is manually constructed from a switch and memory to ensure full control over the reset process.
 
 ### Function Blocks (FBs)
 

@@ -19,7 +19,7 @@ Feedback to the operator (color change).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010c_AX.SUB` extends the simple softkey circuit with a feedback block[cite: 1].
+The subapplication `Uebung_010c_AX.SUB` extends the simple softkey circuit with a feedback block.
 
 ### Function Blocks (FBs)
 

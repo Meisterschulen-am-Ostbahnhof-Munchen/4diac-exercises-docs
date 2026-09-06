@@ -13,7 +13,7 @@ Understanding the `E_REND` function block. This function block acts like an "AND
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a6_AX.SUB` uses `E_REND` to ensure that two buttons have been pressed before the light switches.[cite: 1]
+The subapplication `Uebung_004a6_AX.SUB` uses `E_REND` to ensure that two buttons have been pressed before the light switches.
 
 ### Function Blocks (FBs)
 

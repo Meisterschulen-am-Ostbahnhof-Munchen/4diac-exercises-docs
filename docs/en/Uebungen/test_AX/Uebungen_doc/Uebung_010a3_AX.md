@@ -13,7 +13,7 @@ Working with latching buttons.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a3_AX.SUB` uses `Button_L1`[cite: 1].
+The subapplication `Uebung_010a3_AX.SUB` uses `Button_L1`.
 
 ### Function Blocks (FBs)
 

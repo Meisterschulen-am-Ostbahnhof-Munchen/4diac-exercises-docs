@@ -13,7 +13,7 @@ Using the function block `NmGetCfInfo`. Every ISOBUS device has a globally uniqu
 
 ## Description and Components
 
-[cite_start]In `Uebung_120.SUB`, the network is searched for active Control Functions [CFs](cite: 1).
+In `Uebung_120.SUB`, the network is searched for active Control Functions [CFs](cite: 1).
 
 ### Function Blocks (FBs)
 

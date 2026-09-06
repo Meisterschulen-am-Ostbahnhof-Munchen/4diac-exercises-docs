@@ -13,7 +13,7 @@ Use of the function block `I_VDS` (Vehicle Direction and Speed).
 
 ## Description and Components
 
-[cite_start]In `Uebung_073.SUB`, the radar speed (GBSD) and the GPS speed (VDS) are processed in parallel[cite: 1].
+In `Uebung_073.SUB`, the radar speed (GBSD) and the GPS speed (VDS) are processed in parallel.
 
 ### Function Blocks (FBs)
 

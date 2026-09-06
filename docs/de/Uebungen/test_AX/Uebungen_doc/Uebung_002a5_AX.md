@@ -14,7 +14,7 @@ Das Hauptziel dieser Übung ist die Erweiterung der logischen Grundfunktionen au
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_002a5_AX.SUB` implementiert eine 3-fach-ODER-Logik unter Verwendung von Adapterverbindungen[cite: 1].
+Die Subapplikation `Uebung_002a5_AX.SUB` implementiert eine 3-fach-ODER-Logik unter Verwendung von Adapterverbindungen.
 
 ### Funktionsbausteine (FBs)
 
@@ -22,13 +22,13 @@ In dieser Konfiguration werden folgende Bausteine eingesetzt:
 
 ![Uebung_002a5_AX_network](./Uebung_002a5_AX_network.svg)
 
-  - **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese erfassen die Zustände der Hardware-Eingänge `Input_I1` bis `Input_I3`[cite: 1].
-  - **`AX_OR_3`**: Eine Instanz des Typs `AX_OR_3`. [cite_start]Dieser Baustein führt eine ODER-Verknüpfung für drei Adapter-Eingänge (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
+  - **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. Diese erfassen die Zustände der Hardware-Eingänge `Input_I1` bis `Input_I3`.
+  - **`AX_OR_3`**: Eine Instanz des Typs `AX_OR_3`. Dieser Baustein führt eine ODER-Verknüpfung für drei Adapter-Eingänge (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`.
 
 ### Adapter-Schnittstelle: `AX.adp`
 
-[cite_start]Wie bei den vorangegangenen Übungen wird der Adapter-Typ `AX` für die nahtlose Übertragung von Ereignissen und Daten verwendet[cite: 2].
+Wie bei den vorangegangenen Übungen wird der Adapter-Typ `AX` für die nahtlose Übertragung von Ereignissen und Daten verwendet.
 
 -----
 

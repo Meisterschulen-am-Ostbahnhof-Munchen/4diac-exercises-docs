@@ -13,7 +13,7 @@ Programming a variable pulse duration using the `E_STOPWATCH` function block.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020i.SUB` uses two buttons: one for execution and one for learning the time.[cite: 1]
+The subapplication `Uebung_020i.SUB` uses two buttons: one for execution and one for learning the time.
 
 ### Function Blocks (FBs)
 

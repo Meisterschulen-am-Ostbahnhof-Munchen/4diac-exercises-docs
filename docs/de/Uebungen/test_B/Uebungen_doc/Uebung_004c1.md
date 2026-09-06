@@ -14,7 +14,7 @@ Nutzung des Ereignisses `BUTTON_DOUBLE_CLICK` zur Steuerung einer Speicherfunkti
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004c1.SUB` schaltet eine Lampe nur bei einem Doppelklick um[cite: 1].
+Die Subapplikation `Uebung_004c1.SUB` schaltet eine Lampe nur bei einem Doppelklick um.
 
 ### Funktionsbausteine (FBs)
 

@@ -14,7 +14,7 @@ Verwendung des Bausteins `SCALE`. In der Automatisierungstechnik müssen Rohwert
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_042.SUB` wird ein Test-Szenario für den Skalierungs-Baustein aufgebaut[cite: 1].
+In `Uebung_042.SUB` wird ein Test-Szenario für den Skalierungs-Baustein aufgebaut.
 
 ### Funktionsbausteine (FBs)
 

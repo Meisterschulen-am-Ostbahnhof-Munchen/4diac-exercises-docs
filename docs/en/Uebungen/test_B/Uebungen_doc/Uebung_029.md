@@ -13,7 +13,7 @@ Using the function block `logiBUS_LED_DO_QX`. It demonstrates how to operate an 
 
 ## Description and Components
 
-[cite_start]In `Uebung_029.SUB`, three pushbuttons are used to control a single LED (`Q1`) in three different modes[cite: 1].
+In `Uebung_029.SUB`, three pushbuttons are used to control a single LED (`Q1`) in three different modes.
 
 ### Function Blocks (FBs)
 

@@ -21,7 +21,7 @@ Verwendung des Bausteins `E_TABLE`. Im Gegensatz zum gleichmäßigen Takt des `E
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_093.SUB` ist ein Zeit-Array hinterlegt: `[T#0s, T#2s, T#3s, T#4s]`[cite: 1].
+In `Uebung_093.SUB` ist ein Zeit-Array hinterlegt: `[T#0s, T#2s, T#3s, T#4s]`.
 
 ### Funktionsweise
 

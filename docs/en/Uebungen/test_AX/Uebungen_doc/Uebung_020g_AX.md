@@ -13,14 +13,14 @@ The objective is to filter a signal in both directions over time. Short pulses (
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020g_AX.SUB` uses the function block `AX_TONOF`[cite: 1].
+The subapplication `Uebung_020g_AX.SUB` uses the function block `AX_TONOF`.
 
 ### Function Blocks (FBs)
 
 ![Uebung_020g_AX_network](./Uebung_020g_AX_network.svg)
 
 - **`DigitalInput_I1`**: Type `logiBUS_IXA`.
-- **`AX_TONOF`**: [cite_start]Combines the power-on delay (`PT_ON`) and the power-off delay (`PT_OFF`) in one function block. Here, both times are set to 5 seconds[cite: 1].
+- **`AX_TONOF`**: Combines the power-on delay (`PT_ON`) and the power-off delay (`PT_OFF`) in one function block. Here, both times are set to 5 seconds.
 - - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`.
 
 -----

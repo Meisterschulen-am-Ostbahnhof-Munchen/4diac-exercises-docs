@@ -8,7 +8,7 @@
 
 ## Overview
 
-[cite_start]This sub-app type combines softkey input with automatic visual feedback on the terminal[cite: 1].
+This sub-app type combines softkey input with automatic visual feedback on the terminal.
 
 It bundles the building blocks `Softkey_IX`, `GreenWhiteBackground`, and `DigitalOutput_QX`. The user only needs to specify the softkey's `u16ObjId` and the physical `Output`. This function block ensures that with each press, both the hardware output is switched and the background color of the softkey on the terminal is changed (green/white). This significantly reduces the configuration effort for complex user interfaces.
 

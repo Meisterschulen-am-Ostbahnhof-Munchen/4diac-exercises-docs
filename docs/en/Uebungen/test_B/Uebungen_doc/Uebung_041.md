@@ -13,7 +13,7 @@ Optimization of the operating logic from Exercise 040. It demonstrates how, by c
 
 ## Description and Components
 
-[cite_start]In `Uebung_041.SUB`, a central event path is used to control the sequencer `sequence_E_08_loop`[cite: 1].
+In `Uebung_041.SUB`, a central event path is used to control the sequencer `sequence_E_08_loop`.
 
 ### Function Blocks (FBs)
 

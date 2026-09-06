@@ -13,7 +13,7 @@ Calculation of a time-dependent change (differential quotient) from pulse values
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_151_AX.SUB` extends the pulse counter with mathematical functions[cite: 1].
+The subapplication `Uebung_151_AX.SUB` extends the pulse counter with mathematical functions.
 
 ### Function Blocks (FBs)
 

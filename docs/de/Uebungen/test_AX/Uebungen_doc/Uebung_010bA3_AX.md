@@ -14,7 +14,7 @@ Verhalten von `AuxHeld`.
 
 ## Beschreibung
 
-[cite_start]Nutzt `AuxFunction2_X1` mit `AuxHeld`[cite: 1].
+Nutzt `AuxFunction2_X1` mit `AuxHeld`.
 
 -----
 

@@ -14,14 +14,14 @@ Das Hauptziel dieser Übung ist das Verständnis des Initialisierungsvorgangs in
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Übung nutzt die Subapplikation `Uebung_001c.SUB`, um eine Verbindung zwischen einem digitalen Eingang und einem Ausgang herzustellen, ergänzt um eine Selbst-Triggerung für den Systemstart[cite: 1].
+Die Übung nutzt die Subapplikation `Uebung_001c.SUB`, um eine Verbindung zwischen einem digitalen Eingang und einem Ausgang herzustellen, ergänzt um eine Selbst-Triggerung für den Systemstart.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_001c_network](./Uebung_001c_network.svg)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein liefert das Ereignis `IND` bei Änderungen und reagiert auf den Befehl `REQ`, um den aktuellen Wert manuell auszulesen[cite: 1].
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein setzt den Hardware-Ausgang `Output_Q1` bei jedem eintreffenden `REQ`-Ereignis[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. Dieser Baustein liefert das Ereignis `IND` bei Änderungen und reagiert auf den Befehl `REQ`, um den aktuellen Wert manuell auszulesen.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. Dieser Baustein setzt den Hardware-Ausgang `Output_Q1` bei jedem eintreffenden `REQ`-Ereignis.
 
 -----
 

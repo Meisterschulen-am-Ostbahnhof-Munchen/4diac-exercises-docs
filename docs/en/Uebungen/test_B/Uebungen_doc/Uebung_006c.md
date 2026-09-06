@@ -13,7 +13,7 @@ To learn about addressed event distribution. Instead of running a separate line 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006c.SUB` controls 8 lamp memory units via two central selector switches[cite: 1].
+The subapplication `Uebung_006c.SUB` controls 8 lamp memory units via two central selector switches.
 
 ### Function Blocks (FBs)
 

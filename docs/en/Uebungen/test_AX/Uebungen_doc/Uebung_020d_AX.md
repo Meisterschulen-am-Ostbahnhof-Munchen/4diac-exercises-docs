@@ -15,14 +15,14 @@ The objective of this exercise is to analyze the off-delay at the logic level. U
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020d_AX.SUB` uses an event switch to immediately set the memory when the button is pressed and reset it after a time delay when released.[cite: 1]
+The subapplication `Uebung_020d_AX.SUB` uses an event switch to immediately set the memory when the button is pressed and reset it after a time delay when released.
 
 ### Function Blocks (FBs)
 
 - **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
-- **`AX_SWITCH`**: [cite_start]Separates rising (`EO1`) and falling (`EO0`) edges.[cite: 1]
+- **`AX_SWITCH`**: Separates rising (`EO1`) and falling (`EO0`) edges.
 - **`AX_RS`**: The result memory.
-- **`E_DELAY`**: [cite_start]Delays the reset event by 2 seconds (`DT = T#2S`)[cite: 1].
+- **`E_DELAY`**: Delays the reset event by 2 seconds (`DT = T#2S`).
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
 
 -----

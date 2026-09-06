@@ -7,4 +7,4 @@ This article describes the logiBUS® exercise `Uebung_010c3`
 
 ## Overview
 
-[cite_start]Here, the encapsulation is carried through to its logical conclusion: A true type `Uebung_010c3_sub` is created from the sub-application [cite: 1]. This function block can now be used like a standard function block from the library. It only requires the softkey ID and the hardware output as parameters and handles all the internal logic and feedback wiring automatically.
+Here, the encapsulation is carried through to its logical conclusion: A true type `Uebung_010c3_sub` is created from the sub-application . This function block can now be used like a standard function block from the library. It only requires the softkey ID and the hardware output as parameters and handles all the internal logic and feedback wiring automatically.

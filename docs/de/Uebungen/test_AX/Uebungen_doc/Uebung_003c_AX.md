@@ -14,11 +14,11 @@ Das Ziel ist es, lokale Hardware-Eingänge (`I1` bis `I4`) für das ISOBUS-Netzw
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003c_AX.SUB` nutzt untypisierte (bzw. wiederverwendete typisierte) Sub-Applikationen, um vier Kanäle zu definieren[cite: 1].
+Die Subapplikation `Uebung_003c_AX.SUB` nutzt untypisierte (bzw. wiederverwendete typisierte) Sub-Applikationen, um vier Kanäle zu definieren.
 
 ### Sub-Komponente: `Uebung_003c_sub_AX`
 
-[cite_start]Dieser Sub-Baustein verbindet einen lokalen digitalen Eingang mit einem ISOBUS-Auxiliary-Ausgangsbaustein[cite: 2].
+Dieser Sub-Baustein verbindet einen lokalen digitalen Eingang mit einem ISOBUS-Auxiliary-Ausgangsbaustein.
 
   - **Eingang**: `logiBUS_IXA` (Liest den lokalen Pin)
   - **Ausgang**: `Aux_QXA` (Sendet den Status als ISOBUS AUX Nachricht)

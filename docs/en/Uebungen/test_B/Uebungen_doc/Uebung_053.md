@@ -13,7 +13,7 @@ Combining bits into a byte. This is a low-level form of data bundling, often use
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_053.SUB` uses conversion blocks for the data type `BYTE`[cite: 1].
+The subapplication `Uebung_053.SUB` uses conversion blocks for the data type `BYTE`.
 
 ### Function Blocks (FBs)
 

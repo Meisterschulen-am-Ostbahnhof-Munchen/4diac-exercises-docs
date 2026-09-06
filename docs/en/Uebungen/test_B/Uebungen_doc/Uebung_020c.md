@@ -13,7 +13,7 @@ Using the standardized timer block `E_TON`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020c.SUB` uses the `E_TON` block from the Event Timer Library[cite: 1].
+The subapplication `Uebung_020c.SUB` uses the `E_TON` block from the Event Timer Library.
 
 ### Function Blocks (FBs)
 

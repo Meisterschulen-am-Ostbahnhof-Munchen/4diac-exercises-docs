@@ -14,15 +14,15 @@ Das Ziel ist es, eine komplexe E/A-Struktur abzubilden. Es wird gezeigt, wie Inf
 
 ## Beschreibung und Komponenten
 
-[cite_start]In der Subapplikation `Uebung_002a5b.SUB` werden drei Eingangsbausteine über ein ODER-Gatter mit drei Ausgangsbausteinen verknüpft[cite: 1].
+In der Subapplikation `Uebung_002a5b.SUB` werden drei Eingangsbausteine über ein ODER-Gatter mit drei Ausgangsbausteinen verknüpft.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_002a5b_network](./Uebung_002a5b_network.svg)
 
-  - **`DigitalInput_I1` bis `I3`**: Drei Instanzen des Typs `logiBUS_IX`. [cite_start]Sie überwachen die Hardware-Eingänge `Input_I1`, `Input_I2` und `Input_I3`[cite: 1].
-  - **`OR_3_BOOL`**: Eine Instanz des Typs `OR_3_BOOL` (aus der IEC 61131-Bibliothek). [cite_start]Dieser Baustein führt eine ODER-Operation für drei boolesche Eingänge aus[cite: 1]. Er reagiert auf `REQ` und quittiert mit `CNF`.
-  - **`DigitalOutput_Q1` bis `Q3`**: Drei Instanzen des Typs `logiBUS_QX`. [cite_start]Sie steuern die physischen Ausgänge `Output_Q1`, `Output_Q2` und `Output_Q3`[cite: 1].
+  - **`DigitalInput_I1` bis `I3`**: Drei Instanzen des Typs `logiBUS_IX`. Sie überwachen die Hardware-Eingänge `Input_I1`, `Input_I2` und `Input_I3`.
+  - **`OR_3_BOOL`**: Eine Instanz des Typs `OR_3_BOOL` (aus der IEC 61131-Bibliothek). Dieser Baustein führt eine ODER-Operation für drei boolesche Eingänge aus. Er reagiert auf `REQ` und quittiert mit `CNF`.
+  - **`DigitalOutput_Q1` bis `Q3`**: Drei Instanzen des Typs `logiBUS_QX`. Sie steuern die physischen Ausgänge `Output_Q1`, `Output_Q2` und `Output_Q3`.
 
 -----
 

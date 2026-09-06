@@ -14,7 +14,7 @@ Das Ziel ist die Reduktion der visuellen Komplexität im Netzwerk-Diagramm. Es w
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a3.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops[cite: 1].
+Die Subapplikation `Uebung_004a3.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops.
 
 ### Funktionsbausteine (FBs)
 

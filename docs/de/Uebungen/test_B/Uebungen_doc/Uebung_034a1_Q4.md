@@ -4,10 +4,9 @@
 
 ## Übersicht
 
-[cite_start]Variante von Übung 034a1_Q1, konfiguriert für den Hardware-Ausgang `Q4`[cite: 1].
+Variante von Übung 034a1_Q1, konfiguriert für den Hardware-Ausgang `Q4`.
 
 ![Uebung_034a1_Q4_network](./Uebung_034a1_Q4_network.svg)
-
 
 ---
 

@@ -13,7 +13,7 @@ Encapsulation of the output logic. The function block separates the execution lo
 
 ## Description and Components
 
-[cite_start]The type `Uebung_026_sub` combines a memory with a plausibility check[cite: 1].
+The type `Uebung_026_sub` combines a memory with a plausibility check.
 
 ### Internal Function Blocks (FBs)
 
@@ -21,13 +21,13 @@ Encapsulation of the output logic. The function block separates the execution lo
 
 - **`E_SR`**: Stores whether the actuator should currently be active.
 - **`QX`**: Type `logiBUS_QX`. Controls the physical port.
-- **`E_SWITCH`**: Serves as a feedback gate. [cite_start]Only if the memory is actually set to TRUE is the confirmation event passed on at output `EO1`[cite: 1].
+- **`E_SWITCH`**: Serves as a feedback gate. Only if the memory is actually set to TRUE is the confirmation event passed on at output `EO1`.
 
 -----
 
 ## Interfaces
 
-[cite_start]The block offers a clear event interface[cite: 1]:
+The block offers a clear event interface:
 
 - **`SET`**: Switches the actuator on.
 - **`RESET`**: Switches the actuator off.

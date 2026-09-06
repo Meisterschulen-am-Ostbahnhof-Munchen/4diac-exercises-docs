@@ -9,4 +9,4 @@ This article describes the logiBUS® exercise `Uebung_010bA`
 
 ![Uebung_010bA_network](./Uebung_010bA_network.svg)
 
-[cite_start]Uses `Button_A1` with `BT_STILL_HELD_START`[cite: 1]. Unlike the simple `STILL_HELD`, this event is **not repeated**. It fires exactly once, as soon as the hold time has been exceeded. This corresponds to a clean "long press" evaluation.
+Uses `Button_A1` with `BT_STILL_HELD_START`. Unlike the simple `STILL_HELD`, this event is **not repeated**. It fires exactly once, as soon as the hold time has been exceeded. This corresponds to a clean "long press" evaluation.

@@ -22,7 +22,7 @@ Using the building block `logiBUS_LED_PWM_QX`. This demonstrates how to create s
 
 ## Description and Components
 
-[cite_start]In `Uebung_030.SUB`, four pushbuttons are used to trigger various PWM effects on an LED (`Q1`)[cite: 1].
+In `Uebung_030.SUB`, four pushbuttons are used to trigger various PWM effects on an LED (`Q1`).
 
 ### Function Blocks (FBs)
 

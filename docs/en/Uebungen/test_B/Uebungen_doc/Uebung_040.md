@@ -29,7 +29,7 @@ Combining event counters (`E_CTU`) and Event demultiplexer (`E_DEMUX`) for contr
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_040.SUB` uses two counter branches to control the event inputs of the sequencer `sequence_E_08_loop`[cite: 1].
+The subapplication `Uebung_040.SUB` uses two counter branches to control the event inputs of the sequencer `sequence_E_08_loop`.
 
 ### Functionality
 

@@ -13,7 +13,7 @@ Using the function block `AlPgnTxNew8B`. It demonstrates how to define a proprie
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_124.SUB` combines participant search with a send function block[cite: 1].
+The subapplication `Uebung_124.SUB` combines participant search with a send function block.
 
 ### Function Blocks (FBs)
 

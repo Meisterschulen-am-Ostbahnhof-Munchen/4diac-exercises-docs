@@ -20,7 +20,7 @@ Verknüpfung von ISOBUS (UT) und Hardware-Peripherie (DataPanel).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010a4_AX.SUB` verbindet einen Softkey mit einem Ausgang eines DataPanels[cite: 1].
+Die Subapplikation `Uebung_010a4_AX.SUB` verbindet einen Softkey mit einem Ausgang eines DataPanels.
 
 ### Funktionsbausteine (FBs)
 

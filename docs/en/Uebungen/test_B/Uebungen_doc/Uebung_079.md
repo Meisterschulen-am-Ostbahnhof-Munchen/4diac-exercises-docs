@@ -13,7 +13,7 @@ To learn the entire range of TECU interface function blocks. An ISOBUS tractor r
 
 ## Overview of the Function Blocks (FBs)
 
-[cite_start]All relevant TECU input function blocks are located in `Uebung_079.SUB`[cite: 1]:
+All relevant TECU input function blocks are located in `Uebung_079.SUB`:
 
 ![Uebung_079_network](./Uebung_079_network.svg)
 

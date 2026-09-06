@@ -18,7 +18,7 @@ Effiziente Verbindung vieler Softkeys.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010b4_AX.SUB` nutzt untypisierte Sub-Applikationen (`Uebung_010b4_sub_AX`), um 8 Softkeys auf 8 Ausgänge zu mappen[cite: 1].
+Die Subapplikation `Uebung_010b4_AX.SUB` nutzt untypisierte Sub-Applikationen (`Uebung_010b4_sub_AX`), um 8 Softkeys auf 8 Ausgänge zu mappen.
 
 Die Struktur ist analog zu `Uebung_003b2_AX`, nur mit ISOBUS-Softkeys als Quelle.
 

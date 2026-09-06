@@ -13,7 +13,7 @@ Dynamic selection between different processing logics (momentary, latching, dela
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_103.SUB` uses an ISOBUS numeric keypad to select between three logic branches[cite: 1].
+The subapplication `Uebung_103.SUB` uses an ISOBUS numeric keypad to select between three logic branches.
 
 ### Function Blocks (FBs)
 

@@ -13,7 +13,7 @@ The goal is to reduce visual complexity. It demonstrates that the explicit `E_ME
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a3_AX.SUB` connects two event sources directly to the clock input of the flip-flop[cite: 1].
+The subapplication `Uebung_004a3_AX.SUB` connects two event sources directly to the clock input of the flip-flop.
 
 ### Function Blocks (FBs)
 

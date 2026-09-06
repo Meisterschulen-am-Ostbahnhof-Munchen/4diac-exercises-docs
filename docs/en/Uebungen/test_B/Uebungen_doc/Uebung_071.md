@@ -13,7 +13,7 @@ Implementation of threshold logic based on TECU data. The output should be activ
 
 ## Description and Components
 
-[cite_start]In `Uebung_071.SUB`, the wheel-based speed is compared to a fixed value[cite: 1].
+In `Uebung_071.SUB`, the wheel-based speed is compared to a fixed value.
 
 ### Function Blocks (FBs)
 

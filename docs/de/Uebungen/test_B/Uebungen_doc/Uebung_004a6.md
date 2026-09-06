@@ -16,7 +16,7 @@ Erlernen des Umgangs mit dem `E_REND` Baustein. Dieser fungiert wie ein "Gedäch
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a6.SUB` nutzt `E_REND`, um sicherzustellen, dass zwei Taster gedrückt wurden, bevor der Ausgang umschaltet[cite: 1].
+Die Subapplikation `Uebung_004a6.SUB` nutzt `E_REND`, um sicherzustellen, dass zwei Taster gedrückt wurden, bevor der Ausgang umschaltet.
 
 ### Funktionsbausteine (FBs)
 

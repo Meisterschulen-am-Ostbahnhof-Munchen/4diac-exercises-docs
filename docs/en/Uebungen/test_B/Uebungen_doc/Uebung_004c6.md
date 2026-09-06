@@ -13,7 +13,7 @@ Configuration of an n-click using arguments.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c6.SUB` uses the function block type `logiBUS_IE2` with the event `BUTTON_MULTIPLE_CLICK` and the argument `arg = 3`[cite: 1].
+The subapplication `Uebung_004c6.SUB` uses the function block type `logiBUS_IE2` with the event `BUTTON_MULTIPLE_CLICK` and the argument `arg = 3`.
 
 ----
 

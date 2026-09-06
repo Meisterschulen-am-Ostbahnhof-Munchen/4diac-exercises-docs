@@ -24,11 +24,11 @@ Erlernen der Verarbeitung von numerischen Variablen im ISOBUS-Kontext. Es wird g
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_011.SUB` nutzt einen Eingabe-Baustein für numerische Werte[cite: 1].
+Die Subapplikation `Uebung_011.SUB` nutzt einen Eingabe-Baustein für numerische Werte.
 
 ### Funktionsbausteine (FBs)
 
-  - **`InputNumber_I1`**: Typ `NumericValue_ID`. [cite_start]Dieser Baustein repräsentiert ein numerisches Eingabefeld (Data Mask Object) auf dem ISOBUS-Terminal[cite: 1]. Sobald der Nutzer die Eingabe bestätigt, sendet der Baustein den neuen Wert am Port `IN` (DWORD) und feuert ein `IND`-Ereignis.
+  - **`InputNumber_I1`**: Typ `NumericValue_ID`. Dieser Baustein repräsentiert ein numerisches Eingabefeld (Data Mask Object) auf dem ISOBUS-Terminal. Sobald der Nutzer die Eingabe bestätigt, sendet der Baustein den neuen Wert am Port `IN` (DWORD) und feuert ein `IND`-Ereignis.
   - **`F_DWORD_TO_UDINT`**: Ein Konvertierungs-Baustein, der den rohen 32-Bit-Wert vom Terminal in einen vorzeichenlosen Ganzzahlwert (UDINT) für die weitere Logik umwandelt.
 
 -----

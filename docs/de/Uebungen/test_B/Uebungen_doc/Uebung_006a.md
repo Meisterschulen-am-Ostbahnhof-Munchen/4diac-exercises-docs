@@ -16,7 +16,7 @@ Einführung des `E_T_FF_SR` Bausteins. Dieser vereint die Funktionen eines Toggl
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a.SUB` verknüpft drei separate Taster mit einem zentralen Speicherglied[cite: 1].
+Die Subapplikation `Uebung_006a.SUB` verknüpft drei separate Taster mit einem zentralen Speicherglied.
 
 ### Funktionsbausteine (FBs)
 

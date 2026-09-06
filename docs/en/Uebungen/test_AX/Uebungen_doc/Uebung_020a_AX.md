@@ -13,14 +13,14 @@ The main objective of this exercise is to demonstrate the combination of event s
 
 ## Description and Components
 
-[cite_start]The exercise consists of a subapplication (`Uebung_020a_AX.SUB`) that converts the state of an input into set/reset commands for a memory location via a switch [cite: 1].
+The exercise consists of a subapplication (`Uebung_020a_AX.SUB`) that converts the state of an input into set/reset commands for a memory location via a switch .
 
 ### Function Blocks (FBs)
 
 ![Uebung_020a_AX_network](./Uebung_020a_AX_network.svg)
 
 - **`DigitalInput_I1`**: Type `logiBUS_IXA`. Reads the physical input `Input_I1`.
-- **`AX_SWITCH`**: An event switch. [cite_start]Passes the incoming adapter event to the output `EO1` (TRUE) or `EO0` (FALSE), depending on the logical state of the input `G` [cite: 1].
+- **`AX_SWITCH`**: An event switch. Passes the incoming adapter event to the output `EO1` (TRUE) or `EO0` (FALSE), depending on the logical state of the input `G` .
 - **`AX_RS`**: An RS flip-flop with an adapter interface. It stores the state between events.
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Sets the physical output `Output_Q1`.
 

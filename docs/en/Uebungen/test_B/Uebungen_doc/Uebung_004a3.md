@@ -13,7 +13,7 @@ The objective is to reduce the visual complexity of the network diagram. It demo
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a3.SUB` connects two event sources directly to the clock input of the flip-flop[cite: 1].
+The subapplication `Uebung_004a3.SUB` connects two event sources directly to the clock input of the flip-flop.
 
 ### Function Blocks (FBs)
 

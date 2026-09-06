@@ -15,7 +15,7 @@ The objective is to implement a power-on delay using classic PLC behavior (inclu
 
 ## Description and Components
 
-[cite_start]In `Uebung_020c3.SUB`, a clock is used to drive the classic timer[cite: 1].
+In `Uebung_020c3.SUB`, a clock is used to drive the classic timer.
 
 ### Function Blocks (FBs)
 

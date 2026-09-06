@@ -14,7 +14,7 @@ Verarbeitung von Auxiliary Inputs (z.B. Joystick-Tasten).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010b1_AX.SUB` verbindet eine AUX-Funktion mit einem Ausgang[cite: 1].
+Die Subapplikation `Uebung_010b1_AX.SUB` verbindet eine AUX-Funktion mit einem Ausgang.
 
 ### Funktionsbausteine (FBs)
 

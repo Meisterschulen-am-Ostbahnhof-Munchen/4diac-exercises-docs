@@ -14,7 +14,7 @@ Realisierung einer Schrittkette ohne automatische Zeitübergänge.
 
 ## Funktionsweise
 
-[cite_start]In `Uebung_036.SUB` sind die Zeitparameter `DT_S1_S2` und `DT_S2_S3` auf den Wert `NO_TIME` gesetzt[cite: 1].
+In `Uebung_036.SUB` sind die Zeitparameter `DT_S1_S2` und `DT_S2_S3` auf den Wert `NO_TIME` gesetzt.
 
 ![Uebung_036_network](./Uebung_036_network.svg)
 

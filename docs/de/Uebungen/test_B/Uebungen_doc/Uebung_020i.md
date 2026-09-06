@@ -14,7 +14,7 @@ Programmierung einer variablen Impulsdauer unter Verwendung des `E_STOPWATCH` Ba
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020i.SUB` nutzt zwei Taster: Einen zum Ausführen und einen zum Lernen der Zeit[cite: 1].
+Die Subapplikation `Uebung_020i.SUB` nutzt zwei Taster: Einen zum Ausführen und einen zum Lernen der Zeit.
 
 ### Funktionsbausteine (FBs)
 

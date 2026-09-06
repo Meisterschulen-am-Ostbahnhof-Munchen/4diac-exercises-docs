@@ -13,7 +13,7 @@ Using a `Button_IX` function block.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a2.SUB` uses a button instead of a softkey to control an output[cite: 1].
+The subapplication `Uebung_010a2.SUB` uses a button instead of a softkey to control an output.
 
 ### Function Blocks (FBs)
 

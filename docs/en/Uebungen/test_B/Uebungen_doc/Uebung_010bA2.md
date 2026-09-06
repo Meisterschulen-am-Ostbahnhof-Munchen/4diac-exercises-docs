@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_010bA2`. It covers the int
 
 ## Functionality
 
-[cite_start]Uses `AuxFunction2_X1` with the event `AuxEnabled`[cite: 1]. The behavior depends on the type of assigned control element (joystick button):
+Uses `AuxFunction2_X1` with the event `AuxEnabled`. The behavior depends on the type of assigned control element (joystick button):
 
 ![Uebung_010bA2_network](./Uebung_010bA2_network.svg)
 

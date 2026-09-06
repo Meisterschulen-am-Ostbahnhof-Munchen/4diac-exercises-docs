@@ -14,7 +14,7 @@ Abstraktion von Funk-Signalen. Der Baustein ermöglicht es, Funktasten so einfac
 
 ## Beschreibung und Komponenten
 
-[cite_start]Der Typ `Uebung_003b2_sub` bündelt den Funk-Empfang und die CAN-Ausgabe[cite: 1].
+Der Typ `Uebung_003b2_sub` bündelt den Funk-Empfang und die CAN-Ausgabe.
 
 ### Interne Funktionsbausteine (FBs)
 
@@ -27,7 +27,7 @@ Abstraktion von Funk-Signalen. Der Baustein ermöglicht es, Funktasten so einfac
 
 ## Schnittstellen
 
-[cite_start]Der Baustein bietet drei Konfigurationsmöglichkeiten[cite: 1]:
+Der Baustein bietet drei Konfigurationsmöglichkeiten:
 
 -   **`Input`**: Name der Funktaste (z.B. `Key_01`).
 -   **`u8SAMember`**: CAN-Bus Adresse des Zielmoduls.

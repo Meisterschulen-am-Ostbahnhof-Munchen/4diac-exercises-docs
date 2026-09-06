@@ -19,7 +19,7 @@ Understanding edge detection using event switches. This section demonstrates how
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_005.SUB` combines a standard input (`IX`) with an event gate to clock a flip-flop[cite: 1].
+The subapplication `Uebung_005.SUB` combines a standard input (`IX`) with an event gate to clock a flip-flop.
 
 ### Function Blocks (FBs)
 

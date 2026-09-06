@@ -17,6 +17,6 @@ This article describes the logiBUS® exercise `Uebung_131`. Here, message recept
 
 ## Overview
 
-[cite_start]Using the `AlPgnRxNew8Bcylc` block[cite: 1].
+Using the `AlPgnRxNew8Bcylc` block.
 
 This block is specifically designed for messages that are expected regularly (cyclically). A check time is defined via the parameter `u16CtrlTime = 1500`ms. If the partner does not send a message for more than 1.5 seconds, this is considered a communication interruption. The application can react to this error to bring the machine to a safe state.

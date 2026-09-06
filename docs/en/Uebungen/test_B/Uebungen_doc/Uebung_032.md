@@ -27,7 +27,7 @@ Using the function block `logiBUS_LED_strip_QX`. This is a high-level function b
 
 ## Description and Components
 
-[cite_start]In `Uebung_032.SUB`, four different colors (green, yellow, red, blue) are mapped to four pushbuttons[cite: 1].
+In `Uebung_032.SUB`, four different colors (green, yellow, red, blue) are mapped to four pushbuttons.
 
 ### Function Blocks (FBs)
 

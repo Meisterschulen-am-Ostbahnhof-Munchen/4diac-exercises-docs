@@ -18,11 +18,11 @@ Das Ziel ist es, lokale physische Schalter (`I1` bis `I4`) für das ISOBUS-Netzw
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003c.SUB` nutzt vier Instanzen des Typs `Uebung_003c_sub`, um vier Kanäle für das ISOBUS-Mapping bereitzustellen[cite: 1].
+Die Subapplikation `Uebung_003c.SUB` nutzt vier Instanzen des Typs `Uebung_003c_sub`, um vier Kanäle für das ISOBUS-Mapping bereitzustellen.
 
 ### Typisierte Sub-Applikation: `Uebung_003c_sub`
 
-[cite_start]Dieser Baustein verbindet einen Standard-Digitaleingang mit einem ISOBUS-Auxiliary-Ausgang[cite: 2]. Er verfügt über folgende Parameter:
+Dieser Baustein verbindet einen Standard-Digitaleingang mit einem ISOBUS-Auxiliary-Ausgang. Er verfügt über folgende Parameter:
 
   - **`Input`**: Auswahl des lokalen Hardware-Pins (z.B. `Input_I1`).
   - **`iInpNr`**: Die fortlaufende Nummer des AUX-Eingangs im Objekt-Pool (Index 0 bis n).

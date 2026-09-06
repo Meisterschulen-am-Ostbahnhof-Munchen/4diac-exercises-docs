@@ -31,12 +31,12 @@ Learning event delay (`E_DELAY`) for creating sequences. This section demonstrat
 
 ## Description and Components
 
-[cite_start]In `Uebung_018.SUB`, two audio function blocks are chained together using a timer.[cite: 1]
+In `Uebung_018.SUB`, two audio function blocks are chained together using a timer.
 
 ### Function Blocks (FBs)
 
 - **`Q_CtrlAudioSignal_0`**: First tone (440 Hz).
-- **`E_DELAY`**: A delay function block.[cite_start]After an event at input `START`, it waits for `DT` (here 250 ms) before passing the event on to output `EO`.[cite: 1]
+- **`E_DELAY`**: A delay function block.After an event at input `START`, it waits for `DT` (here 250 ms) before passing the event on to output `EO`.
 
 - **`Q_CtrlAudioSignal_1`**: Second tone (880 Hz - one octave higher).
 

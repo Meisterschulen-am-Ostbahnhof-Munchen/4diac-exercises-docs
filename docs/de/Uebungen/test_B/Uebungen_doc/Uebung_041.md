@@ -14,7 +14,7 @@ Optimierung der Bedienlogik aus Übung 040. Es wird gezeigt, wie man durch die K
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_041.SUB` wird ein zentraler Ereignispfad genutzt, um den Sequenzer `sequence_E_08_loop` anzusteuern[cite: 1].
+In `Uebung_041.SUB` wird ein zentraler Ereignispfad genutzt, um den Sequenzer `sequence_E_08_loop` anzusteuern.
 
 ### Funktionsbausteine (FBs)
 

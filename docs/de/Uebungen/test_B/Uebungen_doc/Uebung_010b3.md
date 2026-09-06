@@ -14,7 +14,7 @@ Verwendung von `Aux_IE` (Event) zur Steuerung von Speichern.
 
 ## Beschreibung
 
-[cite_start]In `Uebung_010b3.SUB` wird eine AUX-Funktion genutzt, um ein Flip-Flop zu toggeln[cite: 1].
+In `Uebung_010b3.SUB` wird eine AUX-Funktion genutzt, um ein Flip-Flop zu toggeln.
 
 ### Funktionsweise
 

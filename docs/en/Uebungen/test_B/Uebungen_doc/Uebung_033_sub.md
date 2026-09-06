@@ -7,7 +7,7 @@ This article describes the sub-app type `Uebung_033_sub`. It serves as a reusabl
 
 ## Overview
 
-[cite_start]This block combines a digital input block (`IX`) and a specialized RGB strip output (`logiBUS_LED_strip_QX`)[cite: 1].
+This block combines a digital input block (`IX`) and a specialized RGB strip output (`logiBUS_LED_strip_QX`).
 
 It provides parameters for selecting the input button (`Input`), the color (`Colour`), and the output channel (`Output`). Internally, it is preset to a fixed blinking frequency of 1 Hz. By encapsulating this complex driver logic, colored status indicators can be easily implemented in projects through parameterization instead of complex individual wiring.
 

@@ -14,7 +14,7 @@ Auswahl eines Signals aus mehreren Quellen (Umschalter).
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_090a1_AX.SUB` verwendet einen `AX_MUX_2` Baustein[cite: 1].
+Die Subapplikation `Uebung_090a1_AX.SUB` verwendet einen `AX_MUX_2` Baustein.
 
 ### Funktionsbausteine (FBs)
 

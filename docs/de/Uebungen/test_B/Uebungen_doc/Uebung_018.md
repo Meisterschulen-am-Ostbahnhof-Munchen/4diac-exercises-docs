@@ -26,12 +26,12 @@ Erlernen der Ereignisverzögerung (`E_DELAY`) zur Erstellung von Sequenzen. Es w
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_018.SUB` werden zwei Audio-Bausteine über ein Zeitglied verkettet[cite: 1].
+In `Uebung_018.SUB` werden zwei Audio-Bausteine über ein Zeitglied verkettet.
 
 ### Funktionsbausteine (FBs)
 
   - **`Q_CtrlAudioSignal_0`**: Erster Ton (440 Hz).
-  - **`E_DELAY`**: Ein Verzögerungs-Baustein. [cite_start]Er wartet nach einem Ereignis am Eingang `START` die Zeit `DT` ab (hier 250 ms), bevor er das Ereignis am Ausgang `EO` weitergibt[cite: 1].
+  - **`E_DELAY`**: Ein Verzögerungs-Baustein. Er wartet nach einem Ereignis am Eingang `START` die Zeit `DT` ab (hier 250 ms), bevor er das Ereignis am Ausgang `EO` weitergibt.
   - **`Q_CtrlAudioSignal_1`**: Zweiter Ton (880 Hz - eine Oktave höher).
 
 -----

@@ -13,7 +13,7 @@ Learning how to work with alarm masks. In the ISOBUS standard, alarms take prece
 
 ## Description and Components
 
-[cite_start]In `Uebung_019a.SUB`, a four-stage selector (`F_SEL_E_4`) is used for mask selection[cite: 1].
+In `Uebung_019a.SUB`, a four-stage selector (`F_SEL_E_4`) is used for mask selection.
 
 ### Function Blocks (FBs)
 

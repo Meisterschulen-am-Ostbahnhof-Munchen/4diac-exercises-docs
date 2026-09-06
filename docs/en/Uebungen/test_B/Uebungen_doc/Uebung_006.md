@@ -15,7 +15,7 @@ Implementation of a circuit with separate set and reset logic using event-based 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006.SUB` uses two event-based inputs and an SR memory [cite: 1].
+The subapplication `Uebung_006.SUB` uses two event-based inputs and an SR memory .
 
 ### Function Blocks (FBs)
 
@@ -23,7 +23,7 @@ Implementation of a circuit with separate set and reset logic using event-based 
 
 - **`I1` (Set)**: Pushbutton for switching on (configured for single click).
 - **`I2` (Reset)**: Pushbutton for switching off (configured for single click).
-- **`E_SR`**: An event-based memory block. [cite_start]An event at the input `S` (Set) sets the output `Q` to TRUE, an event at the input `R` (Reset) sets it to FALSE[cite: 1].
+- **`E_SR`**: An event-based memory block. An event at the input `S` (Set) sets the output `Q` to TRUE, an event at the input `R` (Reset) sets it to FALSE.
 
 -----
 

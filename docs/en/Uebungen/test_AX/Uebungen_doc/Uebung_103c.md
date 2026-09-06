@@ -13,7 +13,7 @@ Testing a specific path of the MUX/DEMUX structure.
 
 ## Description
 
-[cite_start]Compared to `Uebung_103`, the input field has been removed[cite: 1]. The selection value is instead fixed to the value `UINT#1` (index 1 -> branch 2 "latching") via a function block `F_MOVE`.
+Compared to `Uebung_103`, the input field has been removed. The selection value is instead fixed to the value `UINT#1` (index 1 -> branch 2 "latching") via a function block `F_MOVE`.
 
 -----
 

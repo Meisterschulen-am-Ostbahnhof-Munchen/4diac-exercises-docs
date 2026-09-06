@@ -28,7 +28,7 @@ Verwendung des Bausteins `logiBUS_LED_strip_QX`. Dies ist ein High-Level Baustei
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_032.SUB` werden vier verschiedene Farben (Grün, Gelb, Rot, Blau) auf vier Taster gemappt[cite: 1].
+In `Uebung_032.SUB` werden vier verschiedene Farben (Grün, Gelb, Rot, Blau) auf vier Taster gemappt.
 
 ### Funktionsbausteine (FBs)
 

@@ -13,7 +13,7 @@ Using the `BUTTON_PRESS_REPEAT_DONE` event to update a display object.
 
 ## Description and Components
 
-[cite_start]In `Uebung_011a.SUB`, a byte value is read from a button and sent to a numeric display on the terminal.[cite: 1]
+In `Uebung_011a.SUB`, a byte value is read from a button and sent to a numeric display on the terminal.
 
 ### Function Blocks (FBs)
 

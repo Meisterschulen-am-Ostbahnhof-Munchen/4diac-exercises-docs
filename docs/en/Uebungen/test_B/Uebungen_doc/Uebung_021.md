@@ -20,12 +20,12 @@ Implementation of a simple sequence control: A process is started and stops auto
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_021.SUB` uses two softkeys to control the movement of an actuator (`Q1`)[cite: 1].
+The subapplication `Uebung_021.SUB` uses two softkeys to control the movement of an actuator (`Q1`).
 
 ### Function Blocks (FBs)
 
-- **`SoftKey_UP_F1`**: Functions as a **START button**. [cite_start]It is configured on `SK_RELEASED`[cite: 1].
-- **`SoftKey_F2_DOWN`**: Simulates the **limit switch**. [cite_start]It reacts immediately when pressed (`SK_PRESSED`)[cite: 1].
+- **`SoftKey_UP_F1`**: Functions as a **START button**. It is configured on `SK_RELEASED`.
+- **`SoftKey_F2_DOWN`**: Simulates the **limit switch**. It reacts immediately when pressed (`SK_PRESSED`).
 - **`E_SR`**: The memory for the movement state.
 - **`DigitalOutput_Q1`**: The output for the cylinder valve.
 

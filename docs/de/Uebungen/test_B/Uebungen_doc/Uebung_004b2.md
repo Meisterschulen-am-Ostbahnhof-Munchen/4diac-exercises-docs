@@ -14,7 +14,7 @@ Vertiefung des Verständnisses für parallele, rückgekoppelte Logikstrukturen. 
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_004b2.SUB` sind zwei identische Logik-Stränge (Switch + Speicher) nebeneinander aufgebaut[cite: 1].
+In `Uebung_004b2.SUB` sind zwei identische Logik-Stränge (Switch + Speicher) nebeneinander aufgebaut.
 
 ### Funktionsbausteine (FBs)
 

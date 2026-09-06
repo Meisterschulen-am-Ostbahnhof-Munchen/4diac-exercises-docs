@@ -22,7 +22,7 @@ Verwendung des Bausteins `E_TRAIN`. Ziel ist es, nach einem einzelnen Start-Impu
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_091.SUB` wird ein Ereignis-Zug (Train) zur Steuerung eines Flip-Flops genutzt[cite: 1].
+In `Uebung_091.SUB` wird ein Ereignis-Zug (Train) zur Steuerung eines Flip-Flops genutzt.
 
 ### Funktionsweise
 

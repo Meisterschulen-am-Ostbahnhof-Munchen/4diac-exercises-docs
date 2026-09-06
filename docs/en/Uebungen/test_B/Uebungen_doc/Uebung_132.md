@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_132`
 
 ## Overview
 
-[cite_start]This exercise uses the function block `AlPgnRxNew8B_REQ`[cite: 1].
+This exercise uses the function block `AlPgnRxNew8B_REQ`.
 
 ![Uebung_132_network](./Uebung_132_network.svg)
 

@@ -13,7 +13,7 @@ The objective is to review direct I/O linking using adapter technology. It ensur
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_003d_AX.SUB` connects two inputs to two outputs[cite: 1].
+The sub-application `Uebung_003d_AX.SUB` connects two inputs to two outputs.
 
 ### Function Blocks (FBs)
 

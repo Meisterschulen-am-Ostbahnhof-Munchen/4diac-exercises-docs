@@ -13,7 +13,7 @@ Using `Button_IXA`.
 
 ## Description and components
 
-[cite_start]The subapplication `Uebung_010a2_AX.SUB` uses a button instead of a softkey[cite: 1].
+The subapplication `Uebung_010a2_AX.SUB` uses a button instead of a softkey.
 
 ### Function Blocks (FBs)
 

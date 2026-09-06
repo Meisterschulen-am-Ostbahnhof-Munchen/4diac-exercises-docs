@@ -14,7 +14,7 @@ Kombination von Zeitbasis (`E_CYCLE`) und Ereignis-Zähler (`E_CTU`).
 
 ## Funktionsweise
 
-[cite_start]In `Uebung_084.SUB` wird der Zähler automatisch jede Sekunde inkrementiert[cite: 1].
+In `Uebung_084.SUB` wird der Zähler automatisch jede Sekunde inkrementiert.
 
 ![Uebung_084_network](./Uebung_084_network.svg)
 

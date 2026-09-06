@@ -20,12 +20,12 @@ Verwendung des Bausteins `Q_BackgroundColour`. Dies ist eine Alternative zum Far
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_016.SUB` schaltet die Farbe des Softkeys `F7` basierend auf der Auswahl über `F1` und `F2` um[cite: 1].
+Die Subapplikation `Uebung_016.SUB` schaltet die Farbe des Softkeys `F7` basierend auf der Auswahl über `F1` und `F2` um.
 
 ### Funktionsbausteine (FBs)
 
   - **`F_SEL`**: Wählt zwischen zwei Farb-Konstanten aus.
-  - **`Q_BackgroundColour`**: Der Ausgangsbaustein. [cite_start]Er setzt die Hintergrundfarbe für das Objekt `SoftKey_F7`[cite: 1].
+  - **`Q_BackgroundColour`**: Der Ausgangsbaustein. Er setzt die Hintergrundfarbe für das Objekt `SoftKey_F7`.
 
 -----
 

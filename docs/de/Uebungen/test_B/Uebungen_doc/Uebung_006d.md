@@ -14,7 +14,7 @@ Kombination von komplexen Eingangsereignissen (Doppelklick) mit Speicherbaustein
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006d.SUB` realisiert eine Ein/Aus-Logik mit unterschiedlichen Hürden[cite: 1].
+Die Subapplikation `Uebung_006d.SUB` realisiert eine Ein/Aus-Logik mit unterschiedlichen Hürden.
 
 ### Funktionsbausteine (FBs)
 

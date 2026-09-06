@@ -13,7 +13,7 @@ Understanding the limitations of data types. It shows what happens when the resu
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_110.SUB` uses the data type `USINT` [Unsigned Short Integer](cite: 1). This has a value range from 0 to 255.
+The subapplication `Uebung_110.SUB` uses the data type `USINT` [Unsigned Short Integer](cite: 1). This has a value range from 0 to 255.
 
 ### Function Blocks (FBs)
 

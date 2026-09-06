@@ -19,7 +19,7 @@ Extension to multiple softkeys.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010a_AX.SUB` controls two outputs via two softkeys[cite: 1].
+The subapplication `Uebung_010a_AX.SUB` controls two outputs via two softkeys.
 
 ### Function Blocks (FBs)
 

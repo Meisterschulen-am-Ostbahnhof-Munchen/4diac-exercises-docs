@@ -19,12 +19,12 @@ Feedback to the operator through a color change of the virtual key.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010c.SUB` extends the simple circuit with a feedback block[cite: 1].
+The subapplication `Uebung_010c.SUB` extends the simple circuit with a feedback block.
 
 ### Function Blocks (FBs)
 
 - **`SoftKey_F1`**: Input block.
-- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. [cite_start]It changes the background of the softkey on the terminal [green when activated, white when idle](cite: 1).
+- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. It changes the background of the softkey on the terminal [green when activated, white when idle](cite: 1).
 - **`DigitalOutput_Q1`**: The physical output.
 
 -----

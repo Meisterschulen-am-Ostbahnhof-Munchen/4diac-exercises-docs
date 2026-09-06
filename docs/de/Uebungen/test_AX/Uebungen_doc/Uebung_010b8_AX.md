@@ -14,7 +14,7 @@ Events bei rastenden Buttons.
 
 ## Beschreibung
 
-[cite_start]Nutzt `Button_A1` mit `BT_PRESSED_LATCHED`[cite: 1].
+Nutzt `Button_A1` mit `BT_PRESSED_LATCHED`.
 
 -----
 

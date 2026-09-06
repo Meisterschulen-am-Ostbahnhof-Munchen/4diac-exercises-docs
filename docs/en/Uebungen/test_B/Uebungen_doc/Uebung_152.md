@@ -13,7 +13,7 @@ Implementation of a PI controller to maintain a constant physical quantity.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_152.SUB` connects sensors, control systems, and actuators[cite: 1].
+The subapplication `Uebung_152.SUB` connects sensors, control systems, and actuators.
 
 ### Control Loop Components
 

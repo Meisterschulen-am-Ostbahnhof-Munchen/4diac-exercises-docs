@@ -19,7 +19,7 @@ Connection to an ISOBUS Task Controller (TC). It demonstrates how automatic sect
 
 ## Description and Components
 
-[cite_start]In `Uebung_060.SUB`, setpoint values are received from the Task Controller and actual values are reported back.[cite: 1]
+In `Uebung_060.SUB`, setpoint values are received from the Task Controller and actual values are reported back.
 
 ### Function Blocks (FBs)
 

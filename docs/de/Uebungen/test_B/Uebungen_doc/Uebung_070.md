@@ -24,11 +24,11 @@ Verwendung des Bausteins `I_WBSD` (Wheel Based Speed and Distance). Ziel ist es,
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_070.SUB` liest die ISOBUS-Nachricht WBSD ein und leitet sie an eine numerische Anzeige weiter[cite: 1].
+Die Subapplikation `Uebung_070.SUB` liest die ISOBUS-Nachricht WBSD ein und leitet sie an eine numerische Anzeige weiter.
 
 ### Funktionsbausteine (FBs)
 
-  - **`I_WBSD`**: Typ `isobus::tecu::I_WBSD`. [cite_start]Dieser Baustein lauscht auf dem CAN-Bus nach den standardisierten TECU-Nachrichten für radbasierte Geschwindigkeit und Wegstrecke[cite: 1].
+  - **`I_WBSD`**: Typ `isobus::tecu::I_WBSD`. Dieser Baustein lauscht auf dem CAN-Bus nach den standardisierten TECU-Nachrichten für radbasierte Geschwindigkeit und Wegstrecke.
   - **`Q_NumericValue`**: Sendet den Wert an das Objekt `NumberVariable_Wheel_based_machine_speed` im Terminal-Pool.
 
 -----

@@ -23,7 +23,7 @@ Using a `Softkey` function block to directly control a digital output. This exer
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010.SUB` connects a softkey instance to a standard output function block[cite: 1].
+The subapplication `Uebung_010.SUB` connects a softkey instance to a standard output function block.
 
 ### Function Blocks (FBs)
 

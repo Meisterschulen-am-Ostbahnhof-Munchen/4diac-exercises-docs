@@ -13,7 +13,7 @@ Behavior of `AuxHeld_START`.
 
 ## Description
 
-[cite_start]Uses `AuxFunction2_X1` with `AuxHeld_START`[cite: 1].
+Uses `AuxFunction2_X1` with `AuxHeld_START`.
 
 -----
 

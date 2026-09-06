@@ -14,7 +14,7 @@ Das Ziel ist die Reduktion der visuellen Komplexität. Es wird demonstriert, das
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a3_AX.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops[cite: 1].
+Die Subapplikation `Uebung_004a3_AX.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops.
 
 ### Funktionsbausteine (FBs)
 

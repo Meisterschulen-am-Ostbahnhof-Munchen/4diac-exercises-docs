@@ -14,7 +14,7 @@ Verwendung des Bausteins `AlPgnRxNew8B`. Es wird demonstriert, wie man auf eine 
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_130.SUB` wird ein Empfangs-Filter für eine herstellerspezifische PGN konfiguriert[cite: 1].
+In `Uebung_130.SUB` wird ein Empfangs-Filter für eine herstellerspezifische PGN konfiguriert.
 
 ### Funktionsbausteine (FBs)
 

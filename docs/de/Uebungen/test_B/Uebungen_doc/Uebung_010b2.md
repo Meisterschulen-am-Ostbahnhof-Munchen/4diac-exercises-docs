@@ -20,7 +20,7 @@ Verwendung spezialisierter ISOBUS-Ereignisse zur Steuerung von Software-Flip-Flo
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_010b2.SUB` nutzt ein Flip-Flop, das durch das Loslassen eines Softkeys getriggert wird[cite: 1].
+Die Subapplikation `Uebung_010b2.SUB` nutzt ein Flip-Flop, das durch das Loslassen eines Softkeys getriggert wird.
 
 ### Funktionsbausteine (FBs)
 

@@ -7,7 +7,7 @@ This article describes the logiBUS® exercise `Uebung_020h`
 
 ## Overview
 
-[cite_start]This exercise demonstrates controlling the function block `E_PULSE` via an event input (`logiBUS_IE`)[cite: 1].
+This exercise demonstrates controlling the function block `E_PULSE` via an event input (`logiBUS_IE`).
 
 Each detected single click on the button triggers a pulse of exactly 5 seconds at the output. Since `E_PULSE` is a pure event function block, it does not require a continuous data signal at the input, but only the start trigger.
 

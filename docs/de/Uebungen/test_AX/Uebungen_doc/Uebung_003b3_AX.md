@@ -14,11 +14,11 @@ Das Ziel ist maximale Wiederverwendbarkeit und Übersichtlichkeit. Durch die Ver
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_003b3_AX.SUB` instanziiert 15 mal den Typ `Uebung_003b3_sub_AX`[cite: 1].
+Die Subapplikation `Uebung_003b3_AX.SUB` instanziiert 15 mal den Typ `Uebung_003b3_sub_AX`.
 
 ### Typisierte Sub-Applikation: `Uebung_003b3_sub_AX`
 
-[cite_start]Dieser Baustein ist identisch zur Funktionalität in `Uebung_003b2_sub_AX`, jedoch sind die Parameter `Input`, `Output` und `u8SAMember` sauber herausgeführt[cite: 2].
+Dieser Baustein ist identisch zur Funktionalität in `Uebung_003b2_sub_AX`, jedoch sind die Parameter `Input`, `Output` und `u8SAMember` sauber herausgeführt.
 
 ### Konfiguration der Instanzen
 

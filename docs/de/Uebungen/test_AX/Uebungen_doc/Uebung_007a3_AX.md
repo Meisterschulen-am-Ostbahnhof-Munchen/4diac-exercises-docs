@@ -14,7 +14,7 @@ Sicherstellen, dass der Blinker immer im Zustand "AUS" stoppt.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_007a3_AX.SUB` verwendet eine komplexere Logik[cite: 1]:
+Die Subapplikation `Uebung_007a3_AX.SUB` verwendet eine komplexere Logik:
 
   - **`AX_CYCLE`**: Der Taktgeber (Startet/Stoppt).
   - **`E_SR`**: Ein Speicher ("Blinker ist aktiv").

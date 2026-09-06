@@ -19,13 +19,13 @@ Learning persistent data storage. This demonstrates how a value entered at the t
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_012.SUB` combines input, storage, and display into a closed loop[cite: 1].
+The subapplication `Uebung_012.SUB` combines input, storage, and display into a closed loop.
 
 ### Function Blocks (FBs)
 
 - **`InputNumber_I1`**: Numeric input field on the terminal.
-- **`NVS`**: Type `logiBUS::storage::esp32_nvs::NVS`. [cite_start]This block manages access to non-volatile memory. It stores values under a unique `KEY`[cite: 1].
-- **`CbVtStatus`**: A terminal status block. [cite_start]It fires an event (`IND`) when the terminal restarts or the connection is re-established[cite: 1].
+- **`NVS`**: Type `logiBUS::storage::esp32_nvs::NVS`. This block manages access to non-volatile memory. It stores values under a unique `KEY`.
+- **`CbVtStatus`**: A terminal status block. It fires an event (`IND`) when the terminal restarts or the connection is re-established.
 - **`Q_NumericValue`**: The numeric display on the terminal.
 
 -----

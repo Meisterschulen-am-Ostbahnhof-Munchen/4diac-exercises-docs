@@ -19,7 +19,7 @@ Using `Softkey_IE` (Event) instead of `Softkey_IXA` (State).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010b2_AX.SUB` uses a softkey to toggle a flip-flop[cite: 1].
+The subapplication `Uebung_010b2_AX.SUB` uses a softkey to toggle a flip-flop.
 
 ### Function Blocks (FBs)
 

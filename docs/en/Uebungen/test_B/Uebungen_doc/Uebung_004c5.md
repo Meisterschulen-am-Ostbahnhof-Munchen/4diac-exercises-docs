@@ -13,7 +13,7 @@ Using the event `BUTTON_PRESS_END`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reacts to every falling edge[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reacts to every falling edge.
 
 ![Uebung_004c5_network](./Uebung_004c5_network.svg)
 

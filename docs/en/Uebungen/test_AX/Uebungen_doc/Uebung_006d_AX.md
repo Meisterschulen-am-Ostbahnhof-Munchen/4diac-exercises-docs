@@ -13,7 +13,7 @@ Combining input events and memory elements.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006d_AX.SUB` defines an asymmetric operation[cite: 1].
+The subapplication `Uebung_006d_AX.SUB` defines an asymmetric operation.
 
 ### Function Blocks (FBs)
 

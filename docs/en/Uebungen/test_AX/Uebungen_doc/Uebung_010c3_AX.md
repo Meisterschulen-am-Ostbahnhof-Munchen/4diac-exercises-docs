@@ -13,7 +13,7 @@ Reusability through typing.
 
 ## Description
 
-[cite_start]Here, a real type `Uebung_010c3_sub_AX` was created from the untyped subapp[cite: 1].
+Here, a real type `Uebung_010c3_sub_AX` was created from the untyped subapp.
 
 It has parameters `u16ObjId` (which softkey?) and `Output` (which output?).
 

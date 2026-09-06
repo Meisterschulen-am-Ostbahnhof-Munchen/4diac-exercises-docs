@@ -13,7 +13,7 @@ Definition of a specific hold time.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c7_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_LONG_PRESS_START` and `arg = 3000` [ms](cite: 1).
+The subapplication `Uebung_004c7_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_LONG_PRESS_START` and `arg = 3000` [ms](cite: 1).
 
 -----
 

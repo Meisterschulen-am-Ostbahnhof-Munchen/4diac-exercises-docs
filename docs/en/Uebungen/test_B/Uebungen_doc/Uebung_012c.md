@@ -13,7 +13,7 @@ Handling the data type `STRING` during storage.
 
 ## Description and Components
 
-[cite_start]In `Uebung_012c.SUB`, a string value is managed via an INI block[cite: 1].
+In `Uebung_012c.SUB`, a string value is managed via an INI block.
 
 ### Function Blocks (FBs)
 

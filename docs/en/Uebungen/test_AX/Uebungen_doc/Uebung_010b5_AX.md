@@ -17,4 +17,4 @@ Expansion to 10 channels.
 
 ## Description
 
-[cite_start]Identical to `Uebung_010b4_AX`, but for 10 softkeys (`F1` to `F10`) on 10 outputs[cite: 1].
+Identical to `Uebung_010b4_AX`, but for 10 softkeys (`F1` to `F10`) on 10 outputs.

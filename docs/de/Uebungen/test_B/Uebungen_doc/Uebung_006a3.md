@@ -14,7 +14,7 @@ Aufbau einer Steuerung für Vorwärts- und Rückwärtslauf mit Software-Verriege
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a3.SUB` kombiniert einen Haupt-Ein/Aus-Speicher mit einer Logik zur Richtungsentscheidung[cite: 1].
+Die Subapplikation `Uebung_006a3.SUB` kombiniert einen Haupt-Ein/Aus-Speicher mit einer Logik zur Richtungsentscheidung.
 
 ### Funktionsbausteine (FBs)
 

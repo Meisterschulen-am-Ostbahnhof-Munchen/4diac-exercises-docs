@@ -13,7 +13,7 @@ Using the event `BUTTON_LONG_PRESS_UP`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c3_AX.SUB` is configured to `BUTTON_LONG_PRESS_UP`[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c3_AX.SUB` is configured to `BUTTON_LONG_PRESS_UP`.
 
 ![Uebung_004c3_AX_network](./Uebung_004c3_AX_network.svg)
 

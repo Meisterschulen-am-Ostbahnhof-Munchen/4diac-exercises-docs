@@ -13,7 +13,7 @@ Demonstration of the interaction between complex event logic (`E_REND`) and a fl
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004a7.SUB` uses three pushbuttons to control a lamp state[cite: 1].
+The subapplication `Uebung_004a7.SUB` uses three pushbuttons to control a lamp state.
 
 ### Function Blocks (FBs)
 

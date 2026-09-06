@@ -13,7 +13,7 @@ To become familiar with `AX_T_FF_SR`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a_AX.SUB` uses three pushbuttons[cite: 1].
+The subapplication `Uebung_006a_AX.SUB` uses three pushbuttons.
 
 ### Function Blocks (FBs)
 

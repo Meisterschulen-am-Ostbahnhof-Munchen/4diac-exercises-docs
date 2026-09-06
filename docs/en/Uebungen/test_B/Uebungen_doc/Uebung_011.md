@@ -23,11 +23,11 @@ Learning how to process numeric variables in the ISOBUS context. This exercise d
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_011.SUB` uses an input block for numeric values[cite: 1].
+The subapplication `Uebung_011.SUB` uses an input block for numeric values.
 
 ### Function Blocks (FBs)
 
-- **`InputNumber_I1`**: Type `NumericValue_ID`. [cite_start]This block represents a numeric input field (Data Mask Object) on the ISOBUS terminal[cite: 1]. Once the user confirms the input, the module sends the new value to port `IN` (DWORD) and fires a `IND` event.
+- **`InputNumber_I1`**: Type `NumericValue_ID`. This block represents a numeric input field (Data Mask Object) on the ISOBUS terminal. Once the user confirms the input, the module sends the new value to port `IN` (DWORD) and fires a `IND` event.
 - **`F_DWORD_TO_UDINT`**: A conversion module that transforms the raw 32-bit value from the terminal into an unsigned integer (UDINT) for further logic processing.
 
 -----

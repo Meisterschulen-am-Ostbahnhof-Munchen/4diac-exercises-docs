@@ -13,7 +13,7 @@ Using `Aux_IE` (Event).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_010b3_AX.SUB` toggles a flip-flop via AUX[cite: 1].
+The subapplication `Uebung_010b3_AX.SUB` toggles a flip-flop via AUX.
 
 ### Function Blocks (FBs)
 

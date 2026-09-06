@@ -10,4 +10,4 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010bA`.
 
 ![Uebung_010bA_network](./Uebung_010bA_network.svg)
 
-[cite_start]Nutzt `Button_A1` mit `BT_STILL_HELD_START`[cite: 1]. Im Gegensatz zum einfachen `STILL_HELD` wird dieses Ereignis **nicht wiederholt**. Es feuert exakt einmal, sobald die Haltezeit überschritten wurde. Dies entspricht einer sauberen "Long Press" Auswertung.
+Nutzt `Button_A1` mit `BT_STILL_HELD_START`. Im Gegensatz zum einfachen `STILL_HELD` wird dieses Ereignis **nicht wiederholt**. Es feuert exakt einmal, sobald die Haltezeit überschritten wurde. Dies entspricht einer sauberen "Long Press" Auswertung.

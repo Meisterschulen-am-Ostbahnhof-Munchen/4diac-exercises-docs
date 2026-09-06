@@ -9,4 +9,4 @@ This article describes the logiBUS® exercise `Uebung_010bA4`
 
 ![Uebung_010bA4_network](./Uebung_010bA4_network.svg)
 
-[cite_start]Utilizes `AuxFunction2_X1` with `AuxHeld_START`[cite: 1]. Regardless of the type of control, this event is sent only **once** when the time threshold is reached. It is the preferred choice for long-press functions on ISOBUS joysticks.
+Utilizes `AuxFunction2_X1` with `AuxHeld_START`. Regardless of the type of control, this event is sent only **once** when the time threshold is reached. It is the preferred choice for long-press functions on ISOBUS joysticks.

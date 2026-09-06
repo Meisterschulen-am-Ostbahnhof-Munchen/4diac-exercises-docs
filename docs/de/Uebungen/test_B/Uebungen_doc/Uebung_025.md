@@ -28,5 +28,5 @@ Verwendung von `E_REND` zur Absicherung von Übergängen. Es soll sichergestellt
 
 ## Funktionsweise
 
-[cite_start]Die Übung nutzt für jeden Übergang einen `E_REND` Baustein[cite: 1].
+Die Übung nutzt für jeden Übergang einen `E_REND` Baustein.
 Zusätzlich werden `E_SWITCH` Bausteine zur Plausibilitätsprüfung eingesetzt. Ein Ereignis wird nur dann als gültige Endlage akzeptiert, wenn der zugehörige Ausgang (`Q`) der Steuerung zu diesem Zeitpunkt auch tatsächlich aktiv ist (Rückkopplung der Daten an das Gate der Weiche). Dies verhindert Fehlsteuerungen durch defekte oder hängende Sensoren.

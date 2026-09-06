@@ -14,7 +14,7 @@ Realisierung einer "Zentral-Aus" Funktion für mehrere unabhängige Speicherglie
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_006a2.SUB` steuert zwei separate Lampen (`Q1`, `Q2`) über zwei Taster (`I1`, `I2`), die durch einen dritten Taster (`I3`) gemeinsam zurückgesetzt werden können[cite: 1].
+Die Subapplikation `Uebung_006a2.SUB` steuert zwei separate Lampen (`Q1`, `Q2`) über zwei Taster (`I1`, `I2`), die durch einen dritten Taster (`I3`) gemeinsam zurückgesetzt werden können.
 
 ### Funktionsbausteine (FBs)
 

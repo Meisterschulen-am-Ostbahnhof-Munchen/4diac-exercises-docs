@@ -14,7 +14,7 @@ Kapselung der logiBUS I/O-Logik. Durch die Erstellung eines eigenen Typs wird di
 
 ## Beschreibung und Komponenten
 
-[cite_start]Der Typ `Uebung_003a_sub` bündelt einen Eingangs- und einen Ausgangsbaustein[cite: 1].
+Der Typ `Uebung_003a_sub` bündelt einen Eingangs- und einen Ausgangsbaustein.
 
 ### Interne Funktionsbausteine (FBs)
 
@@ -25,7 +25,7 @@ Kapselung der logiBUS I/O-Logik. Durch die Erstellung eines eigenen Typs wird di
 
 ## Schnittstellen
 
-[cite_start]Der Baustein verfügt über zwei Konfigurations-Eingänge[cite: 1]:
+Der Baustein verfügt über zwei Konfigurations-Eingänge:
 
 -   **`Input`**: Erwartet eine Konstante vom Typ `logiBUS_DI_S` (z.B. `Input_I1`).
 -   **`Output`**: Erwartet eine Konstante vom Typ `logiBUS_DO_S` (z.B. `Output_Q1`).

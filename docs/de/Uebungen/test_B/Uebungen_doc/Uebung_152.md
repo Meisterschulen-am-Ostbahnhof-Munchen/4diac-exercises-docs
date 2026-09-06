@@ -14,7 +14,7 @@ Implementierung eines PI-Reglers zur Konstanthaltung einer physikalischen Größ
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_152.SUB` verbindet Sensorik, Regelung und Aktorik[cite: 1].
+Die Subapplikation `Uebung_152.SUB` verbindet Sensorik, Regelung und Aktorik.
 
 ### Regelkreis-Komponenten
 

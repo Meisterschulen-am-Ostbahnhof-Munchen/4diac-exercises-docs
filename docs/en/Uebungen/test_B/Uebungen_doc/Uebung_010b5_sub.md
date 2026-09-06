@@ -8,7 +8,7 @@
 
 ## Overview
 
-[cite_start]This type is functionally identical to `Uebung_010b4_sub` and is used to scale the application to 10 channels[cite: 1]. It enables the quick integration of additional control elements into the ISOBUS interface by simply copying and parameterizing the sub-app instances.
+This type is functionally identical to `Uebung_010b4_sub` and is used to scale the application to 10 channels. It enables the quick integration of additional control elements into the ISOBUS interface by simply copying and parameterizing the sub-app instances.
 
 ## 🛠️ Related Exercises
 

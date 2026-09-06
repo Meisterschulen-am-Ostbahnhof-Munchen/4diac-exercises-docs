@@ -13,7 +13,7 @@ Behavior of `AuxHeld`.
 
 ## Description
 
-[cite_start]Uses `AuxFunction2_X1` with `AuxHeld`[cite: 1].
+Uses `AuxFunction2_X1` with `AuxHeld`.
 
 -----
 

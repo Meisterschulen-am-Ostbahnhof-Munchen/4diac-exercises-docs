@@ -22,7 +22,7 @@ Using the module `sequence_ET_04`. This section demonstrates how a process is di
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_035.SUB` controls four outputs in a fixed sequence[cite: 1].
+The subapplication `Uebung_035.SUB` controls four outputs in a fixed sequence.
 
 ### Function Blocks (FBs)
 

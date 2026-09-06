@@ -13,7 +13,7 @@ The main objective is to demonstrate interoperability. While specialized blocks 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_002a2_AX.SUB` uses conversion blocks to prepare two input adapters for an AND gate[cite: 1].
+The subapplication `Uebung_002a2_AX.SUB` uses conversion blocks to prepare two input adapters for an AND gate.
 
 ### Function Blocks (FBs)
 

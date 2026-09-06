@@ -13,7 +13,7 @@ Configuration of a multi-click operation.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_004c6_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_MULTIPLE_CLICK` and `arg = 3`[cite: 1].
+The subapplication `Uebung_004c6_AX.SUB` uses `logiBUS_IE2` with `InputEvent = BUTTON_MULTIPLE_CLICK` and `arg = 3`.
 
 ### Function Blocks (FBs)
 

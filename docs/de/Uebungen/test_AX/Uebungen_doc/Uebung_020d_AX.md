@@ -16,14 +16,14 @@ Das Ziel dieser Übung ist die Analyse der Ausschaltverzögerung auf Logikebene.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020d_AX.SUB` nutzt eine Ereignis-Weiche, um den Speicher beim Drücken sofort zu setzen und beim Loslassen zeitverzögert zurückzusetzen[cite: 1].
+Die Subapplikation `Uebung_020d_AX.SUB` nutzt eine Ereignis-Weiche, um den Speicher beim Drücken sofort zu setzen und beim Loslassen zeitverzögert zurückzusetzen.
 
 ### Funktionsbausteine (FBs)
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
-  - **`AX_SWITCH`**: [cite_start]Trennt steigende (`EO1`) und fallende (`EO0`) Flanken[cite: 1].
+  - **`AX_SWITCH`**: Trennt steigende (`EO1`) und fallende (`EO0`) Flanken.
   - **`AX_RS`**: Der Ergebnisspeicher.
-  - **`E_DELAY`**: [cite_start]Verzögert das Rücksetz-Ereignis um 2 Sekunden (`DT = T#2S`)[cite: 1].
+  - **`E_DELAY`**: Verzögert das Rücksetz-Ereignis um 2 Sekunden (`DT = T#2S`).
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 
 -----

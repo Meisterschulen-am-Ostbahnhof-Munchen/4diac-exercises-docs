@@ -23,7 +23,7 @@ Verwendung von `STRUCT_MUX` und `STRUCT_DEMUX`. In großen Systemen ist es unüb
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_051.SUB` nutzt strukturierte Datentypen zur Signalübertragung[cite: 1].
+Die Subapplikation `Uebung_051.SUB` nutzt strukturierte Datentypen zur Signalübertragung.
 
 ### Funktionsbausteine (FBs)
 

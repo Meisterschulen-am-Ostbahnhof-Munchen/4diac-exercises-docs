@@ -23,7 +23,7 @@ Using the RGB library for the ESP32. This demonstrates how to define colors not 
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_031.SUB` uses a conversion module and a strip driver[cite: 1].
+The subapplication `Uebung_031.SUB` uses a conversion module and a strip driver.
 
 ### Function Blocks (FBs)
 

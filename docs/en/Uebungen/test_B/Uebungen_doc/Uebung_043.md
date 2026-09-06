@@ -13,7 +13,7 @@ Using the function block `SCALE_LIM`. Unlike the simpler `SCALE`, this block off
 
 ## Description and Components
 
-[cite_start]In `Uebung_043.SUB`, a highly complex scaling scenario with fixed limits is set up[cite: 1].
+In `Uebung_043.SUB`, a highly complex scaling scenario with fixed limits is set up.
 
 ### Function Blocks (FBs)
 

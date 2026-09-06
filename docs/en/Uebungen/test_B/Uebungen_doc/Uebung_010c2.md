@@ -7,4 +7,4 @@ This article describes the logiBUS® exercise `Uebung_010c2`
 
 ## Overview
 
-[cite_start]The complete feedback logic from the previous exercise is encapsulated in an untyped sub-application `Uebung_10c2_sub`[cite: 1]. This demonstrates how to visually group complex interaction logic (input + feedback + hardware output) to keep the main program view uncluttered.
+The complete feedback logic from the previous exercise is encapsulated in an untyped sub-application `Uebung_10c2_sub`. This demonstrates how to visually group complex interaction logic (input + feedback + hardware output) to keep the main program view uncluttered.

@@ -24,13 +24,13 @@ Verwendung des Bausteins `Q_ObjHideShow` zur Steuerung der Sichtbarkeit von ISOB
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_014.SUB` nutzt zwei Softkeys, um einen Speicher zu setzen oder zu löschen, dessen Zustand die Sichtbarkeit eines Containers steuert[cite: 1].
+Die Subapplikation `Uebung_014.SUB` nutzt zwei Softkeys, um einen Speicher zu setzen oder zu löschen, dessen Zustand die Sichtbarkeit eines Containers steuert.
 
 ### Funktionsbausteine (FBs)
 
   - **`SoftKey_UP_F1` & `F2`**: Eingabe am Terminal (Ein/Aus).
   - **`E_SR`**: Der Speicher für den Sichtbarkeits-Status.
-  - **`Q_ObjHideShow`**: Der ISOBUS-Ausgangsbaustein. [cite_start]Er steuert die Eigenschaft "Sichtbarkeit" des Objekts mit der ID `Container_B`[cite: 1].
+  - **`Q_ObjHideShow`**: Der ISOBUS-Ausgangsbaustein. Er steuert die Eigenschaft "Sichtbarkeit" des Objekts mit der ID `Container_B`.
 
 -----
 

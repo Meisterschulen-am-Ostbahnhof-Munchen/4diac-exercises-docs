@@ -14,14 +14,14 @@ Verbindung eines Analog-Eingangs (`logiBUS_AI`) mit einem PWM-Ausgang (`logiBUS_
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_034.SUB` liest ein Potentiometer ein und steuert damit die Helligkeit einer Lampe oder die Drehzahl eines Motors[cite: 1].
+Die Subapplikation `Uebung_034.SUB` liest ein Potentiometer ein und steuert damit die Helligkeit einer Lampe oder die Drehzahl eines Motors.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_034_network](./Uebung_034_network.svg)
 
   - **`AnalogInput_I7`**: Liest die Spannung am Eingang ein.
-  - **`F_SHL`**: Ein Schieberegister-Baustein (Shift Left). [cite_start]Er wird hier zur Skalierung genutzt, indem er den Eingangswert um ein Bit nach links verschiebt [entspricht einer Multiplikation mit 2](cite: 1).
+  - **`F_SHL`**: Ein Schieberegister-Baustein (Shift Left). Er wird hier zur Skalierung genutzt, indem er den Eingangswert um ein Bit nach links verschiebt [entspricht einer Multiplikation mit 2](cite: 1).
   - **`PWMOutput_Q4`**: Ein pulsweitenmodulierter Ausgang zur Leistungsstellung.
 
 -----

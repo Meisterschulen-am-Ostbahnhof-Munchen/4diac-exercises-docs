@@ -16,7 +16,7 @@ Verständnis des `E_REND` Bausteins. Dieser Baustein fungiert wie ein "UND" für
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004a6_AX.SUB` nutzt `E_REND`, um sicherzustellen, dass zwei Taster gedrückt wurden, bevor das Licht umschaltet[cite: 1].
+Die Subapplikation `Uebung_004a6_AX.SUB` nutzt `E_REND`, um sicherzustellen, dass zwei Taster gedrückt wurden, bevor das Licht umschaltet.
 
 ### Funktionsbausteine (FBs)
 

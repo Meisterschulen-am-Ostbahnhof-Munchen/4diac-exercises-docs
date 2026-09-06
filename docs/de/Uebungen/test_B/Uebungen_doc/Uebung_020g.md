@@ -14,7 +14,7 @@ Verwendung des Bausteins `E_TONOF`, der sowohl eine Einschalt- als auch eine Aus
 
 ## Funktionsweise
 
-[cite_start]Der Baustein reagiert auf den Pegel am Eingang `IN`[cite: 1]:
+Der Baustein reagiert auf den Pegel am Eingang `IN`:
 
 ![Uebung_020g_network](./Uebung_020g_network.svg)
 

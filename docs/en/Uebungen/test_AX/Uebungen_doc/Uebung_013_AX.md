@@ -19,7 +19,7 @@ Separate On/Off buttons on the touchscreen.
 
 ## Description
 
-[cite_start]The subapplication `Uebung_013_AX.SUB` uses two softkeys to control a `AX_SR` flip-flop[cite: 1].
+The subapplication `Uebung_013_AX.SUB` uses two softkeys to control a `AX_SR` flip-flop.
 
 ### Function Blocks (FBs)
 

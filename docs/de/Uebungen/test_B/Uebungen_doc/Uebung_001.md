@@ -24,12 +24,12 @@ Das Ziel dieser Einstiegsübung ist es, ein Signal von einem physischen digitale
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Übung besteht aus einer Subapplikation (`Uebung_001.SUB`), die einen Eingangsbaustein und einen Ausgangsbaustein über zwei separate Verbindungstypen verknüpft[cite: 1].
+Die Übung besteht aus einer Subapplikation (`Uebung_001.SUB`), die einen Eingangsbaustein und einen Ausgangsbaustein über zwei separate Verbindungstypen verknüpft.
 
 ### Funktionsbausteine (FBs)
 
-  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein repräsentiert den physischen Eingang `Input_I1`[cite: 1]. Er stellt sowohl den logischen Zustand (`IN`) als auch ein Benachrichtigungs-Ereignis (`IND`) zur Verfügung.
-  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein steuert den physischen Ausgang `Output_Q1`[cite: 1]. Er benötigt einen Datenwert (`OUT`) und einen Auslöse-Befehl (`REQ`).
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. Dieser Baustein repräsentiert den physischen Eingang `Input_I1`. Er stellt sowohl den logischen Zustand (`IN`) als auch ein Benachrichtigungs-Ereignis (`IND`) zur Verfügung.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. Dieser Baustein steuert den physischen Ausgang `Output_Q1`. Er benötigt einen Datenwert (`OUT`) und einen Auslöse-Befehl (`REQ`).
 
 -----
 

@@ -13,7 +13,7 @@ To become familiar with the timer block `AX_TON`.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_020c_AX.SUB` delays the on-signal[cite: 1].
+The subapplication `Uebung_020c_AX.SUB` delays the on-signal.
 
 ### Function Blocks (FBs)
 

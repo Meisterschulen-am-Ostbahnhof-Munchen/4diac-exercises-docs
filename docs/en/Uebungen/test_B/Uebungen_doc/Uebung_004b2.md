@@ -13,7 +13,7 @@ To deepen the understanding of parallel, feedback logic structures. Each channel
 
 ## Description and Components
 
-[cite_start]In `Uebung_004b2.SUB`, two identical logic strands (switch + memory) are built side by side [cite: 1].
+In `Uebung_004b2.SUB`, two identical logic strands (switch + memory) are built side by side .
 
 ### Function Blocks (FBs)
 

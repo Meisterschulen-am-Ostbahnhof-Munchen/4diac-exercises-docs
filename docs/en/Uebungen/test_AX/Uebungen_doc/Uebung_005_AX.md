@@ -13,7 +13,7 @@ Demonstration of converting data to events for control purposes.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_005_AX.SUB` uses a standard digital input (`logiBUS_IXA`) instead of an event input (`logiBUS_IE`)[cite: 1].
+The subapplication `Uebung_005_AX.SUB` uses a standard digital input (`logiBUS_IXA`) instead of an event input (`logiBUS_IE`).
 
 ### Function Blocks (FBs)
 

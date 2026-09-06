@@ -13,7 +13,7 @@ Using the event `BUTTON_LONG_PRESS_HOLD`.
 
 ## Functionality
 
-[cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c4.SUB` is configured to hold permanently[cite: 1].
+The function block `DigitalInput_CLK_I1` in `Uebung_004c4.SUB` is configured to hold permanently.
 
 ![Uebung_004c4_network](./Uebung_004c4_network.svg)
 

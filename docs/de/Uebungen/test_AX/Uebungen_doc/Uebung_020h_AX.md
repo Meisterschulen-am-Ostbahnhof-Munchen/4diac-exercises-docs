@@ -14,14 +14,14 @@ Das Ziel ist es, ein einzelnes, kurzes Ereignis (z.B. einen Mausklick oder Taste
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020h_AX.SUB` kombiniert einen Event-Eingang mit einem Adapter-Puls-Baustein[cite: 1].
+Die Subapplikation `Uebung_020h_AX.SUB` kombiniert einen Event-Eingang mit einem Adapter-Puls-Baustein.
 
 ### Funktionsbausteine (FBs)
 
 ![Uebung_020h_AX_network](./Uebung_020h_AX_network.svg)
 
   - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE`. Liefert ein Ereignis bei einem Einfachklick (`BUTTON_SINGLE_CLICK`).
-  - **`AX_PULSE`**: [cite_start]Startet einen Timer bei Eintreffen eines Ereignisses am `REQ`-Eingang. Der Ausgang `Q` bleibt für die Zeit `PT` (5 Sekunden) auf TRUE[cite: 1].
+  - **`AX_PULSE`**: Startet einen Timer bei Eintreffen eines Ereignisses am `REQ`-Eingang. Der Ausgang `Q` bleibt für die Zeit `PT` (5 Sekunden) auf TRUE.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`.
 
 -----

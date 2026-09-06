@@ -14,7 +14,7 @@ Kennenlernen des Timer-Bausteins `AX_TOF`.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_020e_AX.SUB` verzögert das Ausschaltsignal[cite: 1].
+Die Subapplikation `Uebung_020e_AX.SUB` verzögert das Ausschaltsignal.
 
 ### Funktionsbausteine (FBs)
 

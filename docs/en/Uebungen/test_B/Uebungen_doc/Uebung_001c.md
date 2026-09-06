@@ -13,14 +13,14 @@ The main objective of this exercise is to understand the initialization process 
 
 ## Description and Components
 
-[cite_start]This exercise uses the subapplication `Uebung_001c.SUB` to establish a connection between a digital input and an output, supplemented by self-triggering for system startup[cite: 1].
+This exercise uses the subapplication `Uebung_001c.SUB` to establish a connection between a digital input and an output, supplemented by self-triggering for system startup.
 
 ### Function Blocks (FBs)
 
 ![Uebung_001c_network](./Uebung_001c_network.svg)
 
-- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block returns the event `IND` on changes and responds to the command `REQ` to manually read the current value[cite: 1].
-- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This component sets the hardware output `Output_Q1` on every incoming `REQ` event[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. This block returns the event `IND` on changes and responds to the command `REQ` to manually read the current value.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. This component sets the hardware output `Output_Q1` on every incoming `REQ` event.
 
 -----
 

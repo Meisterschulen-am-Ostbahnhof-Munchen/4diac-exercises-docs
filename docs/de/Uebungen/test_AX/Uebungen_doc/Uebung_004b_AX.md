@@ -18,7 +18,7 @@ Verständnis der Interaktion zwischen booleschen Daten und Event-Fluss-Steuerung
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004b_AX.SUB` baut einen Toggle-Mechanismus diskret auf[cite: 1].
+Die Subapplikation `Uebung_004b_AX.SUB` baut einen Toggle-Mechanismus diskret auf.
 
 ### Funktionsbausteine (FBs)
 

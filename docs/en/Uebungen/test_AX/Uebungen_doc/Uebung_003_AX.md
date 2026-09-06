@@ -13,7 +13,7 @@ The main objective of this exercise is to demonstrate the parallel processing of
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_003_AX.SUB` defines two separate "strands" of signal processing that exist in parallel[cite: 1].
+The subapplication `Uebung_003_AX.SUB` defines two separate "strands" of signal processing that exist in parallel.
 
 ### Function Blocks (FBs)
 
@@ -21,12 +21,12 @@ Two pairs of input and output blocks are used:
 
 ![Uebung_003_AX_network](./Uebung_003_AX_network.svg)
 
-- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (channel 1). [cite_start]Connects hardware input `I1` to hardware output `Q1`[cite: 1].
-- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (channel 2). Connects hardware input `I2` to hardware output `Q2`[cite: 1].
+- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (channel 1). Connects hardware input `I1` to hardware output `Q1`.
+- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (channel 2). Connects hardware input `I2` to hardware output `Q2`.
 
 ### Adapter Interface: `AX.adp`
 
-Both connections use the standardized adapter interface `AX` for communication[cite: 1].
+Both connections use the standardized adapter interface `AX` for communication.
 
 -----
 

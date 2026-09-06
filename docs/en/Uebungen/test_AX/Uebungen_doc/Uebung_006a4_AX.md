@@ -13,7 +13,7 @@ Using libraries ("Don't reinvent the wheel").
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006a4_AX.SUB` replaces the complex network of gates and subapplication from the previous exercise with the module `LinksRechts_AX`[cite: 1].
+The subapplication `Uebung_006a4_AX.SUB` replaces the complex network of gates and subapplication from the previous exercise with the module `LinksRechts_AX`.
 
 ### Function Blocks (FBs)
 

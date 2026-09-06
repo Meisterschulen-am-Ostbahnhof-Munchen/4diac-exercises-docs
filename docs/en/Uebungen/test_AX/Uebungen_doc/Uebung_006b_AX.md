@@ -13,7 +13,7 @@ Understand the difference between SR (Set Priority) and RS (Reset Priority).
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_006b_AX.SUB` uses a `AX_RS` function block[cite: 1].
+The subapplication `Uebung_006b_AX.SUB` uses a `AX_RS` function block.
 
 ### Function Blocks (FBs)
 

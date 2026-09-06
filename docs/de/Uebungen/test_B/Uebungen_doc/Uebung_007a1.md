@@ -14,7 +14,7 @@ Steuerung eines Taktgebers über Start- und Stopp-Ereignisse.
 
 ## Beschreibung und Komponenten
 
-[cite_start]In `Uebung_007a1.SUB` werden die Steuerungseingänge des `E_CYCLE` Bausteins genutzt[cite: 1].
+In `Uebung_007a1.SUB` werden die Steuerungseingänge des `E_CYCLE` Bausteins genutzt.
 
 ### Funktionsbausteine (FBs)
 

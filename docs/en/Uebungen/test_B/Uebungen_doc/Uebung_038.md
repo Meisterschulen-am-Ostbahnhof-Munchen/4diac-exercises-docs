@@ -7,8 +7,8 @@ This article describes the logiBUS® exercise `Uebung_038`. Here, a more complex
 
 ## Overview
 
-[cite_start]Using the function block `sequence_T_08_loop`, an automatic running light is generated via 8 outputs (`Q1` to `Q8`)[cite: 1].
+Using the function block `sequence_T_08_loop`, an automatic running light is generated via 8 outputs (`Q1` to `Q8`).
 
 The transition times between the lights are individually adjustable (e.g., 200 ms for the odd steps, 100 ms for the even steps). The program demonstrates the handling of multiple parallel outputs and the numerical feedback of the current system status to the terminal.
 
-[cite_start] ![Uebung_038_network](./Uebung_038_network.svg)
+ ![Uebung_038_network](./Uebung_038_network.svg)

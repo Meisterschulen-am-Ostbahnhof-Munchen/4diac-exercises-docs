@@ -13,7 +13,7 @@ Implementation of a self-contained blinker circuit.
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_008.SUB` utilizes the combination of `E_CYCLE`, `E_SWITCH`, and `E_SR` without external control inputs[cite: 1].
+The subapplication `Uebung_008.SUB` utilizes the combination of `E_CYCLE`, `E_SWITCH`, and `E_SR` without external control inputs.
 
 The clock generator `E_CYCLE` runs continuously (after initialization by the system). The logic ensures that the output `Q1` toggles between `TRUE` and `FALSE` every second. Since there is no stop logic, this setup serves as the program's continuous heartbeat.
 

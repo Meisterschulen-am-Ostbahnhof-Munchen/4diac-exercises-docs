@@ -13,7 +13,7 @@ Implementation of exclusive selection logic. Switching on one channel must neces
 
 ## Description and Components
 
-[cite_start]The sub-application `Uebung_004b3.SUB` is based on the structure of 004b2, but introduces additional event connections for interlocking[cite: 1].
+The sub-application `Uebung_004b3.SUB` is based on the structure of 004b2, but introduces additional event connections for interlocking.
 
 ### Function Blocks (FBs)
 
