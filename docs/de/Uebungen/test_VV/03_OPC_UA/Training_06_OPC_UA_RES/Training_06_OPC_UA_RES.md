@@ -12,7 +12,7 @@ Flipflop, OPC-UA-Rückschreiben), aber statt einzelner `CLIENT_0`/`SERVER_0`/
 `AX_CLIENT_1_0`-Instanzen mit manueller Datenverdrahtung kommen die
 kombinierten Adapter-Bausteine aus der `adapter-3.0.0`-Bibliothek zum
 Einsatz (siehe die adapter-3.0.0-FB-Familie, dokumentiert unter
-[`Bibliotheken/ExternalLibraries/adapter`](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/)).
+[`Bibliotheken/ExternalLibraries/adapter`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/adapter/)).
 Gleiche OPC-UA-Adressen wie Training_04 (`SR1_*`).
 
 ## Verwendete Composites

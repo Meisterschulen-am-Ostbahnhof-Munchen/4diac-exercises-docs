@@ -22,7 +22,7 @@ Diese Übung ist die **einfachere Vorstufe** zu [`InputOutputTesterButton_AI_Cal
 - **Typ**: SubAppType (`MyLib::sys`)
 - **Funktionsweise**: Der physische Analogeingang (`logiBUS_AI_IDA`) liefert Rohwert und linear umgerechneten Prozentwert direkt an je ein VT-Zahlenfeld mit Bargraph sowie per OPC-UA-Publish (`ID_RAW_WRITE`, `ID_PERCENT_WRITE`) an den Web-Client. Anders als bei der Calibrate-Variante gibt es keine adaptive Kalibrierkette (`AR_CALIBRATE_SQ_REF`), keine Referenzwerte und keine remote auslösbaren Kalibrierschritte — der Baustein ist reiner Publish-Pfad ohne Rückschreibmöglichkeit.
 
-### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (Ausgänge)
+### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (Ausgänge)
 
 Unverändert aus dem DIDO-Beispiel — siehe dortige Beschreibung.
 

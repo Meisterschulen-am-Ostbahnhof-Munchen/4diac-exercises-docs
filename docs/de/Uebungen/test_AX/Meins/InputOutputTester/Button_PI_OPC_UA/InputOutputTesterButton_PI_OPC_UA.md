@@ -24,7 +24,7 @@ Jeder Pulskanal hat zusätzlich einen **eigenen Enable-Schalter mit Status-LED**
 - **Enable-Schalter mit Status-Rückmeldung**: Jeder Kanal hat einen eigenen Enable-Schalter (`u16ObjId_SWITCH`, per VT-Taste **und** OPC-UA schaltbar über `ID_SWITCH_READ`/`ID_SWITCH_WRITE`) sowie eine Status-LED (`u16ObjId_STATUS`, per OPC-UA veröffentlicht über `ID_STATUS_WRITE`), die den tatsächlichen Aktivierungszustand des Kanals zurückmeldet — dasselbe Set/Reset-plus-Echo-Muster wie bei den bidirektional schaltbaren Ausgängen der anderen Beispiele, hier aber auf einen Eingangs-Freigabeschalter angewendet.
 - **Default-Aktivierung pro Kanal**: `bDefaultEnabled` ist für die Kanäle 1–4 auf `TRUE`, für die Kanäle 5–8 auf `FALSE` voreingestellt — die zweite Kanalgruppe muss beim Start erst aktiv geschaltet werden, bevor sie zählt.
 
-### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (Ausgänge)
+### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (Ausgänge)
 
 Unverändert aus dem DIDO-Beispiel — siehe dortige Beschreibung.
 

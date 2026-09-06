@@ -24,7 +24,7 @@ Each pulse channel additionally has its **own enable switch with a status LED** 
 - **Enable switch with status feedback**: Each channel has its own enable switch (`u16ObjId_SWITCH`, switchable both via a VT button and via OPC-UA through `ID_SWITCH_READ`/`ID_SWITCH_WRITE`) and a status LED (`u16ObjId_STATUS`, published via OPC-UA through `ID_STATUS_WRITE`) reporting the channel's actual activation state back - the same set/reset-plus-echo pattern used by the bidirectionally switchable outputs in the other examples, here applied to an input enable switch instead.
 - **Per-channel default activation**: `bDefaultEnabled` is preset to `TRUE` for channels 1-4 and `FALSE` for channels 5-8 - the second channel group must be switched on explicitly on startup before it starts counting.
 
-### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (outputs)
+### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-en/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (outputs)
 
 Unchanged from the DIDO example - see its description there.
 
