@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Übung ist die direkte Fortsetzung von `Uebung_230_AX` ("2 Taster, Last-Wins" via `ASR_MERGE_2`): hier werden **drei** unabhängige Taster über `ASR_MERGE_3` zu einem gemeinsamen Latch zusammengeführt. Sie zeigt, dass die MERGE-Familie (`ASR_MERGE_2..7`) kein reiner 2-Input-Spezialfall ist, sondern für beliebig viele Quellen skaliert.
+Diese Übung ist die direkte Fortsetzung von `Uebung_230_AX` ("2 Taster, Last-Wins" via `ASR_MERGE_2`): hier werden **drei** unabhängige Taster über `ASR_MERGE_3` zu einem gemeinsamen Latch zusammengeführt. Sie zeigt, dass die MERGE-Familie (`ASR_MERGE_2..7`) kein reiner 2-Input-Spezialfall ist, sondern für mehrere Quellen bis zu sieben Eingänge skaliert.
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -40,7 +40,7 @@ Die Übung verwendet ausschließlich direkte FB-Instanzen, keine SubApp-Instanze
 
 ## Zusammenfassung
 
-`Uebung_233_AX` demonstriert, dass sich das aus 229/230 bekannte Last-Wins-Latch-Muster durch einfaches Austauschen von `ASR_MERGE_2` gegen `ASR_MERGE_3` (plus einem zusätzlichen `AX_ASR_RF_TRIG`) verlustfrei auf eine dritte unabhängige Quelle erweitern lässt. Die MERGE-Familie (`ASR_MERGE_2` bis `ASR_MERGE_7`) skaliert damit auf beliebig viele Quellen, ohne die zugrundeliegende ODER-Logik oder das Latch-Verhalten zu verändern — ein wichtiger Baustein für den Bau modularer, gut erweiterbarer Steuerungslogik.
+`Uebung_233_AX` demonstriert, dass sich das aus 229/230 bekannte Last-Wins-Latch-Muster durch einfaches Austauschen von `ASR_MERGE_2` gegen `ASR_MERGE_3` (plus einem zusätzlichen `AX_ASR_RF_TRIG`) verlustfrei auf eine dritte unabhängige Quelle erweitern lässt. Die MERGE-Familie (`ASR_MERGE_2` bis `ASR_MERGE_7`) skaliert damit auf mehrere Quellen bis zu sieben Eingänge, ohne die zugrundeliegende ODER-Logik oder das Latch-Verhalten zu verändern — ein wichtiger Baustein für den Bau modularer, gut erweiterbarer Steuerungslogik.
 
 ---
 

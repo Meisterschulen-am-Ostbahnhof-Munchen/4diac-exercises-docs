@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise extends `Uebung_204_AX` (which uses the simpler `ILOCK_CONFLICT_TRIP_AX` without a protection time) by adding an extra protection time: After the active input is released, the interlock `DT_PROTECT` waits (here 1 second) before a new direction can be taken (or another conflict triggered). This is the same protection time logic as in `ILOCK_SWITCH_PROTECT_AX` (`Uebung_205_AX`), here combined with the conflict detection (TRIP) from `Uebung_204_AX`.
+This exercise extends `Uebung_204_AX` (which uses the simpler `ILOCK_CONFLICT_TRIP_AX` without a protection time) by adding an extra protection time: After the active input is released, the interlock waits `DT_PROTECT` (here 1 second) before taking over a new direction. This wait applies only to taking over a new direction — a conflict that occurs while the first input is still actively held (i.e. before it is released) still triggers a TRIP immediately, regardless of `DT_PROTECT` (unchanged from `ILOCK_CONFLICT_TRIP`). If, once `DT_PROTECT` has elapsed, the other input is still (or again) active, the resulting re-evaluation triggers a TRIP instead of the new direction. This is the same protection time logic as in `ILOCK_SWITCH_PROTECT_AX` (`Uebung_205_AX`), here combined with the conflict detection (TRIP) from `Uebung_204_AX`.
 
 ## Function Blocks (FBs) Used
 
@@ -26,7 +26,7 @@ This exercise extends `Uebung_204_AX` (which uses the simpler `ILOCK_CONFLICT_TR
 
 - **Parameters**: DT_PROTECT = T#1s
 
-- **Explanation**: Interlocks the two inputs `UP_IN`/`DOWN_IN` mutually. If both are active simultaneously, the function block detects a conflict (TRIP) and sets `TRIP_OUT`. After releasing the previously active input, it waits for `DT_PROTECT` before accepting a new direction (or triggering another TRIP if the other input was activated in the meantime).
+- **Explanation**: Interlocks the two inputs `UP_IN`/`DOWN_IN` mutually. If both are active simultaneously while one direction is still actively held, the function block immediately detects a conflict (TRIP) and sets `TRIP_OUT` — regardless of `DT_PROTECT`. After releasing the previously active input, it waits for `DT_PROTECT` and then re-evaluates the current input state: if only one direction is active, it is taken over; if both are (again) active, a TRIP is triggered instead.
 
 - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 
@@ -65,7 +65,7 @@ This exercise does not use any further sub-function blocks; all function blocks 
 
 5. **Conflict Case (TRIP)**: If `UP_IN` and `DOWN_IN` are active simultaneously, `ILOCK_AX.TRIP_OUT` sets → `Trip_Anzeige.OUT` and blocks both outputs until reset via `DigitalInput_Reset`.
 
-6. **Protection Time**: If the active input is released, `ILOCK_AX` will only accept a new direction after `DT_PROTECT` (1 s) has elapsed. If the other input was activated during this time, a TRIP is triggered again instead.
+6. **Protection Time**: If the active input is released, `ILOCK_AX` waits `DT_PROTECT` (1 s) and then re-evaluates the current input state: if only one direction is active, it is taken over; if both inputs are active (because the other one was activated in the meantime and is still pending), a TRIP is triggered instead. A conflict that occurs while the first input is still held (i.e. before it is released), by contrast, still triggers a TRIP immediately, without waiting for `DT_PROTECT`.
 
 ## Summary
 

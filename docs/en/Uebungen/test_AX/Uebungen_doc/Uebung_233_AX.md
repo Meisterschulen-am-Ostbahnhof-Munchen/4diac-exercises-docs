@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise is the direct continuation of `Uebung_230_AX` ("2 Buttons, Last Wins" via `ASR_MERGE_2`): here, **three** independent buttons are combined into a single latch via `ASR_MERGE_3`. It demonstrates that the MERGE family (`ASR_MERGE_2..7`) is not a purely 2-input special case, but scales for any number of sources.
+This exercise is the direct continuation of `Uebung_230_AX` ("2 Buttons, Last Wins" via `ASR_MERGE_2`): here, **three** independent buttons are combined into a single latch via `ASR_MERGE_3`. It demonstrates that the MERGE family (`ASR_MERGE_2..7`) is not a purely 2-input special case, but scales for several sources up to seven inputs.
 
 
 ## Function Blocks (FBs) Used
@@ -60,7 +60,7 @@ This exercise uses only direct FB instances, not SubApp instances.
 
 ## Summary
 
-`Uebung_233_AX` demonstrates that the Last-Wins Latch pattern known from 229/230 can be extended losslessly to a third independent source by simply replacing `ASR_MERGE_2` with `ASR_MERGE_3` (plus an additional `AX_ASR_RF_TRIG`). The MERGE family (`ASR_MERGE_2` to `ASR_MERGE_7`) thus scales to any number of sources without changing the underlying OR logic or latch behavior—an important building block for constructing modular, easily extensible control logic.
+`Uebung_233_AX` demonstrates that the Last-Wins Latch pattern known from 229/230 can be extended losslessly to a third independent source by simply replacing `ASR_MERGE_2` with `ASR_MERGE_3` (plus an additional `AX_ASR_RF_TRIG`). The MERGE family (`ASR_MERGE_2` to `ASR_MERGE_7`) thus scales to several sources up to seven inputs without changing the underlying OR logic or latch behavior—an important building block for constructing modular, easily extensible control logic.
 
 
 ---

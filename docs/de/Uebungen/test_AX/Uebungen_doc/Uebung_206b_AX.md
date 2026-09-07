@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Übung erweitert `Uebung_206_AX` (zwei über `ILOCK_T_FF_AX` gegenseitig verriegelte Toggle-Flip-Flops) um den bislang letzten noch ungenutzten Interlock-Baustein: `ILOCK_T_FF_SR_AX`. Dieser bietet zusätzlich zum Toggle-Eingang (`CLK`) zwei direkte Ereigniseingänge `S` (Set) und `R` (Reset), die – nur an der ersten Instanz gezeigt – ebenfalls über die Verriegelungskette auf das jeweils andere Flip-Flop wirken.
+Diese Übung erweitert `Uebung_206_AX` (zwei über `ILOCK_T_FF_AX` gegenseitig verriegelte Toggle-Flip-Flops) um den bislang letzten noch ungenutzten Interlock-Baustein: `ILOCK_T_FF_SR_AX`. Dieser bietet zusätzlich zum Toggle-Eingang (`CLK`) zwei direkte Ereigniseingänge `S` (Set) und `R` (Reset) – nur an der ersten Instanz gezeigt. Von beiden wirkt nur `S` über die Verriegelungskette auf das jeweils andere Flip-Flop (genau wie ein CLK-Toggle nach EIN); `R` betrifft ausschließlich den lokalen Ausgang und lässt das Partner-Flip-Flop unverändert.
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -39,7 +39,7 @@ Die Übung verwendet keine weiteren Unterbausteine, alle FBs sind direkt auf der
 2. `DigitalInput_Set_I3.IND` → `ILOCK_T_FF_SR_1.S`: Klick auf I3 setzt FF1 direkt (ohne Toggle-Logik).
 3. `DigitalInput_Reset_I4.IND` → `ILOCK_T_FF_SR_1.R`: Klick auf I4 setzt FF1 direkt zurück.
 4. `DigitalInput_CLK_I2.IND` → `ILOCK_T_FF_SR_2.CLK`: Klick auf I2 togglet FF2.
-5. `ILOCK_T_FF_SR_1.ILOCK_OUT` → `ILOCK_T_FF_SR_2.ILOCK_IN`: Die Verriegelungskette überträgt jeden Zustandswechsel von FF1 an FF2, unabhängig davon, ob er durch CLK-Toggle oder durch direktes Set ausgelöst wurde.
+5. `ILOCK_T_FF_SR_1.ILOCK_OUT` → `ILOCK_T_FF_SR_2.ILOCK_IN`: Die Verriegelungskette überträgt jeden Wechsel von FF1 auf EIN (per CLK-Toggle oder per direktem Set) an FF2 und schaltet es dadurch aus; ein Wechsel auf AUS (per CLK-Toggle oder per direktem Reset) wird dagegen nicht übertragen.
 6. `ILOCK_T_FF_SR_1.Q` → `DigitalOutput_Q1.OUT`, `ILOCK_T_FF_SR_2.Q` → `DigitalOutput_Q2.OUT`.
 7. **Testablauf**: I1 (CLK FF1) klicken → Q1 EIN, Q2 automatisch AUS (wie in `Uebung_206_AX`). I3 (Set FF1) klicken → dasselbe Ergebnis, aber ohne Toggle-Verhalten – Q1 ist danach garantiert EIN, unabhängig vom vorherigen Zustand, und verriegelt FF2 genauso wie ein CLK-Toggle. I4 (Reset FF1) klicken → Q1 AUS, **Q2 bleibt dabei unverändert**, da ein Reset kein Verriegelungssignal an die Kette sendet – anders als Toggle-auf-EIN oder direktes Set.
 

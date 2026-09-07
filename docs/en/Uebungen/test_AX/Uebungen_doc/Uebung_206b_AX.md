@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise extends `Uebung_206_AX` (two mutually interlocked toggle flip-flops via `ILOCK_T_FF_AX`) by adding the last, previously unused interlock component: `ILOCK_T_FF_SR_AX`. In addition to the toggle input (`CLK`), this provides two direct event inputs, `S` (Set) and `R` (Reset), which—shown only in the first instance—also act on the other flip-flop via the interlocking chain.
+This exercise extends `Uebung_206_AX` (two mutually interlocked toggle flip-flops via `ILOCK_T_FF_AX`) by adding the last, previously unused interlock component: `ILOCK_T_FF_SR_AX`. In addition to the toggle input (`CLK`), this provides two direct event inputs, `S` (Set) and `R` (Reset) — shown only in the first instance. Of the two, only `S` acts on the other flip-flop via the interlocking chain (exactly like a CLK toggle to ON); `R` affects only the local output and leaves the partner flip-flop unchanged.
 
 ## Function Blocks (FBs) Used
 
@@ -60,7 +60,7 @@ This exercise does not use any further sub-blocks; all FBs are located directly 
 
 4. `DigitalInput_CLK_I2.IND` → `ILOCK_T_FF_SR_2.CLK`: Clicking I2 toggles FF2.
 
-5. `ILOCK_T_FF_SR_1.ILOCK_OUT` → `ILOCK_T_FF_SR_2.ILOCK_IN`: The interlock chain transfers every state change from FF1 to FF2, regardless of whether it was triggered by a CLK toggle or a direct set.
+5. `ILOCK_T_FF_SR_1.ILOCK_OUT` → `ILOCK_T_FF_SR_2.ILOCK_IN`: The interlock chain transfers every transition of FF1 to ON (via CLK toggle or direct set) to FF2 and thereby turns it off; a transition to OFF (via CLK toggle or direct reset) is not transferred.
 
 6. `ILOCK_T_FF_SR_1.Q` → `DigitalOutput_Q1.OUT`, `ILOCK_T_FF_SR_2.Q` → `DigitalOutput_Q2.OUT`.
 

@@ -84,7 +84,7 @@ This exercise is a direct sibling to `Uebung_229_AX.md`/`Uebung_230_AX.md`, but 
 
 5. `ASRT_AX_T_FF_SR_1.Q` → `DigitalOutput_Q1.OUT`: The latch state is set to the physical output `Q1`.
 
-**Behavior**: If `I1` is pressed and held, `Q1` turns ON—as long as `I1` remains pressed (last wins as in `Uebung_229_AX.md`/`Uebung_230_AX.md`). Releasing `I1` immediately turns `Q1` OFF. Regardless, each click of the toggle button `I2` toggles the current state of `Q1`, irrespective of what `I1` is doing—a click on `I2` therefore reverses the current state of `Q1`, whether `I1` is currently pressed or released.
+**Behavior**: `I1` still provides the same last-wins behavior as in `Uebung_229_AX.md`/`Uebung_230_AX.md`: pressing triggers `SET` (`Q1` → ON), releasing triggers `RESET` (`Q1` → OFF). The toggle button `I2` acts independently of this: every click on `I2` immediately toggles the current state of `Q1`, regardless of the physical state of `I1`. Concretely, that means: if `I1` is held pressed (so `Q1` is currently ON via `SET`), a click on `I2` can still switch `Q1` OFF even though `I1` remains pressed — `Q1` does not permanently track `I1`'s held state, but always follows whichever SET, RESET, or TOGGLE event arrived last, regardless of which of the two sources it came from.
 
 ## Summary
 

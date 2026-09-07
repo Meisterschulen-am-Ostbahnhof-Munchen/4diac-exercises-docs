@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Übung erweitert `Uebung_204_AX` (die den einfachen `ILOCK_CONFLICT_TRIP_AX` ohne Schutzzeit verwendet) um eine zusätzliche Schutzzeit: Nach Freigabe des aktiven Eingangs wartet die Verriegelung `DT_PROTECT` (hier 1 Sekunde) ab, bevor eine neue Richtung übernommen (oder erneut ein Konflikt ausgelöst) werden kann. Es handelt sich um dieselbe Schutzzeit-Logik wie bei `ILOCK_SWITCH_PROTECT_AX` (`Uebung_205_AX`), hier kombiniert mit der Konflikterkennung (TRIP) aus `Uebung_204_AX`.
+Diese Übung erweitert `Uebung_204_AX` (die den einfachen `ILOCK_CONFLICT_TRIP_AX` ohne Schutzzeit verwendet) um eine zusätzliche Schutzzeit: Nach Freigabe des aktiven Eingangs wartet die Verriegelung `DT_PROTECT` (hier 1 Sekunde) ab, bevor sie eine neue Richtung übernimmt. Diese Wartezeit gilt ausschließlich für die Übernahme einer neuen Richtung – ein Konflikt, der auftritt, während der erste Eingang noch aktiv gehalten wird (also vor dessen Freigabe), löst weiterhin sofort einen TRIP aus, unabhängig von `DT_PROTECT` (unverändert gegenüber `ILOCK_CONFLICT_TRIP`). Ist nach Ablauf von `DT_PROTECT` jedoch immer noch (oder wieder) der jeweils andere Eingang aktiv, wird bei der dann fälligen Neubewertung statt der neuen Richtung erneut ein TRIP ausgelöst. Es handelt sich um dieselbe Schutzzeit-Logik wie bei `ILOCK_SWITCH_PROTECT_AX` (`Uebung_205_AX`), hier kombiniert mit der Konflikterkennung (TRIP) aus `Uebung_204_AX`.
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -18,7 +18,7 @@ Diese Übung erweitert `Uebung_204_AX` (die den einfachen `ILOCK_CONFLICT_TRIP_A
     - **Erklärung**: Löst bei einem Tasterklick das Rücksetzen (`EI_RESET`) der Verriegelung aus, nachdem ein Konflikt (TRIP) aufgetreten ist.
 - **ILOCK_AX**: Interlock-Baustein (Typ: `logiBUS::signalprocessing::interlock::ILOCK_CONFLICT_TRIP_PROTECT_AX`)
     - **Parameter**: DT_PROTECT = T#1s
-    - **Erklärung**: Verriegelt die beiden Eingänge `UP_IN`/`DOWN_IN` gegenseitig. Sind beide gleichzeitig aktiv, erkennt der Baustein einen Konflikt (TRIP) und setzt `TRIP_OUT`. Nach Freigabe des zuvor aktiven Eingangs wartet er zusätzlich `DT_PROTECT`, bevor eine neue Richtung angenommen wird (bzw. erneut ein TRIP ausgelöst wird, falls währenddessen der jeweils andere Eingang aktiviert wurde).
+    - **Erklärung**: Verriegelt die beiden Eingänge `UP_IN`/`DOWN_IN` gegenseitig. Sind beide gleichzeitig aktiv, während eine Richtung noch aktiv gehalten wird, erkennt der Baustein sofort einen Konflikt (TRIP) und setzt `TRIP_OUT` – unabhängig von `DT_PROTECT`. Nach Freigabe des zuvor aktiven Eingangs wartet er zusätzlich `DT_PROTECT` ab und bewertet danach die dann aktuelle Eingangslage neu: liegt nur noch eine Richtung an, wird sie übernommen; sind (wieder) beide Eingänge aktiv, wird stattdessen erneut ein TRIP ausgelöst.
 - **DigitalOutput_Q1**: logiBUS Digitalausgang (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
     - **Parameter**: QI = TRUE, Output = Output_Q1
     - **Erklärung**: Gibt das freigegebene `UP_OUT`-Signal an die Peripherie weiter.
@@ -43,7 +43,7 @@ Die Übung verwendet keine weiteren Unterbausteine, alle FBs sind direkt auf der
 3. `ILOCK_AX.timeOut` → `E_TimeOut.TimeOutSocket`: Der Interlock-Baustein bezieht darüber die Zeitbasis für die Schutzzeitüberwachung `DT_PROTECT`.
 4. **Normalbetrieb**: Ist nur ein Eingang aktiv, wird `UP_OUT` bzw. `DOWN_OUT` freigegeben und über `Output_Q1`/`Output_Q2` ausgegeben.
 5. **Konfliktfall (TRIP)**: Sind `UP_IN` und `DOWN_IN` gleichzeitig aktiv, setzt `ILOCK_AX.TRIP_OUT` → `Trip_Anzeige.OUT` und blockiert beide Ausgänge, bis über `DigitalInput_Reset` zurückgesetzt wird.
-6. **Schutzzeit**: Wird der aktive Eingang losgelassen, akzeptiert `ILOCK_AX` erst nach Ablauf von `DT_PROTECT` (1 s) eine neue Richtung – wurde währenddessen der jeweils andere Eingang aktiviert, wird stattdessen erneut ein TRIP ausgelöst.
+6. **Schutzzeit**: Wird der aktive Eingang losgelassen, wartet `ILOCK_AX` `DT_PROTECT` (1 s) ab und bewertet danach die dann aktuelle Eingangslage neu: liegt nur eine Richtung an, wird sie übernommen; sind beide Eingänge aktiv (weil der andere währenddessen aktiviert wurde und noch ansteht), wird stattdessen ein TRIP ausgelöst. Ein Konflikt, der auftritt, während der erste Eingang noch gehalten wird (also vor dessen Freigabe), löst dagegen weiterhin sofort TRIP aus, ohne auf `DT_PROTECT` zu warten.
 
 ## Zusammenfassung
 

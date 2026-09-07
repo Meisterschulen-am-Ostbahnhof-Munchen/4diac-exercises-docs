@@ -51,7 +51,7 @@ Diese Übung ist ein direktes Geschwister zu `Uebung_229_AX.md`/`Uebung_230_AX.m
 4. `ASRT_MERGE_2.OUT` → `ASRT_AX_T_FF_SR_1.S_R_T`: das zusammengeführte SET/RESET/TOGGLE-Signal steuert die gemeinsame Verriegelung.
 5. `ASRT_AX_T_FF_SR_1.Q` → `DigitalOutput_Q1.OUT`: der Latch-Zustand wird auf den physischen Ausgang `Q1` gelegt.
 
-**Verhalten**: Wird `I1` gedrückt und gehalten, geht `Q1` EIN — solange `I1` gedrückt bleibt (Last-Wins wie in `Uebung_229_AX.md`/`Uebung_230_AX.md`). Lässt man `I1` los, geht `Q1` sofort wieder AUS. Unabhängig davon schaltet jeder Klick auf den Toggle-Taster `I2` den aktuellen Zustand von `Q1` um, unabhängig davon, was `I1` gerade tut — ein Klick auf `I2` kehrt also den momentanen Zustand von `Q1` um, egal ob `I1` gerade gedrückt oder losgelassen ist.
+**Verhalten**: `I1` liefert weiterhin dasselbe Last-Wins-Verhalten wie in `Uebung_229_AX.md`/`Uebung_230_AX.md`: Drücken löst `SET` aus (`Q1` → EIN), Loslassen löst `RESET` aus (`Q1` → AUS). Der Toggle-Taster `I2` wirkt davon unabhängig: Jeder Klick auf `I2` togglet den aktuellen Zustand von `Q1` sofort um, unabhängig vom physischen Zustand von `I1`. Das bedeutet konkret: Hält man `I1` gedrückt (`Q1` also gerade durch `SET` auf EIN), kann ein Klick auf `I2` `Q1` trotzdem auf AUS umschalten, obwohl `I1` weiterhin gedrückt bleibt — `Q1` folgt hier also nicht permanent dem Haltezustand von `I1`, sondern jeweils dem zuletzt eingetroffenen SET-, RESET- oder TOGGLE-Ereignis, unabhängig davon, von welcher der beiden Quellen es stammt.
 
 ## Zusammenfassung
 
