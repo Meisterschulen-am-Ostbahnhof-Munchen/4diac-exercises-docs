@@ -21,7 +21,7 @@ Diese Übung ist das Spiegelbild von `Uebung_230_AX.md`: dort führte `ASR_MERGE
 - **ASR_SPLIT_2**: Verteiler für den einen ASR-Stream
     - **Typ**: `adapter::events::unidirectional::ASR_SPLIT_2`
     - **Parameter**: keine
-    - **Erklärung**: Ein Adapter-Plug (`AX_ASR_RF_TRIG_1.Q`) ist strikt punkt-zu-punkt — er kann nicht direkt gleichzeitig an zwei `ASR_AX_SR.S_R`-Sockets angeschlossen werden. Genau dieselbe Grundregel, die in `Uebung_230_AX.md` `ASR_MERGE_2` nötig machte (mehrere Quellen können nicht direkt auf einen Adapter-Socket zeigen — anders als bei den rohen `EventConnections` in `Uebung_229_AX.md`, wo das erlaubt ist), erzwingt hier umgekehrt `ASR_SPLIT_2` (eine Quelle kann nicht direkt zwei Plugs gleichzeitig bedienen). `ASR_SPLIT_2` dupliziert den einen ASR-Stream verlustfrei auf zwei Ausgänge.
+    - **Erklärung**: Ein Adapter-Plug (`AX_ASR_RF_TRIG_1.Q`) ist strikt punkt-zu-punkt — er kann nicht direkt gleichzeitig an zwei `ASR_AX_SR.S_R`-Sockets angeschlossen werden. Genau dieselbe Grundregel, die in `Uebung_230_AX.md` `ASR_MERGE_2` nötig machte (mehrere Quellen können nicht direkt auf einen Adapter-Socket zeigen — anders als bei den rohen `EventConnections` in `Uebung_229_AX.md`, wo das erlaubt ist), erzwingt hier umgekehrt `ASR_SPLIT_2` (eine Quelle kann nicht direkt zwei Sockets gleichzeitig bedienen). `ASR_SPLIT_2` dupliziert den einen ASR-Stream verlustfrei auf zwei Ausgänge.
 - **ASR_AX_SR_1**, **ASR_AX_SR_2**: zwei unabhängige Set-Reset-Verriegelungen
     - **Typ**: `adapter::events::unidirectional::ASR_AX_SR`
     - **Parameter**: keine

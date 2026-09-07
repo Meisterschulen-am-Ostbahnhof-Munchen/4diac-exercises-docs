@@ -33,7 +33,7 @@ This exercise is the mirror image of `Uebung_230_AX.md`: there, `ASR_MERGE_2` co
 
 - **Parameters**: None
 
-- **Explanation**: An adapter plug (`AX_ASR_RF_TRIG_1.Q`) is strictly point-to-point—it cannot be directly connected to two `ASR_AX_SR.S_R` sockets simultaneously. The same fundamental rule that necessitated `ASR_MERGE_2` in `Uebung_230_AX.md` (multiple sources cannot directly target one adapter socket — unlike the raw `EventConnections` in `Uebung_229_AX.md`, where that is allowed) here, conversely, enforces `ASR_SPLIT_2` (one source cannot directly serve two plugs simultaneously). `ASR_SPLIT_2` losslessly duplicates the single ASR stream to two outputs.
+- **Explanation**: An adapter plug (`AX_ASR_RF_TRIG_1.Q`) is strictly point-to-point—it cannot be directly connected to two `ASR_AX_SR.S_R` sockets simultaneously. The same fundamental rule that necessitated `ASR_MERGE_2` in `Uebung_230_AX.md` (multiple sources cannot directly target one adapter socket — unlike the raw `EventConnections` in `Uebung_229_AX.md`, where that is allowed) here, conversely, enforces `ASR_SPLIT_2` (one source cannot directly serve two sockets simultaneously). `ASR_SPLIT_2` losslessly duplicates the single ASR stream to two outputs.
 
 - **ASR_AX_SR_1**, **ASR_AX_SR_2**: two independent set/reset latches
 
