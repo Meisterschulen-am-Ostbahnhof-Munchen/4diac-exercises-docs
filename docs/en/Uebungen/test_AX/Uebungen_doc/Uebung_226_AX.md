@@ -10,7 +10,7 @@ This exercise is the adapter version of [Exercise 226](../../test_B/Uebungen_doc
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
+- **Sollwert_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`.
 

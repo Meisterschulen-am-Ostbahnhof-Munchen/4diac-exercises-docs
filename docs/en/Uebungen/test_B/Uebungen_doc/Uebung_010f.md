@@ -12,24 +12,17 @@ This exercise is the classic (not wired via AX adapter) version of `Uebung_010f_
 ## Function Blocks (FBs) Used
 
 - **AuxFunction2_X1**: Auxiliary Function Input (Type: `isobus::UT::io::Auxiliary::IN::Aux_IX`)
-
-- **Parameters**: `QI = TRUE`, `u16ObjId = AuxFunction2_X1`
-
-- **Explanation**: Returns the Boolean state of the assigned physical auxiliary button/joystick via the event/data interface `IND`/`IN`.
-
+    - **Parameters**: `QI = TRUE`, `u16ObjId = AuxFunction2_X1`
+    - **Explanation**: Returns the Boolean state of the assigned physical auxiliary button/joystick via the event/data interface `IND`/`IN`.
 - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QX`)
-
-- **Parameters**: `QI = TRUE`, `Output = Output_Q1` (stored as invisible parameters in the network)
-
-- **Description**: Switches the physical output Q1 according to the Aux state.
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1` (stored as invisible parameters in the network)
+    - **Description**: Switches the physical output Q1 according to the Aux state.
 
 ### Sub-Blocks: GreenWhiteBackground
 
 - **GreenWhiteBackground** (Type: `MyLib::sys::GreenWhiteBackground2`)
-
-- **Parameters**: `u16ObjIdA = AuxFunction2_X1`
-
-- **Description**: Sets the background color of the Aux object depending on the Boolean input `DI1` (green = ON, white = OFF). Since `AuxFunction2_X1` is an Auxiliary Function Type 2 object, the assignment must be displayed both on the VT screen and on the aux handle (joystick) itself. These two displays are connected via separate links and are therefore set internally using two commands (`Q_BackgroundColour` for the VT, `Q_BackgroundColourAux` for the aux handle). Therefore, `GreenWhiteBackground2` (not `GreenWhiteBackground1`) must be used here.
+    - **Parameters**: `u16ObjIdA = AuxFunction2_X1`
+    - **Description**: Sets the background color of the Aux object depending on the Boolean input `DI1` (green = ON, white = OFF). Since `AuxFunction2_X1` is an Auxiliary Function Type 2 object, the assignment must be displayed both on the VT screen and on the aux handle (joystick) itself. These two displays are connected via separate links and are therefore set internally using two commands (`Q_BackgroundColour` for the VT, `Q_BackgroundColourAux` for the aux handle). Therefore, `GreenWhiteBackground2` (not `GreenWhiteBackground1`) must be used here.
 
 
 ## Program Flow and Connections
@@ -46,8 +39,7 @@ This exercise is the classic (not wired via AX adapter) version of `Uebung_010f_
 
 This exercise demonstrates how a physical Aux button can simultaneously switch a digital output and be indicated by a corresponding background color on the VT screen and Aux handle. Unlike the adapter variant `Uebung_010f_AX`, the classic wiring configuration does not require a split block, as standard Event/Data Connections allow for any number of destinations. It remains important to choose `GreenWhiteBackground2` instead of `GreenWhiteBackground1`, as Auxiliary Function Type 2 objects require two separate color feedback signals.
 
-
-This exercise demonstrates how a physical Auxiliary button can simultaneously switch a digital output and be indicated by a corresponding background color on the VT screen and Aux handle. Unlike the adapter variant `Uebung_010f_AX`, the classic wiring configuration does not require a split block, as standard Event/Data Connections allow for any number of destinations. ---
+---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 

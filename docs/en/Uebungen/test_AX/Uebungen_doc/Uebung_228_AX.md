@@ -11,7 +11,7 @@ This exercise is a derivative of `Uebung_227_AX.md`: the target value continues 
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N**: Terminal input for the setpoint
+- **Sollwert_N**: Terminal input for the setpoint
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`
 
@@ -41,7 +41,7 @@ This exercise is a derivative of `Uebung_227_AX.md`: the target value continues 
 
 - **Explanation**: Displays the target value as a split bar graph.
 
-- **ActualValue_N**: Terminal output of the actual value
+- **Istwert_N**: Terminal output of the actual value
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 

@@ -22,7 +22,7 @@ Diese Übung liest einen analogen 0-10V-Eingang auf dem DataPanel ein und wandel
 ## Programmablauf und Verbindungen
 
 1. `DataPanel_MI_IW_0_10V` liest laufend die analoge Eingangsspannung ein.
-2. Sowohl bei jeder Wertänderung (`IND`) als auch bei jeder Bestätigung (`CNF`) wird `F_DWORD_TO_UDINT_I8.REQ` ausgelöst.
+2. Bei jeder Wertänderung (`IND`) wird `F_DWORD_TO_UDINT_I8.REQ` ausgelöst. `CNF` signalisiert danach den Abschluss der Konvertierung.
 3. Der Datenwert `DataPanel_MI_IW_0_10V.IN` wird auf `F_DWORD_TO_UDINT_I8.IN` geführt.
 4. `F_DWORD_TO_UDINT_I8` wandelt den DWORD-Rohwert in einen UDINT-Zahlenwert um.
 

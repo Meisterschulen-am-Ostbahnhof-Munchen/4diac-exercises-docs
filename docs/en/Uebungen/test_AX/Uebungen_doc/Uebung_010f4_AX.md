@@ -76,7 +76,7 @@
 This exercise is intentionally not a model, but rather a cautionary example: Before individually assembling several generic building blocks for a combined case (normal VT object + Aux object), you should first check whether a suitable, ready-made building block already exists in the library (here: `GreenWhiteBackground3_AX`, see `Uebung_010f3_AX`). Comparing both sub-apps in the 4diac editor immediately reveals the difference in resource consumption.
 
 
-## Summary ---
+---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 

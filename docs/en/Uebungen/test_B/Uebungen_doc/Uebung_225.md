@@ -11,7 +11,7 @@ This exercise positions a small triangle (center marker) within a container on t
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N**: Terminal input (Type: `isobus::UT::io::NumericValue::NumericValue_PHYS`)
+- **Sollwert_N**: Terminal input (Type: `isobus::UT::io::NumericValue::NumericValue_PHYS`)
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`
 
@@ -29,13 +29,13 @@ This exercise positions a small triangle (center marker) within a container on t
 
 - **Explanation**: Converts the calculated `REAL` position value to a `INT` pixel value.
 
-- **Q_ChildPosition_Triangle**: Object positioning (Type: `isobus::UT::Q::Q_ChildPosition`)
+- **Q_ChildPosition_Dreieck**: Object positioning (Type: `isobus::UT::Q::Q_ChildPosition`)
 
 - **Parameters**: `u16ObjId = Polygon_Bargraph_Mittelmarker` (child object, triangle), `u16ObjIdParent = Container_Sollwertmarker` (parent object), `xScale = TRUE`, `s16Yposition = 0`
 
 - **Explanation**: Writes the new X-position of the triangle within the container using the Change-Child-Position command. `xScale = TRUE` ensures that the pixel offset is additionally multiplied by the DataMask scaling factor. Y remains constant at 0.
 
-- **Actual Value_N**: Terminal output (Type: `isobus::UT::Q::Q_NumericValue_PHYS`)
+- **Istwert_N**: Terminal output (Type: `isobus::UT::Q::Q_NumericValue_PHYS`)
 
 - **Parameter**: `stObj = NumberVariable_Istwert_N`
 

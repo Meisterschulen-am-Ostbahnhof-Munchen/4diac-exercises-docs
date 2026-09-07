@@ -1,4 +1,4 @@
-# Exercise_234_AX: Two-Point Controller with Hysteresis (Hardware-Only Exercise, No Temperature Display)
+# Exercise_234_AX: Two-Point Controller with Hysteresis (Hardware-Only Exercise, No VT)
 
 ![Uebung_234_AX_network](./Uebung_234_AX_network.svg)
 
@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise implements a classic thermostat/level switch pattern: An analog measurement (e.g., level or temperature) is checked against an average value `MI` with a dead zone (`DEAD`) and hysteresis (`HYSTERESIS`) and controls two opposing actuators (e.g., filling/emptying or heating/cooling) – never both simultaneously. The exercise uses only physical hardware, without a temperature display.
+This exercise implements a classic thermostat/level switch pattern: An analog measurement (e.g., level or temperature) is checked against an average value `MI` with a dead zone (`DEAD`) and hysteresis (`HYSTERESIS`) and controls two opposing actuators (e.g., filling/emptying or heating/cooling) – never both simultaneously. The exercise uses only physical hardware, without a VT display.
 
 
 ## Function Blocks Used (FBs)

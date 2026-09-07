@@ -10,7 +10,7 @@ This exercise is the adapter version of [Exercise 225](../../test_B/Uebungen_doc
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter version of `NumericValue_PHYS`.
+- **Sollwert_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter version of `NumericValue_PHYS`.
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`.
 
@@ -52,7 +52,7 @@ This exercise is the adapter version of [Exercise 225](../../test_B/Uebungen_doc
 
 - **Explanation**: Moves the triangle object within its container. `s16Xposition` originates from the arithmetic chain (`AR_TO_AI.AI_OUT`), `s16Yposition` is hardwired to `0` via `initval_AI` — both as dedicated AI adapter sockets instead of plain INT inputs.
 
-- **Actual Value_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
+- **Istwert_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
 
 - **Parameter**: `stObj = NumberVariable_Istwert_N`.
 

@@ -10,7 +10,7 @@ This exercise is the adapter version of [Exercise 225b](../../test_B/Uebungen_do
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
+- **Sollwert_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`.
 
@@ -23,7 +23,7 @@ This exercise is the adapter version of [Exercise 225b](../../test_B/Uebungen_do
 
 - **Explanation**: Cleanly distributes the single read setpoint to the two consumers `Marker_Dreieck` and `Istwert_N` — an adapter cannot point directly to multiple targets.
 
-- **Actual Value_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
+- **Istwert_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
 
 - **Parameters**: `stObj = NumberVariable_Istwert_N`.
 

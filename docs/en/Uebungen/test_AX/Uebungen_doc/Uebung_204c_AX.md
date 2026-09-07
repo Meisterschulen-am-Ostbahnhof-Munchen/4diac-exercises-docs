@@ -69,7 +69,7 @@ This exercise does not use any further sub-function blocks; all function blocks 
 
 ## Summary
 
-Exercise 204c_AX combines the conflict detection from `Uebung_204_AX` with a protection time after the active input is released, as introduced in `Uebung_205_AX` for simple direction changes. `ILOCK_CONFLICT_TRIP_PROTECT_AX` thus prevents not only simultaneous, conflicting requests, but also excessively rapid direction changes immediately after enabling – a typical requirement for robust interlock logic in automation technology.
+Exercise 204c_AX combines the conflict detection from `Uebung_204_AX` with a protection time after the active input is released, as introduced in `Uebung_205_AX` for simple direction changes. `ILOCK_CONFLICT_TRIP_PROTECT_AX` thus prevents not only simultaneous, conflicting requests, but also excessively rapid direction changes immediately after the active input is released – a typical requirement for robust interlock logic in automation technology.
 
 ---
 

@@ -11,7 +11,7 @@ This exercise combines Exercise 225b_AX (Triangle Setpoint Marker) and Exercise 
 
 ## Function Blocks (FBs) Used
 
-- **Setpoint_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
+- **Sollwert_N** (`isobus::UT::io::NumericValue::NumericValue_PHYSA`): AR adapter variant of `NumericValue_PHYS`.
 
 - **Parameters**: `QI = TRUE`, `stObj = NumberVariable_Sollwert_N`.
 
@@ -23,7 +23,7 @@ This exercise combines Exercise 225b_AX (Triangle Setpoint Marker) and Exercise 
 
 - **Explanation**: This cleanly distributes the single read setpoint to the three consumers `Marker_Dreieck`, `SplitBar`, and `Istwert_N` — an adapter cannot point directly to multiple destinations. Compared to `AR_SPLIT_2` in 225b_AX, a third output is added here.
 
-- **Actual Value_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
+- **Istwert_N** (`isobus::UT::Q::Q_NumericValue_PHYSA`): AR adapter variant of `Q_NumericValue_PHYS`.
 
 - **Parameter**: `stObj = NumberVariable_Istwert_N`.
 
