@@ -28,12 +28,7 @@ This exercise implements the same function as `Uebung_172b_ASRT` (button `I1` = 
 
 - **Description**: Locks the bundled `S_R_T` input: SET turns `Q` ON, RESET turns `Q` OFF, TOGGLE reverses the current state.
 
-
-**ASRT_AX_T_FF_SR_1**: Set-Reset-Toggle Latch (Type: `adapter::events::unidirectional::ASRT_AX_T_FF_SR`)
-
-**Parameters**: None
-
-**Description**: Locks the bundled `S_R_T` input: SET turns `Q` ON, RESET turns `Q` OFF, TOGGLE reverses the current state. - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
+- **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 
 - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
 

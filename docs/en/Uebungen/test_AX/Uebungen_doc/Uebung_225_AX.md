@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise is the adapter version of [Exercise 225](../../test_B/Uebungen_doc/Uebung_225.md) (test_B)]: identical function—a triangle marker follows a setpoint offset by a fixed center point offset—but **completely** wired via adapters. There is no longer a single plain event or data connection in the entire sub-app; both the setpoint reading and actual value writing, as well as the complete calculation chain for the triangle movement, run via generic adapter blocks.
+This exercise is the adapter version of [Exercise 225](../../test_B/Uebungen_doc/Uebung_225.md) (test_B): identical function—a triangle marker follows a setpoint offset by a fixed center point offset—but **completely** wired via adapters. There is no longer a single plain event or data connection in the entire sub-app; both the setpoint reading and actual value writing, as well as the complete calculation chain for the triangle movement, run via generic adapter blocks.
 
 ## Function Blocks (FBs) Used
 
@@ -46,7 +46,7 @@ This exercise is the adapter version of [Exercise 225](../../test_B/Uebungen_doc
 
 - **Explanation**: Returns the fixed Y-position `0` as an AI adapter output.
 
-- **Q_ChildPosition_Triangle** (`isobus::UT::Q::Q_ChildPosition_AI`): Service block "Change Child Location" (ISO 11783-6) with AI adapter position inputs.
+- **Q_ChildPosition_Dreieck** (`isobus::UT::Q::Q_ChildPosition_AI`): Service block "Change Child Location" (ISO 11783-6) with AI adapter position inputs.
 
 - **Parameters**: `u16ObjId = Polygon_Bargraph_Mittelmarker`, `u16ObjIdParent = Container_Sollwertmarker`, `xScale = TRUE`.
 
@@ -81,7 +81,7 @@ This exercise uses only generic adapter blocks directly at the top level of the 
 
 ## Summary
 
-Exercise 225_AX demonstrates that a complete signal processing chain—reading, distributing, calculating, type converting, and writing—can be fully implemented using generic adapter components without writing a single custom composite component. Functionally, it is identical to the classic solution in [Exercise 225](../../test_B/Uebungen_doc/Uebung_225.md) (test_B)], but differs fundamentally in its wiring style: Instead of loose event/data connections between individual function blocks, a continuous adapter pipeline is created, consisting of `AR_SPLIT_2`, `AR_ADD_2`, `initval_AR`, `AR_TO_AI`, and `initval_AI`. This exercise forms the basis for 225b_AX, which solves the same task with a reusable composite block (`PositionMarkerFSA`) instead of the loose adapter chain.
+Exercise 225_AX demonstrates that a complete signal processing chain—reading, distributing, calculating, type converting, and writing—can be fully implemented using generic adapter components without writing a single custom composite component. Functionally, it is identical to the classic solution in [Exercise 225](../../test_B/Uebungen_doc/Uebung_225.md) (test_B), but differs fundamentally in its wiring style: Instead of loose event/data connections between individual function blocks, a continuous adapter pipeline is created, consisting of `AR_SPLIT_2`, `AR_ADD_2`, `initval_AR`, `AR_TO_AI`, and `initval_AI`. This exercise forms the basis for 225b_AX, which solves the same task with a reusable composite block (`PositionMarkerFSA`) instead of the loose adapter chain.
 
 
 

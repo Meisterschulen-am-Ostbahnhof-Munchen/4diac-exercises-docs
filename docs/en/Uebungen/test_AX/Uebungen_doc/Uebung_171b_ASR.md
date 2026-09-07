@@ -18,10 +18,7 @@ This exercise implements the same function as `Uebung_171_ASR` (button `I1` = SE
 
 - **Explanation**: Report a single button click as an event (`IND`) at the respective physical input.
 
-
-**DigitalInput_CLK_I1**, **DigitalInput_CLK_I2**: logiBUS click inputs (Type: `logiBUS::io::DI::logiBUS_IE`)
-
-**Explanation**: Report a single button click as an event (`IND`) at the respective physical input. - **AE_EVENT_TO_E_SET**, **AE_EVENT_TO_E_RESET**: Event-to-adapter bridge (Type: `adapter::conversion::unidirectional::AE_EVENT_TO_E`)
+- **AE_EVENT_TO_E_SET**, **AE_EVENT_TO_E_RESET**: Event-to-adapter bridge (Type: `adapter::conversion::unidirectional::AE_EVENT_TO_E`)
 
 - **Parameters**: None
 
@@ -67,8 +64,7 @@ This exercise does not use any further sub-blocks; all function blocks are locat
 
 Exercise 171b demonstrates the same SET/RESET latch as Exercise 171, but deliberately uses AE adapter sockets instead of raw events: `AE_EVENT_TO_E` bridges the click event to the typed `AE` plug for each channel, and `ASR_2AE_TO_SR` combines both into a `ASR` signal for the latch `ASR_AX_SR`. The additional effort compared to the raw event variant is worthwhile as soon as the signal itself needs to be further processed like an adapter (e.g., duplicated with `AE_SPLIT_2`) – something that would not be possible with a raw event.
 
-
-`AE_EVENT_TO_E` bridges the click event to the typed `AE` plug for each channel, and `ASR_2AE_TO_SR` combines both into a `ASR` signal for the latch `ASR_AX_SR`. ---
+---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 

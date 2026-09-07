@@ -21,7 +21,7 @@ Diese Übung ist ein direktes Geschwister zu `Uebung_229_AX.md`/`Uebung_230_AX.m
 - **AX_ASRT_RF_TRIG_1**: Quelle 1 — klassischer Taster mit Last-Wins-Verhalten
     - **Typ**: `MyLib::sys::AX_ASRT_RF_TRIG` (SubApp-Instanz)
     - **Parameter**: keine
-    - **Erklärung**: Drücken (steigende Flanke) → `SET`, Loslassen (fallende Flanke) → `RESET`, ausgegeben als gebündeltes `ASRT`-Signal. `TOGGLE` feuert hier nie — aus einem reinen Flankensignal lässt sich kein drittes, unabhängiges Ereignis ableiten.
+    - **Erklärung**: Drücken (steigende Flanke) → `SET`, Loslassen (fallende Flanke) → `RESET`, ausgegeben als gebündeltes `ASRT`-Signal. `TOGGLE` feuert hier nie — nicht grundsätzlich, sondern weil `AX_ASRT_RF_TRIG`s `TOGGLE_IN` intern unverdrahtet bleibt (siehe "Sub-Bausteine" unten).
 - **ASRT_3EVENTS_TO_SRT_1**: Quelle 2 — echter Toggle-Taster
     - **Typ**: `adapter::conversion::unidirectional::ASRT_3EVENTS_TO_SRT`
     - **Parameter**: keine

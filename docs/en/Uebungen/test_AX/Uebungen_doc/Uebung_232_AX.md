@@ -32,7 +32,7 @@ This exercise is a direct sibling to `Uebung_229_AX.md`/`Uebung_230_AX.md`, but 
 
 - **Parameters**: none
 
-- **Explanation**: Press (rising edge) → `SET`, Release (falling edge) → `RESET`, output as a bundled `ASRT` signal. `TOGGLE` never fires here — a third, independent event cannot be derived from a pure edge signal.
+- **Explanation**: Press (rising edge) → `SET`, Release (falling edge) → `RESET`, output as a bundled `ASRT` signal. `TOGGLE` never fires here — not as a general rule, but because `AX_ASRT_RF_TRIG`'s internal `TOGGLE_IN` remains unwired (see "Sub-Blocks" below).
 
 - **ASRT_3EVENTS_TO_SRT_1**: Source 2 — true toggle switch
 

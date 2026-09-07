@@ -17,12 +17,7 @@ This exercise implements the same function as `Uebung_172_ASRT` (buttons `I1` = 
 
 - **Explanation**: Each reports a single button click as an event (`IND`) at the respective physical input.
 
-
-**DigitalInput_CLK_I1**, **DigitalInput_CLK_I2**, **DigitalInput_CLK_I3**: logiBUS click inputs (Type: `logiBUS::io::DI::logiBUS_IE`)
-
-**Parameters**: `QI = TRUE`, `Input = Input_I1`/`Input_I2`/`Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
-
-**Explanation**: Each reports a single button click as an event (`IND`) at the respective physical input. - **AE_EVENT_TO_E_SET**, **AE_EVENT_TO_E_RESET**, **AE_EVENT_TO_E_TOGGLE**: Event-to-adapter bridge (Type: `adapter::conversion::unidirectional::AE_EVENT_TO_E`)
+- **AE_EVENT_TO_E_SET**, **AE_EVENT_TO_E_RESET**, **AE_EVENT_TO_E_TOGGLE**: Event-to-adapter bridge (Type: `adapter::conversion::unidirectional::AE_EVENT_TO_E`)
 
 - **Parameters**: None
 
@@ -40,12 +35,7 @@ This exercise implements the same function as `Uebung_172_ASRT` (buttons `I1` = 
 
 - **Description**: Locks the bundled `S_R_T` input: SET turns `Q` ON, RESET turns `Q` OFF, TOGGLE reverses the current state.
 
-
-**ASRT_AX_T_FF_SR_1**: Set-Reset-Toggle Latch (Type: `adapter::events::unidirectional::ASRT_AX_T_FF_SR`)
-
-**Parameters**: None
-
-**Description**: Locks the bundled `S_R_T` input: SET turns `Q` ON, RESET turns `Q` OFF, TOGGLE reverses the current state. - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
+- **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 
 - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
 
@@ -59,9 +49,9 @@ This exercise does not use any further sub-blocks; all function blocks are locat
 
 1. **Click on I1 (SET)**: `DigitalInput_CLK_I1.IND` triggers `AE_EVENT_TO_E_SET.REQ`, which converts the event into a `AE` adapter output.
 
-2. **Click on I2 (RESET)**: Analog triggers `DigitalInput_CLK_I2.IND` and `AE_EVENT_TO_E_RESET.REQ`.
+2. **Click on I2 (RESET)**: `DigitalInput_CLK_I2.IND` triggers `AE_EVENT_TO_E_RESET.REQ`.
 
-3. **Click on I3 (TOGGLE)**: Analog triggers `DigitalInput_CLK_I3.IND` and `AE_EVENT_TO_E_TOGGLE.REQ`.
+3. **Click on I3 (TOGGLE)**: `DigitalInput_CLK_I3.IND` triggers `AE_EVENT_TO_E_TOGGLE.REQ`.
 
 4. **Bundling to ASRT**: The three `AE_OUT` outputs are routed to `ASRT_3AE_TO_SRT_1.SET_IN`, `RESET_IN`, and `TOGGLE_IN`. The function block combines them into `ASRT_OUT`.
 

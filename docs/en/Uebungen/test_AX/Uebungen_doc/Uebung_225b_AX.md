@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise is the adapter version of [Exercise 225b](../../test_B/Uebungen_doc/Uebung_225b.md) (test_B)]: identical function—a bracketed triangle marker follows a setpoint—but setpoint reading and actual value writing are handled via the AR adapter blocks `NumericValue_PHYSA`/`Q_NumericValue_PHYSA` instead of plain `REQ`/`IND` events. The triangle movement itself still uses the reusable composite block `PositionMarkerFS`, but is now addressed via its new adapter wrapper `PositionMarkerFSA`.
+This exercise is the adapter version of [Exercise 225b](../../test_B/Uebungen_doc/Uebung_225b.md) (test_B): identical function—a bracketed triangle marker follows a setpoint—but setpoint reading and actual value writing are handled via the AR adapter blocks `NumericValue_PHYSA`/`Q_NumericValue_PHYSA` instead of plain `REQ`/`IND` events. The triangle movement itself still uses the reusable composite block `PositionMarkerFS`, but is now addressed via its new adapter wrapper `PositionMarkerFSA`.
 
 ## Function Blocks (FBs) Used
 
@@ -30,14 +30,12 @@ This exercise is the adapter version of [Exercise 225b](../../test_B/Uebungen_do
 - **Explanation**: Writes the same setpoint back unchanged as the actual value, entirely via the AR adapter socket `rPhys`.
 
 
-### Sub-Blocks: Marker_Triangle (`isobus::UT::Q::PositionMarkerFSA`)
+### Sub-Blocks: Marker_Dreieck (`isobus::UT::Q::PositionMarkerFSA`)
 
 `PositionMarkerFS` itself does not have an AR adapter interface. Just as `Q_NumericValue_PHYSA` wraps the block `Q_NumericValue_PHYS` around an AR socket, `PositionMarkerFSA` (`isobus::UT::Q`) now encapsulates `PositionMarkerFS` in the same way:
 
 - **Parameters of the instance `Marker_Dreieck`**: `stObj = Container_PositionMarker`, `xScale = TRUE`.
-
-
-**Parameters of the instance `Marker_Dreieck`**: `stObj = Container_PositionMarker`, `xScale = TRUE`.** - **Internal wiring** (within `.fbt` itself, not changed in this exercise): The AR adapter socket `rPhys` delivers the event (`E1`) and date (`D1`) directly to a single internal instance `Inner` of type `PositionMarkerFS` (`rPhys.E1 → Inner.REQ`, `rPhys.D1 → Inner.rValue`) — thus the bracket logic (min/max limit, center offset) is **not** duplicated, but reused unchanged. `Inner.xOver` and `Inner.xUnder` are passed out as separate AX adapter plugs (`xOver` and `xUnder`), exactly as with `Q_NumericValue_PHYSA`. `stObj` and `xScale` are passed through 1:1 to `Inner`.
+- **Internal wiring** (within `.fbt` itself, not changed in this exercise): The AR adapter socket `rPhys` delivers the event (`E1`) and data (`D1`) directly to a single internal instance `Inner` of type `PositionMarkerFS` (`rPhys.E1 → Inner.REQ`, `rPhys.D1 → Inner.rValue`) — thus the bracket logic (min/max limit, center offset) is **not** duplicated, but reused unchanged. `Inner.xOver` and `Inner.xUnder` are passed out as separate AX adapter plugs (`xOver` and `xUnder`), exactly as with `Q_NumericValue_PHYSA`. `stObj` and `xScale` are passed through 1:1 to `Inner`.
 
 - **Block file**: `Ventilsteuerung\4diacIDE-workspace\.lib\isobus-3.0.0\typelib\UT\Q\PositionMarkerFSA.fbt`.
 
@@ -58,11 +56,9 @@ The existing blocks `NumericValue_PHYSA`, `Q_NumericValue_PHYSA`, and `PositionM
 
 ## Summary
 
-Exercise 225b_AX reduces the pure adapter chain from 225_AX to the reuse of a proven composite component: Instead of wiring center addition, type conversion, and positioning as separate adapter components, `PositionMarkerFSA` takes over the complete bracket logic from `PositionMarkerFS` and exposes it via a single AR adapter socket. Functionally, the exercise is exactly the same as [Exercise 225b](../../test_B/Uebungen_doc/Uebung_225b.md) (test_B)] — only the wiring style (adapters instead of plain events) differs. The same wrapper pattern is reused in Exercise 226_AX for the split-bar graph (`BargraphSplitFS_AR`).
+Exercise 225b_AX reduces the pure adapter chain from 225_AX to the reuse of a proven composite component: Instead of wiring center addition, type conversion, and positioning as separate adapter components, `PositionMarkerFSA` takes over the complete bracket logic from `PositionMarkerFS` and exposes it via a single AR adapter socket. Functionally, the exercise is exactly the same as [Exercise 225b](../../test_B/Uebungen_doc/Uebung_225b.md) (test_B) — only the wiring style (adapters instead of plain events) differs. The same wrapper pattern is reused in Exercise 226_AX for the split-bar graph (`BargraphSplitFS_AR`).
 
-
-
-Exercise 225b_AX is used for the split-bar graph (`BargraphSplitFS_AR`). ---
+---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 

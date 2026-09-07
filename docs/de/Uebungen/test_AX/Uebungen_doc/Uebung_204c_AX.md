@@ -30,7 +30,7 @@ Diese Übung erweitert `Uebung_204_AX` (die den einfachen `ILOCK_CONFLICT_TRIP_A
     - **Erklärung**: Zeigt den Konfliktzustand (`TRIP_OUT`) an, z. B. über eine Meldeleuchte.
 - **E_TimeOut**: Zeitgeber-Ereignisquelle (Typ: `iec61499::events::E_TimeOut`)
     - **Parameter**: keine
-    - **Erklärung**: Liefert dem Interlock-Baustein über die Adapterverbindung `timeOut` das periodische Zeitereignis, mit dem `DT_PROTECT` intern ausgewertet wird.
+    - **Erklärung**: Empfängt über die Adapterverbindung `timeOut` das von `ILOCK_AX` gestartete Zeitsignal (`DT_PROTECT`/`START`), verarbeitet es und meldet den Ablauf über `timeOut.TimeOut` zurück.
 
 ### Sub-Bausteine: keine
 
@@ -40,7 +40,7 @@ Die Übung verwendet keine weiteren Unterbausteine, alle FBs sind direkt auf der
 
 1. `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN` und `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`: Die beiden Anforderungssignale gelangen über AdapterConnections in die Verriegelung.
 2. `DigitalInput_Reset.IND` → `ILOCK_AX.EI_RESET`: Ein Klick auf den Reset-Taster setzt einen ausgelösten Konflikt zurück.
-3. `ILOCK_AX.timeOut` → `E_TimeOut.TimeOutSocket`: Der Interlock-Baustein bezieht darüber die Zeitbasis für die Schutzzeitüberwachung `DT_PROTECT`.
+3. `ILOCK_AX.timeOut` → `E_TimeOut.TimeOutSocket`: `ILOCK_AX` setzt darüber `DT_PROTECT` und startet den Timer; `E_TimeOut` verarbeitet das Zeitsignal und meldet den Ablauf zurück.
 4. **Normalbetrieb**: Ist nur ein Eingang aktiv, wird `UP_OUT` bzw. `DOWN_OUT` freigegeben und über `Output_Q1`/`Output_Q2` ausgegeben.
 5. **Konfliktfall (TRIP)**: Sind `UP_IN` und `DOWN_IN` gleichzeitig aktiv, setzt `ILOCK_AX.TRIP_OUT` → `Trip_Anzeige.OUT` und blockiert beide Ausgänge, bis über `DigitalInput_Reset` zurückgesetzt wird.
 6. **Schutzzeit**: Wird der aktive Eingang losgelassen, wartet `ILOCK_AX` `DT_PROTECT` (1 s) ab und bewertet danach die dann aktuelle Eingangslage neu: liegt nur eine Richtung an, wird sie übernommen; sind beide Eingänge aktiv (weil der andere währenddessen aktiviert wurde und noch ansteht), wird stattdessen ein TRIP ausgelöst. Ein Konflikt, der auftritt, während der erste Eingang noch gehalten wird (also vor dessen Freigabe), löst dagegen weiterhin sofort TRIP aus, ohne auf `DT_PROTECT` zu warten.

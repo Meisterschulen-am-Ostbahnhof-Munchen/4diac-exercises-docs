@@ -24,7 +24,7 @@ Diese Übung erweitert `Uebung_206_AX` (zwei über `ILOCK_T_FF_AX` gegenseitig v
     - **Erklärung**: Klick auf I2 togglet FF2 (`ILOCK_T_FF_SR_2.CLK`). Für FF2 sind keine direkten Set-/Reset-Eingänge verdrahtet.
 - **ILOCK_T_FF_SR_1**, **ILOCK_T_FF_SR_2**: Verriegelbares Toggle-Flip-Flop mit Set/Reset (Typ: `logiBUS::signalprocessing::interlock::ILOCK_T_FF_SR_AX`)
     - **Parameter**: keine
-    - **Erklärung**: Jede Instanz toggelt ihren Ausgang `Q` bei `CLK`, kann ihn aber auch direkt über `S`/`R` setzen bzw. zurücksetzen. Über die Adapterkette `ILOCK_OUT`→`ILOCK_IN` verriegeln sich beide Instanzen gegenseitig: Wird eine Instanz eingeschaltet (per CLK-Toggle ODER per direktem `S`), wird die andere automatisch ausgeschaltet.
+    - **Erklärung**: Jede Instanz toggelt ihren Ausgang `Q` bei `CLK`, kann ihn aber auch direkt über `S`/`R` setzen bzw. zurücksetzen. `ILOCK_IN`/`ILOCK_OUT` sind vom **bidirektionalen** Adaptertyp `AE2` (ein Ereignis in jede Richtung, `EI1`/`EO1`) – die eine `Connection` `ILOCK_OUT`→`ILOCK_IN` reicht deshalb für gegenseitige Verriegelung: Wird eine Instanz eingeschaltet (per CLK-Toggle ODER per direktem `S`), wird die andere automatisch ausgeschaltet, unabhängig davon, welche der beiden Instanzen zuerst eingeschaltet wurde. Eine zusätzliche Rückverbindung wäre bei einem unidirektionalen Adapter (`AX`) nötig, bei `AE2` aber überflüssig (und würde beim Kompilieren als doppelte Verbindung kollidieren).
 - **DigitalOutput_Q1**, **DigitalOutput_Q2**: logiBUS Digitalausgänge (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
     - **Parameter**: QI = TRUE, Output = Output_Q1 bzw. Output_Q2
     - **Erklärung**: Geben die Zustände von `ILOCK_T_FF_SR_1.Q` bzw. `ILOCK_T_FF_SR_2.Q` an die Peripherie weiter.

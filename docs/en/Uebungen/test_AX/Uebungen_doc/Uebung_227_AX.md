@@ -30,13 +30,13 @@ This exercise combines Exercise 225b_AX (Triangle Setpoint Marker) and Exercise 
 - **Explanation**: Writes the same target value as the actual value to `NumberVariable_Istwert` — this drives both `InputNumber_Istwert` and the existing single bargraph pointer.
 
 
-### Sub-Building Blocks: Marker_Triangle (`PositionMarkerFSA`) and SplitBar (`BargraphSplitFS_AR`)
+### Sub-Building Blocks: Marker_Dreieck (`PositionMarkerFSA`) and SplitBar (`BargraphSplitFS_AR`)
 
 This exercise does not introduce any new building block types, but combines two familiar wrappers from the preliminary exercises at the same source:
 
-- **Marker_Triangle** (`isobus::UT::Q::PositionMarkerFSA`, `stObj = Container_PositionMarker`, `xScale = TRUE`): moves the triangle exactly as described in [Exercise 225b_AX](./Uebung_225b_AX.md)] — internally a single `PositionMarkerFS` instance with brackets and `xOver`/`xUnder` plugins.
+- **Marker_Dreieck** (`isobus::UT::Q::PositionMarkerFSA`, `stObj = Container_PositionMarker`, `xScale = TRUE`): moves the triangle exactly as described in [Exercise 225b_AX](./Uebung_225b_AX.md) — internally a single `PositionMarkerFS` instance with brackets and `xOver`/`xUnder` plugins.
 
-- **SplitBar** (`isobus::UT::Q::BargraphSplitFS_AR`, `stObj = Bargraph_Split_BargraphSplit`): controls the split-bar graph exactly as described in [Exercise 226_AX](./Uebung_226_AX.md)] — internally a single `BargraphSplitFS` instance with brackets and `xOverRight`/`xOverLeft` plugins.
+- **SplitBar** (`isobus::UT::Q::BargraphSplitFS_AR`, `stObj = Bargraph_Split_BargraphSplit`): controls the split-bar graph exactly as described in [Exercise 226_AX](./Uebung_226_AX.md) — internally a single `BargraphSplitFS` instance with brackets and `xOverRight`/`xOverLeft` plugins.
 
 ## Program Flow and Connections
 
@@ -58,8 +58,7 @@ The interaction is evident at the actual terminal: If the target value changes, 
 
 Exercise 227_AX demonstrates how multiple independent VT displays can be fed from a single setpoint source without introducing new component types, provided all consumers are consistently addressed via AR adapters: `AR_SPLIT_3` distributes the single read value to `PositionMarkerFSA`, `BargraphSplitFS_AR`, and `Q_NumericValue_PHYSA` without duplicating the read logic. This exercise builds directly on 225b_AX and 226_AX and forms the basis for Exercise 228_AX, which additionally introduces a fourth use of the setpoint—a color logic for the triangle.
 
-
-`AR_SPLIT_3` distributes the single read value to `PositionMarkerFSA`, `BargraphSplitFS_AR`, and `Q_NumericValue_PHYSA` without duplicating the read logic. This exercise builds directly on 225b_AX and 226_AX and forms the basis for Exercise 228_AX, which introduces a fourth use of the setpoint—a color logic for the triangle. ---
+---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 

@@ -11,16 +11,13 @@ This exercise demonstrates the same two-point controller pattern as `Uebung_234_
 
 ## Function Blocks (FBs) Used
 
-- **Measurement_N**: Terminal input (Type: `isobus::UT::io::NumericValue::NumericValue_PHYSA`)
+- **Messwert_N**: Terminal input (Type: `isobus::UT::io::NumericValue::NumericValue_PHYSA`)
 
-- **Parameters**: QI = TRUE, stObj = InputNumber_Measurement_N
+- **Parameters**: QI = TRUE, stObj = InputNumber_Messwert_N
 
 - **Explanation**: Reads the physical value as an AR plug (`rPhys`) whenever `InputNumber_Messwert` (VT object 9002, range 0–1000) changes. The operator then simulates the analog sensor from `Uebung_234_AX` in the pool `Workspace_Dreieck`.
 
-
-**Measurement_N**: Terminal input (Type: `Uebung_234_AX`)
-**Parameters**: QI = TRUE, stObj = InputNumber_Measurement_N
-**Explanation**: Reads the physical value as an AR plug (`rPhys`) whenever `InputNumber_Messwert` (VT object 9002, range 0–1000) changes. - **HysteresisParams_AR**: Parameter block for the hysteresis thresholds
+- **HysteresisParams_AR**: Parameter block for the hysteresis thresholds
 
 - **Parameters**: rMI = 500.0, rDEAD = 20.0, rHYSTERESIS = 30.0
 

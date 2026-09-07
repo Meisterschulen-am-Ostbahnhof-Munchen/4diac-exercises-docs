@@ -38,7 +38,7 @@ This exercise extends `Uebung_206_AX` (two mutually interlocked toggle flip-flop
 
 - **Parameters**: None
 
-- **Explanation**: Each instance toggles its output `Q` at `CLK`, but can also set or reset it directly via `S`/`R`. The two instances are mutually interlocked via the adapter chain `ILOCK_OUT`→`ILOCK_IN`: If one instance is turned on (via CLK toggle OR via direct `S`), the other is automatically turned off.
+- **Explanation**: Each instance toggles its output `Q` at `CLK`, but can also set or reset it directly via `S`/`R`. `ILOCK_IN`/`ILOCK_OUT` are of the **bidirectional** adapter type `AE2` (one event in each direction, `EI1`/`EO1`) – a single `Connection` `ILOCK_OUT`→`ILOCK_IN` is therefore enough for mutual interlocking: if one instance is turned on (via CLK toggle OR via direct `S`), the other is automatically turned off, regardless of which of the two was switched on first. An additional reverse connection would be needed for a unidirectional adapter (`AX`), but is redundant for `AE2` (and would collide as a duplicate connection at compile time).
 
 - **DigitalOutput_Q1**, **DigitalOutput_Q2**: logiBUS digital outputs (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 

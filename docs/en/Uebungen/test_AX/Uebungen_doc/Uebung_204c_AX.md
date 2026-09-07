@@ -40,7 +40,7 @@ This exercise extends `Uebung_204_AX` (which uses the simpler `ILOCK_CONFLICT_TR
 
 - **Description**: Passes the enabled `DOWN_OUT` signal to the peripheral device.
 
-- **Trip_Display**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
+- **Trip_Anzeige**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 
 - **Parameters**: QI = TRUE, Output = Output_Q4
 
@@ -50,7 +50,7 @@ This exercise extends `Uebung_204_AX` (which uses the simpler `ILOCK_CONFLICT_TR
 
 - **Parameters**: None
 
-- **Explanation**: Provides the periodic time event to the Interlock function block via the adapter connection `timeOut`, which is then used to internally evaluate `DT_PROTECT`.
+- **Explanation**: Receives the timing signal (`DT_PROTECT`/`START`) started by `ILOCK_AX` via the adapter connection `timeOut`, processes it, and reports the elapsed time back via `timeOut.TimeOut`.
 
 ### Sub-function blocks: None
 
@@ -60,7 +60,7 @@ This exercise does not use any further sub-function blocks; all function blocks 
 
 1. `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN` and `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`: The two request signals are passed to the interlock function block via adapter connections.
 2. `DigitalInput_Reset.IND` → `ILOCK_AX.EI_RESET`: A click on the reset button clears a triggered conflict.
-3. `ILOCK_AX.timeOut` → `E_TimeOut.TimeOutSocket`: The interlock block uses this to obtain the time base for the protection time monitoring `DT_PROTECT`.
+3. `ILOCK_AX.timeOut` → `E_TimeOut.TimeOutSocket`: `ILOCK_AX` sets `DT_PROTECT` and starts the timer through this connection; `E_TimeOut` processes the timing signal and reports the elapsed time back.
 4. **Normal Operation**: If only one input is active, `UP_OUT` or `DOWN_OUT` is enabled and output via `Output_Q1`/`Output_Q2`.
 
 5. **Conflict Case (TRIP)**: If `UP_IN` and `DOWN_IN` are active simultaneously, `ILOCK_AX.TRIP_OUT` sets → `Trip_Anzeige.OUT` and blocks both outputs until reset via `DigitalInput_Reset`.
@@ -69,7 +69,7 @@ This exercise does not use any further sub-function blocks; all function blocks 
 
 ## Summary
 
-Exercise 204c_AX combines the conflict detection from `Uebung_204_AX` with a protection time after the active input is enabled, as introduced in `Uebung_205_AX` for simple direction changes. `ILOCK_CONFLICT_TRIP_PROTECT_AX` thus prevents not only simultaneous, conflicting requests, but also excessively rapid direction changes immediately after enabling – a typical requirement for robust interlock logic in automation technology.
+Exercise 204c_AX combines the conflict detection from `Uebung_204_AX` with a protection time after the active input is released, as introduced in `Uebung_205_AX` for simple direction changes. `ILOCK_CONFLICT_TRIP_PROTECT_AX` thus prevents not only simultaneous, conflicting requests, but also excessively rapid direction changes immediately after enabling – a typical requirement for robust interlock logic in automation technology.
 
 ---
 

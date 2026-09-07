@@ -23,10 +23,9 @@ This exercise is a derivative of `Uebung_227_AX.md`: the target value continues 
 
 - **Parameters**: None
 
-- **Explanation**: Distributes the single incoming AR setpoint to four independent consumers (one more digit than in `Uebung_227_AX.md`, which only required three): Triangle position, split bar graph, actual value write-back, and the new color logic.
+- **Explanation**: Distributes the single incoming AR setpoint to four independent consumers (one more output than in `Uebung_227_AX.md`, which only required three): Triangle position, split bar graph, actual value write-back, and the new color logic.
 
-
-**` - **Marker_Triangle**: Position marker (triangle) on the terminal
+- **Marker_Dreieck**: Position marker (triangle) on the terminal
 
 - **Type**: `isobus::UT::Q::PositionMarkerFSA`
 
@@ -91,9 +90,7 @@ This exercise is a derivative of `Uebung_227_AX.md`: the target value continues 
 
 7. Within `MarkerColor` (`FillWindowFS_AR`), the target value is distributed via `AR_SPLIT_2` to `AR_GE` (`>= -2.0`) and `AR_LE` (`<= +2.0`). The results are ANDed using `AX_AND_2`, and `AX_SEL` determines whether `COLOR_GREEN` or `COLOR_RED` is passed to `Q_FillAttributes`.
 
-
-
-``AX_AND_2`` determines whether `COLOR_GREEN` or `COLOR_RED` is passed to `Q_FillAttributes`. 8. `Q_FillAttributes` sends a Change-Fill-Attributes command (ISO 11783-6 F.32) to the FillAttributes object `FillStyle_Bargraph_Mittelmarker_Gruen`, causing the fill color of the triangle to change live—green inside, red outside the window -2…+2.
+8. `Q_FillAttributes` sends a Change-Fill-Attributes command (ISO 11783-6 F.32) to the FillAttributes object `FillStyle_Bargraph_Mittelmarker_Gruen`, causing the fill color of the triangle to change live—green inside, red outside the window -2…+2.
 
 ## Summary
 

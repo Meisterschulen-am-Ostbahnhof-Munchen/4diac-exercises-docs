@@ -18,8 +18,7 @@ This exercise combines `Uebung_010c_AX` (SoftKey with background color) and `Ueb
 - **Explanation**: Returns the Boolean state of the SoftKey as an AX adapter output `IN`.
 
 
-**Function Blocks (FBs) Used
-** - **AuxFunction2_X1**: Auxiliary input (Type: `isobus::UT::io::Auxiliary::IN::Aux_IXA`)
+- **AuxFunction2_X1**: Auxiliary input (Type: `isobus::UT::io::Auxiliary::IN::Aux_IXA`)
 
 - **Parameters**: `QI = TRUE`, `u16ObjId = AuxFunction2_X1`
 
