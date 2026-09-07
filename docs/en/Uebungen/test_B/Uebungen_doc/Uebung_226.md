@@ -20,9 +20,9 @@ This exercise controls two adjacent linear bar graphs (`Bargraph_Split_links`/`B
 
 - **Parameter**: `stObj = Bargraph_Split_BargraphSplit`
 
-- **Explanation**: The positive part of the target value is enclosed in brackets `[0, r32MaxMagnitude]` and written to the right bar; the negative part is also enclosed in brackets and written to the left bar. Both sides write directly to their bar graph object ID via Command Numeric Value (ISO 11783-6 Annex F.22), without the bound `NumberVariable`. The bar IDs and the common magnitude range are bundled from the constant `Bargraph_Split_BargraphSplit` (type `BargraphSplit_S`), which is automatically generated from the geometry of `.jop`. `xOverRight`/`xOverLeft` only report a range exceedance if `|Sollwert| > r32MaxMagnitude` is present – there are intentionally no `xUnder` outputs, as the inactive side is always at 0 during normal operation.
-`xOverRight`/`xOverLeft` only report a range exceedance if `|Sollwert| > r32MaxMagnitude` is present – there are intentionally no `xUnder` outputs, as the inactive side is normally always at 0.
-``xOverRight``/``|Sollwert| > r32MaxMagnitude`` is present. ### Sub-modules: none
+- **Explanation**: The positive part of the target value is enclosed in brackets `[0, r32MaxMagnitude]` and written to the right bar; the negative part is also enclosed in brackets and written to the left bar. Both sides write directly to their bar graph object ID via Command Numeric Value (ISO 11783-6 Annex F.22), without the bound `NumberVariable`. The bar IDs and the common magnitude range are bundled from the constant `Bargraph_Split_BargraphSplit` (type `BargraphSplit_S`), which is automatically generated from the geometry of `.jop`. `xOverRight`/`xOverLeft` only report a range exceedance if `|Sollwert| > r32MaxMagnitude` – there are intentionally no `xUnder` outputs, as the inactive side is always at 0 during normal operation.
+
+### Sub-modules: none
 
 ## Program Flow and Connections
 
