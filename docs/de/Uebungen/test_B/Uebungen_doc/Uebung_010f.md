@@ -17,7 +17,7 @@ Diese Übung ist die klassische (nicht über AX-Adapter verdrahtete) Variante vo
     - **Parameter**: `QI = TRUE`, `Output = Output_Q1` (im Netzwerk als unsichtbarer Parameter hinterlegt)
     - **Erklärung**: Schaltet den physischen Ausgang Q1 entsprechend dem Aux-Zustand.
 
-### Sub-Bausteine:
+### Sub-Bausteine: GreenWhiteBackground
 
 - **GreenWhiteBackground** (Typ: `MyLib::sys::GreenWhiteBackground2`)
     - **Parameter**: `u16ObjIdA = AuxFunction2_X1`
