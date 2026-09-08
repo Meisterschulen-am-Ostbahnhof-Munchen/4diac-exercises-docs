@@ -6,12 +6,12 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-    - id: check-json
-    - id: check-yaml
-    - id: end-of-file-fixer
-    - id: trailing-whitespace
+      - id: check-json
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.23.2
     hooks:
-    - id: markdownlint-cli2
+      - id: markdownlint-cli2
