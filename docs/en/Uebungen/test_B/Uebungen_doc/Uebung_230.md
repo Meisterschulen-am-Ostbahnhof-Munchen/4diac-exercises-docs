@@ -22,5 +22,5 @@ Read an analog voltage input (`AnalogInput_5B`) on the DataPanel and convert the
 ## Behavior
 
 1. `DataPanel_MI_IW_0_10V` continuously reads the analog input voltage, filtered through a hysteresis of 50 to suppress small signal fluctuations.
-2. Both on every value change (`IND`) and every confirmation (`CNF`), `F_DWORD_TO_UDINT_I8` is triggered.
+2. On every value change (`IND`), `F_DWORD_TO_UDINT_I8.REQ` is triggered. `CNF` then signals that the conversion has completed.
 3. `F_DWORD_TO_UDINT_I8` converts the raw DWORD value into a UDINT numeric value usable for further processing.
