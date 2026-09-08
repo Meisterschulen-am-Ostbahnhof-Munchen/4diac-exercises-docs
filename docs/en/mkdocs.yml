@@ -1,6 +1,6 @@
 docs_dir: .
 site_name: 'Exercises: 4diac Training Solutions (4.2)'
-site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/
+site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/
 extra:
   alternate:
     - lang: de
