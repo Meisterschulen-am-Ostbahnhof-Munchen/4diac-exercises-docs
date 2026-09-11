@@ -33,6 +33,7 @@ Die Übung besteht aus der Subapplikation Uebung_120_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo.IND -> STRUCT_DEMUX_3.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_2.REQ
 - STRUCT_DEMUX_3.CNF -> NmSetNameField.REQ
@@ -41,6 +42,7 @@ Die Übung besteht aus der Subapplikation Uebung_120_AX.SUB, welche die folgende
 - NmSetNameField_1.CNF -> STRUCT_DEMUX_1.REQ
 
 **Datenverbindungen:**
+
 - NmGetCfInfo.sNetEv -> STRUCT_DEMUX_3.IN
 - NmGetCfInfo.sCfInfo -> STRUCT_DEMUX_2.IN
 - STRUCT_DEMUX_3.cfName -> NmSetNameField.au8IsoName

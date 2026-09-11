@@ -32,6 +32,7 @@ The exercise consists of the sub-application Uebung_042_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> SCALE.REQ
 
 -----

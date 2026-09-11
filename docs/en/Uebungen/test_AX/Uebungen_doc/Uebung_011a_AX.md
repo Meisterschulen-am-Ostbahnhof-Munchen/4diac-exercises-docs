@@ -29,6 +29,7 @@ The exercise consists of the sub-application Uebung_011a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - logiBUS_IB.IN -> F_BYTE_TO_UDINT.AB_IN
 - F_BYTE_TO_UDINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 

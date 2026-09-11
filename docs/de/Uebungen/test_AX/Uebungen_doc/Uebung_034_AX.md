@@ -31,10 +31,12 @@ Die Übung besteht aus der Subapplikation Uebung_034_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AnalogInput_I7.IN -> AD_SHL.IN
 - AD_SHL.OUT -> PWMOutput_Q4.OUT
 
 **Ereignisverbindungen:**
+
 - AnalogInput_I7.INITO -> PWMOutput_Q4.INIT
 
 -----

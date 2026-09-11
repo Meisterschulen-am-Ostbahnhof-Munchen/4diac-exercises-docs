@@ -42,6 +42,7 @@ Die Übung besteht aus der Subapplikation Uebung_006a2b.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> E_T_FF_SR_Q1.REQ
 - DigitalInput_CLK_I2.IND -> E_T_FF_SR_Q2.REQ
 - DigitalInput_CLK_I3.IND -> E_T_FF_SR_Q1.REQ
@@ -50,6 +51,7 @@ Die Übung besteht aus der Subapplikation Uebung_006a2b.SUB, welche die folgende
 - E_T_FF_SR_Q2.CNF -> DigitalOutput_Q2.REQ
 
 **Datenverbindungen:**
+
 - DigitalInput_CLK_I1.IN -> E_T_FF_SR_Q1.CLK
 - DigitalInput_CLK_I2.IN -> E_T_FF_SR_Q2.CLK
 - DigitalInput_CLK_I3.IN -> E_T_FF_SR_Q1.R1

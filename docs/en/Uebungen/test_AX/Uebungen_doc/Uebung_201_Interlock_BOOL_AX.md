@@ -50,6 +50,7 @@ The exercise consists of the sub-application Uebung_201_Interlock_BOOL_AX.SUB, w
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I3.IN -> ILOCK_AX_3.IN
 - DigitalInput_I4.IN -> ILOCK_AX_4.IN
 - ILOCK_AX_4.OUT -> DigitalOutput_Q4.OUT

@@ -30,6 +30,7 @@ Die Übung besteht aus der Subapplikation Uebung_245_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - F_MUL_KORREKTUR.OUT -> Q_NumericValue_PHYSA.rPhys
 - initval_AR.OUT -> F_MUL_KORREKTUR.IN2
 - NumericValue_PHYSA.rPhys -> F_MUL_KORREKTUR.IN1

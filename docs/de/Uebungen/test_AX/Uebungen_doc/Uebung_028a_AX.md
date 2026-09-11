@@ -58,6 +58,7 @@ Die Übung besteht aus der Subapplikation Uebung_028a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_SPLIT_2.IN
 - AnalogInput_I4.IN -> AD_TO_AUDI.AD_IN
 - AUDI_TO_AR.AR_OUT -> CALIBRATE.X

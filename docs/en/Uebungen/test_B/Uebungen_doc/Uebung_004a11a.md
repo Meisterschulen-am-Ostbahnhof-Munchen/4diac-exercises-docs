@@ -35,13 +35,16 @@ The exercise consists of the sub-application Uebung_004a11a.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AX_T_FF_SR_SYM_STORE.Q_INIT -> INI_AX2.VAL
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> AX_T_FF_SR_SYM_STORE.CLK
 - AX_T_FF_SR_SYM_STORE.EO -> DigitalOutput_Q1.REQ
 
 **Data Connections:**
+
 - AX_T_FF_SR_SYM_STORE.Q -> DigitalOutput_Q1.OUT
 
 ### Notes from the Model

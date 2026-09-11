@@ -24,6 +24,7 @@ Die Übung besteht aus der Subapplikation Uebung_175_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_TABLE_CTRL_1.CLK
 

@@ -43,6 +43,7 @@ The exercise consists of the sub-application Uebung_015b.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - F_SEL_E_3.CNF -> Q_NumericValue.REQ
 - SoftKey_UP_F1.IND -> F_SEL_E_3.REQ1
 - SoftKey_UP_F2.IND -> F_SEL_E_3.REQ2
@@ -52,6 +53,7 @@ The exercise consists of the sub-application Uebung_015b.SUB, which uses the fol
 - INIT.CNF -> F_UINT_TO_UDINT_1.REQ
 
 **Data Connections:**
+
 - F_UINT_TO_UDINT.OUT -> F_SEL_E_3.IN2
 - F_SEL_E_3.OUT -> Q_NumericValue.u32NewValue
 - F_UINT_TO_UDINT_1.OUT -> F_SEL_E_3.IN3

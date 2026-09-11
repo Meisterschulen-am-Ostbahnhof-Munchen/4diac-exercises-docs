@@ -40,6 +40,7 @@ The exercise consists of the sub-application Uebung_089_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_OR_2.IN1
 - DigitalInput_I2.IN -> AX_OR_2.IN2
 - AX_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
@@ -49,6 +50,7 @@ The exercise consists of the sub-application Uebung_089_AX.SUB, which uses the f
 - SPLIT_1.OUT2 -> AX_E_SWITCH.G
 
 **Event Connections:**
+
 - AX_R_TRIG.EO -> AX_T_FF_Q1.CLK
 - AX_E_SWITCH.EO1 -> AX_T_FF_1_Q2.CLK
 

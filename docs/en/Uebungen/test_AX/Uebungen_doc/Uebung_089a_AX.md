@@ -34,11 +34,13 @@ The exercise consists of the sub-application Uebung_089a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_RF_TRIG.QI
 - AX_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
 - AX_T_FF_Q2.Q -> DigitalOutput_Q2.OUT
 
 **Event Connections:**
+
 - AX_RF_TRIG.ER -> AX_T_FF_Q1.CLK
 - AX_RF_TRIG.EF -> AX_T_FF_Q2.CLK
 

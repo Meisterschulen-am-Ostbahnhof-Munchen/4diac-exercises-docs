@@ -33,9 +33,11 @@ The exercise consists of the sub-application Uebung_014_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_SR.Q -> Q_ObjHideShow.qVisible
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> E_SR.S
 - SoftKey_UP_F2.IND -> E_SR.R
 

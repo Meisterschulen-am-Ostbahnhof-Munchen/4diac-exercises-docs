@@ -34,10 +34,12 @@ The exercise consists of the sub-application Uebung_094_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> E_PERMIT.PERMIT
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I2.IND -> E_PERMIT.EI
 - E_PERMIT.EO -> E_T_FF.CLK
 

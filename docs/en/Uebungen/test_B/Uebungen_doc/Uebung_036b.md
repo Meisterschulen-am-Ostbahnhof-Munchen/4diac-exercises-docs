@@ -61,9 +61,11 @@ The exercise consists of the sub-application Uebung_036b.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - sequence_04.timeOut -> E_TimeOut.TimeOutSocket
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> sequence_04.START_S1
 - DigitalInput_CLK_I2.IND -> sequence_04.S1_S2
 - DigitalInput_CLK_I3.IND -> sequence_04.S2_S3
@@ -76,6 +78,7 @@ The exercise consists of the sub-application Uebung_036b.SUB, which uses the fol
 - sequence_04.EO_S4 -> DigitalOutput_Q4.REQ
 
 **Data Connections:**
+
 - sequence_04.STATE_NR -> F_SINT_TO_UINT.IN
 - sequence_04.DO_S1 -> DigitalOutput_Q1.OUT
 - sequence_04.DO_S2 -> DigitalOutput_Q2.OUT

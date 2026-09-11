@@ -45,6 +45,7 @@ The exercise consists of the sub-application Uebung_052_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_X_TO_BOOL_1.AX_IN
 - DigitalInput_I2.IN -> AX_X_TO_BOOL_2.AX_IN
 - DigitalInput_I3.IN -> AX_X_TO_BOOL_3.AX_IN
@@ -52,6 +53,7 @@ The exercise consists of the sub-application Uebung_052_AX.SUB, which uses the f
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q4.OUT
 
 **Event Connections:**
+
 - GET_STRUCT_VALUE.CNF -> AX_BOOL_TO_X.REQ
 - AX_X_TO_BOOL_1.CNF -> STRUCT_MUX.REQ
 - AX_X_TO_BOOL_2.CNF -> STRUCT_MUX.REQ
@@ -60,6 +62,7 @@ The exercise consists of the sub-application Uebung_052_AX.SUB, which uses the f
 - STRUCT_MUX.CNF -> GET_STRUCT_VALUE.REQ
 
 **Data Connections:**
+
 - GET_STRUCT_VALUE.output -> AX_BOOL_TO_X.OUT
 - AX_X_TO_BOOL_1.IN -> STRUCT_MUX.X_00
 - AX_X_TO_BOOL_2.IN -> STRUCT_MUX.X_01

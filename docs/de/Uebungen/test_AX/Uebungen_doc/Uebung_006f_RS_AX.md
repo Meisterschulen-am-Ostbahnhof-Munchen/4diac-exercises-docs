@@ -35,6 +35,7 @@ Die Übung besteht aus der Subapplikation Uebung_006f_RS_AX.SUB, welche die folg
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_S.IN -> RS_T_FF.SET
 - DigitalInput_R.IN -> RS_T_FF.RESET1
 - DigitalInput_CLK.IN -> RS_T_FF.CLK

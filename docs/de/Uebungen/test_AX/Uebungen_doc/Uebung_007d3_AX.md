@@ -35,12 +35,14 @@ Die Übung besteht aus der Subapplikation Uebung_007d3_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - FB_AR_RANDOM.OUT -> AR_D_FF_HYS.I
 - AR_D_FF_HYS.Q -> AR_GT.IN1
 - initval_AR.OUT -> AR_GT.IN2
 - AR_GT.OUT -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_CYCLE.START
 - E_CYCLE.EO -> FB_AR_RANDOM.REQ

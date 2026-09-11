@@ -55,6 +55,7 @@ The exercise consists of the sub-application Uebung_060_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SETPOINT_CONDENSED_WORK_STATE_1_16.IND -> SPLIT_DWORD_INTO_QUARTERS.REQ
 - ASSEMBLE_DWORD_FROM_QUARTERS.CNF -> ACTUAL_CONDENSED_WORK_STATE_1_16.REQ
 - BOOLS_TO_QUARTERS.CNF -> ASSEMBLE_DWORD_FROM_QUARTERS.REQ
@@ -68,6 +69,7 @@ The exercise consists of the sub-application Uebung_060_AX.SUB, which uses the f
 - F_SEL.CNF -> ACTUAL_RATE.REQ
 
 **Data Connections:**
+
 - SETPOINT_CONDENSED_WORK_STATE_1_16.IN -> SPLIT_DWORD_INTO_QUARTERS.IN
 - QUARTERS_TO_BOOLS.Q_00 -> BOOLS_TO_QUARTERS.I_00
 - QUARTERS_TO_BOOLS.Q_02 -> BOOLS_TO_QUARTERS.I_02

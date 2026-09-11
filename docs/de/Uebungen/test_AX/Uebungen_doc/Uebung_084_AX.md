@@ -40,9 +40,11 @@ Die Übung besteht aus der Subapplikation Uebung_084_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - E_CYCLE.EO -> AUI_CTU.CU
 - DigitalInput_CLK_I1.IND -> E_CYCLE.START
 - DigitalInput_CLK_I2.IND -> E_CYCLE.STOP

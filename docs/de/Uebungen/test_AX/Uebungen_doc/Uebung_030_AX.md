@@ -50,6 +50,7 @@ Die Übung besteht aus der Subapplikation Uebung_030_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> LED_Q1_5HZ.OUT
 - DigitalInput_I2.IN -> LED_Q1_1HZ.OUT
 - DigitalInput_I3.IN -> LED_Q1_breathing_05HZ.OUT

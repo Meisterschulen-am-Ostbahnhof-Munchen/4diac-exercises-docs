@@ -44,6 +44,7 @@ The exercise consists of the sub-application Uebung_019c_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - Select_4_AUI.OUT -> Q_ActiveMask.u16NewMaskId
 - AX_SR.Q -> Alarmausgang.OUT
 - Alarmeingang.IN -> AX_SPLIT_4.IN
@@ -51,6 +52,7 @@ The exercise consists of the sub-application Uebung_019c_AX.SUB, which uses the 
 - AX_SPLIT_4.OUT2 -> AX_R_TRIG_Alarm.QI
 
 **Event Connections:**
+
 - AX_R_TRIG_Alarm.EO -> AX_SR.S
 - ACK.IND -> AX_E_PERMIT_INVERT_1.EI3
 - DigitalInput_CLK_I1.IND -> AX_E_PERMIT_INVERT_1.EI1

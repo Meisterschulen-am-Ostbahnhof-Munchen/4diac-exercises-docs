@@ -67,6 +67,7 @@ Die Übung besteht aus der Subapplikation Uebung_041_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - loop.DO_S1 -> DigitalOutput_Q1.OUT
 - loop.DO_S2 -> DigitalOutput_Q2.OUT
 - loop.DO_S3 -> DigitalOutput_Q3.OUT
@@ -82,6 +83,7 @@ Die Übung besteht aus der Subapplikation Uebung_041_AX.SUB, welche die folgende
 - F_SUB_0.OUT -> E_DEMUX_0.K
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I4.IND -> loop.RESET
 - DigitalInput_CLK_I1.IND -> loop.START_S1
 - DigitalInput_CLK_I2.IND -> E_CTU_0.CU

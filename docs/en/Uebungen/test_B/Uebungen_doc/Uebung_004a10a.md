@@ -32,10 +32,12 @@ The exercise consists of the sub-application Uebung_004a10a.SUB, which uses the 
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> AX_T_FF_INIT.CLK
 - AX_T_FF_INIT.EO -> DigitalOutput_Q1.REQ
 
 **Data Connections:**
+
 - AX_T_FF_INIT.Q -> DigitalOutput_Q1.OUT
 
 -----

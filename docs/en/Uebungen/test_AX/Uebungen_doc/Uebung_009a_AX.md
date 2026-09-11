@@ -59,9 +59,11 @@ The exercise consists of the sub-application Uebung_009a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - RampLimitFS.OUT -> Q_NumericValue.u32NewValue
 
 **Event Connections:**
+
 - UP_FAST.IND -> RampLimitFS.UP_FAST
 - FULL.IND -> RampLimitFS.FULL
 - ZERO.IND -> RampLimitFS.ZERO

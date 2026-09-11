@@ -34,9 +34,11 @@ The exercise consists of the sub-application Uebung_080e_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> AUI_CTU.CU
 - DigitalInput_CLK_I2.IND -> AUI_CTU.R
 

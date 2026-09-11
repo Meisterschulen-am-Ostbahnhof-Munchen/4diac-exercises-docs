@@ -36,6 +36,7 @@ The exercise consists of the sub-application Uebung_002b2_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_AND_2.IN1
 - DigitalInput_I2.IN -> AX_AND_2.IN2
 - DigitalInput_I3.IN -> AX_OR_2.IN2

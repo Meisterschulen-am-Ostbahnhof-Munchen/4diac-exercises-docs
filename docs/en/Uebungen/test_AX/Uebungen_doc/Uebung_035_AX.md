@@ -59,6 +59,7 @@ The exercise consists of the sub-application Uebung_035_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - sequence_04.timeOut -> E_TimeOut.TimeOutSocket
 - sequence_04.STATE_NR -> F_SINT_TO_UINT.AS_IN
 - sequence_04.DO_S1 -> DigitalOutput_Q1.OUT
@@ -68,6 +69,7 @@ The exercise consists of the sub-application Uebung_035_AX.SUB, which uses the f
 - F_SINT_TO_UINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> sequence_04.START_S1
 - DigitalInput_CLK_I2.IND -> sequence_04.S2_S3
 - DigitalInput_CLK_I3.IND -> sequence_04.S4_START

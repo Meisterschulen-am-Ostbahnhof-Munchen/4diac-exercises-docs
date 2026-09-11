@@ -26,6 +26,7 @@ Die Übung besteht aus der Subapplikation Uebung_011f_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - NumericValue_PHYS.rPhys -> Q_NumericValue_PHYS.rPhys
 
 ### Hinweise aus dem Modell

@@ -26,6 +26,7 @@ The exercise consists of the sub-application Uebung_011_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - InputNumber_I1.IN -> AD_TO_AUDI.AD_IN
 
 -----

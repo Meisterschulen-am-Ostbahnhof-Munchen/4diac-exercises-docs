@@ -46,6 +46,7 @@ Die Übung besteht aus der Subapplikation Uebung_049_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> DigitalOutput_Q1.OUT
 - DigitalInput_I2.IN -> DigitalOutput_Q2.OUT
 - DigitalInput_I3.IN -> DigitalOutput_Q3.OUT

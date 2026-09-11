@@ -40,6 +40,7 @@ Die Übung besteht aus der Subapplikation Uebung_088_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_AND_2.IN1
 - DigitalInput_I2.IN -> AX_AND_2.IN2
 - AX_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
@@ -49,6 +50,7 @@ Die Übung besteht aus der Subapplikation Uebung_088_AX.SUB, welche die folgende
 - SPLIT_1.OUT2 -> AX_E_SWITCH.G
 
 **Ereignisverbindungen:**
+
 - AX_F_TRIG.EO -> AX_T_FF_Q1.CLK
 - AX_E_SWITCH.EO0 -> AX_T_FF_1_Q2.CLK
 

@@ -60,12 +60,14 @@ Die Übung besteht aus der Subapplikation Uebung_024_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - E_SR_Ausfahren_Cyl_1.Q -> DigitalOutput_Q1.OUT
 - E_SR_Ausfahren_Cyl_2.Q -> DigitalOutput_Q2.OUT
 - E_SR_Einfahren_Cyl_1.Q -> DigitalOutput_Q4.OUT
 - E_SR_Einfahren_Cyl_2.Q -> DigitalOutput_Q3.OUT
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> E_SR_Ausfahren_Cyl_1.S
 - SoftKey_F2_DOWN.IND -> E_SR_Ausfahren_Cyl_1.R
 - SoftKey_F2_DOWN.IND -> E_SR_Ausfahren_Cyl_2.S

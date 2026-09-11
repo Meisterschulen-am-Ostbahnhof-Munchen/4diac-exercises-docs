@@ -36,9 +36,11 @@ The exercise consists of the sub-application Uebung_015b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - Select_3_AUDI.OUT -> Q_NumericValue_AUDI.u32NewValue
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> Select_3_AUDI.EI1
 - SoftKey_UP_F2.IND -> Select_3_AUDI.EI2
 - SoftKey_UP_F3.IND -> Select_3_AUDI.EI3

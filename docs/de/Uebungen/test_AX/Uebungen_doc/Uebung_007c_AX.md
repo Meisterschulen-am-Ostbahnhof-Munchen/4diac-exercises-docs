@@ -38,9 +38,11 @@ Die Übung besteht aus der Subapplikation Uebung_007c_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - E_MERGE_3.EO -> E_T_FF.CLK
 - E_SPLIT_3.EO1 -> E_MERGE_3.EI1
 - E_SPLIT_3.EO2 -> E_MERGE_3.EI2

@@ -44,6 +44,7 @@ The exercise consists of the sub-application Uebung_016a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - F_SEL_E_3.OUT -> Q_BackgroundColour.u8Colour
 - initval_AUS.OUT -> F_SEL_E_3.IN1
 - initval_AUS_1.OUT -> F_SEL_E_3.IN2
@@ -51,6 +52,7 @@ The exercise consists of the sub-application Uebung_016a_AX.SUB, which uses the 
 - AUI_MUX_3.K -> F_SEL_E_3.K
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> AUI_MUX_3.EI1
 - SoftKey_UP_F2.IND -> AUI_MUX_3.EI2
 - SoftKey_UP_F3.IND -> AUI_MUX_3.EI3

@@ -29,6 +29,7 @@ Die Übung besteht aus der Subapplikation Uebung_011a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - logiBUS_IB.IN -> F_BYTE_TO_UDINT.AB_IN
 - F_BYTE_TO_UDINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 

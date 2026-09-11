@@ -45,10 +45,12 @@ The exercise consists of the sub-application Uebung_082_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AUI_CTUD.QU -> DigitalOutput_Q1.OUT
 - AUI_CTUD.QD -> DigitalOutput_Q2.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> AUI_CTUD.CU
 - DigitalInput_CLK_I2.IND -> AUI_CTUD.CD
 - DigitalInput_CLK_I3.IND -> AUI_CTUD.R

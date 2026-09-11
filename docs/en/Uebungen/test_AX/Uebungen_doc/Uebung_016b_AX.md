@@ -36,9 +36,11 @@ The exercise consists of the sub-application Uebung_016b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - Select_3_AUS.OUT -> Q_BackgroundColour.u8Colour
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> Select_3_AUS.EI1
 - SoftKey_UP_F2.IND -> Select_3_AUS.EI2
 - SoftKey_UP_F3.IND -> Select_3_AUS.EI3

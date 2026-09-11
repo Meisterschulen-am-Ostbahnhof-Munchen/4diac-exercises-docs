@@ -50,6 +50,7 @@ The exercise consists of the sub-application Uebung_030_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> LED_Q1_5HZ.OUT
 - DigitalInput_I2.IN -> LED_Q1_1HZ.OUT
 - DigitalInput_I3.IN -> LED_Q1_breathing_05HZ.OUT

@@ -36,11 +36,13 @@ Die Übung besteht aus der Subapplikation Uebung_004b3c_AX.SUB, welche die folge
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - Uebung_004b3b_sub1.PLUG -> Uebung_004b3b_sub2.SOCKET
 - Uebung_004b3b_sub1.Q -> DigitalOutput_Q1.OUT
 - Uebung_004b3b_sub2.Q -> DigitalOutput_Q2.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I2.IND -> Uebung_004b3b_sub2.IND
 - DigitalInput_CLK_I1.IND -> Uebung_004b3b_sub1.IND
 

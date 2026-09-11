@@ -33,9 +33,11 @@ The exercise consists of the sub-application Uebung_091_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> E_TRAIN.START
 - E_TRAIN.EO -> E_T_FF.CLK
 

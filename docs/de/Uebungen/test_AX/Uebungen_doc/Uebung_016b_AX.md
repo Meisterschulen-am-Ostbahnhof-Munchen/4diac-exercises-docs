@@ -36,9 +36,11 @@ Die Übung besteht aus der Subapplikation Uebung_016b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - Select_3_AUS.OUT -> Q_BackgroundColour.u8Colour
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> Select_3_AUS.EI1
 - SoftKey_UP_F2.IND -> Select_3_AUS.EI2
 - SoftKey_UP_F3.IND -> Select_3_AUS.EI3

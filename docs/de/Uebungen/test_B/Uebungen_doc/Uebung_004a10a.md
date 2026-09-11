@@ -32,10 +32,12 @@ Die Übung besteht aus der Subapplikation Uebung_004a10a.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> AX_T_FF_INIT.CLK
 - AX_T_FF_INIT.EO -> DigitalOutput_Q1.REQ
 
 **Datenverbindungen:**
+
 - AX_T_FF_INIT.Q -> DigitalOutput_Q1.OUT
 
 -----

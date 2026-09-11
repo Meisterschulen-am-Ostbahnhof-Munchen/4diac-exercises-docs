@@ -38,6 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_018_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> Q_CtrlAudioSignal_0.REQ
 - E_DELAY.EO -> Q_CtrlAudioSignal_1.REQ
 - Q_CtrlAudioSignal_0.CNF -> E_DELAY.START

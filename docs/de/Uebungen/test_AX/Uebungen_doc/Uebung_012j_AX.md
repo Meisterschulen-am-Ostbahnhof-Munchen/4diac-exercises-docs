@@ -32,6 +32,7 @@ Die Übung besteht aus der Subapplikation Uebung_012j_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputString_I1.IN -> INI_AIS.AIS_IN
 - INI_AIS.AIS_OUT -> Q_StringValue_AIS.pau8String
 

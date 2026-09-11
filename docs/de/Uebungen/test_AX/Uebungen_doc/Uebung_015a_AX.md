@@ -44,6 +44,7 @@ Die Übung besteht aus der Subapplikation Uebung_015a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUDI_AUI_MUX_3.OUT -> Q_NumericValue_AUDI.u32NewValue
 - F_UINT_TO_UDINT_1.OUT -> AUDI_AUI_MUX_3.IN3
 - F_UINT_TO_UDINT.OUT -> AUDI_AUI_MUX_3.IN2
@@ -51,6 +52,7 @@ Die Übung besteht aus der Subapplikation Uebung_015a_AX.SUB, welche die folgend
 - AUI_MUX_3.K -> AUDI_AUI_MUX_3.K
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> AUI_MUX_3.EI1
 - SoftKey_UP_F2.IND -> AUI_MUX_3.EI2
 - SoftKey_UP_F3.IND -> AUI_MUX_3.EI3

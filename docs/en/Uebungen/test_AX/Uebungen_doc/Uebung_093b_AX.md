@@ -45,12 +45,14 @@ The exercise consists of the sub-application Uebung_093b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
 - E_T_FF_Q4.Q -> DigitalOutput_Q4.OUT
 - E_T_FF_Q2.Q -> DigitalOutput_Q2.OUT
 - E_T_FF_Q3.Q -> DigitalOutput_Q3.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> E_N_TABLE.START
 - E_N_TABLE.EO0 -> E_T_FF_Q1.CLK
 - E_N_TABLE.EO1 -> E_T_FF_Q2.CLK

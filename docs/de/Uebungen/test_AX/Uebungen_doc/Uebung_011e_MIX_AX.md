@@ -1,4 +1,4 @@
-# Uebung_011e_MIX_AX: Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt!
+# Uebung_011e_MIX_AX: Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt
 
 Dieser Artikel beschreibt die 4diac IDE Subapplikation Uebung_011e_MIX_AX (Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt!).
 
@@ -28,6 +28,7 @@ Die Übung besteht aus der Subapplikation Uebung_011e_MIX_AX.SUB, welche die fol
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputNumber_I1.IN -> AD_TO_AR_NUM.AD_IN
 - AD_TO_AR_NUM.AR_OUT -> Q_NumericValue_PHYS.rPhys
 

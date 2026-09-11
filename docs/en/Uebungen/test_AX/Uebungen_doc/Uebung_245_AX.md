@@ -30,6 +30,7 @@ The exercise consists of the sub-application Uebung_245_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - F_MUL_KORREKTUR.OUT -> Q_NumericValue_PHYSA.rPhys
 - initval_AR.OUT -> F_MUL_KORREKTUR.IN2
 - NumericValue_PHYSA.rPhys -> F_MUL_KORREKTUR.IN1

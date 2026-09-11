@@ -37,6 +37,7 @@ Die Übung besteht aus der Subapplikation Uebung_039b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - SoftKey_F1.IN -> E_TP_Q1.IN
 - E_TON.Q -> E_TP_Q2.IN
 - E_TP_Q1.Q -> E_TON.IN

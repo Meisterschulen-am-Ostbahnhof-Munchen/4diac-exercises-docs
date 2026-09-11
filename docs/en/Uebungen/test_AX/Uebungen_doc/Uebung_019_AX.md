@@ -31,9 +31,11 @@ The exercise consists of the sub-application Uebung_019_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - Select_2_AUI.OUT -> Q_ActiveMask.u16NewMaskId
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> Select_2_AUI.EI1
 - DigitalInput_CLK_I2.IND -> Select_2_AUI.EI2
 

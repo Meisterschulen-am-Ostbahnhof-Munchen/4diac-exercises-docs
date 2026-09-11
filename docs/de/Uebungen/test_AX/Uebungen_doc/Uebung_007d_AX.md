@@ -31,9 +31,11 @@ Die Übung besteht aus der Subapplikation Uebung_007d_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - E_CYCLE.EO -> E_TMIN.EI
 - E_TMIN.EO -> E_T_FF.CLK
 - INIT.INITO -> INIT.REQ

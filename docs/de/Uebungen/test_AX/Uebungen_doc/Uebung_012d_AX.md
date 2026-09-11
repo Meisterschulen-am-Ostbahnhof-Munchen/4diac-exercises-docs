@@ -32,6 +32,7 @@ Die Übung besteht aus der Subapplikation Uebung_012d_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - NVS_AR.AR_OUT -> Q_NumericValue_PHYSA.rPhys
 - InputNumber_I3_N.rPhys -> NVS_AR.AR_IN
 

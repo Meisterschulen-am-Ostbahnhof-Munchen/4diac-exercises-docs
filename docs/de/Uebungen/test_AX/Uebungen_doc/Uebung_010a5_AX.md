@@ -29,9 +29,11 @@ Die Übung besteht aus der Subapplikation Uebung_010a5_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_F1.IND -> Input_Power_Port_5.REQ
 
 **Datenverbindungen:**
+
 - SoftKey_F1.IN -> Input_Power_Port_5.OUT
 
 -----

@@ -49,9 +49,11 @@ The exercise consists of the sub-application Uebung_039a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - sequence_05.timeOut -> E_TimeOut.TimeOutSocket
 
 **Event Connections:**
+
 - DigitalInput_DOWN_I1.IND -> sequence_05.S1_S2
 - DigitalInput_DOWN_I2.IND -> sequence_05.S2_S3
 - DigitalInput_DOWN_I3.IND -> sequence_05.S4_S5
@@ -64,6 +66,7 @@ The exercise consists of the sub-application Uebung_039a_AX.SUB, which uses the 
 - sequence_05.EO_S5 -> Q1.RESET
 
 **Data Connections:**
+
 - sequence_05.STATE_NR -> NumbAnzeig.NewValue
 
 -----

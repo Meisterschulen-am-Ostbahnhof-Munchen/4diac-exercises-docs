@@ -1,4 +1,4 @@
-# Uebung_001c4_AX: DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot.
+# Uebung_001c4_AX: DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot
 
 This article describes the 4diac IDE sub-application Uebung_001c4_AX (DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot.).
 
@@ -29,10 +29,12 @@ The exercise consists of the sub-application Uebung_001c4_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_NOOP.IN
 - AX_NOOP.OUT -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_I1.INITO -> DigitalInput_I1.REQ
 
 ### Notes from the Model

@@ -41,12 +41,14 @@ The exercise consists of the sub-application Uebung_006a5.SUB, which uses the fo
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - BUTTON_LONG_PRESS_START.IND -> E_T_FF_SR.S
 - BUTTON_LONG_PRESS_UP.IND -> E_T_FF_SR.R
 - BUTTON_SINGLE_CLICK.IND -> E_T_FF_SR.CLK
 - E_T_FF_SR.EO -> DigitalOutput_Q1.REQ
 
 **Data Connections:**
+
 - E_T_FF_SR.Q -> DigitalOutput_Q1.OUT
 
 ### Notes from the Model

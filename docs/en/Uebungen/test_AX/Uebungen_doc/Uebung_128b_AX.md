@@ -42,6 +42,7 @@ The exercise consists of the sub-application Uebung_128b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_3.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_4.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_5.REQ
@@ -51,6 +52,7 @@ The exercise consists of the sub-application Uebung_128b_AX.SUB, which uses the 
 - INIT_ARR_0032_BYTE.INITO -> AlPgnTxNew_TP.INIT
 
 **Data Connections:**
+
 - NmGetCfInfo_1.sNameField -> STRUCT_DEMUX_3.IN
 - NmGetCfInfo_1.sNetEv -> STRUCT_DEMUX_5.IN
 - NmGetCfInfo_1.sCfInfo -> STRUCT_DEMUX_4.IN

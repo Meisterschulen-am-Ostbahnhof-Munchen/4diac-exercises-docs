@@ -31,6 +31,7 @@ The exercise consists of the sub-application Uebung_012l_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - StringValue_AIS.IN -> NVS_AIS.AIS_IN
 - NVS_AIS.AIS_OUT -> Q_StringValue_AIS.pau8String
 

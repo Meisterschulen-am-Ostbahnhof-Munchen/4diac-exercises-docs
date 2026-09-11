@@ -31,12 +31,14 @@ The exercise consists of the sub-application Uebung_001g.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_I1.INITO -> E_DELAY.START
 - E_DELAY.EO -> AX_NOT_INIT.INIT
 - AX_NOT_INIT.CNF -> DigitalOutput_Q1.REQ
 - DigitalInput_I1.IND -> AX_NOT_INIT.REQ
 
 **Data Connections:**
+
 - AX_NOT_INIT.OUT -> DigitalOutput_Q1.OUT
 - DigitalInput_I1.IN -> AX_NOT_INIT.IN
 

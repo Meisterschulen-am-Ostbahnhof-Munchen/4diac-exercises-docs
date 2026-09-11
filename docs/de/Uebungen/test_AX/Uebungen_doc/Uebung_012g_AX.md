@@ -33,6 +33,7 @@ Die Übung besteht aus der Subapplikation Uebung_012g_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - INI_AR.AR_OUT -> Q_NumericValue_PHYSA.rPhys
 - InputNumber_I3_N.rPhys -> INI_AR.AR_IN
 

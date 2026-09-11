@@ -31,10 +31,12 @@ The exercise consists of the sub-application Uebung_034_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AnalogInput_I7.IN -> AD_SHL.IN
 - AD_SHL.OUT -> PWMOutput_Q4.OUT
 
 **Event Connections:**
+
 - AnalogInput_I7.INITO -> PWMOutput_Q4.INIT
 
 -----

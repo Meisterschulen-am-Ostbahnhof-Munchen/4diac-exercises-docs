@@ -33,9 +33,11 @@ Die Übung besteht aus der Subapplikation Uebung_014_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - E_SR.Q -> Q_ObjHideShow.qVisible
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> E_SR.S
 - SoftKey_UP_F2.IND -> E_SR.R
 

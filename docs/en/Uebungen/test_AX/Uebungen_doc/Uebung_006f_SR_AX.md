@@ -35,6 +35,7 @@ The exercise consists of the sub-application Uebung_006f_SR_AX.SUB, which uses t
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_S.IN -> SR_T_FF.SET1
 - DigitalInput_R.IN -> SR_T_FF.RESET
 - DigitalInput_CLK.IN -> SR_T_FF.CLK

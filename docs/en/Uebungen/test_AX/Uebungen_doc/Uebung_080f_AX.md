@@ -101,6 +101,7 @@ The exercise consists of the sub-application Uebung_080f_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 - AUI_CTU.CV -> AUDI_AUI_MUX_32.K
 - initval_00.OUT -> AUDI_AUI_MUX_32.IN1
@@ -138,6 +139,7 @@ The exercise consists of the sub-application Uebung_080f_AX.SUB, which uses the 
 - AUDI_AUI_MUX_32.OUT -> Q_NumericValue_1.u32NewValue
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> AUI_CTU.CU
 - DigitalInput_CLK_I2.IND -> AUI_CTU.R
 

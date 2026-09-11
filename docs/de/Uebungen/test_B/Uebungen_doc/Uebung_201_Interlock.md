@@ -50,11 +50,13 @@ Die Übung besteht aus der Subapplikation Uebung_201_Interlock.SUB, welche die f
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - ILOCK_1.ILOCK_OUT -> ILOCK_2.ILOCK_IN
 - ILOCK_2.ILOCK_OUT -> ILOCK_3.ILOCK_IN
 - ILOCK_3.ILOCK_OUT -> ILOCK_4.ILOCK_IN
 
 **Ereignisverbindungen:**
+
 - DigitalInput_I4.IND -> ILOCK_4.REQ
 - DigitalInput_I3.IND -> ILOCK_3.REQ
 - DigitalInput_I2.IND -> ILOCK_2.REQ
@@ -65,6 +67,7 @@ Die Übung besteht aus der Subapplikation Uebung_201_Interlock.SUB, welche die f
 - ILOCK_4.CNF -> DigitalOutput_Q4.REQ
 
 **Datenverbindungen:**
+
 - DigitalInput_I4.IN -> ILOCK_4.IN
 - DigitalInput_I3.IN -> ILOCK_3.IN
 - DigitalInput_I2.IN -> ILOCK_2.IN

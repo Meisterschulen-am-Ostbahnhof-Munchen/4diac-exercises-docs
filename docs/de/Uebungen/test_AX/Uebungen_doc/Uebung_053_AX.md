@@ -48,6 +48,7 @@ Die Übung besteht aus der Subapplikation Uebung_053_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - ASSEMBLE_BYTE_FROM_BOOLS.OUT -> SPLIT_BYTE_INTO_BOOLS.IN
 - SPLIT_BYTE_INTO_BOOLS.BIT_00 -> DigitalOutput_Q1.OUT
 - SPLIT_BYTE_INTO_BOOLS.BIT_01 -> DigitalOutput_Q2.OUT

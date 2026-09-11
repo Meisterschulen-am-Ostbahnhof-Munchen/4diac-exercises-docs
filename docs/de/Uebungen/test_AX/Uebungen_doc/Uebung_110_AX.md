@@ -36,15 +36,18 @@ Die Übung besteht aus der Subapplikation Uebung_110_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> ADD_2.REQ
 - F_MOVE.CNF -> F_GT.REQ
 - F_GT.CNF -> AX_BOOL_TO_X.REQ
 - ADD_2.CNF -> F_MOVE.REQ
 
 **Datenverbindungen:**
+
 - F_MOVE.OUT -> F_GT.IN1
 - F_GT.OUT -> AX_BOOL_TO_X.OUT
 - ADD_2.OUT -> F_MOVE.IN

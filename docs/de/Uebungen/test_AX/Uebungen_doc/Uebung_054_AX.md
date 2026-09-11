@@ -56,6 +56,7 @@ Die Übung besteht aus der Subapplikation Uebung_054_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_X_TO_BOOL_1.AX_IN
 - DigitalInput_I2.IN -> AX_X_TO_BOOL_2.AX_IN
 - DigitalInput_I3.IN -> AX_X_TO_BOOL_3.AX_IN
@@ -66,6 +67,7 @@ Die Übung besteht aus der Subapplikation Uebung_054_AX.SUB, welche die folgende
 - AX_BOOL_TO_X_4.AX_OUT -> DigitalOutput_Q4.OUT
 
 **Ereignisverbindungen:**
+
 - BOOLS_TO_ARR08B.CNF -> ARR08B_TO_BOOLS.REQ
 - AX_X_TO_BOOL_1.CNF -> BOOLS_TO_ARR08B.REQ
 - AX_X_TO_BOOL_2.CNF -> BOOLS_TO_ARR08B.REQ
@@ -77,6 +79,7 @@ Die Übung besteht aus der Subapplikation Uebung_054_AX.SUB, welche die folgende
 - ARR08B_TO_BOOLS.CNF -> AX_BOOL_TO_X_4.REQ
 
 **Datenverbindungen:**
+
 - BOOLS_TO_ARR08B.OUT -> ARR08B_TO_BOOLS.IN
 - AX_X_TO_BOOL_1.IN -> BOOLS_TO_ARR08B.IN_00
 - AX_X_TO_BOOL_2.IN -> BOOLS_TO_ARR08B.IN_01

@@ -26,6 +26,7 @@ The exercise consists of the sub-application Uebung_011f_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - NumericValue_PHYS.rPhys -> Q_NumericValue_PHYS.rPhys
 
 ### Notes from the Model

@@ -60,12 +60,14 @@ The exercise consists of the sub-application Uebung_024_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_SR_Ausfahren_Cyl_1.Q -> DigitalOutput_Q1.OUT
 - E_SR_Ausfahren_Cyl_2.Q -> DigitalOutput_Q2.OUT
 - E_SR_Einfahren_Cyl_1.Q -> DigitalOutput_Q4.OUT
 - E_SR_Einfahren_Cyl_2.Q -> DigitalOutput_Q3.OUT
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> E_SR_Ausfahren_Cyl_1.S
 - SoftKey_F2_DOWN.IND -> E_SR_Ausfahren_Cyl_1.R
 - SoftKey_F2_DOWN.IND -> E_SR_Ausfahren_Cyl_2.S

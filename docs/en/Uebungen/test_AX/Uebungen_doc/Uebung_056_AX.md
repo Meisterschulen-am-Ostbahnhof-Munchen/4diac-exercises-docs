@@ -72,6 +72,7 @@ The exercise consists of the sub-application Uebung_056_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_X_TO_BOOL_1.AX_IN
 - DigitalInput_I2.IN -> AX_X_TO_BOOL_2.AX_IN
 - DigitalInput_I3.IN -> AX_X_TO_BOOL_3.AX_IN
@@ -82,6 +83,7 @@ The exercise consists of the sub-application Uebung_056_AX.SUB, which uses the f
 - AX_BOOL_TO_X_4.AX_OUT -> DigitalOutput_Q4.OUT
 
 **Event Connections:**
+
 - ASSEMBLE_BYTE_FROM_QUARTERS.CNF -> SPLIT_BYTE_INTO_QUARTERS.REQ
 - SPLIT_BYTE_INTO_QUARTERS.CNF -> Q_TO_BOOL_Q1.REQ
 - Q_TO_BOOL_Q1.CNF -> AX_BOOL_TO_X_1.REQ
@@ -109,6 +111,7 @@ The exercise consists of the sub-application Uebung_056_AX.SUB, which uses the f
 - BOOL_TO_Q_I3.CNF -> ASSEMBLE_BYTE_FROM_QUARTERS.REQ
 
 **Data Connections:**
+
 - Q_TO_BOOL_Q1.Q -> AX_BOOL_TO_X_1.OUT
 - Q_TO_BOOL_Q4.Q -> AX_BOOL_TO_X_4.OUT
 - Q_TO_BOOL_Q2.Q -> AX_BOOL_TO_X_2.OUT

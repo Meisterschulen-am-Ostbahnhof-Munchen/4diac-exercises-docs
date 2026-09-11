@@ -28,6 +28,7 @@ The exercise consists of the sub-application Uebung_011c_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - InputNumber_I3_N.IN -> AD_TO_AUDI.AD_IN
 - AD_TO_AUDI.AUDI_OUT -> Q_NumericValue.u32NewValue
 

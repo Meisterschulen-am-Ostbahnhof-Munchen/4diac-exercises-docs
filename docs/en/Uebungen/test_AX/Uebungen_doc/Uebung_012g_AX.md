@@ -33,6 +33,7 @@ The exercise consists of the sub-application Uebung_012g_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - INI_AR.AR_OUT -> Q_NumericValue_PHYSA.rPhys
 - InputNumber_I3_N.rPhys -> INI_AR.AR_IN
 

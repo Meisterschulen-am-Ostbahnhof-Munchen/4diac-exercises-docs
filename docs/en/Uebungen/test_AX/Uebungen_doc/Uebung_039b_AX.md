@@ -37,6 +37,7 @@ The exercise consists of the sub-application Uebung_039b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - SoftKey_F1.IN -> E_TP_Q1.IN
 - E_TON.Q -> E_TP_Q2.IN
 - E_TP_Q1.Q -> E_TON.IN

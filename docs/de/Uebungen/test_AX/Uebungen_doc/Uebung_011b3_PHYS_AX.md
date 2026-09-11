@@ -29,6 +29,7 @@ Die Übung besteht aus der Subapplikation Uebung_011b3_PHYS_AX.SUB, welche die f
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputNumber_I3_N.rPhys -> AR_SUB_2.IN1
 - InputNumber_I4_N.rPhys -> AR_SUB_2.IN2
 - AR_SUB_2.OUT -> Q_NumericValue_PHYS.rPhys

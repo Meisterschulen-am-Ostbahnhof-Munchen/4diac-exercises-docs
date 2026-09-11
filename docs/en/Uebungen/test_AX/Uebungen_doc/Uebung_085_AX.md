@@ -29,6 +29,7 @@ The exercise consists of the sub-application Uebung_085_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_D_FF.I
 - AX_D_FF.Q -> DigitalOutput_Q1.OUT
 

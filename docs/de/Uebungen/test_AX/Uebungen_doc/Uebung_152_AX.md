@@ -66,12 +66,14 @@ Die Übung besteht aus der Subapplikation Uebung_152_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - logiBUS_PI_IDA.IN -> AD_D_TO_DWORD.AD_IN
 - AX_T_FF.Q -> AX_X_TO_BOOL.AX_IN
 - AUDI_UDINT_TO_UDI.AUDI_OUT -> AUDI_TO_AD.AUDI_IN
 - AUDI_TO_AD.AD_OUT -> PWMOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - AD_D_TO_DWORD.CNF -> F_DWORD_TO_UDINT.REQ
 - F_DWORD_TO_UDINT.CNF -> F_UDINT_TO_REAL.REQ
 - F_UDINT_TO_REAL.CNF -> FT_DERIV.REQ
@@ -85,6 +87,7 @@ Die Übung besteht aus der Subapplikation Uebung_152_AX.SUB, welche die folgende
 - E_CYCLE.EO -> logiBUS_PI_IDA.REQ
 
 **Datenverbindungen:**
+
 - AD_D_TO_DWORD.IN -> F_DWORD_TO_UDINT.IN
 - F_DWORD_TO_UDINT.OUT -> F_UDINT_TO_REAL.IN
 - F_UDINT_TO_REAL.OUT -> FT_DERIV.in

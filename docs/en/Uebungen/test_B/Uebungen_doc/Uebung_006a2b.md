@@ -42,6 +42,7 @@ The exercise consists of the sub-application Uebung_006a2b.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> E_T_FF_SR_Q1.REQ
 - DigitalInput_CLK_I2.IND -> E_T_FF_SR_Q2.REQ
 - DigitalInput_CLK_I3.IND -> E_T_FF_SR_Q1.REQ
@@ -50,6 +51,7 @@ The exercise consists of the sub-application Uebung_006a2b.SUB, which uses the f
 - E_T_FF_SR_Q2.CNF -> DigitalOutput_Q2.REQ
 
 **Data Connections:**
+
 - DigitalInput_CLK_I1.IN -> E_T_FF_SR_Q1.CLK
 - DigitalInput_CLK_I2.IN -> E_T_FF_SR_Q2.CLK
 - DigitalInput_CLK_I3.IN -> E_T_FF_SR_Q1.R1

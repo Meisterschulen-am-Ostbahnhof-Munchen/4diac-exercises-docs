@@ -59,6 +59,7 @@ Die Übung besteht aus der Subapplikation Uebung_035b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - sequence_04.STATE_NR -> F_SINT_TO_UINT.AS_IN
 - sequence_04.DO_S1 -> DigitalOutput_Q1.OUT
 - sequence_04.DO_S2 -> DigitalOutput_Q2.OUT
@@ -67,6 +68,7 @@ Die Übung besteht aus der Subapplikation Uebung_035b_AX.SUB, welche die folgend
 - F_SINT_TO_UINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> sequence_04.START_S1
 - DigitalInput_CLK_I2.IND -> sequence_04.S2_S3
 - DigitalInput_CLK_I3.IND -> sequence_04.S4_START

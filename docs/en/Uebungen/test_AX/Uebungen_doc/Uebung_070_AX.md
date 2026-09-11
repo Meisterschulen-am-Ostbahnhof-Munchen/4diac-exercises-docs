@@ -27,6 +27,7 @@ The exercise consists of the sub-application Uebung_070_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - I_WBSD.SPEED -> F_UINT_TO_UDINT.AUI_IN
 - F_UINT_TO_UDINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 

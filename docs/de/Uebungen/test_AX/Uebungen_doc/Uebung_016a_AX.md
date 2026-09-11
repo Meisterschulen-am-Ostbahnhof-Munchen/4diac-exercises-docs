@@ -44,6 +44,7 @@ Die Übung besteht aus der Subapplikation Uebung_016a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - F_SEL_E_3.OUT -> Q_BackgroundColour.u8Colour
 - initval_AUS.OUT -> F_SEL_E_3.IN1
 - initval_AUS_1.OUT -> F_SEL_E_3.IN2
@@ -51,6 +52,7 @@ Die Übung besteht aus der Subapplikation Uebung_016a_AX.SUB, welche die folgend
 - AUI_MUX_3.K -> F_SEL_E_3.K
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> AUI_MUX_3.EI1
 - SoftKey_UP_F2.IND -> AUI_MUX_3.EI2
 - SoftKey_UP_F3.IND -> AUI_MUX_3.EI3

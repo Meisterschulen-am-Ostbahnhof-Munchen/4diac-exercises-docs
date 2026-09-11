@@ -38,6 +38,7 @@ The exercise consists of the sub-application Uebung_010e.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SoftKey_SET.IND -> AX_T_FF_SR.S
 - SoftKey_RESET.IND -> AX_T_FF_SR.R
 - SoftKey_TOGGLE.IND -> AX_T_FF_SR.CLK
@@ -45,6 +46,7 @@ The exercise consists of the sub-application Uebung_010e.SUB, which uses the fol
 - AX_T_FF_SR.EO -> GreenWhiteBackground_AX.REQ
 
 **Data Connections:**
+
 - AX_T_FF_SR.Q -> DigitalOutput_Q1.OUT
 - AX_T_FF_SR.Q -> GreenWhiteBackground_AX.DI1
 

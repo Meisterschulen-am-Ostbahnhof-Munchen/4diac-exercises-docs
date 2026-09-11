@@ -38,9 +38,11 @@ The exercise consists of the sub-application Uebung_007b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - E_MERGE_4.EO -> E_T_FF.CLK
 - E_SPLIT_4.EO1 -> E_MERGE_4.EI1
 - E_SPLIT_4.EO2 -> E_MERGE_4.EI2

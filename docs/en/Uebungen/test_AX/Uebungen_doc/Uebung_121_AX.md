@@ -37,6 +37,7 @@ The exercise consists of the sub-application Uebung_121_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - STRUCT_MUX.CNF -> STRUCT_DEMUX.REQ
 - NmSetName.CNF -> NmSetNameField.REQ
 - STRUCT_MUX_1.CNF -> NmSetName.REQ
@@ -49,6 +50,7 @@ The exercise consists of the sub-application Uebung_121_AX.SUB, which uses the f
 - INIT_1.CNF -> STRUCT_MUX.REQ
 
 **Data Connections:**
+
 - STRUCT_MUX.OUT -> STRUCT_DEMUX.IN
 - STRUCT_MUX_1.OUT -> NmSetName.psNameField
 - NmSetName. -> NmSetNameField.au8IsoName

@@ -76,6 +76,7 @@ Die Übung besteht aus der Subapplikation Uebung_122_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo.IND -> LOG_16.REQ
 - LOG_16.CNF -> SD_A_1.REQ
 - LOG_16.CNF -> SD_A_2.REQ
@@ -128,6 +129,7 @@ Die Übung besteht aus der Subapplikation Uebung_122_AX.SUB, welche die folgende
 - LOG_16.CNF -> NmGetCfInfo.RSP
 
 **Datenverbindungen:**
+
 - NmGetCfInfo.sNetEv -> LOG_16.IN
 - LOG_16.OUT1 -> SD_A_1.IN
 - LOG_16.OUT2 -> SD_A_2.IN

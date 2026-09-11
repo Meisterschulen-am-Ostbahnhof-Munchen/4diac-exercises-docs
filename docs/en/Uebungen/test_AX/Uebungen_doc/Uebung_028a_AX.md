@@ -58,6 +58,7 @@ The exercise consists of the sub-application Uebung_028a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_SPLIT_2.IN
 - AnalogInput_I4.IN -> AD_TO_AUDI.AD_IN
 - AUDI_TO_AR.AR_OUT -> CALIBRATE.X

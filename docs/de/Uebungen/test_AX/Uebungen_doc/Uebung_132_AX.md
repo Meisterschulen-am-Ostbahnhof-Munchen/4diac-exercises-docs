@@ -38,6 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_132_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_3.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_4.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_5.REQ
@@ -45,6 +46,7 @@ Die Übung besteht aus der Subapplikation Uebung_132_AX.SUB, welche die folgende
 - DigitalInput_CLK_I1.IND -> AlPgnRxNew8B_REQ.REQ
 
 **Datenverbindungen:**
+
 - NmGetCfInfo_1.sNameField -> STRUCT_DEMUX_3.IN
 - NmGetCfInfo_1.sNetEv -> STRUCT_DEMUX_5.IN
 - NmGetCfInfo_1.sCfInfo -> STRUCT_DEMUX_4.IN

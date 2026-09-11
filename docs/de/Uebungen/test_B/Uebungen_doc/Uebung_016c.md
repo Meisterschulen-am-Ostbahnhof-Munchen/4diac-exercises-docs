@@ -31,11 +31,13 @@ Die Übung besteht aus der Subapplikation Uebung_016c.SUB, welche die folgende B
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> E_SR.S
 - SoftKey_UP_F2.IND -> E_SR.R
 - E_SR.EO -> GreenWhiteBackground1.REQ
 
 **Datenverbindungen:**
+
 - E_SR.Q -> GreenWhiteBackground1.DI1
 
 -----

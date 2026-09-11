@@ -24,6 +24,7 @@ The exercise consists of the sub-application Uebung_172_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_MUX_2_1.EI1
 

@@ -35,12 +35,14 @@ Die Übung besteht aus der Subapplikation Uebung_001d2.SUB, welche die folgende 
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_I1.IND -> ILOCK_SWITCH.EI_UP
 - DigitalInput_I2.IND -> ILOCK_SWITCH.EI_DOWN
 - ILOCK_SWITCH.EO_UP -> DigitalOutput_Q1.REQ
 - ILOCK_SWITCH.EO_DOWN -> DigitalOutput_Q2.REQ
 
 **Datenverbindungen:**
+
 - DigitalInput_I1.IN -> ILOCK_SWITCH.DI_UP
 - DigitalInput_I2.IN -> ILOCK_SWITCH.DI_DOWN
 - ILOCK_SWITCH.DO_UP -> DigitalOutput_Q1.OUT

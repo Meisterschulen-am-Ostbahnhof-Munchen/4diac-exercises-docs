@@ -74,6 +74,7 @@ The exercise consists of the sub-application Uebung_040_2_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - loop.DO_S1 -> DigitalOutput_Q1.OUT
 - loop.DO_S2 -> DigitalOutput_Q2.OUT
 - loop.DO_S3 -> DigitalOutput_Q3.OUT
@@ -92,6 +93,7 @@ The exercise consists of the sub-application Uebung_040_2_AX.SUB, which uses the
 - F_SUB_1.OUT -> E_DEMUX_1.K
 
 **Event Connections:**
+
 - DigitalInput_CLK_I4.IND -> loop.RESET
 - DigitalInput_CLK_I1.IND -> loop.START_S1
 - E_DEMUX_0.EO1 -> loop.S1_S2

@@ -35,16 +35,19 @@ The exercise consists of the sub-application Uebung_002a4b_AX.SUB, which uses th
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_X_TO_BOOL_1.AX_IN
 - DigitalInput_I2.IN -> AX_X_TO_BOOL_2.AX_IN
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - AX_X_TO_BOOL_1.CNF -> AND_BOOL_2.REQ
 - AX_X_TO_BOOL_2.CNF -> AND_BOOL_2.REQ
 - AND_BOOL_2.CNF -> AX_BOOL_TO_X.REQ
 
 **Data Connections:**
+
 - AX_X_TO_BOOL_1.IN -> AND_BOOL_2.IN1
 - AX_X_TO_BOOL_2.IN -> AND_BOOL_2.IN2
 - AND_BOOL_2.OUT -> AX_BOOL_TO_X.OUT

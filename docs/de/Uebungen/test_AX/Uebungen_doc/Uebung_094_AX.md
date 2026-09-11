@@ -34,10 +34,12 @@ Die Übung besteht aus der Subapplikation Uebung_094_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> E_PERMIT.PERMIT
 - E_T_FF.Q -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I2.IND -> E_PERMIT.EI
 - E_PERMIT.EO -> E_T_FF.CLK
 

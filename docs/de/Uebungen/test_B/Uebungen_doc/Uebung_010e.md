@@ -38,6 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_010e.SUB, welche die folgende B
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_SET.IND -> AX_T_FF_SR.S
 - SoftKey_RESET.IND -> AX_T_FF_SR.R
 - SoftKey_TOGGLE.IND -> AX_T_FF_SR.CLK
@@ -45,6 +46,7 @@ Die Übung besteht aus der Subapplikation Uebung_010e.SUB, welche die folgende B
 - AX_T_FF_SR.EO -> GreenWhiteBackground_AX.REQ
 
 **Datenverbindungen:**
+
 - AX_T_FF_SR.Q -> DigitalOutput_Q1.OUT
 - AX_T_FF_SR.Q -> GreenWhiteBackground_AX.DI1
 

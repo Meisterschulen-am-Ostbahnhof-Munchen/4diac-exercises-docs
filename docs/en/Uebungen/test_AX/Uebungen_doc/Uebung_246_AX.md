@@ -38,6 +38,7 @@ The exercise consists of the sub-application Uebung_246_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - initval_AR_50_Neutral.OUT -> AR_AX_SEL_AR_Runter.IN0
 - initval_AR_25_Runter.OUT -> AR_AX_SEL_AR_Runter.IN1
 - DigitalInput_I2.IN -> AR_AX_SEL_AR_Runter.G

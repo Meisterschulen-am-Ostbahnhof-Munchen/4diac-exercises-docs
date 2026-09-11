@@ -36,15 +36,18 @@ Die Übung besteht aus der Subapplikation Uebung_081_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> E_CTD.CD
 - E_CTD.CDO -> AX_BOOL_TO_X.REQ
 - E_CTD.LDO -> AX_BOOL_TO_X.REQ
 - DigitalInput_CLK_I2.IND -> E_CTD.LD
 
 **Datenverbindungen:**
+
 - E_CTD.Q -> AX_BOOL_TO_X.OUT
 
 -----

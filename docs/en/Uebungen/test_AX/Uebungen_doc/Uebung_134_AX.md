@@ -35,12 +35,14 @@ The exercise consists of the sub-application Uebung_134_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - BaseMemberExternAdd.CNF -> NetEv2NetEv.REQ
 - NetEv2NetEv.CNF -> AlPgnRxNew8B.install
 - NmGetCfInfo.IND -> BaseMemberExternAdd.REQ
 - AlPgnRxNew8B.IND -> STRUCT_DEMUX.REQ
 
 **Data Connections:**
+
 - BaseMemberExternAdd.s16Handle -> NetEv2NetEv.s16Handle
 - NmGetCfInfo.sNetEv -> NetEv2NetEv.IN
 - NetEv2NetEv. -> AlPgnRxNew8B.NmSource

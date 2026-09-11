@@ -38,6 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_247_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - NumericValue_PHYSA.rPhys -> F_MUL_KORREKTUR.IN1
 - initval_AR_Korrekturfaktor.OUT -> F_MUL_KORREKTUR.IN2
 - F_MUL_KORREKTUR.OUT -> AR_SPLIT_2_Anzeige_PWM.IN

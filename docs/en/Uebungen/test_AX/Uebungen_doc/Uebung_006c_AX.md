@@ -66,6 +66,7 @@ The exercise consists of the sub-application Uebung_006c_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_RPT_I1.IN -> AB_TO_AUI_S.AB_IN
 - AB_TO_AUI_S.AUI_OUT -> AUI_DEMUX8_S.K
 - DigitalInput_RPT_I2.IN -> AB_TO_AUI_R.AB_IN
@@ -80,6 +81,7 @@ The exercise consists of the sub-application Uebung_006c_AX.SUB, which uses the 
 - E_SR_Q8.Q -> DigitalOutput_Q8.OUT
 
 **Event Connections:**
+
 - AUI_DEMUX8_S.EO1 -> E_SR_Q1.S
 - AUI_DEMUX8_S.EO2 -> E_SR_Q2.S
 - AUI_DEMUX8_S.EO3 -> E_SR_Q3.S

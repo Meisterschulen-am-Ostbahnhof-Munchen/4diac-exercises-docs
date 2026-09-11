@@ -43,6 +43,7 @@ Die Übung besteht aus der Subapplikation Uebung_015b.SUB, welche die folgende B
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - F_SEL_E_3.CNF -> Q_NumericValue.REQ
 - SoftKey_UP_F1.IND -> F_SEL_E_3.REQ1
 - SoftKey_UP_F2.IND -> F_SEL_E_3.REQ2
@@ -52,6 +53,7 @@ Die Übung besteht aus der Subapplikation Uebung_015b.SUB, welche die folgende B
 - INIT.CNF -> F_UINT_TO_UDINT_1.REQ
 
 **Datenverbindungen:**
+
 - F_UINT_TO_UDINT.OUT -> F_SEL_E_3.IN2
 - F_SEL_E_3.OUT -> Q_NumericValue.u32NewValue
 - F_UINT_TO_UDINT_1.OUT -> F_SEL_E_3.IN3

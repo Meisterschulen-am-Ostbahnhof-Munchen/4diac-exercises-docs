@@ -35,12 +35,14 @@ The exercise consists of the sub-application Uebung_001d2.SUB, which uses the fo
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_I1.IND -> ILOCK_SWITCH.EI_UP
 - DigitalInput_I2.IND -> ILOCK_SWITCH.EI_DOWN
 - ILOCK_SWITCH.EO_UP -> DigitalOutput_Q1.REQ
 - ILOCK_SWITCH.EO_DOWN -> DigitalOutput_Q2.REQ
 
 **Data Connections:**
+
 - DigitalInput_I1.IN -> ILOCK_SWITCH.DI_UP
 - DigitalInput_I2.IN -> ILOCK_SWITCH.DI_DOWN
 - ILOCK_SWITCH.DO_UP -> DigitalOutput_Q1.OUT

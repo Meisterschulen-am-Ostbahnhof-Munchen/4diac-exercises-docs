@@ -59,6 +59,7 @@ Die Übung besteht aus der Subapplikation Uebung_035_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - sequence_04.timeOut -> E_TimeOut.TimeOutSocket
 - sequence_04.STATE_NR -> F_SINT_TO_UINT.AS_IN
 - sequence_04.DO_S1 -> DigitalOutput_Q1.OUT
@@ -68,6 +69,7 @@ Die Übung besteht aus der Subapplikation Uebung_035_AX.SUB, welche die folgende
 - F_SINT_TO_UINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> sequence_04.START_S1
 - DigitalInput_CLK_I2.IND -> sequence_04.S2_S3
 - DigitalInput_CLK_I3.IND -> sequence_04.S4_START

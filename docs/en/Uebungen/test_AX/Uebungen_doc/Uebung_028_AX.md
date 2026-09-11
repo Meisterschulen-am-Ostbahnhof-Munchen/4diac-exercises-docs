@@ -46,6 +46,7 @@ The exercise consists of the sub-application Uebung_028_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AnalogInput_I7.IN -> F_DWORD_TO_UDINT_I7.AD_IN
 - AX_SPLIT_2.OUT1 -> DigitalOutput_Q1.OUT
 - AnalogInput_I4.IN -> F_DWORD_TO_UDINT_I4.AD_IN
@@ -53,6 +54,7 @@ The exercise consists of the sub-application Uebung_028_AX.SUB, which uses the f
 - AX_SPLIT_2.OUT2 -> AX_X_TO_BOOL.AX_IN
 
 **Event Connections:**
+
 - AX_X_TO_BOOL.CNF -> AnalogInput_I4.REQ
 - AX_X_TO_BOOL.CNF -> AnalogInput_I7.REQ
 

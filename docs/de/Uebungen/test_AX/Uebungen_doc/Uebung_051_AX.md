@@ -56,6 +56,7 @@ Die Übung besteht aus der Subapplikation Uebung_051_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_X_TO_BOOL_1.AX_IN
 - DigitalInput_I2.IN -> AX_X_TO_BOOL_2.AX_IN
 - DigitalInput_I3.IN -> AX_X_TO_BOOL_3.AX_IN
@@ -66,6 +67,7 @@ Die Übung besteht aus der Subapplikation Uebung_051_AX.SUB, welche die folgende
 - AX_BOOL_TO_X_4.AX_OUT -> DigitalOutput_Q4.OUT
 
 **Ereignisverbindungen:**
+
 - AX_X_TO_BOOL_1.CNF -> STRUCT_MUX.REQ
 - AX_X_TO_BOOL_2.CNF -> STRUCT_MUX.REQ
 - AX_X_TO_BOOL_3.CNF -> STRUCT_MUX.REQ
@@ -77,6 +79,7 @@ Die Übung besteht aus der Subapplikation Uebung_051_AX.SUB, welche die folgende
 - STRUCT_DEMUX.CNF -> AX_BOOL_TO_X_4.REQ
 
 **Datenverbindungen:**
+
 - AX_X_TO_BOOL_1.IN -> STRUCT_MUX.X_00
 - AX_X_TO_BOOL_2.IN -> STRUCT_MUX.X_01
 - AX_X_TO_BOOL_3.IN -> STRUCT_MUX.X_02

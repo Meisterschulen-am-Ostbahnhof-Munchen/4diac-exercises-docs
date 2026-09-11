@@ -46,12 +46,14 @@ Die Übung besteht aus der Subapplikation Uebung_034b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUDI_CTUD.CV -> AUDI_SPLIT_2.IN
 - AUDI_SPLIT_2.OUT2 -> Q_NumericValue_AUDI.u32NewValue
 - AUDI_SPLIT_2.OUT1 -> AUDI_TO_AD.AUDI_IN
 - AUDI_TO_AD.AD_OUT -> PWMOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - IE_SPEED_DOWN.IND -> AUDI_CTUD.CD
 - IE_STOP.IND -> AUDI_CTUD.R
 - IE_FULL.IND -> AUDI_CTUD.LD

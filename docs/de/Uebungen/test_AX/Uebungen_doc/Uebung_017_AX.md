@@ -31,6 +31,7 @@ Die Übung besteht aus der Subapplikation Uebung_017_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> Q_CtrlAudioSignal.REQ
 
 -----

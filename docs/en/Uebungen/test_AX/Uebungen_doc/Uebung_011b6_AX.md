@@ -36,6 +36,7 @@ The exercise consists of the sub-application Uebung_011b6_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - InputNumber_I1.IND -> F_DWORD_TO_UDINT.REQ
 - InputNumber_I2.IND -> F_DWORD_TO_UDINT_1.REQ
 - F_DWORD_TO_UDINT.CNF -> SAFE_SUB.REQ
@@ -45,6 +46,7 @@ The exercise consists of the sub-application Uebung_011b6_AX.SUB, which uses the
 - F_BOOL_TO_UDINT.CNF -> Q_NumericValue_1.REQ
 
 **Data Connections:**
+
 - InputNumber_I1.IN -> F_DWORD_TO_UDINT.IN
 - InputNumber_I2.IN -> F_DWORD_TO_UDINT_1.IN
 - F_DWORD_TO_UDINT.OUT -> SAFE_SUB.IN1

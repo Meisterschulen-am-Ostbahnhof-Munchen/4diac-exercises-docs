@@ -24,6 +24,7 @@ Die Übung besteht aus der Subapplikation Uebung_172_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_MUX_2_1.EI1
 

@@ -36,11 +36,13 @@ The exercise consists of the sub-application Uebung_004b3c_AX.SUB, which uses th
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - Uebung_004b3b_sub1.PLUG -> Uebung_004b3b_sub2.SOCKET
 - Uebung_004b3b_sub1.Q -> DigitalOutput_Q1.OUT
 - Uebung_004b3b_sub2.Q -> DigitalOutput_Q2.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I2.IND -> Uebung_004b3b_sub2.IND
 - DigitalInput_CLK_I1.IND -> Uebung_004b3b_sub1.IND
 

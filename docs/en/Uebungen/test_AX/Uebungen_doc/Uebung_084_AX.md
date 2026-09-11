@@ -40,9 +40,11 @@ The exercise consists of the sub-application Uebung_084_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - E_CYCLE.EO -> AUI_CTU.CU
 - DigitalInput_CLK_I1.IND -> E_CYCLE.START
 - DigitalInput_CLK_I2.IND -> E_CYCLE.STOP

@@ -29,6 +29,7 @@ Die Übung besteht aus der Subapplikation Uebung_085_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_D_FF.I
 - AX_D_FF.Q -> DigitalOutput_Q1.OUT
 

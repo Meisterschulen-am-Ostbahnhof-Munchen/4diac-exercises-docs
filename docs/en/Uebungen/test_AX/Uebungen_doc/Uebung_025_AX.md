@@ -72,6 +72,7 @@ The exercise consists of the sub-application Uebung_025_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - E_SR_Ausfahren_Cyl_1.Q -> SPLIT_1.IN
 - SPLIT_1.OUT1 -> DigitalOutput_Q1.OUT
 - SPLIT_1.OUT2 -> E_SWITCH_Q1.G
@@ -86,6 +87,7 @@ The exercise consists of the sub-application Uebung_025_AX.SUB, which uses the f
 - SPLIT_4.OUT2 -> E_SWITCH_Q4.G
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> E_SR_Ausfahren_Cyl_1.S
 - E_DELAY.EO -> E_SR_Einfahren_Cyl_2.S
 - E_REND_Ausfahren_Cyl_1.EO -> E_SR_Ausfahren_Cyl_1.R

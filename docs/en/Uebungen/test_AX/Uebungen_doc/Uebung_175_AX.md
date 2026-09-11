@@ -24,6 +24,7 @@ The exercise consists of the sub-application Uebung_175_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_TABLE_CTRL_1.CLK
 

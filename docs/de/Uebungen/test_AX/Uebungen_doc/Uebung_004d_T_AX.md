@@ -32,6 +32,7 @@ Die Übung besteht aus der Subapplikation Uebung_004d_T_AX.SUB, welche die folge
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_RST.IN -> T_FF.RST
 - DigitalInput_CLK.IN -> T_FF.CLK
 - T_FF.Q1 -> DigitalOutput_Q1.OUT

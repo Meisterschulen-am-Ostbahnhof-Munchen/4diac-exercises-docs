@@ -33,6 +33,7 @@ The exercise consists of the sub-application Uebung_120_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - NmGetCfInfo.IND -> STRUCT_DEMUX_3.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_2.REQ
 - STRUCT_DEMUX_3.CNF -> NmSetNameField.REQ
@@ -41,6 +42,7 @@ The exercise consists of the sub-application Uebung_120_AX.SUB, which uses the f
 - NmSetNameField_1.CNF -> STRUCT_DEMUX_1.REQ
 
 **Data Connections:**
+
 - NmGetCfInfo.sNetEv -> STRUCT_DEMUX_3.IN
 - NmGetCfInfo.sCfInfo -> STRUCT_DEMUX_2.IN
 - STRUCT_DEMUX_3.cfName -> NmSetNameField.au8IsoName

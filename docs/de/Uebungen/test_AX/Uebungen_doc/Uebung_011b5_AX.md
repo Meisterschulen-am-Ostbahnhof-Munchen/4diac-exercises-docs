@@ -36,6 +36,7 @@ Die Übung besteht aus der Subapplikation Uebung_011b5_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - InputNumber_I1.IND -> F_DWORD_TO_UDINT.REQ
 - InputNumber_I2.IND -> F_DWORD_TO_UDINT_1.REQ
 - F_DWORD_TO_UDINT.CNF -> SAFE_MUL_2.REQ
@@ -45,6 +46,7 @@ Die Übung besteht aus der Subapplikation Uebung_011b5_AX.SUB, welche die folgen
 - F_BOOL_TO_UDINT.CNF -> Q_NumericValue_1.REQ
 
 **Datenverbindungen:**
+
 - InputNumber_I1.IN -> F_DWORD_TO_UDINT.IN
 - InputNumber_I2.IN -> F_DWORD_TO_UDINT_1.IN
 - F_DWORD_TO_UDINT.OUT -> SAFE_MUL_2.IN1

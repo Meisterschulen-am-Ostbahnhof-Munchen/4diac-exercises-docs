@@ -26,6 +26,7 @@ Die Übung besteht aus der Subapplikation Uebung_000b.SUB, welche die folgende B
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> AND_2.REQ
 

@@ -40,12 +40,14 @@ The exercise consists of the sub-application Uebung_016b.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - F_SEL_E_3.CNF -> Q_BackgroundColour.REQ
 - SoftKey_UP_F1.IND -> F_SEL_E_3.REQ1
 - SoftKey_UP_F2.IND -> F_SEL_E_3.REQ2
 - SoftKey_UP_F3.IND -> F_SEL_E_3.REQ3
 
 **Data Connections:**
+
 - F_SEL_E_3.OUT -> Q_BackgroundColour.u8Colour
 
 -----

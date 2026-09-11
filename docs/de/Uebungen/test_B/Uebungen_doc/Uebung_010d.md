@@ -30,11 +30,13 @@ Die Übung besteht aus der Subapplikation Uebung_010d.SUB, welche die folgende B
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> AX_T_FF.CLK
 - AX_T_FF.EO -> DigitalOutput_Q1.REQ
 - AX_T_FF.EO -> GreenWhiteBackground_AX.REQ
 
 **Datenverbindungen:**
+
 - AX_T_FF.Q -> DigitalOutput_Q1.OUT
 - AX_T_FF.Q -> GreenWhiteBackground_AX.DI1
 

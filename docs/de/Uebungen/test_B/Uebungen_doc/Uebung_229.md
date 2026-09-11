@@ -34,6 +34,7 @@ Die Übung besteht aus der Subapplikation Uebung_229.SUB, welche die folgende Ba
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - AX_RF_TRIG_1.ER -> AX_SR.S
 - AX_RF_TRIG_2.ER -> AX_SR.S
 - AX_RF_TRIG_1.EF -> AX_SR.R
@@ -43,6 +44,7 @@ Die Übung besteht aus der Subapplikation Uebung_229.SUB, welche die folgende Ba
 - AX_SR.EO -> DigitalOutput_Q1.REQ
 
 **Datenverbindungen:**
+
 - DigitalInput_I2.IN -> AX_RF_TRIG_2.QI
 - DigitalInput_I1.IN -> AX_RF_TRIG_1.QI
 - AX_SR.Q -> DigitalOutput_Q1.OUT

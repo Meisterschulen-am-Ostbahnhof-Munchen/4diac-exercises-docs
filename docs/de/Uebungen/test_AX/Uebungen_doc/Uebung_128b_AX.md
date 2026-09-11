@@ -42,6 +42,7 @@ Die Übung besteht aus der Subapplikation Uebung_128b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_3.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_4.REQ
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_5.REQ
@@ -51,6 +52,7 @@ Die Übung besteht aus der Subapplikation Uebung_128b_AX.SUB, welche die folgend
 - INIT_ARR_0032_BYTE.INITO -> AlPgnTxNew_TP.INIT
 
 **Datenverbindungen:**
+
 - NmGetCfInfo_1.sNameField -> STRUCT_DEMUX_3.IN
 - NmGetCfInfo_1.sNetEv -> STRUCT_DEMUX_5.IN
 - NmGetCfInfo_1.sCfInfo -> STRUCT_DEMUX_4.IN

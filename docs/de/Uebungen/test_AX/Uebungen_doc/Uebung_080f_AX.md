@@ -101,6 +101,7 @@ Die Übung besteht aus der Subapplikation Uebung_080f_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 - AUI_CTU.CV -> AUDI_AUI_MUX_32.K
 - initval_00.OUT -> AUDI_AUI_MUX_32.IN1
@@ -138,6 +139,7 @@ Die Übung besteht aus der Subapplikation Uebung_080f_AX.SUB, welche die folgend
 - AUDI_AUI_MUX_32.OUT -> Q_NumericValue_1.u32NewValue
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> AUI_CTU.CU
 - DigitalInput_CLK_I2.IND -> AUI_CTU.R
 

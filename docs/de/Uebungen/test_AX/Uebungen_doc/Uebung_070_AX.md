@@ -27,6 +27,7 @@ Die Übung besteht aus der Subapplikation Uebung_070_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - I_WBSD.SPEED -> F_UINT_TO_UDINT.AUI_IN
 - F_UINT_TO_UDINT.AUDI_OUT -> Q_NumericValue.u32NewValue
 

@@ -35,12 +35,14 @@ The exercise consists of the sub-application Uebung_007d3_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - FB_AR_RANDOM.OUT -> AR_D_FF_HYS.I
 - AR_D_FF_HYS.Q -> AR_GT.IN1
 - initval_AR.OUT -> AR_GT.IN2
 - AR_GT.OUT -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> E_CYCLE.START
 - E_CYCLE.EO -> FB_AR_RANDOM.REQ

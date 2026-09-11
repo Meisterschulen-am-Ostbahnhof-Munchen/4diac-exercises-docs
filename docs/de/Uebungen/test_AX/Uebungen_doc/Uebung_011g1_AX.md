@@ -34,6 +34,7 @@ Die Übung besteht aus der Subapplikation Uebung_011g1_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputNumber_I1_1.IN -> AD_TO_AUDI_1.AD_IN
 - InputNumber_I1_2.IN -> AD_TO_AUDI_2.AD_IN
 - InputNumber_I1_3.IN -> AD_TO_AUDI_3.AD_IN

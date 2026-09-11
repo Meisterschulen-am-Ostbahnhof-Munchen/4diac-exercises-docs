@@ -31,9 +31,11 @@ Die Übung besteht aus der Subapplikation Uebung_019_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - Select_2_AUI.OUT -> Q_ActiveMask.u16NewMaskId
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> Select_2_AUI.EI1
 - DigitalInput_CLK_I2.IND -> Select_2_AUI.EI2
 

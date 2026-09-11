@@ -32,12 +32,15 @@ Die Übung besteht aus der Subapplikation Uebung_126b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DataSupply.PLUG1 -> AlPgnTxNew8Bcycl_REQ.CB
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo_1.IND -> AlPgnTxNew8Bcycl_REQ.install
 
 **Datenverbindungen:**
+
 - NmGetCfInfo_1.sNetEv -> AlPgnTxNew8Bcycl_REQ.NmDestin
 
 -----

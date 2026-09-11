@@ -50,6 +50,7 @@ Die Übung besteht aus der Subapplikation Uebung_201_Interlock_BOOL_AX.SUB, welc
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I3.IN -> ILOCK_AX_3.IN
 - DigitalInput_I4.IN -> ILOCK_AX_4.IN
 - ILOCK_AX_4.OUT -> DigitalOutput_Q4.OUT

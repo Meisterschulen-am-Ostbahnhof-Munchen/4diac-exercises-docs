@@ -31,6 +31,7 @@ The exercise consists of the sub-application Uebung_017_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> Q_CtrlAudioSignal.REQ
 
 -----

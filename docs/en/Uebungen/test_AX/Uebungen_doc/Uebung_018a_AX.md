@@ -38,6 +38,7 @@ The exercise consists of the sub-application Uebung_018a_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> Q_CtrlAudioSignal_0.REQ
 - E_RDELAY.EO -> Q_CtrlAudioSignal_1.REQ
 - Q_CtrlAudioSignal_0.CNF -> E_RDELAY.START

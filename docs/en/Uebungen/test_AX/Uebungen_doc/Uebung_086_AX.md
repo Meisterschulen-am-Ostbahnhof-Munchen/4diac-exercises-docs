@@ -26,6 +26,7 @@ The exercise consists of the sub-application Uebung_086_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> AX_E_SWITCH.G
 
 -----

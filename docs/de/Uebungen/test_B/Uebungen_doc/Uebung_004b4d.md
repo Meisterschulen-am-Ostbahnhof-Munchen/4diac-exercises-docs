@@ -46,10 +46,12 @@ Die Übung besteht aus der Subapplikation Uebung_004b4d.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - ILOCK_T_FF1.ILOCK_OUT -> ILOCK_T_FF2.ILOCK_IN
 - ILOCK_T_FF2.ILOCK_OUT -> ILOCK_T_FF3.ILOCK_IN
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> ILOCK_T_FF1.CLK
 - DigitalInput_CLK_I2.IND -> ILOCK_T_FF2.CLK
 - DigitalInput_CLK_I3.IND -> ILOCK_T_FF3.CLK
@@ -58,6 +60,7 @@ Die Übung besteht aus der Subapplikation Uebung_004b4d.SUB, welche die folgende
 - ILOCK_T_FF3.EO -> DigitalOutput_Q3.REQ
 
 **Datenverbindungen:**
+
 - ILOCK_T_FF1.Q -> DigitalOutput_Q1.OUT
 - ILOCK_T_FF2.Q -> DigitalOutput_Q2.OUT
 - ILOCK_T_FF3.Q -> DigitalOutput_Q3.OUT

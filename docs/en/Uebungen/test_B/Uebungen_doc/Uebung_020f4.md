@@ -29,9 +29,11 @@ The exercise consists of the sub-application Uebung_020f4.SUB, which uses the fo
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AX_BLINK.OUT -> DigitalOutput_1A.OUT
 
 **Event Connections:**
+
 - DigitalOutput_1A.INITO -> AX_BLINK.START
 
 -----

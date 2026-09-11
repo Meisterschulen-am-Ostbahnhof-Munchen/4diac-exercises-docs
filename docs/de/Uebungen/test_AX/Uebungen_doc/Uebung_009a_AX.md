@@ -59,9 +59,11 @@ Die Übung besteht aus der Subapplikation Uebung_009a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - RampLimitFS.OUT -> Q_NumericValue.u32NewValue
 
 **Ereignisverbindungen:**
+
 - UP_FAST.IND -> RampLimitFS.UP_FAST
 - FULL.IND -> RampLimitFS.FULL
 - ZERO.IND -> RampLimitFS.ZERO

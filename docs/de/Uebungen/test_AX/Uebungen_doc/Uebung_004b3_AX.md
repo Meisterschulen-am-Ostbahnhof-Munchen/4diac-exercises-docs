@@ -42,6 +42,7 @@ Die Übung besteht aus der Subapplikation Uebung_004b3_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - E_SR_I1.Q -> AX_SPLIT_2_1.IN
 - AX_SPLIT_2_1.OUT1 -> DigitalOutput_Q1.OUT
 - AX_SPLIT_2_1.OUT2 -> E_SWITCH_I1.G
@@ -50,6 +51,7 @@ Die Übung besteht aus der Subapplikation Uebung_004b3_AX.SUB, welche die folgen
 - AX_SPLIT_2_2.OUT2 -> E_SWITCH_I2.G
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> E_SWITCH_I1.EI
 - E_SWITCH_I1.EO0 -> E_SR_I1.S
 - E_SWITCH_I1.EO1 -> E_SR_I1.R

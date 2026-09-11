@@ -26,6 +26,7 @@ The exercise consists of the sub-application Uebung_000b.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - INIT.INITO -> INIT.REQ
 - INIT.CNF -> AND_2.REQ
 

@@ -1,4 +1,4 @@
-# Uebung_001c3_AX: DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot.
+# Uebung_001c3_AX: DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot
 
 Dieser Artikel beschreibt die 4diac IDE Subapplikation Uebung_001c3_AX (DigitalInput_I1 auf DigitalOutput_Q1 --> Eingang abfragen bei Boot.).
 
@@ -29,10 +29,12 @@ Die Übung besteht aus der Subapplikation Uebung_001c3_AX.SUB, welche die folgen
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_NOOP.IN
 - AX_NOOP.OUT -> DigitalOutput_Q1.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_I1.INITO -> DigitalInput_I1.REQ
 
 ### Hinweise aus dem Modell

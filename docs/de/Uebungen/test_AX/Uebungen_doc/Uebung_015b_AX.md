@@ -36,9 +36,11 @@ Die Übung besteht aus der Subapplikation Uebung_015b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - Select_3_AUDI.OUT -> Q_NumericValue_AUDI.u32NewValue
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> Select_3_AUDI.EI1
 - SoftKey_UP_F2.IND -> Select_3_AUDI.EI2
 - SoftKey_UP_F3.IND -> Select_3_AUDI.EI3

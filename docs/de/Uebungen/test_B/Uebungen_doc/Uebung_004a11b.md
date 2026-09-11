@@ -34,13 +34,16 @@ Die Übung besteht aus der Subapplikation Uebung_004a11b.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AX_T_FF_SR_SYM_STORE.Q_INIT -> INI_AX2.VAL
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> AX_T_FF_SR_SYM_STORE.CLK
 - AX_T_FF_SR_SYM_STORE.EO -> DigitalOutput_Q1.REQ
 
 **Datenverbindungen:**
+
 - AX_T_FF_SR_SYM_STORE.Q -> DigitalOutput_Q1.OUT
 
 ### Hinweise aus dem Modell

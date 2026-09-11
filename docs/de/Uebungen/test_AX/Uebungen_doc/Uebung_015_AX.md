@@ -38,12 +38,14 @@ Die Übung besteht aus der Subapplikation Uebung_015_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - F_UINT_TO_UDINT.OUT -> F_SEL.IN1
 - AX_SR.Q -> F_SEL.G
 - initval_AUDI.OUT -> F_SEL.IN0
 - F_SEL.OUT -> Q_NumericValue_AUDI.u32NewValue
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> AX_SR.S
 - SoftKey_UP_F2.IND -> AX_SR.R
 

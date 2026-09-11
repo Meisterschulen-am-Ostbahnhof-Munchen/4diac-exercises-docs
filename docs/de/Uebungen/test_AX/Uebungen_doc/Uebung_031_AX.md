@@ -36,11 +36,13 @@ Die Übung besteht aus der Subapplikation Uebung_031_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I2.IND -> strip_set_pixel.clear
 - hsv2rgb.CNF -> strip_set_pixel.set_pixel
 - DigitalInput_CLK_I1.IND -> hsv2rgb.REQ
 
 **Datenverbindungen:**
+
 - hsv2rgb.r -> strip_set_pixel.red
 - hsv2rgb.g -> strip_set_pixel.green
 - hsv2rgb.b -> strip_set_pixel.blue

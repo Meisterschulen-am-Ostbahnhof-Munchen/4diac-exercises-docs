@@ -33,12 +33,14 @@ Die Übung besteht aus der Subapplikation Uebung_010f3.SUB, welche die folgende 
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SoftKey_F1.IND -> OR_2.REQ
 - AuxFunction2_X1.IND -> OR_2.REQ
 - OR_2.CNF -> DigitalOutput_Q1.REQ
 - OR_2.CNF -> GreenWhiteBackground3.REQ
 
 **Datenverbindungen:**
+
 - SoftKey_F1.IN -> OR_2.IN1
 - AuxFunction2_X1.IN -> OR_2.IN2
 - OR_2.OUT -> DigitalOutput_Q1.OUT

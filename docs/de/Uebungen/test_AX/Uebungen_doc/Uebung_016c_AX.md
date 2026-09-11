@@ -33,10 +33,12 @@ Die Übung besteht aus der Subapplikation Uebung_016c_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AX_SR.Q -> Select_Colour.G
 - Select_Colour.OUT -> Q_BackgroundColour_AUS.u8Colour
 
 **Ereignisverbindungen:**
+
 - SoftKey_UP_F1.IND -> AX_SR.S
 - SoftKey_UP_F2.IND -> AX_SR.R
 

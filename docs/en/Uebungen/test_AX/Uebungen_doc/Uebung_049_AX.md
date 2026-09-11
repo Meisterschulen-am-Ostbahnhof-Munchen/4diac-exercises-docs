@@ -46,6 +46,7 @@ The exercise consists of the sub-application Uebung_049_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DigitalInput_I1.IN -> DigitalOutput_Q1.OUT
 - DigitalInput_I2.IN -> DigitalOutput_Q2.OUT
 - DigitalInput_I3.IN -> DigitalOutput_Q3.OUT

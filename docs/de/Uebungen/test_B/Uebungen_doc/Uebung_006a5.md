@@ -41,12 +41,14 @@ Die Übung besteht aus der Subapplikation Uebung_006a5.SUB, welche die folgende 
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - BUTTON_LONG_PRESS_START.IND -> E_T_FF_SR.S
 - BUTTON_LONG_PRESS_UP.IND -> E_T_FF_SR.R
 - BUTTON_SINGLE_CLICK.IND -> E_T_FF_SR.CLK
 - E_T_FF_SR.EO -> DigitalOutput_Q1.REQ
 
 **Datenverbindungen:**
+
 - E_T_FF_SR.Q -> DigitalOutput_Q1.OUT
 
 ### Hinweise aus dem Modell

@@ -28,6 +28,7 @@ Die Übung besteht aus der Subapplikation Uebung_011c_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputNumber_I3_N.IN -> AD_TO_AUDI.AD_IN
 - AD_TO_AUDI.AUDI_OUT -> Q_NumericValue.u32NewValue
 

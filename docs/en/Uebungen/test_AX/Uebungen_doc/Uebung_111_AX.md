@@ -39,9 +39,11 @@ The exercise consists of the sub-application Uebung_111_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> ADD_2.REQ
 - F_GT.CNF -> AX_BOOL_TO_X.REQ
 - ADD_2.CNF -> F_USINT_TO_UDINT.REQ
@@ -50,6 +52,7 @@ The exercise consists of the sub-application Uebung_111_AX.SUB, which uses the f
 - F_MOVE.CNF -> F_GT.REQ
 
 **Data Connections:**
+
 - F_GT.OUT -> AX_BOOL_TO_X.OUT
 - ADD_2.OUT -> F_USINT_TO_UDINT.IN
 - F_USINT_TO_UDINT.OUT -> F_DIV.IN2

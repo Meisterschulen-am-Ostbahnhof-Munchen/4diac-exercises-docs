@@ -45,10 +45,12 @@ Die Übung besteht aus der Subapplikation Uebung_082_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUI_CTUD.QU -> DigitalOutput_Q1.OUT
 - AUI_CTUD.QD -> DigitalOutput_Q2.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> AUI_CTUD.CU
 - DigitalInput_CLK_I2.IND -> AUI_CTUD.CD
 - DigitalInput_CLK_I3.IND -> AUI_CTUD.R

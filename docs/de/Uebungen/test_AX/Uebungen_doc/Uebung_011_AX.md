@@ -26,6 +26,7 @@ Die Übung besteht aus der Subapplikation Uebung_011_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - InputNumber_I1.IN -> AD_TO_AUDI.AD_IN
 
 -----

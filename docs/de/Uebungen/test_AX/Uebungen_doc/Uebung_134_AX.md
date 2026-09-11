@@ -35,12 +35,14 @@ Die Übung besteht aus der Subapplikation Uebung_134_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - BaseMemberExternAdd.CNF -> NetEv2NetEv.REQ
 - NetEv2NetEv.CNF -> AlPgnRxNew8B.install
 - NmGetCfInfo.IND -> BaseMemberExternAdd.REQ
 - AlPgnRxNew8B.IND -> STRUCT_DEMUX.REQ
 
 **Datenverbindungen:**
+
 - BaseMemberExternAdd.s16Handle -> NetEv2NetEv.s16Handle
 - NmGetCfInfo.sNetEv -> NetEv2NetEv.IN
 - NetEv2NetEv. -> AlPgnRxNew8B.NmSource

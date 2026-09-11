@@ -31,11 +31,13 @@ The exercise consists of the sub-application Uebung_016c.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SoftKey_UP_F1.IND -> E_SR.S
 - SoftKey_UP_F2.IND -> E_SR.R
 - E_SR.EO -> GreenWhiteBackground1.REQ
 
 **Data Connections:**
+
 - E_SR.Q -> GreenWhiteBackground1.DI1
 
 -----

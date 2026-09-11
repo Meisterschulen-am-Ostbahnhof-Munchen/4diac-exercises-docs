@@ -29,9 +29,11 @@ The exercise consists of the sub-application Uebung_010a5_AX.SUB, which uses the
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - SoftKey_F1.IND -> Input_Power_Port_5.REQ
 
 **Data Connections:**
+
 - SoftKey_F1.IN -> Input_Power_Port_5.OUT
 
 -----

@@ -55,6 +55,7 @@ Die Übung besteht aus der Subapplikation Uebung_060_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - SETPOINT_CONDENSED_WORK_STATE_1_16.IND -> SPLIT_DWORD_INTO_QUARTERS.REQ
 - ASSEMBLE_DWORD_FROM_QUARTERS.CNF -> ACTUAL_CONDENSED_WORK_STATE_1_16.REQ
 - BOOLS_TO_QUARTERS.CNF -> ASSEMBLE_DWORD_FROM_QUARTERS.REQ
@@ -68,6 +69,7 @@ Die Übung besteht aus der Subapplikation Uebung_060_AX.SUB, welche die folgende
 - F_SEL.CNF -> ACTUAL_RATE.REQ
 
 **Datenverbindungen:**
+
 - SETPOINT_CONDENSED_WORK_STATE_1_16.IN -> SPLIT_DWORD_INTO_QUARTERS.IN
 - QUARTERS_TO_BOOLS.Q_00 -> BOOLS_TO_QUARTERS.I_00
 - QUARTERS_TO_BOOLS.Q_02 -> BOOLS_TO_QUARTERS.I_02

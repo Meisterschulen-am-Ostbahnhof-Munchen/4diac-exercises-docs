@@ -32,12 +32,15 @@ The exercise consists of the sub-application Uebung_126b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - DataSupply.PLUG1 -> AlPgnTxNew8Bcycl_REQ.CB
 
 **Event Connections:**
+
 - NmGetCfInfo_1.IND -> AlPgnTxNew8Bcycl_REQ.install
 
 **Data Connections:**
+
 - NmGetCfInfo_1.sNetEv -> AlPgnTxNew8Bcycl_REQ.NmDestin
 
 -----

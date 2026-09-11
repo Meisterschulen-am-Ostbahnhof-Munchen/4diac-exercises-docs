@@ -38,11 +38,13 @@ Die Übung besteht aus der Subapplikation Uebung_080b_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 - AUI_CTU.CV -> AUI_TO_AUDI.AUI_IN
 - AUI_TO_AUDI.AUDI_OUT -> Q_NumericValue_AUDI.u32NewValue
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> E_SPLIT.EI
 - E_SPLIT.EO1 -> AUI_CTU.CU
 - E_SPLIT.EO2 -> AUI_CTU.CU

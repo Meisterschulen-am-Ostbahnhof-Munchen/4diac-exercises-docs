@@ -36,6 +36,7 @@ Die Übung besteht aus der Subapplikation Uebung_043_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_CLK_I1.IND -> SCALE_LIM.REQ
 
 -----

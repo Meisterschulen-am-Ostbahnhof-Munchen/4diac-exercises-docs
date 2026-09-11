@@ -26,6 +26,7 @@ Die Übung besteht aus der Subapplikation Uebung_086_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_E_SWITCH.G
 
 -----

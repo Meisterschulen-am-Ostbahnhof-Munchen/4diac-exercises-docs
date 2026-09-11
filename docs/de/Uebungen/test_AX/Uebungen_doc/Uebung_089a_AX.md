@@ -34,11 +34,13 @@ Die Übung besteht aus der Subapplikation Uebung_089a_AX.SUB, welche die folgend
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - DigitalInput_I1.IN -> AX_RF_TRIG.QI
 - AX_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
 - AX_T_FF_Q2.Q -> DigitalOutput_Q2.OUT
 
 **Ereignisverbindungen:**
+
 - AX_RF_TRIG.ER -> AX_T_FF_Q1.CLK
 - AX_RF_TRIG.EF -> AX_T_FF_Q2.CLK
 

@@ -54,6 +54,7 @@ Die Übung besteht aus der Subapplikation Uebung_032_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - BUTTON_GREEN.IN -> LED_GREEN_5HZ.OUT
 - BUTTON_YELLOW.IN -> LED_YELLOW_5HZ.OUT
 - BUTTON_RED.IN -> LED_RED_5HZ.OUT

@@ -38,6 +38,7 @@ The exercise consists of the sub-application Uebung_123_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - NmGetCfInfo.IND -> STRUCT_DEMUX.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_1.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_2.REQ
@@ -46,6 +47,7 @@ The exercise consists of the sub-application Uebung_123_AX.SUB, which uses the f
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_5.REQ
 
 **Data Connections:**
+
 - NmGetCfInfo.sNetEv -> STRUCT_DEMUX.IN
 - NmGetCfInfo.sCfInfo -> STRUCT_DEMUX_1.IN
 - NmGetCfInfo.sNameField -> STRUCT_DEMUX_2.IN

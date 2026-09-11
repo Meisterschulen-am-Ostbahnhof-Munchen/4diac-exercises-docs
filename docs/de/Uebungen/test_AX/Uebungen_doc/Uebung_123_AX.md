@@ -38,6 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_123_AX.SUB, welche die folgende
 ### Verbindungen und Schnittstellen
 
 **Ereignisverbindungen:**
+
 - NmGetCfInfo.IND -> STRUCT_DEMUX.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_1.REQ
 - NmGetCfInfo.IND -> STRUCT_DEMUX_2.REQ
@@ -46,6 +47,7 @@ Die Übung besteht aus der Subapplikation Uebung_123_AX.SUB, welche die folgende
 - NmGetCfInfo_1.IND -> STRUCT_DEMUX_5.REQ
 
 **Datenverbindungen:**
+
 - NmGetCfInfo.sNetEv -> STRUCT_DEMUX.IN
 - NmGetCfInfo.sCfInfo -> STRUCT_DEMUX_1.IN
 - NmGetCfInfo.sNameField -> STRUCT_DEMUX_2.IN

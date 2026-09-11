@@ -29,9 +29,11 @@ Die Übung besteht aus der Subapplikation Uebung_020f4.SUB, welche die folgende 
 ### Verbindungen und Schnittstellen
 
 **Adapterverbindungen:**
+
 - AX_BLINK.OUT -> DigitalOutput_1A.OUT
 
 **Ereignisverbindungen:**
+
 - DigitalOutput_1A.INITO -> AX_BLINK.START
 
 -----

@@ -38,11 +38,13 @@ The exercise consists of the sub-application Uebung_080b_AX.SUB, which uses the 
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AUI_CTU.Q -> DigitalOutput_Q1.OUT
 - AUI_CTU.CV -> AUI_TO_AUDI.AUI_IN
 - AUI_TO_AUDI.AUDI_OUT -> Q_NumericValue_AUDI.u32NewValue
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> E_SPLIT.EI
 - E_SPLIT.EO1 -> AUI_CTU.CU
 - E_SPLIT.EO2 -> AUI_CTU.CU

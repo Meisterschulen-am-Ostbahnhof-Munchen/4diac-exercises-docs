@@ -34,6 +34,7 @@ The exercise consists of the sub-application Uebung_089a.SUB, which uses the fol
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - DigitalInput_I1.IND -> E_RF_TRIG.EI
 - E_RF_TRIG.ER -> E_T_FF_Q1.CLK
 - E_RF_TRIG.EF -> E_T_FF_Q2.CLK
@@ -41,6 +42,7 @@ The exercise consists of the sub-application Uebung_089a.SUB, which uses the fol
 - E_T_FF_Q2.EO -> DigitalOutput_Q2.REQ
 
 **Data Connections:**
+
 - DigitalInput_I1.IN -> E_RF_TRIG.QI
 - E_T_FF_Q1.Q -> DigitalOutput_Q1.OUT
 - E_T_FF_Q2.Q -> DigitalOutput_Q2.OUT

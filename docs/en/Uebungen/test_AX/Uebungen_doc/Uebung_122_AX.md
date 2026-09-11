@@ -76,6 +76,7 @@ The exercise consists of the sub-application Uebung_122_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Event Connections:**
+
 - NmGetCfInfo.IND -> LOG_16.REQ
 - LOG_16.CNF -> SD_A_1.REQ
 - LOG_16.CNF -> SD_A_2.REQ
@@ -128,6 +129,7 @@ The exercise consists of the sub-application Uebung_122_AX.SUB, which uses the f
 - LOG_16.CNF -> NmGetCfInfo.RSP
 
 **Data Connections:**
+
 - NmGetCfInfo.sNetEv -> LOG_16.IN
 - LOG_16.OUT1 -> SD_A_1.IN
 - LOG_16.OUT2 -> SD_A_2.IN

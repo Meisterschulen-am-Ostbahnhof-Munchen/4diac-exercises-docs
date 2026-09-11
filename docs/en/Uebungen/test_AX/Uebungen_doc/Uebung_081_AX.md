@@ -36,15 +36,18 @@ The exercise consists of the sub-application Uebung_081_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - AX_BOOL_TO_X.AX_OUT -> DigitalOutput_Q1.OUT
 
 **Event Connections:**
+
 - DigitalInput_CLK_I1.IND -> E_CTD.CD
 - E_CTD.CDO -> AX_BOOL_TO_X.REQ
 - E_CTD.LDO -> AX_BOOL_TO_X.REQ
 - DigitalInput_CLK_I2.IND -> E_CTD.LD
 
 **Data Connections:**
+
 - E_CTD.Q -> AX_BOOL_TO_X.OUT
 
 -----

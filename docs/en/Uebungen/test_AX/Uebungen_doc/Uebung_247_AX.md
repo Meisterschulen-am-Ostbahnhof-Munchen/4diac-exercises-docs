@@ -38,6 +38,7 @@ The exercise consists of the sub-application Uebung_247_AX.SUB, which uses the f
 ### Connections and Interfaces
 
 **Adapter Connections:**
+
 - NumericValue_PHYSA.rPhys -> F_MUL_KORREKTUR.IN1
 - initval_AR_Korrekturfaktor.OUT -> F_MUL_KORREKTUR.IN2
 - F_MUL_KORREKTUR.OUT -> AR_SPLIT_2_Anzeige_PWM.IN
