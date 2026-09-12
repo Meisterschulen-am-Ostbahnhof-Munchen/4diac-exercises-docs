@@ -20,7 +20,7 @@ den Sollwert an die Hardware bringt.
   werden (dieselbe 1:1-Regel wie bei den anderen Adapter-Typen, siehe z.B. `AX_SPLIT_n` in der
   `Softkey_Aux_IXA_TO_Remote_WRITE`-Familie). `AR_SPLIT_2` fächert den korrigierten Wert
   auf zwei Ziele auf: `OUT1` weiter zum VT-Feld `N3` (wie bisher), `OUT2` neu zur PWM-Kette.
-- **Prozent auf 13-Bit-Tastgrad:** ein zweiter `AR_MUL_2` (mit `initval_AR = REAL#81,91`, das ist
+- **Prozent auf 13-Bit-Tastgrad:** ein zweiter `AR_MUL_2` (mit `initval_AR = REAL#81.91`, das ist
   8191/100) skaliert den 0-100%-Wert auf den 13-Bit-LEDC-Tastgrad 0-8191 — exakt dieselbe
   Umrechnung, die in `RampLimitFS_TO_logiBUS_QDA_PWM_OPC.SUB` (`MyLib_AX-1.0.0`) über
   `F_MUL_TO_PWM13BIT`/`F_DIV_TO_PWM13BIT` läuft, hier aber als reine AR-Multiplikation mit einem

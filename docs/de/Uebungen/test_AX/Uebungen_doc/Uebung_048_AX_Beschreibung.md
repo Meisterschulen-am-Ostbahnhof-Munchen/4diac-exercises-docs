@@ -14,7 +14,7 @@ Die Steuerung soll über den Baustein `sequence_E_04_loop_AX` realisiert werden.
 - **Start:** Durch Betätigen des Tasters `I1` (`START_S1`).
 - **Phasen:** 4 aufeinanderfolgende Ausgangsschritte (Ausgänge `Q1` bis `Q4`).
 - **Übergänge:** Die Schrittübergänge laufen rein ereignisgesteuert ab (Taster I2, I3 etc.).
-- **Reset:** Zu jedem Zeitpunkt kann die Schrittkette über einen Reset (z.B. Taster `I6` oder Softkey) in den Ausgangszustand (Schritt 0) zurückgesetzt werden.
+- **Reset:** Zu jedem Zeitpunkt kann die Schrittkette über einen Reset (z.B. Taster `I4` oder Softkey) in den Ausgangszustand (Schritt 0) zurückgesetzt werden.
 
 ### Arbeitsauftrag
 

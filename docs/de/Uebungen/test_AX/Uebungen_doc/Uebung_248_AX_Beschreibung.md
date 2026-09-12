@@ -17,7 +17,7 @@ beide Bausteine einer typischen Heben/Senken-Funktion mit Taster-Sollwertvorgabe
   verkettete `AR_AX_SEL_AR` liefern 75/50/25 % je nach Tasterzustand.
 - **Verzweigen mit `AR_SPLIT_2`:** genau wie in `Uebung_247_AX` fächert `AR_SPLIT_2` den
   Sollwert auf das VT-Feld `N3` (`OUT1`, unverändert) und die neue PWM-Kette (`OUT2`) auf.
-- **Prozent auf 13-Bit-Tastgrad:** `AR_MUL_2` mit `initval_AR = REAL#81,91` (= 8191/100) skaliert
+- **Prozent auf 13-Bit-Tastgrad:** `AR_MUL_2` mit `initval_AR = REAL#81.91` (= 8191/100) skaliert
   0-100 % auf 0-8191 — siehe `Uebung_247_AX` für die Herleitung.
 - **REAL nach DWORD:** `AR_TO_AD_NUM` (numerische Wandlung über internen `UDINT`-Schritt, siehe
   `Uebung_247_AX_Beschreibung.md`). Nicht das bit-reinterpretierende `AR_TO_AD` verwenden.

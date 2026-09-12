@@ -48,7 +48,7 @@ zurückgemeldet werden.
    Variable (hier `NumberVariable_Sollwert`, 21000), nicht unter der ID des Eingabefelds selbst
    (9000).
 3. Bewegen Sie das Dreieck mit einer `PositionMarkerFS`-Instanz (`stObj := Container_PositionMarker`
-   aus `DefaultPool_Dreieck_PositionMarker.gcf`, `rValue :=` der physikalische Sollwert aus Schritt 2).
+   aus `DefaultPool_Dreieck_PositionMarker.gcf`, `xScale := TRUE`, `rValue :=` der physikalische Sollwert aus Schritt 2).
 4. Schreiben Sie parallel denselben physikalischen Sollwert mit `Q_NumericValue_PHYS`
    (`stObj := NumberVariable_Istwert_N`) als Istwert zurück.
 5. Am echten Terminal testen: Sollwert ändern → Dreieck folgt sofort, Istwert-Feld und

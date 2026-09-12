@@ -22,7 +22,7 @@ zweiten Faktor skaliert ihn, ein Ausgabe-Zahlenfeld (`N3`) zeigt das Ergebnis.
 - **Eingabe:** `NumericValue_PHYSA` liest das VT-Eingabefeld `InputNumber_I3_N` und liefert den
   physikalischen (bereits skalierten) REAL-Wert über den `rPhys`-AR-Adapter — siehe
   `Uebung_011f_PHYSA` für das reine Durchschleifen ohne Umrechnung.
-- **Fester Faktor als AR-Konstante:** `initval_AR` (`INIT_VAL = REAL#1,17619`) erzeugt aus einem
+- **Fester Faktor als AR-Konstante:** `initval_AR` (`INIT_VAL = REAL#1.17619`) erzeugt aus einem
   festen Parameter einen AR-Adapter-Wert — sein unverdrahtetes `INIT`-Event feuert automatisch
   einmalig beim Kaltstart (dasselbe Prinzip wie bei den unverdrahteten `INIT`-Events von
   `Q_NumericValue_PHYSA` in dieser und anderen Übungen: ein nicht verbundenes Event dieser Art

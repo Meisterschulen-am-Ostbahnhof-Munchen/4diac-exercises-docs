@@ -22,4 +22,4 @@ Die Steuerung soll über den Baustein `sequence_ET_04_loop_AX` realisiert werden
 2. Platzieren Sie den Sequenzer-Baustein `sequence_ET_04_loop_AX` und konfigurieren Sie die Parameter.
 3. Verbinden Sie den Start-Taster `I1` und den Reset-Taster `I4` mit den entsprechenden Eingängen.
 4. Schalten Sie die 4 Ausgänge auf die physischen Ausgänge `Output_Q1` bis `Output_Q4`.
-5. Zur Visualisierung soll die Zustandsnummer `STATE_NR` auf dem ISOBUS Virtual Terminal-Ausgang `OutputNumber_N1` angezeigt werden.
+5. Zur Visualisierung soll die Zustandsnummer `STATE_NR` über den Baustein `AS_TO_AUDI` (Konvertierung `AS` → `AUDI`) auf dem ISOBUS Virtual Terminal-Ausgang `OutputNumber_N1` angezeigt werden.
