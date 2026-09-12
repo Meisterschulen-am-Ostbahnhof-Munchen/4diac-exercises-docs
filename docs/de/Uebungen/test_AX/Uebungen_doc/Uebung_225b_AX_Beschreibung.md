@@ -2,7 +2,7 @@
 
 ## Thema: Virtual-Terminal-Objektpositionierung — AR-Adapter-Variante
 
-Adapter-Variante von [Übung 225b](../../test_B/Uebungen/Uebung_225b_Beschreibung.md) (test_B): identische Funktion, aber Sollwert-
+Adapter-Variante von [Übung 225b](../../test_B/Uebungen_doc/Uebung_225b_Beschreibung.md) (test_B): identische Funktion, aber Sollwert-
 Lesen und Istwert-Schreiben laufen über die AR-Adapter-Bausteine (`NumericValue_PHYSA`/
 `Q_NumericValue_PHYSA`) statt über plain `REQ`/`IND`-Events. Die Dreieck-Bewegung nutzt weiterhin den
 wiederverwendbaren `PositionMarkerFS` — inklusive Klammern und `xOver`/`xUnder` — passend zu 225b.

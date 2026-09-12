@@ -2,7 +2,7 @@
 
 ## Thema: Virtual-Terminal-Bargraphen — AR-Adapter-Variante
 
-Adapter-Variante von [Übung 226](../../test_B/Uebungen/Uebung_226_Beschreibung.md): identische Funktion, aber das Lesen
+Adapter-Variante von [Übung 226](../../test_B/Uebungen_doc/Uebung_226_Beschreibung.md): identische Funktion, aber das Lesen
 von `InputNumber_Sollwert` läuft über den AR-Adapter-Baustein `NumericValue_PHYSA` statt über ein
 plain `REQ`/`IND`-Event. Die Bargraph-Ansteuerung nutzt weiterhin den wiederverwendbaren
 `BargraphSplitFS` — inklusive Klammern und `xOverRight`/`xOverLeft` — passend zu 226.

@@ -2,7 +2,7 @@
 
 ## Thema: Virtual-Terminal-Objektpositionierung — reine AR/AI-Adapterkette
 
-Adapter-Variante von [Übung 225](../../test_B/Uebungen/Uebung_225_Beschreibung.md) (test_B): identische Funktion, aber
+Adapter-Variante von [Übung 225](../../test_B/Uebungen_doc/Uebung_225_Beschreibung.md) (test_B): identische Funktion, aber
 **vollständig** über Adapter verdrahtet — kein einziges plain Event/DataConnection in der SubApp.
 Sollwert-Lesen und Istwert-Schreiben laufen über `NumericValue_PHYSA`/`Q_NumericValue_PHYSA`, die
 Dreieck-Bewegung über eine reine Kette generischer Adapter-Bausteine statt eines eigenen
