@@ -26,8 +26,8 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals unter 
 | `CALIBRATE` | `adapter::Engineering::measurements::AR_CALIBRATE` | `Y_Offset=0.0`, `Y_Scale=100.0` |
 | `NVS_OFFSET` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `KEY='OFFSET'`, `DEFAULT_VALUE=0.0` |
 | `NVS_SCALE` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `KEY='SCALE'`, `DEFAULT_VALUE=1.0` |
-| `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I2` (Kalibrier-Offset-Befehl) |
-| `DigitalInput_I3_CS` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I3` (Kalibrier-Skalierungsbefehl) |
+| `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Offset-Befehl) |
+| `DigitalInput_I3_CS` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Skalierungsbefehl) |
 | `AX_SPLIT_2` | `adapter::events::unidirectional::AX_SPLIT_2` | – |
 | `THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stObj=InputNumber_THRESHOLD` |
 | `HYSTERESIS` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='HYSTERESIS'`, `stObj=InputNumber_HYSTERESIS` |

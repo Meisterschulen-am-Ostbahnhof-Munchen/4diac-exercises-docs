@@ -16,10 +16,12 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **Functionality**: Reads the physical analog value (e.g., voltage) from input I7. The parameters define hysteresis, sampling time, and rate limit.
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IXA`)
 - **Functionality**: Reads the digital input I1. Used as an enable signal for output Q1.
-- **DigitalInput_I2_CO** (Type: `logiBUS::io::DI::logiBUS_IXA`)
-- **Function**: Reads digital input I2 to trigger the calibration commit (CO).
-- **DigitalInput_I3_CS** (Type: `logiBUS::io::DI::logiBUS_IXA`)
-- **Function**: Reads digital input I3 to trigger the calibration read start (CS).
+- **DigitalInput_I2_CO** (Type: `logiBUS::io::DI::logiBUS_IE`)
+  - **Parameters**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
+  - **Function**: Reads digital input I2 to trigger the calibration commit (CO).
+- **DigitalInput_I3_CS** (Type: `logiBUS::io::DI::logiBUS_IE`)
+  - **Parameters**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
+  - **Function**: Reads digital input I3 to trigger the calibration read start (CS).
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 - **Function**: Sets digital output Q1 based on input I1 (enable).
 - **DigitalOutput_Q2** (Type: `logiBUS::io::DQ::logiBUS_QXA`)

@@ -17,9 +17,11 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
     - **Funktionsweise**: Liest den physikalischen Analogwert (z. B. Spannung) vom Eingang I7 aus. Die Parameter legen eine Hysterese, Abtastzeit und Ratenbegrenzung fest.
 - **DigitalInput_I1** (Typ: `logiBUS::io::DI::logiBUS_IXA`)
     - **Funktionsweise**: Liest den digitalen Eingang I1. Wird als Freigabesignal für den Ausgang Q1 verwendet.
-- **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IXA`)
+- **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IE`)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Funktionsweise**: Liest den digitalen Eingang I2 zur Triggerung des Kalibrier-Commits (CO).
-- **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IXA`)
+- **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IE`)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Funktionsweise**: Liest den digitalen Eingang I3 zur Triggerung des Kalibrier-Read-Starts (CS).
 - **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
     - **Funktionsweise**: Setzt den digitalen Ausgang Q1 basierend auf dem Eingang I1 (Freigabe).

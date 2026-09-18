@@ -65,17 +65,19 @@ Returns the current value at output `VAL` or allows you to save a new value via 
 - `DEFAULT_VALUE` = 1.0
 - **Functionality**: Analogous to `INI_OFFSET`, but for the scaling factor (key `SCALE`).
 - **DigitalInput_I2_CO**
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Parameters**:
-- `QI` = TRUE
-- `Input` = `Input_I2`
-- **Function**: Reads the digital input for offset calibration (`CO`).
+  - **Type**: `logiBUS::io::DI::logiBUS_IE`
+  - **Parameters**:
+    - `QI` = TRUE
+    - `Input` = `Input_I2`
+    - `InputEvent` = `BUTTON_SINGLE_CLICK`
+  - **Function**: Reads the digital input for offset calibration (`CO`).
 - **DigitalInput_I3_CS**
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Parameters**:
-- `QI` = TRUE
-- `Input` = `Input_I3`
-- **Function**: Reads the digital input for scaling calibration (`CS`).
+  - **Type**: `logiBUS::io::DI::logiBUS_IE`
+  - **Parameters**:
+    - `QI` = TRUE
+    - `Input` = `Input_I3`
+    - `InputEvent` = `BUTTON_SINGLE_CLICK`
+  - **Function**: Reads the digital input for scaling calibration (`CS`).
 - **AX_SPLIT_2**
 - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Parameters**: None

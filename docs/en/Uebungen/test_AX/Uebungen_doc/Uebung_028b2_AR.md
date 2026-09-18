@@ -20,10 +20,10 @@ This exercise implements analog input calibration with offset and scaling adjust
 - Parameters: `QI=TRUE`, `KEY='OFFSET'`, `DEFAULT_VALUE=0.0`
 - **NVS_SCALE** (Type: `logiBUS::storage::esp32_nvs::NVS_AR2`): Persistently stores the determined scaling factor in the NVS.
 - Parameters: `QI=TRUE`, `KEY='SCALE'`, `DEFAULT_VALUE=1.0`
-- **DigitalInput_I2_CO** (Type: `logiBUS::io::DI::logiBUS_IXA`): Digital input for triggering offset calibration.
-- Parameters: `QI=TRUE`, `Input=Input_I2`
-- **DigitalInput_I3_CS** (Type: `logiBUS::io::DI::logiBUS_IXA`): Digital input for triggering scaling calibration.
-- Parameters: `QI=TRUE`, `Input=Input_I3`
+- **DigitalInput_I2_CO** (Type: `logiBUS::io::DI::logiBUS_IE`): Digital input for triggering offset calibration.
+  - Parameters: `QI=TRUE`, `Input=Input_I2`, `InputEvent=BUTTON_SINGLE_CLICK`
+- **DigitalInput_I3_CS** (Type: `logiBUS::io::DI::logiBUS_IE`): Digital input for triggering scaling calibration.
+  - Parameters: `QI=TRUE`, `Input=Input_I3`, `InputEvent=BUTTON_SINGLE_CLICK`
 - **Hysteresis_AR_AX** (Type: `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`): Hysteresis controller with analog input and output.
 - Parameter: `QI=TRUE`
 - **DigitalOutput_Q2** (Type: `logiBUS::io::DQ::logiBUS_QXA`): Digital output for the hysteresis signal.
