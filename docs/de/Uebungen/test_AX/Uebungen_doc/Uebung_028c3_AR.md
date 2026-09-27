@@ -19,10 +19,10 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
     - **Funktionsweise**: Liest den digitalen Eingang I1. Wird als Freigabesignal für den Ausgang Q1 verwendet.
 - **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IE`)
     - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Funktionsweise**: Liest den digitalen Eingang I2 zur Triggerung des Kalibrier-Commits (CO).
+    - **Funktionsweise**: Ein Einzelklick an I2 erzeugt ein Ereignis an `DigitalInput_I2_CO.IND`. Die Verbindung `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` löst den Kalibrier-Commit aus.
 - **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IE`)
     - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Funktionsweise**: Liest den digitalen Eingang I3 zur Triggerung des Kalibrier-Read-Starts (CS).
+    - **Funktionsweise**: Ein Einzelklick an I3 erzeugt ein Ereignis an `DigitalInput_I3_CS.IND`. Die Verbindung `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` startet das Lesen der Kalibrierdaten.
 - **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
     - **Funktionsweise**: Setzt den digitalen Ausgang Q1 basierend auf dem Eingang I1 (Freigabe).
 - **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
@@ -61,8 +61,8 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 1. **Initialisierung**: Beim Start triggert der INIT-Baustein die beiden AR_REAL_TO_R-Bausteine, die die konstanten Schwellwerte (50.5 und 15.3) auf den analogen Bus legen.
 2. **Analogwerterfassung**: Der AnalogInput_I7 liest den Rohwert vom Eingang I7. Dieser Rohwert wird über die Konvertierungskette AD_TO_AUDI und AUDI_TO_AR an den Kalibrierungsbaustein CALIBRATE übergeben.
 3. **Kalibrierung**: Die digitalen Eingänge I2 (CO) und I3 (CS) steuern die Kalibrierung:
-   - Bei CS (I3 = TRUE) wird ein neuer Kalibrierdurchlauf gestartet: Der aktuelle Rohwert (X) wird gemessen, und der Offset sowie die Skalierung werden berechnet.
-   - Bei CO (I2 = TRUE) werden die berechneten Werte in die INI-Datei geschrieben (über INI_OFFSET und INI_SCALE).
+   - Das `IND`-Ereignis von `DigitalInput_I3_CS` löst über `CALIBRATE.CS` den Lesestart aus.
+   - Das `IND`-Ereignis von `DigitalInput_I2_CO` löst über `CALIBRATE.CO` den Commit der Kalibrierwerte in die INI-Datei aus (über INI_OFFSET und INI_SCALE).
    - Der kalibrierte Ausgang Y wird an den Splitter AR_SPLIT_2 weitergeleitet.
 4. **Signalverteilung**:
    - AR_SPLIT_2.OUT1 leitet den kalibrierten Wert an das Display (Q_NumericValue_PHYSA) zur Anzeige.
