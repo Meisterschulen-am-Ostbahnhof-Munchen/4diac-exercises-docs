@@ -62,18 +62,20 @@ Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (ke
   - **Funktionsweise**: Analog zu `INI_OFFSET`, jedoch für den Skalierungsfaktor (Schlüssel `SCALE`).
 
 - **DigitalInput_I2_CO**
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - **Typ**: `logiBUS::io::DI::logiBUS_IE`
   - **Parameter**:
     - `QI` = TRUE
     - `Input` = `Input_I2`
+    - `InputEvent` = `BUTTON_SINGLE_CLICK`
   - **Funktionsweise**: Liest den digitalen Eingang für die Offset-Kalibrierung (`CO`).
 
 - **DigitalInput_I3_CS**
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - **Typ**: `logiBUS::io::DI::logiBUS_IE`
   - **Parameter**:
     - `QI` = TRUE
     - `Input` = `Input_I3`
-  - **Funktionsweise**: Liest den digitalen Eingang für die Skalierungs-Kalibrierung (`CS`).
+    - `InputEvent` = `BUTTON_SINGLE_CLICK`
+  - **Funktionsweise**: Liest den digitalen Eingang für die Skalen-Kalibrierung (`CS`).
 
 - **AX_SPLIT_2**
   - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`

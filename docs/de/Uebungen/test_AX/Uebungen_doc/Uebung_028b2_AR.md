@@ -25,10 +25,10 @@ Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalie
   - Parameter: `QI=TRUE`, `KEY='OFFSET'`, `DEFAULT_VALUE=0.0`
 - **NVS_SCALE** (Typ: `logiBUS::storage::esp32_nvs::NVS_AR2`): Speichert den ermittelten Skalierungsfaktor persistent im NVS.
   - Parameter: `QI=TRUE`, `KEY='SCALE'`, `DEFAULT_VALUE=1.0`
-- **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IXA`): Digitaler Eingang zum Auslösen der Offset-Kalibrierung.
-  - Parameter: `QI=TRUE`, `Input=Input_I2`
-- **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IXA`): Digitaler Eingang zum Auslösen der Skalierungskalibrierung.
-  - Parameter: `QI=TRUE`, `Input=Input_I3`
+- **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IE`): Digitaler Eingang zum Auslösen der Offset-Kalibrierung.
+  - Parameter: `QI=TRUE`, `Input=Input_I2`, `InputEvent=BUTTON_SINGLE_CLICK`
+- **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IE`): Digitaler Eingang zum Auslösen der Skalierungskalibrierung.
+  - Parameter: `QI=TRUE`, `Input=Input_I3`, `InputEvent=BUTTON_SINGLE_CLICK`
 - **Hysteresis_AR_AX** (Typ: `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`): Hysterese-Regler mit Analog-Eingang und Ausgang.
   - Parameter: `QI=TRUE`
 - **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QXA`): Digitaler Ausgang für das Hysteresesignal.

@@ -45,25 +45,30 @@ The exercise consists of the sub-application Uebung_028a_AX.SUB, which uses the 
   - Parameter SECTION = 'Uebung_028a_AX'
   - Parameter KEY = 'SCALE'
   - Parameter DEFAULT_VALUE = 1.0
-- **DigitalInput_I2_CO**: Instance of type logiBUS::io::DI::logiBUS_IXA.
+- **DigitalInput_I2_CO**: Instance of type logiBUS::io::DI::logiBUS_IE.
   - Parameter QI = TRUE
   - Parameter Input = Input_I2
-- **DigitalInput_I3_CS**: Instance of type logiBUS::io::DI::logiBUS_IXA.
+  - Parameter InputEvent = BUTTON_SINGLE_CLICK
+- **DigitalInput_I3_CS**: Instance of type logiBUS::io::DI::logiBUS_IE.
   - Parameter QI = TRUE
   - Parameter Input = Input_I3
+  - Parameter InputEvent = BUTTON_SINGLE_CLICK
 - **AX_SPLIT_2**: Instance of type adapter::events::unidirectional::AX_SPLIT_2.
 - **AD_TO_AUDI**: Instance of type adapter::conversion::unidirectional::AD_TO_AUDI.
 - **AUDI_TO_AR**: Instance of type adapter::conversion::unidirectional::AUDI_TO_AR.
 
 ### Connections and Interfaces
 
+**Event Connections:**
+
+- DigitalInput_I2_CO.IND -> CALIBRATE.CO
+- DigitalInput_I3_CS.IND -> CALIBRATE.CS
+
 **Adapter Connections:**
 
 - DigitalInput_I1.IN -> AX_SPLIT_2.IN
 - AnalogInput_I4.IN -> AD_TO_AUDI.AD_IN
 - AUDI_TO_AR.AR_OUT -> CALIBRATE.X
-- DigitalInput_I2_CO.IN -> CALIBRATE.CO
-- DigitalInput_I3_CS.IN -> CALIBRATE.CS
 - AX_SPLIT_2.OUT1 -> DigitalOutput_Q1.OUT
 - AX_SPLIT_2.OUT2 -> AnalogInput_I4.SREQ
 - CALIBRATE.OFFSET -> INI_OFFSET.VAL

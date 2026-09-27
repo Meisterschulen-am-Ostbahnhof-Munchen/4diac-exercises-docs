@@ -18,8 +18,8 @@ This exercise implements the calibration of an analog input. An analog value is 
 | CALIBRATE | `adapter::Engineering::measurements::AR_CALIBRATE` | Y_Offset = 100.0, Y_Scale = 600.0 |
 | NVS_OFFSET | `logiBUS::storage::esp32_nvs::NVS_AR2` | QI = TRUE, KEY = 'OFFSET', DEFAULT_VALUE = 0.0 |
 | NVS_SCALE | `logiBUS::storage::esp32_nvs::NVS_AR2` | QI = TRUE, KEY = 'SCALE', DEFAULT_VALUE = 1.0 |
-| DigitalInput_I2_CO | `logiBUS::io::DI::logiBUS_IXA` | QI = TRUE, Input = Input_I2 |
-| DigitalInput_I3_CS | `logiBUS::io::DI::logiBUS_IXA` | QI = TRUE, Input = Input_I3 |
+| DigitalInput_I2_CO | `logiBUS::io::DI::logiBUS_IE` | QI = TRUE, Input = Input_I2, InputEvent = BUTTON_SINGLE_CLICK |
+| DigitalInput_I3_CS | `logiBUS::io::DI::logiBUS_IE` | QI = TRUE, Input = Input_I3, InputEvent = BUTTON_SINGLE_CLICK |
 | AX_SPLIT_2 | `adapter::events::unidirectional::AX_SPLIT_2` | (no parameters) |
 | AD_TO_AUDI | `adapter::conversion::unidirectional::AD_TO_AUDI` | (no parameters) |
 | AUDI_TO_AR | `adapter::conversion::unidirectional::AUDI_TO_AR` | (no parameters) |
