@@ -14,7 +14,7 @@ Diese Übung ist die klassische (nicht über AX-Adapter verdrahtete) Variante vo
     - **Parameter**: `QI = TRUE`, `u16ObjId = AuxFunction2_X1`
     - **Erklärung**: Liefert den booleschen Zustand des zugewiesenen physischen Aux-Tasters/Joysticks über die Ereignis-/Datenschnittstelle `IND`/`IN`.
 - **DigitalOutput_Q1**: logiBUS-Digitalausgang (Typ: `logiBUS::io::DQ::logiBUS_QX`)
-    - **Parameter**: `QI = TRUE`, `Output = Output_Q1` (im Netzwerk als unsichtbarer Parameter hinterlegt)
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
     - **Erklärung**: Schaltet den physischen Ausgang Q1 entsprechend dem Aux-Zustand.
 
 ### Sub-Bausteine: GreenWhiteBackground
@@ -29,6 +29,8 @@ Diese Übung ist die klassische (nicht über AX-Adapter verdrahtete) Variante vo
 2. Der zugehörige Datenwert `AuxFunction2_X1.IN` wird ebenfalls parallel auf `DigitalOutput_Q1.OUT` und `GreenWhiteBackground.DI1` geführt.
 3. Da klassische Event-/DataConnections – anders als AX-Adapter-Plugs – mehrere Ziele aus einer Quelle erlauben, ist hierfür kein expliziter Split-Baustein nötig (im Unterschied zur AX-Adapter-Variante `Uebung_010f_AX`, die dafür `AX_SPLIT_2` benötigt).
 4. `GreenWhiteBackground` färbt daraufhin sowohl das VT-Objekt als auch das Aux-Handle grün bzw. weiß, je nach aktuellem Zustand.
+
+**Nachteil**: `AuxFunction2_X1` muss zweimal angegeben werden (`Aux_IX.u16ObjId` und `GreenWhiteBackground.u16ObjIdA`).
 
 ## Zusammenfassung
 

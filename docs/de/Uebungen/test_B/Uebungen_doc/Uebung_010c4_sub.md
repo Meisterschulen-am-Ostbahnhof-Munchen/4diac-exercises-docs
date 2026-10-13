@@ -1,15 +1,5 @@
-# Uebung_010c4_sub: SoftKey_F1/_F2 auf DigitalOutput_Q1/_Q2 mit GreenWhiteBackground mit Typed Subapp
+# Uebung_010c4_sub
 
-## 🎧 Podcast
+## Hinweis
 
-![Uebung_010c4_sub_network](./Uebung_010c4_sub_network.svg)
-
-- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
-
-## Übersicht
-
-Dieser Typ ist funktional identisch mit `Uebung_010c3_sub` und dient der sauberen Strukturierung von mehrkanaligen Feedback-Anwendungen. Durch die Kapselung in einen Typ können beliebig viele Softkey-Ausgangs-Kombinationen mit integriertem Farbumschlag schnell und fehlerfrei erstellt werden.
-
-## 🛠️ Zugehörige Übungen
-
-- [Uebung_010c4](Uebung_010c4.md)
+Diese Übung existiert in den aktuellen Trainingsquellen nicht mehr (entfernt, zusammengelegt oder umbenannt). Diese Seite bleibt nur als Platzhalter für bestehende Verweise erhalten. Die aktuellen Übungen stehen in der Übungsübersicht.

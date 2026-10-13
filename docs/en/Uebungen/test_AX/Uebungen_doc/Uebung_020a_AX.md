@@ -1,53 +1,53 @@
-# Exercise_020a_AX: DigitalInput_I1 to DigitalOutput_Q1 via AX_RS (Buffer)
-
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_020a_AX`, in which a digital input is routed to a digital output via RS memory logic
-
-----
-
-## Objective of the Exercise
-
-The main objective of this exercise is to demonstrate the combination of event switches (`AX_SWITCH`) and memory elements (`AX_RS`) at the adapter level. While `Uebung_001_AX` uses a direct connection, this example shows how signals can be explicitly processed by events ("Set" on a rising edge, "Reset" on a falling edge).
-
------
-
-## Description and Components
-
-The exercise consists of a subapplication (`Uebung_020a_AX.SUB`) that converts the state of an input into set/reset commands for a memory location via a switch .
-
-### Function Blocks (FBs)
+# Exercise_020a_AX: DigitalInput_I1 to DigitalOutput_Q1 via AX_SR (Buffer)
 
 ![Uebung_020a_AX_network](./Uebung_020a_AX_network.svg)
 
-- **`DigitalInput_I1`**: Type `logiBUS_IXA`. Reads the physical input `Input_I1`.
-- **`AX_SWITCH`**: An event switch. Passes the incoming adapter event to the output `EO1` (TRUE) or `EO0` (FALSE), depending on the logical state of the input `G` .
-- **`AX_RS`**: An RS flip-flop with an adapter interface. It stores the state between events.
-- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Sets the physical output `Output_Q1`.
+* * * * * * * * * *
 
------
+[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
-## Functionality
+## Introduction
 
-The logic is implemented by linking the event outputs of the switch with the memory inputs:
+This exercise passes a digital input on to a digital output via a set/reset latch (`AX_SR`). In contrast to [Uebung_001_AX](./Uebung_001_AX.md), which uses a direct connection, the edges of the input are explicitly converted into events here: the rising edge sets the latch, the falling edge resets it. As a result the circuit behaves like a direct connection, but internally uses event-based latch logic.
 
-<EventConnections>
-<Connection Source="AX_SWITCH.EO0" Destination="AX_RS.R"/>
-<Connection Source="AX_SWITCH.EO1" Destination="AX_RS.S"/>
-</EventConnections>
-<AdapterConnections>
-<Connection Source="DigitalInput_I1.IN" Destination="AX_SWITCH.G"/>
-<Connection Source="AX_RS.Q" Destination="DigitalOutput_Q1.OUT"/>
-</AdapterConnections>
+## Function Blocks (FBs) Used
 
-The process is as follows:
+- **DigitalInput_I1**: logiBUS digital input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
+    - **Explanation**: Reads the physical input `Input_I1` and provides it as the AX adapter output `IN`.
+- **AX_RF_TRIG**: edge detection
+    - **Type**: [`adapter::events::unidirectional::AX_RF_TRIG`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_RF_TRIG/)
+    - **Parameters**: none
+    - **Explanation**: Evaluates the signal at the adapter `QI` and reports a rising edge (0→1) as event `ER` and a falling edge (1→0) as event `EF`.
+- **AX_RS**: set/reset latch
+    - **Type**: [`adapter::events::unidirectional::AX_SR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SR/)
+    - **Parameters**: none
+    - **Explanation**: The event `S` sets the output `Q` to TRUE, `R` sets it to FALSE. The latch holds the state between events.
+- **DigitalOutput_Q1**: logiBUS digital output
+    - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
+    - **Explanation**: Sets the physical output `Output_Q1` to the state of `AX_RS.Q`.
 
-1. **Pressing I1**: The `IXA` block sends an event and the value `TRUE`. The `AX_SWITCH` forwards the event to `EO1` -> `AX_RS` is set (`S`) -> `Q1` is activated.
-2. **Releasing I1**: The `IXA` block sends an event and the value `FALSE`. The `AX_SWITCH` forwards the event to `EO0` -> `AX_RS` is reset (`R`) -> `Q1` goes out.
+## Program Flow and Connections
 
-As a result, the circuit behaves like a direct connection, but internally uses event-based memory logic.
+1. `DigitalInput_I1.IN` → `AX_RF_TRIG.QI` (AdapterConnection): The input signal is fed to the edge detection.
+2. `AX_RF_TRIG.ER` → `AX_RS.S` (EventConnection): The rising edge sets the latch.
+3. `AX_RF_TRIG.EF` → `AX_RS.R` (EventConnection): The falling edge resets the latch.
+4. `AX_RS.Q` → `DigitalOutput_Q1.OUT` (AdapterConnection): The latch state is applied to the physical output `Q1`.
 
------
+**Behavior**: When `I1` is pressed, the rising edge sets the latch and `Q1` turns on. When it is released, the falling edge resets the latch and `Q1` turns off.
 
 ## Application Example
 
-This pattern is the basis for **signal filtering or debouncing**. By inserting additional logic (e.g., timers) between the switch and the memory, it is possible to very precisely control the conditions under which a signal should "latch" or "drop out".
+This pattern is the basis for **signal filtering or debouncing**. If further logic (e.g. timers) is inserted between the edge detection and the latch, one can control very precisely under which conditions a signal should "latch in" or "drop out".
+
+## Summary
+
+The exercise shows how an input signal is applied to an output as a buffer via edge detection (`AX_RF_TRIG`) and a set/reset latch (`AX_SR`). The result corresponds to a direct pass-through, but the signal processing is event-based.
+
+---
+
+### 🌐 Related topic subpages on ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -44,7 +44,8 @@
   <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
   <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
   <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input PHYS und Speichern INI mit Subapp (AR2 Adapter, echter in sich geschlossener Baustein)</text>
+  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input PHYS und Speichern INI mit Subapp (AR2 Adapter, echter in
+sich geschlossener Baustein)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -52,18 +53,18 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_Uebung_012e_sub_AR2" transform="translate(547.9, 75.0)">
+    <g id="fb_Uebung_012e_sub_AR2" transform="translate(548.0, 75.0)">
       <path d="M 3 0
-            L 133.16015625 0
-            A 3 3 0 0 1 136.16015625 3
-            L 136.16015625 18
-            A 3 3 0 0 1 133.16015625 21
-            L 127.16015625 21
-            L 127.16015625 35
-            L 133.16015625 35
-            A 3 3 0 0 1 136.16015625 38
-            L 136.16015625 103
-            A 3 3 0 0 1 133.16015625 106
+            L 133.0625 0
+            A 3 3 0 0 1 136.0625 3
+            L 136.0625 18
+            A 3 3 0 0 1 133.0625 21
+            L 127.0625 21
+            L 127.0625 35
+            L 133.0625 35
+            A 3 3 0 0 1 136.0625 38
+            L 136.0625 103
+            A 3 3 0 0 1 133.0625 106
             L 3 106
             A 3 3 0 0 1 0 103
             L 0 38
@@ -119,23 +120,23 @@
       <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">KEY_I1_STORE</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">SECTION_I1_STORE</text>
       <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">InputNumber_I1_N</text>
-      <path d="M 126.16015625 90.5
-            L 128.66015625 90.5
-            L 128.66015625 92.16666666666667
-            L 131.16015625 92.16666666666667
-            L 131.16015625 90.5
-            L 136.16015625 90.5
-            L 136.16015625 100.5
-            L 131.16015625 100.5
-            L 131.16015625 98.83333333333333
-            L 128.66015625 98.83333333333333
-            L 128.66015625 100.5
-            L 126.16015625 100.5
+      <path d="M 126.0625 90.5
+            L 128.5625 90.5
+            L 128.5625 92.16666666666667
+            L 131.0625 92.16666666666667
+            L 131.0625 90.5
+            L 136.0625 90.5
+            L 136.0625 100.5
+            L 131.0625 100.5
+            L 131.0625 98.83333333333333
+            L 128.5625 98.83333333333333
+            L 128.5625 100.5
+            L 126.0625 100.5
             Z" fill="#845DAF"/>
-      <text x="123.16015625" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="123.0625" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">VALUEO</text>
       <!-- Instance Name -->
-      <text x="68.080078125" y="-5"
+      <text x="68.03125" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Uebung_012e_sub_AR2</text>
     </g>

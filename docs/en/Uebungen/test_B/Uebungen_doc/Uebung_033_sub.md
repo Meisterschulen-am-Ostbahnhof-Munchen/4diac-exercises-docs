@@ -1,18 +1,5 @@
-# Exercise_033_sub: LED Strip Flashing LED
+# Uebung_033_sub
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-app type `Uebung_033_sub`. It serves as a reusable module for controlling colored LED displays
+## Note
 
-----
-
-## Overview
-
-This block combines a digital input block (`IX`) and a specialized RGB strip output (`logiBUS_LED_strip_QX`).
-
-It provides parameters for selecting the input button (`Input`), the color (`Colour`), and the output channel (`Output`). Internally, it is preset to a fixed blinking frequency of 1 Hz. By encapsulating this complex driver logic, colored status indicators can be easily implemented in projects through parameterization instead of complex individual wiring.
-
-## 🛠️ Related Exercises
-
-![Uebung_033_sub_network](./Uebung_033_sub_network.svg)
-
-- [Exercise_033](Uebung_033.md)
+This is no longer a separate exercise. The block was moved into the library and is now called [IX_TO_logiBUS_LED_strip_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/IX_TO_logiBUS_LED_strip_QX/). Description, interface and network are documented there.

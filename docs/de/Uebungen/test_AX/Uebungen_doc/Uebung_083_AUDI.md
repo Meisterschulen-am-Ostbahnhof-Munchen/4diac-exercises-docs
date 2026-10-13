@@ -6,69 +6,41 @@
 
 ## Einleitung
 
-Diese Übung demonstriert die Verwendung eines Aufwärts-/Abwärtszählers auf Basis des Adapter-FBs `AUDI_CTUD_UDINT`. Vier digitale Eingänge (Taster mit Single-Click-Erkennung) steuern den Zähler: Zählen hoch (CU), Zählen runter (CD), Rücksetzen (R) und Übernahme eines neuen Zählerendwerts (PV). Der aktuelle Zählerwert (CV) wird auf einer numerischen Anzeige ausgegeben, während die Ausgänge QU und QD signalisieren, ob der Zähler den oberen oder unteren Grenzwert erreicht hat.
+Diese Übung demonstriert den Aufwärts-/Abwärtszähler `AUDI_CTUD_UDINT` auf Basis von Adaptern. Drei Taster mit Single-Click-Erkennung steuern den Zähler: `I1` zählt hoch (`CU`), `I2` zählt runter (`CD`), `I3` setzt zurück (`R`). Der Vorgabewert `PV` kommt fest aus `initval_AUDI` (`INIT_VAL = 5`). Der Zählerwert `CV` wird an der Anzeige `OutputNumber_N1` ausgegeben, die Ausgänge `QU` und `QD` schalten `Q1` und `Q2`. Der Baustein `DigitalInput_CLK_I4` (Eingang `I4`) ist im Netzwerk vorhanden, aber nicht verdrahtet.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_CLK_I1** (Typ: `logiBUS::io::DI::logiBUS_IE`)
-    - Parameter: `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - Erzeugt ein Ereignis `IND` bei Betätigung des Tasters an Eingang I1.
-
-- **DigitalInput_CLK_I2** (Typ: `logiBUS::io::DI::logiBUS_IE`)
-    - Parameter: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - Erzeugt ein Ereignis `IND` bei Betätigung des Tasters an Eingang I2.
-
-- **DigitalInput_CLK_I3** (Typ: `logiBUS::io::DI::logiBUS_IE`)
-    - Parameter: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - Erzeugt ein Ereignis `IND` bei Betätigung des Tasters an Eingang I3.
-
-- **DigitalInput_CLK_I4** (Typ: `logiBUS::io::DI::logiBUS_IE`)
-    - Parameter: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - Erzeugt ein Ereignis `IND` bei Betätigung des Tasters an Eingang I4.
-
-- **AUDI_CTUD_UDINT** (Typ: `adapter::events::unidirectional::AUDI_CTUD_UDINT`)
-    - Adapter-basierter Aufwärts-/Abwärtszähler für 32-Bit unsigned Integer.
-    - Ereigniseingänge: `CU` (Count Up), `CD` (Count Down), `R` (Reset)
-    - Datenausgänge: `CV` (aktueller Zählerwert), `QU` (High wenn CV ≥ PV), `QD` (High wenn CV = 0)
-    - Daten/Adaptereingänge: `PV` (Preset Value) über Adapterverbindung
-    - **Parametereinstellungen**: keine Angabe im XML (Standardwerte)
-
-- **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
-    - Parameter: `QI = TRUE`, `Output = Output_Q1`
-    - Gibt den Zustand `QU` des Zählers als Binärausgang aus.
-
-- **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
-    - Parameter: `QI = TRUE`, `Output = Output_Q2`
-    - Gibt den Zustand `QD` des Zählers als Binärausgang aus.
-
-- **Q_NumericValue_AUDI** (Typ: `isobus::UT::Q::Q_NumericValue_AUDI`)
-    - Parameter: `u16ObjId = OutputNumber_N1`
-    - Zeigt einen numerischen Wert (hier den aktuellen Zählerwert CV) auf einer Anzeige mit Objekt-ID `OutputNumber_N1` an.
-
-- **AUDI_UDINT_TO_UDI** (Typ: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`)
-    - Parameter: `OUT = UDINT#5` (fester Sollwert 5)
-    - Wandelt einen konstanten Wert (5) in ein Adaptersignal um, das als PV (Preset Value) für den Zähler dient.
+- **DigitalInput_CLK_I1**, **DigitalInput_CLK_I2**, **DigitalInput_CLK_I3**, **DigitalInput_CLK_I4**: Taster mit Klick-Erkennung
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1` / `Input_I2` / `Input_I3` / `Input_I4`, jeweils `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Melden einen Einzelklick auf den jeweiligen Eingang als Event `IND`.
+- **AUDI_CTUD_UDINT**: Adapter-basierter Auf-/Abwärtszähler für `UDINT`
+    - **Typ**: [`adapter::events::unidirectional::AUDI_CTUD_UDINT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/UDINT/AUDI_CTUD_UDINT/)
+    - **Parameter**: keine
+    - **Erklärung**: Ereigniseingänge `CU` (hoch), `CD` (runter), `R` (Reset). `CV` ist der aktuelle Zählwert (Adapter), `QU` ist `TRUE`, wenn `CV` größer oder gleich `PV` ist, `QD` ist `TRUE`, wenn `CV` kleiner oder gleich 0 ist.
+- **initval_AUDI**: Vorgabewert
+    - **Typ**: [`adapter::types::unidirectional::AUDI::initval::initval_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/initval/initval_AUDI/)
+    - **Parameter**: `INIT_VAL = 5`
+    - **Erklärung**: Liefert den Wert 5 als Vorgabewert `PV` an den Zähler.
+- **DigitalOutput_Q1**, **DigitalOutput_Q2**: logiBUS Digitalausgänge
+    - **Typ**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1` bzw. `Output_Q2`
+    - **Erklärung**: `Q1` zeigt `QU`, `Q2` zeigt `QD`.
+- **Q_NumericValue_AUDI**: numerische Anzeige
+    - **Typ**: [`isobus::UT::Q::Q_NumericValue_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_AUDI/)
+    - **Parameter**: `u16ObjId = OutputNumber_N1`
+    - **Erklärung**: Zeigt den Zählerwert `CV` (`u32NewValue`) an `OutputNumber_N1` an.
 
 ## Programmablauf und Verbindungen
 
-Die Schaltung arbeitet ereignisgesteuert über die Tastereingänge:
-
-1. **Zählen hoch (CU)**: Ein Tastendruck an **I1** erzeugt ein `IND`-Ereignis, das mit dem Ereigniseingang `CU` des Zählers `AUDI_CTUD_UDINT` verbunden ist. Der Zähler erhöht sich um 1.
-2. **Zählen runter (CD)**: Ein Tastendruck an **I2** erzeugt ein `IND`-Ereignis für den Eingang `CD`. Der Zähler verringert sich um 1.
-3. **Rücksetzen (R)**: Ein Tastendruck an **I3** setzt den Zähler über den Eingang `R` auf 0 zurück.
-4. **Preset-Wert übernehmen (PV)**: Ein Tastendruck an **I4** triggert den FB `AUDI_UDINT_TO_UDI` (Ereigniseingang `REQ`), der den konstanten Wert **5** über seinen Adapterausgang `AUDI_OUT` an den PV-Eingang des Zählers sendet. Der Zähler übernimmt diesen Wert als neuen oberen Grenzwert.
-
-Die Ausgänge sind wie folgt verbunden:
-
-- Der Adapterausgang `QU` des Zählers ist mit dem Steuereingang `OUT` von `DigitalOutput_Q1` verbunden. Wird der Zählerstand ≥ PV (hier initial Standardwert, sofern nicht überschrieben), leuchtet die Lampe Q1.
-- Der Adapterausgang `QD` ist mit `DigitalOutput_Q2` verbunden. Bei Zählerstand = 0 leuchtet Q2.
-- Der aktuelle Zählerwert `CV` wird über eine Adapterverbindung an den Eingang `u32NewValue` des Anzeigebausteins `Q_NumericValue_AUDI` weitergeleitet und auf einer numerischen Anzeige dargestellt.
-
-Die Konstante `UDINT#5` am FB `AUDI_UDINT_TO_UDI` legt fest, dass bei Betätigung von I4 der Preset-Wert auf 5 gesetzt wird – der Zähler wird dann bei Erreichen von 5 den QU-Ausgang aktivieren.
+1. `DigitalInput_CLK_I1.IND` → `AUDI_CTUD_UDINT.CU`, `DigitalInput_CLK_I2.IND` → `AUDI_CTUD_UDINT.CD` und `DigitalInput_CLK_I3.IND` → `AUDI_CTUD_UDINT.R` (EventConnections): Ein Klick auf `I1` zählt hoch, auf `I2` runter, auf `I3` wird der Zähler zurückgesetzt.
+2. `initval_AUDI.OUT` → `AUDI_CTUD_UDINT.PV` (AdapterConnection): Der Vorgabewert 5.
+3. `AUDI_CTUD_UDINT.QU` → `DigitalOutput_Q1.OUT` und `AUDI_CTUD_UDINT.QD` → `DigitalOutput_Q2.OUT` (AdapterConnections): `Q1` ist an, wenn der Zählwert den Vorgabewert erreicht oder überschreitet; `Q2` ist an, wenn der Zählwert 0 (oder kleiner) ist.
+4. `AUDI_CTUD_UDINT.CV` → `Q_NumericValue_AUDI.u32NewValue` (AdapterConnection): Der Zählerwert wird numerisch angezeigt.
 
 ## Zusammenfassung
 
-Die Übung veranschaulicht den Einsatz eines Adapter-basierten Aufwärts-/Abwärtszählers (`AUDI_CTUD_UDINT`) in 4diac. Vier Tastereingänge dienen als Steuersignale (Hochzählen, Runterzählen, Rücksetzen und Preset-Übernahme). Die Ausgangssignale QU (Grenzwert erreicht) und QD (Nullpunkt) werden auf digitale Ausgänge geführt, der aktuelle Zählerwert wird numerisch angezeigt. Durch die Adaptertechnologie werden Ereignis- und Datenflüsse entkoppelt, was eine flexible und wiederverwendbare Verschaltung ermöglicht.
+Die Übung veranschaulicht den Einsatz des Adapter-basierten Auf-/Abwärtszählers `AUDI_CTUD_UDINT`. Drei Taster zählen hoch, zählen runter und setzen zurück; der Vorgabewert 5 kommt aus `initval_AUDI`. `QU` und `QD` werden auf `Q1` und `Q2` geführt, der aktuelle Zählerwert wird an `OutputNumber_N1` angezeigt.
 
 ---
 

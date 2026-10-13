@@ -1,5 +1,7 @@
 # Uebung_003b3_AX: Funk 16 Tasten auf DataPanel 16
 
+![Uebung_003b3_AX_network](./Uebung_003b3_AX_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b3_AX`. Diese Übung ist die konsequente Weiterentwicklung von `Uebung_003b2_AX`. Sie nutzt explizit parametrierte typisierte Sub-Applikationen, um 15 Funktasten auf 15 Ausgänge zu mappen.

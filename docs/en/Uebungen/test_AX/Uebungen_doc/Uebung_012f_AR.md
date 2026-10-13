@@ -1,5 +1,7 @@
 # Exercise_012f_AR: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapp (AR Adapter)
 
+![Uebung_012f_AR_network](./Uebung_012f_AR_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

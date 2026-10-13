@@ -5,25 +5,25 @@
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
-      src: local("TGL 0-17_std");
+      src: local("TGL 0-17_std"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-17";
-      src: local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16_std";
-      src: local("TGL 0-16_std");
+      src: local("TGL 0-16_std"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16";
-      src: local("TGL 0-16");
+      src: local("TGL 0-16"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
@@ -44,7 +44,8 @@
   <rect x="60.0" y="-86.0" width="1187.1" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
   <rect x="60.0" y="-86.0" width="1187.1" height="25.0" fill="white" stroke="none"/>
   <line x1="60.0" y1="-61.5" x2="1247.1" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Sollwert mit festem Korrekturfaktor skalieren (AR_MUL_2 + initval_AR) - Lastteiler-Kompensation, I3 nach N3</text>
+  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Sollwert mit festem Korrekturfaktor skalieren (AR_MUL_2 + initval_AR) -
+Lastteiler-Kompensation, I3 nach N3</text>
   <g id="sidebars">
   </g>
   <g id="connections">

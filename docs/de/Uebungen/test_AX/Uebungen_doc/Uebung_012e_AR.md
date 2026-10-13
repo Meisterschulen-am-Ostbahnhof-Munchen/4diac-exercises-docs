@@ -1,5 +1,7 @@
 # Uebung_012e_AR: Numeric Value Input PHYS und Speichern INI mit Subapp (AR Adapter)
 
+![Uebung_012e_AR_network](./Uebung_012e_AR_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

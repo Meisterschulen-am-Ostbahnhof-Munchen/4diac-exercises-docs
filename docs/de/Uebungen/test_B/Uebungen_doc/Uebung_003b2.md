@@ -1,5 +1,7 @@
 # Uebung_003b2: Funk 16 Tasten auf DataPanel 16
 
+![Uebung_003b2_network](./Uebung_003b2_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b2`. In dieser Übung wird die Skalierbarkeit des Systems demonstriert, indem 15 Tasten einer Funkfernbedienung auf 15 digitale Ausgänge eines DataPanels gemappt werden.

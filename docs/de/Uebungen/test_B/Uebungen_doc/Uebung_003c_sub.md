@@ -1,39 +1,5 @@
-# Uebung_003c_sub: IX auf QX (generisch)
+# Uebung_003c_sub
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+## Hinweis
 
-Dieser Artikel beschreibt den Sub-App-Typ `Uebung_003c_sub`. Dieser Baustein dient als Brücke zwischen lokaler Hardware und dem ISOBUS-Hilfseingangssystem (Auxiliary).
-
-----
-
-## Ziel der Übung
-
-Kapselung der ISOBUS-Kommunikation. Der Baustein verbirgt die Details des ISOBUS-Protokolls und stellt eine einfache Schnittstelle zur Zuordnung von physischen Tastern zu logischen AUX-Nummern bereit.
-
------
-
-## Beschreibung und Komponenten
-
-Der Typ `Uebung_003c_sub` enthält einen lokalen Eingangs-Baustein und einen ISOBUS-Ausgangs-Baustein.
-
-### Interne Funktionsbausteine (FBs)
-
-![Uebung_003c_sub_network](./Uebung_003c_sub_network.svg)
-
-  - **`IX`**: Typ `logiBUS_IX`. Liest den lokalen Hardware-Pin (`Input`) ein.
-  - **`QX`**: Typ `Aux_QX`. Sendet den Zustand als ISOBUS-Nachricht für die gewählte Funktionsnummer (`iInpNr`).
-
------
-
-## Schnittstellen
-
-Der Baustein wird über zwei Parameter konfiguriert:
-
--   **`Input`**: Der physische Taster an der Steuerung.
--   **`iInpNr`**: Die fortlaufende Nummer (Index) im ISOBUS-Auxiliary-Pool.
-
-Jede Änderung am lokalen Taster führt sofort zu einer entsprechenden Status-Meldung im ISOBUS-Netzwerk, wodurch der Taster für andere Geräte (z.B. Task Controller) sichtbar wird.
-
-## 🛠️ Zugehörige Übungen
-
-- [Uebung_003c](Uebung_003c.md)
+Diese Übung existiert nicht mehr als eigene Übung. Der Baustein wurde in die Bibliothek verschoben und heißt jetzt [IX_TO_Aux_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/IX_TO_Aux_QX/). Beschreibung, Schnittstelle und Netzwerk stehen dort.

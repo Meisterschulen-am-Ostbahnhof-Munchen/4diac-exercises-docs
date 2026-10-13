@@ -1,15 +1,5 @@
-# Uebung_010b5_sub: IX auf QX (generisch)
+# Uebung_010b5_sub
 
-## 🎧 Podcast
+## Hinweis
 
-![Uebung_010b5_sub_network](./Uebung_010b5_sub_network.svg)
-
-- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
-
-## Übersicht
-
-Dieser Typ ist funktional identisch mit `Uebung_010b4_sub` und dient der Skalierung der Anwendung auf 10 Kanäle. Er ermöglicht die schnelle Integration von zusätzlichen Bedien-Elementen in das ISOBUS-Interface durch einfaches Kopieren und Parametrieren der Sub-App-Instanzen.
-
-## 🛠️ Zugehörige Übungen
-
-- [Uebung_010b5](Uebung_010b5.md)
+Diese Übung existiert in den aktuellen Trainingsquellen nicht mehr (entfernt, zusammengelegt oder umbenannt). Diese Seite bleibt nur als Platzhalter für bestehende Verweise erhalten. Die aktuellen Übungen stehen in der Übungsübersicht.

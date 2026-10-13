@@ -1,5 +1,7 @@
 # Uebung_012f_AR: Numeric Value Input PHYS und Speichern NVS mit Subapp (AR Adapter)
 
+![Uebung_012f_AR_network](./Uebung_012f_AR_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

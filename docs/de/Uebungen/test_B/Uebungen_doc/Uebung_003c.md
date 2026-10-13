@@ -1,5 +1,7 @@
 # Uebung_003c: DigitalInput_I1-2-3-4 auf AUX
 
+![Uebung_003c_network](./Uebung_003c_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c`. Hier wird demonstriert, wie lokale Hardware-Eingänge an das ISOBUS-System als "Auxiliary Inputs" angebunden werden, wobei eine typisierte Sub-Applikation zur Strukturierung verwendet wird.

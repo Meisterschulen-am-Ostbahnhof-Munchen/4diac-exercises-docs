@@ -15,7 +15,7 @@ This exercise is the classic (not wired via AX adapter) version of `Uebung_010f_
     - **Parameters**: `QI = TRUE`, `u16ObjId = AuxFunction2_X1`
     - **Explanation**: Returns the Boolean state of the assigned physical auxiliary button/joystick via the event/data interface `IND`/`IN`.
 - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QX`)
-    - **Parameters**: `QI = TRUE`, `Output = Output_Q1` (stored as invisible parameters in the network)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
     - **Description**: Switches the physical output Q1 according to the Aux state.
 
 ### Sub-Blocks: GreenWhiteBackground
@@ -34,6 +34,8 @@ This exercise is the classic (not wired via AX adapter) version of `Uebung_010f_
 3. Since classic Event/DataConnections—unlike AX adapter plugs—allow multiple destinations from a single source, no explicit split block is required (unlike the AX adapter variant `Uebung_010f_AX`, which requires `AX_SPLIT_2` for this purpose).
 
 4. `GreenWhiteBackground` then colors both the VT object and the Aux handle green or white, depending on the current state.
+
+**Disadvantage**: `AuxFunction2_X1` has to be specified twice (`Aux_IX.u16ObjId` and `GreenWhiteBackground.u16ObjIdA`).
 
 ## Summary
 

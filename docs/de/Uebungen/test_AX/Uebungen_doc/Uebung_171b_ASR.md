@@ -21,7 +21,7 @@ Diese Übung realisiert dieselbe Funktion wie `Uebung_171_ASR` (Taster `I1` = SE
     - **Erklärung**: Nimmt zwei `AE`-Adapter-Eingänge (`SET_IN`, `RESET_IN`) entgegen und bündelt sie zu einem gemeinsamen `ASR`-Adapter-Ausgang (`ASR_OUT`).
 - **ASR_AX_SR_1**: Set-Reset-Latch (Typ: `adapter::events::unidirectional::ASR_AX_SR`)
     - **Parameter**: keine
-    - **Erklärung**: Verriegelt den gebündelten `S_R`-Eingang set-dominant: `S` schaltet `Q` EIN, `R` schaltet `Q` AUS.
+    - **Erklärung**: Ereignisgesteuerte bistabile Kippstufe für den gebündelten `S_R`-Eingang (ASR-Adapter): das Ereignis `SET` schaltet `Q` EIN, das Ereignis `RESET` schaltet `Q` AUS, das zuletzt eingetroffene Ereignis gewinnt.
 - **DigitalOutput_Q1**: logiBUS Digitalausgang (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
     - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
     - **Erklärung**: Gibt den Latch-Zustand `Q` als physisches Ausgangssignal aus.

@@ -6,93 +6,83 @@
 
 ## Einleitung
 
-Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hilfe von Adaptern und einer INI-basierten Speicherung der Kalibrierparameter. Das kalibrierte Signal wird anschließend durch einen Hysterese-Regler geführt, dessen Schwellwerte ebenfalls aus einer INI-Datei gelesen werden. Die Übung zeigt die Verknüpfung von analogen und digitalen Ein-/Ausgängen, Adapter-Konvertierungen sowie die persistente Speicherung von Parametern.
+Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hilfe von Adaptern und einer INI-basierten Speicherung der Kalibrierparameter. Das kalibrierte Signal wird anschließend durch einen Hysterese-Regler geführt, dessen Schwellwert und Hysterese über das VT eingegeben und ebenfalls in der INI-Datei gespeichert werden. Die Übung zeigt die Verknüpfung von analogen und digitalen Ein-/Ausgängen, Adapter-Konvertierungen sowie die persistente Speicherung von Parametern.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Haupt-FBs
-
-- **DigitalInput_I1** / **DigitalInput_I2_CO** / **DigitalInput_I3_CS**:
-  Digitaleingänge (Typ `logiBUS::io::DI::logiBUS_IXA`)
-
-  - Parameter: `QI` = TRUE; `Input` = zugehöriger logiBUS-Eingang (I1, I2, I3)
-
-- **DigitalOutput_Q1** / **DigitalOutput_Q2**:
-  Digitalausgänge (Typ `logiBUS::io::DQ::logiBUS_QXA`)
-
-  - Parameter: `QI` = TRUE; `Output` = zugehöriger logiBUS-Ausgang (Q1, Q2)
-
-- **AnalogInput_I4**:
-  Analogeingang (Typ `logiBUS::io::AI::logiBUS_AI_IDA`)
-
-  - Parameter: `QI` = TRUE; `Input` = AnalogInput_I4; `AnalogInput_hysteresis` = 50; `TimeDelta` = 250; `TimeRateLimit` = 100
-
-- **CALIBRATE**:
-  Kalibrierungsadapter (Typ `adapter::Engineering::measurements::AR_CALIBRATE`)
-
-  - Parameter: `Y_Offset` = 100.0; `Y_Scale` = 600.0
-  - Führt eine lineare Kalibrierung durch (Offset und Skalierung) und gibt die kalibrierten Werte sowie die tatsächlichen Offset-/Skalierungs-Parameter aus.
-
-- **INI_OFFSET** / **INI_SCALE**:
-  INI-Speicherbausteine (Typ `eclipse4diac::storage::INI_AR2`)
-
-  - Parameter: `QI` = TRUE; `SECTION` = `'Uebung_028a_AR'`; `KEY` = `'OFFSET'` bzw. `'SCALE'`; `DEFAULT_VALUE` = 0.0 bzw. 1.0
-  - Speichern die vom Kalibrierungsadapter berechneten Offset- und Skalierungswerte persistent in einer INI-Datei.
-
-- **AX_SPLIT_2**:
-  Ereignis-Splitter (Typ `adapter::events::unidirectional::AX_SPLIT_2`)
-
-  - Verteilt ein eingehendes Ereignis (AX) auf zwei Ausgänge.
-
-- **Hysteresis_AR_AX**:
-  Hysterese-Regler (Typ `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`)
-
-  - Parameter: `QI` = TRUE
-  - Vergleicht den kalibrierten Analogeingang mit einem Schwellwert und einer Hysterese und schaltet den Ausgang entsprechend.
-
-- **AD_TO_AUDI** / **AUDI_TO_AR**:
-  Konvertierungsadapter (Typ `adapter::conversion::unidirectional::AD_TO_AUDI` bzw. `AUDI_TO_AR`)
-
-  - Wandeln das analoge Signal von der Adapterdarstellung `AD` in `AUDI` und zurück in `AR` um.
-  - **Hinweis**: Eine direkte Konvertierung `AD_TO_AR` würde wie ein `reinterpret_cast` wirken – die separate Nutzung beider Adapter ist hier beabsichtigt.
-
-### Sub-Bausteine
-
-- **THRESHOLD** (Typ `MyLib::sys::INI_IN_AND_STORE_AR`)
-  - **Parameter**:
-    - `KEY` = `'THRESHOLD'`
-    - `SECTION` = `'HYSTERESIS'`
-    - `stObj` = `InputNumber_THRESHOLD`
-  - **Funktionsweise**: Liest den Schwellwert für die Hysterese aus der INI-Datei (Sektion `HYSTERESIS`, Key `THRESHOLD`) und stellt ihn am Ausgang `VALUEO` bereit. Der Wert wird als Struktur vom Typ `InputNumber_THRESHOLD` interpretiert.
-
-- **HYSTERESIS** (Typ `MyLib::sys::INI_IN_AND_STORE_AR`)
-  - **Parameter**:
-    - `KEY` = `'HYSTERESIS'`
-    - `SECTION` = `'HYSTERESIS'`
-    - `stObj` = `InputNumber_HYSTERESIS`
-  - **Funktionsweise**: Analog zu THRESHOLD, jedoch für den Hysteresewert. Gibt den eingelesenen Wert am Ausgang `VALUEO` aus.
+- **DigitalInput_I1**: logiBUS Digitaleingang
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1`
+    - **Erklärung**: Liefert den Zustand von `I1` als AX-Adaptersignal.
+- **AX_SPLIT_2**: Signalverteiler
+    - **Typ**: [`adapter::events::unidirectional::AX_SPLIT_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SPLIT_2/)
+    - **Parameter**: keine
+    - **Erklärung**: Verteilt das AX-Signal von `I1` auf zwei Ausgänge: `OUT1` zum Digitalausgang `Q1`, `OUT2` zum Analogeingang (Messanforderung).
+- **DigitalOutput_Q1**: logiBUS Digitalausgang
+    - **Typ**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
+    - **Erklärung**: Gibt das Signal von `I1` am physischen Ausgang `Q1` aus.
+- **AnalogInput_I4**: logiBUS Analogeingang
+    - **Typ**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
+    - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Erklärung**: Stellt den analogen Messwert am AD-Adapter `IN` bereit. Über den Socket `SREQ` kann eine Messung extern angefordert werden.
+- **AD_TO_AUDI**: Konvertierungsadapter
+    - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den Rohwert vom AD-Adapter (DWORD) in einen AUDI-Adapter (UDINT).
+- **AUDI_TO_AR**: Konvertierungsadapter
+    - **Typ**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den UDINT-Wert vom AUDI-Adapter in einen REAL-Wert am AR-Adapter. **Hinweis** (Kommentar im Netzwerk): Doppelte Konvertierung ist wichtig; ein `AD_TO_AR` wäre wie ein „reinterpret_cast“.
+- **DigitalInput_I2_CO**: Klick-Eingang für die Offset-Kalibrierung
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Meldet einen Einzelklick auf `I2` als Ereignis `IND`.
+- **DigitalInput_I3_CS**: Klick-Eingang für die Skalen-Kalibrierung
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Meldet einen Einzelklick auf `I3` als Ereignis `IND`.
+- **CALIBRATE**: Kalibrierung
+    - **Typ**: [`adapter::Engineering::measurements::AR_CALIBRATE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/Engineering/measurements/AR_CALIBRATE/)
+    - **Parameter**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
+    - **Erklärung**: Berechnet `Y = (X + OFFSET) * SCALE`. Das Ereignis `CO` ermittelt den Offset als `Y_Offset - X`, das Ereignis `CS` den Skalenfaktor als `Y_Scale / (X + OFFSET)`. Ausgänge sind der kalibrierte Wert `Y` sowie die Adapter `OFFSET` und `SCALE`.
+- **INI_OFFSET**: INI-Speicher für den Offset
+    - **Typ**: [`eclipse4diac::storage::INI_AR2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/storage/ini/INI_AR2/)
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `SECTION = 'Uebung_028a_AR'`, `KEY = 'OFFSET'`, `DEFAULT_VALUE = 0.0`
+    - **Erklärung**: Liest den Wert aus der INI-Datei und schreibt über den bidirektionalen Adapter `VAL` den von `CALIBRATE` berechneten Offset zurück.
+- **INI_SCALE**: INI-Speicher für die Skalierung
+    - **Typ**: [`eclipse4diac::storage::INI_AR2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/storage/ini/INI_AR2/)
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `SECTION = 'Uebung_028a_AR'`, `KEY = 'SCALE'`, `DEFAULT_VALUE = 1.0`
+    - **Erklärung**: Wie `INI_OFFSET`, jedoch für den Skalenfaktor.
+- **THRESHOLD**: VT-Eingabe und Speicherung des Schwellwerts
+    - **Typ**: [`MyLib::sys::INI_IN_AND_STORE_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/INI_IN_AND_STORE_AR/) (SubApp-Instanz)
+    - **Parameter**: `KEY = 'THRESHOLD'`, `SECTION = 'HYSTERESIS'`, `stObj = InputNumber_THRESHOLD_N`
+    - **Erklärung**: Ein über das VT (Eingabefeld `InputNumber_THRESHOLD_N`) eingegebener, physikalisch skalierter REAL-Wert wird in der INI-Datei abgelegt, wieder auf dem VT angezeigt und am Adapter `VALUEO` ausgegeben.
+- **HYSTERESIS**: VT-Eingabe und Speicherung der Hysteresebreite
+    - **Typ**: [`MyLib::sys::INI_IN_AND_STORE_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/INI_IN_AND_STORE_AR/) (SubApp-Instanz)
+    - **Parameter**: `KEY = 'HYSTERESIS'`, `SECTION = 'HYSTERESIS'`, `stObj = InputNumber_HYSTERESIS_N`
+    - **Erklärung**: Wie `THRESHOLD`, jedoch für die Hysteresebreite (Eingabefeld `InputNumber_HYSTERESIS_N`).
+- **Hysteresis_AR_AX**: Hysterese-Regler
+    - **Typ**: [`logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/signalprocessing/hysteresis/Hysteresis_AR_AX/)
+    - **Parameter**: `QI = TRUE`
+    - **Erklärung**: Schaltet `OUTPUT` ein, wenn `INPUT` den Wert `THRESHOLD + HYSTERESIS/2` erreicht oder überschreitet, und aus, wenn `INPUT` den Wert `THRESHOLD - HYSTERESIS/2` unterschreitet.
+- **DigitalOutput_Q2**: logiBUS Digitalausgang
+    - **Typ**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q2`
+    - **Erklärung**: Gibt das Ergebnis des Hysterese-Reglers am physischen Ausgang `Q2` aus.
 
 ## Programmablauf und Verbindungen
 
-1. **Ereignissteuerung**: Der digitale Eingang **DigitalInput_I1** liefert ein Ereignis, das über **AX_SPLIT_2** auf zwei Pfade verteilt wird:
-   - Pfad 1: direkt zum Digitalausgang **DigitalOutput_Q1** (z. B. als Quittierung).
-   - Pfad 2: zum Analogeingang **AnalogInput_I4** (über den `SREQ`-Anschluss), um eine Messung auszulösen.
-
-2. **Analogwertverarbeitung**:
-   - Der Messwert von **AnalogInput_I4** (Adapter `AD`) wird über **AD_TO_AUDI** und **AUDI_TO_AR** in die für den Kalibrierungsadapter passende Darstellung (`AR`) konvertiert.
-   - Der konvertierte Wert gelangt an den Eingang `X` des Kalibrierungsadapters **CALIBRATE**.
-
-3. **Kalibrierung**:
-   - Die digitalen Eingänge **DigitalInput_I2_CO** und **DigitalInput_I3_CS** dienen als Steuersignale für die Kalibrierung (`CO` = Kalibrier-Offset, `CS` = Kalibrier-Skala).
-   - **CALIBRATE** berechnet aus dem Rohwert und den Referenzpunkten die korrigierten Werte und gibt diese als `Y` (kalibrierter Messwert), `OFFSET` und `SCALE` aus.
-
-4. **Persistente Speicherung**:
-   - Die Werte `OFFSET` und `SCALE` werden von **INI_OFFSET** und **INI_SCALE** in der INI-Datei (Sektion `Uebung_028a_AR`) gespeichert.
-
-5. **Hysterese-Funktion**:
-   - Der kalibrierte Messwert `Y` wird an den Eingang `INPUT` des Hysterese-Reglers **Hysteresis_AR_AX** übergeben.
-   - Die Schwellwerte `THRESHOLD` und `HYSTERESIS` werden von den Sub-Bausteinen **THRESHOLD** und **HYSTERESIS** aus der INI-Datei (Sektion `HYSTERESIS`) gelesen und an die entsprechenden Anschlüsse des Reglers angelegt.
-   - Der Ausgang `OUTPUT` des Hysterese-Reglers steuert den digitalen Ausgang **DigitalOutput_Q2**.
+1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN` (AdapterConnection): Der Zustand von `I1` wird verteilt.
+2. `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT`: `Q1` folgt `I1`.
+3. `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ`: `I1` fordert eine Messung am Analogeingang an.
+4. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN` und `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`: Der Messwert wird zweistufig in einen REAL-Wert umgewandelt.
+5. `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X`: Der umgewandelte Wert ist der Kalibriereingang.
+6. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` und `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` (EventConnections): Ein Klick auf `I2` löst die Offset-Kalibrierung aus, ein Klick auf `I3` die Skalen-Kalibrierung.
+7. `CALIBRATE.OFFSET` → `INI_OFFSET.VAL` und `CALIBRATE.SCALE` → `INI_SCALE.VAL`: Die berechneten Kalibrierwerte werden in der INI-Datei (Sektion `Uebung_028a_AR`) gespeichert.
+8. `CALIBRATE.Y` → `Hysteresis_AR_AX.INPUT`: Der kalibrierte Messwert wird ausgewertet.
+9. `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` und `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`: Schwellwert und Hysteresebreite aus den VT-Eingaben.
+10. `Hysteresis_AR_AX.OUTPUT` → `DigitalOutput_Q2.OUT`: Das Hysterese-Ergebnis schaltet `Q2`.
 
 **Lernziele**:
 

@@ -1,48 +1,38 @@
-# Uebung_011f_AX: Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)
-
-This article describes the 4diac IDE sub-application Uebung_011f_AX (Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)).
-
-----
+# Uebung_011f_AX: Numeric Value Input I3 Passed Through to N3 (Input and Output PHYS via NumericObjectPool_S)
 
 ![Uebung_011f_AX_network](./Uebung_011f_AX_network.svg)
 
-## Objective of the Exercise
+* * * * * * * * * *
 
-The main objective of this exercise is to implement the following requirement: **Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)**
+## Introduction
 
------
+This exercise passes a numeric input value of the VT (input field `I3`) unchanged through to a numeric output field (`N3`). Input and output are both implemented as a physical `REAL` value (`PHYS`): the conversion between raw value and physical value (scaling, offset, decimals) is contained in the parameters of type `NumericObjectPool_S` (`stObj`), which are imported from the pool constants file. The SubApp has no interface of its own.
 
-## Description and Components
+## Function Blocks (FBs) Used
 
-The exercise consists of the sub-application Uebung_011f_AX.SUB, which uses the following function block structure:
+- **NumericValue_PHYS**: Numeric VT input value as physical value
+    - **Type**: [`isobus::UT::io::NumericValue::NumericValue_PHYSA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/io/NumericValue/NumericValue_PHYSA/)
+    - **Parameters**: `QI = TRUE`, `stObj = InputNumber_I3_N`
+    - **Explanation**: Provides the value entered in the VT input field `I3` as a physical `REAL` value via the adapter output `rPhys` (AR adapter).
+- **Q_NumericValue_PHYS**: Numeric VT output value from a physical value
+    - **Type**: [`isobus::UT::Q::Q_NumericValue_PHYSA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_PHYSA/)
+    - **Parameters**: `stObj = OutputNumber_N3_N`
+    - **Explanation**: Receives a physical `REAL` value via the adapter `rPhys` and writes it to the numeric output object `N3` of the VT.
 
-### Instantiated Function Blocks (FBs)
+The constants `InputNumber_I3_N` and `OutputNumber_N3_N` come from `Uebungen::const::UT::DefaultPool_Numeric`.
 
-- **NumericValue_PHYS**: Instance of type isobus::UT::io::NumericValue::NumericValue_PHYSA.
-  - Parameter stObj = InputNumber_I3_N
-- **Q_NumericValue_PHYS**: Instance of type isobus::UT::Q::Q_NumericValue_PHYSA.
-  - Parameter stObj = OutputNumber_N3_N
+## Program Flow and Connections
 
-### Connections and Interfaces
+1. `NumericValue_PHYS.rPhys` → `Q_NumericValue_PHYS.rPhys` (AdapterConnection): the physical value of the input `I3` is passed directly to the output `N3`.
 
-**Adapter Connections:**
-
-- NumericValue_PHYS.rPhys -> Q_NumericValue_PHYS.rPhys
-
-### Notes from the Model
-
-> Beispiel: I3-Eingabe -500.00 → rPhys=-500.0 → Q_NumericValue_PHYS(N3) → N3 zeigt -500.00.
-
------
-
-## Sequence and Operation
-
-1. **Initialization**: Upon system startup, all participating function blocks are initialized.
-2. **Event and Signal Processing**: State changes at the inputs trigger events that are forwarded to downstream function blocks across the defined connections.
-3. **Output Update**: The receiving function blocks process incoming events and data values to update physical and logical outputs accordingly.
-
------
+**Example** (comment in the model): an entry of -500.00 in `I3` results in `rPhys = -500.0`; `Q_NumericValue_PHYS` (`N3`) then displays -500.00.
 
 ## Summary
 
-Exercise Uebung_011f_AX provides a clear demonstration of modular IEC 61499 application design in 4diac IDE.
+The exercise `Uebung_011f_AX` shows the simplest use of the PHYS variants for numeric VT objects: an input FB and an output FB are coupled via a single AR adapter connection, and scaling and offset are contained entirely in the `NumericObjectPool_S` parameters.
+
+---
+
+### 🌐 Related topic subpages on ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

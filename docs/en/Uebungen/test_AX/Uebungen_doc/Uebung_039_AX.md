@@ -28,5 +28,5 @@ The use of **AX adapters** between the sequencer and the output sub-applications
 
 ## 🛠️ Related exercises
 
-- [Uebung_039_sub_Outputs_AX](Uebung_039_sub_Outputs_AX.md)
+- [AX_SoftkeyOverride_TO_QXA_BG](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AX_SoftkeyOverride_TO_QXA_BG/)
 - [Uebung_039_sub_NumbAnAnzeige_AX](Uebung_039_sub_NumbAnzeig_AX.md)

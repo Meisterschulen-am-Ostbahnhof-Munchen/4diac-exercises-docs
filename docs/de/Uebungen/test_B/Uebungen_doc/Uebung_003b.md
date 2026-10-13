@@ -1,5 +1,7 @@
 # Uebung_003b: DigitalInput_I1-2-3-4 auf DigitalOutput_Q1-2-3-4
 
+![Uebung_003b_network](./Uebung_003b_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b`. Diese Übung erweitert das Konzept der modularen Steuerung aus `Uebung_003a` auf insgesamt vier unabhängige Kanäle.

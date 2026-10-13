@@ -9,7 +9,7 @@ Die Reinigung soll in vier aufeinanderfolgenden Phasen ablaufen. Jede Phase soll
 
 ### Funktionsbeschreibung der Ablaufsteuerung
 
-Die Logik soll mit dem Funktionsbaustein [sequence_ET_04_AX.fbt](../../.lib/logiBUS-3.0.0/typelib/utils/sequence/combi/sequence_ET_04_AX.fbt) realisiert werden.
+Die Logik soll mit dem Funktionsbaustein [sequence_ET_04_AX.fbt](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_AX/) realisiert werden.
 
 #### Phasen des Spülprozesses
 

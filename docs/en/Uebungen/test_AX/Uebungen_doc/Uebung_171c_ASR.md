@@ -28,7 +28,7 @@ This exercise implements the same function as `Uebung_171b_ASR` (button `I1` = S
 
 - **Parameters**: None
 
-- **Explanation**: Locks the bundled `S_R` input. Set-dominant: `S` turns `Q` ON, `R` turns `Q` OFF.
+- **Explanation**: Latches the bundled `S_R` input: `S` turns `Q` ON, `R` turns `Q` OFF. There is no dominance, the most recently arrived event determines the state ("Last Event Wins").
 
 - **DigitalOutput_Q1**: logiBUS digital output (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 

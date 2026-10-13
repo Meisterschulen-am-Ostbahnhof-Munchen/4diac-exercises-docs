@@ -1,5 +1,7 @@
 # Uebung_003b2_AX: Funk 16 Tasten auf DataPanel 16
 
+![Uebung_003b2_AX_network](./Uebung_003b2_AX_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b2_AX`. Diese Übung zeigt die Skalierbarkeit des Systems am Beispiel der Verknüpfung von 15 Funktasten mit 15 digitalen Ausgängen, realisiert durch untypisierte Sub-Applikationen (bzw. wiederverwendete typisierte Sub-Applikationen, die hier manuell platziert wurden).

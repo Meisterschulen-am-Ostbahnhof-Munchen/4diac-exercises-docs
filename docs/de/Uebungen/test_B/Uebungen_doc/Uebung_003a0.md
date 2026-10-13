@@ -1,5 +1,7 @@
 # Uebung_003a0: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2 - mit untyped Subapp
 
+![Uebung_003a0_network](./Uebung_003a0_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003a0`. Im Gegensatz zur Verwendung von Typen (wie in `Uebung_003a`) wird hier gezeigt, wie man Logik visuell gruppieren kann, ohne separate Typ-Definitionen in der Bibliothek anzulegen. Dies geschieht durch sogenannte "Untyped SubApps".

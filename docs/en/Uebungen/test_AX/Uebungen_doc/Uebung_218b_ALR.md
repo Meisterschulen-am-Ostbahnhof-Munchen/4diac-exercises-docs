@@ -4,172 +4,67 @@
 
 * * * * * * * * * *
 
-This exercise implements a **down counter (CTD)** according to IEC 61131-3 using an **AUDI_FB_CTD** (adapter version, data type **UDINT**). The current counter value is output to **PHYSA_LREAL** via a terminal. Additionally, a digital output (**Output_Q1**) is provided, indicating the counter's status (Q).
-The implementation also allows **negative count values** – a corresponding message on the network indicates this. To reduce the event rate during rapid counting pulses, an **AX_D_FF** (flip-flop) could optionally be implemented
-
----
-
-## Function Blocks Used (FBs)
-
 ## Introduction
 
-### Sub-Block: `AUDI_FB_CTD`
+This exercise implements a **down counter (CTD)** according to IEC 61131-3 with an `AUDI_FB_CTD` (adapter version, data type UDINT). The counter is controlled via two digital inputs (`I1` = count down, `I2` = load); the preset value 10 comes from an `initval_AUDI`. The current counter value is converted into an LREAL value via `AUDI_TO_ALR` and output on the terminal with `Q_NumericValue_PHYSA_LREAL`. In addition, a digital output (`Output_Q1`) shows the counter output `Q`.
 
-- **Type**: `adapter::iec61131::counters::AUDI_FB_CTD`
-- **Internal FBs Used** (no other internal FBs)
-- **Parameters**: No custom parameters (all data is connected via adapters)
-- **Event Inputs/Outputs**:
-- *Inputs*: CD (Count Down), LD (Load)
-- *Outputs*: Q (Counter Status)
-- **Data Inputs/Outputs**:
-- *Inputs*: PV (Preset Value, UDINT)
-- *Outputs*: CV (Current Value, UDINT)
-- **Functionality**:
+Two comments in the network point out: "negative values are possible here!" (for the LREAL output) and "if necessary, install an AX_D_FF here to reduce the events." (at the output `Q`).
 
-The block decrements the internal counter by one on every positive edge event at the **CD** input. When an event occurs at input **LD**, the counter is loaded with the value of **PV**. Output **Q** becomes active as soon as the counter value is zero or less. The current counter value is available at **CV**.
+## Function Blocks (FBs) Used
 
-### Sub-module: `AUDI_UDINT_TO_UDI`
-
-- **Type**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `OUT = UDINT#10` (fixed preset value 10)
-- **Event Inputs/Outputs**:
-- *Input*: REQ (Request)
-- *Output*: CNF (Acknowledge)
-- **Data Inputs/Outputs**:
-- *Output*: AUDI_OUT (Output value, UDINT)
-- **Functionality**:
-
-When an event occurs at the **REQ** input, the parameterized UDINT value (here 10) is forwarded to the output `AUDI_OUT`. This value serves as the initial preset value for the countdown counter.
-
----
-
-### Sub-Block: `Input_CD`
-
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `QI = TRUE` (Qualifier – Input Active)
-- `Input = Input_I1` (Physical Input Channel)
-- **Event Inputs/Outputs**:
-- *Output*: INITO (Initialization Complete)
-- **Data Inputs/Outputs**:
-- *Output*: IN (Adapter Output for the Counting Pulse)
-- **Functionality**:
-
-This block provides the digital input **Input_I1** (e.g., push button or sensor) as an adapter interface. When activated, the signal is forwarded at output `IN` and triggers a **CD** event on the connected counter.
-
-### Sub-Block: `Input_LD`
-
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `QI = TRUE`
-- `Input = Input_I2` (Physical Input Channel)
-- **Event Inputs/Outputs**:
-- *Output*: INITO (Initialization Complete)
-- **Data Inputs/Outputs**:
-- *Output*: IN (Adapter Output for Loading)
-- **Functionality**:
-
-Identical to `Input_CD`, but connected to **Input_I2**. A signal at this input loads the counter preset value.
-
----
-
-### Sub-Block: `Output_Q1`
-
-- **Type**: `logiBUS::io::DQ::logiBUS_QXA`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `QI = TRUE`
-- `Output = Output_Q1` (physical output channel)
-- **Event Inputs/Outputs**:
-- *Input*: OUT (adapter input for the output signal)
-- **Data Inputs/Outputs**:
-- *Input*: (via adapter)
-- **Functionality**:
-
-This block sets the digital output **Output_Q1** to the value present at the adapter input `OUT`. It is used to display the counter status (Q).
-
-### Sub-Block: `AUDI_TO_ALR`
-
-- **Type**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
-- **Internal Function Blocks Used**: None
-- **Parameters**: No custom parameters
-- **Event Inputs/Outputs**: (No events; pure data conversion)
-- **Data Inputs/Outputs**:
-- *Input*: AUDI_IN (UDINT value)
-- *Output*: ALR_OUT (physical LREAL value)
-- **Functionality**:
-
-This block converts the current counter value (UDINT) into a physical LREAL value suitable for terminal output. It allows the counter value to be displayed as a real number, including negative values.
-
----
-
-### Sub-Block: `Q_NumericValue_PHYSA_LREAL`
-
-- **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `stObj = OutputNumber_N3` (reference to the terminal output object)
-- **Event Inputs/Outputs**: (no events)
-- **Data Inputs/Outputs**:
-- *Input*: lrPhys (physical LREAL value)
-- **Functionality**:
-
-The block receives the converted LREAL value and outputs it to the terminal (OutputNumber_N3). It serves as the link to the graphical/numerical display of the exercise.
-
----
-
-1. **Initialization**
-
-After the system starts, the function block `Input_LD` is initialized. This generates a `INITO` event, which triggers the function block `AUDI_UDINT_TO_UDI` (`REQ`). This block passes the fixed value **UDINT#10** to the counter's preset input.
-
-1. **Counting Operation**
-
-- Each positive signal at **Input_I1** (→ `Input_CD`) generates a **CD** event at the counter → the counter value is decremented by 1.
-- A signal at **Input_I2** (→ `Input_LD`) generates an **LD** event → the counter is reset to the last loaded preset value (initial 10).
-
-1. **Outputs**
-
-- The counter output **Q** is connected to the digital output **Output_Q1** via an adapter. The output lamp will then light up when the counter is ≤ 0.
-- The current counter value **CV** is converted to an LREAL value via `AUDI_TO_ALR` and output to the terminal (OutputNumber_N3) by `Q_NumericValue_PHYSA_LREAL`.
-
-1. **Notes from the Comments**
-
-- *“Negative values are possible here!”* – The counter can go below zero with continued CD events. The terminal output also displays negative LREAL values.
-- *“If necessary, add an AX_D_FF here to reduce the number of events.”* – For very fast pulses, a preceding flip-flop can dampen the event rate and prevent unwanted counts.
-
-**Connection Overview (Excerpt from the Network):**
-
-- `Input_CD.IN` → `AUDI_FB_CTD.CD`
-- `Input_LD.IN` → `AUDI_FB_CTD.LD`
-- `AUDI_FB_CTD.Q` → `Output_Q1.OUT`
-- `AUDI_FB_CTD.CV` → `AUDI_TO_ALR.AUDI_IN`
-- `AUDI_TO_ALR.ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`
-- Event: `Input_LD.INITO` → `AUDI_UDINT_TO_UDI.REQ`
-
----
-
-**Learning Objectives:**
-
-- Design and parameterization of an adapter-based CTD function block
-- Integration of digital inputs/outputs via logiBUS adapters
-- Data conversion (UDINT → LREAL) for output purposes
-- Detection of problems at high event rates and solutions (AX_D_FF)
-
-**Difficulty Level:** Medium
-**Prerequisites:** Basic knowledge of the 4diac IDE, working with IEC components and adapter connections.
-
----
-
-- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]
+- **Input_CD**: input for the count-down pulse
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
+    - **Explanation**: Provides the state of `I1` as an AX adapter signal; it feeds `AUDI_FB_CTD.CD`.
+- **Input_LD**: input for loading
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as an AX adapter signal; it feeds `AUDI_FB_CTD.LD`.
+- **initval_AUDI**: preset value
+    - **Type**: [`adapter::types::unidirectional::AUDI::initval::initval_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/initval/initval_AUDI/)
+    - **Parameters**: `INIT_VAL = 10`
+    - **Explanation**: Provides the constant value 10 as an AUDI signal.
+- **AUDI_FB_CTD**: down counter
+    - **Type**: [`adapter::iec61131::counters::AUDI_FB_CTD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/iec61131-3/counters/AUDI_FB_CTD/)
+    - **Parameters**: none
+    - **Explanation**: Counts down via the adapter `CD`, loads the preset value `PV` (UDINT) via `LD`, and outputs the current counter value at the adapter `CV` and the counter output at the adapter `Q` (according to the block reference: TRUE when the counter value has reached 0).
+- **Output_Q1**: logiBUS digital output
+    - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
+    - **Explanation**: Outputs the counter output `Q` at the physical output `Q1`.
+- **AUDI_TO_ALR**: conversion adapter
+    - **Type**: [`adapter::conversion::unidirectional::AUDI_TO_ALR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/ALR_AUDI/AUDI_TO_ALR/)
+    - **Parameters**: none
+    - **Explanation**: Converts the counter value (UDINT, adapter `AUDI_IN`) into an LREAL value (adapter `ALR_OUT`).
+- **Q_NumericValue_PHYSA_LREAL**: VT display
+    - **Type**: [`isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_PHYSA_LREAL/)
+    - **Parameters**: `stObj = OutputNumber_N3_N`
+    - **Explanation**: Shows the physical LREAL value from the adapter `lrPhys` on the VT object given in the object pool entry `stObj`.
 
 ## Program Flow and Connections
 
+1. `Input_CD.IN` → `AUDI_FB_CTD.CD` (AdapterConnection): The state of `I1` is the count input.
+2. `Input_LD.IN` → `AUDI_FB_CTD.LD`: The state of `I2` triggers loading.
+3. `initval_AUDI.OUT` → `AUDI_FB_CTD.PV`: The preset value 10 is given to the counter.
+4. `AUDI_FB_CTD.Q` → `Output_Q1.OUT`: The counter output is applied to `Q1`.
+5. `AUDI_FB_CTD.CV` → `AUDI_TO_ALR.AUDI_IN`: The counter value is converted to LREAL.
+6. `AUDI_TO_ALR.ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`: The value is output on the terminal.
+
+The network contains no event connections; all connections are adapter connections.
+
+**Learning objectives:**
+
+- Structure and parameterization of an adapter-based CTD function block
+- Integration of digital inputs/outputs via logiBUS adapters
+- Data conversion (UDINT → LREAL) for output purposes
+- Recognizing problems at high event rates and approaches to solve them (`AX_D_FF`)
+
 ## Summary
 
-### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+The exercise `Uebung_218b_ALR` teaches the use of an IEC 61131-3 down counter in the 4diac IDE. The counter is controlled via two digital inputs (count and load), its preset value comes from an `initval_AUDI`, and it outputs its status and the current value. The special feature is the conversion of the UDINT counter value into an LREAL terminal output.
+
+---
+
+### 🌐 Related topic subpages on ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

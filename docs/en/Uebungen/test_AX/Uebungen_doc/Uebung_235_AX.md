@@ -17,7 +17,7 @@ This exercise demonstrates the same two-point controller pattern as `Uebung_234_
 
 - **Explanation**: Reads the physical value as an AR plug (`rPhys`) whenever `InputNumber_Messwert` (VT object 9002, range 0–1000) changes. The operator then simulates the analog sensor from `Uebung_234_AX` in the pool `Workspace_Dreieck`.
 
-- **HysteresisParams_AR**: Parameter block for the hysteresis thresholds
+- **HysteresisParams_AR**: Parameter block for the hysteresis thresholds (SubApp instance, Type: `MyLib::sys::HysteresisParams_AR`)
 
 - **Parameters**: rMI = 500.0, rDEAD = 20.0, rHYSTERESIS = 30.0
 

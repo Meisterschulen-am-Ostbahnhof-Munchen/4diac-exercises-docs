@@ -24,7 +24,7 @@ This exercise is the adapter version of [Exercise 226](../../test_B/Uebungen_doc
 - **Parameter of instance `SplitBar`**: `stObj = Bargraph_Split_BargraphSplit`.
 - **Internal wiring** (within `.fbt` itself, not changed in this exercise): The AR adapter socket `rPhys` delivers event (`E1`) and data (`D1`) directly to a single internal instance `Inner` of type `BargraphSplitFS` (`rPhys.E1 → Inner.REQ`, `rPhys.D1 → Inner.rValue`) — thus the bracket logic for both sides of the bar is **not** duplicated, but reused unchanged. `Inner.xOverRight`/`Inner.xOverLeft` are passed out as separate AX adapter plugs (`xOverRight`, `xOverLeft`), just as `xOver`/`xUnder` are for `PositionMarkerFSA`. `stObj` is passed through 1:1 to `Inner`.
 
-- **Block file**: `Ventilsteuerung\4diacIDE-workspace\.lib\isobus-3.0.0\typelib\UT\Q\BargraphSplitFS_AR.fbt`.
+- **Block file**: `Ventilsteuerung\4diacIDE-workspace\.lib\isobus_signalprocessing_adapter-3.0.0\typelib\UT\Q\BargraphSplitFS_AR.fbt`.
 
 The existing blocks `NumericValue_PHYSA` and `BargraphSplitFS` themselves were not modified for this wrapper.
 

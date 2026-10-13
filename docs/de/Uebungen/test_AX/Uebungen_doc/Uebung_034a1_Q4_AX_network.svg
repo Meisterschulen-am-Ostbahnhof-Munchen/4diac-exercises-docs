@@ -48,24 +48,24 @@
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="383.5,187.5 528.5,187.5 533.5,192.5 533.5,197.5 538.5,202.5 847.3,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="383.5,187.5 528.5,187.5 533.5,192.5 533.5,197.5 538.5,202.5 847.3,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="383.5,187.5 528.5,187.5 533.5,192.5 533.5,197.5 538.5,202.5 847.4,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="383.5,187.5 528.5,187.5 533.5,192.5 533.5,197.5 538.5,202.5 847.4,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_PWMOutput_Q4" transform="translate(847.3, 90.0)">
+    <g id="fb_PWMOutput_Q4" transform="translate(847.4, 90.0)">
       <path d="M 3 0
-            L 134.349609375 0
-            A 3 3 0 0 1 137.349609375 3
-            L 137.349609375 35
-            A 3 3 0 0 1 134.349609375 38
-            L 128.349609375 38
-            L 128.349609375 52
-            L 134.349609375 52
-            A 3 3 0 0 1 137.349609375 55
-            L 137.349609375 120
-            A 3 3 0 0 1 134.349609375 123
+            L 134.25 0
+            A 3 3 0 0 1 137.25 3
+            L 137.25 35
+            A 3 3 0 0 1 134.25 38
+            L 128.25 38
+            L 128.25 52
+            L 134.25 52
+            A 3 3 0 0 1 137.25 55
+            L 137.25 120
+            A 3 3 0 0 1 134.25 123
             L 3 123
             A 3 3 0 0 1 0 120
             L 0 55
@@ -108,11 +108,11 @@
       <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
       <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">INIT</text>
-      <polygon points="132.349609375,5.5 137.349609375,10.5 132.349609375,15.5" fill="#63B31F"/>
-      <text x="131.349609375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="132.25,5.5 137.25,10.5 132.25,15.5" fill="#63B31F"/>
+      <text x="131.25" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">INITO</text>
-      <polygon points="132.349609375,22.5 137.349609375,27.5 132.349609375,32.5" fill="#63B31F"/>
-      <text x="131.349609375" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="132.25,22.5 137.25,27.5 132.25,32.5" fill="#63B31F"/>
+      <text x="131.25" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
       <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
@@ -123,11 +123,11 @@
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#3366FF"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Output</text>
-      <polygon points="132.349609375,56.5 137.349609375,61.5 132.349609375,66.5" fill="#A3B08F"/>
-      <text x="131.349609375" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="132.25,56.5 137.25,61.5 132.25,66.5" fill="#A3B08F"/>
+      <text x="131.25" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">QO</text>
-      <polygon points="132.349609375,73.5 137.349609375,78.5 132.349609375,83.5" fill="#BD8663"/>
-      <text x="131.349609375" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="132.25,73.5 137.25,78.5 132.25,83.5" fill="#BD8663"/>
+      <text x="131.25" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
       <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q4</text>
@@ -147,22 +147,22 @@
       <text x="13" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">OUT</text>
       <!-- Instance Name -->
-      <text x="68.6748046875" y="-5"
+      <text x="68.625" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">PWMOutput_Q4</text>
     </g>
-    <g id="fb_PWM_Value" transform="translate(247.3, 75.0)">
+    <g id="fb_PWM_Value" transform="translate(247.4, 75.0)">
       <path d="M 3 0
-            L 133.16015625 0
-            A 3 3 0 0 1 136.16015625 3
-            L 136.16015625 35
-            A 3 3 0 0 1 133.16015625 38
-            L 127.16015625 38
-            L 127.16015625 52
-            L 133.16015625 52
-            A 3 3 0 0 1 136.16015625 55
-            L 136.16015625 120
-            A 3 3 0 0 1 133.16015625 123
+            L 133.125 0
+            A 3 3 0 0 1 136.125 3
+            L 136.125 35
+            A 3 3 0 0 1 133.125 38
+            L 127.125 38
+            L 127.125 52
+            L 133.125 52
+            A 3 3 0 0 1 136.125 55
+            L 136.125 120
+            A 3 3 0 0 1 133.125 123
             L 3 123
             A 3 3 0 0 1 0 120
             L 0 55
@@ -208,8 +208,8 @@
       <polygon points="0,22.5 5,27.5 0,32.5" fill="#63B31F"/>
       <text x="6" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">REQ</text>
-      <polygon points="131.16015625,5.5 136.16015625,10.5 131.16015625,15.5" fill="#63B31F"/>
-      <text x="130.16015625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="131.125,5.5 136.125,10.5 131.125,15.5" fill="#63B31F"/>
+      <text x="130.125" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">INITO</text>
       <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
@@ -220,31 +220,31 @@
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u16ObjId</text>
-      <polygon points="131.16015625,56.5 136.16015625,61.5 131.16015625,66.5" fill="#A3B08F"/>
-      <text x="130.16015625" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="131.125,56.5 136.125,61.5 131.125,66.5" fill="#A3B08F"/>
+      <text x="130.125" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">QO</text>
-      <polygon points="131.16015625,73.5 136.16015625,78.5 131.16015625,83.5" fill="#BD8663"/>
-      <text x="130.16015625" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="131.125,73.5 136.125,78.5 131.125,83.5" fill="#BD8663"/>
+      <text x="130.125" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
       <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_PWM_Value</text>
-      <path d="M 126.16015625 107.5
-            L 128.66015625 107.5
-            L 128.66015625 109.16666666666667
-            L 131.16015625 109.16666666666667
-            L 131.16015625 107.5
-            L 136.16015625 107.5
-            L 136.16015625 117.5
-            L 131.16015625 117.5
-            L 131.16015625 115.83333333333333
-            L 128.66015625 115.83333333333333
-            L 128.66015625 117.5
-            L 126.16015625 117.5
+      <path d="M 126.125 107.5
+            L 128.625 107.5
+            L 128.625 109.16666666666667
+            L 131.125 109.16666666666667
+            L 131.125 107.5
+            L 136.125 107.5
+            L 136.125 117.5
+            L 131.125 117.5
+            L 131.125 115.83333333333333
+            L 128.625 115.83333333333333
+            L 128.625 117.5
+            L 126.125 117.5
             Z" fill="#845DAF"/>
-      <text x="123.16015625" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="123.125" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">IN</text>
       <!-- Instance Name -->
-      <text x="68.080078125" y="-5"
+      <text x="68.0625" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">PWM_Value</text>
     </g>

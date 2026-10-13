@@ -1,5 +1,7 @@
 # Uebung_012m_AIS: String Input und Speichern NVS mit Subapp (AIS Adapter)
 
+![Uebung_012m_AIS_network](./Uebung_012m_AIS_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

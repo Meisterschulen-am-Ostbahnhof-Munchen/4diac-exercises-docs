@@ -6,115 +6,78 @@
 
 ## Einleitung
 
-Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mithilfe von Adaptern und der Speicherung von Kalibrierungsparametern (Offset und Skalierung) in einer INI-Datei. Der Funktionsbaustein `AR_CALIBRATE` führt die lineare Kalibrierung durch. Die Parameter werden über zwei digitale Eingänge (`Input_I2`, `Input_I3`) gesteuert und die Ergebnisse in zwei separaten Speicherbausteinen (`INI_AR2`) abgelegt. Die Konvertierung zwischen analogen und stark typisierten Daten erfolgt über spezielle Adapterkonverter.
+Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mithilfe von Adaptern und der Speicherung der Kalibrierungsparameter (Offset und Skalierung) in einer INI-Datei. Der Funktionsbaustein `AR_CALIBRATE` führt die Zwei-Punkt-Kalibrierung durch. Die Kalibrierung wird über zwei digitale Eingänge (`Input_I2`, `Input_I3`) ausgelöst, die Ergebnisse werden in zwei separaten Speicherbausteinen (`INI_AR2`) abgelegt. Die Konvertierung zwischen den Adaptertypen `AD` und `AR` erfolgt über zwei hintereinandergeschaltete Adapterkonverter.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (keine Unter-Applikationen). Nachfolgend sind alle Bausteine mit ihren Parametern und Aufgaben beschrieben.
+Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (keine Unter-Applikationen).
 
-- **DigitalInput_I1**
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `Input` = `Input_I1` (physischer digitaler Eingang)
-  - **Funktionsweise**: Liest den Zustand eines digitalen Eingangs (Taster/Schalter) und gibt ihn über den Ausgangsadapter `IN` weiter. Dient als Trigger-Eingang für den Messzyklus.
-
-- **DigitalOutput_Q1**
-  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `Output` = `Output_Q1` (physischer digitaler Ausgang)
-  - **Funktionsweise**: Schaltet einen digitalen Ausgang entsprechend dem empfangenen Signal. Hier wird das Signal von `DigitalInput_I1` über eine Split-Struktur durchgeschleift.
-
-- **AnalogInput_I4**
-  - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `Input` = `AnalogInput_I4` (physischer analoger Eingang)
-    - `AnalogInput_hysteresis` = 50
-    - `TimeDelta` = 250 ms
-    - `TimeRateLimit` = 100
-  - **Funktionsweise**: Liest einen analogen Strom-/Spannungswert und stellt ihn als Adapterschnittstelle (`IN`) bereit. Die Parameter dienen der Filterung (Hysterese, Abtastrate, Ratenbegrenzung).
-
-- **CALIBRATE**
-  - **Typ**: `adapter::Engineering::measurements::AR_CALIBRATE`
-  - **Parameter**:
-    - `Y_Offset` = 100.0
-    - `Y_Scale` = 600.0
-  - **Funktionsweise**: Führt eine lineare Kalibrierung des analogen Eingangswerts (als `X`) durch. Die Formel lautet `Y = (X * Y_Scale) / 1000 + Y_Offset` (Annahme, da nicht explizit). Über die Adaptereingänge `CO` (Calibrate Offset) und `CS` (Calibrate Scale) kann die Kalibrierung ausgelöst werden. Die berechneten Offset- und Skalierungswerte werden an `OFFSET` und `SCALE` ausgegeben.
-
-- **INI_OFFSET**
-  - **Typ**: `eclipse4diac::storage::INI_AR2`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `SECTION` = `'Uebung_028a_AR'`
-    - `KEY` = `'OFFSET'`
-    - `DEFAULT_VALUE` = 0.0
-  - **Funktionsweise**: Liest oder schreibt den Wert für den Offset in einer INI-Datei (Abschnitt `Uebung_028a_AR`, Schlüssel `OFFSET`). Liefert den aktuellen Wert am Ausgang `VAL` bzw. ermöglicht das Speichern eines neuen Werts über den Eingang `VAL`.
-
-- **INI_SCALE**
-  - **Typ**: `eclipse4diac::storage::INI_AR2`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `SECTION` = `'Uebung_028a_AR'`
-    - `KEY` = `'SCALE'`
-    - `DEFAULT_VALUE` = 1.0
-  - **Funktionsweise**: Analog zu `INI_OFFSET`, jedoch für den Skalierungsfaktor (Schlüssel `SCALE`).
-
-- **DigitalInput_I2_CO**
-  - **Typ**: `logiBUS::io::DI::logiBUS_IE`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `Input` = `Input_I2`
-    - `InputEvent` = `BUTTON_SINGLE_CLICK`
-  - **Funktionsweise**: Liest den digitalen Eingang für die Offset-Kalibrierung (`CO`).
-
-- **DigitalInput_I3_CS**
-  - **Typ**: `logiBUS::io::DI::logiBUS_IE`
-  - **Parameter**:
-    - `QI` = TRUE
-    - `Input` = `Input_I3`
-    - `InputEvent` = `BUTTON_SINGLE_CLICK`
-  - **Funktionsweise**: Liest den digitalen Eingang für die Skalen-Kalibrierung (`CS`).
-
-- **AX_SPLIT_2**
-  - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
-  - **Parameter**: Keine
-  - **Funktionsweise**: Ein Adapter-Splitter, der ein eingehendes (Adapter-)Signal auf zwei Ausgänge verteilt. Hier wird das Signal von `DigitalInput_I1` gleichzeitig zum Ausgang `DigitalOutput_Q1` und zur Trigger-Anforderung (`SREQ`) des Analog-Eingangs geschickt.
-
-- **AD_TO_AUDI**
-  - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
-  - **Parameter**: Keine
-  - **Funktionsweise**: Konvertiert den analogen Adaptertyp (vermutlich `AnalogData`) in einen universellen `AUDI`-Adapter (allgemeiner Analogwert). Notwendig zur Typpassung zwischen unterschiedlichen Adapterdefinitionen.
-
-- **AUDI_TO_AR**
-  - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AR`
-  - **Parameter**: Keine
-  - **Funktionsweise**: Konvertiert den `AUDI`-Adapter zurück in den für `AR_CALIBRATE` benötigten Analogeingangsadapter (`AR`). Diese doppelte Konvertierung ist erforderlich, da ein direkter `AD_TO_AR`-Adapter einem „reinterpret_cast“ gleichkäme und die Typinformation verloren ginge.
+- **DigitalInput_I1**: logiBUS Digitaleingang
+    - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1`
+    - **Erklärung**: Liest den Zustand des Eingangs `I1` und gibt ihn über den Adapter `IN` weiter. Dient als Trigger für die Messanforderung des Analogeingangs.
+- **DigitalOutput_Q1**: logiBUS Digitalausgang
+    - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
+    - **Erklärung**: Schaltet den Ausgang `Q1` entsprechend dem Zustand von `I1` (über `AX_SPLIT_2.OUT1`).
+- **AnalogInput_I4**: logiBUS Analogeingang
+    - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`
+    - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Erklärung**: Liest den analogen Eingang `I4` und stellt den Wert über den Adapter `IN` bereit. Über den Adapter `SREQ` kann eine Messung angefordert werden. Die Parameter dienen der Filterung (Hysterese, Zeitdelta, Ratenbegrenzung).
+- **CALIBRATE**: Zwei-Punkt-Kalibrierung
+    - **Typ**: `adapter::Engineering::measurements::AR_CALIBRATE`
+    - **Parameter**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
+    - **Erklärung**: Berechnet den kalibrierten Wert nach der Formel `Y = (X + OFFSET) * SCALE`. Mit dem Event `CO` (Calibrate Offset) wird `OFFSET := Y_Offset - X` gesetzt, mit dem Event `CS` (Calibrate Scale) wird `SCALE := Y_Scale / (X + OFFSET)` gesetzt. `Y_Offset` und `Y_Scale` sind dabei Sollwerte auf der Ausgangsseite. `CO` muss vor `CS` ausgeführt werden, da `CS` den Offset verwendet. Die berechneten Werte werden über die bidirektionalen Adapter `OFFSET` und `SCALE` ausgegeben bzw. eingelesen. Der kalibrierte Ausgang `Y` ist in dieser Übung nicht verschaltet.
+- **INI_OFFSET**: Speicherbaustein für den Offset
+    - **Typ**: `eclipse4diac::storage::INI_AR2`
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `SECTION = 'Uebung_028a_AR'`, `KEY = 'OFFSET'`, `DEFAULT_VALUE = 0.0`
+    - **Erklärung**: Lädt den Wert aus der INI-Datei (Abschnitt `Uebung_028a_AR`, Schlüssel `OFFSET`; ohne Eintrag gilt `DEFAULT_VALUE`) und liefert ihn über den Adapter `VAL`; neue Werte von `VAL` werden gespeichert. `SETM = TRUE` aktiviert die Spiegelung beim Setzen.
+- **INI_SCALE**: Speicherbaustein für die Skalierung
+    - **Typ**: `eclipse4diac::storage::INI_AR2`
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `SECTION = 'Uebung_028a_AR'`, `KEY = 'SCALE'`, `DEFAULT_VALUE = 1.0`
+    - **Erklärung**: Analog zu `INI_OFFSET`, jedoch für den Skalierungsfaktor (Schlüssel `SCALE`).
+- **DigitalInput_I2_CO**: logiBUS Eingang mit Klick-Erkennung für die Offset-Kalibrierung
+    - **Typ**: `logiBUS::io::DI::logiBUS_IE`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Ein Einzelklick auf `I2` löst `CALIBRATE.CO` aus.
+- **DigitalInput_I3_CS**: logiBUS Eingang mit Klick-Erkennung für die Skalen-Kalibrierung
+    - **Typ**: `logiBUS::io::DI::logiBUS_IE`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Ein Einzelklick auf `I3` löst `CALIBRATE.CS` aus.
+- **AX_SPLIT_2**: Adapter-Splitter
+    - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
+    - **Parameter**: keine
+    - **Erklärung**: Verteilt das Signal von `DigitalInput_I1` gleichzeitig auf `DigitalOutput_Q1` (`OUT1`) und auf die Messanforderung `AnalogInput_I4.SREQ` (`OUT2`).
+- **AD_TO_AUDI**: Adapterkonverter
+    - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den vom Analogeingang gelieferten Adapter in einen `AUDI`-Adapter um.
+- **AUDI_TO_AR**: Adapterkonverter
+    - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AR`
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den `AUDI`-Adapter in den `AR`-Adapter um, den `AR_CALIBRATE` am Eingang `X` erwartet.
 
 ## Programmablauf und Verbindungen
 
-1. **Digitaler Eingang I1** dient als Start-Impuls für eine Messung. Sein Signal wird über den Splitter `AX_SPLIT_2` auf den Ausgang `DigitalOutput_Q1` (z. B. Status-LED) und auf den `SREQ`-Eingang des analogen Eingangs `AnalogInput_I4` verteilt.
-2. **AnalogInput_I4** erfasst daraufhin den analogen Messwert und liefert ihn als Adapterausgang `IN` an den Konverter `AD_TO_AUDI`.
-3. Die Konverterkette `AD_TO_AUDI` → `AUDI_TO_AR` passt den Typ an, sodass der Wert an den `X`-Eingang von `CALIBRATE` angeschlossen werden kann.
-4. **DigitalInput_I2_CO** (Eingang I2) triggert die Offset-Kalibrierung: Wird dieser Eingang aktiv, führt `CALIBRATE` eine Offset-Korrektur durch und gibt den neuen Offset-Wert an `INI_OFFSET` weiter, der ihn in der INI-Datei speichert.
-5. **DigitalInput_I3_CS** (Eingang I3) triggert entsprechend die Skalierungs-Kalibrierung; der neue Skalierungsfaktor wird an `INI_SCALE` übergeben und gespeichert.
-6. Die gespeicherten Werte aus `INI_OFFSET` und `INI_SCALE` können bei späteren Starts der Steuerung wieder geladen werden, sodass die Kalibrierung dauerhaft erhalten bleibt.
+1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN` (AdapterConnection): das Signal von `I1` wird in den Splitter geführt.
+2. `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT` und `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ` (AdapterConnections): `Q1` folgt `I1`, gleichzeitig wird eine Messung am Analogeingang angefordert.
+3. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN` → `AUDI_TO_AR.AUDI_IN` (`AD_TO_AUDI.AUDI_OUT`) → `CALIBRATE.X` (`AUDI_TO_AR.AR_OUT`) (AdapterConnections): der Messwert wird über die Konverterkette typgerecht an den Kalibrierbaustein geführt.
+4. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` (EventConnection): ein Klick auf `I2` löst die Offset-Kalibrierung aus.
+5. `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` (EventConnection): ein Klick auf `I3` löst die Skalen-Kalibrierung aus.
+6. `CALIBRATE.OFFSET` → `INI_OFFSET.VAL` und `CALIBRATE.SCALE` → `INI_SCALE.VAL` (AdapterConnections): Offset und Skalierung werden in der INI-Datei abgelegt bzw. beim Start von dort geladen, sodass die Kalibrierung dauerhaft erhalten bleibt.
 
-**Wichtige Anmerkung**: Die doppelte Konvertierung von `AD_TO_AUDI` und `AUDI_TO_AR` ist bewusst so implementiert, um Typkompatibilität zu gewährleisten. Ein direkter Konverter würde die Daten nur uminterpretieren, was in der Praxis zu Fehlfunktionen führen kann.
+**Wichtige Anmerkung** (Kommentar im Modell): Die doppelte Konvertierung ist bewusst so gewählt. Ein direkter `AD_TO_AR` wäre wie ein „reinterpret_cast“; `AD_TO_AR_NUM` ginge aber auch.
 
 **Lernziele dieser Übung**:
 
 - Umgang mit analogen Eingangsadaptern und deren Parametrierung.
 - Einsatz von Adapterkonvertern zur Typanpassung.
 - Verwendung von INI-Speicherbausteinen zum dauerhaften Ablegen von Konfigurationsparametern.
-- Verständnis der Kalibrierungslogik in der Automatisierungstechnik.
-
-**Schwierigkeitsgrad**: Mittel (Grundkenntnisse in 4diac/Adapter-Konzepten erforderlich).
+- Verständnis der Zwei-Punkt-Kalibrierung (Offset, dann Skalierung).
 
 ## Zusammenfassung
 
-Die Übung `Uebung_028a_AR` implementiert eine vollständige Analog-Eingangs-Kalibrierung, bei der Offset und Skalierung über zwei digitale Eingänge eingelernt und in einer INI-Datei persistiert werden. Der Messablauf wird durch einen weiteren digitalen Eingang gestartet. Die verwendeten Adapterkonverter (`AD_TO_AUDI`, `AUDI_TO_AR`) demonstrieren die typkorrekte Weiterverarbeitung von analogen Signalen in der 4diac-IDE. Das Gesamtsystem bildet eine flexible Grundlage für industrielle Messaufgaben mit Speicherung von Kalibrierparametern.
+Die Übung `Uebung_028a_AR` implementiert eine Analog-Eingangs-Kalibrierung, bei der Offset und Skalierung über zwei Klick-Eingänge (`I2`, `I3`) eingelernt und in einer INI-Datei persistiert werden. Eine Messung wird über `I1` angefordert, das gleichzeitig `Q1` schaltet. Die Adapterkonverter `AD_TO_AUDI` und `AUDI_TO_AR` demonstrieren die typkorrekte Weiterverarbeitung analoger Signale in der 4diac IDE.
 
 ---
 

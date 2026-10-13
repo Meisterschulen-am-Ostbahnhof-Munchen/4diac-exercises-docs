@@ -1,5 +1,7 @@
 # Uebung_010e2_AX: SR+Toggle-Flipflop mit 3x SoftKey und GreenWhiteBackground mit Typed Subapp
 
+![Uebung_010e2_AX_network](./Uebung_010e2_AX_network.svg)
+
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010e2_AX`.
 
 ----
