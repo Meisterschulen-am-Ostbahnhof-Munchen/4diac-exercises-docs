@@ -1,5 +1,7 @@
 # Exercise_010d2_AX: Toggle flip-flop with SoftKey_F1 and GreenWhiteBackground using a Typed Subapp
 
+![Uebung_010d2_AX_network](./Uebung_010d2_AX_network.svg)
+
 This article describes the logiBUS® exercise `Uebung_010d2_AX`.
 
 ----

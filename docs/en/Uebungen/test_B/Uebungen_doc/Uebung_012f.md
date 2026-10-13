@@ -1,5 +1,7 @@
 # Exercise_012f: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapplication
 
+![Uebung_012f_network](./Uebung_012f_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

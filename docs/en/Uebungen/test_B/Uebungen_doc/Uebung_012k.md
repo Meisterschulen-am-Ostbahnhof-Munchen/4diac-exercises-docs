@@ -1,5 +1,7 @@
 # Exercise_012k: String Input and Saving to INI with Subapp
 
+![Uebung_012k_network](./Uebung_012k_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

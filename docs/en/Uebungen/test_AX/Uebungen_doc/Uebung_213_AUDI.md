@@ -6,151 +6,51 @@
 
 ## Introduction
 
-This exercise implements a **Up Counter (CTU)** according to IEC 61131-3 in an adapter version for the **UDINT** data type. The counter is controlled via two digital inputs (count pulse and reset) and outputs the current counter value as well as the end-of-count value to a terminal and a digital output. A fixed preset value of 5 is specified via a conversion block.
-This exercise is designed to introduce you to:
+This exercise shows an up counter (CTU) according to IEC 61131-3 as an adapter version for the data type UDINT. The counter is operated via two digital inputs (count and reset); the fixed preset value `5` comes from an `initval_AUDI` constant block. The count value is shown on the ISOBUS terminal, and reaching the preset value is output at `Q1`.
 
-- Adapter-based function blocks (AUDI_FB_CTU)
-- Data conversion (UDINT → UDI)
-- Connecting logiBUS inputs/outputs
-- Numeric terminal output via the function block `Q_NumericValue_AUDI`
+## Function Blocks (FBs) Used
 
-## Function blocks (FBs) used
-
-### Sub-blocks
-
-#### **AUDI_FB_CTU**
-
-- **Type**: `adapter::iec61131::counters::AUDI_FB_CTU`
-- **Internal FBs used**: None
-- **Parameters**: No explicit parameters (all control via adapter interfaces)
-- **Event inputs/outputs**:
-- No events (pure data and adapter connections)
-- **Data inputs/outputs** (adapter interfaces):
-- **CU** (Count Up) – Counting pulse (via adapter connection from `Input_CU.IN`)
-- **R** (Reset) – Resets the counter to 0 (from `Input_R.IN`)
-- **PV** (Preset Value) – Comparison value for setting `Q` (from `AUDI_UDINT_TO_UDI.AUDI_OUT`)
-- **Q** (Output) – Becomes TRUE when `CV ≥ PV` (at `Output_Q1.OUT`)
-- **CV** (Current Value) – Current counter reading (at `Q_NumericValue_AUDI.u32NewValue`)
-- **Functionality**:
-
-On each rising edge at the CU input, the counter is incremented by 1, provided `R=FALSE` is present. A signal at `R` resets the counter to 0. The output `Q` is TRUE as soon as the current counter value `CV` reaches or exceeds the preset value `PV`. The counting range is `UDINT` (0 … 4,294,967,295).
-
-#### **AUDI_UDINT_TO_UDI**
-
-- **Type**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
-- **Internal Function Blocks Used**: None
-- **Parameters**:
-- `OUT` = `UDINT#5` (fixed preset value)
-- **Event Input/Output**:
-- **REQ** (Event Input) – triggers the conversion (connected to `Input_R.INITO`)
-- **Data Output**:
-- **AUDI_OUT** (Adapter Output) – sends the converted UDI value (corresponds to `UDINT#5`) to `AUDI_FB_CTU.PV`
-- **Functionality**:
-
-Converts the constant UDINT value 5 The signal is converted into a UDI adapter signal, which is then used as a preset value by the subsequent CTU module. This conversion is triggered once during the initialization event (`INITO`) of the reset input.
-
-#### **Input_CU**
-
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Parameters**:
-- `QI` = `TRUE` (Active Block)
-- `Input` = `Input_I1` (Physical Input 1)
-- **Event/Data Connections**:
-- No events
-- **IN** (Adapter Output) – supplies the digital input value to `AUDI_FB_CTU.CU`
-- **Functionality**:
-
-Provides the first digital logiBUS input (terminal I1) as an adapter signal for the counting pulse.
-
----
-
-#### **Input_R**
-
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Parameters**:
-- `QI` = `TRUE`
-- `Input` = `Input_I2`
-- **Event/Data Connections**:
-- **INITO** (Event Output) – triggered at the start of initialization (connected to `AUDI_UDINT_TO_UDI.REQ`)
-- **IN** (Adapter Output) – supplies the digital input value to `AUDI_FB_CTU.R`
-- **Functionality**:
-
-Provides the second digital logiBUS input (terminal I2) as an adapter signal for resetting the counter. Additionally, the event `INITO` is generated at startup, triggering a one-time initialization of the preset value.
-
-#### **Output_Q1**
-
-- **Type**: `logiBUS::io::DQ::logiBUS_QXA`
-- **Parameters**:
-- `QI` = `TRUE`
-- `Output` = `Output_Q1` (Physical Output 1)
-- **Event/Data Connections**:
-- No events
-- **OUT** (Adapter Input) – receives the signal from `AUDI_FB_CTU.Q`
-- **Functionality**:
-
-Receives the counter end value (`Q`) and outputs it on the first digital logiBUS output (terminal Q1).
-
----
-
-#### **Q_NumericValue_AUDI**
-
-- **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
-- **Parameters**:
-- `u16ObjId` = `OutputNumber_N1` (defines the terminal output object)
-- **Event/Data Ports**:
-- No events
-- **u32NewValue** (data input) – receives the current counter value from `AUDI_FB_CTU.CV`
-- **Functionality**:
-
-Displays the passed 32-bit value (CV) on a numeric terminal (e.g., HMI). The object ID `OutputNumber_N1` determines on which display element the number appears.
-
----
+- **Input_CU**: Count input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
+    - **Explanation**: Provides the state of `I1` as adapter output `IN`.
+- **Input_R**: Reset input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as adapter output `IN`.
+- **initval_AUDI**: Constant for the preset value
+    - **Type**: [`adapter::types::unidirectional::AUDI::initval::initval_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/initval/initval_AUDI/)
+    - **Parameters**: `INIT_VAL = 5`
+    - **Explanation**: Provides the preset value `5` as `AUDI` adapter value to `AUDI_FB_CTU.PV`.
+- **AUDI_FB_CTU**: Up counter (UDINT, adapter version)
+    - **Type**: [`adapter::iec61131::counters::AUDI_FB_CTU`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/iec61131-3/counters/AUDI_FB_CTU/)
+    - **Parameters**: none
+    - **Explanation**: Counts up via the adapter socket `CU`, `R` resets the counter, `PV` is the preset value. The adapter output `Q` is `TRUE` when the count value `CV` reaches or exceeds the preset value `PV`; `CV` provides the current count value.
+- **Output_Q1**: Digital output
+    - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
+    - **Explanation**: Outputs the counter output `Q` at the physical output `Q1`.
+- **Q_NumericValue_AUDI**: Display on the ISOBUS terminal
+    - **Type**: [`isobus::UT::Q::Q_NumericValue_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_AUDI/)
+    - **Parameters**: `u16ObjId = OutputNumber_N1`
+    - **Explanation**: Receives the count value via the `AUDI` adapter `u32NewValue` and shows it in the object `OutputNumber_N1`.
 
 ## Program Flow and Connections
 
-### Flow
+1. `Input_CU.IN` → `AUDI_FB_CTU.CU` (AdapterConnection): The state of `I1` is the count input.
+2. `Input_R.IN` → `AUDI_FB_CTU.R` (AdapterConnection): The state of `I2` resets the counter.
+3. `initval_AUDI.OUT` → `AUDI_FB_CTU.PV` (AdapterConnection): The preset value `5` is passed as preset.
+4. `AUDI_FB_CTU.Q` → `Output_Q1.OUT` (AdapterConnection): The counter output is applied to `Q1`.
+5. `AUDI_FB_CTU.CV` → `Q_NumericValue_AUDI.u32NewValue` (AdapterConnection): The count value is shown on the terminal.
 
-1. **Initialization**:
-
-After system startup, the reset input `Input_R` is initialized. The resulting event `INITO` triggers the conversion block `AUDI_UDINT_TO_UDI`, which passes the preset value `5` to the counter `AUDI_FB_CTU.PV`.
-
-1. **Counting Operation**:
-
-Every rising edge at the logiBUS input I1 (`Input_CU`) increments the counter as long as the reset (`Input_R`) is inactive.
-
-- A signal at input I2 (`Input_R`) resets the counter to 0.
-
-1. **Output**:
-
-- The counter's output `Q` is connected directly to the logiBUS output Q1 (`Output_Q1`).
-- The current counter reading `CV` is continuously sent to the terminal block `Q_NumericValue_AUDI` and displayed there.
-
-### Connection Overview (from the Network)
-
-| Source | Destination | Type |
-| -------- | ------ | ----- |
-| `Input_CU.IN` | `AUDI_FB_CTU.CU` | Adapter (Data) |
-| `Input_R.IN` | `AUDI_FB_CTU.R` | Adapter (Data) |
-| `Input_R.INITO` | `AUDI_UDINT_TO_UDI.REQ` | Event |
-| `AUDI_UDINT_TO_UDI.AUDI_OUT` | `AUDI_FB_CTU.PV` | Adapter (Data) |
-| `AUDI_FB_CTU.Q` | `Output_Q1.OUT` | Adapter (Data) |
-| `AUDI_FB_CTU.CV` | `Q_NumericValue_AUDI.u32NewValue` | Data |
-
-> **Note**: A comment is stored in the network: *“Insert an AX_D_FF here if necessary to reduce the number of events.”* – This indicates a possible optimization where an edge-triggered flip-flop can be added to reduce the event rate.
-
----
+**Behavior**: Each rising edge on `I1` increases the count value; `Q1` becomes `TRUE` as soon as the count value reaches or exceeds `5`. `I2` resets the counter. The count value appears in `OutputNumber_N1`. According to the network comment, an `AX_D_FF` can optionally be inserted here to reduce the number of events.
 
 ## Summary
 
-The exercise **Exercise_213_AUDI** implements a complete up-counter (CTU) according to IEC 61131-3 in an adapter variant. The counter is operated via two logiBUS digital inputs, and its current value as well as when the preset value is reached are output to both a terminal and a digital output. The one-time initialization of the preset value is performed via a converter block. This exercise teaches the use of adapter-based function blocks, data conversion, and the integration of inputs/outputs in the 4diac IDE.
-
-**Difficulty Level**: Intermediate
-**Prerequisites**: Basic knowledge of the 4diac IDE, IEC 61131-3, logiBUS inputs/outputs
+The exercise shows the adapter-based connection of an IEC 61131-3 counter: inputs and outputs, preset value and display are wired purely via adapter connections, without additional event connections.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]

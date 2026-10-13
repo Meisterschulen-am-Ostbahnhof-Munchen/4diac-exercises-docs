@@ -1,5 +1,7 @@
 # Uebung_012f: Numeric Value Input PHYS und Speichern NVS mit Subapp
 
+![Uebung_012f_network](./Uebung_012f_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

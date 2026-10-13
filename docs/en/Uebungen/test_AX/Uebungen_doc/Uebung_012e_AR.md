@@ -1,5 +1,7 @@
 # Exercise_012e_AR: Numeric Value Input PHYS and Saving INI with Subapp (AR Adapter)
 
+![Uebung_012e_AR_network](./Uebung_012e_AR_network.svg)
+
 * * * * * * * * * *
 This exercise demonstrates the input of a numeric value (PHYS) and its storage using a subapp that utilizes an AR adapter. The entered value is stored under a predefined key in non-volatile memory (NVS). The exercise shows how constants from a central pool (`DefaultPool_Numeric`) and NVS keys are imported and used in a subapp parameter.
 

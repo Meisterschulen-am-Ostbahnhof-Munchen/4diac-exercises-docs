@@ -5,25 +5,25 @@
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
-      src: local("TGL 0-17_std");
+      src: local("TGL 0-17_std"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-17";
-      src: local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16_std";
-      src: local("TGL 0-16_std");
+      src: local("TGL 0-16_std"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16";
-      src: local("TGL 0-16");
+      src: local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
@@ -44,19 +44,24 @@
   <rect x="-50.2" y="-144.0" width="1202.2" height="585.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
   <rect x="-50.2" y="-144.0" width="1202.2" height="25.0" fill="white" stroke="none"/>
   <line x1="-50.2" y1="-119.5" x2="1152.0" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="-45.2" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Geraet A (Station 11, 192.168.1.11): wie SoftKeySR_PC_A_OPC, aber HMI (2 SoftKeys + GreenWhiteBackground) und OPC-UA-Trigger sind getrennt - SoftKeySR_ASR_AX buendelt die HMI hinter einem ASR_AX-Plug, ASR_AX_CLIENT_0_SUBSCRIBE_1 buendelt die 2 CLIENT_0-Instanzen + AX_SUBSCRIBE_1 hinter einem ASR_AX-Socket - 'SUB style': das Protokoll steckt im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
+  <text x="-45.2" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Geraet A (Station 11, 192.168.1.11): wie SoftKeySR_PC_A_OPC, aber HMI (2
+SoftKeys + GreenWhiteBackground) und OPC-UA-Trigger sind getrennt -
+SoftKeySR_ASR_AX buendelt die HMI hinter einem ASR_AX-Plug,
+ASR_AX_CLIENT_0_SUBSCRIBE_1 buendelt die 2 CLIENT_0-Instanzen + AX_SUBSCRIBE_1
+hinter einem ASR_AX-Socket - 'SUB style': das Protokoll steckt im
+MyLib::sys-Composite, nicht in der Resource des Geraets</text>
   <g id="sidebars">
     <rect x="-50.2" y="-119.0" width="90.2" height="560.0" fill="#EEF5FF" stroke="none"/>
     <line x1="40.0" y1="-119.0" x2="40.0" y2="441.0" stroke="#A0A0A0" stroke-width="0.5"/>
   </g>
   <g id="connections">
-    <polyline points="40.0,-50.0 245.0,-50.0 250.0,-45.0 250.0,148.5 255.0,153.5 854.0,153.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="40.0,-33.0 245.0,-33.0 250.0,-28.0 250.0,165.5 255.0,170.5 854.0,170.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="40.0,-16.0 245.0,-16.0 250.0,-11.0 250.0,182.5 255.0,187.5 854.0,187.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="40.0,-84.0 272.0,-84.0 277.0,-79.0 277.0,264.5 282.0,269.5 509.0,269.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="40.0,-67.0 241.0,-67.0 246.0,-62.0 246.0,281.5 251.0,286.5 509.0,286.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="650.5,303.5 780.5,303.5 785.5,298.5 785.5,209.5 790.5,204.5 854.0,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="650.5,303.5 780.5,303.5 785.5,298.5 785.5,209.5 790.5,204.5 854.0,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="40.0,-50.0 245.0,-50.0 250.0,-45.0 250.0,148.5 255.0,153.5 853.9,153.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-33.0 245.0,-33.0 250.0,-28.0 250.0,165.5 255.0,170.5 853.9,170.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-16.0 245.0,-16.0 250.0,-11.0 250.0,182.5 255.0,187.5 853.9,187.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-84.0 272.0,-84.0 277.0,-79.0 277.0,264.5 282.0,269.5 508.9,269.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-67.0 241.0,-67.0 246.0,-62.0 246.0,281.5 251.0,286.5 508.9,286.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="650.5,303.5 780.5,303.5 785.5,298.5 785.5,209.5 790.5,204.5 853.9,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="650.5,303.5 780.5,303.5 785.5,298.5 785.5,209.5 790.5,204.5 853.9,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
     <polygon points="35.0,-89.0 40.0,-84.0 35.0,-79.0" fill="#18519E"/>
@@ -76,18 +81,18 @@
           fill="#000000" text-anchor="end">ID_STATE_READ</text>
   </g>
   <g id="instances">
-    <g id="fb_TRIGGER" transform="translate(854.0, 75.0)">
+    <g id="fb_TRIGGER" transform="translate(853.9, 75.0)">
       <path d="M 3 0
-            L 154.091796875 0
-            A 3 3 0 0 1 157.091796875 3
-            L 157.091796875 35
-            A 3 3 0 0 1 154.091796875 38
-            L 148.091796875 38
-            L 148.091796875 52
-            L 154.091796875 52
-            A 3 3 0 0 1 157.091796875 55
-            L 157.091796875 137
-            A 3 3 0 0 1 154.091796875 140
+            L 154.1875 0
+            A 3 3 0 0 1 157.1875 3
+            L 157.1875 35
+            A 3 3 0 0 1 154.1875 38
+            L 148.1875 38
+            L 148.1875 52
+            L 154.1875 52
+            A 3 3 0 0 1 157.1875 55
+            L 157.1875 137
+            A 3 3 0 0 1 154.1875 140
             L 3 140
             A 3 3 0 0 1 0 137
             L 0 55
@@ -102,39 +107,39 @@
             fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
       <!-- Name Section -->
-      <path d="M 19.54296875 37.0
-            L 33.54296875 37.0
-            A 1 1 0 0 1 34.54296875 38.0
-            L 34.54296875 41.0
-            L 33.04296875 41.0
-            L 33.04296875 43.666666666666664
-            L 34.54296875 43.666666666666664
-            L 34.54296875 52.0
-            A 1 1 0 0 1 33.54296875 53.0
-            L 19.54296875 53.0
-            A 1 1 0 0 1 18.54296875 52.0
-            L 18.54296875 43.666666666666664
-            L 20.04296875 43.666666666666664
-            L 20.04296875 41.0
-            L 18.54296875 41.0
-            L 18.54296875 38.0
-            A 1 1 0 0 1 19.54296875 37.0
+      <path d="M 19.625 37.0
+            L 33.625 37.0
+            A 1 1 0 0 1 34.625 38.0
+            L 34.625 41.0
+            L 33.125 41.0
+            L 33.125 43.666666666666664
+            L 34.625 43.666666666666664
+            L 34.625 52.0
+            A 1 1 0 0 1 33.625 53.0
+            L 19.625 53.0
+            A 1 1 0 0 1 18.625 52.0
+            L 18.625 43.666666666666664
+            L 20.125 43.666666666666664
+            L 20.125 41.0
+            L 18.625 41.0
+            L 18.625 38.0
+            A 1 1 0 0 1 19.625 37.0
             Z"
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
-      <text x="26.54296875" y="49.0"
+      <text x="26.625" y="49.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
             fill="#000000" text-anchor="middle">C</text>
-      <text x="36.54296875" y="49.0"
+      <text x="36.625" y="49.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ASR_AX_CLIENT_0…</text>
       <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
       <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">INIT</text>
-      <polygon points="152.091796875,5.5 157.091796875,10.5 152.091796875,15.5" fill="#63B31F"/>
-      <text x="151.091796875" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,5.5 157.1875,10.5 152.1875,15.5" fill="#63B31F"/>
+      <text x="151.1875" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">INITO</text>
-      <polygon points="152.091796875,22.5 157.091796875,27.5 152.091796875,32.5" fill="#63B31F"/>
-      <text x="151.091796875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,22.5 157.1875,27.5 152.1875,32.5" fill="#63B31F"/>
+      <text x="151.1875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
       <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
@@ -148,17 +153,17 @@
       <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_STATE</text>
-      <polygon points="152.091796875,56.5 157.091796875,61.5 152.091796875,66.5" fill="#A3B08F"/>
-      <text x="151.091796875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,56.5 157.1875,61.5 152.1875,66.5" fill="#A3B08F"/>
+      <text x="151.1875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">QO</text>
-      <polygon points="152.091796875,73.5 157.091796875,78.5 152.091796875,83.5" fill="#BD8663"/>
-      <text x="151.091796875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,73.5 157.1875,78.5 152.1875,83.5" fill="#BD8663"/>
+      <text x="151.1875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS_SET</text>
-      <polygon points="152.091796875,90.5 157.091796875,95.5 152.091796875,100.5" fill="#BD8663"/>
-      <text x="151.091796875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,90.5 157.1875,95.5 152.1875,100.5" fill="#BD8663"/>
+      <text x="151.1875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS_RESET</text>
-      <polygon points="152.091796875,107.5 157.091796875,112.5 152.091796875,117.5" fill="#BD8663"/>
-      <text x="151.091796875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <polygon points="152.1875,107.5 157.1875,112.5 152.1875,117.5" fill="#BD8663"/>
+      <text x="151.1875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS_STATE</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
       <path d="M 0 124.5
@@ -177,22 +182,22 @@
       <text x="13" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">S_R</text>
       <!-- Instance Name -->
-      <text x="78.5458984375" y="-5"
+      <text x="78.59375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">TRIGGER</text>
     </g>
-    <g id="fb_SoftKeySR_ASR_AX" transform="translate(509.0, 225.0)">
+    <g id="fb_SoftKeySR_ASR_AX" transform="translate(508.9, 225.0)">
       <path d="M 3 0
-            L 138.5625 0
-            A 3 3 0 0 1 141.5625 3
-            L 141.5625 18
-            A 3 3 0 0 1 138.5625 21
-            L 132.5625 21
-            L 132.5625 35
-            L 138.5625 35
-            A 3 3 0 0 1 141.5625 38
-            L 141.5625 86
-            A 3 3 0 0 1 138.5625 89
+            L 138.625 0
+            A 3 3 0 0 1 141.625 3
+            L 141.625 18
+            A 3 3 0 0 1 138.625 21
+            L 132.625 21
+            L 132.625 35
+            L 138.625 35
+            A 3 3 0 0 1 141.625 38
+            L 141.625 86
+            A 3 3 0 0 1 138.625 89
             L 3 89
             A 3 3 0 0 1 0 86
             L 0 38
@@ -243,23 +248,23 @@
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u16ObjId_RES…</text>
 
-      <path d="M 131.5625 73.5
-            L 134.0625 73.5
-            L 134.0625 75.16666666666667
-            L 136.5625 75.16666666666667
-            L 136.5625 73.5
-            L 141.5625 73.5
-            L 141.5625 83.5
-            L 136.5625 83.5
-            L 136.5625 81.83333333333333
-            L 134.0625 81.83333333333333
-            L 134.0625 83.5
-            L 131.5625 83.5
+      <path d="M 131.625 73.5
+            L 134.125 73.5
+            L 134.125 75.16666666666667
+            L 136.625 75.16666666666667
+            L 136.625 73.5
+            L 141.625 73.5
+            L 141.625 83.5
+            L 136.625 83.5
+            L 136.625 81.83333333333333
+            L 134.125 81.83333333333333
+            L 134.125 83.5
+            L 131.625 83.5
             Z" fill="#845DAF"/>
-      <text x="128.5625" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="128.625" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
       <!-- Instance Name -->
-      <text x="70.78125" y="-5"
+      <text x="70.8125" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKeySR_ASR_AX</text>
     </g>

@@ -20,7 +20,7 @@ Diese Übung ist die Adapter-Variante von [Übung 226](../../test_B/Uebungen_doc
 
 - **Parameter der Instanz `SplitBar`**: `stObj = Bargraph_Split_BargraphSplit`.
 - **Interne Verdrahtung** (im `.fbt` selbst, nicht in dieser Übung geändert): Der AR-Adapter-Socket `rPhys` liefert Event (`E1`) und Datum (`D1`) direkt an eine einzige innenliegende Instanz `Inner` vom Typ `BargraphSplitFS` (`rPhys.E1 → Inner.REQ`, `rPhys.D1 → Inner.rValue`) — die Klammer-Logik für beide Balkenseiten wird also **nicht** dupliziert, sondern unverändert wiederverwendet. `Inner.xOverRight`/`Inner.xOverLeft` werden als eigene AX-Adapter-Plugs (`xOverRight`, `xOverLeft`) nach außen gereicht, exakt wie `xOver`/`xUnder` bei `PositionMarkerFSA`. `stObj` wird 1:1 an `Inner` durchgereicht.
-- **Bausteindatei**: `Ventilsteuerung\4diacIDE-workspace\.lib\isobus-3.0.0\typelib\UT\Q\BargraphSplitFS_AR.fbt`.
+- **Bausteindatei**: `Ventilsteuerung\4diacIDE-workspace\.lib\isobus_signalprocessing_adapter-3.0.0\typelib\UT\Q\BargraphSplitFS_AR.fbt`.
 
 Die bestehenden Bausteine `NumericValue_PHYSA` und `BargraphSplitFS` selbst wurden für diesen Wrapper nicht verändert.
 

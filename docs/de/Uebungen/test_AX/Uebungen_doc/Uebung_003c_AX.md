@@ -1,5 +1,7 @@
 # Uebung_003c_AX: DigitalInput_I1-2-3-4 auf AUX
 
+![Uebung_003c_AX_network](./Uebung_003c_AX_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c_AX`. Diese Übung demonstriert die Anbindung von lokalen digitalen Eingängen an das ISOBUS-System als "Auxiliary Inputs". Dies ermöglicht die Nutzung lokaler Schalter zur Steuerung von ISOBUS-Geräten.

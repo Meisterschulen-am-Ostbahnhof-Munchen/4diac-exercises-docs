@@ -1,5 +1,7 @@
 # Uebung_010b4_AX: SoftKey_F1-8 auf DigitalOutput_Q1-8
 
+![Uebung_010b4_AX_network](./Uebung_010b4_AX_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b4_AX`.

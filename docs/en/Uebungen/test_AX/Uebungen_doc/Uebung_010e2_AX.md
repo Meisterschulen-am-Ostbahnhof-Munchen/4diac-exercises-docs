@@ -1,5 +1,7 @@
 # Exercise_010e2_AX: SR+Toggle flip-flop with 3x SoftKey and GreenWhiteBackground using a Typed Subapp
 
+![Uebung_010e2_AX_network](./Uebung_010e2_AX_network.svg)
+
 This article describes the logiBUS® exercise `Uebung_010e2_AX`.
 
 ----

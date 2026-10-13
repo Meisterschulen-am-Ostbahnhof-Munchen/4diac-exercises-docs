@@ -1,5 +1,7 @@
 # Exercise_012m: String Input and Saving to NVS with a Subapp
 
+![Uebung_012m_network](./Uebung_012m_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

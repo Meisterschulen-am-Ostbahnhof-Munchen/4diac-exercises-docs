@@ -6,91 +6,62 @@
 
 ## Introduction
 
-This exercise implements a bidirectional counter (up/down counter) according to IEC 61131-3 (type CTUD) as an adapter version. The counter value is processed as a UDINT (unsigned double integer) and output via a terminal module to a numeric display. The counter functions are controlled via four digital inputs (CU, CD, R, LD) connected via logiBUS modules. The outputs (QU, QD) are also routed to digital outputs via logiBUS modules.
+This exercise shows an up/down counter (CTUD) according to IEC 61131-3 as an adapter version for the data type UDINT. Four digital inputs control counting up, counting down, reset and load; the fixed preset value `5` comes from an `initval_AUDI` constant block. The count value is shown on the ISOBUS terminal, and the counter outputs `QU` and `QD` are applied to `Q1` and `Q2`.
 
 ## Function Blocks (FBs) Used
 
-- **AUDI_FB_CTUD**
-
-Type: `adapter::iec61131::counters::AUDI_FB_CTUD`
-
-Core block: IEC 61131 compliant forward/downward counter (CTUD).
-
-Event inputs: CU (forward count), CD (downward count), R (reset), LD (load preset value).
-
-Data outputs: QU (overflow during forward count), QD (overflow during backward count), CV (current counter value).
-
-Data inputs: PV (preset value).
-
-- **AUDI_UDINT_TO_UDI**
-
-Type: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
-
-Converts a constant UDINT value into a suitable adapter output (UDI) for the PV input of the counter.
-
-Parameter: OUT = `UDINT#5` (preset value is set to 5).
-
-- **Input_CU, Input_CD, Input_R, Input_LD**
-
-Type: `logiBUS::io::DI::logiBUS_IXA`
-
-Digital input modules (logiBUS adapters).
-
-Parameter: QI = TRUE (active), Input = `Input_I1`, `Input_I2`, `Input_I3`, `Input_I4` (one physical input per module).
-
-The adapter output "IN" provides the digital signal for CU, CD, R, and LD, respectively.
-
-- **Output_QU, Output_QD**
-
-Type: `logiBUS::io::DQ::logiBUS_QXA`
-
-Digital output blocks (logiBUS adapter).
-
-Parameters: QI = TRUE, Output = `Output_Q1` or `Output_Q2`.
-
-The adapter input "OUT" receives the signal from QU or QD of the counter.
-
-- **Q_NumericValue_AUDI**
-
-Type: `isobus::UT::Q::Q_NumericValue_AUDI`
-
-Block for outputting a numeric value to a terminal (e.g., display).
-
-Parameters: u16ObjId = `OutputNumber_N1` (identifier of the terminal object).
-
-Data input: u32NewValue (receives the current counter value CV).
+- **Input_CU**: Count-up input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
+    - **Explanation**: Provides the state of `I1` as adapter output `IN`.
+- **Input_CD**: Count-down input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as adapter output `IN`.
+- **Input_R**: Reset input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I3`
+    - **Explanation**: Provides the state of `I3` as adapter output `IN`.
+- **Input_LD**: Load input
+    - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I4`
+    - **Explanation**: Provides the state of `I4` as adapter output `IN`.
+- **initval_AUDI**: Constant for the preset value
+    - **Type**: [`adapter::types::unidirectional::AUDI::initval::initval_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/initval/initval_AUDI/)
+    - **Parameters**: `INIT_VAL = 5`
+    - **Explanation**: Provides the preset value `5` as `AUDI` adapter value to `AUDI_FB_CTUD.PV`.
+- **AUDI_FB_CTUD**: Up/down counter (UDINT, adapter version)
+    - **Type**: [`adapter::iec61131::counters::AUDI_FB_CTUD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/iec61131-3/counters/AUDI_FB_CTUD/)
+    - **Parameters**: none
+    - **Explanation**: Counts up via `CU` and down via `CD`, `R` resets, `LD` loads the preset value `PV`. `QU` and `QD` are the counter outputs according to IEC 61131-3 (CTUD), `CV` provides the current count value.
+- **Output_QU**: Digital output for `QU`
+    - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
+    - **Explanation**: Outputs `AUDI_FB_CTUD.QU` at the physical output `Q1`.
+- **Output_QD**: Digital output for `QD`
+    - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q2`
+    - **Explanation**: Outputs `AUDI_FB_CTUD.QD` at the physical output `Q2`.
+- **Q_NumericValue_AUDI**: Display on the ISOBUS terminal
+    - **Type**: [`isobus::UT::Q::Q_NumericValue_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_AUDI/)
+    - **Parameters**: `u16ObjId = OutputNumber_N1`
+    - **Explanation**: Receives the count value via the `AUDI` adapter `u32NewValue` and shows it in the object `OutputNumber_N1`.
 
 ## Program Flow and Connections
 
-1. **Initialization**
+1. `Input_CU.IN` → `AUDI_FB_CTUD.CU`, `Input_CD.IN` → `AUDI_FB_CTUD.CD`, `Input_R.IN` → `AUDI_FB_CTUD.R` and `Input_LD.IN` → `AUDI_FB_CTUD.LD` (AdapterConnections): The states of `I1` to `I4` control counting up, counting down, reset and load.
+2. `initval_AUDI.OUT` → `AUDI_FB_CTUD.PV` (AdapterConnection): The preset value `5` is passed as preset.
+3. `AUDI_FB_CTUD.QU` → `Output_QU.OUT` and `AUDI_FB_CTUD.QD` → `Output_QD.OUT` (AdapterConnections): The counter outputs are applied to `Q1` and `Q2`.
+4. `AUDI_FB_CTUD.CV` → `Q_NumericValue_AUDI.u32NewValue` (AdapterConnection): The count value is shown on the terminal.
 
-At system startup (INITO of the input block Input_LD), the block `AUDI_UDINT_TO_UDI` is triggered via the event input REQ. This converts the constant value `UDINT#5` into an adapter output, which is connected to the preset value input PV of the counter. Thus, the counter is set to the value 5 on the first load (LD).
-
-1. **Counter Control**
-
-- **CU** (Input I1): On a rising edge, the counter increments by 1.
-- **CD** (Input I2): On a rising edge, the counter decrements by 1.
-- **R** (Input I3): On a rising edge, the counter is reset to 0.
-- **LD** (Input I4): On a rising edge, the counter is loaded to the current PV value (5).
-
-1. **Output Signals**
-
-- **QU** (Output Q1): Becomes HIGH when the counter reaches its maximum value (overflow).
-- **QD** (Output Q2): Becomes HIGH when the counter reaches its minimum value (underflow).
-- The current counter value (CV) is transmitted to the terminal (OutputNumber_N1) via the function block `Q_NumericValue_AUDI` and displayed numerically there.
-
-1. **Note on Debouncing**
-
-A comment on the network suggests inserting AX_D_FF blocks (T flip-flops) between the digital inputs and the counter to reduce the event rate by damping the rising edge. This is not implemented in this exercise but can be added if needed.
+**Behavior**: `I1` counts up, `I2` counts down, `I3` resets the counter and `I4` loads the preset value `5`. The count value appears in `OutputNumber_N1`. According to the network comment, an `AX_D_FF` can optionally be inserted for each input to reduce the number of events.
 
 ## Summary
 
-This exercise demonstrates the use of an IEC 61131-compliant up/down counter (CTUD) as an adapter in a 4diac IDE. Input signals are read via logiBUS modules, the counter value is initialized via adapter conversion, and the outputs (QU, QD) as well as the current counter reading are output to digital outputs or a terminal. The exercise covers the fundamentals of counter control, working with adapters, and input/output via logiBUS hardware.
+The exercise shows the adapter-based connection of an IEC 61131-3 up/down counter: inputs, preset value, counter outputs and display are wired purely via adapter connections.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]

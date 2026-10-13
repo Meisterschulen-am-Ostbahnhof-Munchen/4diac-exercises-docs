@@ -1,5 +1,7 @@
 # Exercise_012e: Numeric Value Input PHYS and Saving to INI with Subapp
 
+![Uebung_012e_network](./Uebung_012e_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

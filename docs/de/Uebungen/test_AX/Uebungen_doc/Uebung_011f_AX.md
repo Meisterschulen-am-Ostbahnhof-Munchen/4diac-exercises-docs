@@ -1,48 +1,38 @@
-# Uebung_011f_AX: Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)
-
-Dieser Artikel beschreibt die 4diac IDE Subapplikation Uebung_011f_AX (Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)).
-
-----
+# Uebung_011f_AX: Numeric Value Input I3 durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)
 
 ![Uebung_011f_AX_network](./Uebung_011f_AX_network.svg)
 
-## Ziel der Übung
+* * * * * * * * * *
 
-Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)**
+## Einleitung
 
------
+Diese Übung schleift einen numerischen Eingabewert des VT (Eingabefeld `I3`) unverändert auf ein numerisches Ausgabefeld (`N3`) durch. Eingang und Ausgang sind dabei jeweils als physikalischer `REAL`-Wert (`PHYS`) ausgeführt: Die Umrechnung zwischen Rohwert und physikalischem Wert (Skalierung, Offset, Dezimalstellen) steckt in den Parametern vom Typ `NumericObjectPool_S` (`stObj`), die aus der Pool-Konstantendatei importiert werden. Die SubApp hat keine eigene Schnittstelle.
 
-## Beschreibung und Komponenten
+## Verwendete Funktionsbausteine (FBs)
 
-Die Übung besteht aus der Subapplikation Uebung_011f_AX.SUB, welche die folgende Bausteinstruktur verwendet:
+- **NumericValue_PHYS**: Numerischer VT-Eingabewert als physikalischer Wert
+    - **Typ**: [`isobus::UT::io::NumericValue::NumericValue_PHYSA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/isobus/UT/io/NumericValue/NumericValue_PHYSA/)
+    - **Parameter**: `QI = TRUE`, `stObj = InputNumber_I3_N`
+    - **Erklärung**: Liefert den im VT-Eingabefeld `I3` eingegebenen Wert als physikalischen `REAL`-Wert über den Adapter-Ausgang `rPhys` (AR-Adapter).
+- **Q_NumericValue_PHYS**: Numerischer VT-Ausgabewert aus einem physikalischen Wert
+    - **Typ**: [`isobus::UT::Q::Q_NumericValue_PHYSA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_PHYSA/)
+    - **Parameter**: `stObj = OutputNumber_N3_N`
+    - **Erklärung**: Empfängt einen physikalischen `REAL`-Wert über den Adapter `rPhys` und schreibt ihn in das numerische Ausgabeobjekt `N3` des VT.
 
-### Verwendete Funktionsbausteine (FBs)
+Die Konstanten `InputNumber_I3_N` und `OutputNumber_N3_N` stammen aus `Uebungen::const::UT::DefaultPool_Numeric`.
 
-- **NumericValue_PHYS**: Instanz des Typs isobus::UT::io::NumericValue::NumericValue_PHYSA.
-  - Parameter stObj = InputNumber_I3_N
-- **Q_NumericValue_PHYS**: Instanz des Typs isobus::UT::Q::Q_NumericValue_PHYSA.
-  - Parameter stObj = OutputNumber_N3_N
+## Programmablauf und Verbindungen
 
-### Verbindungen und Schnittstellen
+1. `NumericValue_PHYS.rPhys` → `Q_NumericValue_PHYS.rPhys` (AdapterConnection): der physikalische Wert der Eingabe `I3` wird direkt an die Ausgabe `N3` weitergegeben.
 
-**Adapterverbindungen:**
-
-- NumericValue_PHYS.rPhys -> Q_NumericValue_PHYS.rPhys
-
-### Hinweise aus dem Modell
-
-> Beispiel: I3-Eingabe -500.00 → rPhys=-500.0 → Q_NumericValue_PHYS(N3) → N3 zeigt -500.00.
-
------
-
-## Programmablauf und Funktionsweise
-
-1. **Initialisierung**: Beim Systemstart werden alle beteiligten Bausteine initialisiert.
-2. **Ereignis- und Signalverarbeitung**: Zustandsänderungen an den Eingängen erzeugen Ereignisse, die über die definierten Verbindungen an die nachgelagerten Bausteine weitergeleitet werden.
-3. **Ausgangsaktualisierung**: Die Zielbausteine verarbeiten die empfangenen Signale und aktualisieren entsprechend die Ausgänge.
-
------
+**Beispiel** (Kommentar im Modell): Eine Eingabe von -500.00 in `I3` ergibt `rPhys = -500.0`; `Q_NumericValue_PHYS` (`N3`) zeigt anschließend -500.00 an.
 
 ## Zusammenfassung
 
-Die Übung Uebung_011f_AX demonstriert anschaulich die modulare IEC 61499 Architektur in 4diac IDE.
+Die Übung `Uebung_011f_AX` zeigt die einfachste Verwendung der PHYS-Varianten für numerische VT-Objekte: Ein Eingabe-FB und ein Ausgabe-FB werden über eine einzige AR-Adapterverbindung gekoppelt, die Skalierung und der Offset stecken vollständig in den `NumericObjectPool_S`-Parametern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,5 +1,7 @@
 # Uebung_012k_AIS: String Input und Speichern INI mit Subapp (AIS Adapter)
 
+![Uebung_012k_AIS_network](./Uebung_012k_AIS_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

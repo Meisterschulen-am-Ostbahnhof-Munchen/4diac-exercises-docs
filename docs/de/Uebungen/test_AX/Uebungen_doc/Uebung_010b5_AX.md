@@ -1,5 +1,7 @@
 # Uebung_010b5_AX: SoftKey_F1-10 auf DigitalOutput_Q1-10
 
+![Uebung_010b5_AX_network](./Uebung_010b5_AX_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b5_AX`.

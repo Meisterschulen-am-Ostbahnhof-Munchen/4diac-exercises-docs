@@ -24,7 +24,7 @@ The subapplication `Uebung_010c.SUB` extends the simple circuit with a feedback 
 ### Function Blocks (FBs)
 
 - **`SoftKey_F1`**: Input block.
-- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. It changes the background of the softkey on the terminal [green when activated, white when idle](cite: 1).
+- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. It changes the background of the softkey on the terminal green when activated, white when idle.
 - **`DigitalOutput_Q1`**: The physical output.
 
 -----

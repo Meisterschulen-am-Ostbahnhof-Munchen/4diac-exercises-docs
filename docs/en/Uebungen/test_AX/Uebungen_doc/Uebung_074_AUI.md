@@ -1,4 +1,4 @@
-# Exercise_074_AUI: Outputting RPTO to UT (Adapter Version) with Fendt Circuit
+# Exercise_074_AUI: Output RPTO to UT (Adapter Version) with Fendt Circuit
 
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
 
@@ -6,95 +6,57 @@
 
 ## Introduction
 
-This exercise demonstrates the output of the rear PTO speed to a user terminal (UT) using adapters. It implements a so-called "Fendt circuit" that displays the value 0 on the UT if the PTO signal times out. This ensures reliable operation in case of sensor failure or communication problems.
-The exercise is based on the use of ISOBUS components (especially the TECU interface) and demonstrates the use of adapter modules for type conversion and signal selection.
+This exercise demonstrates the output of the speed of the rear power take-off (Rear PTO) to a User Terminal (UT) using adapters. It implements a so-called "Fendt circuit": on a timeout of the PTO signal, the value 0 is shown on the UT (comment in the network). This achieves safe behavior in case of sensor failure or communication faults.
+
+The exercise is based on ISOBUS components (TECU interface) and shows how to use adapters for type conversion and signal selection.
 
 ## Function Blocks (FBs) Used
 
-The SubApp contains the following function blocks, which are interconnected in the network:
-
-### Sub-Blocks: IA_RPTO
-
-- **Type**: `isobus::tecu::IA_RPTO`
-- **Internal FBs Used**: none (primitive block)
-- **Parameters**: `QI = TRUE` (initialization quality active)
-- **Event Outputs**: `INITO`
-- **Adapter Outputs**: `SPEED` (current speed as AUI value), `TIMEOUT` (signal on timeout)
-- **Functionality**: Provides the interface to the TECU system for the rear PTO. Returns the measured speed and a timeout flag.
-
-### Sub-modules: Q_NumericValue_PTO
-
-- **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
-- **Internal Function Blocks Used**: None
-- **Parameters**: `u16ObjId = NumberVariable_Rear_PTO_output_shaft_speed` (Identification of the object to be displayed)
-- **Event Inputs**: `INIT`
-- **Data Inputs**: `u32NewValue` (AUDI-encoded value)
-- **Functionality**: Receives a numeric value in AUDI format and displays it on the user terminal under the specified object ID.
-
-### Sub-Blocks: AUI_AX_SEL_AUI
-
-- **Type**: `adapter::iec61131::selection::AUI_AX_SEL_AUI`
-- **Internal Function Blocks Used**: None
-- **Parameters**: None
-- **Adapter Inputs**: `IN0`, `IN1`, `G`
-- **Adapter Output**: `OUT`
-- **Functionality**: A 2-to-1 selector block. If the gate signal is `G` or `TRUE`, the value of `IN1` is passed through to `OUT`; Otherwise, the value of `IN0` is used. This is used here to implement the Fendt circuit.
-
-### Sub-Blocks: CONST_ZERO
-
-- **Type**: `adapter::conversion::unidirectional::AUI_UINT_TO_UI`
-- **Internal Function Blocks Used**: None
-- **Parameters**: `OUT = UINT#0` (constant output value)
-- **Event Inputs**: `REQ`
-- **Adapter Output**: `AUI_OUT`
-- **Functionality**: Returns a constant AUI value of 0 in response to a `REQ` event. Used as a substitute signal in case of timeout.
-
-### Sub-Blocks: CONV_AUI_AUDI
-
-- **Type**: `adapter::conversion::unidirectional::AUI_TO_AUDI`
-- **Internal Function Blocks Used**: None
-- **Parameters**: None
-- **Adapter Input**: `AUI_IN`
-- **Adapter Output**: `AUDI_OUT`
-- **Functionality**: Converts an AUI value into the AUDI format expected by the display block `Q_NumericValue_PTO`.
+- **IA_RPTO**: ISOBUS adapter for the rear power take-off
+    - **Type**: [`isobus::tecu::IA_RPTO`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/TECU/IA_RPTO/)
+    - **Parameters**: `QI = TRUE`
+    - **Explanation**: Interface to the rear PTO (ISO 11783-7, PGN 65091). The adapter `SPEED` delivers the speed as an AUI value, the adapter `TIMEOUT` reports the timeout status. After initialization, `INITO` is output.
+- **initval_AUI**: substitute value 0
+    - **Type**: [`adapter::types::unidirectional::AUI::initval::initval_AUI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UINT/initval/initval_AUI/)
+    - **Parameters**: `INIT_VAL = 0`
+    - **Explanation**: Provides the constant value 0 as an AUI signal. It is displayed instead of the speed on a timeout.
+- **AUI_AX_SEL_AUI**: selection block
+    - **Type**: [`adapter::iec61131::selection::AUI_AX_SEL_AUI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/iec61131-3/selection/AUI_AX_SEL_AUI/)
+    - **Parameters**: none
+    - **Explanation**: Uses the AX signal `G` to select between the AUI values `IN0` (when `G` = FALSE) and `IN1` (when `G` = TRUE) and outputs the selected value at `OUT`. Here it implements the Fendt circuit.
+- **CONV_AUI_AUDI**: conversion adapter
+    - **Type**: [`adapter::conversion::unidirectional::AUI_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AUDI_AUI/AUI_TO_AUDI/)
+    - **Parameters**: none
+    - **Explanation**: Converts the AUI value (UINT) into the AUDI format (UDINT) expected by the display block.
+- **Q_NumericValue_PTO**: VT display
+    - **Type**: [`isobus::UT::Q::Q_NumericValue_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/isobus/UT/Q/Q_NumericValue_AUDI/)
+    - **Parameters**: `u16ObjId = NumberVariable_Rear_PTO_output_shaft_speed`
+    - **Explanation**: Receives the value via the socket `u32NewValue` and shows it on the User Terminal under the given object ID. It is initialized via the event `INIT`.
 
 ## Program Flow and Connections
 
-This exercise is used as a sub-app within a larger application, typically an ISOBUS control unit for tractors.
+1. `IA_RPTO.INITO` → `Q_NumericValue_PTO.INIT` (EventConnection): After the PTO adapter has been initialized, the display is initialized.
+2. `IA_RPTO.SPEED` → `AUI_AX_SEL_AUI.IN0` (AdapterConnection): The measured speed is applied to the input `IN0` of the selector.
+3. `initval_AUI.OUT` → `AUI_AX_SEL_AUI.IN1`: The value 0 is applied to the input `IN1`.
+4. `IA_RPTO.TIMEOUT` → `AUI_AX_SEL_AUI.G`: The timeout status controls the selection. In normal operation (`TIMEOUT` = FALSE) the speed (`IN0`) is passed through, on a timeout (`TIMEOUT` = TRUE) the value 0 (`IN1`).
+5. `AUI_AX_SEL_AUI.OUT` → `CONV_AUI_AUDI.AUI_IN`: The selected value is converted to the AUDI format.
+6. `CONV_AUI_AUDI.AUDI_OUT` → `Q_NumericValue_PTO.u32NewValue`: The value is passed to the display and shown on the User Terminal - the actual speed in normal operation, a 0 on a timeout.
 
-**Signal Flow**:
+**Learning objectives**:
 
-1. After initialization (event `INITO` of `IA_RPTO`), the function blocks `Q_NumericValue_PTO` and `CONST_ZERO` are activated (`INIT` and `REQ`, respectively).
-2. The current PTO speed is sent as an AUI value via `IA_RPTO.SPEED` to the input `IN0` of the selector `AUI_AX_SEL_AUI`.
-
-3. Simultaneously, the timeout flag `IA_RPTO.TIMEOUT` is applied to the selector's gate input `G`. Under normal operation, `TIMEOUT = FALSE` is present, causing the selector to pass through the value of `IN0` (the measured rotational speed).
-
-4. In the event of a timeout (e.g., due to sensor failure), `TIMEOUT = TRUE` is present. The selector then switches to the second input, `IN1`, which is set to the constant value 0 via `CONST_ZERO`.
-5. The selected AUI value is passed from `AUI_AX_SEL_AUI.OUT` to `CONV_AUI_AUDI.AUI_IN`, converted to the AUDI format there, and finally fed to the display module as `u32NewValue`.
-6. `Q_NumericValue_PTO` displays the value on the user terminal – the actual engine speed during normal operation, and 0 during a timeout.
-
-**Learning Objectives**:
-
-- Understanding the use of adapters for communication between different protocols (AUI, AUDI).
+- Understanding the use of adapters to connect different data types (AUI, AUDI).
 - Implementing a simple fallback logic (Fendt circuit) with a 2-channel selector.
-- Working with ISOBUS TECU commands and UT display modules in 4diac.
-- Detecting and handling timeout situations in fieldbus communication.
+- Working with ISOBUS TECU blocks and UT display blocks in 4diac.
+- Recognizing and handling timeout situations in fieldbus communication.
 
-**Difficulty Level**: Medium
-**Prerequisites**: Basic knowledge of the 4diac IDE, structure of SubApp types, understanding of adapter interfaces and event-driven programming.
-
-**Setup Instructions**:
-
-This exercise requires the project libraries containing the FPGA components used (e.g., `isobus`, `adapter`). The symbol and object ID (`NumberVariable_Rear_PTO_output_shaft_speed`) must be defined in the ISOBUS system being used.
+**Setup note**: The object ID `NumberVariable_Rear_PTO_output_shaft_speed` must be defined in the ISOBUS object pool used.
 
 ## Summary
 
-The exercise `Uebung_074_AUI` implements a reliable display of the PTO speed on a user terminal. By combining an adapter selector with a constant zero value in case of a fault, a simple yet robust Fendt circuit is implemented. It conveys fundamental concepts of the ISOBUS protocol, adapter communication, and event-based data preprocessing in 4diac.
+The exercise `Uebung_074_AUI` implements a safe display of the PTO speed on a User Terminal. By combining an adapter selector with a constant zero value in the error case, a simple but robust Fendt circuit is realized. It conveys basic concepts of adapter communication and event-based data preprocessing in 4diac.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

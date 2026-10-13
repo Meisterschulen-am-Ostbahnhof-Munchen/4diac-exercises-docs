@@ -23,7 +23,7 @@ The subapplication `Uebung_140.SUB` uses a special measurement block for time mo
 
 ### Function Blocks (FBs)
 
-- **`SYS_ONTIME`**: Type `logiBUS::signalprocessing::measurement::SYS_ONTIME`. This block measures the time since the last system start or the cumulative total time [depending on the implementation](cite: 1).
+- **`SYS_ONTIME`**: Type `logiBUS::signalprocessing::measurement::SYS_ONTIME`. This block measures the time since the last system start or the cumulative total time depending on the implementation.
 
 ----
 

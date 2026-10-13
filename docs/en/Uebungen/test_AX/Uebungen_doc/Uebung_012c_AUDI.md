@@ -1,5 +1,7 @@
 # Exercise_012c_AUDI: Numeric Value Input and Storage INI with Subapp (Adapter Version)
 
+![Uebung_012c_AUDI_network](./Uebung_012c_AUDI_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

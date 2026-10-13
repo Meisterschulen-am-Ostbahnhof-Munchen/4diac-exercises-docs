@@ -1,5 +1,7 @@
 # Uebung_010d2_AX: Toggle-Flipflop mit SoftKey_F1 und GreenWhiteBackground mit Typed Subapp
 
+![Uebung_010d2_AX_network](./Uebung_010d2_AX_network.svg)
+
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010d2_AX`.
 
 ----

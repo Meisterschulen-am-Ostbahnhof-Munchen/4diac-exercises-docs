@@ -13,7 +13,7 @@ Diese Übung zeigt dasselbe Zweipunktregler-Muster wie `Uebung_234_AX` (Totzone 
 - **Messwert_N**: Terminal-Eingabe (Typ: `isobus::UT::io::NumericValue::NumericValue_PHYSA`)
     - **Parameter**: QI = TRUE, stObj = InputNumber_Messwert_N
     - **Erklärung**: Liest bei jeder Änderung von `InputNumber_Messwert` (VT-Objekt 9002, Bereich 0–1000) den physikalischen Wert als AR-Plug (`rPhys`) ein. Der Bediener simuliert damit im Pool `Workspace_Dreieck` den Analogsensor aus `Uebung_234_AX`.
-- **HysteresisParams_AR**: Parameter-Baustein für die Hysterese-Schwellwerte
+- **HysteresisParams_AR**: Parameter-Baustein für die Hysterese-Schwellwerte (SubApp-Instanz, Typ: `MyLib::sys::HysteresisParams_AR`)
     - **Parameter**: rMI = 500.0, rDEAD = 20.0, rHYSTERESIS = 30.0
     - **Erklärung**: Stellt die drei Schwellwerte des Zweipunktreglers bereit – dieselben Werte wie in `Uebung_234_AX`.
 - **DualHysteresis**: Zweipunktregler mit Totzone und Hysterese (Typ: `logiBUS::signalprocessing::hysteresis::DualHysteresis_AR_A2X`)

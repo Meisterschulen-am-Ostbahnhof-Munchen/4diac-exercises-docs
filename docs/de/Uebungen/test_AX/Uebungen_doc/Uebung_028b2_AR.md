@@ -6,64 +6,78 @@
 
 ## Einleitung
 
-Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalierungsanpassung. Die Kalibrierungsparameter werden persistent im NVS (Non-Volatile Storage) gespeichert. Zusätzlich wird ein Hysterese-Regler verwendet, der auf den kalibrierten Analogwert reagiert. Die Schwellwerte und Hysteresebänder für den Regler werden ebenfalls aus dem NVS geladen. Der gesamte Ablauf wird durch digitale Eingänge gesteuert und über digitale Ausgänge ausgegeben.
+Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalierungsanpassung. Die Kalibrierungsparameter werden persistent im NVS (Non-Volatile Storage) gespeichert. Zusätzlich wird ein Hysterese-Regler verwendet, der auf den kalibrierten Analogwert reagiert. Die Schwellwerte und Hysteresebänder für den Regler werden ebenfalls im NVS gehalten und lassen sich über Eingabefelder im VT ändern. Der Ablauf wird durch digitale Eingänge gesteuert und über digitale Ausgänge ausgegeben.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_I1** (Typ: `logiBUS::io::DI::logiBUS_IXA`): Digitaler Eingang, der den Ausgangsprozess startet.
-  - Parameter: `QI=TRUE`, `Input=Input_I1`
-- **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QXA`): Digitaler Ausgang zur direkten Weitergabe des Eingangsstatus.
-  - Parameter: `QI=TRUE`, `Output=Output_Q1`
-- **AnalogInput_I4** (Typ: `logiBUS::io::AI::logiBUS_AI_IDA`): Analoger Eingang mit konfigurierbarer Hysterese und Ratenbegrenzung.
-  - Parameter: `QI=TRUE`, `Input=AnalogInput_I4`, `AnalogInput_hysteresis=50`, `TimeDelta=250`, `TimeRateLimit=100`
-- **AX_SPLIT_2** (Typ: `adapter::events::unidirectional::AX_SPLIT_2`): Verteilt ein Ereignis auf zwei Ausgänge (teilt den INIT-Ereignisstrom).
-- **AD_TO_AUDI** (Typ: `adapter::conversion::unidirectional::AD_TO_AUDI`): Konvertiert einen analogen Datenadapter (`AD`) in einen universellen Audit-Adapter (`AUDI`).
-- **AUDI_TO_AR** (Typ: `adapter::conversion::unidirectional::AUDI_TO_AR`): Konvertiert den Audit-Adapter (`AUDI`) zurück in einen `AR`-Analogadapter für die Weiterverarbeitung.
-- **CALIBRATE** (Typ: `adapter::Engineering::measurements::AR_CALIBRATE`): Führt die Kalibrierung durch – Berechnung von Offset und Skalierung.
-  - Parameter: `Y_Offset=100.0`, `Y_Scale=600.0`
-- **NVS_OFFSET** (Typ: `logiBUS::storage::esp32_nvs::NVS_AR2`): Speichert den ermittelten Offset-Wert persistent im NVS.
-  - Parameter: `QI=TRUE`, `KEY='OFFSET'`, `DEFAULT_VALUE=0.0`
-- **NVS_SCALE** (Typ: `logiBUS::storage::esp32_nvs::NVS_AR2`): Speichert den ermittelten Skalierungsfaktor persistent im NVS.
-  - Parameter: `QI=TRUE`, `KEY='SCALE'`, `DEFAULT_VALUE=1.0`
-- **DigitalInput_I2_CO** (Typ: `logiBUS::io::DI::logiBUS_IE`): Digitaler Eingang zum Auslösen der Offset-Kalibrierung.
-  - Parameter: `QI=TRUE`, `Input=Input_I2`, `InputEvent=BUTTON_SINGLE_CLICK`
-- **DigitalInput_I3_CS** (Typ: `logiBUS::io::DI::logiBUS_IE`): Digitaler Eingang zum Auslösen der Skalierungskalibrierung.
-  - Parameter: `QI=TRUE`, `Input=Input_I3`, `InputEvent=BUTTON_SINGLE_CLICK`
-- **Hysteresis_AR_AX** (Typ: `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`): Hysterese-Regler mit Analog-Eingang und Ausgang.
-  - Parameter: `QI=TRUE`
-- **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QXA`): Digitaler Ausgang für das Hysteresesignal.
-  - Parameter: `QI=TRUE`, `Output=Output_Q2`
+- **DigitalInput_I1**: Digitaler Eingang
+    - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1`
+    - **Erklärung**: Liefert den Zustand von `I1` als AX-Adapterausgang `IN`.
+- **AX_SPLIT_2**: Signalverteiler
+    - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
+    - **Parameter**: keine
+    - **Erklärung**: Verteilt das Signal von `DigitalInput_I1` auf zwei Wege: `OUT1` zum Digitalausgang, `OUT2` an `AnalogInput_I4.SREQ`.
+- **DigitalOutput_Q1**: Digitaler Ausgang zur direkten Weitergabe des Eingangsstatus
+    - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
+    - **Erklärung**: Schaltet `Q1` gemäß `I1`.
+- **AnalogInput_I4**: Analoger Eingang mit Hysterese und Ratenbegrenzung
+    - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`
+    - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Erklärung**: Liefert den Analogwert als Adapter `IN` (DWORD-Adapter `AD`); `SREQ` wird von `I1` über `AX_SPLIT_2` versorgt.
+- **AD_TO_AUDI**: Adapterkonverter DWORD → UDINT
+    - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den `AD`-Adapter (DWORD) in einen `AUDI`-Adapter (UDINT) um (Bit-Umdeutung, wertegleich).
+- **AUDI_TO_AR**: Adapterkonverter UDINT → REAL
+    - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AR`
+    - **Parameter**: keine
+    - **Erklärung**: Wandelt den `AUDI`-Adapter in einen `AR`-Adapter (REAL) um. Die doppelte Konvertierung ist wichtig: ein direktes `AD_TO_AR` würde wie ein `reinterpret_cast` wirken (Kommentar im Netzwerk).
+- **DigitalInput_I2_CO**: Eingang zum Auslösen der Offset-Kalibrierung
+    - **Typ**: `logiBUS::io::DI::logiBUS_IE`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Ein Einzelklick auf `I2` löst `CALIBRATE.CO` aus.
+- **DigitalInput_I3_CS**: Eingang zum Auslösen der Skalierungskalibrierung
+    - **Typ**: `logiBUS::io::DI::logiBUS_IE`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Ein Einzelklick auf `I3` löst `CALIBRATE.CS` aus.
+- **CALIBRATE**: Zwei-Punkt-Kalibrierung
+    - **Typ**: `adapter::Engineering::measurements::AR_CALIBRATE`
+    - **Parameter**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
+    - **Erklärung**: Berechnet `Y = (X + OFFSET) * SCALE`. `CO` setzt `OFFSET := Y_Offset - X`, `CS` setzt `SCALE := Y_Scale / (X + OFFSET)`. `CO` muss vor `CS` ausgeführt werden. `Y_Offset` und `Y_Scale` sind Zielwerte auf der Ausgangsseite.
+- **NVS_OFFSET**: persistenter Speicher für den Offset
+    - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AR2`
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `KEY = 'OFFSET'`, `DEFAULT_VALUE = 0.0`
+    - **Erklärung**: Lädt und speichert den Offset unter dem Schlüssel `OFFSET` über den bidirektionalen Adapter `VAL` (verbunden mit `CALIBRATE.OFFSET`).
+- **NVS_SCALE**: persistenter Speicher für die Skalierung
+    - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AR2`
+    - **Parameter**: `QI = TRUE`, `SETM = TRUE`, `KEY = 'SCALE'`, `DEFAULT_VALUE = 1.0`
+    - **Erklärung**: Lädt und speichert den Skalierungsfaktor unter dem Schlüssel `SCALE` (verbunden mit `CALIBRATE.SCALE`).
+- **Hysteresis_AR_AX**: Hysterese-Komparator
+    - **Typ**: `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`
+    - **Parameter**: `QI = TRUE`
+    - **Erklärung**: Wandelt `INPUT` (AR) in ein digitales Signal `OUTPUT` (AX): Einschalten bei `THRESHOLD + HYSTERESIS / 2`, Ausschalten bei `THRESHOLD - HYSTERESIS / 2`.
+- **DigitalOutput_Q2**: Digitaler Ausgang für das Hysteresesignal
+    - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q2`
+    - **Erklärung**: Schaltet `Q2` gemäß `Hysteresis_AR_AX.OUTPUT`.
 
-### Sub-Bausteine: `THRESHOLD`
+### Sub-Bausteine: `THRESHOLD` und `HYSTERESIS`
 
-- **Typ**: `MyLib::sys::NVS_IN_AND_STORE_AR`
-- **Verwendete interne FBs**: Die interne Struktur ist nicht in der XML-Datei hinterlegt. Es wird angenommen, dass dieser Sub-Baustein einen Schwellwert aus dem NVS liest (unter dem Key `'THRESHOLD'`) und als analogen Ausgang (`VALUEO`) bereitstellt. Der Parameter `stObj=InputNumber_THRESHOLD` verweist auf ein Strukturobjekt für die Initialisierung.
-- **Funktionsweise**: Der Sub-Baustein lädt beim Start oder auf Ereignis den gespeicherten Schwellwert aus dem NVS und gibt ihn am Ausgang `VALUEO` aus. Bei Änderung des Wertes wird er zurückgeschrieben.
+Beide sind Instanzen von `MyLib::sys::NVS_IN_AND_STORE_AR` (in `MyLib_AX`). Intern besteht der Baustein aus `NumericValue_PHYSA` (VT-Eingabefeld, liefert `rPhys`), `NVS_AR` (`QI = TRUE`, `SETM = TRUE`, `DEFAULT_VALUE = REAL#0.0`; Laden und Speichern unter `KEY`), `AR_SPLIT_2` und `Q_NumericValue_PHYSA` (schreibt den Wert zurück in das VT-Feld). Der Ausgang `VALUEO` ist ein `AR`-Adapter.
 
-### Sub-Bausteine: `HYSTERESIS`
-
-- **Typ**: `MyLib::sys::NVS_IN_AND_STORE_AR`
-- **Verwendete interne FBs**: Analog zum `THRESHOLD`-Baustein, jedoch mit dem Key `'HYSTERESIS'` und dem Strukturobjekt `InputNumber_HYSTERESIS`.
-- **Funktionsweise**: Liest den Hysteresewert (Bandbreite) aus dem NVS und stellt ihn über den Ausgang `VALUEO` dem Hysterese-Regler zur Verfügung.
+- **THRESHOLD**: `KEY = 'THRESHOLD'`, `stObj = InputNumber_THRESHOLD_N`. Liefert den Schwellwert (Mitte des Hysteresebandes) an `Hysteresis_AR_AX.THRESHOLD`.
+- **HYSTERESIS**: `KEY = 'HYSTERESIS'`, `stObj = InputNumber_HYSTERESIS_N`. Liefert die volle Breite des Hysteresebandes an `Hysteresis_AR_AX.HYSTERESIS`.
 
 ## Programmablauf und Verbindungen
 
-1. **Initialisierung**: Der Digitaleingang `DigitalInput_I1` wird über den Adapter `AX_SPLIT_2` auf zwei Wege aufgeteilt:
-   - Weg 1 → `DigitalOutput_Q1` (direkte Ausgabe)
-   - Weg 2 → `AnalogInput_I4.SREQ` (Ereignis zum Einlesen des Analogwerts)
-
-2. **Analogwertverarbeitung**:
-   - Der analoge Eingang `AnalogInput_I4` wird ausgelesen und der Wert über die Adapterkette `AD_TO_AUDI` → `AUDI_TO_AR` an den Kalibrierbaustein `CALIBRATE.X` übergeben (Anmerkung: Eine doppelte Konvertierung ist notwendig, da ein direkter `AD_TO_AR` wie ein `reinterpret_cast` wirken würde.)
-
-3. **Kalibrierung**:
-   - Über die Digitaleingänge `DigitalInput_I2_CO` (Offset-Kalibrierung) und `DigitalInput_I3_CS` (Skalen-Kalibrierung) wird der Kalibriervorgang gestartet.
-   - `CALIBRATE` berechnet Offset und Skalierung auf Basis der Referenzwerte `Y_Offset=100.0` und `Y_Scale=600.0`.
-   - Die berechneten Parameter werden an `NVS_OFFSET` und `NVS_SCALE` übergeben und gespeichert.
-
-4. **Hysterese-Regelung**:
-   - Der kalibrierte Wert `CALIBRATE.Y` wird an den Hysterese-Regler `Hysteresis_AR_AX.INPUT` übergeben.
-   - Der Schwellwert (`THRESHOLD.VALUEO`) und die Hysterese (`HYSTERESIS.VALUEO`) werden aus dem NVS geladen und dem Regler zugeführt.
-   - Der Ausgang `Hysteresis_AR_AX.OUTPUT` steuert den digitalen Ausgang `DigitalOutput_Q2`.
+1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN`: `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT` (direkte Ausgabe) und `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ`.
+2. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN`, `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`, `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X`: der Analogwert wird über die doppelte Konvertierung als REAL in die Kalibrierung gegeben.
+3. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` und `DigitalInput_I3_CS.IND` → `CALIBRATE.CS`: Offset- bzw. Skalierungskalibrierung per Einzelklick.
+4. `CALIBRATE.OFFSET` → `NVS_OFFSET.VAL` und `CALIBRATE.SCALE` → `NVS_SCALE.VAL`: die Kalibrierwerte werden im NVS abgelegt und geladen.
+5. `CALIBRATE.Y` → `Hysteresis_AR_AX.INPUT`, `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD`, `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`.
+6. `Hysteresis_AR_AX.OUTPUT` → `DigitalOutput_Q2.OUT`: das Ergebnis des Komparators schaltet `Q2`.
 
 **Lernziele**:
 
@@ -77,7 +91,7 @@ Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalie
 
 ## Zusammenfassung
 
-Die Übung zeigt eine vollständige analoge Messkette: vom Einlesen des rohen Analogwerts über die Kalibrierung mit persistenter Speicherung bis hin zur regelbasierten Ausgabe über einen Hysterese-Komparator. Die Verwendung von Adaptern zur Typkonvertierung und von Sub-Bausteinen zur Wiederverwendung von NVS-Zugriffen macht den Aufbau modular und erweiterbar. Die Kalibrierung kann jederzeit über digitale Taster angepasst werden, ohne dass der Programmcode geändert werden muss.
+Die Übung zeigt eine vollständige analoge Messkette: vom Einlesen des rohen Analogwerts über die Kalibrierung mit persistenter Speicherung bis hin zur Ausgabe über einen Hysterese-Komparator. Die Verwendung von Adaptern zur Typkonvertierung und von Sub-Bausteinen zur Wiederverwendung von NVS-Zugriffen macht den Aufbau modular und erweiterbar. Die Kalibrierung kann jederzeit über digitale Taster angepasst werden, ohne dass der Programmcode geändert werden muss.
 
 ---
 

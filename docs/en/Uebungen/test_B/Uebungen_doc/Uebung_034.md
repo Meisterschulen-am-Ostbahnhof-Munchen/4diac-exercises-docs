@@ -20,7 +20,7 @@ The subapplication `Uebung_034.SUB` reads a potentiometer and uses it to control
 ![Uebung_034_network](./Uebung_034_network.svg)
 
 - **`AnalogInput_I7`**: Reads the voltage at the input.
-- **`F_SHL`**: A shift register (Shift Left). It is used here for scaling by shifting the input value one bit to the left [corresponding to multiplication by 2](cite: 1).
+- **`F_SHL`**: A shift register (Shift Left). It is used here for scaling by shifting the input value one bit to the left corresponding to multiplication by 2.
 - **`PWMOutput_Q4`**: A pulse-width modulated output for power control.
 
 -----

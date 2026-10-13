@@ -1,5 +1,7 @@
 # Exercise_012a_AX: Numeric Value Input and Storage (Adapter Version)
 
+![Uebung_012a_AX_network](./Uebung_012a_AX_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

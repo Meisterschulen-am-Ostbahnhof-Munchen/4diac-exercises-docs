@@ -22,7 +22,7 @@ Die Subapplikation `Uebung_020b_AX.SUB` kombiniert eine Ereignis-Weiche, eine Ze
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
   - **`AX_SWITCH`**: Leitet das Ereignis bei steigender Flanke an `EO1` und bei fallender Flanke an `EO0` weiter.
-  - **`E_DELAY`**: Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` [hier 2 Sekunden](cite: 1).
+  - **`E_DELAY`**: Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` hier 2 Sekunden.
   - **`AX_RS`**: Der Ergebnisspeicher.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 

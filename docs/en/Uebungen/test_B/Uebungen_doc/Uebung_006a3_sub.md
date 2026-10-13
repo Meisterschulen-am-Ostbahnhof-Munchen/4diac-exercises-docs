@@ -1,22 +1,5 @@
-# Exercise_006a3_sub: Subapplication Type
+# Uebung_006a3_sub
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-application type `Uebung_006a3_sub`. It serves as an internal state machine for implementing an alternating direction change
+## Note
 
-----
-
-## Overview
-
-This function block encapsulates the logic for a left/right switch.
-
-It has an event input `EI`. Upon each occurrence of an event, the function block internally changes its direction setting. The results are provided via the data outputs `Links` and `Rechts`.
-
-This function block encapsulates the logic for a left/right switch.
-
- This is used in exercise 006a3 to automatically reverse the direction of rotation of a motor during each start-up. The function block ensures that a clear direction decision is always made.
-
-## 🛠️ Related Exercises
-
-![Uebung_006a3_sub_network](./Uebung_006a3_sub_network.svg)
-
-- [Exercise_006a3](Uebung_006a3.md)
+This is no longer a separate exercise. The block was moved into the library and is now called [LinksRechts_T_FF_Event](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/LinksRechts_T_FF_Event/). Description, interface and network are documented there.

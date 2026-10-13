@@ -1,5 +1,7 @@
 # Uebung_012a_AX: Numeric Value Input und Speichern (Adapter Version)
 
+![Uebung_012a_AX_network](./Uebung_012a_AX_network.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

@@ -1,30 +1,5 @@
-# Uebung_010f2: AuxFunction2_X1 auf DigitalOutput_Q1 mit GreenWhiteBackground mit Subapp
+# Uebung_010f2
 
-This article describes the 4diac IDE sub-application Uebung_010f2 (AuxFunction2_X1 auf DigitalOutput_Q1 mit GreenWhiteBackground mit Subapp).
+## Note
 
-----
-
-![Uebung_010f2_network](./Uebung_010f2_network.svg)
-
-## Objective of the Exercise
-
-The main objective of this exercise is to implement the following requirement: **AuxFunction2_X1 auf DigitalOutput_Q1 mit GreenWhiteBackground mit Subapp**
-
------
-
-## Description and Components
-
-The exercise consists of the sub-application Uebung_010f2.SUB, which uses the following function block structure:
-
------
-
-## Sequence and Operation
-
-1. **Initialization**: Upon system startup, all participating function blocks are initialized.
-2. **Signal Forwarding**: Function blocks process control and data signals according to their configuration.
-
------
-
-## Summary
-
-Exercise Uebung_010f2 provides a clear demonstration of modular IEC 61499 application design in 4diac IDE.
+This exercise no longer exists in the current training sources (removed, merged or renamed). The page is kept only as a placeholder for existing references. The current exercises are listed in the exercise overview.

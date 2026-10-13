@@ -1,5 +1,7 @@
 # Uebung_012a: Numeric Value Input und Speichern NVS mit Subapp
 
+![Uebung_012a_network](./Uebung_012a_network.svg)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_012a`. Hier wird die persistente Speicherung aus Übung 012 in eine wiederverwendbare Sub-Applikation gekapselt.

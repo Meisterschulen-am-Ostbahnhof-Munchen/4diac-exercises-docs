@@ -21,7 +21,7 @@ The subapplication `Uebung_020b_AX.SUB` combines an event switch, a time delay, 
 
 - **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
 - **`AX_SWITCH`**: Passes the event to `EO1` on the rising edge and to `EO0` on the falling edge.
-- **`E_DELAY`**: Delays an event arriving at the `START` input by the time `DT` [here 2 seconds](cite: 1).
+- **`E_DELAY`**: Delays an event arriving at the `START` input by the time `DT` here 2 seconds.
 - **`AX_RS`**: The result memory.
 - **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
 

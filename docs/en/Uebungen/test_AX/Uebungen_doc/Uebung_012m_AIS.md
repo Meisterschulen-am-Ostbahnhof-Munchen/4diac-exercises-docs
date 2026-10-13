@@ -1,5 +1,7 @@
 # Exercise_012m_AIS: String Input and Storage in Non-Volatile Memory (NVS) with Subapp (AIS Adapter)
 
+![Uebung_012m_AIS_network](./Uebung_012m_AIS_network.svg)
+
 * * * * * * * * * *
 
 ## Introduction

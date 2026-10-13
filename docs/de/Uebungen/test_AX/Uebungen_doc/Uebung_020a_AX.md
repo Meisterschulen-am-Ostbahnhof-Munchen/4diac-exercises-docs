@@ -1,56 +1,53 @@
-# Uebung_020a_AX: DigitalInput_I1 auf DigitalOutput_Q1 via AX_RS (Puffer)
-
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
-Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020a_AX`, bei der ein digitaler Eingang über eine RS-Speicherlogik auf einen digitalen Ausgang weitergeleitet wird.
-
-----
-
-## Ziel der Übung
-
-Das Hauptziel dieser Übung ist es, die Kombination von Ereignis-Weichen (`AX_SWITCH`) und Speicherelementen (`AX_RS`) auf Adapter-Ebene zu demonstrieren. Während `Uebung_001_AX` eine direkte Verbindung nutzt, zeigt dieses Beispiel, wie Signale explizit durch Ereignisse ("Setzen" bei steigender Flanke, "Rücksetzen" bei fallender Flanke) verarbeitet werden können.
-
------
-
-## Beschreibung und Komponenten
-
-Die Übung besteht aus einer Subapplikation (`Uebung_020a_AX.SUB`), die den Zustand eines Eingangs über eine Weiche in Set/Reset-Befehle für einen Speicher wandelt.
-
-### Funktionsbausteine (FBs)
+# Uebung_020a_AX: DigitalInput_I1 auf DigitalOutput_Q1 via AX_SR (Puffer)
 
 ![Uebung_020a_AX_network](./Uebung_020a_AX_network.svg)
 
-  - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Liest den physischen Eingang `Input_I1`.
-  - **`AX_SWITCH`**: Eine Ereignis-Weiche. Leitet das eintreffende Adapter-Event je nach logischem Zustand des Eingangs `G` an den Ausgang `EO1` (TRUE) oder `EO0` (FALSE) weiter.
-  - **`AX_RS`**: Ein RS-Flip-Flop mit Adapter-Schnittstelle. Es speichert den Zustand zwischen den Ereignissen.
-  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Setzt den physischen Ausgang `Output_Q1`.
+* * * * * * * * * *
 
------
+[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
-## Funktionsweise
+## Einleitung
 
-Die Logik wird durch die Verknüpfung der Ereignis-Ausgänge der Weiche mit den Speicher-Eingängen realisiert:
+Diese Übung leitet einen digitalen Eingang über einen Set/Reset-Speicher (`AX_SR`) auf einen digitalen Ausgang weiter. Im Gegensatz zu [Uebung_001_AX](./Uebung_001_AX.md), die eine direkte Verbindung nutzt, werden die Flanken des Eingangs hier explizit in Ereignisse gewandelt: die steigende Flanke setzt den Speicher, die fallende Flanke setzt ihn zurück. Im Ergebnis verhält sich die Schaltung wie eine direkte Verbindung, nutzt aber intern eine ereignisbasierte Speicherlogik.
 
-```xml
-<EventConnections>
-    <Connection Source="AX_SWITCH.EO0" Destination="AX_RS.R"/>
-    <Connection Source="AX_SWITCH.EO1" Destination="AX_RS.S"/>
-</EventConnections>
-<AdapterConnections>
-    <Connection Source="DigitalInput_I1.IN" Destination="AX_SWITCH.G"/>
-    <Connection Source="AX_RS.Q" Destination="DigitalOutput_Q1.OUT"/>
-</AdapterConnections>
-```
+## Verwendete Funktionsbausteine (FBs)
 
-Der Ablauf ist wie folgt:
+- **DigitalInput_I1**: logiBUS Digitaleingang
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1`
+    - **Erklärung**: Liest den physischen Eingang `Input_I1` und stellt ihn als AX-Adapterausgang `IN` bereit.
+- **AX_RF_TRIG**: Flankenerkennung
+    - **Typ**: [`adapter::events::unidirectional::AX_RF_TRIG`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_RF_TRIG/)
+    - **Parameter**: keine
+    - **Erklärung**: Wertet das Signal am Adapter `QI` aus und meldet eine steigende Flanke (0→1) als Ereignis `ER`, eine fallende Flanke (1→0) als Ereignis `EF`.
+- **AX_RS**: Set/Reset-Speicher
+    - **Typ**: [`adapter::events::unidirectional::AX_SR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SR/)
+    - **Parameter**: keine
+    - **Erklärung**: Das Ereignis `S` setzt den Ausgang `Q` auf TRUE, `R` setzt ihn auf FALSE. Der Speicher hält den Zustand zwischen den Ereignissen.
+- **DigitalOutput_Q1**: logiBUS Digitalausgang
+    - **Typ**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
+    - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
+    - **Erklärung**: Setzt den physischen Ausgang `Output_Q1` auf den Zustand von `AX_RS.Q`.
 
-1.  **Drücken von I1**: Der `IXA`-Baustein sendet ein Event und den Wert `TRUE`. Der `AX_SWITCH` leitet das Event an `EO1` -> `AX_RS` wird gesetzt (`S`) -> `Q1` geht an.
-2.  **Loslassen von I1**: Der `IXA`-Baustein sendet ein Event und den Wert `FALSE`. Der `AX_SWITCH` leitet das Event an `EO0` -> `AX_RS` wird rückgesetzt (`R`) -> `Q1` geht aus.
+## Programmablauf und Verbindungen
 
-Im Ergebnis verhält sich die Schaltung wie eine direkte Verbindung, nutzt aber intern eine ereignisbasierte Speicherlogik.
+1. `DigitalInput_I1.IN` → `AX_RF_TRIG.QI` (AdapterConnection): Das Eingangssignal wird der Flankenerkennung zugeführt.
+2. `AX_RF_TRIG.ER` → `AX_RS.S` (EventConnection): Die steigende Flanke setzt den Speicher.
+3. `AX_RF_TRIG.EF` → `AX_RS.R` (EventConnection): Die fallende Flanke setzt den Speicher zurück.
+4. `AX_RS.Q` → `DigitalOutput_Q1.OUT` (AdapterConnection): Der Speicherzustand wird auf den physischen Ausgang `Q1` gelegt.
 
------
+**Verhalten**: Beim Drücken von `I1` setzt die steigende Flanke den Speicher, `Q1` geht an. Beim Loslassen setzt die fallende Flanke ihn zurück, `Q1` geht aus.
 
 ## Anwendungsbeispiel
 
-Dieses Muster ist die Basis für **Signalfilterung oder Entprellung**. Wenn man zwischen die Weiche und den Speicher weitere Logik (z.B. Timer) einfügt, kann man sehr präzise steuern, unter welchen Bedingungen ein Signal "einrasten" oder "abfallen" soll.
+Dieses Muster ist die Basis für **Signalfilterung oder Entprellung**. Wenn man zwischen die Flankenerkennung und den Speicher weitere Logik (z.B. Timer) einfügt, kann man sehr präzise steuern, unter welchen Bedingungen ein Signal "einrasten" oder "abfallen" soll.
+
+## Zusammenfassung
+
+Die Übung zeigt, wie ein Eingangssignal über Flankenerkennung (`AX_RF_TRIG`) und einen Set/Reset-Speicher (`AX_SR`) als Puffer auf einen Ausgang gelegt wird. Das Ergebnis entspricht einer direkten Durchschaltung, die Signalverarbeitung läuft aber ereignisbasiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

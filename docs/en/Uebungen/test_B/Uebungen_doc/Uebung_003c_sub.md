@@ -1,38 +1,5 @@
-# Exercise_003c_sub: IX on QX (generic)
+# Uebung_003c_sub
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-application type `Uebung_003c_sub`. This function block serves as a bridge between local hardware and the ISOBUS auxiliary input system
+## Note
 
-----
-
-## Purpose of the Exercise
-
-Encapsulation of ISOBUS communication. The function block encapsulates the details of the ISOBUS protocol and provides a simple interface for mapping physical buttons to logical AUX numbers.
-
------
-
-## Description and Components
-
-The type `Uebung_003c_sub` contains a local input function block and an ISOBUS output function block.
-
-### Internal Function Blocks (FBs)
-
-![Uebung_003c_sub_network](./Uebung_003c_sub_network.svg)
-
-- **`IX`**: Type `logiBUS_IX`. Reads the local hardware pin (`Input`).
-- **`QX`**: Type `Aux_QX`. Sends the status as an ISOBUS message for the selected function number (`iInpNr`).
-
------
-
-## Interfaces
-
-The function block is configured via two parameters:
-
-- **`Input`**: The physical button on the controller.
-- **`iInpNr`**: The sequential number (index) in the ISOBUS auxiliary pool.
-
-Any change to the local button immediately triggers a corresponding status message in the ISOBUS network, making the button visible to other devices (e.g., task controllers).
-
-## 🛠️ Related Exercises
-
-- [Exercise_003c](Uebung_003c.md)
+This is no longer a separate exercise. The block was moved into the library and is now called [IX_TO_Aux_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/IX_TO_Aux_QX/). Description, interface and network are documented there.
