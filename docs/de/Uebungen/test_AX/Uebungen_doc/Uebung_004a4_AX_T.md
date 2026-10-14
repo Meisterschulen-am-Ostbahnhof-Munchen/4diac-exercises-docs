@@ -9,7 +9,7 @@
 Diese Übung demonstriert die Verwendung eines **Toggle-Flipflops (AX_FB_T_FF)** mit Hilfe von Adaptern.
 Ein Toggle-Flipflop ändert bei jedem positiven Taktimpuls (CLK) seinen Ausgangszustand (Q1) und kann über den Rücksetzeingang (RST) auf `FALSE` gesetzt werden.
 
-Die Eingänge werden über zwei logiBUS-Digital-Eingabebausteine (Input_I1 und Input_I2) realisiert, der Ausgang über einen logiBUS-Digital-Ausgabebaustein (Output_Q1).
+Die Eingänge werden über zwei logiBUS-Digital-Eingabebausteine (Input_I2 für RST und Input_I1 für CLK) realisiert, der Ausgang über einen logiBUS-Digital-Ausgabebaustein (Output_Q1).
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -17,13 +17,13 @@ Die SubApp enthält folgende Funktionsbausteine:
 
 - **DigitalInput_RST**
   - Typ: `logiBUS::io::DI::logiBUS_IXA`
-  - Parameter: `QI = TRUE`, `Input = Input_I1`
-  - *Verbindet den physischen Eingang Input_I1 mit dem RST-Signal des Flipflops.*
+  - Parameter: `QI = TRUE`, `Input = Input_I2`
+  - *Verbindet den physischen Eingang Input_I2 mit dem RST-Signal des Flipflops.*
 
 - **DigitalInput_CLK**
   - Typ: `logiBUS::io::DI::logiBUS_IXA`
-  - Parameter: `QI = TRUE`, `Input = Input_I2`
-  - *Verbindet den physischen Eingang Input_I2 mit dem Taktsignal (CLK) des Flipflops.*
+  - Parameter: `QI = TRUE`, `Input = Input_I1`
+  - *Verbindet den physischen Eingang Input_I1 mit dem Taktsignal (CLK) des Flipflops.*
 
 - **T_FF**
   - Typ: `adapter::bistableElements::AX_FB_T_FF`
@@ -45,11 +45,11 @@ Die Funktionsbausteine sind über **Adapterverbindungen** (keine klassischen Eve
 
 1. **Reset-Signal (RST):**
    `DigitalInput_RST.IN` → `T_FF.RST`
-   *Ein Signal auf Eingang Input_I1 setzt das Flipflop zurück (Q1 = FALSE).*
+   *Ein Signal auf Eingang Input_I2 setzt das Flipflop zurück (Q1 = FALSE).*
 
 2. **Taktsignal (CLK):**
    `DigitalInput_CLK.IN` → `T_FF.CLK`
-   *Jede steigende Flanke auf Input_I2 schaltet den Ausgang Q1 um (von TRUE nach FALSE oder umgekehrt).*
+   *Jede steigende Flanke auf Input_I1 schaltet den Ausgang Q1 um (von TRUE nach FALSE oder umgekehrt).*
 
 3. **Ausgang (Q1):**
    `T_FF.Q1` → `DigitalOutput_Q1.OUT`
