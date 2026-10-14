@@ -22,10 +22,6 @@ Die Übung entspricht `Uebung_094b_AX`, verwendet aber den wiederverwendbaren Ba
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) bzw. [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (SubApp-Instanzen)
     - **Parameter**: keine
     - **Erklärung**: Gruppe 1 enthält `I1`/`Q1`, Gruppe 2 enthält `I2`/`Q2`.
-- **INI_IN_AND_STORE_AUI2**, **INI_IN_AND_STORE_AUDI2**: Persistenz-Bausteine
-    - **Typ**: [`MyLib::sys::INI_IN_AND_STORE_AUI2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/INI_IN_AND_STORE_AUI2/) bzw. `MyLib::sys::INI_IN_AND_STORE_AUDI2` (SubApp-Instanzen)
-    - **Parameter**: keine
-    - **Erklärung**: Im Netzwerk platziert, aber über keine Verbindung angeschlossen; sie haben in dieser Übung keine Funktion.
 
 ## Programmablauf und Verbindungen
 

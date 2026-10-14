@@ -22,10 +22,6 @@ This exercise corresponds to `Uebung_094b_AX` but uses the reusable block [`MyLi
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) and [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (SubApp instances)
     - **Parameters**: none
     - **Explanation**: Group 1 contains `I1`/`Q1`, group 2 contains `I2`/`Q2`.
-- **INI_IN_AND_STORE_AUI2**, **INI_IN_AND_STORE_AUDI2**: persistence blocks
-    - **Type**: [`MyLib::sys::INI_IN_AND_STORE_AUI2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/INI_IN_AND_STORE_AUI2/) and `MyLib::sys::INI_IN_AND_STORE_AUDI2` (SubApp instances)
-    - **Parameters**: none
-    - **Explanation**: Placed in the network but not attached to any connection; they have no function in this exercise.
 
 ## Program Flow and Connections
 
