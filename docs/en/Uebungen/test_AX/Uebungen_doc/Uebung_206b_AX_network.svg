@@ -49,21 +49,21 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="230.3,449.5 291.3,449.5 296.3,444.5 296.3,379.5 301.3,374.5 410.2,374.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="230.3,119.5 308.3,119.5 313.3,124.5 313.3,335.5 318.3,340.5 410.2,340.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="230.3,284.5 291.3,284.5 296.3,289.5 296.3,352.5 301.3,357.5 410.2,357.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="230.3,614.5 283.3,614.5 288.3,609.5 288.3,604.5 293.3,599.5 740.2,599.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="230.3,119.5 291.3,119.5 296.3,124.5 296.3,369.5 301.3,374.5 410.2,374.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="230.3,449.5 308.3,449.5 313.3,444.5 313.3,345.5 318.3,340.5 410.2,340.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="230.3,614.5 291.3,614.5 296.3,609.5 296.3,362.5 301.3,357.5 410.2,357.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="230.3,284.5 283.3,284.5 288.3,289.5 288.3,594.5 293.3,599.5 740.2,599.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="551.3,407.5 661.3,407.5 666.3,412.5 666.3,627.5 671.3,632.5 740.2,632.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="551.3,407.5 661.3,407.5 666.3,412.5 666.3,627.5 671.3,632.5 740.2,632.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="551.3,424.5 619.3,424.5 624.3,429.5 624.3,782.5 629.3,787.5 1010.2,787.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="551.3,424.5 619.3,424.5 624.3,429.5 624.3,782.5 629.3,787.5 1010.2,787.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="881.3,649.5 964.5,649.5 969.3,644.7 969.3,642.3 974.1,637.5 995.2,637.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="881.3,649.5 964.5,649.5 969.3,644.7 969.3,642.3 974.1,637.5 995.2,637.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="551.3,424.5 619.3,424.5 624.3,429.5 624.3,632.5 629.3,637.5 1010.2,637.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="551.3,424.5 619.3,424.5 624.3,429.5 624.3,632.5 629.3,637.5 1010.2,637.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="881.3,649.5 964.3,649.5 969.3,654.5 969.3,782.5 974.3,787.5 995.2,787.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="881.3,649.5 964.3,649.5 969.3,654.5 969.3,782.5 974.3,787.5 995.2,787.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(110.2, 405.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(110.2, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -156,7 +156,7 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalInput_Set_I3" transform="translate(110.2, 75.0)">
+    <g id="fb_DigitalInput_Set_I3" transform="translate(110.2, 405.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -249,7 +249,7 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_Set_I3</text>
     </g>
-    <g id="fb_DigitalInput_Reset_I4" transform="translate(110.2, 240.0)">
+    <g id="fb_DigitalInput_Reset_I4" transform="translate(110.2, 570.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -342,7 +342,7 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_Reset_I4</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(110.2, 570.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(110.2, 240.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -659,7 +659,7 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ILOCK_T_FF_SR_2</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(1010.2, 675.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(1010.2, 525.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -756,7 +756,7 @@ Adapter-Kette, zusaetzlich direktes Set/Reset auf FF1)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(995.2, 525.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(995.2, 675.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

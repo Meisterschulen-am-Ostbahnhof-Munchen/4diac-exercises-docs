@@ -20,23 +20,23 @@ Die Subapplikation `Uebung_006a2_AX.SUB` steuert zwei unabhängige Lampen, die g
 
 ![Uebung_006a2_AX_network](./Uebung_006a2_AX_network.svg)
 
-  - **`I1`**: Toggelt Lampe 1.
-  - **`I2`**: Toggelt Lampe 2.
-  - **`I3`**: Reset für beide.
+  - **`I1`**: Reset für beide.
+  - **`I2`**: Toggelt Lampe 1.
+  - **`I3`**: Toggelt Lampe 2.
   - **2x `AX_T_FF_SR`**: Je einer pro Lampe.
 
 -----
 
 ## Funktionsweise
 
--   `I1` ist mit `CLK` von FF1 verbunden.
--   `I2` ist mit `CLK` von FF2 verbunden.
--   `I3` ist mit `R` von **beiden** Flip-Flops verbunden (Fan-Out).
+-   `I2` ist mit `CLK` von FF1 verbunden.
+-   `I3` ist mit `CLK` von FF2 verbunden.
+-   `I1` ist mit `R` von **beiden** Flip-Flops verbunden (Fan-Out).
 
-Ein Druck auf `I3` schaltet sofort beide Lampen aus, egal in welchem Zustand sie waren.
+Ein Druck auf `I1` schaltet sofort beide Lampen aus, egal in welchem Zustand sie waren.
 
 -----
 
 ## Anwendungsbeispiel
 
-**Bürobeleuchtung**: Jeder Schreibtisch hat sein eigenes Licht (`I1`, `I2`), aber am Ausgang gibt es einen Schalter "Raum verlassen", der alles ausschaltet (`I3`).
+**Bürobeleuchtung**: Jeder Schreibtisch hat sein eigenes Licht (`I2`, `I3`), aber am Ausgang gibt es einen Schalter "Raum verlassen", der alles ausschaltet (`I1`).

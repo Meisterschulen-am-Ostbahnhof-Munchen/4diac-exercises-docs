@@ -34,7 +34,7 @@ Distributes an incoming AUI event to two outputs (OUT1, OUT2) – here for paral
 
 ### Sub-Blocks: `AX_GT_0_UINT`
 
-- **Type**: `MyLib::sys::AX_GT_0_UINT` (user-defined SubApp)
+- **Type**: [`MyLib::sys::AUI_GT_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AUI_GT_0/) (user-defined SubApp)
 - **Internal Function Blocks Used**: (Details are unavailable as the SubApp is defined externally. It likely contains a comparison block for unsigned integers.)
 - **Functionality**:
 

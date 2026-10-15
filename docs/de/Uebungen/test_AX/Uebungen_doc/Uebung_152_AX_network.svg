@@ -48,12 +48,12 @@
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="180.1,119.5 255.1,119.5 260.1,124.5 260.1,155.5 265.1,160.5 285.0,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,179.5 255.1,179.5 260.1,174.5 260.1,165.5 265.1,160.5 285.0,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="180.1,269.5 229.1,269.5 234.1,264.5 234.1,182.5 239.1,177.5 285.0,177.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="372.8,160.5 460.9,160.5 461.7,161.3 461.7,161.7 462.5,162.5 510.0,162.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="855.1,464.5 974.5,464.5 976.1,462.9 976.1,462.1 977.7,460.5 1110.0,460.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="654.2,298.5 693.2,298.5 698.2,293.5 698.2,183.5 703.2,178.5 735.0,178.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="654.2,298.5 693.2,298.5 698.2,293.5 698.2,183.5 703.2,178.5 735.0,178.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="372.8,160.5 456.7,160.5 461.7,165.5 461.7,442.5 466.7,447.5 510.0,447.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="855.1,119.5 971.1,119.5 976.1,124.5 976.1,455.5 981.1,460.5 1110.0,460.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="654.2,583.5 693.2,583.5 698.2,578.5 698.2,183.5 703.2,178.5 735.0,178.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="654.2,583.5 693.2,583.5 698.2,578.5 698.2,183.5 703.2,178.5 735.0,178.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="854.8,178.5 894.8,178.5 899.8,183.5 899.8,242.5 904.8,247.5 960.0,247.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="854.8,178.5 894.8,178.5 899.8,183.5 899.8,242.5 904.8,247.5 960.0,247.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="830.2,256.5 872.0,256.5 875.2,259.7 875.2,261.3 878.4,264.5 960.0,264.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -86,7 +86,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I2" transform="translate(60.0, 75.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(60.0, 135.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -342,7 +342,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_CYCLE</text>
     </g>
-    <g id="fb_logiBUS_PI_IDA" transform="translate(510.0, 135.0)">
+    <g id="fb_logiBUS_PI_IDA" transform="translate(510.0, 420.0)">
       <path d="M 3 0
             L 141.25 0
             A 3 3 0 0 1 144.25 3
@@ -787,7 +787,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LIT_K</text>
     </g>
-    <g id="fb_DigitalInput_I1" transform="translate(735.0, 420.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(735.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

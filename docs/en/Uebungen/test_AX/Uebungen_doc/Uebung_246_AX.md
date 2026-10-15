@@ -41,15 +41,17 @@ The exercise consists of the sub-application Uebung_246_AX.SUB, which uses the f
 
 - initval_AR_50_Neutral.OUT -> AR_AX_SEL_AR_Runter.IN0
 - initval_AR_25_Runter.OUT -> AR_AX_SEL_AR_Runter.IN1
-- DigitalInput_I2.IN -> AR_AX_SEL_AR_Runter.G
+- DigitalInput_I1.IN -> AR_AX_SEL_AR_Runter.G
 - AR_AX_SEL_AR_Runter.OUT -> AR_AX_SEL_AR_Hoch.IN0
 - initval_AR_75_Hoch.OUT -> AR_AX_SEL_AR_Hoch.IN1
-- DigitalInput_I1.IN -> AR_AX_SEL_AR_Hoch.G
+- DigitalInput_I2.IN -> AR_AX_SEL_AR_Hoch.G
 - AR_AX_SEL_AR_Hoch.OUT -> Q_NumericValue_PHYSA.rPhys
 
 ### Notes from the Model
 
 > Zwei verkettete Binaer-Selektoren statt eines 3-Wege-Selektors (den es fuer AR nicht gibt): innen waehlt I2 (Runter) zwischen Neutral(50) und Runter(25), aussen waehlt I1 (Hoch) zwischen diesem Ergebnis und Hoch(75). Werden I1 und I2 gleichzeitig gehalten, gewinnt I1 (Hoch), weil sein Selektor der aeussere ist - bewusste Prioritaet, siehe Beschreibung.
+
+> **Current wiring:** `DigitalInput_I1` (Input_I1) drives the inner selector `AR_AX_SEL_AR_Runter` (down), `DigitalInput_I2` (Input_I2) drives the outer selector `AR_AX_SEL_AR_Hoch` (up). The assignment in the model description above (I1 = Hoch/up, I2 = Runter/down) is therefore swapped; when both are held at the same time, I2 (up) now wins.
 
 -----
 

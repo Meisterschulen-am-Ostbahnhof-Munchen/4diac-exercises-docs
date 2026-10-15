@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise implements the calibration of an analog input. An analog value is read, transferred to a calibration block via two adapter conversions, and the determined offset and scale values are permanently stored in the NVS (Non-Volatile Storage) memory. Two digital inputs control the calibration mode (offset and scale). Another digital input serves as a trigger for the analog sampling and is simultaneously routed to a digital output.
+This exercise implements the calibration of an analog input. An analog value is read, transferred to a calibration block via an adapter conversion, and the determined offset and scale values are permanently stored in the NVS (Non-Volatile Storage) memory. Two digital inputs control the calibration mode (offset and scale). Another digital input serves as a trigger for the analog sampling and is simultaneously routed to a digital output.
 
 ## Function Blocks (FBs) Used
 
@@ -21,8 +21,7 @@ This exercise implements the calibration of an analog input. An analog value is 
 | DigitalInput_I2_CO | `logiBUS::io::DI::logiBUS_IE` | QI = TRUE, Input = Input_I2, InputEvent = BUTTON_SINGLE_CLICK |
 | DigitalInput_I3_CS | `logiBUS::io::DI::logiBUS_IE` | QI = TRUE, Input = Input_I3, InputEvent = BUTTON_SINGLE_CLICK |
 | AX_SPLIT_2 | `adapter::events::unidirectional::AX_SPLIT_2` | (no parameters) |
-| AD_TO_AUDI | `adapter::conversion::unidirectional::AD_TO_AUDI` | (no parameters) |
-| AUDI_TO_AR | `adapter::conversion::unidirectional::AUDI_TO_AR` | (no parameters) |
+| AUDI_TO_AR | `adapter::conversion::unidirectional::AD_TO_AR_NUM` | (no parameters) |
 
 ### Short Description of the Function Blocks
 
@@ -33,8 +32,7 @@ This exercise implements the calibration of an analog input. An analog value is 
 - **NVS_OFFSET / NVS_SCALE**: Stores a floating-point value in non-volatile memory under the keys 'OFFSET' or 'SCALE' with predefined default values.
 - **DigitalInput_I2_CO / DigitalInput_I3_CS**: Additional digital inputs for calibration control (Input_I2 = Offset calibration, Input_I3 = Scale calibration).
 - **AX_SPLIT_2**: Distributes an incoming adapter event to two outputs (OUT1 and OUT2).
-- **AD_TO_AUDI**: Converts an analog data adapter (`AD_IN`) to a universal analog value adapter (`AUDI_OUT`).
-- **AUDI_TO_AR**: Converts a universal analog value adapter (`AUDI_IN`) to a real adapter (`AR_OUT`). *Note: The double conversion is necessary – a direct AD→AR conversion would be equivalent to a "reinterpret_cast" and should therefore be avoided.*
+- **AUDI_TO_AR**: Instance of type `AD_TO_AR_NUM`. Converts the analog data adapter (`AD_IN`) directly to a real adapter (`AR_OUT`) (the instance name is historical).
 
 ## Program Flow and Connections
 
@@ -44,11 +42,10 @@ The process is started by the digital input `Input_I1`:
     - **OUT1** → connected to `DigitalOutput_Q1.OUT` → the digital output `Output_Q1` is set.
     - **OUT2** → connected to `AnalogInput_I4.SREQ` → triggers the analog sampling.
 
-2. **Analog Measurement Value**: After sampling, `AnalogInput_I4` outputs an analog data adapter via its output `IN`. This is passed to `AD_TO_AUDI.AD_IN`.
+2. **Analog Measurement Value**: After sampling, `AnalogInput_I4` outputs an analog data adapter via its output `IN`. This is passed to `AUDI_TO_AR.AD_IN`.
 
-3. **Conversion Chain**:
-    - `AD_TO_AUDI` converts the analog data adapter into a universal analog value adapter (`AUDI_OUT`).
-    - `AUDI_TO_AR` converts this into a real-value adapter (`AR_OUT`).
+3. **Conversion**:
+    - `AUDI_TO_AR` (type `AD_TO_AR_NUM`) converts the analog data adapter (`AD_IN`) into a real-value adapter (`AR_OUT`).
     - The real-value adapter is passed to the calibration input `CALIBRATE.X`.
 
 4. **Calibration**: `DigitalInput_I2_CO` (`Input_I2`) is connected to `CALIBRATE.CO` and `DigitalInput_I3_CS` (`Input_I3`) to `CALIBRATE.CS`. Depending on the triggered control signal, `CALIBRATE` calculates the new offset or the new scale. The reference values (Y_Offset = 100.0, Y_Scale = 600.0) serve as the basis.
@@ -61,4 +58,4 @@ This ensures that the calibration values are retained even after a controller re
 
 ## Summary
 
-This exercise demonstrates a complete signal chain from digital triggering through analog acquisition, adapter conversion, and calibration to the permanent storage of the correction values in the NVS. It illustrates the use of multiple adapter types (event, data, and real adapters) and the interaction of standard FBs from the logiBUS library with special engineering blocks. The double adapter conversion between analog data and real values is explicitly commented on to avoid typical errors when using reinterpret_cast.
+This exercise demonstrates a complete signal chain from digital triggering through analog acquisition, adapter conversion, and calibration to the permanent storage of the correction values in the NVS. It illustrates the use of multiple adapter types (event, data, and real adapters) and the interaction of standard FBs from the logiBUS library with special engineering blocks. The adapter conversion between analog data and real values is done with the dedicated block `AD_TO_AR_NUM` instead of a "reinterpret_cast".

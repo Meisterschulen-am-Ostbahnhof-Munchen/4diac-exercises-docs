@@ -66,12 +66,12 @@
     <polyline points="607.9,524.5 632.9,524.5 637.9,519.5 637.9,441.5 642.9,436.5 675.0,436.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="607.9,704.5 641.9,704.5 646.9,699.5 646.9,458.5 651.9,453.5 675.0,453.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="748.9,419.5 776.5,419.5 778.9,421.9 778.9,423.1 781.3,425.5 855.0,425.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="171.6,352.5 215.8,352.5 220.8,347.5 220.8,306.5 225.8,301.5 270.0,301.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,352.5 215.8,352.5 220.8,347.5 220.8,306.5 225.8,301.5 270.0,301.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="171.6,532.5 215.8,532.5 220.8,527.5 220.8,486.5 225.8,481.5 270.0,481.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,532.5 215.8,532.5 220.8,527.5 220.8,486.5 225.8,481.5 270.0,481.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="171.6,712.5 215.8,712.5 220.8,707.5 220.8,666.5 225.8,661.5 270.0,661.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,712.5 215.8,712.5 220.8,707.5 220.8,666.5 225.8,661.5 270.0,661.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="171.6,532.5 215.8,532.5 220.8,527.5 220.8,306.5 225.8,301.5 270.0,301.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,532.5 215.8,532.5 220.8,527.5 220.8,306.5 225.8,301.5 270.0,301.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="171.6,712.5 215.8,712.5 220.8,707.5 220.8,486.5 225.8,481.5 270.0,481.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,712.5 215.8,712.5 220.8,707.5 220.8,486.5 225.8,481.5 270.0,481.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="171.6,352.5 215.8,352.5 220.8,357.5 220.8,656.5 225.8,661.5 270.0,661.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,352.5 215.8,352.5 220.8,357.5 220.8,656.5 225.8,661.5 270.0,661.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="1196.4,208.5 1283.2,208.5 1288.2,213.5 1288.2,227.5 1293.2,232.5 1380.0,232.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="1196.4,208.5 1283.2,208.5 1288.2,213.5 1288.2,227.5 1293.2,232.5 1380.0,232.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="1196.4,343.5 1283.2,343.5 1288.2,348.5 1288.2,362.5 1293.2,367.5 1380.0,367.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -236,7 +236,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ADD_3</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(60.0, 240.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(60.0, 420.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -333,7 +333,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_DigitalInput_I3" transform="translate(60.0, 420.0)">
+    <g id="fb_DigitalInput_I3" transform="translate(60.0, 600.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -430,7 +430,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I3</text>
     </g>
-    <g id="fb_DigitalInput_I4" transform="translate(60.0, 600.0)">
+    <g id="fb_DigitalInput_I4" transform="translate(60.0, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

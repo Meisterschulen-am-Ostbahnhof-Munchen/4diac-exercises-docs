@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 2499.5 967.0"
-     width="2500" height="967">
+     viewBox="53.0 -93.0 2499.5 991.0"
+     width="2500" height="991">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,28 +40,28 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="2499.5" height="967.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="2485.5" height="953.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="53.0" y="-93.0" width="2499.5" height="991.0" fill="white"/>
+  <rect x="60.0" y="-86.0" width="2485.5" height="977.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
   <rect x="60.0" y="-86.0" width="2485.5" height="25.0" fill="white" stroke="none"/>
   <line x1="60.0" y1="-61.5" x2="2545.5" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
   <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Impulszähler &amp; PI Regler</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="759.2,434.5 815.9,434.5 820.3,438.9 820.3,441.1 824.7,445.5 885.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="759.2,644.5 815.3,644.5 820.3,639.5 820.3,450.5 825.3,445.5 885.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1032.3,445.5 1125.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1260.1,445.5 1285.1,445.5 1290.1,440.5 1290.1,107.5 1295.1,102.5 1380.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1486.6,102.5 1671.6,102.5 1676.6,107.5 1676.6,530.5 1681.6,535.5 1710.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="720.1,644.5 836.1,644.5 841.1,639.5 841.1,630.5 846.1,625.5 975.0,625.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="720.1,374.5 836.1,374.5 841.1,379.5 841.1,620.5 846.1,625.5 975.0,625.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1054.1,625.5 1091.1,625.5 1096.1,620.5 1096.1,540.5 1101.1,535.5 1710.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1793.1,535.5 1905.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="2049.4,535.5 2145.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="2291.2,535.5 2343.2,535.5 2348.2,530.5 2348.2,512.5 2353.2,507.5 2415.0,507.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="180.1,374.5 255.1,374.5 260.1,379.5 260.1,410.5 265.1,415.5 345.0,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,434.5 255.1,434.5 260.1,429.5 260.1,420.5 265.1,415.5 345.0,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="180.1,524.5 229.1,524.5 234.1,519.5 234.1,437.5 239.1,432.5 345.0,432.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="759.2,417.5 815.3,417.5 820.3,422.5 820.3,440.5 825.3,445.5 885.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.8,415.5 461.9,415.5 462.8,416.3 462.8,416.7 463.6,417.5 615.0,417.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="759.2,502.5 815.3,502.5 820.3,497.5 820.3,484.5 825.3,479.5 885.0,479.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="759.2,627.5 815.3,627.5 820.3,622.5 820.3,450.5 825.3,445.5 885.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="432.8,415.5 457.8,415.5 462.8,420.5 462.8,622.5 467.8,627.5 615.0,627.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="759.2,712.5 815.3,712.5 820.3,707.5 820.3,484.5 825.3,479.5 885.0,479.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1032.3,479.5 1125.0,479.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1260.1,479.5 1308.1,479.5 1313.1,474.5 1313.1,158.5 1318.1,153.5 1380.0,153.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1486.6,153.5 1596.6,153.5 1601.6,158.5 1601.6,581.5 1606.6,586.5 1710.0,586.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
@@ -73,7 +73,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_logiBUS_PI_ID" transform="translate(615.0, 390.0)">
+    <g id="fb_logiBUS_PI_ID" transform="translate(615.0, 600.0)">
       <path d="M 3 0
             L 141.25 0
             A 3 3 0 0 1 144.25 3
@@ -672,7 +672,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">CTRL_PI</text>
     </g>
-    <g id="fb_DigitalInput_I1" transform="translate(600.0, 600.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(600.0, 330.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -1042,7 +1042,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_CYCLE</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(60.0, 330.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(60.0, 390.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

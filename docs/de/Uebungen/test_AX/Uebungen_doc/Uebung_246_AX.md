@@ -41,15 +41,17 @@ Die Übung besteht aus der Subapplikation Uebung_246_AX.SUB, welche die folgende
 
 - initval_AR_50_Neutral.OUT -> AR_AX_SEL_AR_Runter.IN0
 - initval_AR_25_Runter.OUT -> AR_AX_SEL_AR_Runter.IN1
-- DigitalInput_I2.IN -> AR_AX_SEL_AR_Runter.G
+- DigitalInput_I1.IN -> AR_AX_SEL_AR_Runter.G
 - AR_AX_SEL_AR_Runter.OUT -> AR_AX_SEL_AR_Hoch.IN0
 - initval_AR_75_Hoch.OUT -> AR_AX_SEL_AR_Hoch.IN1
-- DigitalInput_I1.IN -> AR_AX_SEL_AR_Hoch.G
+- DigitalInput_I2.IN -> AR_AX_SEL_AR_Hoch.G
 - AR_AX_SEL_AR_Hoch.OUT -> Q_NumericValue_PHYSA.rPhys
 
 ### Hinweise aus dem Modell
 
 > Zwei verkettete Binaer-Selektoren statt eines 3-Wege-Selektors (den es fuer AR nicht gibt): innen waehlt I2 (Runter) zwischen Neutral(50) und Runter(25), aussen waehlt I1 (Hoch) zwischen diesem Ergebnis und Hoch(75). Werden I1 und I2 gleichzeitig gehalten, gewinnt I1 (Hoch), weil sein Selektor der aeussere ist - bewusste Prioritaet, siehe Beschreibung.
+
+> **Aktuelle Verdrahtung:** `DigitalInput_I1` (Input_I1) schaltet den inneren Selektor `AR_AX_SEL_AR_Runter` (Runter), `DigitalInput_I2` (Input_I2) den äußeren Selektor `AR_AX_SEL_AR_Hoch` (Hoch). Die Zuordnung in der Modellbeschreibung oben (I1 = Hoch, I2 = Runter) gilt daher vertauscht; bei gleichzeitigem Halten gewinnt jetzt I2 (Hoch).
 
 -----
 

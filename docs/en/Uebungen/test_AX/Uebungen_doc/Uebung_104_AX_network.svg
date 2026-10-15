@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1325.6 880.0"
-     width="1326" height="880">
+     viewBox="53.0 -93.0 1325.6 897.0"
+     width="1326" height="897">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,21 +40,21 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1325.6" height="880.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1311.6" height="866.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="53.0" y="-93.0" width="1325.6" height="897.0" fill="white"/>
+  <rect x="60.0" y="-86.0" width="1311.6" height="883.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
   <rect x="60.0" y="-86.0" width="1311.6" height="25.0" fill="white" stroke="none"/>
   <line x1="60.0" y1="-61.5" x2="1371.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
   <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zustandsbasierte Schrittkette mit Power-Fail Recovery (AX-Version)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="225.1,119.5 295.1,119.5 300.1,124.5 300.1,412.5 305.1,417.5 660.0,417.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="171.6,352.5 267.6,352.5 272.6,357.5 272.6,445.5 277.6,450.5 660.0,450.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,352.5 267.6,352.5 272.6,357.5 272.6,445.5 277.6,450.5 660.0,450.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="171.6,502.5 297.6,502.5 302.6,497.5 302.6,472.5 307.6,467.5 660.0,467.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,502.5 297.6,502.5 302.6,497.5 302.6,472.5 307.6,467.5 660.0,467.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="171.6,652.5 393.6,652.5 398.6,647.5 398.6,489.5 403.6,484.5 660.0,484.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="171.6,652.5 393.6,652.5 398.6,647.5 398.6,489.5 403.6,484.5 660.0,484.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="225.1,584.5 295.1,584.5 300.1,579.5 300.1,422.5 305.1,417.5 660.0,417.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="171.6,187.5 267.6,187.5 272.6,192.5 272.6,445.5 277.6,450.5 660.0,450.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,187.5 267.6,187.5 272.6,192.5 272.6,445.5 277.6,450.5 660.0,450.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="171.6,352.5 297.6,352.5 302.6,357.5 302.6,462.5 307.6,467.5 660.0,467.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,352.5 297.6,352.5 302.6,357.5 302.6,462.5 307.6,467.5 660.0,467.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="171.6,502.5 393.6,502.5 398.6,497.5 398.6,489.5 403.6,484.5 660.0,484.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="171.6,502.5 393.6,502.5 398.6,497.5 398.6,489.5 403.6,484.5 660.0,484.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="797.3,467.5 867.3,467.5 872.3,462.5 872.3,357.5 877.3,352.5 1260.0,352.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="797.3,467.5 867.3,467.5 872.3,462.5 872.3,357.5 877.3,352.5 1260.0,352.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="797.3,484.5 1038.3,484.5 1043.3,489.5 1043.3,497.5 1048.3,502.5 1260.0,502.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -384,7 +384,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SEQ</text>
     </g>
-    <g id="fb_Feedback_S1" transform="translate(60.0, 240.0)">
+    <g id="fb_Feedback_S1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -481,7 +481,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Feedback_S1</text>
     </g>
-    <g id="fb_Feedback_S2" transform="translate(60.0, 390.0)">
+    <g id="fb_Feedback_S2" transform="translate(60.0, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -578,7 +578,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Feedback_S2</text>
     </g>
-    <g id="fb_Feedback_S3" transform="translate(60.0, 540.0)">
+    <g id="fb_Feedback_S3" transform="translate(60.0, 390.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -675,7 +675,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Feedback_S3</text>
     </g>
-    <g id="fb_Reset_Button" transform="translate(105.0, 75.0)">
+    <g id="fb_Reset_Button" transform="translate(105.0, 540.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

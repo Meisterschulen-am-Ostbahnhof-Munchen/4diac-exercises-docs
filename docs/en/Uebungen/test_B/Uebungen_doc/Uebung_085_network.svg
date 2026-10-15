@@ -48,9 +48,9 @@
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="417.8,119.5 483.7,119.5 485.3,117.9 485.3,117.1 486.9,115.5 552.7,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="417.8,269.5 480.3,269.5 485.3,264.5 485.3,120.5 490.3,115.5 552.7,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="632.9,115.5 727.0,115.5 727.8,116.3 727.8,116.7 728.6,117.5 822.7,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="409.3,337.5 465.3,337.5 470.3,332.5 470.3,154.5 475.3,149.5 552.7,149.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="409.3,187.5 465.3,187.5 470.3,182.5 470.3,154.5 475.3,149.5 552.7,149.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="632.9,149.5 705.9,149.5 710.9,154.5 710.9,180.5 715.9,185.5 822.7,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
@@ -145,7 +145,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_I1" transform="translate(297.7, 225.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(297.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -237,7 +237,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(297.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(297.7, 225.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

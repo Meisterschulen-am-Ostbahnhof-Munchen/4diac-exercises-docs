@@ -20,10 +20,10 @@ The exercise consists of the sub-application Uebung_004d_T_AX.SUB, which uses th
 
 - **DigitalInput_RST**: Instance of type logiBUS::io::DI::logiBUS_IXA.
   - Parameter QI = TRUE
-  - Parameter Input = Input_I1
+  - Parameter Input = Input_I2
 - **DigitalInput_CLK**: Instance of type logiBUS::io::DI::logiBUS_IXA.
   - Parameter QI = TRUE
-  - Parameter Input = Input_I2
+  - Parameter Input = Input_I1
 - **T_FF**: Instance of type adapter::bistableElements::AX_FB_T_FF.
 - **DigitalOutput_Q1**: Instance of type logiBUS::io::DQ::logiBUS_QXA.
   - Parameter QI = TRUE

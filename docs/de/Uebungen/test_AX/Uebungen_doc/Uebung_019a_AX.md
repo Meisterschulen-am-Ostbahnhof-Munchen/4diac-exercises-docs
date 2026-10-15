@@ -44,9 +44,9 @@ Die Übung besteht aus der Subapplikation Uebung_019a_AX.SUB, welche die folgend
 
 **Ereignisverbindungen:**
 
-- DigitalInput_CLK_I1.IND -> Select_4_AUI.EI4
-- DigitalInput_CLK_I2.IND -> Select_4_AUI.EI1
-- DigitalInput_CLK_I3.IND -> Select_4_AUI.EI2
+- DigitalInput_CLK_I1.IND -> Select_4_AUI.EI1
+- DigitalInput_CLK_I2.IND -> Select_4_AUI.EI2
+- DigitalInput_CLK_I3.IND -> Select_4_AUI.EI4
 - ACK.IND -> Select_4_AUI.EI3
 
 -----
