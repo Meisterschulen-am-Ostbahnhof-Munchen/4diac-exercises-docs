@@ -21,17 +21,17 @@ Zweite Version von `Uebung_094b5_AX`: Alles außer [`AOption_AD_DEMUX_2`](https:
 - **OptionalGroup_001**: Optionsgruppe 1
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 - **OptionalGroup_002**: Optionsgruppe 2
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 
 ## Programmablauf und Verbindungen
 
 1. `Checkbox_TO_AD2_2.K` → `AOption_AD_DEMUX_2.K` (AdapterConnection): die Bitmaske der beiden Checkboxen gelangt zum Demultiplexer.
-2. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`: Freigabe der Optionsgruppe 1.
-3. `AOption_AD_DEMUX_2.OUT2` → `OptionalGroup_002.OPTION`: Freigabe der Optionsgruppe 2.
+2. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`: Freigabe der Optionsgruppe 1.
+3. `AOption_AD_DEMUX_2.OUT2` → `OptionalGroup_002.AOption_IN`: Freigabe der Optionsgruppe 2.
 
 ## Zusammenfassung
 

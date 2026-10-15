@@ -6,21 +6,21 @@
 
 ## Introduction
 
-This exercise combines a pulse counter (`logiBUS_PI_IDA`, input `I8`) with a PID controller and outputs the manipulated variable as PWM at `Q1`. The data flow runs entirely via adapters (plug and socket): `FT_DERIV_10_AR` and `CTRL_PID_AR` come from `OSCAT_adapter`, `AD_TO_AR_NUM` and `AR_TO_AD_NUM` convert between the adapter types. The controller parameters (`SET`, `SUP`, `OFS`, `M_I`, `KP`, `TN`, `TV`, `LL`, `LH`) and the factor `K` of the differentiator are no longer supplied as parameters but via literal blocks (`initval_AR`/`initval_AUI`) over adapters. `I2` and `I3` start and stop the cyclic polling, `I1` toggles the manual mode of the controller.
+This exercise combines a pulse counter (`logiBUS_PI_IDA`, input `I3`) with a PID controller and outputs the manipulated variable as PWM at `Q1`. The data flow runs entirely via adapters (plug and socket): `FT_DERIV_10_AR` and `CTRL_PID_AR` come from `OSCAT_adapter`, `AD_TO_AR_NUM` and `AR_TO_AD_NUM` convert between the adapter types. The controller parameters (`SET`, `SUP`, `OFS`, `M_I`, `KP`, `TN`, `TV`, `LL`, `LH`) and the factor `K` of the differentiator are no longer supplied as parameters but via literal blocks (`initval_AR`/`initval_AUI`) over adapters. `I1` and `I2` start and stop the cyclic polling, `I4` toggles the manual mode of the controller.
 
 ## Function Blocks (FBs) Used
 
-- **DigitalInput_I1**, **DigitalInput_I2**, **DigitalInput_I3**: Buttons with click detection
+- **DigitalInput_I1**, **DigitalInput_I2**, **DigitalInput_I4**: Buttons with click detection
     - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I1` / `Input_I2` / `Input_I3`, each with `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Parameters**: `QI = TRUE`, `Input = Input_I1` / `Input_I2` / `Input_I4`, each with `InputEvent = BUTTON_SINGLE_CLICK`
     - **Explanation**: Report a single click as event `IND`.
 - **E_CYCLE**: Sampling clock
     - **Type**: [`iec61499::events::E_CYCLE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/events/E_CYCLE/)
     - **Parameters**: `DT = T#200ms`
-    - **Explanation**: Started by `I2` (`START`), stopped by `I3` (`STOP`) and requests a new pulse value every 200 ms.
+    - **Explanation**: Started by `I1` (`START`), stopped by `I2` (`STOP`) and requests a new pulse value every 200 ms.
 - **logiBUS_PI_IDA**: Pulse input
     - **Type**: [`logiBUS::io::PI::logiBUS_PI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/PI/logiBUS_PI_IDA/)
-    - **Parameters**: `QI = TRUE`, `Input = PulseInput_I8`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
+    - **Parameters**: `QI = TRUE`, `Input = PulseInput_I3`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
     - **Explanation**: Provides the pulse value via the adapter `IN` on every `REQ`.
 - **AD_TO_AR_NUM**: Conversion `AD` to `AR`
     - **Type**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
@@ -37,7 +37,7 @@ This exercise combines a pulse counter (`logiBUS_PI_IDA`, input `I8`) with a PID
 - **AX_T_FF**: Toggle flip-flop
     - **Type**: [`adapter::events::unidirectional::AX_T_FF`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_T_FF/)
     - **Parameters**: none
-    - **Explanation**: Each click on `I1` (`CLK`) inverts `Q`; `Q` goes to the input `AX_MAN` of the controller.
+    - **Explanation**: Each click on `I4` (`CLK`) inverts `Q`; `Q` goes to the input `AX_MAN` of the controller.
 - **initval_AR**: Set value
     - **Type**: [`adapter::types::unidirectional::AR::initval::initval_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/REAL/initval/initval_AR/)
     - **Parameters**: `INIT_VAL = 16.0`
@@ -61,12 +61,12 @@ This exercise combines a pulse counter (`logiBUS_PI_IDA`, input `I8`) with a PID
 
 ## Program Flow and Connections
 
-1. `DigitalInput_I2.IND` → `E_CYCLE.START` and `DigitalInput_I3.IND` → `E_CYCLE.STOP` (EventConnections): `I2` starts, `I3` stops the 200 ms clock.
+1. `DigitalInput_I1.IND` → `E_CYCLE.START` and `DigitalInput_I2.IND` → `E_CYCLE.STOP` (EventConnections): `I1` starts, `I2` stops the 200 ms clock.
 2. `E_CYCLE.EO` → `logiBUS_PI_IDA.REQ` (EventConnection): On every clock tick the pulse value is requested.
 3. `logiBUS_PI_IDA.IN` → `AD_TO_AR_NUM.AD_IN`, `AD_TO_AR_NUM.AR_OUT` → `FT_DERIV.AR_IN` and `LIT_K.OUT` → `FT_DERIV.K` (AdapterConnections): The pulse value is converted and differentiated.
 4. `FT_DERIV.AR_OUT` → `CTRL_PID.AR_ACT` (AdapterConnection): The result is the actual value of the controller.
 5. `initval_AR.OUT` → `CTRL_PID.SET` (AdapterConnection): Set value 16.0.
-6. `DigitalInput_I1.IND` → `AX_T_FF.CLK` and `AX_T_FF.Q` → `CTRL_PID.AX_MAN` (Event and AdapterConnection): Each click on `I1` toggles the manual mode of the controller.
+6. `DigitalInput_I4.IND` → `AX_T_FF.CLK` and `AX_T_FF.Q` → `CTRL_PID.AX_MAN` (Event and AdapterConnection): Each click on `I4` toggles the manual mode of the controller.
 7. `LIT_SUP.OUT` → `CTRL_PID.SUP`, `LIT_OFS.OUT` → `CTRL_PID.OFS`, `LIT_M_I.OUT` → `CTRL_PID.M_I`, `LIT_KP.OUT` → `CTRL_PID.KP`, `LIT_TN.OUT` → `CTRL_PID.TN`, `LIT_TV.OUT` → `CTRL_PID.TV`, `LIT_LL.OUT` → `CTRL_PID.LL`, `LIT_LH.OUT` → `CTRL_PID.LH` (AdapterConnections): The controller parameters.
 8. `CTRL_PID.AR_Y` → `AR_TO_AD_NUM.AR_IN` and `AR_TO_AD_NUM.AD_OUT` → `PWMOutput_Q1.OUT` (AdapterConnections): The manipulated variable is output as PWM at `Q1`.
 

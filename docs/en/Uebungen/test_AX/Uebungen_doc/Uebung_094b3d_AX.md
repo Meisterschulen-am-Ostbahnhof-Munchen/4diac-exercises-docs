@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise corresponds to [`Uebung_094b3c_AX`](Uebung_094b3c_AX.md): the index `K = 2` activates two option groups ONE AFTER THE OTHER. Instead of a dedicated pass-through plug on the option group itself (`PLUG1` on `OptionalGroup_001a`), the new generic T-piece [`AOption_T_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/Option/splitting/AOption_T_2/) is used here. `OptionalGroup_001` and `OptionalGroup_001b` are both the simple, unchanged variant with only one `OPTION` socket. The T-piece sits externally between the DEMUX and the two groups and can equally be passed on to a third group (or another T-piece). Activation is sequential: first `OUT2` (`OptionalGroup_001`), and only afterwards `OUT1` (`OptionalGroup_001b`), not simultaneously.
+This exercise corresponds to [`Uebung_094b3c_AX`](Uebung_094b3c_AX.md): the index `K = 2` activates two option groups ONE AFTER THE OTHER. Instead of a dedicated pass-through plug on the option group itself (`AOption_OUT` on `OptionalGroup_001a`), the new generic T-piece [`AOption_T_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/Option/splitting/AOption_T_2/) is used here. `OptionalGroup_001` and `OptionalGroup_001b` are both the simple, unchanged variant with only one `AOption_IN` socket. The T-piece sits externally between the DEMUX and the two groups and can equally be passed on to a third group (or another T-piece). Activation is sequential: first `OUT2` (`OptionalGroup_001`), and only afterwards `OUT1` (`OptionalGroup_001b`), not simultaneously.
 
 ## Function Blocks (FBs) Used
 
@@ -25,7 +25,7 @@ This exercise corresponds to [`Uebung_094b3c_AX`](Uebung_094b3c_AX.md): the inde
 - **OptionalGroup_001**: first option group
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (SubApp instance)
     - **Parameters**: none
-    - **Explanation**: Enables `Input_I1`/`Output_Q1`; only one `OPTION` socket.
+    - **Explanation**: Enables `Input_I1`/`Output_Q1`; only one `AOption_IN` socket.
 - **OptionalGroup_001b**: second option group
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001b`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001b/) (SubApp instance)
     - **Parameters**: none
@@ -42,14 +42,14 @@ This exercise corresponds to [`Uebung_094b3c_AX`](Uebung_094b3c_AX.md): the inde
 ## Program Flow and Connections
 
 1. `NumericValue_TO_AUI2_1.VALUEO` → `AOption_AUI_DEMUX_3.K`: The input field value selects the active output.
-2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.OPTION`, `AOption_AUI_DEMUX_3.OUT2` → `AOption_T_2.IN`, `AOption_AUI_DEMUX_3.OUT3` → `OptionalGroup_002.OPTION`.
-3. `AOption_T_2.OUT2` → `OptionalGroup_001.OPTION` and `AOption_T_2.OUT1` → `OptionalGroup_001b.OPTION`: The T-piece activates `OptionalGroup_001` first, then `OptionalGroup_001b`.
+2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.AOption_IN`, `AOption_AUI_DEMUX_3.OUT2` → `AOption_T_2.IN`, `AOption_AUI_DEMUX_3.OUT3` → `OptionalGroup_002.AOption_IN`.
+3. `AOption_T_2.OUT2` → `OptionalGroup_001.AOption_IN` and `AOption_T_2.OUT1` → `OptionalGroup_001b.AOption_IN`: The T-piece activates `OptionalGroup_001` first, then `OptionalGroup_001b`.
 
 **Behavior**: `K = 1` = nothing selected (`DummyGroup`), `K = 2` = `OptionalGroup_001` followed by `OptionalGroup_001b` (sequentially via `AOption_T_2`), `K = 3` = `OptionalGroup_002`.
 
 ## Summary
 
-Compared to `Uebung_094b3c_AX`, the special group `OptionalGroup_001a` with `PLUG1` is dropped. Instead, the generic, cascadable T-piece `AOption_T_2` distributes the activation externally and sequentially to two simple option groups.
+Compared to `Uebung_094b3c_AX`, the special group `OptionalGroup_001a` with `AOption_OUT` is dropped. Instead, the generic, cascadable T-piece `AOption_T_2` distributes the activation externally and sequentially to two simple option groups.
 
 ---
 

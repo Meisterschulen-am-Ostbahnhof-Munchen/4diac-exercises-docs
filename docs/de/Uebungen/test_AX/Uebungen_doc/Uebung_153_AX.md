@@ -6,21 +6,21 @@
 
 ## Einleitung
 
-Diese Übung kombiniert einen Impulszähler (`logiBUS_PI_IDA`, Eingang `I8`) mit einem PID-Regler und gibt die Stellgröße als PWM an `Q1` aus. Der Datenfluss läuft vollständig über Adapter (Plug and Socket): `FT_DERIV_10_AR` und `CTRL_PID_AR` stammen aus `OSCAT_adapter`, `AD_TO_AR_NUM` und `AR_TO_AD_NUM` wandeln zwischen den Adaptertypen. Die Reglerparameter (`SET`, `SUP`, `OFS`, `M_I`, `KP`, `TN`, `TV`, `LL`, `LH`) und der Faktor `K` des Differenzierers werden nicht mehr als Parameter, sondern über Literal-Bausteine (`initval_AR`/`initval_AUI`) per Adapter zugeführt. Mit `I2` und `I3` wird die zyklische Abfrage gestartet und gestoppt, mit `I1` wird der Handbetrieb des Reglers umgeschaltet.
+Diese Übung kombiniert einen Impulszähler (`logiBUS_PI_IDA`, Eingang `I3`) mit einem PID-Regler und gibt die Stellgröße als PWM an `Q1` aus. Der Datenfluss läuft vollständig über Adapter (Plug and Socket): `FT_DERIV_10_AR` und `CTRL_PID_AR` stammen aus `OSCAT_adapter`, `AD_TO_AR_NUM` und `AR_TO_AD_NUM` wandeln zwischen den Adaptertypen. Die Reglerparameter (`SET`, `SUP`, `OFS`, `M_I`, `KP`, `TN`, `TV`, `LL`, `LH`) und der Faktor `K` des Differenzierers werden nicht mehr als Parameter, sondern über Literal-Bausteine (`initval_AR`/`initval_AUI`) per Adapter zugeführt. Mit `I1` und `I2` wird die zyklische Abfrage gestartet und gestoppt, mit `I4` wird der Handbetrieb des Reglers umgeschaltet.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_I1**, **DigitalInput_I2**, **DigitalInput_I3**: Taster mit Klick-Erkennung
+- **DigitalInput_I1**, **DigitalInput_I2**, **DigitalInput_I4**: Taster mit Klick-Erkennung
     - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameter**: `QI = TRUE`, `Input = Input_I1` / `Input_I2` / `Input_I3`, jeweils `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Parameter**: `QI = TRUE`, `Input = Input_I1` / `Input_I2` / `Input_I4`, jeweils `InputEvent = BUTTON_SINGLE_CLICK`
     - **Erklärung**: Melden einen Einzelklick als Event `IND`.
 - **E_CYCLE**: Abtasttakt
     - **Typ**: [`iec61499::events::E_CYCLE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/events/E_CYCLE/)
     - **Parameter**: `DT = T#200ms`
-    - **Erklärung**: Wird durch `I2` gestartet (`START`), durch `I3` gestoppt (`STOP`) und fordert alle 200 ms einen neuen Impulswert an.
+    - **Erklärung**: Wird durch `I1` gestartet (`START`), durch `I2` gestoppt (`STOP`) und fordert alle 200 ms einen neuen Impulswert an.
 - **logiBUS_PI_IDA**: Impulseingang
     - **Typ**: [`logiBUS::io::PI::logiBUS_PI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/PI/logiBUS_PI_IDA/)
-    - **Parameter**: `QI = TRUE`, `Input = PulseInput_I8`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
+    - **Parameter**: `QI = TRUE`, `Input = PulseInput_I3`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
     - **Erklärung**: Liefert den Impulswert über den Adapter `IN` bei jedem `REQ`.
 - **AD_TO_AR_NUM**: Konvertierung `AD` nach `AR`
     - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
@@ -37,7 +37,7 @@ Diese Übung kombiniert einen Impulszähler (`logiBUS_PI_IDA`, Eingang `I8`) mit
 - **AX_T_FF**: Toggle-Flipflop
     - **Typ**: [`adapter::events::unidirectional::AX_T_FF`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_T_FF/)
     - **Parameter**: keine
-    - **Erklärung**: Jeder Klick auf `I1` (`CLK`) kehrt `Q` um; `Q` geht an den Eingang `AX_MAN` des Reglers.
+    - **Erklärung**: Jeder Klick auf `I4` (`CLK`) kehrt `Q` um; `Q` geht an den Eingang `AX_MAN` des Reglers.
 - **initval_AR**: Sollwert
     - **Typ**: [`adapter::types::unidirectional::AR::initval::initval_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/types/unidirectional/REAL/initval/initval_AR/)
     - **Parameter**: `INIT_VAL = 16.0`
@@ -61,12 +61,12 @@ Diese Übung kombiniert einen Impulszähler (`logiBUS_PI_IDA`, Eingang `I8`) mit
 
 ## Programmablauf und Verbindungen
 
-1. `DigitalInput_I2.IND` → `E_CYCLE.START` und `DigitalInput_I3.IND` → `E_CYCLE.STOP` (EventConnections): `I2` startet, `I3` stoppt den 200-ms-Takt.
+1. `DigitalInput_I1.IND` → `E_CYCLE.START` und `DigitalInput_I2.IND` → `E_CYCLE.STOP` (EventConnections): `I1` startet, `I2` stoppt den 200-ms-Takt.
 2. `E_CYCLE.EO` → `logiBUS_PI_IDA.REQ` (EventConnection): Bei jedem Takt wird der Impulswert angefordert.
 3. `logiBUS_PI_IDA.IN` → `AD_TO_AR_NUM.AD_IN`, `AD_TO_AR_NUM.AR_OUT` → `FT_DERIV.AR_IN` und `LIT_K.OUT` → `FT_DERIV.K` (AdapterConnections): Der Impulswert wird gewandelt und differenziert.
 4. `FT_DERIV.AR_OUT` → `CTRL_PID.AR_ACT` (AdapterConnection): Das Ergebnis ist der Istwert des Reglers.
 5. `initval_AR.OUT` → `CTRL_PID.SET` (AdapterConnection): Sollwert 16.0.
-6. `DigitalInput_I1.IND` → `AX_T_FF.CLK` und `AX_T_FF.Q` → `CTRL_PID.AX_MAN` (Event- und AdapterConnection): Jeder Klick auf `I1` schaltet den Handbetrieb des Reglers um.
+6. `DigitalInput_I4.IND` → `AX_T_FF.CLK` und `AX_T_FF.Q` → `CTRL_PID.AX_MAN` (Event- und AdapterConnection): Jeder Klick auf `I4` schaltet den Handbetrieb des Reglers um.
 7. `LIT_SUP.OUT` → `CTRL_PID.SUP`, `LIT_OFS.OUT` → `CTRL_PID.OFS`, `LIT_M_I.OUT` → `CTRL_PID.M_I`, `LIT_KP.OUT` → `CTRL_PID.KP`, `LIT_TN.OUT` → `CTRL_PID.TN`, `LIT_TV.OUT` → `CTRL_PID.TV`, `LIT_LL.OUT` → `CTRL_PID.LL`, `LIT_LH.OUT` → `CTRL_PID.LH` (AdapterConnections): Die Reglerparameter.
 8. `CTRL_PID.AR_Y` → `AR_TO_AD_NUM.AR_IN` und `AR_TO_AD_NUM.AD_OUT` → `PWMOutput_Q1.OUT` (AdapterConnections): Die Stellgröße wird als PWM an `Q1` ausgegeben.
 

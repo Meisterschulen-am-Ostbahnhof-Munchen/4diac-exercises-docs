@@ -10,38 +10,34 @@ This exercise implements analog input calibration with offset and scaling adjust
 
 ## Function Blocks (FBs) Used
 
-- **DigitalInput_I1**: Digital input
+- **DigitalInput_I2**: Digital input
     - **Type**: `logiBUS::io::DI::logiBUS_IXA`
-    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
-    - **Explanation**: Provides the state of `I1` as AX adapter output `IN`.
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as AX adapter output `IN`.
 - **AX_SPLIT_2**: Signal distributor
     - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
     - **Parameters**: none
-    - **Explanation**: Distributes the signal of `DigitalInput_I1` to two paths: `OUT1` to the digital output, `OUT2` to `AnalogInput_I4.SREQ`.
+    - **Explanation**: Distributes the signal of `DigitalInput_I2` to two paths: `OUT1` to `AnalogInput_I1.SREQ`, `OUT2` to the digital output.
 - **DigitalOutput_Q1**: Digital output for direct transmission of the input status
     - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
     - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
-    - **Explanation**: Switches `Q1` according to `I1`.
-- **AnalogInput_I4**: Analog input with hysteresis and rate limiting
+    - **Explanation**: Switches `Q1` according to `I2`.
+- **AnalogInput_I1**: Analog input with hysteresis and rate limiting
     - **Type**: `logiBUS::io::AI::logiBUS_AI_IDA`
-    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
-    - **Explanation**: Provides the analog value as adapter `IN` (DWORD adapter `AD`); `SREQ` is supplied by `I1` via `AX_SPLIT_2`.
-- **AD_TO_AUDI**: Adapter converter DWORD → UDINT
-    - **Type**: `adapter::conversion::unidirectional::AD_TO_AUDI`
+    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I1`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Explanation**: Provides the analog value as adapter `IN` (DWORD adapter `AD`); `SREQ` is supplied by `I2` via `AX_SPLIT_2`.
+- **AD_TO_AR_NUM**: Adapter converter AD → REAL (numeric)
+    - **Type**: `adapter::conversion::unidirectional::AD_TO_AR_NUM`
     - **Parameters**: none
-    - **Explanation**: Converts the `AD` adapter (DWORD) into an `AUDI` adapter (UDINT) (bit reinterpretation, value-preserving).
-- **AUDI_TO_AR**: Adapter converter UDINT → REAL
-    - **Type**: `adapter::conversion::unidirectional::AUDI_TO_AR`
-    - **Parameters**: none
-    - **Explanation**: Converts the `AUDI` adapter into an `AR` adapter (REAL). The double conversion is important: a direct `AD_TO_AR` would behave like a `reinterpret_cast` (comment in the network).
-- **DigitalInput_I2_CO**: Input for triggering offset calibration
-    - **Type**: `logiBUS::io::DI::logiBUS_IE`
-    - **Parameters**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Explanation**: A single click on `I2` triggers `CALIBRATE.CO`.
-- **DigitalInput_I3_CS**: Input for triggering scale calibration
+    - **Explanation**: Converts the `AD` adapter (DWORD) numerically (AD → UDINT → REAL) into an `AR` adapter (REAL). An `AD_TO_AR` would behave like a `reinterpret_cast` (bit pattern) (comment in the network).
+- **DigitalInput_I3_CO**: Input for triggering offset calibration
     - **Type**: `logiBUS::io::DI::logiBUS_IE`
     - **Parameters**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Explanation**: A single click on `I3` triggers `CALIBRATE.CS`.
+    - **Explanation**: A single click on `I3` triggers `CALIBRATE.CO`.
+- **DigitalInput_I4_CS**: Input for triggering scale calibration
+    - **Type**: `logiBUS::io::DI::logiBUS_IE`
+    - **Parameters**: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Explanation**: A single click on `I4` triggers `CALIBRATE.CS`.
 - **CALIBRATE**: Two-point calibration
     - **Type**: `adapter::Engineering::measurements::AR_CALIBRATE`
     - **Parameters**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
@@ -72,9 +68,9 @@ Both are instances of `MyLib::sys::NVS_IN_AND_STORE_AR` (in `MyLib_AX`). Interna
 
 ## Program Flow and Connections
 
-1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN`: `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT` (direct output) and `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ`.
-2. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN`, `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`, `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X`: the analog value is fed into the calibration as REAL via the double conversion.
-3. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I3_CS.IND` → `CALIBRATE.CS`: offset and scale calibration by single click.
+1. `DigitalInput_I2.IN` → `AX_SPLIT_2.IN`: `AX_SPLIT_2.OUT1` → `AnalogInput_I1.SREQ` and `AX_SPLIT_2.OUT2` → `DigitalOutput_Q1.OUT` (direct output).
+2. `AnalogInput_I1.IN` → `AD_TO_AR_NUM.AD_IN`, `AD_TO_AR_NUM.AR_OUT` → `CALIBRATE.X`: the analog value is fed into the calibration as REAL via the numeric conversion.
+3. `DigitalInput_I3_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I4_CS.IND` → `CALIBRATE.CS`: offset and scale calibration by single click.
 4. `CALIBRATE.OFFSET` → `NVS_OFFSET.VAL` and `CALIBRATE.SCALE` → `NVS_SCALE.VAL`: the calibration values are stored in and loaded from NVS.
 5. `CALIBRATE.Y` → `Hysteresis_AR_AX.INPUT`, `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD`, `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`.
 6. `Hysteresis_AR_AX.OUTPUT` → `DigitalOutput_Q2.OUT`: the comparator result switches `Q2`.

@@ -10,38 +10,34 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hi
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_I1**: logiBUS Digitaleingang
+- **DigitalInput_I2**: logiBUS Digitaleingang
     - **Typ**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
-    - **Parameter**: `QI = TRUE`, `Input = Input_I1`
-    - **Erklärung**: Liefert den Zustand von `I1` als AX-Adaptersignal.
+    - **Parameter**: `QI = TRUE`, `Input = Input_I2`
+    - **Erklärung**: Liefert den Zustand von `I2` als AX-Adaptersignal.
 - **AX_SPLIT_2**: Signalverteiler
     - **Typ**: [`adapter::events::unidirectional::AX_SPLIT_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SPLIT_2/)
     - **Parameter**: keine
-    - **Erklärung**: Verteilt das AX-Signal von `I1` auf zwei Ausgänge: `OUT1` zum Digitalausgang `Q1`, `OUT2` zum Analogeingang (Messanforderung).
+    - **Erklärung**: Verteilt das AX-Signal von `I2` auf zwei Ausgänge: `OUT1` zum Analogeingang (Messanforderung), `OUT2` zum Digitalausgang `Q1`.
 - **DigitalOutput_Q1**: logiBUS Digitalausgang
     - **Typ**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
     - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
-    - **Erklärung**: Gibt das Signal von `I1` am physischen Ausgang `Q1` aus.
-- **AnalogInput_I4**: logiBUS Analogeingang
+    - **Erklärung**: Gibt das Signal von `I2` am physischen Ausgang `Q1` aus.
+- **AnalogInput_I1**: logiBUS Analogeingang
     - **Typ**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
-    - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I1`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
     - **Erklärung**: Stellt den analogen Messwert am AD-Adapter `IN` bereit. Über den Socket `SREQ` kann eine Messung extern angefordert werden.
-- **AD_TO_AUDI**: Konvertierungsadapter
-    - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+- **AD_TO_AR_NUM**: Konvertierungsadapter
+    - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameter**: keine
-    - **Erklärung**: Wandelt den Rohwert vom AD-Adapter (DWORD) in einen AUDI-Adapter (UDINT).
-- **AUDI_TO_AR**: Konvertierungsadapter
-    - **Typ**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
-    - **Parameter**: keine
-    - **Erklärung**: Wandelt den UDINT-Wert vom AUDI-Adapter in einen REAL-Wert am AR-Adapter. **Hinweis** (Kommentar im Netzwerk): Doppelte Konvertierung ist wichtig; ein `AD_TO_AR` wäre wie ein „reinterpret_cast“.
-- **DigitalInput_I2_CO**: Klick-Eingang für die Offset-Kalibrierung
-    - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Erklärung**: Meldet einen Einzelklick auf `I2` als Ereignis `IND`.
-- **DigitalInput_I3_CS**: Klick-Eingang für die Skalen-Kalibrierung
+    - **Erklärung**: Wandelt den Rohwert vom AD-Adapter numerisch (AD → UDINT → REAL) in einen REAL-Wert am AR-Adapter. **Hinweis** (Kommentar im Netzwerk): Ein `AD_TO_AR` wäre wie ein „reinterpret_cast“ (Bitmuster); `AD_TO_AR_NUM` wandelt dagegen den Zahlenwert.
+- **DigitalInput_I3_CO**: Klick-Eingang für die Offset-Kalibrierung
     - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
     - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Erklärung**: Meldet einen Einzelklick auf `I3` als Ereignis `IND`.
+- **DigitalInput_I4_CS**: Klick-Eingang für die Skalen-Kalibrierung
+    - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameter**: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Meldet einen Einzelklick auf `I4` als Ereignis `IND`.
 - **CALIBRATE**: Kalibrierung
     - **Typ**: [`adapter::Engineering::measurements::AR_CALIBRATE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/Engineering/measurements/AR_CALIBRATE/)
     - **Parameter**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
@@ -73,12 +69,12 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hi
 
 ## Programmablauf und Verbindungen
 
-1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN` (AdapterConnection): Der Zustand von `I1` wird verteilt.
-2. `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT`: `Q1` folgt `I1`.
-3. `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ`: `I1` fordert eine Messung am Analogeingang an.
-4. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN` und `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`: Der Messwert wird zweistufig in einen REAL-Wert umgewandelt.
-5. `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X`: Der umgewandelte Wert ist der Kalibriereingang.
-6. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` und `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` (EventConnections): Ein Klick auf `I2` löst die Offset-Kalibrierung aus, ein Klick auf `I3` die Skalen-Kalibrierung.
+1. `DigitalInput_I2.IN` → `AX_SPLIT_2.IN` (AdapterConnection): Der Zustand von `I2` wird verteilt.
+2. `AX_SPLIT_2.OUT2` → `DigitalOutput_Q1.OUT`: `Q1` folgt `I2`.
+3. `AX_SPLIT_2.OUT1` → `AnalogInput_I1.SREQ`: `I2` fordert eine Messung am Analogeingang an.
+4. `AnalogInput_I1.IN` → `AD_TO_AR_NUM.AD_IN`: Der Messwert wird numerisch in einen REAL-Wert umgewandelt.
+5. `AD_TO_AR_NUM.AR_OUT` → `CALIBRATE.X`: Der umgewandelte Wert ist der Kalibriereingang.
+6. `DigitalInput_I3_CO.IND` → `CALIBRATE.CO` und `DigitalInput_I4_CS.IND` → `CALIBRATE.CS` (EventConnections): Ein Klick auf `I3` löst die Offset-Kalibrierung aus, ein Klick auf `I4` die Skalen-Kalibrierung.
 7. `CALIBRATE.OFFSET` → `INI_OFFSET.VAL` und `CALIBRATE.SCALE` → `INI_SCALE.VAL`: Die berechneten Kalibrierwerte werden in der INI-Datei (Sektion `Uebung_028a_AR`) gespeichert.
 8. `CALIBRATE.Y` → `Hysteresis_AR_AX.INPUT`: Der kalibrierte Messwert wird ausgewertet.
 9. `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` und `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`: Schwellwert und Hysteresebreite aus den VT-Eingaben.
@@ -86,7 +82,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hi
 
 **Lernziele**:
 
-- Verständnis der Adapter-Konvertierung zwischen analogen Signaltypen (`AD`, `AUDI`, `AR`)
+- Verständnis der Adapter-Konvertierung zwischen analogen Signaltypen (`AD` → `AR`, numerisch mit `AD_TO_AR_NUM`)
 - Umgang mit **INI**-Bausteinen zum persistenten Speichern und Laden von Kalibrierparametern
 - Einsatz eines Kalibrierungsadapters (Offset/Skalierung)
 - Realisierung einer Hysterese-Funktion zur Schwellwertüberwachung

@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise corresponds to [`Uebung_094b3_AX`](Uebung_094b3_AX.md), but index `K = 2` activates two option groups ONE AFTER THE OTHER instead of only one: [`OptionalGroup_001a`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001a/) is activated by the DEMUX and passes the activation on through its plug `PLUG1` to [`OptionalGroup_001b`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001b/). The DEMUX only receives its acknowledgment once both groups are initialized. The exercise shows how several groups can be started up sequentially (one after the other, not simultaneously) via the plug/socket chain without violating the DEMUX's busy gating.
+This exercise corresponds to [`Uebung_094b3_AX`](Uebung_094b3_AX.md), but index `K = 2` activates two option groups ONE AFTER THE OTHER instead of only one: [`OptionalGroup_001a`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001a/) is activated by the DEMUX and passes the activation on through its plug `AOption_OUT` to [`OptionalGroup_001b`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001b/). The DEMUX only receives its acknowledgment once both groups are initialized. The exercise shows how several groups can be started up sequentially (one after the other, not simultaneously) via the plug/socket chain without violating the DEMUX's busy gating.
 
 ## Function Blocks (FBs) Used
 
@@ -25,7 +25,7 @@ This exercise corresponds to [`Uebung_094b3_AX`](Uebung_094b3_AX.md), but index 
 - **OptionalGroup_001a**: first option group with pass-through
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001a`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001a/) (SubApp instance)
     - **Parameters**: none
-    - **Explanation**: Enables `Input_I1`/`Output_Q1` and passes the activation on through the plug `PLUG1`.
+    - **Explanation**: Enables `Input_I1`/`Output_Q1` and passes the activation on through the plug `AOption_OUT`.
 - **OptionalGroup_001b**: second option group (end of the chain)
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001b`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001b/) (SubApp instance)
     - **Parameters**: none
@@ -38,8 +38,8 @@ This exercise corresponds to [`Uebung_094b3_AX`](Uebung_094b3_AX.md), but index 
 ## Program Flow and Connections
 
 1. `NumericValue_TO_AUI2_1.VALUEO` → `AOption_AUI_DEMUX_3.K`: The input field value selects the active output.
-2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.OPTION`, `OUT2` → `OptionalGroup_001a.OPTION`, `OUT3` → `OptionalGroup_002.OPTION`.
-3. `OptionalGroup_001a.PLUG1` → `OptionalGroup_001b.OPTION`: The activation is passed on to the second group.
+2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.AOption_IN`, `OUT2` → `OptionalGroup_001a.AOption_IN`, `OUT3` → `OptionalGroup_002.AOption_IN`.
+3. `OptionalGroup_001a.AOption_OUT` → `OptionalGroup_001b.AOption_IN`: The activation is passed on to the second group.
 
 **Behavior**: 1 = nothing selected, 2 = `OptionalGroup_001a` followed by `OptionalGroup_001b`, 3 = `OptionalGroup_002`. The acknowledgment to the DEMUX only occurs once the entire chain (001a and 001b) is initialized.
 

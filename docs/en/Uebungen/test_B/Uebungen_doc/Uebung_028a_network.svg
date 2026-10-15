@@ -59,7 +59,7 @@
     <polyline points="1236.5,931.5 1290.9,931.5 1294.5,935.1 1294.5,936.9 1298.1,940.5 1351.0,940.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1450.9,730.5 1475.9,730.5 1480.9,725.5 1480.9,390.5 1485.9,385.5 1590.0,385.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1446.8,940.5 1486.8,940.5 1491.8,935.5 1491.8,390.5 1496.8,385.5 1590.0,385.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1395.1,149.5 1544.1,149.5 1549.1,154.5 1549.1,397.5 1554.1,402.5 1590.0,402.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1395.1,119.5 1544.1,119.5 1549.1,124.5 1549.1,397.5 1554.1,402.5 1590.0,402.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1395.1,269.5 1526.1,269.5 1531.1,274.5 1531.1,414.5 1536.1,419.5 1590.0,419.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1702.4,402.5 1831.4,402.5 1836.4,407.5 1836.4,539.5 1831.4,544.5 986.0,544.5 981.0,549.5 981.0,682.5 986.0,687.5 1080.0,687.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1702.4,419.5 1864.4,419.5 1869.4,424.5 1869.4,595.5 1864.4,600.5 967.0,600.5 962.0,605.5 962.0,892.5 967.0,897.5 1080.0,897.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
@@ -529,7 +529,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_CALIBRATE</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(1275.0, 105.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(1275.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

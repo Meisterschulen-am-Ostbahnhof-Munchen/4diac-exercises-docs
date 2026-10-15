@@ -30,7 +30,7 @@ Die Übung entspricht `Uebung_094b2_AX`, verwendet aber den wiederverwendbaren B
 ## Programmablauf und Verbindungen
 
 1. `NumericValue_TO_AUI2_1.VALUEO` → `AOption_AUI_DEMUX_3.K`: Der Wert des Eingabefelds wählt den aktiven Ausgang.
-2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.OPTION`, `OUT2` → `OptionalGroup_001.OPTION`, `OUT3` → `OptionalGroup_002.OPTION`.
+2. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.AOption_IN`, `OUT2` → `OptionalGroup_001.AOption_IN`, `OUT3` → `OptionalGroup_002.AOption_IN`.
 
 **Verhalten**: Wie in `Uebung_094b2_AX`: 1 = nichts ausgewählt, 2 = Gruppe 1, 3 = Gruppe 2.
 

@@ -26,7 +26,7 @@ Die Übung entspricht `Uebung_094b_AX`, verwendet aber den wiederverwendbaren Ba
 ## Programmablauf und Verbindungen
 
 1. `NumericValue_TO_AUI2.VALUEO` → `AOption_AUI_DEMUX_2.K`: Der Wert des Eingabefelds wählt den aktiven Ausgang.
-2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`, `OUT2` → `OptionalGroup_002.OPTION`.
+2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`, `OUT2` → `OptionalGroup_002.AOption_IN`.
 
 **Verhalten**: Der Index 1 aktiviert Gruppe 1, der Index 2 aktiviert Gruppe 2; es ist immer nur eine Gruppe aktiv.
 

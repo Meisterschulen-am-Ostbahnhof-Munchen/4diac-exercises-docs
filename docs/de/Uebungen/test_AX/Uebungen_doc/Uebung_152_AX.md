@@ -6,15 +6,15 @@
 
 ## Einleitung
 
-Diese Übung misst Impulse an `I8`, bildet daraus die Ableitung (`FT_DERIV_10_AR`), regelt diese mit einem PI-Regler (`CTRL_PI_AR`) auf einen Sollwert und gibt den Stellwert als PWM-Signal an `Q1` aus. Die gesamte Signalkette ist adapternativ aufgebaut: Istwert, Sollwert, Handumschaltung und alle Reglerparameter werden über Adapter-Sockets zugeführt, die festen Werte kommen aus `initval_AR`-/`initval_AUI`-Konstantenbausteinen.
+Diese Übung misst Impulse an `I1`, bildet daraus die Ableitung (`FT_DERIV_10_AR`), regelt diese mit einem PI-Regler (`CTRL_PI_AR`) auf einen Sollwert und gibt den Stellwert als PWM-Signal an `Q1` aus. Die gesamte Signalkette ist adapternativ aufgebaut: Istwert, Sollwert, Handumschaltung und alle Reglerparameter werden über Adapter-Sockets zugeführt, die festen Werte kommen aus `initval_AR`-/`initval_AUI`-Konstantenbausteinen.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_I2**: Klick-Eingang: Messung starten
+- **Input_I2**: Klick-Eingang: Messung starten
     - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
     - **Parameter**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Erklärung**: Meldet einen Einzelklick auf `I2` als Event `IND`.
-- **DigitalInput_I3**: Klick-Eingang: Messung stoppen
+- **Input_I3**: Klick-Eingang: Messung stoppen
     - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
     - **Parameter**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Erklärung**: Meldet einen Einzelklick auf `I3` als Event `IND`.
@@ -22,10 +22,10 @@ Diese Übung misst Impulse an `I8`, bildet daraus die Ableitung (`FT_DERIV_10_AR
     - **Typ**: `iec61499::events::E_CYCLE`
     - **Parameter**: `DT = T#200ms`
     - **Erklärung**: Erzeugt nach `START` alle 200 ms ein Event `EO`, bis `STOP` eintrifft.
-- **logiBUS_PI_IDA**: Impulseingang
+- **Input_I1**: Impulseingang
     - **Typ**: [`logiBUS::io::PI::logiBUS_PI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/PI/logiBUS_PI_IDA/)
-    - **Parameter**: `QI = TRUE`, `Input = PulseInput_I8`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
-    - **Erklärung**: Zählt die Impulse an `I8` und gibt sie bei jeder Anfrage (`REQ`) über den Adapter `IN` aus.
+    - **Parameter**: `QI = TRUE`, `Input = PulseInput_I1`, `ImpulseDelta = 100`, `TimeDelta = 50000`, `TimeRateLimit = 10000`
+    - **Erklärung**: Zählt die Impulse an `I1` und gibt sie bei jeder Anfrage (`REQ`) über den Adapter `IN` aus.
 - **AD_TO_AR_NUM**: Adapter-Konvertierung
     - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameter**: keine
@@ -38,10 +38,10 @@ Diese Übung misst Impulse an `I8`, bildet daraus die Ableitung (`FT_DERIV_10_AR
     - **Typ**: `OSCAT_adapter::Control::FT_DERIV_10_AR`
     - **Parameter**: `Faktor = 1.0`, `run = TRUE`
     - **Erklärung**: AR-Adapter-Wrapper um OSCAT `FT_DERIV_10`: bildet aus dem Eingangssignal (`AR_IN`) die Ableitung. Das Fenster wird über den Adapter `K` gewählt (`0` = 1 Periode, `9` = 10 Perioden).
-- **DigitalInput_I1**: Klick-Eingang: Hand/Automatik
+- **Input_I4**: Klick-Eingang: Hand/Automatik
     - **Typ**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameter**: `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Erklärung**: Meldet einen Einzelklick auf `I1` als Event `IND`.
+    - **Parameter**: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Erklärung**: Meldet einen Einzelklick auf `I4` als Event `IND`.
 - **AX_T_FF**: Toggle-Flip-Flop
     - **Typ**: [`adapter::events::unidirectional::AX_T_FF`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_T_FF/)
     - **Parameter**: keine
@@ -69,15 +69,15 @@ Diese Übung misst Impulse an `I8`, bildet daraus die Ableitung (`FT_DERIV_10_AR
 
 ## Programmablauf und Verbindungen
 
-1. `DigitalInput_I2.IND` → `E_CYCLE.START` und `DigitalInput_I3.IND` → `E_CYCLE.STOP` (EventConnections): `I2` startet, `I3` stoppt den 200-ms-Takt.
-2. `E_CYCLE.EO` → `logiBUS_PI_IDA.REQ` (EventConnection): Mit jedem Takt wird der Impulseingang abgefragt.
-3. `logiBUS_PI_IDA.IN` → `AD_TO_AR_NUM.AD_IN` und `AD_TO_AR_NUM.AR_OUT` → `FT_DERIV.AR_IN` (AdapterConnections): Der Impulswert wird in einen `AR`-Wert gewandelt und der Ableitung zugeführt. `LIT_K.OUT` → `FT_DERIV.K` legt das Fenster fest.
+1. `Input_I2.IND` → `E_CYCLE.START` und `Input_I3.IND` → `E_CYCLE.STOP` (EventConnections): `I2` startet, `I3` stoppt den 200-ms-Takt.
+2. `E_CYCLE.EO` → `Input_I1.REQ` (EventConnection): Mit jedem Takt wird der Impulseingang abgefragt.
+3. `Input_I1.IN` → `AD_TO_AR_NUM.AD_IN` und `AD_TO_AR_NUM.AR_OUT` → `FT_DERIV.AR_IN` (AdapterConnections): Der Impulswert wird in einen `AR`-Wert gewandelt und der Ableitung zugeführt. `LIT_K.OUT` → `FT_DERIV.K` legt das Fenster fest.
 4. `FT_DERIV.AR_OUT` → `CTRL_PI.AR_ACT` (AdapterConnection): Die Ableitung ist der Istwert des Reglers; `initval_AR.OUT` → `CTRL_PI.SET` liefert den Sollwert `16.0`.
 5. `LIT_SUP.OUT`, `LIT_OFS.OUT`, `LIT_M_I.OUT`, `LIT_KP.OUT`, `LIT_KI.OUT`, `LIT_LL.OUT`, `LIT_LH.OUT` → `CTRL_PI.SUP`/`OFS`/`M_I`/`KP`/`KI`/`LL`/`LH` (AdapterConnections): Die Reglerparameter kommen als Konstanten-Adapter.
-6. `DigitalInput_I1.IND` → `AX_T_FF.CLK` (EventConnection) und `AX_T_FF.Q` → `CTRL_PI.AX_MAN` (AdapterConnection): Jeder Klick auf `I1` schaltet die Handumschaltung des Reglers um.
+6. `Input_I4.IND` → `AX_T_FF.CLK` (EventConnection) und `AX_T_FF.Q` → `CTRL_PI.AX_MAN` (AdapterConnection): Jeder Klick auf `I4` schaltet die Handumschaltung des Reglers um.
 7. `CTRL_PI.AR_Y` → `AR_TO_AD_NUM.AR_IN` und `AR_TO_AD_NUM.AD_OUT` → `PWMOutput_Q1.OUT` (AdapterConnections): Der Stellwert wird gewandelt und als PWM an `Q1` ausgegeben.
 
-**Verhalten**: Nach einem Klick auf `I2` wird alle 200 ms der Impulseingang abgefragt, bis `I3` den Takt stoppt. Der Regler arbeitet auf den Sollwert `16.0`; `I1` schaltet die Handumschaltung des Reglers (`AX_MAN`) um. Der Stellwert ist auf `LL = 0.0` bis `LH = 8184.0` begrenzt.
+**Verhalten**: Nach einem Klick auf `I2` wird alle 200 ms der Impulseingang abgefragt, bis `I3` den Takt stoppt. Der Regler arbeitet auf den Sollwert `16.0`; `I4` schaltet die Handumschaltung des Reglers (`AX_MAN`) um. Der Stellwert ist auf `LL = 0.0` bis `LH = 8184.0` begrenzt.
 
 ## Zusammenfassung
 

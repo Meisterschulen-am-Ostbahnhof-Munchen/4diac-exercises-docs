@@ -29,16 +29,16 @@ Like `Uebung_094c_AX`, but the read/echo chain duplicated per dropdown (`Numeric
 - **OptionalGroup_001**: Option group 1
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **OptionalGroup_002**: Option group 2
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 
 ## Program Flow and Connections
 
-1. `NumericValue_TO_AUI2_1.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_001.K`, then `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.OPTION` (dropdown 1).
-2. `NumericValue_TO_AUI2_2.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_002.K`, then `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.OPTION` (dropdown 2).
+1. `NumericValue_TO_AUI2_1.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_001.K`, then `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.AOption_IN` (dropdown 1).
+2. `NumericValue_TO_AUI2_2.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_002.K`, then `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.AOption_IN` (dropdown 2).
 
 ## Summary
 

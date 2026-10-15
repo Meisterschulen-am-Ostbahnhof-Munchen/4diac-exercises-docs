@@ -43,7 +43,7 @@ This exercise corresponds to `Uebung_094b_AX` but uses [`AOption_AD_DEMUX_2`](ht
 
 1. `Checkbox_IDA_TO_AX.PERMIT_OUT` → `ASSEMBLE_AD_FROM_AX.BIT_00` and `Checkbox_IDA_TO_AX_1.PERMIT_OUT` → `ASSEMBLE_AD_FROM_AX.BIT_01`: The two checkboxes form bit 0 and bit 1 of the mask.
 2. `ASSEMBLE_AD_FROM_AX.OUT` → `AD_TO_AD2.AD_IN`, `AD_TO_AD2.AD2_BIDIR` → `AOption_AD_DEMUX_2.K`: The mask selects the active outputs.
-3. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`, `OUT2` → `OptionalGroup_002.OPTION`.
+3. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`, `OUT2` → `OptionalGroup_002.AOption_IN`.
 4. Echo path: `AD_TO_AD2.AD_OUT` → `SPLIT_AD_INTO_AX.IN`; `BIT_00` → `AX_TO_Checkbox.AX_IN`, `BIT_01` → `AX_TO_Checkbox_1.AX_IN`: The accepted value is written back into the checkboxes.
 
 **Behavior**: Checkbox 1 switches group 1, checkbox 2 switches group 2; both groups can be active at the same time.

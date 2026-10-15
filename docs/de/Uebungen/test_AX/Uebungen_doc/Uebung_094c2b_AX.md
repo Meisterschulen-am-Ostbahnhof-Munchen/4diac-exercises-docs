@@ -29,16 +29,16 @@ Wie `Uebung_094c2_AX`, aber mit [`MyLib::sys::NumericValue_TO_AUI2_AND_STORE`](h
 - **OptionalGroup_001**: Optionsgruppe 1
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 - **OptionalGroup_002**: Optionsgruppe 2
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 
 ## Programmablauf und Verbindungen
 
-1. `NumericValue_TO_AUI2_AND_STORE_1.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_001.K`, danach `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.OPTION` (Dropdown 1).
-2. `NumericValue_TO_AUI2_AND_STORE_2.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_002.K`, danach `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.OPTION` (Dropdown 2).
+1. `NumericValue_TO_AUI2_AND_STORE_1.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_001.K`, danach `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.AOption_IN` (Dropdown 1).
+2. `NumericValue_TO_AUI2_AND_STORE_2.VALUEO` → `AOption_AUI_DEMUX_OptionalGroup_002.K`, danach `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.AOption_IN` (Dropdown 2).
 
 ## Zusammenfassung
 

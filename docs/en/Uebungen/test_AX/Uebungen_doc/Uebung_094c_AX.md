@@ -29,7 +29,7 @@ Two independent VT dropdowns (`InputNumber_I1` and `InputNumber_I2`) each enable
 - **OptionalGroup_001**: Option group 1
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **AUI_TO_AUDI_1**: Adapter converter AUI to AUDI
     - **Type**: [`adapter::conversion::unidirectional::AUI_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AUDI_AUI/AUI_TO_AUDI/)
     - **Parameters**: none
@@ -57,7 +57,7 @@ Two independent VT dropdowns (`InputNumber_I1` and `InputNumber_I2`) each enable
 - **OptionalGroup_002**: Option group 2
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **AUI_TO_AUDI**: Adapter converter AUI to AUDI
     - **Type**: [`adapter::conversion::unidirectional::AUI_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AUDI_AUI/AUI_TO_AUDI/)
     - **Parameters**: none
@@ -69,8 +69,8 @@ Two independent VT dropdowns (`InputNumber_I1` and `InputNumber_I2`) each enable
 
 ## Program Flow and Connections
 
-1. `NumericValue_IDA.IN` → `AD_TO_AUI.AD_IN` → `AUI_TO_AUI2.AUI_IN`; `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_OptionalGroup_001.K`; `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.OPTION` (dropdown 1).
-2. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` → `AUI_TO_AUI3.AUI_IN`; `AUI_TO_AUI3.AUI2_BIDIR` → `AOption_AUI_DEMUX_OptionalGroup_002.K`; `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.OPTION` (dropdown 2).
+1. `NumericValue_IDA.IN` → `AD_TO_AUI.AD_IN` → `AUI_TO_AUI2.AUI_IN`; `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_OptionalGroup_001.K`; `AOption_AUI_DEMUX_OptionalGroup_001.OUT1` → `OptionalGroup_001.AOption_IN` (dropdown 1).
+2. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` → `AUI_TO_AUI3.AUI_IN`; `AUI_TO_AUI3.AUI2_BIDIR` → `AOption_AUI_DEMUX_OptionalGroup_002.K`; `AOption_AUI_DEMUX_OptionalGroup_002.OUT1` → `OptionalGroup_002.AOption_IN` (dropdown 2).
 3. Echo dropdown 1: `AUI_TO_AUI2.AUI_OUT` → `AUI_TO_AUDI_1.AUI_IN` → `Q_NumericValue_1.u32NewValue`.
 4. Echo dropdown 2: `AUI_TO_AUI3.AUI_OUT` → `AUI_TO_AUDI.AUI_IN` → `Q_NumericValue.u32NewValue`.
 

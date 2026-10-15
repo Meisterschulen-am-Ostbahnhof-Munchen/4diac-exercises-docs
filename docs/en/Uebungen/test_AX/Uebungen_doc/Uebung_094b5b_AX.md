@@ -21,17 +21,17 @@ Second version of `Uebung_094b5_AX`: everything except [`AOption_AD_DEMUX_2`](ht
 - **OptionalGroup_001**: Option group 1
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **OptionalGroup_002**: Option group 2
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 
 ## Program Flow and Connections
 
 1. `Checkbox_TO_AD2_2.K` → `AOption_AD_DEMUX_2.K` (AdapterConnection): the bit mask of the two checkboxes reaches the demultiplexer.
-2. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`: enables option group 1.
-3. `AOption_AD_DEMUX_2.OUT2` → `OptionalGroup_002.OPTION`: enables option group 2.
+2. `AOption_AD_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`: enables option group 1.
+3. `AOption_AD_DEMUX_2.OUT2` → `OptionalGroup_002.AOption_IN`: enables option group 2.
 
 ## Summary
 
