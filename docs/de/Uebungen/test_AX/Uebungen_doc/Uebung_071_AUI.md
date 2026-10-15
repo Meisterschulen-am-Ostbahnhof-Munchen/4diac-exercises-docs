@@ -29,7 +29,7 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 
 ### Sub-Bausteine: `AX_GT_0_UINT`
 
-- **Typ**: `MyLib::sys::AX_GT_0_UINT` (benutzerdefinierte SubApp)
+- **Typ**: [`MyLib::sys::AUI_GT_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AUI_GT_0/) (benutzerdefinierte SubApp)
 - **Verwendete interne FBs**: (Details liegen nicht vor, da die SubApp extern definiert ist. Sie enthält vermutlich einen Vergleichsbaustein für unsigned integer.)
 - **Funktionsweise**:
   Diese SubApp prüft, ob der eingehende Wert (vom Typ UINT) größer als 0 ist. Trifft dies zu, wird der Ausgangsadapter `AX_OUT` aktiviert. Dieser Ausgang steuert anschließend den digitalen Ausgang Q1 (über den Adapterverbund mit `DigitalOutput_Q1.OUT`).

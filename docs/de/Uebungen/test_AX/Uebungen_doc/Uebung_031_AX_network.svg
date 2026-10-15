@@ -48,9 +48,9 @@
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="324.4,119.5 740.4,119.5 745.4,124.5 745.4,264.5 750.4,269.5 894.3,269.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="324.4,284.5 740.4,284.5 745.4,279.5 745.4,274.5 750.4,269.5 894.3,269.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="661.6,280.5 686.6,280.5 691.6,275.5 691.6,257.5 696.6,252.5 894.3,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="324.4,284.5 436.8,284.5 438.4,282.9 438.4,282.1 440.0,280.5 564.3,280.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="324.4,119.5 433.4,119.5 438.4,124.5 438.4,275.5 443.4,280.5 564.3,280.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="661.6,314.5 752.2,314.5 754.6,316.9 754.6,318.1 757.0,320.5 894.3,320.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="661.6,331.5 752.2,331.5 754.6,333.9 754.6,335.1 757.0,337.5 894.3,337.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="661.6,348.5 752.2,348.5 754.6,350.9 754.6,352.1 757.0,354.5 894.3,354.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
@@ -58,7 +58,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(204.3, 240.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(204.3, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -151,7 +151,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(204.3, 75.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(204.3, 240.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

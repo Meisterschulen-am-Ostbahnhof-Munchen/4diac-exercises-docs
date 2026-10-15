@@ -49,10 +49,10 @@ The exercise consists of the sub-application Uebung_248_AX.SUB, which uses the f
 
 - initval_AR_50_Neutral.OUT -> AR_AX_SEL_AR_Runter.IN0
 - initval_AR_25_Runter.OUT -> AR_AX_SEL_AR_Runter.IN1
-- DigitalInput_I2.IN -> AR_AX_SEL_AR_Runter.G
+- DigitalInput_I1.IN -> AR_AX_SEL_AR_Runter.G
 - AR_AX_SEL_AR_Runter.OUT -> AR_AX_SEL_AR_Hoch.IN0
 - initval_AR_75_Hoch.OUT -> AR_AX_SEL_AR_Hoch.IN1
-- DigitalInput_I1.IN -> AR_AX_SEL_AR_Hoch.G
+- DigitalInput_I2.IN -> AR_AX_SEL_AR_Hoch.G
 - AR_AX_SEL_AR_Hoch.OUT -> AR_SPLIT_2_Anzeige_PWM.IN
 - AR_SPLIT_2_Anzeige_PWM.OUT1 -> Q_NumericValue_PHYSA.rPhys
 - AR_SPLIT_2_Anzeige_PWM.OUT2 -> AR_MUL_2_PWM13BIT.IN1
@@ -63,6 +63,8 @@ The exercise consists of the sub-application Uebung_248_AX.SUB, which uses the f
 ### Notes from the Model
 
 > 0-100% Tastgrad = 0-8191 (13-Bit LEDC, siehe RampLimitFS_TO_logiBUS_QDA_PWM_OPC.SUB in MyLib_AX-1.0.0): Faktor 81,91 = 8191/100. Mit Multimeter/Oszilloskop an Q1 gegen GND: Mittelwert = Tastgrad% x Versorgungsspannung - bei 25/50/75% Tastgrad direkt vergleichbar mit den PVEA-Sollspannungen 0,25/0,50/0,75 x U_DC.
+
+> **Current wiring:** `DigitalInput_I1` drives `AR_AX_SEL_AR_Runter` (down), `DigitalInput_I2` drives `AR_AX_SEL_AR_Hoch` (up; as the outer selector, up has priority).
 
 -----
 

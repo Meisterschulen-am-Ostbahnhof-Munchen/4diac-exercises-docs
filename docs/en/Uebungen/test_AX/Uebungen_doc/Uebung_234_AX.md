@@ -14,14 +14,10 @@ This exercise implements a classic thermostat/level switch pattern: an analog me
     - **Type**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
     - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 5`, `TimeDelta = 250`, `TimeRateLimit = 100`
     - **Explanation**: Reads the raw analog measured value (adapter `IN`, type AD) and filters small signal fluctuations via the input-side hysteresis of 5.
-- **AD_TO_AUDI**: Conversion from AD to AUDI
-    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+- **AD_TO_AR_NUM**: Numeric conversion from AD to AR
+    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameters**: none
-    - **Explanation**: First step of the numerically correct conversion of the raw measured value into a numeric value.
-- **AUDI_TO_AR**: Conversion from AUDI to AR
-    - **Type**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
-    - **Parameters**: none
-    - **Explanation**: Second step of the conversion (AUDI to `REAL` adapter). Together with `AD_TO_AUDI` this forms the same two-stage conversion chain as in `Uebung_028a_AR` ("an AD_TO_AR would be like a reinterpret_cast").
+    - **Explanation**: Converts the raw measured value (AD) numerically (AD → UDINT → REAL) into a `REAL` adapter (`AR`) – as in `Uebung_028a_AR` ("an AD_TO_AR would be like a reinterpret_cast").
 - **HysteresisParams_AR**: Parameter block for the hysteresis thresholds (sub-app)
     - **Type**: [`MyLib::sys::HysteresisParams_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/HysteresisParams_AR/)
     - **Parameters**: `rMI = 500.0`, `rDEAD = 20.0`, `rHYSTERESIS = 30.0`
@@ -37,18 +33,17 @@ This exercise implements a classic thermostat/level switch pattern: an analog me
 
 ## Program Flow and Connections
 
-1. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN`: The raw value is first converted into an `AUDI` value.
-2. `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`: It is then converted into an `AR` value (REAL adapter) – the two-stage conversion.
-3. `AUDI_TO_AR.AR_OUT` → `DualHysteresis.INPUT`: The conditioned measured value reaches the two-point controller.
-4. `HysteresisParams_AR.MI` / `.DEAD` / `.HYSTERESIS` → `DualHysteresis.MI` / `.DEAD` / `.HYSTERESIS`: The thresholds (500.0 / 20.0 / 30.0) are fixed.
-5. `DualHysteresis.OUT` → `A2X_TO_QXA2.IN`: The combined UP/DOWN result is passed to the output block.
-6. `A2X_TO_QXA2` writes UP to `Output_Q1` and DOWN to `Output_Q2` – the two actuators are never activated at the same time.
+1. `AnalogInput_I4.IN` → `AD_TO_AR_NUM.AD_IN`: The raw value is converted numerically into an `AR` value (REAL adapter).
+2. `AD_TO_AR_NUM.AR_OUT` → `DualHysteresis.INPUT`: The conditioned measured value reaches the two-point controller.
+3. `HysteresisParams_AR.MI` / `.DEAD` / `.HYSTERESIS` → `DualHysteresis.MI` / `.DEAD` / `.HYSTERESIS`: The thresholds (500.0 / 20.0 / 30.0) are fixed.
+4. `DualHysteresis.OUT` → `A2X_TO_QXA2.IN`: The combined UP/DOWN result is passed to the output block.
+5. `A2X_TO_QXA2` writes UP to `Output_Q1` and DOWN to `Output_Q2` – the two actuators are never activated at the same time.
 
 All connections are adapter connections.
 
 ## Summary
 
-Exercise 234_AX shows the classic structure of a two-point controller with hysteresis purely at hardware level: an analog input is conditioned via a two-stage adapter chain (`AD_TO_AUDI` → `AUDI_TO_AR`), checked by `DualHysteresis_AR_A2X` against a mean value with dead zone and hysteresis, and switched via `A2X_TO_QXA2` to two mutually exclusive digital outputs. For the same function with a VT display (measured value as number field, UP/DOWN as background colour instead of physical outputs) see `Uebung_235_AX`.
+Exercise 234_AX shows the classic structure of a two-point controller with hysteresis purely at hardware level: an analog input is conditioned via the numeric adapter converter `AD_TO_AR_NUM`, checked by `DualHysteresis_AR_A2X` against a mean value with dead zone and hysteresis, and switched via `A2X_TO_QXA2` to two mutually exclusive digital outputs. For the same function with a VT display (measured value as number field, UP/DOWN as background colour instead of physical outputs) see `Uebung_235_AX`.
 
 ---
 

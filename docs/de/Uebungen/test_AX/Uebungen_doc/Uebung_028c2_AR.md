@@ -19,28 +19,27 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals unter 
 
 | Name | Typ | Parameter (Auswahl) |
 | ------ | ----- | ---------------------- |
-| `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | `QI=TRUE`, `Input = Input_I1` |
+| `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IXA` | `QI=TRUE`, `Input = Input_I2` |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `QI=TRUE`, `Output = Output_Q1` |
-| `AnalogInput_I4` | `logiBUS::io::AI::logiBUS_AI_IDA` | `QI=TRUE`, `Input = AnalogInput_I7`, `AnalogInput_hysteresis=50`, `TimeDelta=250`, `TimeRateLimit=100` |
+| `AnalogInput_I1` | `logiBUS::io::AI::logiBUS_AI_IDA` | `QI=TRUE`, `Input = AnalogInput_I1`, `AnalogInput_hysteresis=50`, `TimeDelta=250`, `TimeRateLimit=100` |
 | `CALIBRATE` | `adapter::Engineering::measurements::AR_CALIBRATE` | `Y_Offset=0.0`, `Y_Scale=100.0` |
 | `NVS_OFFSET` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `QI=TRUE`, `SETM=TRUE`, `KEY='OFFSET'`, `DEFAULT_VALUE=0.0` |
 | `NVS_SCALE` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `QI=TRUE`, `SETM=TRUE`, `KEY='SCALE'`, `DEFAULT_VALUE=1.0` |
-| `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Offset-Befehl) |
-| `DigitalInput_I3_CS` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Skalierungsbefehl) |
+| `DigitalInput_I3_CO` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Offset-Befehl) |
+| `DigitalInput_I4_CS` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK` (Kalibrier-Skalierungsbefehl) |
 | `AX_SPLIT_2` | `adapter::events::unidirectional::AX_SPLIT_2` | – |
 | `THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stObj=InputNumber_THRESHOLD_N` |
 | `HYSTERESIS` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='HYSTERESIS'`, `stObj=InputNumber_HYSTERESIS_N` |
 | `Hysteresis_AR_AX` | `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX` | `QI=TRUE` |
 | `AR_SPLIT_2` | `adapter::events::unidirectional::AR_SPLIT_2` | – |
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | `stObj=InputNumber_PWM_DUTY_OUT_N` (Anzeige) |
-| `AD_TO_AUDI` | `adapter::conversion::unidirectional::AD_TO_AUDI` | – |
-| `AUDI_TO_AR` | `adapter::conversion::unidirectional::AUDI_TO_AR` | – |
+| `AD_TO_AR_NUM` | `adapter::conversion::unidirectional::AD_TO_AR_NUM` | – |
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | `QI=TRUE`, `Output = Output_Q2` |
 
 ### Kurzbeschreibung der wichtigsten Komponenten
 
-- **AnalogInput_I4**: Liest den analogen Eingang `AnalogInput_I7` (z. B. Spannung) ein und gibt ihn als Adapter-Interface (`AD`) aus. Die Abtastung wird über `SREQ` angefordert.
-- **AD_TO_AUDI, AUDI_TO_AR**: Wandeln das analoge Adapter-Interface (AD) über ein generisches `AUDI`-Interface in einen analogen Real-Wert (`AR`) um. Dies entspricht einer Typkonvertierung.
+- **AnalogInput_I1**: Liest den analogen Eingang `AnalogInput_I1` (z. B. Spannung) ein und gibt ihn als Adapter-Interface (`AD`) aus. Die Abtastung wird über `SREQ` angefordert.
+- **AD_TO_AR_NUM**: Wandelt das analoge Adapter-Interface (AD) numerisch (AD → UDINT → REAL) in einen analogen Real-Wert (`AR`) um.
 - **CALIBRATE**: Wendet Offset und Skalierung auf den eingehenden analogen Wert an: `Y = (X + Offset) * Scale`. Die Werte für Offset und Skalierung können über die Ereigniseingänge `CO` und `CS` aktualisiert und anschließend in den NVS-Bausteinen gespeichert werden. Die Referenzwerte `Y_Offset = 0.0` und `Y_Scale = 100.0` entsprechen laut Netzwerk-Kommentar dem Beispiel 0,0 ⇒ 0,5 V und 100,0 ⇒ 4,5 V (typischer Automotive-Sensor).
 - **NVS_OFFSET, NVS_SCALE**: Speichern die Kalibrierwerte dauerhaft im Flash des ESP32. Der Ausgang `VAL` liefert den aktuell gespeicherten Wert.
 - **Hysteresis_AR_AX**: Vergleicht den kalibrierten Wert mit einem Schwellwert und einer Hysterese. Der Ausgang `OUTPUT` (→ `DigitalOutput_Q2.OUT`) schaltet, wenn der Wert den Schwellwert überschreitet (bzw. unterschreitet inkl. Hysterese).
@@ -49,20 +48,20 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals unter 
 
 ## Programmablauf und Verbindungen
 
-1. **Analoger Eingang**: Der Analogbaustein `AnalogInput_I4` (logiBUS AI) liefert einen analogen Messwert als `AD`-Adapter.
-2. **Konvertierung**: Über `AD_TO_AUDI` und `AUDI_TO_AR` wird der Wert in einen `AR`-Real-Wert umgewandelt. Ein Kommentar weist darauf hin, dass eine direkte Konvertierung (`AD_TO_AR`) wie ein `reinterpret_cast` wirken würde – die doppelte Umwandlung stellt eine korrekte Werteübertragung sicher.
-3. **Kalibrierung**: Der `AR`-Wert wird an `CALIBRATE.X` übergeben. Die digitalen Eingänge `I2` (CO) und `I3` (CS) lösen die Berechnung von Offset (`CO`-Ereignis) und Skalierung (`CS`-Ereignis) aus. Die berechneten Werte werden über die NVS-Bausteine gespeichert.
-   - `DigitalInput_I2_CO` → `CALIBRATE.CO` (Offset ermitteln)
-   - `DigitalInput_I3_CS` → `CALIBRATE.CS` (Skalierung ermitteln)
+1. **Analoger Eingang**: Der Analogbaustein `AnalogInput_I1` (logiBUS AI) liefert einen analogen Messwert als `AD`-Adapter.
+2. **Konvertierung**: Über `AD_TO_AR_NUM` wird der Wert numerisch in einen `AR`-Real-Wert umgewandelt. Ein Kommentar weist darauf hin, dass ein `AD_TO_AR` wie ein `reinterpret_cast` (Bitmuster) wirken würde – `AD_TO_AR_NUM` wandelt dagegen den Zahlenwert (AD → UDINT → REAL).
+3. **Kalibrierung**: Der `AR`-Wert wird an `CALIBRATE.X` übergeben. Die digitalen Eingänge `I3` (CO) und `I4` (CS) lösen die Berechnung von Offset (`CO`-Ereignis) und Skalierung (`CS`-Ereignis) aus. Die berechneten Werte werden über die NVS-Bausteine gespeichert.
+   - `DigitalInput_I3_CO` → `CALIBRATE.CO` (Offset ermitteln)
+   - `DigitalInput_I4_CS` → `CALIBRATE.CS` (Skalierung ermitteln)
 4. **Aufteilung des kalibrierten Werts**: Der Ausgang `CALIBRATE.Y` wird über `AR_SPLIT_2` auf zwei Pfade verteilt:
    - Pfad 1: Anzeige → `Q_NumericValue_PHYSA.rPhys` (`InputNumber_PWM_DUTY_OUT_N`)
    - Pfad 2: Hysterese → `Hysteresis_AR_AX.INPUT`
 5. **Hysterese**: Die Sub-Applikationen `THRESHOLD` und `HYSTERESIS` liefern die Schwellwerte (`THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` und `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`). Der Hysterese-Baustein vergleicht den Eingang mit diesen Werten und schaltet seinen Ausgang `OUTPUT`.
 6. **Digitale Ausgänge**:
-   - `DigitalInput_I1` wird über `AX_SPLIT_2` verteilt: `OUT1` → `DigitalOutput_Q1.OUT` (der Ausgang `Q1` folgt dem Eingang `I1`), `OUT2` → `AnalogInput_I4.SREQ` (löst die analoge Abtastung aus).
+   - `DigitalInput_I2` wird über `AX_SPLIT_2` verteilt: `OUT1` → `AnalogInput_I1.SREQ` (löst die analoge Abtastung aus), `OUT2` → `DigitalOutput_Q1.OUT` (der Ausgang `Q1` folgt dem Eingang `I2`).
    - `Hysteresis_AR_AX.OUTPUT` schaltet den digitalen Ausgang `DigitalOutput_Q2` (z. B. für eine Schaltfunktion).
 
-**Wichtiger Hinweis**: Die doppelte Adapter-Konvertierung (`AD_TO_AUDI` + `AUDI_TO_AR`) ist notwendig, um eine korrekte Werteübertragung zu gewährleisten (siehe Kommentar im Netzwerk).
+**Wichtiger Hinweis**: Ein `AD_TO_AR` wäre wie ein „reinterpret_cast“ (Bitmuster). `AD_TO_AR_NUM` wandelt dagegen den Zahlenwert (AD → UDINT → REAL) und gewährleistet so eine korrekte Werteübertragung (siehe Kommentar im Netzwerk).
 
 ## Zusammenfassung
 

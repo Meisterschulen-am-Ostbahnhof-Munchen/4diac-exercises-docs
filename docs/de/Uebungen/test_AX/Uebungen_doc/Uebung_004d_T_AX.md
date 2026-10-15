@@ -20,10 +20,10 @@ Die Übung besteht aus der Subapplikation Uebung_004d_T_AX.SUB, welche die folge
 
 - **DigitalInput_RST**: Instanz des Typs logiBUS::io::DI::logiBUS_IXA.
   - Parameter QI = TRUE
-  - Parameter Input = Input_I1
+  - Parameter Input = Input_I2
 - **DigitalInput_CLK**: Instanz des Typs logiBUS::io::DI::logiBUS_IXA.
   - Parameter QI = TRUE
-  - Parameter Input = Input_I2
+  - Parameter Input = Input_I1
 - **T_FF**: Instanz des Typs adapter::bistableElements::AX_FB_T_FF.
 - **DigitalOutput_Q1**: Instanz des Typs logiBUS::io::DQ::logiBUS_QXA.
   - Parameter QI = TRUE

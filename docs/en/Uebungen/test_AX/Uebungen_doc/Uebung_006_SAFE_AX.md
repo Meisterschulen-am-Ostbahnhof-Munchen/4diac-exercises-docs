@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This exercise is the SAFE variant of `Uebung_006_AX` (SR flip-flop with START/STOP buttons): STOP (`I2`) and the feedback input `I8` (feedback of the hardware emergency stop) switch the output off immediately in software and lock START via an enable latch (`E_RS`) and a start gate (`E_PERMIT`). The lock is only released when RESET (`I7`) has detected a valid button edge via `SF_ResetButton` (PLCopen Safety Part 1, Ch. 6.1). RESET alone does not switch the output back on; START has to be pressed again for that.
+This exercise is the SAFE variant of `Uebung_006_AX` (SR flip-flop with START/STOP buttons): STOP (`I2`) and the feedback input `I7` (feedback of the hardware emergency stop) switch the output off immediately in software and lock START via an enable latch (`E_RS`) and a start gate (`E_PERMIT`). The lock is only released when RESET (`I8`) has detected a valid button edge via `SF_ResetButton` (PLCopen Safety Part 1, Ch. 6.1). RESET alone does not switch the output back on; START has to be pressed again for that.
 
 **Cold start:** `StartPermit.Q` is `FALSE` (type default of `BOOL`, `E_RS` has no initial value). START therefore remains locked until a valid RESET acknowledgement has been given after startup.
 
@@ -22,16 +22,16 @@ This exercise is the SAFE variant of `Uebung_006_AX` (SR flip-flop with START/ST
     - **Explanation**: Reports a single click on `I2` as event `IND`.
 - **StopFeedback**: Feedback input of the hardware emergency stop
     - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I8`, `InputEvent = BUTTON_PRESS_DOWN`
-    - **Explanation**: Reports pressing down (`BUTTON_PRESS_DOWN`) on `I8` as event `IND`.
+    - **Parameters**: `QI = TRUE`, `Input = Input_I7`, `InputEvent = BUTTON_PRESS_DOWN`
+    - **Explanation**: Reports pressing down (`BUTTON_PRESS_DOWN`) on `I7` as event `IND`.
 - **ResetInput**: Level and event for `SF_ResetButton`
     - **Type**: [`logiBUS::io::DI::logiBUS_IX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IX/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I7`
-    - **Explanation**: Provides the level of `I7` (`IN`) and the associated event `IND`.
+    - **Parameters**: `QI = TRUE`, `Input = Input_I8`
+    - **Explanation**: Provides the level of `I8` (`IN`) and the associated event `IND`.
 - **ResetButton**: Reset button according to PLCopen Safety
     - **Type**: `logiBUS::safety::PLCopen::SF_ResetButton`
     - **Parameters**: `ResetRequested = TRUE`, `TrailingMinimum = T#350ms`, `TrailingMaximum = T#2s`
-    - **Explanation**: Adds a trailing-edge evaluation (LOW-HIGH-LOW) to the reset input: after a valid press and release of `I7` (inputs `REQ` and `ResetIn`) within `TrailingMinimum` to `TrailingMaximum`, the event `EResetOut` is output. The time limits are monitored by two `E_TimeOut` blocks via the adapters `minTimeOut`/`maxTimeOut`.
+    - **Explanation**: Adds a trailing-edge evaluation (LOW-HIGH-LOW) to the reset input: after a valid press and release of `I8` (inputs `REQ` and `ResetIn`) within `TrailingMinimum` to `TrailingMaximum`, the event `EResetOut` is output. The time limits are monitored by two `E_TimeOut` blocks via the adapters `minTimeOut`/`maxTimeOut`.
 - **minTimeOut**: Timer for the minimum time of `SF_ResetButton`
     - **Type**: [`iec61499::events::E_TimeOut`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/events/E_TimeOut/)
     - **Parameters**: none
@@ -61,13 +61,13 @@ This exercise is the SAFE variant of `Uebung_006_AX` (SR flip-flop with START/ST
 
 1. `START.IND` → `StartGate.EI` and `StartGate.EO` → `MainSR.S` (EventConnections): A click on `I1` sets the output only if `StartGate` is enabled.
 2. `STOP.IND` → `MainSR.R` (EventConnection): A click on `I2` resets the output immediately.
-3. `StopFeedback.IND` → `MainSR.R` and `StopFeedback.IND` → `StartPermit.R` (EventConnections): The hardware emergency stop feedback on `I8` switches the output off and additionally locks START by resetting the enable latch.
-4. `ResetInput.IND` → `ResetButton.REQ` (EventConnection) and `ResetInput.IN` → `ResetButton.ResetIn` (DataConnection): Level and event of `I7` reach `SF_ResetButton`.
+3. `StopFeedback.IND` → `MainSR.R` and `StopFeedback.IND` → `StartPermit.R` (EventConnections): The hardware emergency stop feedback on `I7` switches the output off and additionally locks START by resetting the enable latch.
+4. `ResetInput.IND` → `ResetButton.REQ` (EventConnection) and `ResetInput.IN` → `ResetButton.ResetIn` (DataConnection): Level and event of `I8` reach `SF_ResetButton`.
 5. `ResetButton.minTimeOut` → `minTimeOut.TimeOutSocket` and `ResetButton.maxTimeOut` → `maxTimeOut.TimeOutSocket` (AdapterConnections): The two timers monitor the valid time window of the button edge.
 6. `ResetButton.EResetOut` → `StartPermit.S` (EventConnection) and `StartPermit.Q` → `StartGate.PERMIT` (DataConnection): A valid RESET acknowledgement enables START again.
 7. `MainSR.Q` → `DigitalOutput_Q1.OUT` (AdapterConnection): The state of the memory element is applied to the physical output `Q1`.
 
-**Behavior**: START (`I1`) only switches `Q1` on if an enable is present. STOP (`I2`) or the emergency stop feedback (`I8`) switch `Q1` off; the feedback additionally locks START. After the lock, `Q1` initially stays off even after a valid RESET acknowledgement (`I7`); only a new START click switches `Q1` on again.
+**Behavior**: START (`I1`) only switches `Q1` on if an enable is present. STOP (`I2`) or the emergency stop feedback (`I7`) switch `Q1` off; the feedback additionally locks START. After the lock, `Q1` initially stays off even after a valid RESET acknowledgement (`I8`); only a new START click switches `Q1` on again.
 
 ## Summary
 

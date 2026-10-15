@@ -26,7 +26,7 @@ This exercise corresponds to `Uebung_094b4_AX` but uses [`MyLib::sys::NumericVal
 ## Program Flow and Connections
 
 1. `NumericValue_TO_AUI2_AND_STORE_1.VALUEO` → `AOption_AUI_DEMUX_2.K`: The index (possibly loaded from the INI) selects the active output.
-2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`, `OUT2` → `OptionalGroup_002.OPTION`.
+2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`, `OUT2` → `OptionalGroup_002.AOption_IN`.
 
 **Behavior**: Like `Uebung_094b4_AX` (index 1 = group 1, index 2 = group 2); in addition the selection survives a restart.
 

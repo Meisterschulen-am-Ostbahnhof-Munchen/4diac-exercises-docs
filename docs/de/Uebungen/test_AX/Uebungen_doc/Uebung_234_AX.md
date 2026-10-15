@@ -14,14 +14,10 @@ Diese Übung implementiert ein klassisches Thermostat-/Füllstandsschalter-Muste
     - **Typ**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
     - **Parameter**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 5`, `TimeDelta = 250`, `TimeRateLimit = 100`
     - **Erklärung**: Liest den rohen Analogmesswert (Adapter `IN`, Typ AD) ein und filtert kleine Signalschwankungen über die eingangsseitige Hysterese von 5.
-- **AD_TO_AUDI**: Konvertierung von AD nach AUDI
-    - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+- **AD_TO_AR_NUM**: Numerische Konvertierung von AD nach AR
+    - **Typ**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameter**: keine
-    - **Erklärung**: Erster Schritt der numerisch korrekten Umwandlung des rohen Messwerts in einen Zahlenwert.
-- **AUDI_TO_AR**: Konvertierung von AUDI nach AR
-    - **Typ**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
-    - **Parameter**: keine
-    - **Erklärung**: Zweiter Schritt der Umwandlung (AUDI nach `REAL`-Adapter). Zusammen mit `AD_TO_AUDI` entsteht dieselbe zweistufige Konvertierungskette wie in `Uebung_028a_AR` ("ein AD_TO_AR wäre wie ein reinterpret_cast").
+    - **Erklärung**: Wandelt den rohen Messwert (AD) numerisch (AD → UDINT → REAL) in einen `REAL`-Adapter (`AR`) um – wie in `Uebung_028a_AR` ("ein AD_TO_AR wäre wie ein reinterpret_cast").
 - **HysteresisParams_AR**: Parameter-Baustein für die Hysterese-Schwellwerte (SubApp)
     - **Typ**: [`MyLib::sys::HysteresisParams_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/HysteresisParams_AR/)
     - **Parameter**: `rMI = 500.0`, `rDEAD = 20.0`, `rHYSTERESIS = 30.0`
@@ -37,18 +33,17 @@ Diese Übung implementiert ein klassisches Thermostat-/Füllstandsschalter-Muste
 
 ## Programmablauf und Verbindungen
 
-1. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN`: Der Rohwert wird zunächst in einen `AUDI`-Wert gewandelt.
-2. `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`: Anschließend erfolgt die Wandlung in einen `AR`-Wert (REAL-Adapter) – die zweistufige Konvertierung.
-3. `AUDI_TO_AR.AR_OUT` → `DualHysteresis.INPUT`: Der aufbereitete Messwert gelangt an den Zweipunktregler.
-4. `HysteresisParams_AR.MI` / `.DEAD` / `.HYSTERESIS` → `DualHysteresis.MI` / `.DEAD` / `.HYSTERESIS`: Die Schwellwerte (500.0 / 20.0 / 30.0) werden fest vorgegeben.
-5. `DualHysteresis.OUT` → `A2X_TO_QXA2.IN`: Das kombinierte UP/DOWN-Ergebnis wird an den Ausgabe-Baustein übergeben.
-6. `A2X_TO_QXA2` schreibt UP auf `Output_Q1` und DOWN auf `Output_Q2` – die beiden Aktoren werden nie gleichzeitig aktiviert.
+1. `AnalogInput_I4.IN` → `AD_TO_AR_NUM.AD_IN`: Der Rohwert wird numerisch in einen `AR`-Wert (REAL-Adapter) gewandelt.
+2. `AD_TO_AR_NUM.AR_OUT` → `DualHysteresis.INPUT`: Der aufbereitete Messwert gelangt an den Zweipunktregler.
+3. `HysteresisParams_AR.MI` / `.DEAD` / `.HYSTERESIS` → `DualHysteresis.MI` / `.DEAD` / `.HYSTERESIS`: Die Schwellwerte (500.0 / 20.0 / 30.0) werden fest vorgegeben.
+4. `DualHysteresis.OUT` → `A2X_TO_QXA2.IN`: Das kombinierte UP/DOWN-Ergebnis wird an den Ausgabe-Baustein übergeben.
+5. `A2X_TO_QXA2` schreibt UP auf `Output_Q1` und DOWN auf `Output_Q2` – die beiden Aktoren werden nie gleichzeitig aktiviert.
 
 Alle Verbindungen sind Adapterverbindungen.
 
 ## Zusammenfassung
 
-Die Übung 234_AX zeigt den klassischen Aufbau eines Zweipunktreglers mit Hysterese rein auf Hardware-Ebene: Ein Analogeingang wird über eine zweistufige Adapterkette (`AD_TO_AUDI` → `AUDI_TO_AR`) aufbereitet, von `DualHysteresis_AR_A2X` gegen einen Mittelwert mit Totzone und Hysterese geprüft und über `A2X_TO_QXA2` auf zwei sich gegenseitig ausschließende Digitalausgänge geschaltet. Für dieselbe Funktion mit VT-Anzeige (Messwert als Zahlenfeld, UP/DOWN als Hintergrundfarbe statt physischer Ausgänge) siehe `Uebung_235_AX`.
+Die Übung 234_AX zeigt den klassischen Aufbau eines Zweipunktreglers mit Hysterese rein auf Hardware-Ebene: Ein Analogeingang wird über den numerischen Adapterkonverter `AD_TO_AR_NUM` aufbereitet, von `DualHysteresis_AR_A2X` gegen einen Mittelwert mit Totzone und Hysterese geprüft und über `A2X_TO_QXA2` auf zwei sich gegenseitig ausschließende Digitalausgänge geschaltet. Für dieselbe Funktion mit VT-Anzeige (Messwert als Zahlenfeld, UP/DOWN als Hintergrundfarbe statt physischer Ausgänge) siehe `Uebung_235_AX`.
 
 ---
 

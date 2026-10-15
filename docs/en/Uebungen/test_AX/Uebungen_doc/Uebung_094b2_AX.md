@@ -47,7 +47,7 @@ This exercise corresponds to `Uebung_094b_AX` but uses [`AOption_AUI_DEMUX_3`](h
 
 1. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` → `AUI_TO_AUI2.AUI_IN`: The input field value is converted to AUI and then into the bidirectional AUI2 adapter.
 2. `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_3.K`: The value selects the active output of the DEMUX.
-3. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.OPTION`, `OUT2` → `OptionalGroup_001.OPTION`, `OUT3` → `OptionalGroup_002.OPTION`.
+3. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.AOption_IN`, `OUT2` → `OptionalGroup_001.AOption_IN`, `OUT3` → `OptionalGroup_002.AOption_IN`.
 4. Echo path: `AUI_TO_AUI2.AUI_OUT` → `AUI_TO_AUDI_1.AUI_IN` → `Q_NumericValue_1.u32NewValue`: The value accepted by the DEMUX is written back into the VT field.
 
 **Behavior**: In the input field `InputNumber_I1`, 1 gives the "nothing selected" state (DummyGroup), 2 activates group 1 and 3 activates group 2.

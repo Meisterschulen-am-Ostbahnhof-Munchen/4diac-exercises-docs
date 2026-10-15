@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1206.2 747.0"
-     width="1206" height="747">
+     viewBox="53.0 -93.0 1213.2 747.0"
+     width="1213" height="747">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,29 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1206.2" height="747.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1192.2" height="733.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1192.2" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1252.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <rect x="53.0" y="-93.0" width="1213.2" height="747.0" fill="white"/>
+  <rect x="60.0" y="-86.0" width="1199.2" height="733.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="60.0" y="-86.0" width="1199.2" height="25.0" fill="white" stroke="none"/>
+  <line x1="60.0" y1="-61.5" x2="1259.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
   <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zweipunktregler (Fuellstand/Thermostat-Muster) via DualHysteresis_AR_A2X +
 A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="204.2,238.5 375.0,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="204.2,238.5 375.0,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="486.2,238.5 570.0,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="486.2,238.5 570.0,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="681.2,238.5 751.2,238.5 756.2,243.5 756.2,446.5 761.2,451.5 825.0,451.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="681.2,238.5 751.2,238.5 756.2,243.5 756.2,446.5 761.2,451.5 825.0,451.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="204.2,238.5 570.0,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="204.2,238.5 570.0,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="689.8,238.5 759.8,238.5 764.8,243.5 764.8,446.5 769.8,451.5 825.0,451.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="689.8,238.5 759.8,238.5 764.8,243.5 764.8,446.5 769.8,451.5 825.0,451.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="694.0,485.5 754.5,485.5 759.5,480.5 759.5,473.5 764.5,468.5 825.0,468.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="694.0,485.5 754.5,485.5 759.5,480.5 759.5,473.5 764.5,468.5 825.0,468.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="694.0,502.5 754.5,502.5 759.5,497.5 759.5,490.5 764.5,485.5 825.0,485.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="694.0,502.5 754.5,502.5 759.5,497.5 759.5,490.5 764.5,485.5 825.0,485.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="694.0,519.5 754.5,519.5 759.5,514.5 759.5,507.5 764.5,502.5 825.0,502.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="694.0,519.5 754.5,519.5 759.5,514.5 759.5,507.5 764.5,502.5 825.0,502.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="956.8,451.5 1043.4,451.5 1048.4,456.5 1048.4,463.5 1053.4,468.5 1140.0,468.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="956.8,451.5 1043.4,451.5 1048.4,456.5 1048.4,463.5 1053.4,468.5 1140.0,468.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="956.8,451.5 1043.4,451.5 1048.4,456.5 1048.4,480.5 1053.4,485.5 1140.0,485.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="956.8,451.5 1043.4,451.5 1048.4,456.5 1048.4,480.5 1053.4,485.5 1140.0,485.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
@@ -191,18 +189,18 @@ A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogInput_I4</text>
     </g>
-    <g id="fb_AD_TO_AUDI" transform="translate(375.0, 195.0)">
+    <g id="fb_AD_TO_AR_NUM" transform="translate(570.0, 195.0)">
       <path d="M 3 0
-            L 108.25 0
-            A 3 3 0 0 1 111.25 3
-            L 111.25 18
-            A 3 3 0 0 1 108.25 21
-            L 102.25 21
-            L 102.25 35
-            L 108.25 35
-            A 3 3 0 0 1 111.25 38
-            L 111.25 52
-            A 3 3 0 0 1 108.25 55
+            L 116.75 0
+            A 3 3 0 0 1 119.75 3
+            L 119.75 18
+            A 3 3 0 0 1 116.75 21
+            L 110.75 21
+            L 110.75 35
+            L 116.75 35
+            A 3 3 0 0 1 119.75 38
+            L 119.75 52
+            A 3 3 0 0 1 116.75 55
             L 3 55
             A 3 3 0 0 1 0 52
             L 0 38
@@ -217,31 +215,31 @@ A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
             fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
       <!-- Name Section -->
-      <path d="M 17.6875 20.0
-            L 31.6875 20.0
-            A 1 1 0 0 1 32.6875 21.0
-            L 32.6875 24.0
-            L 31.1875 24.0
-            L 31.1875 26.666666666666668
-            L 32.6875 26.666666666666668
-            L 32.6875 35.0
-            A 1 1 0 0 1 31.6875 36.0
-            L 17.6875 36.0
-            A 1 1 0 0 1 16.6875 35.0
-            L 16.6875 26.666666666666668
-            L 18.1875 26.666666666666668
-            L 18.1875 24.0
-            L 16.6875 24.0
-            L 16.6875 21.0
-            A 1 1 0 0 1 17.6875 20.0
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
             Z"
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
-      <text x="24.6875" y="32.0"
+      <text x="20.0" y="32.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
             fill="#000000" text-anchor="middle">C</text>
-      <text x="34.6875" y="32.0"
+      <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">AD_TO_AUDI</text>
+            fill="#000000">AD_TO_AR_NUM</text>
 
 
 
@@ -260,114 +258,25 @@ A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
       <text x="13" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">AD_IN</text>
-      <path d="M 101.25 38.5
-            L 103.75 38.5
-            L 103.75 40.166666666666664
-            L 106.25 40.166666666666664
-            L 106.25 38.5
-            L 111.25 38.5
-            L 111.25 48.5
-            L 106.25 48.5
-            L 106.25 46.833333333333336
-            L 103.75 46.833333333333336
-            L 103.75 48.5
-            L 101.25 48.5
+      <path d="M 109.75 38.5
+            L 112.25 38.5
+            L 112.25 40.166666666666664
+            L 114.75 40.166666666666664
+            L 114.75 38.5
+            L 119.75 38.5
+            L 119.75 48.5
+            L 114.75 48.5
+            L 114.75 46.833333333333336
+            L 112.25 46.833333333333336
+            L 112.25 48.5
+            L 109.75 48.5
             Z" fill="#845DAF"/>
-      <text x="98.25" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">AUDI_OUT</text>
-      <!-- Instance Name -->
-      <text x="55.625" y="-5"
-            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="middle">AD_TO_AUDI</text>
-    </g>
-    <g id="fb_AUDI_TO_AR" transform="translate(570.0, 195.0)">
-      <path d="M 3 0
-            L 108.25 0
-            A 3 3 0 0 1 111.25 3
-            L 111.25 18
-            A 3 3 0 0 1 108.25 21
-            L 102.25 21
-            L 102.25 35
-            L 108.25 35
-            A 3 3 0 0 1 111.25 38
-            L 111.25 52
-            A 3 3 0 0 1 108.25 55
-            L 3 55
-            A 3 3 0 0 1 0 52
-            L 0 38
-            A 3 3 0 0 1 3 35
-            L 9 35
-            L 9 21
-            L 3 21
-            A 3 3 0 0 1 0 18
-            L 0 3
-            A 3 3 0 0 1 3 0
-            Z"
-            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-      <!-- Name Section -->
-      <path d="M 17.6875 20.0
-            L 31.6875 20.0
-            A 1 1 0 0 1 32.6875 21.0
-            L 32.6875 24.0
-            L 31.1875 24.0
-            L 31.1875 26.666666666666668
-            L 32.6875 26.666666666666668
-            L 32.6875 35.0
-            A 1 1 0 0 1 31.6875 36.0
-            L 17.6875 36.0
-            A 1 1 0 0 1 16.6875 35.0
-            L 16.6875 26.666666666666668
-            L 18.1875 26.666666666666668
-            L 18.1875 24.0
-            L 16.6875 24.0
-            L 16.6875 21.0
-            A 1 1 0 0 1 17.6875 20.0
-            Z"
-            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
-      <text x="24.6875" y="32.0"
-            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">C</text>
-      <text x="34.6875" y="32.0"
-            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">AUDI_TO_AR</text>
-
-
-
-      <path d="M 0 38.5
-            L 5.0 38.5
-            L 5.0 40.166666666666664
-            L 7.5 40.166666666666664
-            L 7.5 38.5
-            L 10 38.5
-            L 10 48.5
-            L 7.5 48.5
-            L 7.5 46.833333333333336
-            L 5.0 46.833333333333336
-            L 5.0 48.5
-            L 0 48.5
-            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">AUDI_IN</text>
-      <path d="M 101.25 38.5
-            L 103.75 38.5
-            L 103.75 40.166666666666664
-            L 106.25 40.166666666666664
-            L 106.25 38.5
-            L 111.25 38.5
-            L 111.25 48.5
-            L 106.25 48.5
-            L 106.25 46.833333333333336
-            L 103.75 46.833333333333336
-            L 103.75 48.5
-            L 101.25 48.5
-            Z" fill="#845DAF"/>
-      <text x="98.25" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="106.75" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">AR_OUT</text>
       <!-- Instance Name -->
-      <text x="55.625" y="-5"
+      <text x="59.875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="middle">AUDI_TO_AR</text>
+            fill="#000000" text-anchor="middle">AD_TO_AR_NUM</text>
     </g>
     <g id="fb_DualHysteresis" transform="translate(825.0, 390.0)">
       <path d="M 3 0
@@ -632,18 +541,18 @@ A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
     </g>
     <g id="fb_A2X_TO_QXA2" transform="translate(1140.0, 390.0)">
       <path d="M 3 0
-            L 109.25 0
-            A 3 3 0 0 1 112.25 3
-            L 112.25 18
-            A 3 3 0 0 1 109.25 21
-            L 103.25 21
-            L 103.25 35
-            L 109.25 35
-            A 3 3 0 0 1 112.25 38
-            L 112.25 86
-            A 3 3 0 0 1 109.25 89
-            L 3 89
-            A 3 3 0 0 1 0 86
+            L 116.1875 0
+            A 3 3 0 0 1 119.1875 3
+            L 119.1875 18
+            A 3 3 0 0 1 116.1875 21
+            L 110.1875 21
+            L 110.1875 35
+            L 116.1875 35
+            A 3 3 0 0 1 119.1875 38
+            L 119.1875 103
+            A 3 3 0 0 1 116.1875 106
+            L 3 106
+            A 3 3 0 0 1 0 103
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -656,60 +565,71 @@ A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
             fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
       <!-- Name Section -->
-      <path d="M 13.0 20.0
-            L 27.0 20.0
-            A 1 1 0 0 1 28.0 21.0
-            L 28.0 24.0
-            L 26.5 24.0
-            L 26.5 26.666666666666668
-            L 28.0 26.666666666666668
-            L 28.0 35.0
-            A 1 1 0 0 1 27.0 36.0
-            L 13.0 36.0
-            A 1 1 0 0 1 12.0 35.0
-            L 12.0 26.666666666666668
-            L 13.5 26.666666666666668
-            L 13.5 24.0
-            L 12.0 24.0
-            L 12.0 21.0
-            A 1 1 0 0 1 13.0 20.0
+      <path d="M 16.46875 20.0
+            L 30.46875 20.0
+            A 1 1 0 0 1 31.46875 21.0
+            L 31.46875 24.0
+            L 29.96875 24.0
+            L 29.96875 26.666666666666668
+            L 31.46875 26.666666666666668
+            L 31.46875 35.0
+            A 1 1 0 0 1 30.46875 36.0
+            L 16.46875 36.0
+            A 1 1 0 0 1 15.46875 35.0
+            L 15.46875 26.666666666666668
+            L 16.96875 26.666666666666668
+            L 16.96875 24.0
+            L 15.46875 24.0
+            L 15.46875 21.0
+            A 1 1 0 0 1 16.46875 20.0
             Z"
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
-      <path d="M 13.5 27.5 L 18.0 27.5 A 0.5 0.5 0 0 1 18.5 28.0 L 18.5 29.25 L 17.675 29.25 L 17.675 30.416666666666668 L 18.5 30.416666666666668 L 18.5 34.0 A 0.5 0.5 0 0 1 18.0 34.5 L 13.5 34.5 A 0.5 0.5 0 0 1 13.0 34.0 L 13.0 30.416666666666668 L 13.825 30.416666666666668 L 13.825 29.25 L 13.0 29.25 L 13.0 28.0 A 0.5 0.5 0 0 1 13.5 27.5 Z" fill="#1565C0" stroke="none"/>
-      <path d="M 22.0 27.5 L 26.5 27.5 A 0.5 0.5 0 0 1 27.0 28.0 L 27.0 29.25 L 26.175 29.25 L 26.175 30.416666666666668 L 27.0 30.416666666666668 L 27.0 34.0 A 0.5 0.5 0 0 1 26.5 34.5 L 22.0 34.5 A 0.5 0.5 0 0 1 21.5 34.0 L 21.5 30.416666666666668 L 22.325 30.416666666666668 L 22.325 29.25 L 21.5 29.25 L 21.5 28.0 A 0.5 0.5 0 0 1 22.0 27.5 Z" fill="#1565C0" stroke="none"/>
-      <line x1="18.5" y1="28.34" x2="21.5" y2="28.34"
+      <path d="M 16.96875 27.5 L 21.46875 27.5 A 0.5 0.5 0 0 1 21.96875 28.0 L 21.96875 29.25 L 21.14375 29.25 L 21.14375 30.416666666666668 L 21.96875 30.416666666666668 L 21.96875 34.0 A 0.5 0.5 0 0 1 21.46875 34.5 L 16.96875 34.5 A 0.5 0.5 0 0 1 16.46875 34.0 L 16.46875 30.416666666666668 L 17.29375 30.416666666666668 L 17.29375 29.25 L 16.46875 29.25 L 16.46875 28.0 A 0.5 0.5 0 0 1 16.96875 27.5 Z" fill="#1565C0" stroke="none"/>
+      <path d="M 25.46875 27.5 L 29.96875 27.5 A 0.5 0.5 0 0 1 30.46875 28.0 L 30.46875 29.25 L 29.64375 29.25 L 29.64375 30.416666666666668 L 30.46875 30.416666666666668 L 30.46875 34.0 A 0.5 0.5 0 0 1 29.96875 34.5 L 25.46875 34.5 A 0.5 0.5 0 0 1 24.96875 34.0 L 24.96875 30.416666666666668 L 25.79375 30.416666666666668 L 25.79375 29.25 L 24.96875 29.25 L 24.96875 28.0 A 0.5 0.5 0 0 1 25.46875 27.5 Z" fill="#1565C0" stroke="none"/>
+      <line x1="21.96875" y1="28.34" x2="24.96875" y2="28.34"
             stroke="#3DA015" stroke-width="1.2"/>
-      <line x1="18.5" y1="32.4" x2="21.5" y2="32.4"
+      <line x1="21.96875" y1="32.4" x2="24.96875" y2="32.4"
             stroke="#FF0000" stroke-width="1.2"/>
-      <text x="30.0" y="32.0"
+      <text x="33.46875" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">A2X_TO_QXA2</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="114.1875,5.5 119.1875,10.5 114.1875,15.5" fill="#63B31F"/>
+      <text x="113.1875" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_UP</text>
+            fill="#000000">QI</text>
       <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">Output_UP</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
+      <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Output_DOWN</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
-      <path d="M 0 73.5
-            L 5.0 73.5
-            L 5.0 75.16666666666667
-            L 7.5 75.16666666666667
-            L 7.5 73.5
-            L 10 73.5
-            L 10 83.5
-            L 7.5 83.5
-            L 7.5 81.83333333333333
-            L 5.0 81.83333333333333
-            L 5.0 83.5
-            L 0 83.5
+      <polygon points="114.1875,39.5 119.1875,44.5 114.1875,49.5" fill="#A3B08F"/>
+      <text x="113.1875" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
+      <path d="M 0 90.5
+            L 5.0 90.5
+            L 5.0 92.16666666666667
+            L 7.5 92.16666666666667
+            L 7.5 90.5
+            L 10 90.5
+            L 10 100.5
+            L 7.5 100.5
+            L 7.5 98.83333333333333
+            L 5.0 98.83333333333333
+            L 5.0 100.5
+            L 0 100.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
       <!-- Instance Name -->
-      <text x="56.125" y="-5"
+      <text x="59.59375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">A2X_TO_QXA2</text>
     </g>

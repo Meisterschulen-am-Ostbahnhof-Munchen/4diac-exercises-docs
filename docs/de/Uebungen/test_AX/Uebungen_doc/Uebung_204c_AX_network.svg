@@ -49,11 +49,11 @@ Freigabe, via Adapter)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="282.8,119.5 412.8,119.5 417.8,124.5 417.8,365.5 422.8,370.5 492.7,370.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="274.3,352.5 299.3,352.5 304.3,357.5 304.3,433.5 309.3,438.5 492.7,438.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="274.3,352.5 299.3,352.5 304.3,357.5 304.3,433.5 309.3,438.5 492.7,438.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="274.3,502.5 299.3,502.5 304.3,497.5 304.3,460.5 309.3,455.5 492.7,455.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="274.3,502.5 299.3,502.5 304.3,497.5 304.3,460.5 309.3,455.5 492.7,455.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="282.8,434.5 412.8,434.5 417.8,429.5 417.8,375.5 422.8,370.5 492.7,370.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="274.3,187.5 299.3,187.5 304.3,192.5 304.3,433.5 309.3,438.5 492.7,438.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="274.3,187.5 299.3,187.5 304.3,192.5 304.3,433.5 309.3,438.5 492.7,438.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="274.3,352.5 299.3,352.5 304.3,357.5 304.3,450.5 309.3,455.5 492.7,455.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="274.3,352.5 299.3,352.5 304.3,357.5 304.3,450.5 309.3,455.5 492.7,455.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="647.5,438.5 672.5,438.5 677.5,433.5 677.5,237.5 682.5,232.5 852.7,232.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="647.5,438.5 672.5,438.5 677.5,433.5 677.5,237.5 682.5,232.5 852.7,232.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="647.5,455.5 703.5,455.5 708.5,450.5 708.5,432.5 713.5,427.5 957.7,427.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -66,7 +66,7 @@ Freigabe, via Adapter)</text>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I1" transform="translate(162.7, 240.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(162.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -163,7 +163,7 @@ Freigabe, via Adapter)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(162.7, 390.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(162.7, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -260,7 +260,7 @@ Freigabe, via Adapter)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_DigitalInput_Reset" transform="translate(162.7, 75.0)">
+    <g id="fb_DigitalInput_Reset" transform="translate(162.7, 390.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

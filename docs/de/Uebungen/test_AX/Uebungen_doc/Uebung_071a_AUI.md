@@ -14,7 +14,7 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 
 ### Sub-Baustein: `AX_GT_0`
 
-- **Typ**: `MyLib::sys::AX_GT_0_UINT` (SubApp)
+- **Typ**: [`MyLib::sys::AUI_GT_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AUI_GT_0/) (SubApp)
 - **Verwendete interne FBs**: Nicht näher spezifiziert (gehört zur Bibliothek `MyLib::sys`)
 - **Funktionsweise**: Dieser Baustein nimmt über einen Adapter-Eingang (AUI) einen ganzzahligen Wert entgegen und prüft, ob dieser größer als Null ist. Am Ausgang `AX_OUT` wird ein boolesches Signal (TRUE/FALSE) bereitgestellt, das das Ergebnis des Vergleichs darstellt.
 
@@ -26,7 +26,7 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 | `AUI_SPLIT_2` | `adapter::events::unidirectional::AUI_SPLIT_2` | – | Verteilt ein eingehendes AUI-Signal auf zwei identische Ausgänge. |
 | `CONV_AUI_AUDI` | `adapter::conversion::unidirectional::AUI_TO_AUDI` | – | Konvertiert ein AUI-Signal in das AUDI-Format, das von UT-Anzeigebausteinen erwartet wird. |
 | `Q_NumericValue_WBSD` | `isobus::UT::Q::Q_NumericValue_AUDI` | `u16ObjId` = `NumberVariable_Wheel_based_machine_speed` | Zeigt den numerischen Wert der Geschwindigkeit auf dem UT an (Object-ID aus der Pool-Konfiguration). |
-| `AX_GT_0` | `MyLib::sys::AX_GT_0_UINT` | – (SubApp) | Prüft, ob der eingehende Wert > 0 ist (siehe oben). |
+| `AX_GT_0` | [`MyLib::sys::AUI_GT_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AUI_GT_0/) | – (SubApp) | Prüft, ob der eingehende Wert > 0 ist (siehe oben). |
 | `AX_D_FF` | `adapter::events::unidirectional::AX_D_FF` | – | Setzt ein Flip-Flop, das den booleschen Zustand hält und an den Ausgang weitergibt. |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `QI` = TRUE, `Output` = `Output_Q1` | Schaltet den digitalen Ausgang Q1 des logiBUS-Moduls entsprechend des anliegenden Signals. |
 

@@ -10,38 +10,34 @@ This exercise demonstrates the calibration of an analog input signal using adapt
 
 ## Function Blocks (FBs) Used
 
-- **DigitalInput_I1**: logiBUS digital input
+- **DigitalInput_I2**: logiBUS digital input
     - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
-    - **Explanation**: Provides the state of `I1` as an AX adapter signal.
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as an AX adapter signal.
 - **AX_SPLIT_2**: signal splitter
     - **Type**: [`adapter::events::unidirectional::AX_SPLIT_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SPLIT_2/)
     - **Parameters**: none
-    - **Explanation**: Distributes the AX signal of `I1` to two outputs: `OUT1` to the digital output `Q1`, `OUT2` to the analog input (measurement request).
+    - **Explanation**: Distributes the AX signal of `I2` to two outputs: `OUT1` to the analog input (measurement request), `OUT2` to the digital output `Q1`.
 - **DigitalOutput_Q1**: logiBUS digital output
     - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
     - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
-    - **Explanation**: Outputs the signal of `I1` at the physical output `Q1`.
-- **AnalogInput_I4**: logiBUS analog input
+    - **Explanation**: Outputs the signal of `I2` at the physical output `Q1`.
+- **AnalogInput_I1**: logiBUS analog input
     - **Type**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
-    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I4`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I1`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
     - **Explanation**: Provides the analog measured value at the AD adapter `IN`. A measurement can be requested externally via the socket `SREQ`.
-- **AD_TO_AUDI**: conversion adapter
-    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+- **AD_TO_AR_NUM**: conversion adapter
+    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameters**: none
-    - **Explanation**: Converts the raw value from the AD adapter (DWORD) into an AUDI adapter (UDINT).
-- **AUDI_TO_AR**: conversion adapter
-    - **Type**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
-    - **Parameters**: none
-    - **Explanation**: Converts the UDINT value from the AUDI adapter into a REAL value at the AR adapter. **Note** (comment in the network): the double conversion is important; a single `AD_TO_AR` would act like a "reinterpret_cast".
-- **DigitalInput_I2_CO**: click input for the offset calibration
-    - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Explanation**: Reports a single click on `I2` as event `IND`.
-- **DigitalInput_I3_CS**: click input for the scale calibration
+    - **Explanation**: Converts the raw value from the AD adapter numerically (AD → UDINT → REAL) into a REAL value at the AR adapter. **Note** (comment in the network): an `AD_TO_AR` would act like a "reinterpret_cast" (bit pattern); `AD_TO_AR_NUM`, in contrast, converts the numeric value.
+- **DigitalInput_I3_CO**: click input for the offset calibration
     - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
     - **Parameters**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Explanation**: Reports a single click on `I3` as event `IND`.
+- **DigitalInput_I4_CS**: click input for the scale calibration
+    - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Explanation**: Reports a single click on `I4` as event `IND`.
 - **CALIBRATE**: calibration
     - **Type**: [`adapter::Engineering::measurements::AR_CALIBRATE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/Engineering/measurements/AR_CALIBRATE/)
     - **Parameters**: `Y_Offset = 100.0`, `Y_Scale = 600.0`
@@ -73,12 +69,12 @@ This exercise demonstrates the calibration of an analog input signal using adapt
 
 ## Program Flow and Connections
 
-1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN` (AdapterConnection): The state of `I1` is distributed.
-2. `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT`: `Q1` follows `I1`.
-3. `AX_SPLIT_2.OUT2` → `AnalogInput_I4.SREQ`: `I1` requests a measurement at the analog input.
-4. `AnalogInput_I4.IN` → `AD_TO_AUDI.AD_IN` and `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN`: The measured value is converted to a REAL value in two steps.
-5. `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X`: The converted value is the calibration input.
-6. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` (EventConnections): A click on `I2` triggers the offset calibration, a click on `I3` the scale calibration.
+1. `DigitalInput_I2.IN` → `AX_SPLIT_2.IN` (AdapterConnection): The state of `I2` is distributed.
+2. `AX_SPLIT_2.OUT2` → `DigitalOutput_Q1.OUT`: `Q1` follows `I2`.
+3. `AX_SPLIT_2.OUT1` → `AnalogInput_I1.SREQ`: `I2` requests a measurement at the analog input.
+4. `AnalogInput_I1.IN` → `AD_TO_AR_NUM.AD_IN`: The measured value is converted numerically to a REAL value.
+5. `AD_TO_AR_NUM.AR_OUT` → `CALIBRATE.X`: The converted value is the calibration input.
+6. `DigitalInput_I3_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I4_CS.IND` → `CALIBRATE.CS` (EventConnections): A click on `I3` triggers the offset calibration, a click on `I4` the scale calibration.
 7. `CALIBRATE.OFFSET` → `INI_OFFSET.VAL` and `CALIBRATE.SCALE` → `INI_SCALE.VAL`: The calculated calibration values are stored in the INI file (section `Uebung_028a_AR`).
 8. `CALIBRATE.Y` → `Hysteresis_AR_AX.INPUT`: The calibrated measured value is evaluated.
 9. `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` and `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS`: Threshold and hysteresis width from the VT inputs.
@@ -86,7 +82,7 @@ This exercise demonstrates the calibration of an analog input signal using adapt
 
 **Learning objectives**:
 
-- Understanding adapter conversion between analog signal types (`AD`, `AUDI`, `AR`)
+- Understanding adapter conversion between analog signal types (`AD` → `AR`, numerically with `AD_TO_AR_NUM`)
 - Working with **INI** blocks for persistent storage and loading of calibration parameters
 - Using a calibration adapter (offset/scale)
 - Implementing a hysteresis function for threshold monitoring

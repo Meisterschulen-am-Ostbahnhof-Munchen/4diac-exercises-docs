@@ -29,11 +29,11 @@ Ein VT-Eingabefeld (`InputNumber_I1`) wählt per Index eine von zwei Optionsgrup
 - **OptionalGroup_001**: Optionsgruppe 1
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 - **OptionalGroup_002**: Optionsgruppe 2
     - **Typ**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (SubApp)
     - **Parameter**: keine
-    - **Erklärung**: Wird über den Adapter `OPTION` freigegeben (QI anstelle Permit).
+    - **Erklärung**: Wird über den Adapter `AOption_IN` freigegeben (QI anstelle Permit).
 - **AUI_TO_AUDI_1**: Adapterwandler AUI nach AUDI
     - **Typ**: [`adapter::conversion::unidirectional::AUI_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AUDI_AUI/AUI_TO_AUDI/)
     - **Parameter**: keine
@@ -48,7 +48,7 @@ Ein VT-Eingabefeld (`InputNumber_I1`) wählt per Index eine von zwei Optionsgrup
 1. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` (AdapterConnection): der Wert des Eingabefelds wird in einen AUI-Strom gewandelt.
 2. `AD_TO_AUI_1.AUI_OUT` → `AUI_TO_AUI2.AUI_IN`: der Wert wird in die bidirektionale Brücke eingespeist.
 3. `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_2.K`: der Index gelangt zum Demultiplexer.
-4. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION` und `AOption_AUI_DEMUX_2.OUT2` → `OptionalGroup_002.OPTION`: genau eine Gruppe wird freigegeben.
+4. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN` und `AOption_AUI_DEMUX_2.OUT2` → `OptionalGroup_002.AOption_IN`: genau eine Gruppe wird freigegeben.
 5. `AUI_TO_AUI2.AUI_OUT` → `AUI_TO_AUDI_1.AUI_IN` → `Q_NumericValue_1.u32NewValue`: der zurückgemeldete Wert wird ins Eingabefeld geschrieben.
 
 ## Zusammenfassung

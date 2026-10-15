@@ -26,7 +26,7 @@ Die Übung entspricht `Uebung_094b4_AX`, verwendet aber [`MyLib::sys::NumericVal
 ## Programmablauf und Verbindungen
 
 1. `NumericValue_TO_AUI2_AND_STORE_1.VALUEO` → `AOption_AUI_DEMUX_2.K`: Der (ggf. aus der INI geladene) Index wählt den aktiven Ausgang.
-2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION`, `OUT2` → `OptionalGroup_002.OPTION`.
+2. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN`, `OUT2` → `OptionalGroup_002.AOption_IN`.
 
 **Verhalten**: Wie `Uebung_094b4_AX` (Index 1 = Gruppe 1, Index 2 = Gruppe 2), die Auswahl bleibt zusätzlich über einen Neustart erhalten.
 

@@ -6,46 +6,42 @@
 
 ## Introduction
 
-This exercise calibrates the analog input `I7` with the block `AR_CALIBRATE`; the calibration values `OFFSET` and `SCALE` are stored in an INI file via two `INI_AR2` blocks. The calibrated value `Y` is distributed via `AR_SPLIT_2`: one branch goes to a numeric display (`Q_NumericValue_PHYSA`), the other to a hysteresis block (`Hysteresis_AR_AX`), whose result switches the digital output `Q2`. Threshold and hysteresis are provided by the two sub-apps `THRESHOLD` and `HYSTERESIS` (`INI_IN_AND_STORE_AR`). The button `I1` switches the output `Q1` and, via `AX_SPLIT_2`, is also connected to `SREQ` of the analog input.
+This exercise calibrates the analog input `I1` with the block `AR_CALIBRATE`; the calibration values `OFFSET` and `SCALE` are stored in an INI file via two `INI_AR2` blocks. The calibrated value `Y` is distributed via `AR_SPLIT_2`: one branch goes to a numeric display (`Q_NumericValue_PHYSA`), the other to a hysteresis block (`Hysteresis_AR_AX`), whose result switches the digital output `Q2`. Threshold and hysteresis are provided by the two sub-apps `THRESHOLD` and `HYSTERESIS` (`INI_IN_AND_STORE_AR`). The button `I2` switches the output `Q1` and, via `AX_SPLIT_2`, is also connected to `SREQ` of the analog input.
 
-> **Important**: Double conversion. A `AD_TO_AR` would act like a "reinterpret_cast".
+> **Important**: An `AD_TO_AR` would act like a "reinterpret_cast" (bit pattern). `AD_TO_AR_NUM`, in contrast, converts the numeric value (AD → UDINT → REAL).
 
 > **Example** (comment in the network): `0.0` corresponds to 0.5 V, `100.0` corresponds to 4.5 V (typical automotive sensor).
 
 ## Function Blocks (FBs) Used
 
-- **DigitalInput_I1**: logiBUS digital input
+- **DigitalInput_I2**: logiBUS digital input
     - **Type**: [`logiBUS::io::DI::logiBUS_IXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IXA/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I1`
-    - **Explanation**: Provides the state of `I1` as an adapter.
+    - **Parameters**: `QI = TRUE`, `Input = Input_I2`
+    - **Explanation**: Provides the state of `I2` as an adapter.
 - **AX_SPLIT_2**: Distributes the adapter to two destinations
     - **Type**: [`adapter::events::unidirectional::AX_SPLIT_2`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/BOOL/AX_SPLIT_2/)
     - **Parameters**: none
-    - **Explanation**: `OUT1` goes to `DigitalOutput_Q1`, `OUT2` to `AnalogInput_I7.SREQ`.
+    - **Explanation**: `OUT1` goes to `AnalogInput_I1.SREQ`, `OUT2` to `DigitalOutput_Q1`.
 - **DigitalOutput_Q1**: logiBUS digital output
     - **Type**: [`logiBUS::io::DQ::logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/)
     - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
-    - **Explanation**: Outputs `AX_SPLIT_2.OUT1` at the physical output `Q1`.
-- **AnalogInput_I7**: logiBUS analog input
+    - **Explanation**: Outputs `AX_SPLIT_2.OUT2` at the physical output `Q1`.
+- **AnalogInput_I1**: logiBUS analog input
     - **Type**: [`logiBUS::io::AI::logiBUS_AI_IDA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_IDA/)
-    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I7`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
-    - **Explanation**: Provides the analog value of `I7` via the adapter `IN`.
-- **AD_TO_AUDI**: first conversion
-    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AD_TO_AUDI/)
+    - **Parameters**: `QI = TRUE`, `Input = AnalogInput_I1`, `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
+    - **Explanation**: Provides the analog value of `I1` via the adapter `IN`.
+- **AD_TO_AR_NUM**: numeric conversion
+    - **Type**: [`adapter::conversion::unidirectional::AD_TO_AR_NUM`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AR/AD_TO_AR_NUM/)
     - **Parameters**: none
-    - **Explanation**: Converts `AD_IN` to `AUDI_OUT`.
-- **AUDI_TO_AR**: second conversion
-    - **Type**: [`adapter::conversion::unidirectional::AUDI_TO_AR`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AR_AUDI/AUDI_TO_AR/)
-    - **Parameters**: none
-    - **Explanation**: Converts `AUDI_IN` to `AR_OUT`.
-- **DigitalInput_I2_CO**: Button for the event `CO`
-    - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
-    - **Parameters**: `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK`
-    - **Explanation**: Reports a single click on `I2` as `IND`.
-- **DigitalInput_I3_CS**: Button for the event `CS`
+    - **Explanation**: Converts `AD_IN` numerically (AD → UDINT → REAL) to `AR_OUT`.
+- **DigitalInput_I3_CO**: Button for the event `CO`
     - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
     - **Parameters**: `QI = TRUE`, `Input = Input_I3`, `InputEvent = BUTTON_SINGLE_CLICK`
     - **Explanation**: Reports a single click on `I3` as `IND`.
+- **DigitalInput_I4_CS**: Button for the event `CS`
+    - **Type**: [`logiBUS::io::DI::logiBUS_IE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DI/logiBUS_IE/)
+    - **Parameters**: `QI = TRUE`, `Input = Input_I4`, `InputEvent = BUTTON_SINGLE_CLICK`
+    - **Explanation**: Reports a single click on `I4` as `IND`.
 - **CALIBRATE**: Calibration
     - **Type**: [`adapter::Engineering::measurements::AR_CALIBRATE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/Engineering/measurements/AR_CALIBRATE/)
     - **Parameters**: `Y_Offset = 0.0`, `Y_Scale = 100.0`
@@ -84,9 +80,9 @@ This exercise calibrates the analog input `I7` with the block `AR_CALIBRATE`; th
 
 ## Program Flow and Connections
 
-1. `DigitalInput_I1.IN` → `AX_SPLIT_2.IN`; `AX_SPLIT_2.OUT1` → `DigitalOutput_Q1.OUT` and `AX_SPLIT_2.OUT2` → `AnalogInput_I7.SREQ` (AdapterConnections).
-2. `AnalogInput_I7.IN` → `AD_TO_AUDI.AD_IN` → `AD_TO_AUDI.AUDI_OUT` → `AUDI_TO_AR.AUDI_IN` → `AUDI_TO_AR.AR_OUT` → `CALIBRATE.X` (AdapterConnections): The analog value is converted twice.
-3. `DigitalInput_I2_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I3_CS.IND` → `CALIBRATE.CS` (EventConnections).
+1. `DigitalInput_I2.IN` → `AX_SPLIT_2.IN`; `AX_SPLIT_2.OUT1` → `AnalogInput_I1.SREQ` and `AX_SPLIT_2.OUT2` → `DigitalOutput_Q1.OUT` (AdapterConnections).
+2. `AnalogInput_I1.IN` → `AD_TO_AR_NUM.AD_IN` and `AD_TO_AR_NUM.AR_OUT` → `CALIBRATE.X` (AdapterConnections): The analog value is converted numerically.
+3. `DigitalInput_I3_CO.IND` → `CALIBRATE.CO` and `DigitalInput_I4_CS.IND` → `CALIBRATE.CS` (EventConnections).
 4. `CALIBRATE.OFFSET` → `INI_OFFSET.VAL` and `CALIBRATE.SCALE` → `INI_SCALE.VAL` (AdapterConnections): Storage of the calibration values.
 5. `CALIBRATE.Y` → `AR_SPLIT_2.IN`; `AR_SPLIT_2.OUT1` → `Q_NumericValue_PHYSA.rPhys` and `AR_SPLIT_2.OUT2` → `Hysteresis_AR_AX.INPUT` (AdapterConnections): The calibrated value goes to the display and to the hysteresis block.
 6. `THRESHOLD.VALUEO` → `Hysteresis_AR_AX.THRESHOLD` and `HYSTERESIS.VALUEO` → `Hysteresis_AR_AX.HYSTERESIS` (AdapterConnections): Threshold and hysteresis.
@@ -94,7 +90,7 @@ This exercise calibrates the analog input `I7` with the block `AR_CALIBRATE`; th
 
 ## Summary
 
-Exercise 028c_AR extends the calibration from `Uebung_028a_AX` with a display of the calibrated value and a hysteresis controller, whose threshold and hysteresis are entered via the sub-apps `THRESHOLD` and `HYSTERESIS` and stored in the INI section `HYSTERESIS`. All signals run consistently via adapters; the double conversion `AD_TO_AUDI` and `AUDI_TO_AR` is important here, because a single `AD_TO_AR` would merely reinterpret the value.
+Exercise 028c_AR extends the calibration from `Uebung_028a_AX` with a display of the calibrated value and a hysteresis controller, whose threshold and hysteresis are entered via the sub-apps `THRESHOLD` and `HYSTERESIS` and stored in the INI section `HYSTERESIS`. All signals run consistently via adapters; the numeric conversion with `AD_TO_AR_NUM` is important here, because a plain `AD_TO_AR` would merely reinterpret the value.
 
 ---
 

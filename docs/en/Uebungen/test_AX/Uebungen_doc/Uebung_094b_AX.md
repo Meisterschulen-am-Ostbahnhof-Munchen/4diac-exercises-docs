@@ -29,11 +29,11 @@ A VT input field (`InputNumber_I1`) selects one of two option groups by index: [
 - **OptionalGroup_001**: Option group 1
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_001`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_001/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **OptionalGroup_002**: Option group 2
     - **Type**: [`MyLib_AX_Option::sys::OptionalGroup_002`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX_Option/sys/OptionalGroup_002/) (sub-app)
     - **Parameters**: none
-    - **Explanation**: Enabled via the `OPTION` adapter (QI instead of Permit).
+    - **Explanation**: Enabled via the `AOption_IN` adapter (QI instead of Permit).
 - **AUI_TO_AUDI_1**: Adapter converter AUI to AUDI
     - **Type**: [`adapter::conversion::unidirectional::AUI_TO_AUDI`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AUDI_AUI/AUI_TO_AUDI/)
     - **Parameters**: none
@@ -48,7 +48,7 @@ A VT input field (`InputNumber_I1`) selects one of two option groups by index: [
 1. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` (AdapterConnection): the input field value is converted into an AUI stream.
 2. `AD_TO_AUI_1.AUI_OUT` → `AUI_TO_AUI2.AUI_IN`: the value is fed into the bidirectional bridge.
 3. `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_2.K`: the index reaches the demultiplexer.
-4. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.OPTION` and `AOption_AUI_DEMUX_2.OUT2` → `OptionalGroup_002.OPTION`: exactly one group is enabled.
+4. `AOption_AUI_DEMUX_2.OUT1` → `OptionalGroup_001.AOption_IN` and `AOption_AUI_DEMUX_2.OUT2` → `OptionalGroup_002.AOption_IN`: exactly one group is enabled.
 5. `AUI_TO_AUI2.AUI_OUT` → `AUI_TO_AUDI_1.AUI_IN` → `Q_NumericValue_1.u32NewValue`: the reported value is written to the input field.
 
 ## Summary

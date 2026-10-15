@@ -19,23 +19,23 @@ The subapplication `Uebung_006a2_AX.SUB` controls two independent lamps that can
 
 ![Uebung_006a2_AX_network](./Uebung_006a2_AX_network.svg)
 
-- **`I1`**: Toggles lamp 1.
-- **`I2`**: Toggles lamp 2.
-- **`I3`**: Resets both.
+- **`I1`**: Resets both.
+- **`I2`**: Toggles lamp 1.
+- **`I3`**: Toggles lamp 2.
 - **2x `AX_T_FF_SR`**: One for each lamp.
 
 -----
 
 ## Functionality
 
-- `I1` is connected to `CLK` of FF1.
-- `I2` is connected to `CLK` of FF2.
-- `I3` is connected to `R` of **both** flip-flops (fan-out).
+- `I2` is connected to `CLK` of FF1.
+- `I3` is connected to `CLK` of FF2.
+- `I1` is connected to `R` of **both** flip-flops (fan-out).
 
-Pressing `I3` immediately turns off both lamps, regardless of their previous state.
+Pressing `I1` immediately turns off both lamps, regardless of their previous state.
 
 -----
 
 ## Application Example
 
-**Office Lighting**: Each desk has its own light (`I1`, `I2`), but there is an "Exit" switch at the exit that turns everything off (`I3`).
+**Office Lighting**: Each desk has its own light (`I2`, `I3`), but there is an "Exit" switch at the exit that turns everything off (`I1`).

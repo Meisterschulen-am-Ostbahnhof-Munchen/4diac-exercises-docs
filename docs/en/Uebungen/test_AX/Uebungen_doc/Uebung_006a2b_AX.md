@@ -9,7 +9,7 @@
 
 This exercise demonstrates the application of SR and T flip-flops in combination with a common reset signal ("janitor off").
 
-Two digital inputs (`I1`, `I2`) toggle the two outputs (`Q1`, `Q2`). A third input (`I3`) resets both outputs simultaneously.
+Two digital inputs (`I2`, `I3`) toggle the two outputs (`Q1`, `Q2`). A third input (`I1`) resets both outputs simultaneously.
 
 This illustrates the interaction of bistable elements and event distribution in 4diac.
 
@@ -19,37 +19,37 @@ This illustrates the interaction of bistable elements and event distribution in 
 
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**: `Input = Input_I1`, `QI = TRUE`
-- **Function**: Provides the digital push-button input I1 as an event. Each press generates an event at output `IN`.
+- **Function**: Provides the digital push-button input I1 (reset button) as an event. Each press generates an event at output `IN`.
 
 ### DigitalInput_CLK_I2
 
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**: `Input = Input_I2`, `QI = TRUE`
-- **Function**: Provides the digital button input I2 as an event.
+- **Function**: Provides the digital button input I2 (toggles Q1) as an event.
 
 ### DigitalInput_CLK_I3
 
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**: `Input = Input_I3`, `QI = TRUE`
-- **Function**: Provides the digital button input I3 (reset button) as an event.
+- **Function**: Provides the digital button input I3 (toggles Q2) as an event.
 
 ### AX_SPLIT_2
 
 - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
-- **Function**: Distributes an incoming event (from I3) to two outputs (`OUT1`, `OUT2`). This allows a single button signal to be sent to multiple receivers simultaneously.
+- **Function**: Distributes an incoming event (from I1) to two outputs (`OUT1`, `OUT2`). This allows a single button signal to be sent to multiple receivers simultaneously.
 
 ### AX_T_FF_SR_Q1
 
 - **Type**: `adapter::bistableElements::AX_FB_RS_T_FF`
 - **Function**: Combined RS and T flip-flop.
-- At the event input `CLK` (connected to I1), the output `Q1` is toggled on each rising edge.
+- At the event input `CLK` (connected to I2), the output `Q1` is toggled on each rising edge.
 - The event input `RESET1` (connected to `AX_SPLIT_2.OUT1`) resets the output `Q1`.
 
 ### AX_T_FF_SR_Q2
 
 - **Type**: `adapter::bistableElements::AX_FB_RS_T_FF`
 - **Function**: Similar flip-flop to the one above.
-- `CLK` from I2, `RESET1` from `AX_SPLIT_2.OUT2`.
+- `CLK` from I3, `RESET1` from `AX_SPLIT_2.OUT2`.
 - Controls the output `Q2`.
 
 ### DigitalOutput_Q1
@@ -70,11 +70,11 @@ The circuit operates according to the following principle:
 
 1. **T-Flip-Flop Operation**:
 
-Each press of button I1 generates an event at the `CLK` input of `AX_T_FF_SR_Q1`. The flip-flop toggles its output state. The same applies to button I2 and `AX_T_FF_SR_Q2`.
+Each press of button I2 generates an event at the `CLK` input of `AX_T_FF_SR_Q1`. The flip-flop toggles its output state. The same applies to button I3 and `AX_T_FF_SR_Q2`.
 
 1. **Central Reset ("Janitor Off")**:
 
-When button I3 is pressed, the event is distributed via the splitter `AX_SPLIT_2` to the `RESET1` inputs of both flip-flops. Both outputs (`Q1`, `Q2`) are immediately reset.
+When button I1 is pressed, the event is distributed via the splitter `AX_SPLIT_2` to the `RESET1` inputs of both flip-flops. Both outputs (`Q1`, `Q2`) are immediately reset.
 
 1. **Output**:
 
@@ -92,7 +92,7 @@ The internal states of `Q1` and `Q2` are output via the digital outputs `Output_
 
 **Execution**:
 
-The exercise can be started directly in a 4diac runtime environment (e.g., FORTE) with appropriately configured logiBUS I/O modules. Buttons I1 and I2 switch the outputs, and button I3 resets everything.
+The exercise can be started directly in a 4diac runtime environment (e.g., FORTE) with appropriately configured logiBUS I/O modules. Buttons I2 and I3 switch the outputs, and button I1 resets everything.
 
 ## Summary
 

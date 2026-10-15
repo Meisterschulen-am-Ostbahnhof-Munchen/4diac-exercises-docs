@@ -6,95 +6,66 @@
 
 ## Introduction
 
-This exercise demonstrates the control of two digital outputs (Q1 and Q2) using a reset-set function block (AX_FB_R_IO) for each output. The reset inputs of both blocks are controlled jointly via a third digital input (I3), which acts as a "maintenance off" switch. An AX_SPLIT_2 distributes the reset signal to both channels.
+This exercise demonstrates the control of two digital outputs (Q1 and Q2), each via a reset-set function block (`AX_FB_R_IO`). The reset inputs of both blocks are controlled jointly by the first digital input (I1), which acts as a "caretaker off" switch (everything off with one switch). An `AX_SPLIT_2` distributes the reset signal to both channels. The outputs are set via I2 (for Q1) and I3 (for Q2).
+
 The goal is to understand the interaction of monostable elements (R_IO) with hardware inputs and outputs, as well as the implementation of a common reset function.
 
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks: logiBUS-IXA (Digital Inputs)
-
-- **Type**: `logiBUS::io::DI::logiBUS_IXA`
-- **Used as**:
-- `DigitalInput_CLK_I1` – Input I1 (Set for Q1)
-- `DigitalInput_CLK_I2` – Input I2 (Set for Q2)
-- `DigitalInput_CLK_I3` – Input I3 (Common Reset)
-- **Parameters**:
-- `QI` = `TRUE` (Enabled)
-- `Input` = `Input_I1`, `Input_I2`, `Input_I3` (Hardware channels)
-- `PARAMS` = empty (not visible)
-- **Functionality**: Converts a physical digital signal (e.g., button or switch) into a logic adapter signal. The output `IN` indicates the current state of the input.
-
-### Sub-modules: logiBUS-QXA (Digital Outputs)
-
-- **Type**: `logiBUS::io::DQ::logiBUS_QXA`
-- **Used as**:
-- `DigitalOutput_Q1` – Output Q1
-- `DigitalOutput_Q2` – Output Q2
-- **Parameters**:
-- `QI` = `TRUE` (enabled)
-- `Output` = `Output_Q1`, `Output_Q2` (hardware channels)
-- **Function**: Sets a physical output (e.g., lamp, relay) according to the adapter signal present at adapter input `OUT`.
-
-### Sub-Block: AX_FB_R_IO (monostable element with reset)
-
-- **Type**: `adapter::monostableElements::AX_FB_R_IO`
-- **Used as**:
-- `AX_FB_R_IO_Q1` – for Q1
-- `AX_FB_R_IO_Q2` – for Q2
-- **Internal Function Blocks Used**: No other visible internal function blocks – this is a pre-built block.
-- **Adapter**:
-- **Input `IN`**: Set signal (enables output)
-- **Input `RESET1`**: Reset signal (disables output)
-- **Output `OUT`**: Controlled state (1 = set, 0 = reset)
-- **Functionality**: The output `OUT` is set as soon as a rising edge is present at the input `IN`. It remains set until a signal arrives at the `RESET1` input (active high). This is implemented using a simple RS flip-flop. The network comment indicates: "If nothing is connected to RESET1, the module is functional." This means that without a reset, the output remains permanently enabled after being set once.
-
-### Sub-module: AX_SPLIT_2 (Signal Distributor)
-
-- **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
-- **Used as**: `AX_SPLIT_2`
-- **Adapter**:
-- **Input `IN`**: incoming signal
-- **Output `OUT1`**, **Output `OUT2`**: two identical outputs
-- **Function**: Distributes the incoming adapter signal unchanged to two outputs. Here, the reset signal from I3 is split between both `AX_FB_R_IO` modules.
+- **DigitalInput_CLK_I1**: logiBUS digital input for the common reset ("caretaker off")
+    - **Type**: `logiBUS::io::DI::logiBUS_IXA`
+    - **Parameters**: `QI = TRUE`, `PARAMS = ""` (both hidden in the diagram), `Input = Input_I1`
+    - **Explanation**: Connects the physical input `I1` to the adapter interface `IN`. In addition, `INITO` is connected to `REQ` (EventConnection).
+- **DigitalInput_CLK_I2**: logiBUS digital input for setting Q1
+    - **Type**: `logiBUS::io::DI::logiBUS_IXA`
+    - **Parameters**: `QI = TRUE`, `PARAMS = ""` (both hidden), `Input = Input_I2`
+    - **Explanation**: Connects the physical input `I2` to the adapter interface `IN`.
+- **DigitalInput_CLK_I3**: logiBUS digital input for setting Q2
+    - **Type**: `logiBUS::io::DI::logiBUS_IXA`
+    - **Parameters**: `QI = TRUE`, `PARAMS = ""` (both hidden), `Input = Input_I3`
+    - **Explanation**: Connects the physical input `I3` to the adapter interface `IN`.
+- **AX_SPLIT_2**: signal splitter
+    - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
+    - **Parameters**: none
+    - **Explanation**: Distributes the signal from `I1` unchanged to the two outputs `OUT1` and `OUT2`.
+- **AX_FB_R_IO_Q1**: reset-set element for Q1
+    - **Type**: `adapter::monostableElements::AX_FB_R_IO`
+    - **Parameters**: none
+    - **Explanation**: `IN` (from `I2`) sets the output, `RESET1` (from `AX_SPLIT_2.OUT1`) resets it. The output `OUT` leads to `DigitalOutput_Q1`.
+- **AX_FB_R_IO_Q2**: reset-set element for Q2
+    - **Type**: `adapter::monostableElements::AX_FB_R_IO`
+    - **Parameters**: none
+    - **Explanation**: `IN` (from `I3`) sets the output, `RESET1` (from `AX_SPLIT_2.OUT2`) resets it. The output `OUT` leads to `DigitalOutput_Q2`.
+- **DigitalOutput_Q1**: logiBUS digital output for Q1
+    - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
+    - **Explanation**: Passes the state of `AX_FB_R_IO_Q1.OUT` to the physical output `Q1`.
+- **DigitalOutput_Q2**: logiBUS digital output for Q2
+    - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
+    - **Parameters**: `QI = TRUE`, `Output = Output_Q2`
+    - **Explanation**: Passes the state of `AX_FB_R_IO_Q2.OUT` to the physical output `Q2`.
 
 ## Program Flow and Connections
 
-1. **Signal Flow**:
+1. `DigitalInput_CLK_I1.INITO` → `DigitalInput_CLK_I1.REQ` (EventConnection): After initialization, the block itself requests the input value.
+2. `DigitalInput_CLK_I1.IN` → `AX_SPLIT_2.IN` (AdapterConnection): The signal from `I1` is fed to the splitter.
+3. `AX_SPLIT_2.OUT1` → `AX_FB_R_IO_Q1.RESET1` and `AX_SPLIT_2.OUT2` → `AX_FB_R_IO_Q2.RESET1`: `I1` acts as the common reset for both channels.
+4. `DigitalInput_CLK_I2.IN` → `AX_FB_R_IO_Q1.IN`: `I2` sets Q1.
+5. `DigitalInput_CLK_I3.IN` → `AX_FB_R_IO_Q2.IN`: `I3` sets Q2.
+6. `AX_FB_R_IO_Q1.OUT` → `DigitalOutput_Q1.OUT` and `AX_FB_R_IO_Q2.OUT` → `DigitalOutput_Q2.OUT`: The states are applied to the physical outputs `Q1` and `Q2`.
 
-- The pushbuttons on `Input_I1` and `Input_I2` each control a `AX_FB_R_IO` module (set).
-- The outputs of these modules connect the digital outputs `Output_Q1` and `Output_Q2`.
-- The third pushbutton on `Input_I3` serves as a common reset signal: It is simultaneously distributed via `AX_SPLIT_2` to the `RESET1` inputs of both `AX_FB_R_IO` modules.
+**Notes from the comments in the network**:
 
-1. **Functionality**:
-
-- Pressing I1 or I2 activates the corresponding output, which then remains on (self-holding).
-- Pressing I3 deactivates both outputs ("caretaker off").
-- The network specifies that I3 should be a **latching** switch, otherwise the output will only be off while the button is pressed. Alternatively, an enabling switch could be implemented using an AND gate (see comments).
-
-1. **Special Features**:
-
-- The logiBUS modules require a `QI` signal (`TRUE`) to be active.
-- The `AX_FB_R_IO` can also be operated without a connected reset – in this case, the output remains permanently on after being set once (like an RS flip-flop without a reset).
-
-**Learning Objectives**:
-
-- Understanding reset/set function blocks (`AX_FB_R_IO`)
-- Working with hardware input/output blocks (logiBUS)
-- Signal distribution with `AX_SPLIT_2`
-- Simple linking of digital signals to a controller
-
-**Difficulty Level**: Medium – basic knowledge of the 4diac IDE and the IEC 61499 model is required.
-
-**Start the exercise**:
-
-Load the file `Uebung_003a2b_AX.fbt` into the 4diac IDE. The other blocks (logiBUS driver, `AX_FB_R_IO`, `AX_SPLIT_2`) must be present in the project. Connect the hardware channels according to the parameters (I1, I2, I3, Q1, Q2).
+- Caretaker off (everything off with one switch): The switch would have to be LATCHING. Otherwise the outputs are only off for as long as the button is held.
+- Advantage of this solution: If nothing is connected to `RESET1`, the block is still functional. The principle is the same as `FB_RS`.
+- An AND would also be possible; the caretaker would then be an enabling switch.
 
 ## Summary
 
-This exercise demonstrates a robust circuit for controlling two outputs with a common reset signal. The advantage of the `AX_FB_R_IO` component lies in its ease of use: Without a connected reset input, it behaves like an RS flip-flop; with a reset input, it acts as the dominant reset input. Splitting the reset signal using `AX_SPLIT_2` makes the circuit clear and expandable. The "caretaker off" function is a practical example of a safety shutdown.
+The exercise shows a circuit for controlling two outputs with a common reset signal: `I2` sets `Q1`, `I3` sets `Q2`, and `I1` resets both `AX_FB_R_IO` blocks via `AX_SPLIT_2` ("caretaker off"). Splitting the reset signal via `AX_SPLIT_2` keeps the circuit clear and easy to extend.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

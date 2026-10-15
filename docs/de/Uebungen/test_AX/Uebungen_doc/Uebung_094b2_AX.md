@@ -47,7 +47,7 @@ Die Übung entspricht `Uebung_094b_AX`, verwendet aber [`AOption_AUI_DEMUX_3`](h
 
 1. `NumericValue_IDA_1.IN` → `AD_TO_AUI_1.AD_IN` → `AUI_TO_AUI2.AUI_IN`: Der Wert des Eingabefelds wird nach AUI und dann in den bidirektionalen AUI2-Adapter überführt.
 2. `AUI_TO_AUI2.AUI2_BIDIR` → `AOption_AUI_DEMUX_3.K`: Der Wert wählt den aktiven Ausgang des DEMUX.
-3. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.OPTION`, `OUT2` → `OptionalGroup_001.OPTION`, `OUT3` → `OptionalGroup_002.OPTION`.
+3. `AOption_AUI_DEMUX_3.OUT1` → `DummyGroup.AOption_IN`, `OUT2` → `OptionalGroup_001.AOption_IN`, `OUT3` → `OptionalGroup_002.AOption_IN`.
 4. Echo-Pfad: `AUI_TO_AUI2.AUI_OUT` → `AUI_TO_AUDI_1.AUI_IN` → `Q_NumericValue_1.u32NewValue`: Der vom DEMUX übernommene Wert wird in das VT-Feld zurückgeschrieben.
 
 **Verhalten**: Im Eingabefeld `InputNumber_I1` ergibt 1 den Zustand "nichts ausgewählt" (DummyGroup), 2 aktiviert Gruppe 1 und 3 aktiviert Gruppe 2.

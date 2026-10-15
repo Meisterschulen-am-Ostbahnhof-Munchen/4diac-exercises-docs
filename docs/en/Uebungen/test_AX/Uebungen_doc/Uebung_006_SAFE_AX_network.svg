@@ -52,11 +52,11 @@
     <polyline points="1158.4,115.5 1183.4,115.5 1188.4,120.5 1188.4,185.5 1193.4,190.5 1275.0,190.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="180.1,254.5 415.1,254.5 420.1,249.5 420.1,212.5 425.1,207.5 1275.0,207.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="180.1,389.5 469.1,389.5 474.1,384.5 474.1,212.5 479.1,207.5 1275.0,207.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="180.1,389.5 548.1,389.5 553.1,384.5 553.1,345.5 558.1,340.5 840.0,340.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,389.5 548.1,389.5 553.1,394.5 553.1,440.5 558.1,445.5 705.0,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="171.6,524.5 200.0,524.5 201.6,522.9 201.6,522.1 203.2,520.5 360.0,520.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="529.6,537.5 554.6,537.5 559.6,532.5 559.6,362.5 564.6,357.5 840.0,357.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="529.6,537.5 554.6,537.5 559.6,532.5 559.6,467.5 564.6,462.5 705.0,462.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="171.6,592.5 200.0,592.5 201.6,590.9 201.6,590.1 203.2,588.5 360.0,588.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="908.4,391.5 976.4,391.5 981.4,386.5 981.4,154.5 986.4,149.5 1065.0,149.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="773.4,496.5 841.4,496.5 846.4,491.5 846.4,154.5 851.4,149.5 1065.0,149.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1350.7,240.5 1450.7,240.5 1455.7,245.5 1455.7,287.5 1460.7,292.5 1545.0,292.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="1350.7,240.5 1450.7,240.5 1455.7,245.5 1455.7,287.5 1460.7,292.5 1545.0,292.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="529.6,639.5 585.0,639.5 586.6,641.1 586.6,641.9 588.2,643.5 675.0,643.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -338,7 +338,7 @@
       <text x="114.125" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS</text>
       <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Input_I8</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Input_I7</text>
       <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">BUTTON_PRESS_DOWN</text>
 
       <!-- Instance Name -->
@@ -431,7 +431,7 @@
       <text x="105.5625" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">IN</text>
       <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Input_I7</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Input_I8</text>
 
       <!-- Instance Name -->
       <text x="55.78125" y="-5"
@@ -560,7 +560,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ResetButton</text>
     </g>
-    <g id="fb_StartPermit" transform="translate(840.0, 330.0)">
+    <g id="fb_StartPermit" transform="translate(705.0, 435.0)">
       <path d="M 3 0
             L 65.375 0
             A 3 3 0 0 1 68.375 3
