@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: GcfFunctionCallTest</text>
+<rect x="10.0" y="246.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="262.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="275.0" y="522.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="315.0" y="538.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="365.0" y="522.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M355.0,538.0 L365.0,533.0" stroke="#000000" stroke-width="2" />
+<path d="M445.0,522.0 L445.0,544.0" stroke="#cccccc" stroke-width="1" />
+<rect x="365.0" y="526.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="405.0" y="534.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="446.0" y="526.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="486.0" y="534.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M90.0,254.5 C229.8177385026664,254.5,315.0,382.18226149733357,315.0,522.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M315.0,522.0 L311.0,515.0717967697245 L319.0,515.0717967697245 L315.0,522.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(254.9316519384999,335.8183480615001)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+</g>
+<path d="M275.0,545.5 C120.1822614973336,545.5,50.0,432.81773850266643,50.0,278.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M50.0,278.0 L54.0,284.9282032302755 L46.0,284.9282032302755 L50.0,278.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(104.4433480615001,469.8066519384999)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</svg>
