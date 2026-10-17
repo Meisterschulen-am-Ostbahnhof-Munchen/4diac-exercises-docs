@@ -392,6 +392,8 @@ Here you will find all exercises from the `test_AX` workspace in ascending order
 - [Uebung_094b3b_AX](Uebung_094b3b_AX.md)
 - [Uebung_094b3c_AX](Uebung_094b3c_AX.md)
 - [Uebung_094b3d_AX](Uebung_094b3d_AX.md)
+- [Uebung_094b3e_AX](Uebung_094b3e_AX.md)
+- [Uebung_094b3f_AX](Uebung_094b3f_AX.md)
 - [Uebung_094b4_AX](Uebung_094b4_AX.md)
 - [Uebung_094b4b_AX](Uebung_094b4b_AX.md)
 - [Uebung_094b5_AX](Uebung_094b5_AX.md)

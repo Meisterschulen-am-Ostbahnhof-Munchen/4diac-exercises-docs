@@ -408,6 +408,8 @@ Hier finden Sie alle Übungen des Arbeitsbereichs `test_AX` in aufsteigender Rei
 - [Uebung_094b3b_AX](Uebung_094b3b_AX.md)
 - [Uebung_094b3c_AX](Uebung_094b3c_AX.md)
 - [Uebung_094b3d_AX](Uebung_094b3d_AX.md)
+- [Uebung_094b3e_AX](Uebung_094b3e_AX.md)
+- [Uebung_094b3f_AX](Uebung_094b3f_AX.md)
 - [Uebung_094b4_AX](Uebung_094b4_AX.md)
 - [Uebung_094b4b_AX](Uebung_094b4b_AX.md)
 - [Uebung_094b5_AX](Uebung_094b5_AX.md)
