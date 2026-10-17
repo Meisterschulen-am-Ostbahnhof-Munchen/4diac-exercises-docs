@@ -6,7 +6,7 @@
 
 ## Introduction
 
-`Training_10_OPC_UA_RES` is a distributed up/down circuit: device A reads the two physical pushbuttons `Input_I1` (up) and `Input_I2` (down) and actively writes both via OPC-UA (`CLIENT_1_0`) to the nodes monitored by device B. Device B merges both states in [`ILOCK_SWITCH_PROTECT_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/ILOCK_SWITCH_PROTECT_AX/) (last-wins with protection time) and switches `Output_Q7` and `Output_Q8`. Both buttons are momentary (spring-return); releasing reports itself as a separate FALSE event via `logiBUS_IXA`.
+`Training_10_OPC_UA_RES` is a distributed up/down circuit: device A reads the two physical pushbuttons `Input_I1` (up) and `Input_I2` (down) and actively writes both via OPC-UA (`AX_CLIENT_1_0`) to the nodes monitored by device B. Device B merges both states in [`ILOCK_SWITCH_PROTECT_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/ILOCK_SWITCH_PROTECT_AX/) (last-wins with protection time) and switches `Output_Q7` and `Output_Q8`. Both buttons are momentary (spring-return); releasing reports itself as a separate FALSE event via `logiBUS_IXA`.
 
 The protocol lives in the composite (`SUB style`), not in the device's resource. This is the first exercise of the three-part series Training_10–12 (Training_11 replaces the buttons with VT SoftKeys, Training_12 bundles the transport layer).
 
@@ -52,12 +52,12 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 
 ## Learning Objectives
 
-- Distributed up/down circuit: device A writes actively (`CLIENT_1_0`), device B monitors locally (`AX_SUBSCRIBE_1`).
+- Distributed up/down circuit: device A writes actively (`AX_CLIENT_1_0`), device B monitors locally (`AX_SUBSCRIBE_1`).
 - Feeding two adapter sockets (`AX`) directly into `ILOCK_SWITCH_PROTECT_AX` (last-wins, protection time `DT_PROTECT`).
 - The "SUB style" pattern: protocol in the composite rather than in the resource.
 
 **Difficulty**: Advanced  
-**Prerequisites**: `Training_09_OPC_UA_RES`.
+**Recommended sequence**: `Training_09_OPC_UA_RES`.
 
 ## Summary
 

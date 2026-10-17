@@ -69,7 +69,7 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 - Fanning the interlock output out to output and feedback with `AX_SPLIT_2`.
 
 **Difficulty**: Advanced  
-**Prerequisites**: `Training_10_OPC_UA_RES`.
+**Recommended sequence**: `Training_10_OPC_UA_RES`.
 
 ## Summary
 

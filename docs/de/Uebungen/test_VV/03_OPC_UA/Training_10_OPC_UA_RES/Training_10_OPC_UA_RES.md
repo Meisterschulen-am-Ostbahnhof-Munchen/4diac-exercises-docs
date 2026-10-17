@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-`Training_10_OPC_UA_RES` ist eine verteilte Hoch/Runter-Schaltung: Gerät A liest die beiden physischen Taster `Input_I1` (Hoch) und `Input_I2` (Runter) und schreibt beide aktiv per OPC-UA (`CLIENT_1_0`) auf die von Gerät B überwachten Knoten. Gerät B führt beide Zustände in [`ILOCK_SWITCH_PROTECT_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/ILOCK_SWITCH_PROTECT_AX/) (Last-Wins mit Schutzzeit) zusammen und schaltet `Output_Q7` und `Output_Q8`. Beide Taster sind tastend (spring-return); das Loslassen meldet sich als eigenes FALSE-Event über `logiBUS_IXA`.
+`Training_10_OPC_UA_RES` ist eine verteilte Hoch/Runter-Schaltung: Gerät A liest die beiden physischen Taster `Input_I1` (Hoch) und `Input_I2` (Runter) und schreibt beide aktiv per OPC-UA (`AX_CLIENT_1_0`) auf die von Gerät B überwachten Knoten. Gerät B führt beide Zustände in [`ILOCK_SWITCH_PROTECT_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/ILOCK_SWITCH_PROTECT_AX/) (Last-Wins mit Schutzzeit) zusammen und schaltet `Output_Q7` und `Output_Q8`. Beide Taster sind tastend (spring-return); das Loslassen meldet sich als eigenes FALSE-Event über `logiBUS_IXA`.
 
 Das Protokoll steckt im Composite (`SUB style`), nicht in der Resource des Geräts. Dies ist die erste Übung der Dreierserie Training_10–12 (Training_11 ersetzt die Taster durch VT-SoftKeys, Training_12 bündelt die Transportschicht).
 
@@ -52,12 +52,12 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 
 ## Lernziele
 
-- Verteilte Hoch/Runter-Schaltung: Gerät A schreibt aktiv (`CLIENT_1_0`), Gerät B überwacht lokal (`AX_SUBSCRIBE_1`).
+- Verteilte Hoch/Runter-Schaltung: Gerät A schreibt aktiv (`AX_CLIENT_1_0`), Gerät B überwacht lokal (`AX_SUBSCRIBE_1`).
 - Zwei Adapter-Sockets (`AX`) direkt in `ILOCK_SWITCH_PROTECT_AX` führen (Last-Wins, Schutzzeit `DT_PROTECT`).
 - Das Muster „SUB style“: Protokoll im Composite statt in der Resource.
 
 **Schwierigkeitsgrad**: Fortgeschritten  
-**Vorkenntnisse**: `Training_09_OPC_UA_RES`.
+**Empfohlene Reihenfolge**: `Training_09_OPC_UA_RES`.
 
 ## Zusammenfassung
 

@@ -69,7 +69,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 - Interlock-Ausgang per `AX_SPLIT_2` auf Ausgang und Rückmeldung verteilen.
 
 **Schwierigkeitsgrad**: Fortgeschritten  
-**Vorkenntnisse**: `Training_10_OPC_UA_RES`.
+**Empfohlene Reihenfolge**: `Training_10_OPC_UA_RES`.
 
 ## Zusammenfassung
 

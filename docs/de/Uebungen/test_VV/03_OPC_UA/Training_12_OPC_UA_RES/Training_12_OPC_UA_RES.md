@@ -58,7 +58,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 - Unterschied Plug-/Socket-Variante des Netzwerkbausteins verstehen.
 
 **Schwierigkeitsgrad**: Fortgeschritten  
-**Vorkenntnisse**: `Training_11_OPC_UA_RES`.
+**Empfohlene Reihenfolge**: `Training_11_OPC_UA_RES`.
 
 ## Zusammenfassung
 

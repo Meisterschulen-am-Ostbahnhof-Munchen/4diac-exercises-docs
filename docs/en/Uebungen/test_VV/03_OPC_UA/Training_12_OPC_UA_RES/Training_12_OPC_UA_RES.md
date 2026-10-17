@@ -58,7 +58,7 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 - Understanding the plug/socket variants of the network block.
 
 **Difficulty**: Advanced  
-**Prerequisites**: `Training_11_OPC_UA_RES`.
+**Recommended sequence**: `Training_11_OPC_UA_RES`.
 
 ## Summary
 
