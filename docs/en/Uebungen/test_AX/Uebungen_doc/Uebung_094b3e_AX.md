@@ -51,7 +51,7 @@ The exercise builds on [`Uebung_094b3_AX`](Uebung_094b3_AX.md) (`K = 1` dummy, `
 4. `AOption_T_2_1.OUT1` → `AOption_OR_2_1.IN1`, `AOption_T_2_2.OUT1` → `AOption_OR_2_1.IN2`.
 5. `AOption_OR_2_1.OUT` → `OptionalGroup_001b.AOption_IN`.
 
-**Behavior**: `K = 1` = `DummyGroup` (the third group stays off), `K = 2` = `OptionalGroup_001` and `OptionalGroup_001b`, `K = 3` = `OptionalGroup_002` and `OptionalGroup_001b`.
+**Behavior**: `K = 1` = `DummyGroup` (the third group stays off), `K = 2` = `OptionalGroup_001` and `OptionalGroup_001b`, `K = 3` = `OptionalGroup_002` and `OptionalGroup_001b`. Because `AOption_OR_2` only confirms the requesting socket after `OUT.INIT_CNF`, the DEMUX reports the switch as done only once `OptionalGroup_001b` has finished as well.
 
 **Note**: like `OptionalGroup_001`, `OptionalGroup_001b` uses the I/O `Input_I1`/`Output_Q1`. The exercise is a wiring test and has not yet been verified on the device.
 

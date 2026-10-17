@@ -51,7 +51,7 @@ Die Übung baut auf [`Uebung_094b3_AX`](Uebung_094b3_AX.md) auf (`K = 1` Dummy, 
 4. `AOption_T_2_1.OUT1` → `AOption_OR_2_1.IN1`, `AOption_T_2_2.OUT1` → `AOption_OR_2_1.IN2`.
 5. `AOption_OR_2_1.OUT` → `OptionalGroup_001b.AOption_IN`.
 
-**Verhalten**: `K = 1` = `DummyGroup` (die dritte Gruppe bleibt aus), `K = 2` = `OptionalGroup_001` und `OptionalGroup_001b`, `K = 3` = `OptionalGroup_002` und `OptionalGroup_001b`.
+**Verhalten**: `K = 1` = `DummyGroup` (die dritte Gruppe bleibt aus), `K = 2` = `OptionalGroup_001` und `OptionalGroup_001b`, `K = 3` = `OptionalGroup_002` und `OptionalGroup_001b`. Weil `AOption_OR_2` erst nach `OUT.INIT_CNF` an den anfragenden Socket bestätigt, meldet der DEMUX den Wechsel erst als fertig, wenn auch `OptionalGroup_001b` fertig ist.
 
 **Hinweis**: `OptionalGroup_001b` benutzt wie `OptionalGroup_001` die I/O `Input_I1`/`Output_Q1`. Die Übung ist ein Verdrahtungstest und noch nicht auf dem Gerät geprüft.
 
