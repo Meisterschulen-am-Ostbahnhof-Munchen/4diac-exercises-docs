@@ -21,6 +21,8 @@ action and its third SoftKey/server.
 
 ## OPC-UA Address Space
 
+The stations `PC_A`/`PC_B` (the devices' `MGR_ID`) are defined only in `myOpcUaAddresses.gcf`; the GCF computes the OPC-UA IDs with the functions of the `MyLib_OPC` library ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)). The `*_LOCAL_*`/`*_REMOTE_*` name suffixes are kept. Structure and calculation: [OPC-UA addresses](../OPC_UA_Adressen.md).
+
 | Constant (local/remote) | Value (excerpt) | Purpose |
 |---|---|---|
 | `SR2_SET_LOCAL_METHOD` / `SR2_SET_REMOTE_CALL` | `.../SRFlipflop/SR2_Set` | Set method |
