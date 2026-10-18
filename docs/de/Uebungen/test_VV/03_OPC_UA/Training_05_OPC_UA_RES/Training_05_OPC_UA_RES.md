@@ -21,6 +21,8 @@ Toggle-Aktion und ohne den dritten SoftKey/Server.
 
 ## OPC-UA-Adressraum
 
+Die Stationen `PC_A`/`PC_B` (`MGR_ID` der Geräte) stehen nur in `myOpcUaAddresses.gcf`; die OPC-UA-IDs berechnet die GCF mit den Functions der Lib `MyLib_OPC` ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)). Die Namen `*_LOCAL_*`/`*_REMOTE_*` bleiben dabei erhalten. Aufbau und Berechnung: [OPC-UA-Adressen](../OPC_UA_Adressen.md).
+
 | Konstante (lokal/remote) | Wert (Auszug) | Zweck |
 |---|---|---|
 | `SR2_SET_LOCAL_METHOD` / `SR2_SET_REMOTE_CALL` | `.../SRFlipflop/SR2_Set` | Set-Methode |

@@ -33,6 +33,8 @@ RPC-Trigger ohne Wertwechsel-Trick. Auf Gerät A liest ein `AX_SUBSCRIBE_1`
 
 ## OPC-UA-Adressraum
 
+Die Stationen `PC_A`/`PC_B` (`MGR_ID` der Geräte) stehen nur in `myOpcUaAddresses.gcf`; die OPC-UA-IDs berechnet die GCF mit den Functions der Lib `MyLib_OPC` ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)). Die Namen `*_LOCAL_*`/`*_REMOTE_*` bleiben dabei erhalten. Aufbau und Berechnung: [OPC-UA-Adressen](../OPC_UA_Adressen.md).
+
 Beide Konstanten-Paare liegen in `VV::const::OPC_UA::myOpcUaAddresses`:
 
 | Konstante | Wert | Verwendet von |
@@ -60,7 +62,7 @@ SoftKey-Tastendruck, der keinen Wert trägt.
    `DigitalOutput_Q1.OUT` (lokal, schaltet `Output_Q1`) und
    `STATE_CLIENT.IN` (`AX_CLIENT_1_0`, schreibt den Zustand aktiv nach
    `FF1_STATE_REMOTE_WRITE` zurück auf Gerät A).
-3. **Mapping/Devices**: `App_OPC_UA_RES2.SubApp_PC_A` → `FORTE_PC_A`,
+3. **Mapping/Devices**: `App_OPC_UA_RES3.SubApp_PC_A` → `FORTE_PC_A`,
    `SubApp_PC_B` → `FORTE_PC_B`; je ein `E_TRIG('EInit')` pro Gerät
    initialisiert das jeweilige Composite beim Start.
 

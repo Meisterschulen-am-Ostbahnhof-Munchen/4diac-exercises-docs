@@ -33,6 +33,8 @@ Device B and feeds `GreenWhiteBackground_AX`.
 
 ## OPC-UA Address Space
 
+The stations `PC_A`/`PC_B` (the devices' `MGR_ID`) are defined only in `myOpcUaAddresses.gcf`; the GCF computes the OPC-UA IDs with the functions of the `MyLib_OPC` library ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)). The `*_LOCAL_*`/`*_REMOTE_*` name suffixes are kept. Structure and calculation: [OPC-UA addresses](../OPC_UA_Adressen.md).
+
 Both constant pairs live in `VV::const::OPC_UA::myOpcUaAddresses`:
 
 | Constant | Value | Used by |
@@ -60,7 +62,7 @@ carries no value.
    `DigitalOutput_Q1.OUT` (local, drives `Output_Q1`) and
    `STATE_CLIENT.IN` (`AX_CLIENT_1_0`, actively writes the state back to
    `FF1_STATE_REMOTE_WRITE` on Device A).
-3. **Mapping/Devices**: `App_OPC_UA_RES2.SubApp_PC_A` → `FORTE_PC_A`,
+3. **Mapping/Devices**: `App_OPC_UA_RES3.SubApp_PC_A` → `FORTE_PC_A`,
    `SubApp_PC_B` → `FORTE_PC_B`; one `E_TRIG('EInit')` per device
    initializes its composite at startup.
 

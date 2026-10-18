@@ -27,8 +27,8 @@ Composite statt in der Resource.
 
 | Instanz | Ort | Typ | Zweck |
 |---|---|---|---|
-| `INPUT_I1` | Application (`App_OPC_UA_RES`) | `logiBUS::io::DI::logiBUS_IXA` | Liest `Input_I1`, stellt den Zustand als AX-Adapter-Plug bereit |
-| `OUTPUT_Q1` | Application (`App_OPC_UA_RES`) | `logiBUS::io::DQ::logiBUS_QXA` | Schaltet `Output_Q1`, nimmt den Zustand über AX-Adapter-Socket entgegen |
+| `INPUT_I1` | Application (`App_OPC_UA_RES2`) | `logiBUS::io::DI::logiBUS_IXA` | Liest `Input_I1`, stellt den Zustand als AX-Adapter-Plug bereit |
+| `OUTPUT_Q1` | Application (`App_OPC_UA_RES2`) | `logiBUS::io::DQ::logiBUS_QXA` | Schaltet `Output_Q1`, nimmt den Zustand über AX-Adapter-Socket entgegen |
 | `CLIENT_Q1` | Resource `EMB_RES_A` (Gerät A) | `adapter::net::AX_CLIENT_1_0` | Aktiver Remote-Write auf den von Gerät B überwachten OPC-UA-Knoten |
 | `SUBSCRIBE_Q1` | Resource `EMB_RES_B` (Gerät B) | `adapter::net::AX_SUBSCRIBE_1` | Lokal überwachter OPC-UA-Knoten, wird von Gerät A remote beschrieben |
 
@@ -42,6 +42,8 @@ Resource-FBNetworks.
 
 ## OPC-UA-Adressraum
 
+Die Stationen `PC_A`/`PC_B` (`MGR_ID` der Geräte) stehen nur in `myOpcUaAddresses.gcf`; die OPC-UA-IDs berechnet die GCF mit den Functions der Lib `MyLib_OPC` ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)). Die Namen `*_LOCAL_*`/`*_REMOTE_*` bleiben dabei erhalten. Aufbau und Berechnung: [OPC-UA-Adressen](../OPC_UA_Adressen.md).
+
 Beide Konstanten liegen in `VV::const::OPC_UA::myOpcUaAddresses` und teilen
 sich denselben Node-Pfad/Namen — nur ACTION und (bei `CLIENT`) der
 Ziel-Endpoint unterscheiden sich:
@@ -53,22 +55,22 @@ Ziel-Endpoint unterscheiden sich:
 
 ## Programmablauf und Verbindungen
 
-1. **Application** (`App_OPC_UA_RES`): `INPUT_I1` (`logiBUS_IXA`, `Input_I1`)
+1. **Application** (`App_OPC_UA_RES2`): `INPUT_I1` (`logiBUS_IXA`, `Input_I1`)
    ist über eine Adapterverbindung (`INPUT_I1.IN` → `OUTPUT_Q1.OUT`) direkt
    mit `OUTPUT_Q1` (`logiBUS_QXA`, `Output_Q1`) verbunden — das rein
    logische Modell, unabhängig von der späteren Geräteverteilung.
 2. **Mapping**: `INPUT_I1` → `FORTE_PC_A.EMB_RES_A`, `OUTPUT_Q1` →
    `FORTE_PC_B.EMB_RES_B`.
 3. **Resource `EMB_RES_A`** (Gerät A): `START.COLD` initialisiert zuerst
-   `App_OPC_UA_RES.INPUT_I1` selbst (dotted-path-Referenz auf dessen
+   `App_OPC_UA_RES2.INPUT_I1` selbst (dotted-path-Referenz auf dessen
    `.INIT`); erst dessen `.INITO`-Bestätigung löst `CLIENT_Q1.INIT` aus.
-   Die eigentliche Adapterverbindung `App_OPC_UA_RES.INPUT_I1.IN` →
+   Die eigentliche Adapterverbindung `App_OPC_UA_RES2.INPUT_I1.IN` →
    `CLIENT_Q1.IN` überbrückt die Mapping-Grenze per dotted-path-Referenz —
    Application-Plug und Resource-Socket direkt verbunden, ohne
    Zwischenbaustein.
 4. **Resource `EMB_RES_B`** (Gerät B): spiegelbildlich — `START.COLD` →
-   `SUBSCRIBE_Q1.INIT`, dessen `.INITO` → `App_OPC_UA_RES.OUTPUT_Q1.INIT`,
-   und `SUBSCRIBE_Q1.OUT` → `App_OPC_UA_RES.OUTPUT_Q1.OUT` (wieder direkte
+   `SUBSCRIBE_Q1.INIT`, dessen `.INITO` → `App_OPC_UA_RES2.OUTPUT_Q1.INIT`,
+   und `SUBSCRIBE_Q1.OUT` → `App_OPC_UA_RES2.OUTPUT_Q1.OUT` (wieder direkte
    Plug→Socket-Adapterverbindung über die Mapping-Grenze hinweg).
 5. **Laufzeit**: Ändert sich `Input_I1` auf Gerät A, schreibt `CLIENT_Q1`
    den neuen Wert per OPC-UA auf `opc.tcp://192.168.1.12:4840` in den von
