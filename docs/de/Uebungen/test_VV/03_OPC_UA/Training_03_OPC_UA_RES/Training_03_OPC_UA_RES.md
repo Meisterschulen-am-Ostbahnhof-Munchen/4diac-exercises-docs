@@ -62,7 +62,7 @@ SoftKey-Tastendruck, der keinen Wert trägt.
    `DigitalOutput_Q1.OUT` (lokal, schaltet `Output_Q1`) und
    `STATE_CLIENT.IN` (`AX_CLIENT_1_0`, schreibt den Zustand aktiv nach
    `FF1_STATE_REMOTE_WRITE` zurück auf Gerät A).
-3. **Mapping/Devices**: `App_OPC_UA_RES2.SubApp_PC_A` → `FORTE_PC_A`,
+3. **Mapping/Devices**: `App_OPC_UA_RES3.SubApp_PC_A` → `FORTE_PC_A`,
    `SubApp_PC_B` → `FORTE_PC_B`; je ein `E_TRIG('EInit')` pro Gerät
    initialisiert das jeweilige Composite beim Start.
 

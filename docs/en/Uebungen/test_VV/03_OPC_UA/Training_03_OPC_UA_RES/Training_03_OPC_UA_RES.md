@@ -62,7 +62,7 @@ carries no value.
    `DigitalOutput_Q1.OUT` (local, drives `Output_Q1`) and
    `STATE_CLIENT.IN` (`AX_CLIENT_1_0`, actively writes the state back to
    `FF1_STATE_REMOTE_WRITE` on Device A).
-3. **Mapping/Devices**: `App_OPC_UA_RES2.SubApp_PC_A` → `FORTE_PC_A`,
+3. **Mapping/Devices**: `App_OPC_UA_RES3.SubApp_PC_A` → `FORTE_PC_A`,
    `SubApp_PC_B` → `FORTE_PC_B`; one `E_TRIG('EInit')` per device
    initializes its composite at startup.
 
