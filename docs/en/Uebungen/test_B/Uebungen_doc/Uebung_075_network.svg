@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 823.0"
+     viewBox="12.2 -93.0 1126.0 823.0"
      width="1126" height="823">
   <style>
     @font-face {
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="823.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="809.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">MM710</text>
+  <rect x="12.2" y="-93.0" width="1126.0" height="823.0" fill="white"/>
+  <rect x="19.2" y="-86.0" width="1112.0" height="809.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="19.2" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="19.2" y1="-61.5" x2="1131.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="24.2" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">MM710</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -52,7 +52,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_FB_MM710_IMU" transform="translate(541.9, 75.0)">
+    <g id="fb_FB_MM710_IMU" transform="translate(521.5, 75.0)">
       <path d="M 3 0
             L 145.25 0
             A 3 3 0 0 1 148.25 3

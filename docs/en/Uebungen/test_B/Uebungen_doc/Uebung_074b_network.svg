@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1144.9 619.0"
-     width="1145" height="619">
+     viewBox="21.0 -93.0 1176.9 619.0"
+     width="1177" height="619">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,16 +40,16 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1144.9" height="619.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1130.9" height="605.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1130.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1190.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">RPTO auf UT ausgeben ohne Fendt-Schaltung</text>
+  <rect x="21.0" y="-93.0" width="1176.9" height="619.0" fill="white"/>
+  <rect x="28.0" y="-86.0" width="1162.9" height="605.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="28.0" y="-86.0" width="1162.9" height="25.0" fill="white" stroke="none"/>
+  <line x1="28.0" y1="-61.5" x2="1190.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="33.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">RPTO auf UT ausgeben ohne Fendt-Schaltung</text>
   <g id="sidebars">
   </g>
   <g id="connections">
     <polyline points="191.2,102.5 1035.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="191.2,238.5 227.2,238.5 232.2,233.5 232.2,158.5 237.2,153.5 1035.0,153.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="191.2,238.5 227.2,238.5 232.2,233.5 232.2,175.5 237.2,170.5 1035.0,170.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
@@ -182,10 +182,10 @@
             L 146.875 52
             L 152.875 52
             A 3 3 0 0 1 155.875 55
-            L 155.875 103
-            A 3 3 0 0 1 152.875 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 155.875 120
+            A 3 3 0 0 1 152.875 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -235,22 +235,28 @@
       <polygon points="150.875,22.5 155.875,27.5 150.875,32.5" fill="#63B31F"/>
       <text x="149.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u32NewValue</text>
-      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#BD8663"/>
+      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#A3B08F"/>
       <text x="149.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#BD8663"/>
       <text x="149.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u32OldValue</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="150.875,90.5 155.875,95.5 150.875,100.5" fill="#18519E"/>
       <text x="149.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">u32OldValue</text>
+      <polygon points="150.875,107.5 155.875,112.5 150.875,117.5" fill="#18519E"/>
+      <text x="149.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Rear_PTO_o…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Rear_PTO_o…</text>
 
       <!-- Instance Name -->
       <text x="77.9375" y="-5"

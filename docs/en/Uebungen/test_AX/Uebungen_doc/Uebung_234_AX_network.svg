@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1213.2 747.0"
-     width="1213" height="747">
+     viewBox="-22.8 -93.0 1288.9 747.0"
+     width="1289" height="747">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1213.2" height="747.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1199.2" height="733.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1199.2" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1259.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zweipunktregler (Fuellstand/Thermostat-Muster) via DualHysteresis_AR_A2X +
+  <rect x="-22.8" y="-93.0" width="1288.9" height="747.0" fill="white"/>
+  <rect x="-15.8" y="-86.0" width="1274.9" height="733.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-15.8" y="-86.0" width="1274.9" height="25.0" fill="white" stroke="none"/>
+  <line x1="-15.8" y1="-61.5" x2="1259.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-10.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zweipunktregler (Fuellstand/Thermostat-Muster) via DualHysteresis_AR_A2X +
 A2X_TO_QXA2 - reiner Hardware-Aufbau ohne VT</text>
   <g id="sidebars">
   </g>

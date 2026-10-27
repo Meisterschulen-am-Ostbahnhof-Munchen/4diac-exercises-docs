@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="89.9 -93.0 2468.0 932.0"
-     width="2468" height="932">
+     viewBox="-89.9 -93.0 2647.8 1052.0"
+     width="2648" height="1052">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,93 +40,93 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="89.9" y="-93.0" width="2468.0" height="932.0" fill="white"/>
-  <rect x="96.9" y="-86.0" width="2454.0" height="918.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="96.9" y="-86.0" width="2454.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="96.9" y1="-61.5" x2="2550.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="101.9" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">für TC-SC also Task Controller Section Control, mit Plug and Socket</text>
+  <rect x="-89.9" y="-93.0" width="2647.8" height="1052.0" fill="white"/>
+  <rect x="-82.9" y="-86.0" width="2633.8" height="1038.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-82.9" y="-86.0" width="2633.8" height="25.0" fill="white" stroke="none"/>
+  <line x1="-82.9" y1="-61.5" x2="2550.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-77.9" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">für TC-SC also Task Controller Section Control, mit Plug and Socket</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="247.8,419.5 329.1,419.5 330.7,417.9 330.7,417.1 332.3,415.5 432.2,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1589.9,415.5 1774.1,415.5 1774.9,416.3 1774.9,416.7 1775.7,417.5 2222.6,417.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,415.5 1432.6,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,415.5 780.0,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,415.5 1170.0,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,415.5 959.9,415.5 964.9,410.5 964.9,120.5 969.9,115.5 1335.0,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2104.2,599.5 2228.4,599.5 2229.2,598.7 2229.2,598.3 2230.0,597.5 2344.4,597.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1851.7,280.5 1935.0,280.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1589.9,415.5 1638.9,415.5 1643.9,410.5 1643.9,285.5 1648.9,280.5 1785.0,280.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2010.4,280.5 2035.4,280.5 2040.4,275.5 2040.4,107.5 2045.4,102.5 2220.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2010.4,280.5 2056.4,280.5 2061.4,275.5 2061.4,257.5 2066.4,252.5 2400.0,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="247.8,487.5 282.8,487.5 287.8,482.5 287.8,454.5 292.8,449.5 432.2,449.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,449.5 1170.0,449.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,483.5 1170.0,483.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,466.5 1170.0,466.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,500.5 1170.0,500.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,517.5 1170.0,517.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,534.5 1170.0,534.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,551.5 1170.0,551.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,568.5 1170.0,568.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,585.5 1170.0,585.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,602.5 1170.0,602.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,619.5 1170.0,619.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,636.5 1170.0,636.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,653.5 1170.0,653.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,670.5 1170.0,670.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,687.5 1170.0,687.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,704.5 1170.0,704.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,551.5 1101.9,551.5 1106.9,546.5 1106.9,256.5 1111.9,251.5 1335.0,251.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,449.5 978.9,449.5 983.9,444.5 983.9,154.5 988.9,149.5 1335.0,149.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,517.5 1056.9,517.5 1061.9,512.5 1061.9,222.5 1066.9,217.5 1335.0,217.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,466.5 992.9,466.5 997.9,461.5 997.9,171.5 1002.9,166.5 1335.0,166.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,534.5 1079.9,534.5 1084.9,529.5 1084.9,239.5 1089.9,234.5 1335.0,234.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,568.5 1114.9,568.5 1119.9,563.5 1119.9,273.5 1124.9,268.5 1335.0,268.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,483.5 1004.9,483.5 1009.9,478.5 1009.9,188.5 1014.9,183.5 1335.0,183.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="930.9,500.5 1037.9,500.5 1042.9,495.5 1042.9,205.5 1047.9,200.5 1335.0,200.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,449.5 1432.6,449.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,466.5 1432.6,466.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,483.5 1432.6,483.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,500.5 1432.6,500.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1589.9,449.5 1754.9,449.5 1759.9,454.5 1759.9,480.5 1764.9,485.5 2222.6,485.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,517.5 1432.6,517.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,534.5 1432.6,534.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,551.5 1432.6,551.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,568.5 1432.6,568.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,585.5 1432.6,585.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,602.5 1432.6,602.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,619.5 1432.6,619.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,636.5 1432.6,636.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,653.5 1432.6,653.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,670.5 1432.6,670.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,687.5 1432.6,687.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1320.5,704.5 1432.6,704.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,449.5 780.0,449.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,466.5 780.0,466.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,483.5 780.0,483.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,500.5 780.0,500.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,517.5 780.0,517.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,534.5 642.3,534.5 647.3,539.5 647.3,699.5 652.3,704.5 780.0,704.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,551.5 642.3,551.5 647.3,556.5 647.3,682.5 652.3,687.5 780.0,687.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,568.5 642.3,568.5 647.3,573.5 647.3,665.5 652.3,670.5 780.0,670.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,585.5 642.3,585.5 647.3,590.5 647.3,648.5 652.3,653.5 780.0,653.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,602.5 642.3,602.5 647.3,607.5 647.3,631.5 652.3,636.5 780.0,636.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,619.5 780.0,619.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,636.5 642.3,636.5 647.3,631.5 647.3,607.5 652.3,602.5 780.0,602.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,653.5 642.3,653.5 647.3,648.5 647.3,590.5 652.3,585.5 780.0,585.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,670.5 642.3,670.5 647.3,665.5 647.3,573.5 652.3,568.5 780.0,568.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,687.5 642.3,687.5 647.3,682.5 647.3,556.5 652.3,551.5 780.0,551.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="576.3,704.5 642.3,704.5 647.3,699.5 647.3,539.5 652.3,534.5 780.0,534.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2104.2,667.5 2228.4,667.5 2229.2,666.7 2229.2,666.3 2230.0,665.5 2344.4,665.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1851.7,314.5 1935.0,314.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1589.9,449.5 1667.9,449.5 1672.9,444.5 1672.9,319.5 1677.9,314.5 1785.0,314.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2010.4,314.5 2201.0,314.5 2203.4,316.9 2203.4,318.1 2205.8,320.5 2400.0,320.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="2010.4,314.5 2037.4,314.5 2042.4,309.5 2042.4,175.5 2047.4,170.5 2220.0,170.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="247.8,539.5 329.1,539.5 330.7,537.9 330.7,537.1 332.3,535.5 432.2,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1589.9,535.5 1774.1,535.5 1774.9,536.3 1774.9,536.7 1775.7,537.5 2222.6,537.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,535.5 1432.6,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,535.5 780.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,535.5 1170.0,535.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,535.5 959.9,535.5 964.9,530.5 964.9,107.5 969.9,102.5 1455.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2104.2,719.5 2228.4,719.5 2229.2,718.7 2229.2,718.3 2230.0,717.5 2344.4,717.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1851.7,400.5 1935.0,400.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1589.9,535.5 1638.9,535.5 1643.9,530.5 1643.9,405.5 1648.9,400.5 1785.0,400.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2010.4,400.5 2035.4,400.5 2040.4,395.5 2040.4,227.5 2045.4,222.5 2220.0,222.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2010.4,400.5 2056.4,400.5 2061.4,395.5 2061.4,377.5 2066.4,372.5 2400.0,372.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="247.8,607.5 282.8,607.5 287.8,602.5 287.8,574.5 292.8,569.5 432.2,569.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,569.5 1170.0,569.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,603.5 1170.0,603.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,586.5 1170.0,586.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,620.5 1170.0,620.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,637.5 1170.0,637.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,654.5 1170.0,654.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,671.5 1170.0,671.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,688.5 1170.0,688.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,705.5 1170.0,705.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,722.5 1170.0,722.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,739.5 1170.0,739.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,756.5 1170.0,756.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,773.5 1170.0,773.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,790.5 1170.0,790.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,807.5 1170.0,807.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,824.5 1170.0,824.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,671.5 1101.9,671.5 1106.9,666.5 1106.9,260.5 1111.9,255.5 1455.0,255.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,569.5 978.9,569.5 983.9,564.5 983.9,158.5 988.9,153.5 1455.0,153.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,637.5 1056.9,637.5 1061.9,632.5 1061.9,226.5 1066.9,221.5 1455.0,221.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,586.5 992.9,586.5 997.9,581.5 997.9,175.5 1002.9,170.5 1455.0,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,654.5 1079.9,654.5 1084.9,649.5 1084.9,243.5 1089.9,238.5 1455.0,238.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,688.5 1114.9,688.5 1119.9,683.5 1119.9,277.5 1124.9,272.5 1455.0,272.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,603.5 1004.9,603.5 1009.9,598.5 1009.9,192.5 1014.9,187.5 1455.0,187.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="930.9,620.5 1037.9,620.5 1042.9,615.5 1042.9,209.5 1047.9,204.5 1455.0,204.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,569.5 1432.6,569.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,586.5 1432.6,586.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,603.5 1432.6,603.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,620.5 1432.6,620.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1589.9,569.5 1754.9,569.5 1759.9,574.5 1759.9,600.5 1764.9,605.5 2222.6,605.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,637.5 1432.6,637.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,654.5 1432.6,654.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,671.5 1432.6,671.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,688.5 1432.6,688.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,705.5 1432.6,705.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,722.5 1432.6,722.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,739.5 1432.6,739.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,756.5 1432.6,756.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,773.5 1432.6,773.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,790.5 1432.6,790.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,807.5 1432.6,807.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1320.5,824.5 1432.6,824.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,569.5 780.0,569.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,586.5 780.0,586.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,603.5 780.0,603.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,620.5 780.0,620.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,637.5 780.0,637.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,654.5 642.3,654.5 647.3,659.5 647.3,819.5 652.3,824.5 780.0,824.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,671.5 642.3,671.5 647.3,676.5 647.3,802.5 652.3,807.5 780.0,807.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,688.5 642.3,688.5 647.3,693.5 647.3,785.5 652.3,790.5 780.0,790.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,705.5 642.3,705.5 647.3,710.5 647.3,768.5 652.3,773.5 780.0,773.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,722.5 642.3,722.5 647.3,727.5 647.3,751.5 652.3,756.5 780.0,756.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,739.5 780.0,739.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,756.5 642.3,756.5 647.3,751.5 647.3,727.5 652.3,722.5 780.0,722.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,773.5 642.3,773.5 647.3,768.5 647.3,710.5 652.3,705.5 780.0,705.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,790.5 642.3,790.5 647.3,785.5 647.3,693.5 652.3,688.5 780.0,688.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,807.5 642.3,807.5 647.3,802.5 647.3,676.5 652.3,671.5 780.0,671.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="576.3,824.5 642.3,824.5 647.3,819.5 647.3,659.5 652.3,654.5 780.0,654.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2104.2,787.5 2228.4,787.5 2229.2,786.7 2229.2,786.3 2230.0,785.5 2344.4,785.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1851.7,434.5 1935.0,434.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1589.9,569.5 1667.9,569.5 1672.9,564.5 1672.9,439.5 1677.9,434.5 1785.0,434.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2010.4,434.5 2201.0,434.5 2203.4,436.9 2203.4,438.1 2205.8,440.5 2400.0,440.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="2010.4,434.5 2037.4,434.5 2042.4,429.5 2042.4,295.5 2047.4,290.5 2220.0,290.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_SETPOINT_CONDENSED_WORK_STATE_1_16" transform="translate(96.9, 375.0)">
+    <g id="fb_SETPOINT_CONDENSED_WORK_STATE_1_16" transform="translate(96.9, 495.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -222,7 +222,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SETPOINT_CONDENSED_WORK_STATE_1_16</text>
     </g>
-    <g id="fb_SPLIT_DWORD_INTO_QUARTERS" transform="translate(432.2, 405.0)">
+    <g id="fb_SPLIT_DWORD_INTO_QUARTERS" transform="translate(432.2, 525.0)">
       <path d="M 3 0
             L 141.0625 0
             A 3 3 0 0 1 144.0625 3
@@ -337,7 +337,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SPLIT_DWORD_INTO_QUARTERS</text>
     </g>
-    <g id="fb_ASSEMBLE_DWORD_FROM_QUARTERS" transform="translate(1432.6, 405.0)">
+    <g id="fb_ASSEMBLE_DWORD_FROM_QUARTERS" transform="translate(1432.6, 525.0)">
       <path d="M 3 0
             L 154.25 0
             A 3 3 0 0 1 157.25 3
@@ -452,7 +452,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASSEMBLE_DWORD_FROM_QUARTERS</text>
     </g>
-    <g id="fb_ACTUAL_CONDENSED_WORK_STATE_1_16" transform="translate(2222.6, 390.0)">
+    <g id="fb_ACTUAL_CONDENSED_WORK_STATE_1_16" transform="translate(2222.6, 510.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -545,7 +545,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ACTUAL_CONDENSED_WORK_STATE_1_16</text>
     </g>
-    <g id="fb_BOOLS_TO_QUARTERS" transform="translate(1170.0, 405.0)">
+    <g id="fb_BOOLS_TO_QUARTERS" transform="translate(1170.0, 525.0)">
       <path d="M 3 0
             L 147.5 0
             A 3 3 0 0 1 150.5 3
@@ -705,7 +705,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BOOLS_TO_QUARTERS</text>
     </g>
-    <g id="fb_QUARTERS_TO_BOOLS" transform="translate(780.0, 405.0)">
+    <g id="fb_QUARTERS_TO_BOOLS" transform="translate(780.0, 525.0)">
       <path d="M 3 0
             L 147.9375 0
             A 3 3 0 0 1 150.9375 3
@@ -865,7 +865,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">QUARTERS_TO_BOOLS</text>
     </g>
-    <g id="fb_SECTION_CONTROL_STATE_IN" transform="translate(1953.4, 555.0)">
+    <g id="fb_SECTION_CONTROL_STATE_IN" transform="translate(1953.4, 675.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -961,7 +961,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SECTION_CONTROL_STATE_IN</text>
     </g>
-    <g id="fb_SECTION_CONTROL_STATE_OUT" transform="translate(2344.4, 570.0)">
+    <g id="fb_SECTION_CONTROL_STATE_OUT" transform="translate(2344.4, 690.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -1054,7 +1054,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SECTION_CONTROL_STATE_OUT</text>
     </g>
-    <g id="fb_ACTUAL_RATE" transform="translate(2400.0, 225.0)">
+    <g id="fb_ACTUAL_RATE" transform="translate(2400.0, 345.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -1147,7 +1147,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ACTUAL_RATE</text>
     </g>
-    <g id="fb_ACTUAL_WORK_STATE" transform="translate(2220.0, 75.0)">
+    <g id="fb_ACTUAL_WORK_STATE" transform="translate(2220.0, 195.0)">
       <path d="M 3 0
             L 147.875 0
             A 3 3 0 0 1 150.875 3
@@ -1240,7 +1240,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ACTUAL_WORK_STATE</text>
     </g>
-    <g id="fb_F_SEL" transform="translate(1935.0, 270.0)">
+    <g id="fb_F_SEL" transform="translate(1935.0, 390.0)">
       <path d="M 3 0
             L 72.4375 0
             A 3 3 0 0 1 75.4375 3
@@ -1317,7 +1317,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F_SEL</text>
     </g>
-    <g id="fb_F_GT" transform="translate(1785.0, 270.0)">
+    <g id="fb_F_GT" transform="translate(1785.0, 390.0)">
       <path d="M 3 0
             L 63.6875 0
             A 3 3 0 0 1 66.6875 3
@@ -1390,119 +1390,131 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F_GT</text>
     </g>
-    <g id="fb_Out" transform="translate(1335.0, 105.0)">
+    <g id="fb_Out" transform="translate(1455.0, 75.0)">
       <path d="M 3 0
             L 131.375 0
             A 3 3 0 0 1 134.375 3
-            L 134.375 18
-            A 3 3 0 0 1 131.375 21
-            L 125.375 21
-            L 125.375 35
-            L 131.375 35
-            A 3 3 0 0 1 134.375 38
-            L 134.375 307
-            A 3 3 0 0 1 131.375 310
-            L 3 310
-            A 3 3 0 0 1 0 307
-            L 0 38
-            A 3 3 0 0 1 3 35
-            L 9 35
-            L 9 21
-            L 3 21
-            A 3 3 0 0 1 0 18
+            L 134.375 35
+            A 3 3 0 0 1 131.375 38
+            L 125.375 38
+            L 125.375 52
+            L 131.375 52
+            A 3 3 0 0 1 134.375 55
+            L 134.375 341
+            A 3 3 0 0 1 131.375 344
+            L 3 344
+            A 3 3 0 0 1 0 341
+            L 0 55
+            A 3 3 0 0 1 3 52
+            L 9 52
+            L 9 38
+            L 3 38
+            A 3 3 0 0 1 0 35
             L 0 3
             A 3 3 0 0 1 3 0
             Z"
             fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
       <!-- Name Section -->
-      <path d="M 13.0 20.0
-            L 27.0 20.0
-            A 1 1 0 0 1 28.0 21.0
-            L 28.0 24.0
-            L 26.5 24.0
-            L 26.5 26.666666666666668
-            L 28.0 26.666666666666668
-            L 28.0 35.0
-            A 1 1 0 0 1 27.0 36.0
-            L 13.0 36.0
-            A 1 1 0 0 1 12.0 35.0
-            L 12.0 26.666666666666668
-            L 13.5 26.666666666666668
-            L 13.5 24.0
-            L 12.0 24.0
-            L 12.0 21.0
-            A 1 1 0 0 1 13.0 20.0
+      <path d="M 13.0 37.0
+            L 27.0 37.0
+            A 1 1 0 0 1 28.0 38.0
+            L 28.0 41.0
+            L 26.5 41.0
+            L 26.5 43.666666666666664
+            L 28.0 43.666666666666664
+            L 28.0 52.0
+            A 1 1 0 0 1 27.0 53.0
+            L 13.0 53.0
+            A 1 1 0 0 1 12.0 52.0
+            L 12.0 43.666666666666664
+            L 13.5 43.666666666666664
+            L 13.5 41.0
+            L 12.0 41.0
+            L 12.0 38.0
+            A 1 1 0 0 1 13.0 37.0
             Z"
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
-      <path d="M 13.5 27.5 L 18.0 27.5 A 0.5 0.5 0 0 1 18.5 28.0 L 18.5 29.25 L 17.675 29.25 L 17.675 30.416666666666668 L 18.5 30.416666666666668 L 18.5 34.0 A 0.5 0.5 0 0 1 18.0 34.5 L 13.5 34.5 A 0.5 0.5 0 0 1 13.0 34.0 L 13.0 30.416666666666668 L 13.825 30.416666666666668 L 13.825 29.25 L 13.0 29.25 L 13.0 28.0 A 0.5 0.5 0 0 1 13.5 27.5 Z" fill="#1565C0" stroke="none"/>
-      <path d="M 22.0 27.5 L 26.5 27.5 A 0.5 0.5 0 0 1 27.0 28.0 L 27.0 29.25 L 26.175 29.25 L 26.175 30.416666666666668 L 27.0 30.416666666666668 L 27.0 34.0 A 0.5 0.5 0 0 1 26.5 34.5 L 22.0 34.5 A 0.5 0.5 0 0 1 21.5 34.0 L 21.5 30.416666666666668 L 22.325 30.416666666666668 L 22.325 29.25 L 21.5 29.25 L 21.5 28.0 A 0.5 0.5 0 0 1 22.0 27.5 Z" fill="#1565C0" stroke="none"/>
-      <line x1="18.5" y1="28.34" x2="21.5" y2="28.34"
+      <path d="M 13.5 44.5 L 18.0 44.5 A 0.5 0.5 0 0 1 18.5 45.0 L 18.5 46.25 L 17.675 46.25 L 17.675 47.416666666666664 L 18.5 47.416666666666664 L 18.5 51.0 A 0.5 0.5 0 0 1 18.0 51.5 L 13.5 51.5 A 0.5 0.5 0 0 1 13.0 51.0 L 13.0 47.416666666666664 L 13.825 47.416666666666664 L 13.825 46.25 L 13.0 46.25 L 13.0 45.0 A 0.5 0.5 0 0 1 13.5 44.5 Z" fill="#1565C0" stroke="none"/>
+      <path d="M 22.0 44.5 L 26.5 44.5 A 0.5 0.5 0 0 1 27.0 45.0 L 27.0 46.25 L 26.175 46.25 L 26.175 47.416666666666664 L 27.0 47.416666666666664 L 27.0 51.0 A 0.5 0.5 0 0 1 26.5 51.5 L 22.0 51.5 A 0.5 0.5 0 0 1 21.5 51.0 L 21.5 47.416666666666664 L 22.325 47.416666666666664 L 22.325 46.25 L 21.5 46.25 L 21.5 45.0 A 0.5 0.5 0 0 1 22.0 44.5 Z" fill="#1565C0" stroke="none"/>
+      <line x1="18.5" y1="45.34" x2="21.5" y2="45.34"
             stroke="#3DA015" stroke-width="1.2"/>
-      <line x1="18.5" y1="32.4" x2="21.5" y2="32.4"
+      <line x1="18.5" y1="49.4" x2="21.5" y2="49.4"
             stroke="#FF0000" stroke-width="1.2"/>
-      <text x="30.0" y="32.0"
+      <text x="30.0" y="49.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Bool8_TO_logiBU…</text>
       <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
       <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="0,22.5 5,27.5 0,32.5" fill="#63B31F"/>
+      <text x="6" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">CNF</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
-      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_00</text>
+      <polygon points="129.375,5.5 134.375,10.5 129.375,15.5" fill="#63B31F"/>
+      <text x="128.375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
       <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_01</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#A3B08F"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_02</text>
+            fill="#000000">Q_00</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_03</text>
+            fill="#000000">Q_01</text>
       <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_04</text>
+            fill="#000000">Q_02</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#A3B08F"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_05</text>
+            fill="#000000">Q_03</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#A3B08F"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_06</text>
+            fill="#000000">Q_04</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#A3B08F"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Q_07</text>
-      <polygon points="0,175.5 5,180.5 0,185.5" fill="#3366FF"/>
+            fill="#000000">Q_05</text>
+      <polygon points="0,175.5 5,180.5 0,185.5" fill="#A3B08F"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_1</text>
-      <polygon points="0,192.5 5,197.5 0,202.5" fill="#3366FF"/>
+            fill="#000000">Q_06</text>
+      <polygon points="0,192.5 5,197.5 0,202.5" fill="#A3B08F"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_2</text>
+            fill="#000000">Q_07</text>
       <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_3</text>
+            fill="#000000">Output_1</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_4</text>
+            fill="#000000">Output_2</text>
       <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_5</text>
+            fill="#000000">Output_3</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#3366FF"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_6</text>
+            fill="#000000">Output_4</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#3366FF"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output_7</text>
+            fill="#000000">Output_5</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#3366FF"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">Output_6</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+      <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">Output_7</text>
+      <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
+      <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Output_8</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q3</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q4</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q5</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q6</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q7</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q8</text>
+      <polygon points="129.375,56.5 134.375,61.5 129.375,66.5" fill="#A3B08F"/>
+      <text x="128.375" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q3</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q4</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q5</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q6</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q7</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q8</text>
 
       <!-- Instance Name -->
       <text x="67.1875" y="-5"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 597.0"
+     viewBox="-69.8 -93.0 1126.0 597.0"
      width="1126" height="597">
   <style>
     @font-face {
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="597.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei unabhängige Toggle-Flip-Flops unter Verwendung von Sub-Applikationen</text>
+  <rect x="-69.8" y="-93.0" width="1126.0" height="597.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei unabhängige Toggle-Flip-Flops unter Verwendung von Sub-Applikationen</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="600.7,115.5 788.9,115.5 789.7,116.3 789.7,116.7 790.5,117.5 897.7,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="342.8,119.5 394.2,119.5 395.8,117.9 395.8,117.1 397.4,115.5 493.5,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="601.9,295.5 695.9,295.5 700.9,290.5 700.9,287.5 705.9,282.5 897.7,282.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="342.8,284.5 406.4,284.5 410.8,288.9 410.8,291.1 415.2,295.5 494.7,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="600.7,149.5 784.7,149.5 789.7,154.5 789.7,180.5 794.7,185.5 897.7,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="601.9,329.5 695.9,329.5 700.9,334.5 700.9,345.5 705.9,350.5 897.7,350.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="539.3,115.5 727.5,115.5 728.3,116.3 728.3,116.7 729.1,117.5 836.3,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="281.4,119.5 332.8,119.5 334.4,117.9 334.4,117.1 336.0,115.5 432.1,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="540.5,295.5 634.5,295.5 639.5,290.5 639.5,287.5 644.5,282.5 836.3,282.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="281.4,284.5 345.0,284.5 349.4,288.9 349.4,291.1 353.8,295.5 433.3,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="539.3,149.5 723.3,149.5 728.3,154.5 728.3,180.5 733.3,185.5 836.3,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="540.5,329.5 634.5,329.5 639.5,334.5 639.5,345.5 644.5,350.5 836.3,350.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(897.7, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(836.3, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -147,7 +147,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(222.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(161.3, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -240,7 +240,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(897.7, 255.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(836.3, 255.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -329,7 +329,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(222.7, 240.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(161.3, 240.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -422,7 +422,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_Uebung_004b2b_sub1" transform="translate(493.5, 105.0)">
+    <g id="fb_Uebung_004b2b_sub1" transform="translate(432.1, 105.0)">
       <path d="M 3 0
             L 104.25 0
             A 3 3 0 0 1 107.25 3
@@ -492,7 +492,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Uebung_004b2b_sub1</text>
     </g>
-    <g id="fb_Uebung_004b2b_sub2" transform="translate(494.7, 285.0)">
+    <g id="fb_Uebung_004b2b_sub2" transform="translate(433.3, 285.0)">
       <path d="M 3 0
             L 104.25 0
             A 3 3 0 0 1 107.25 3

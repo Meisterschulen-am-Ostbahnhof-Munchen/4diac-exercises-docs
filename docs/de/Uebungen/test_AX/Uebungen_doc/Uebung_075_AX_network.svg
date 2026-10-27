@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 923.0"
+     viewBox="21.0 -93.0 1126.0 923.0"
      width="1126" height="923">
   <style>
     @font-face {
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="923.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="909.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LD auf Q</text>
+  <rect x="21.0" y="-93.0" width="1126.0" height="923.0" fill="white"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="909.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="28.0" y1="-61.5" x2="1140.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="33.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LD auf Q</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="391.8,270.5 540.8,270.5 545.8,265.5 545.8,192.5 550.8,187.5 867.7,187.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="391.8,270.5 540.8,270.5 545.8,265.5 545.8,192.5 550.8,187.5 867.7,187.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="391.8,287.5 540.8,287.5 545.8,292.5 545.8,342.5 550.8,347.5 867.7,347.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="391.8,287.5 540.8,287.5 545.8,292.5 545.8,342.5 550.8,347.5 867.7,347.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="375.8,270.5 524.8,270.5 529.8,265.5 529.8,192.5 534.8,187.5 851.7,187.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="375.8,270.5 524.8,270.5 529.8,265.5 529.8,192.5 534.8,187.5 851.7,187.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="375.8,287.5 524.8,287.5 529.8,292.5 529.8,342.5 534.8,347.5 851.7,347.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="375.8,287.5 524.8,287.5 529.8,292.5 529.8,342.5 534.8,347.5 851.7,347.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(867.7, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(851.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -153,7 +153,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q3" transform="translate(867.7, 395.0)">
+    <g id="fb_DigitalOutput_Q3" transform="translate(851.7, 395.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -250,7 +250,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q3</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(867.7, 235.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(851.7, 235.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -347,7 +347,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_IA_Lighting" transform="translate(252.7, 90.0)">
+    <g id="fb_IA_Lighting" transform="translate(236.7, 90.0)">
       <path d="M 3 0
             L 136.125 0
             A 3 3 0 0 1 139.125 3

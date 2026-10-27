@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="-82.3 -151.0 1411.9 588.0"
-     width="1412" height="588">
+     viewBox="-82.3 -151.0 1670.6 588.0"
+     width="1671" height="588">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,10 +40,10 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="-82.3" y="-151.0" width="1411.9" height="588.0" fill="white"/>
-  <rect x="-75.3" y="-144.0" width="1397.9" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="-75.3" y="-144.0" width="1397.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="-75.3" y1="-119.5" x2="1322.6" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
+  <rect x="-82.3" y="-151.0" width="1670.6" height="588.0" fill="white"/>
+  <rect x="-75.3" y="-144.0" width="1656.6" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-75.3" y="-144.0" width="1656.6" height="25.0" fill="white" stroke="none"/>
+  <line x1="-75.3" y1="-119.5" x2="1581.2" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
   <text x="-70.3" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Geraet B (Station 12, 192.168.1.12): wie Toggle_RPC_FROM_Remote_QXA_OPC, aber
 CLIENT_0/SERVER_0-Trigger und AX_CLIENT_1_0 sind hinter EINEM
 AE_AX_SERVER_0_CLIENT_1_0-Baustein hinter einem einzigen bidirektionalen
@@ -53,12 +53,23 @@ im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
   <g id="sidebars">
     <rect x="-75.3" y="-119.0" width="115.3" height="549.0" fill="#EEF5FF" stroke="none"/>
     <line x1="40.0" y1="-119.0" x2="40.0" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
+    <rect x="1547.8" y="-119.0" width="33.5" height="549.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="1547.8" y1="-119.0" x2="1547.8" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
   </g>
   <g id="connections">
-    <polyline points="40.0,-84.0 642.0,-84.0 647.0,-79.0 647.0,225.5 652.0,230.5 1211.0,230.5" fill="none" stroke="#3366FF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="40.0,-84.0 642.0,-84.0 647.0,-79.0 647.0,225.5 652.0,230.5 1211.0,230.5" fill="none" stroke="#CCD8FF" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="40.0,-67.0 245.0,-67.0 250.0,-62.0 250.0,163.5 255.0,168.5 341.0,168.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="40.0,-50.0 245.0,-50.0 250.0,-45.0 250.0,180.5 255.0,185.5 341.0,185.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-84.0 185.5,-84.0 190.5,-79.0 190.5,95.5 195.5,100.5 341.0,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="500.2,100.5 850.6,100.5 855.6,105.5 855.6,140.5 860.6,145.5 1211.0,145.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1322.6,145.5 1430.2,145.5 1435.2,140.5 1435.2,-79.0 1440.2,-84.0 1547.8,-84.0" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1322.6,145.5 1366.8,145.5 1371.8,150.5 1371.8,155.5 1376.8,160.5 1421.0,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-50.0 642.0,-50.0 647.0,-45.0 647.0,225.5 652.0,230.5 1211.0,230.5" fill="none" stroke="#3366FF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="40.0,-50.0 642.0,-50.0 647.0,-45.0 647.0,225.5 652.0,230.5 1211.0,230.5" fill="none" stroke="#CCD8FF" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="40.0,-33.0 245.0,-33.0 250.0,-28.0 250.0,163.5 255.0,168.5 341.0,168.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-16.0 245.0,-16.0 250.0,-11.0 250.0,180.5 255.0,185.5 341.0,185.5" fill="none" stroke="#BD8663" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-67.0 185.5,-67.0 190.5,-62.0 190.5,146.5 195.5,151.5 341.0,151.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-67.0 620.5,-67.0 625.5,-62.0 625.5,191.5 630.5,196.5 1211.0,196.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="500.2,151.5 955.6,151.5 960.6,156.5 960.6,189.5 965.6,194.5 1421.0,194.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1322.6,196.5 1366.8,196.5 1371.8,201.5 1371.8,206.5 1376.8,211.5 1421.0,211.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1527.8,194.5 1533.8,194.5 1537.8,190.5 1537.8,-63.0 1541.8,-67.0 1547.8,-67.0" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="500.2,202.5 630.2,202.5 635.2,197.5 635.2,183.5 640.2,178.5 731.0,178.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="500.2,202.5 630.2,202.5 635.2,197.5 635.2,183.5 640.2,178.5 731.0,178.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="859.6,178.5 993.6,178.5 998.6,173.5 998.6,123.5 1003.6,118.5 1151.0,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
@@ -67,15 +78,27 @@ im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
     <polyline points="859.6,195.5 894.6,195.5 899.6,200.5 899.6,242.5 904.6,247.5 1211.0,247.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
-    <polygon points="35.0,-89.0 40.0,-84.0 35.0,-79.0" fill="#3366FF"/>
+    <polygon points="35.0,-89.0 40.0,-84.0 35.0,-79.0" fill="#63B31F"/>
     <text x="34.0" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-          fill="#000000" text-anchor="end">Output</text>
-    <polygon points="35.0,-72.0 40.0,-67.0 35.0,-62.0" fill="#BD8663"/>
+          fill="#000000" text-anchor="end">INIT</text>
+    <polygon points="1552.75,-89.0 1547.75,-84.0 1552.75,-79.0" fill="#63B31F"/>
+    <text x="1553.75" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">INITO</text>
+    <polygon points="35.0,-72.0 40.0,-67.0 35.0,-62.0" fill="#A3B08F"/>
     <text x="34.0" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-          fill="#000000" text-anchor="end">ID_TRIGGER_METHOD</text>
-    <polygon points="35.0,-55.0 40.0,-50.0 35.0,-45.0" fill="#BD8663"/>
+          fill="#000000" text-anchor="end">QI</text>
+    <polygon points="35.0,-55.0 40.0,-50.0 35.0,-45.0" fill="#3366FF"/>
     <text x="34.0" y="-45.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">Output</text>
+    <polygon points="35.0,-38.0 40.0,-33.0 35.0,-28.0" fill="#BD8663"/>
+    <text x="34.0" y="-28.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">ID_TRIGGER_METHOD</text>
+    <polygon points="35.0,-21.0 40.0,-16.0 35.0,-11.0" fill="#BD8663"/>
+    <text x="34.0" y="-11.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
           fill="#000000" text-anchor="end">ID_STATE_WRITE</text>
+    <polygon points="1552.75,-72.0 1547.75,-67.0 1552.75,-62.0" fill="#A3B08F"/>
+    <text x="1553.75" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">QO</text>
   </g>
   <g id="instances">
     <g id="fb_TRIGGER" transform="translate(341.0, 90.0)">
@@ -156,7 +179,7 @@ im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
       <polygon points="154.25,90.5 159.25,95.5 154.25,100.5" fill="#BD8663"/>
       <text x="153.25" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS_STATE</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+
       <path d="M 149.25 107.5
             L 151.75 107.5
             L 151.75 109.16666666666667
@@ -430,7 +453,7 @@ im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
       <polygon points="106.5625,73.5 111.5625,78.5 106.5625,83.5" fill="#BD8663"/>
       <text x="105.5625" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+
       <path d="M 0 107.5
             L 5.0 107.5
             L 5.0 109.16666666666667
@@ -450,6 +473,79 @@ im MyLib::sys-Composite, nicht in der Resource des Geraets</text>
       <text x="55.78125" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
+    </g>
+    <g id="fb_AND_QO" transform="translate(1421.0, 150.0)">
+      <path d="M 3 0
+            L 103.75 0
+            A 3 3 0 0 1 106.75 3
+            L 106.75 18
+            A 3 3 0 0 1 103.75 21
+            L 97.75 21
+            L 97.75 35
+            L 103.75 35
+            A 3 3 0 0 1 106.75 38
+            L 106.75 69
+            A 3 3 0 0 1 103.75 72
+            L 3 72
+            A 3 3 0 0 1 0 69
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+      <!-- Name Section -->
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">Si</text>
+      <text x="30.0" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AND_BOOL_2</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">REQ</text>
+      <polygon points="101.75,5.5 106.75,10.5 101.75,15.5" fill="#63B31F"/>
+      <text x="100.75" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">CNF</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">IN1</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
+      <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">IN2</text>
+      <polygon points="101.75,39.5 106.75,44.5 101.75,49.5" fill="#A3B08F"/>
+      <text x="100.75" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">OUT</text>
+
+
+      <!-- Instance Name -->
+      <text x="53.375" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">AND_QO</text>
     </g>
   </g>
 </svg>

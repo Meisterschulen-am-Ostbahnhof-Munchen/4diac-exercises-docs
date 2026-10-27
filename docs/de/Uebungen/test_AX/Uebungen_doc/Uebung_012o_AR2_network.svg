@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-41.3 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,22 +40,22 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">VT-Feld UND OPC-UA (letzter Schreiber gewinnt) und Speichern INI via AR2 -
+  <rect x="-41.3" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-34.3" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-34.3" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-34.3" y1="-61.5" x2="1077.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-29.3" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">VT-Feld UND OPC-UA (letzter Schreiber gewinnt) und Speichern INI via AR2 -
 NumericValue_TO_AR2_OPC direkt an ein INI_AR2 angeschlossen</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="429.6,215.5 622.2,215.5 626.6,211.1 626.6,208.9 631.0,204.5 785.2,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="429.6,215.5 622.2,215.5 626.6,211.1 626.6,208.9 631.0,204.5 785.2,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="382.5,232.5 574.5,232.5 579.5,227.5 579.5,209.5 584.5,204.5 738.1,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="382.5,232.5 574.5,232.5 579.5,227.5 579.5,209.5 584.5,204.5 738.1,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_INI_AR2" transform="translate(785.2, 75.0)">
+    <g id="fb_INI_AR2" transform="translate(738.1, 75.0)">
       <path d="M 3 0
             L 153.5 0
             A 3 3 0 0 1 156.5 3
@@ -158,7 +158,7 @@ NumericValue_TO_AR2_OPC direkt an ein INI_AR2 angeschlossen</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">INI_AR2</text>
     </g>
-    <g id="fb_InputNumber_I1_N" transform="translate(290.2, 120.0)">
+    <g id="fb_InputNumber_I1_N" transform="translate(243.1, 120.0)">
       <path d="M 3 0
             L 136.375 0
             A 3 3 0 0 1 139.375 3
@@ -168,10 +168,10 @@ NumericValue_TO_AR2_OPC direkt an ein INI_AR2 angeschlossen</text>
             L 130.375 35
             L 136.375 35
             A 3 3 0 0 1 139.375 38
-            L 139.375 120
-            A 3 3 0 0 1 136.375 123
-            L 3 123
-            A 3 3 0 0 1 0 120
+            L 139.375 137
+            A 3 3 0 0 1 136.375 140
+            L 3 140
+            A 3 3 0 0 1 0 137
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -212,34 +212,30 @@ NumericValue_TO_AR2_OPC direkt an ein INI_AR2 angeschlossen</text>
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">NumericValue_TO…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="134.375,5.5 139.375,10.5 134.375,15.5" fill="#63B31F"/>
+      <text x="133.375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObj</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#BD8663"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">stObj</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">InputNumber_I1_N</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Uebung12o_READ</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Uebung12o_WRITE</text>
-      <path d="M 129.375 90.5
-            L 131.875 90.5
-            L 131.875 92.16666666666667
-            L 134.375 92.16666666666667
-            L 134.375 90.5
-            L 139.375 90.5
-            L 139.375 100.5
-            L 134.375 100.5
-            L 134.375 98.83333333333333
-            L 131.875 98.83333333333333
-            L 131.875 100.5
-            L 129.375 100.5
-            Z" fill="#845DAF"/>
-      <text x="126.375" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">VALUEO</text>
+      <polygon points="134.375,39.5 139.375,44.5 134.375,49.5" fill="#A3B08F"/>
+      <text x="133.375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">InputNumber_I1_N</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Uebung12o_READ</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Uebung12o_WRITE</text>
       <path d="M 129.375 107.5
             L 131.875 107.5
             L 131.875 109.16666666666667
@@ -254,6 +250,21 @@ NumericValue_TO_AR2_OPC direkt an ein INI_AR2 angeschlossen</text>
             L 129.375 117.5
             Z" fill="#845DAF"/>
       <text x="126.375" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">VALUEO</text>
+      <path d="M 129.375 124.5
+            L 131.875 124.5
+            L 131.875 126.16666666666667
+            L 134.375 126.16666666666667
+            L 134.375 124.5
+            L 139.375 124.5
+            L 139.375 134.5
+            L 134.375 134.5
+            L 134.375 132.83333333333334
+            L 131.875 132.83333333333334
+            L 131.875 134.5
+            L 129.375 134.5
+            Z" fill="#845DAF"/>
+      <text x="126.375" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">VALUE_OUT</text>
       <!-- Instance Name -->
       <text x="69.6875" y="-5"

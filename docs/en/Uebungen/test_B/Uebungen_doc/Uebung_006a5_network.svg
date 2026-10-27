@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="64.8 -93.0 1126.0 737.0"
+     viewBox="-86.5 -93.0 1126.0 737.0"
      width="1126" height="737">
   <style>
     @font-face {
@@ -40,24 +40,24 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="64.8" y="-93.0" width="1126.0" height="737.0" fill="white"/>
-  <rect x="71.8" y="-86.0" width="1112.0" height="723.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="71.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="71.8" y1="-61.5" x2="1183.8" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="76.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SR und T-Flip-Flop als Rastend/Tastend Implementierung</text>
+  <rect x="-86.5" y="-93.0" width="1126.0" height="737.0" fill="white"/>
+  <rect x="-79.5" y="-86.0" width="1112.0" height="723.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-79.5" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-79.5" y1="-61.5" x2="1032.5" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-74.5" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SR und T-Flip-Flop als Rastend/Tastend Implementierung</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="294.1,119.5 365.9,119.5 370.9,124.5 370.9,230.5 375.9,235.5 453.6,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="292.2,271.5 360.2,271.5 365.2,266.5 365.2,257.5 370.2,252.5 453.6,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="285.6,424.5 381.6,424.5 386.6,419.5 386.6,274.5 391.6,269.5 453.6,269.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="551.5,235.5 714.5,235.5 719.5,230.5 719.5,227.5 724.5,222.5 978.6,222.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="551.5,303.5 714.5,303.5 719.5,298.5 719.5,295.5 724.5,290.5 978.6,290.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="218.5,119.5 290.2,119.5 295.2,124.5 295.2,230.5 300.2,235.5 378.0,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="216.5,271.5 284.5,271.5 289.5,266.5 289.5,257.5 294.5,252.5 378.0,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="210.0,424.5 306.0,424.5 311.0,419.5 311.0,274.5 316.0,269.5 378.0,269.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="475.9,235.5 638.9,235.5 643.9,230.5 643.9,227.5 648.9,222.5 903.0,222.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="475.9,303.5 638.9,303.5 643.9,298.5 643.9,295.5 648.9,290.5 903.0,290.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_BUTTON_LONG_PRESS_START" transform="translate(174.0, 75.0)">
+    <g id="fb_BUTTON_LONG_PRESS_START" transform="translate(98.3, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -150,7 +150,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_LONG_PRESS_START</text>
     </g>
-    <g id="fb_BUTTON_LONG_PRESS_UP" transform="translate(172.0, 227.0)">
+    <g id="fb_BUTTON_LONG_PRESS_UP" transform="translate(96.4, 227.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -243,7 +243,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_LONG_PRESS_UP</text>
     </g>
-    <g id="fb_E_T_FF_SR" transform="translate(453.6, 225.0)">
+    <g id="fb_E_T_FF_SR" transform="translate(378.0, 225.0)">
       <path d="M 3 0
             L 94.875 0
             A 3 3 0 0 1 97.875 3
@@ -316,7 +316,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF_SR</text>
     </g>
-    <g id="fb_BUTTON_SINGLE_CLICK" transform="translate(165.5, 380.0)">
+    <g id="fb_BUTTON_SINGLE_CLICK" transform="translate(89.8, 380.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -409,7 +409,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_SINGLE_CLICK</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(978.6, 195.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(903.0, 195.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 1504.0"
+     viewBox="21.0 -93.0 1126.0 1504.0"
      width="1126" height="1504">
   <style>
     @font-face {
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="1504.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="1490.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Alle TECU FBs (Adapter Version)</text>
+  <rect x="21.0" y="-93.0" width="1126.0" height="1504.0" fill="white"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="1490.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="28.0" y1="-61.5" x2="1140.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="33.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Alle TECU FBs (Adapter Version)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -52,7 +52,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_IA_GBSD" transform="translate(115.7, 173.0)">
+    <g id="fb_IA_GBSD" transform="translate(99.7, 173.0)">
       <path d="M 3 0
             L 97.1875 0
             A 3 3 0 0 1 100.1875 3
@@ -169,7 +169,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">IA_GBSD</text>
     </g>
-    <g id="fb_IA_VDS" transform="translate(117.7, 675.0)">
+    <g id="fb_IA_VDS" transform="translate(101.7, 675.0)">
       <path d="M 3 0
             L 106.5 0
             A 3 3 0 0 1 109.5 3
@@ -301,7 +301,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">IA_VDS</text>
     </g>
-    <g id="fb_IA_WBSD" transform="translate(117.7, 390.0)">
+    <g id="fb_IA_WBSD" transform="translate(101.7, 390.0)">
       <path d="M 3 0
             L 97.1875 0
             A 3 3 0 0 1 100.1875 3
@@ -418,7 +418,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">IA_WBSD</text>
     </g>
-    <g id="fb_I_MSS" transform="translate(117.7, 915.0)">
+    <g id="fb_I_MSS" transform="translate(101.7, 915.0)">
       <path d="M 3 0
             L 133.375 0
             A 3 3 0 0 1 136.375 3
@@ -524,7 +524,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">I_MSS</text>
     </g>
-    <g id="fb_I_FHS" transform="translate(597.7, 75.0)">
+    <g id="fb_I_FHS" transform="translate(581.7, 75.0)">
       <path d="M 3 0
             L 121.75 0
             A 3 3 0 0 1 124.75 3
@@ -630,7 +630,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">I_FHS</text>
     </g>
-    <g id="fb_I_FPTO" transform="translate(597.7, 345.0)">
+    <g id="fb_I_FPTO" transform="translate(581.7, 345.0)">
       <path d="M 3 0
             L 128.125 0
             A 3 3 0 0 1 131.125 3
@@ -748,7 +748,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">I_FPTO</text>
     </g>
-    <g id="fb_I_RHS" transform="translate(597.7, 675.0)">
+    <g id="fb_I_RHS" transform="translate(581.7, 675.0)">
       <path d="M 3 0
             L 124.8125 0
             A 3 3 0 0 1 127.8125 3
@@ -854,7 +854,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">I_RHS</text>
     </g>
-    <g id="fb_I_RPTO" transform="translate(597.7, 960.0)">
+    <g id="fb_I_RPTO" transform="translate(581.7, 960.0)">
       <path d="M 3 0
             L 128.1875 0
             A 3 3 0 0 1 131.1875 3
@@ -972,7 +972,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">I_RPTO</text>
     </g>
-    <g id="fb_COGSOGRapidUpdate" transform="translate(972.7, 975.0)">
+    <g id="fb_COGSOGRapidUpdate" transform="translate(956.7, 975.0)">
       <path d="M 3 0
             L 140.625 0
             A 3 3 0 0 1 143.625 3

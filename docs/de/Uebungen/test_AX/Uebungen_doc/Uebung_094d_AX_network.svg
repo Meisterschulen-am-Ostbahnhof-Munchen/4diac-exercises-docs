@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="21.0 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,21 +40,21 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">OptionalGroup_001 OHNE DEMUX: die Gruppe ist immer aktiv, kein K/Index noetig - E_RESTART (COLD/WARM) loest einmalig INIT_REQ mit konstantem QI_OUT=TRUE aus, statt dass ein AOption_AUI_DEMUX_N je nach K einen von mehreren OUTx-Anschluessen waehlt.</text>
+  <rect x="21.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="28.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="28.0" y1="-61.5" x2="1140.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="33.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">OptionalGroup_001 OHNE DEMUX: die Gruppe ist immer aktiv, kein K/Index noetig - E_RESTART (COLD/WARM) loest einmalig INIT_REQ mit konstantem QI_OUT=TRUE aus, statt dass ein AOption_AUI_DEMUX_N je nach K einen von mehreren OUTx-Anschluessen waehlt.</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="501.3,136.5 626.5,136.5 631.3,141.3 631.3,143.7 636.1,148.5 736.2,148.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="501.3,136.5 626.5,136.5 631.3,141.3 631.3,143.7 636.1,148.5 736.2,148.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="485.3,136.5 610.5,136.5 615.3,141.3 615.3,143.7 620.1,148.5 720.2,148.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="485.3,136.5 610.5,136.5 615.3,141.3 615.3,143.7 620.1,148.5 720.2,148.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_AOption_EVENT_TO_X" transform="translate(361.2, 75.0)">
+    <g id="fb_AOption_EVENT_TO_X" transform="translate(345.2, 75.0)">
       <path d="M 3 0
             L 137.125 0
             A 3 3 0 0 1 140.125 3
@@ -135,7 +135,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AOption_EVENT_TO_X</text>
     </g>
-    <g id="fb_OptionalGroup_001" transform="translate(736.2, 105.0)">
+    <g id="fb_OptionalGroup_001" transform="translate(720.2, 105.0)">
       <path d="M 3 0
             L 131.5625 0
             A 3 3 0 0 1 134.5625 3

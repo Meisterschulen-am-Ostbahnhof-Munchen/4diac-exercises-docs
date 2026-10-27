@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
-     width="1126" height="588">
+     viewBox="-96.4 -93.0 1148.9 588.0"
+     width="1149" height="588">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input auf PWM Ausgang</text>
+  <rect x="-96.4" y="-93.0" width="1148.9" height="588.0" fill="white"/>
+  <rect x="-89.4" y="-86.0" width="1134.9" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-89.4" y="-86.0" width="1134.9" height="25.0" fill="white" stroke="none"/>
+  <line x1="-89.4" y1="-61.5" x2="1045.5" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-84.4" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input auf PWM Ausgang</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="250.8,119.5 604.0,119.5 604.8,118.7 604.8,118.3 605.5,117.5 978.2,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="250.8,119.5 697.7,119.5 702.7,124.5 702.7,288.5 707.7,293.5 927.2,293.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="250.8,187.5 588.8,187.5 593.8,192.5 593.8,322.5 598.8,327.5 927.2,327.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="250.8,187.5 604.0,187.5 604.8,186.7 604.8,186.3 605.5,185.5 978.2,185.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="187.5,119.5 540.7,119.5 541.5,118.7 541.5,118.3 542.3,117.5 915.0,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="187.5,119.5 634.5,119.5 639.5,124.5 639.5,288.5 644.5,293.5 864.0,293.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="187.5,187.5 525.5,187.5 530.5,192.5 530.5,322.5 535.5,327.5 864.0,327.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="187.5,187.5 540.7,187.5 541.5,186.7 541.5,186.3 542.3,185.5 915.0,185.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_F_DWORD_TO_UDINT" transform="translate(927.2, 283.0)">
+    <g id="fb_F_DWORD_TO_UDINT" transform="translate(864.0, 283.0)">
       <path d="M 3 0
             L 144.3125 0
             A 3 3 0 0 1 147.3125 3
@@ -126,7 +126,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F_DWORD_TO_UDINT</text>
     </g>
-    <g id="fb_PWMOutput_Q2" transform="translate(978.2, 90.0)">
+    <g id="fb_PWMOutput_Q2" transform="translate(915.0, 90.0)">
       <path d="M 3 0
             L 127.5 0
             A 3 3 0 0 1 130.5 3
@@ -215,7 +215,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">PWMOutput_Q2</text>
     </g>
-    <g id="fb_PWM_Value" transform="translate(123.2, 75.0)">
+    <g id="fb_PWM_Value" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 124.5 0
             A 3 3 0 0 1 127.5 3

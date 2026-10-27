@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 595.0"
+     viewBox="13.0 -93.0 1126.0 595.0"
      width="1126" height="595">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="595.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="581.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AX_LAST_2: derselbe Last-Wins-auf-jeder-Flanke-Effekt wie Uebung_229/230/233_AX,
+  <rect x="13.0" y="-93.0" width="1126.0" height="595.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="581.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AX_LAST_2: derselbe Last-Wins-auf-jeder-Flanke-Effekt wie Uebung_229/230/233_AX,
 aber ohne Edge-Detektor+Latch - Q1 folgt direkt dem zuletzt geschriebenen
 AX-Socket</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="364.3,187.5 404.3,187.5 409.3,192.5 409.3,263.5 414.3,268.5 552.7,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="364.3,187.5 404.3,187.5 409.3,192.5 409.3,263.5 414.3,268.5 552.7,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="364.3,367.5 404.3,367.5 409.3,362.5 409.3,290.5 414.3,285.5 552.7,285.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="364.3,367.5 404.3,367.5 409.3,362.5 409.3,290.5 414.3,285.5 552.7,285.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="651.1,268.5 708.7,268.5 711.1,266.1 711.1,264.9 713.5,262.5 867.7,262.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="651.1,268.5 708.7,268.5 711.1,266.1 711.1,264.9 713.5,262.5 867.7,262.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="344.3,187.5 384.3,187.5 389.3,192.5 389.3,263.5 394.3,268.5 532.7,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="344.3,187.5 384.3,187.5 389.3,192.5 389.3,263.5 394.3,268.5 532.7,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="344.3,367.5 384.3,367.5 389.3,362.5 389.3,290.5 394.3,285.5 532.7,285.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="344.3,367.5 384.3,367.5 389.3,362.5 389.3,290.5 394.3,285.5 532.7,285.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="631.1,268.5 688.7,268.5 691.1,266.1 691.1,264.9 693.5,262.5 847.7,262.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="631.1,268.5 688.7,268.5 691.1,266.1 691.1,264.9 693.5,262.5 847.7,262.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I1" transform="translate(252.7, 75.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(232.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -157,7 +157,7 @@ AX-Socket</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(252.7, 255.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(232.7, 255.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -254,7 +254,7 @@ AX-Socket</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_AX_LAST_2" transform="translate(552.7, 225.0)">
+    <g id="fb_AX_LAST_2" transform="translate(532.7, 225.0)">
       <path d="M 3 0
             L 95.375 0
             A 3 3 0 0 1 98.375 3
@@ -358,7 +358,7 @@ AX-Socket</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_LAST_2</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(867.7, 150.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(847.7, 150.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

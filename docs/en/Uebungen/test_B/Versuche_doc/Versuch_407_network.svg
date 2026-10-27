@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-79.3 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Versuch Array Summe</text>
+  <rect x="-79.3" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-72.3" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-72.3" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-72.3" y1="-61.5" x2="1039.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-67.3" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Versuch Array Summe</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="546.8,85.5 602.8,85.5 607.8,90.5 607.8,95.5 612.8,100.5 685.2,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="546.8,85.5 628.8,85.5 633.8,90.5 633.8,245.5 638.8,250.5 685.2,250.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="546.8,119.5 602.8,119.5 607.8,124.5 607.8,129.5 612.8,134.5 685.2,134.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="546.8,119.5 602.8,119.5 607.8,124.5 607.8,279.5 612.8,284.5 685.2,284.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="480.7,85.5 536.7,85.5 541.7,90.5 541.7,95.5 546.7,100.5 619.0,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="480.7,85.5 562.7,85.5 567.7,90.5 567.7,245.5 572.7,250.5 619.0,250.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="480.7,119.5 536.7,119.5 541.7,124.5 541.7,129.5 546.7,134.5 619.0,134.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="480.7,119.5 536.7,119.5 541.7,124.5 541.7,279.5 546.7,284.5 619.0,284.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_INIT_ARR_8_INT" transform="translate(400.2, 75.0)">
+    <g id="fb_INIT_ARR_8_INT" transform="translate(334.0, 75.0)">
       <path d="M 3 0
             L 143.625 0
             A 3 3 0 0 1 146.625 3
@@ -126,7 +126,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">INIT_ARR_8_INT</text>
     </g>
-    <g id="fb_GET_AT_INDEX" transform="translate(685.2, 90.0)">
+    <g id="fb_GET_AT_INDEX" transform="translate(619.0, 90.0)">
       <path d="M 3 0
             L 114.25 0
             A 3 3 0 0 1 117.25 3
@@ -202,7 +202,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">GET_AT_INDEX</text>
     </g>
-    <g id="fb_INIT_ARR_8_INT_1" transform="translate(685.2, 240.0)">
+    <g id="fb_INIT_ARR_8_INT_1" transform="translate(619.0, 240.0)">
       <path d="M 3 0
             L 143.625 0
             A 3 3 0 0 1 146.625 3

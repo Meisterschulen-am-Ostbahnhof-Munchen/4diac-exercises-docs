@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 627.0"
+     viewBox="-69.8 -93.0 1126.0 627.0"
      width="1126" height="627">
   <style>
     @font-face {
@@ -40,28 +40,28 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="627.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="613.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for ASR_AX_SR, ueber AE-Adapter mit logiBUS_IEA statt
+  <rect x="-69.8" y="-93.0" width="1126.0" height="627.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="613.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for ASR_AX_SR, ueber AE-Adapter mit logiBUS_IEA statt
 logiBUS_IE+AE_EVENT_TO_E</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="297.8,204.5 367.8,204.5 372.8,209.5 372.8,263.5 377.8,268.5 432.7,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="297.8,204.5 367.8,204.5 372.8,209.5 372.8,263.5 377.8,268.5 432.7,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="297.8,399.5 367.8,399.5 372.8,394.5 372.8,290.5 377.8,285.5 432.7,285.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="297.8,399.5 367.8,399.5 372.8,394.5 372.8,290.5 377.8,285.5 432.7,285.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="563.4,268.5 672.7,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="563.4,268.5 672.7,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="774.0,268.5 823.6,268.5 826.0,266.1 826.0,264.9 828.4,262.5 942.7,262.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="774.0,268.5 823.6,268.5 826.0,266.1 826.0,264.9 828.4,262.5 942.7,262.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="236.4,204.5 306.4,204.5 311.4,209.5 311.4,263.5 316.4,268.5 371.3,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="236.4,204.5 306.4,204.5 311.4,209.5 311.4,263.5 316.4,268.5 371.3,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="236.4,399.5 306.4,399.5 311.4,394.5 311.4,290.5 316.4,285.5 371.3,285.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="236.4,399.5 306.4,399.5 311.4,394.5 311.4,290.5 316.4,285.5 371.3,285.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="502.0,268.5 611.3,268.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="502.0,268.5 611.3,268.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="712.6,268.5 762.2,268.5 764.6,266.1 764.6,264.9 767.0,262.5 881.3,262.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="712.6,268.5 762.2,268.5 764.6,266.1 764.6,264.9 767.0,262.5 881.3,262.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_ASR_AX_SR_1" transform="translate(672.7, 225.0)">
+    <g id="fb_ASR_AX_SR_1" transform="translate(611.3, 225.0)">
       <path d="M 3 0
             L 98.25 0
             A 3 3 0 0 1 101.25 3
@@ -150,7 +150,7 @@ logiBUS_IE+AE_EVENT_TO_E</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASR_AX_SR_1</text>
     </g>
-    <g id="fb_ASR_2AE_TO_SR_1" transform="translate(432.7, 225.0)">
+    <g id="fb_ASR_2AE_TO_SR_1" transform="translate(371.3, 225.0)">
       <path d="M 3 0
             L 127.6875 0
             A 3 3 0 0 1 130.6875 3
@@ -254,7 +254,7 @@ logiBUS_IE+AE_EVENT_TO_E</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASR_2AE_TO_SR_1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(177.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(116.3, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -355,7 +355,7 @@ logiBUS_IE+AE_EVENT_TO_E</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(942.7, 150.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(881.3, 150.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -452,7 +452,7 @@ logiBUS_IE+AE_EVENT_TO_E</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(177.7, 270.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(116.3, 270.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

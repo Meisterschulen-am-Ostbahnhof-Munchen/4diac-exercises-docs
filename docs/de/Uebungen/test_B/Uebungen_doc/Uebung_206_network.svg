@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 612.0"
-     width="1126" height="612">
+     viewBox="-69.8 -93.0 1133.4 612.0"
+     width="1133" height="612">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,28 +40,28 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="612.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Interlock: ILOCK_T_FF (Zwei gegenseitig verriegelte Toggle-Flip-Flops via
+  <rect x="-69.8" y="-93.0" width="1133.4" height="612.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1119.4" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1119.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1056.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Interlock: ILOCK_T_FF (Zwei gegenseitig verriegelte Toggle-Flip-Flops via
 Adapter-Kette)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="237.8,119.5 298.8,119.5 303.8,114.5 303.8,90.5 308.8,85.5 402.7,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="237.8,299.5 290.8,299.5 295.8,294.5 295.8,270.5 300.8,265.5 627.7,265.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="536.1,85.5 681.1,85.5 686.1,90.5 686.1,97.5 691.1,102.5 1002.7,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="761.1,265.5 887.3,265.5 888.1,266.3 888.1,266.7 888.9,267.5 1002.7,267.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="536.1,119.5 681.1,119.5 686.1,124.5 686.1,165.5 691.1,170.5 1002.7,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="761.1,299.5 883.1,299.5 888.1,304.5 888.1,330.5 893.1,335.5 1002.7,335.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="536.1,136.5 561.1,136.5 566.1,141.5 566.1,311.5 571.1,316.5 627.7,316.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="536.1,136.5 561.1,136.5 566.1,141.5 566.1,311.5 571.1,316.5 627.7,316.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="180.1,119.5 241.1,119.5 246.1,114.5 246.1,90.5 251.1,85.5 345.0,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,299.5 233.1,299.5 238.1,294.5 238.1,270.5 243.1,265.5 570.0,265.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="478.4,85.5 623.4,85.5 628.4,90.5 628.4,97.5 633.4,102.5 945.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="703.4,265.5 829.6,265.5 830.4,266.3 830.4,266.7 831.2,267.5 945.0,267.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="478.4,119.5 623.4,119.5 628.4,124.5 628.4,165.5 633.4,170.5 945.0,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="703.4,299.5 825.4,299.5 830.4,304.5 830.4,330.5 835.4,335.5 945.0,335.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="478.4,136.5 503.4,136.5 508.4,141.5 508.4,311.5 513.4,316.5 570.0,316.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="478.4,136.5 503.4,136.5 508.4,141.5 508.4,311.5 513.4,316.5 570.0,316.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(117.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -154,7 +154,7 @@ Adapter-Kette)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(117.7, 255.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(60.0, 255.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -247,7 +247,7 @@ Adapter-Kette)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_ILOCK_T_FF_1" transform="translate(402.7, 75.0)">
+    <g id="fb_ILOCK_T_FF_1" transform="translate(345.0, 75.0)">
       <path d="M 3 0
             L 130.375 0
             A 3 3 0 0 1 133.375 3
@@ -343,7 +343,7 @@ Adapter-Kette)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ILOCK_T_FF_1</text>
     </g>
-    <g id="fb_ILOCK_T_FF_2" transform="translate(627.7, 255.0)">
+    <g id="fb_ILOCK_T_FF_2" transform="translate(570.0, 255.0)">
       <path d="M 3 0
             L 130.375 0
             A 3 3 0 0 1 133.375 3
@@ -439,7 +439,7 @@ Adapter-Kette)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ILOCK_T_FF_2</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(1002.7, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(945.0, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -528,7 +528,7 @@ Adapter-Kette)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(1002.7, 240.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(945.0, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

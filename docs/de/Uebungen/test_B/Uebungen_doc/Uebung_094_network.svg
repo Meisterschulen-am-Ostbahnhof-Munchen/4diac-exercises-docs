@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 597.0"
+     viewBox="-69.8 -93.0 1126.0 597.0"
      width="1126" height="597">
   <style>
     @font-face {
@@ -40,24 +40,24 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="597.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Beispiel für E_PERMIT</text>
+  <rect x="-69.8" y="-93.0" width="1126.0" height="597.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Beispiel für E_PERMIT</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="312.8,284.5 375.3,284.5 380.3,279.5 380.3,135.5 385.3,130.5 447.7,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="766.8,130.5 797.8,130.5 802.8,125.5 802.8,107.5 807.8,102.5 927.7,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="541.1,130.5 687.7,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="304.3,202.5 365.3,202.5 370.3,197.5 370.3,169.5 375.3,164.5 447.7,164.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="766.8,164.5 844.9,164.5 847.2,166.9 847.2,168.1 849.6,170.5 927.7,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="251.4,284.5 313.9,284.5 318.9,279.5 318.9,135.5 323.9,130.5 386.3,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="705.4,130.5 736.4,130.5 741.4,125.5 741.4,107.5 746.4,102.5 866.3,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="479.7,130.5 626.3,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="242.9,202.5 303.9,202.5 308.9,197.5 308.9,169.5 313.9,164.5 386.3,164.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="705.4,164.5 783.4,164.5 785.8,166.9 785.8,168.1 788.2,170.5 866.3,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I1" transform="translate(192.7, 90.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(131.3, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -149,7 +149,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(192.7, 240.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(131.3, 240.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -242,7 +242,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_E_PERMIT" transform="translate(447.7, 120.0)">
+    <g id="fb_E_PERMIT" transform="translate(386.3, 120.0)">
       <path d="M 3 0
             L 90.375 0
             A 3 3 0 0 1 93.375 3
@@ -309,7 +309,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_PERMIT</text>
     </g>
-    <g id="fb_E_T_FF" transform="translate(687.7, 120.0)">
+    <g id="fb_E_T_FF" transform="translate(626.3, 120.0)">
       <path d="M 3 0
             L 76.0625 0
             A 3 3 0 0 1 79.0625 3
@@ -376,7 +376,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(927.7, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(866.3, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

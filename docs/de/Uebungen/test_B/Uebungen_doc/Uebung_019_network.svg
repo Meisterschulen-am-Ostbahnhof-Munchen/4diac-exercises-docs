@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
-     width="1126" height="588">
+     viewBox="-69.8 -93.0 1202.6 588.0"
+     width="1203" height="588">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Umschalten einer Maske</text>
+  <rect x="-69.8" y="-93.0" width="1202.6" height="588.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1188.6" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1188.6" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1125.8" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Umschalten einer Maske</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="203.2,119.5 382.7,119.5 384.3,117.9 384.3,117.1 385.9,115.5 578.1,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="203.2,269.5 386.2,269.5 391.2,264.5 391.2,137.5 396.2,132.5 578.1,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="675.4,115.5 798.6,115.5 799.4,116.3 799.4,116.7 800.2,117.5 983.1,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="675.4,166.5 794.4,166.5 799.4,161.5 799.4,156.5 804.4,151.5 983.1,151.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,119.5 359.5,119.5 361.1,117.9 361.1,117.1 362.7,115.5 555.0,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,269.5 363.1,269.5 368.1,264.5 368.1,137.5 373.1,132.5 555.0,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="652.2,115.5 775.5,115.5 776.3,116.3 776.3,116.7 777.1,117.5 960.0,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="652.2,166.5 775.5,166.5 776.3,167.3 776.3,167.7 777.1,168.5 960.0,168.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(83.1, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -149,7 +149,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_Q_ActiveMask" transform="translate(983.1, 90.0)">
+    <g id="fb_Q_ActiveMask" transform="translate(960.0, 90.0)">
       <path d="M 3 0
             L 162.75 0
             A 3 3 0 0 1 165.75 3
@@ -159,10 +159,10 @@
             L 156.75 52
             L 162.75 52
             A 3 3 0 0 1 165.75 55
-            L 165.75 103
-            A 3 3 0 0 1 162.75 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 165.75 120
+            A 3 3 0 0 1 162.75 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -212,17 +212,23 @@
       <polygon points="160.75,22.5 165.75,27.5 160.75,32.5" fill="#63B31F"/>
       <text x="159.75" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">QI</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+      <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u16NewMaskId</text>
-      <polygon points="160.75,56.5 165.75,61.5 160.75,66.5" fill="#BD8663"/>
+      <polygon points="160.75,56.5 165.75,61.5 160.75,66.5" fill="#A3B08F"/>
       <text x="159.75" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="160.75,73.5 165.75,78.5 160.75,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="160.75,73.5 165.75,78.5 160.75,83.5" fill="#BD8663"/>
       <text x="159.75" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u16OldMaskId</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="160.75,90.5 165.75,95.5 160.75,100.5" fill="#18519E"/>
       <text x="159.75" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">u16OldMaskId</text>
+      <polygon points="160.75,107.5 165.75,112.5 160.75,117.5" fill="#18519E"/>
+      <text x="159.75" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
 
 
@@ -231,7 +237,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Q_ActiveMask</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(83.1, 225.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(60.0, 225.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -324,7 +330,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_F_SEL_E_2" transform="translate(578.1, 105.0)">
+    <g id="fb_F_SEL_E_2" transform="translate(555.0, 105.0)">
       <path d="M 3 0
             L 94.25 0
             A 3 3 0 0 1 97.25 3

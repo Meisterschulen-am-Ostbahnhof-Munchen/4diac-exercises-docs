@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 612.0"
+     viewBox="-69.8 -93.0 1126.0 612.0"
      width="1126" height="612">
   <style>
     @font-face {
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="612.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SR-Flip-Flop mit 2x IE</text>
+  <rect x="-69.8" y="-93.0" width="1126.0" height="612.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SR-Flip-Flop mit 2x IE</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="455.3,119.5 521.2,119.5 522.8,117.9 522.8,117.1 524.4,115.5 590.2,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="455.3,299.5 521.3,299.5 526.3,294.5 526.3,137.5 531.3,132.5 590.2,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="658.6,115.5 721.1,115.5 721.9,116.3 721.9,116.7 722.7,117.5 785.2,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="658.6,166.5 720.6,166.5 725.6,171.5 725.6,180.5 730.6,185.5 785.2,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="393.9,119.5 459.8,119.5 461.4,117.9 461.4,117.1 463.0,115.5 528.8,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="393.9,299.5 459.9,299.5 464.9,294.5 464.9,137.5 469.9,132.5 528.8,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="597.2,115.5 659.7,115.5 660.5,116.3 660.5,116.7 661.3,117.5 723.8,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="597.2,166.5 659.2,166.5 664.2,171.5 664.2,180.5 669.2,185.5 723.8,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(785.2, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(723.8, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -145,7 +145,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(335.2, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(273.8, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -238,7 +238,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(335.2, 255.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(273.8, 255.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -331,7 +331,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_E_SR" transform="translate(590.2, 105.0)">
+    <g id="fb_E_SR" transform="translate(528.8, 105.0)">
       <path d="M 3 0
             L 65.375 0
             A 3 3 0 0 1 68.375 3

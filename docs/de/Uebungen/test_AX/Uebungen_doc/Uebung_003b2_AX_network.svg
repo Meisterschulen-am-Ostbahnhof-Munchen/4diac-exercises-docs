@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 1641.0"
+     viewBox="-70.3 -93.0 1126.0 1641.0"
      width="1126" height="1641">
   <style>
     @font-face {
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="1641.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="1627.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Funk 16 Tasten auf DataPanel 16</text>
+  <rect x="-70.3" y="-93.0" width="1126.0" height="1641.0" fill="white"/>
+  <rect x="-63.3" y="-86.0" width="1112.0" height="1627.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-63.3" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-63.3" y1="-61.5" x2="1048.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-58.3" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Funk 16 Tasten auf DataPanel 16</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -52,7 +52,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_F1" transform="translate(546.8, 75.0)">
+    <g id="fb_F1" transform="translate(485.2, 75.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -125,7 +125,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F1</text>
     </g>
-    <g id="fb_F2" transform="translate(546.8, 165.0)">
+    <g id="fb_F2" transform="translate(485.2, 165.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -198,7 +198,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F2</text>
     </g>
-    <g id="fb_F3" transform="translate(546.8, 255.0)">
+    <g id="fb_F3" transform="translate(485.2, 255.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -271,7 +271,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F3</text>
     </g>
-    <g id="fb_F4" transform="translate(546.8, 345.0)">
+    <g id="fb_F4" transform="translate(485.2, 345.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -344,7 +344,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F4</text>
     </g>
-    <g id="fb_F5" transform="translate(546.8, 435.0)">
+    <g id="fb_F5" transform="translate(485.2, 435.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -417,7 +417,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F5</text>
     </g>
-    <g id="fb_F6" transform="translate(546.8, 525.0)">
+    <g id="fb_F6" transform="translate(485.2, 525.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -490,7 +490,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F6</text>
     </g>
-    <g id="fb_F7" transform="translate(546.8, 615.0)">
+    <g id="fb_F7" transform="translate(485.2, 615.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -563,7 +563,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F7</text>
     </g>
-    <g id="fb_F8" transform="translate(546.8, 705.0)">
+    <g id="fb_F8" transform="translate(485.2, 705.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -636,7 +636,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F8</text>
     </g>
-    <g id="fb_F9" transform="translate(546.8, 795.0)">
+    <g id="fb_F9" transform="translate(485.2, 795.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -709,7 +709,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F9</text>
     </g>
-    <g id="fb_F10" transform="translate(546.8, 885.0)">
+    <g id="fb_F10" transform="translate(485.2, 885.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -782,7 +782,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F10</text>
     </g>
-    <g id="fb_F11" transform="translate(546.8, 975.0)">
+    <g id="fb_F11" transform="translate(485.2, 975.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -855,7 +855,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F11</text>
     </g>
-    <g id="fb_F12" transform="translate(546.8, 1065.0)">
+    <g id="fb_F12" transform="translate(485.2, 1065.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -928,7 +928,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F12</text>
     </g>
-    <g id="fb_F13" transform="translate(546.8, 1157.0)">
+    <g id="fb_F13" transform="translate(485.2, 1157.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -1001,7 +1001,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F13</text>
     </g>
-    <g id="fb_F14" transform="translate(546.8, 1245.0)">
+    <g id="fb_F14" transform="translate(485.2, 1245.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3
@@ -1074,7 +1074,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F14</text>
     </g>
-    <g id="fb_F15" transform="translate(546.8, 1335.0)">
+    <g id="fb_F15" transform="translate(485.2, 1335.0)">
       <path d="M 3 0
             L 135.3125 0
             A 3 3 0 0 1 138.3125 3

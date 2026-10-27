@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 715.0"
+     viewBox="-24.8 -93.0 1126.0 715.0"
      width="1126" height="715">
   <style>
     @font-face {
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="715.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input -- multiple IOObservers</text>
+  <rect x="-24.8" y="-93.0" width="1126.0" height="715.0" fill="white"/>
+  <rect x="-17.8" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-17.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-17.8" y1="-61.5" x2="1094.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-12.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Numeric Value Input -- multiple IOObservers</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="534.8,119.5 602.8,119.5 607.8,124.5 607.8,140.5 612.8,145.5 677.3,145.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="534.8,269.5 602.8,269.5 607.8,274.5 607.8,290.5 612.8,295.5 677.3,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="534.8,419.5 602.8,419.5 607.8,424.5 607.8,440.5 612.8,445.5 677.3,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="534.8,187.5 592.6,187.5 595.8,184.3 595.8,182.7 599.0,179.5 677.3,179.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="534.8,337.5 592.6,337.5 595.8,334.3 595.8,332.7 599.0,329.5 677.3,329.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="534.8,487.5 592.6,487.5 595.8,484.3 595.8,482.7 599.0,479.5 677.3,479.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,119.5 564.0,119.5 569.0,124.5 569.0,140.5 574.0,145.5 638.5,145.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,269.5 564.0,269.5 569.0,274.5 569.0,290.5 574.0,295.5 638.5,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,419.5 564.0,419.5 569.0,424.5 569.0,440.5 574.0,445.5 638.5,445.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,187.5 553.8,187.5 557.0,184.3 557.0,182.7 560.2,179.5 638.5,179.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,337.5 553.8,337.5 557.0,334.3 557.0,332.7 560.2,329.5 638.5,329.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="496.0,487.5 553.8,487.5 557.0,484.3 557.0,482.7 560.2,479.5 638.5,479.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_F_DWORD_TO_UDINT" transform="translate(677.3, 135.0)">
+    <g id="fb_F_DWORD_TO_UDINT" transform="translate(638.5, 135.0)">
       <path d="M 3 0
             L 144.3125 0
             A 3 3 0 0 1 147.3125 3
@@ -128,7 +128,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F_DWORD_TO_UDINT</text>
     </g>
-    <g id="fb_InputNumber_I1_1" transform="translate(407.3, 75.0)">
+    <g id="fb_InputNumber_I1_1" transform="translate(368.5, 75.0)">
       <path d="M 3 0
             L 124.5 0
             A 3 3 0 0 1 127.5 3
@@ -220,7 +220,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">InputNumber_I1_1</text>
     </g>
-    <g id="fb_InputNumber_I1_2" transform="translate(407.3, 225.0)">
+    <g id="fb_InputNumber_I1_2" transform="translate(368.5, 225.0)">
       <path d="M 3 0
             L 124.5 0
             A 3 3 0 0 1 127.5 3
@@ -312,7 +312,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">InputNumber_I1_2</text>
     </g>
-    <g id="fb_F_DWORD_TO_UDINT_1" transform="translate(677.3, 285.0)">
+    <g id="fb_F_DWORD_TO_UDINT_1" transform="translate(638.5, 285.0)">
       <path d="M 3 0
             L 144.3125 0
             A 3 3 0 0 1 147.3125 3
@@ -382,7 +382,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">F_DWORD_TO_UDINT_1</text>
     </g>
-    <g id="fb_InputNumber_I1_3" transform="translate(407.3, 375.0)">
+    <g id="fb_InputNumber_I1_3" transform="translate(368.5, 375.0)">
       <path d="M 3 0
             L 124.5 0
             A 3 3 0 0 1 127.5 3
@@ -474,7 +474,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">InputNumber_I1_3</text>
     </g>
-    <g id="fb_F_DWORD_TO_UDINT_2" transform="translate(677.3, 435.0)">
+    <g id="fb_F_DWORD_TO_UDINT_2" transform="translate(638.5, 435.0)">
       <path d="M 3 0
             L 144.3125 0
             A 3 3 0 0 1 147.3125 3

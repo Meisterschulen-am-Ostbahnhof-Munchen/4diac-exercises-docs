@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1211.9 612.0"
-     width="1212" height="612">
+     viewBox="13.0 -93.0 1262.8 629.0"
+     width="1263" height="629">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1211.9" height="612.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1197.9" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1197.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1257.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Standard IEC 61131-3 FB_CTD_LINT (Rückwärtszähler, LINT) mit Terminal-Ausgabe
+  <rect x="13.0" y="-93.0" width="1262.8" height="629.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1248.8" height="615.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1248.8" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1268.8" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Standard IEC 61131-3 FB_CTD_LINT (Rückwärtszähler, LINT) mit Terminal-Ausgabe
 (PHYS_LREAL)</text>
   <g id="sidebars">
   </g>
@@ -58,7 +58,7 @@
     <polyline points="171.6,367.5 196.6,367.5 201.6,362.5 201.6,246.5 206.6,241.5 510.0,241.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="619.3,224.5 795.3,224.5 800.3,219.5 800.3,175.5 805.3,170.5 960.0,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="619.3,241.5 644.3,241.5 649.3,246.5 649.3,324.5 654.3,329.5 810.0,329.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="944.2,329.5 972.6,329.5 974.2,331.1 974.2,331.9 975.9,333.5 1120.8,333.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="944.2,329.5 969.2,329.5 974.2,334.5 974.2,345.5 979.2,350.5 1120.8,350.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
@@ -425,10 +425,10 @@
             L 128.125 52
             L 134.125 52
             A 3 3 0 0 1 137.125 55
-            L 137.125 137
-            A 3 3 0 0 1 134.125 140
-            L 3 140
-            A 3 3 0 0 1 0 137
+            L 137.125 154
+            A 3 3 0 0 1 134.125 157
+            L 3 157
+            A 3 3 0 0 1 0 154
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -478,28 +478,34 @@
       <polygon points="132.125,22.5 137.125,27.5 132.125,32.5" fill="#63B31F"/>
       <text x="131.125" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObj</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#DBB418"/>
+            fill="#000000">QI</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">stObj</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#DBB418"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">lrPhys</text>
-      <polygon points="132.125,56.5 137.125,61.5 132.125,66.5" fill="#BD8663"/>
+      <polygon points="132.125,56.5 137.125,61.5 132.125,66.5" fill="#A3B08F"/>
       <text x="131.125" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="132.125,73.5 137.125,78.5 132.125,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="132.125,73.5 137.125,78.5 132.125,83.5" fill="#BD8663"/>
       <text x="131.125" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u32OldValue</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="132.125,90.5 137.125,95.5 132.125,100.5" fill="#18519E"/>
       <text x="131.125" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16result</text>
-      <polygon points="132.125,107.5 137.125,112.5 132.125,117.5" fill="#A3B08F"/>
+            fill="#000000" text-anchor="end">u32OldValue</text>
+      <polygon points="132.125,107.5 137.125,112.5 132.125,117.5" fill="#18519E"/>
       <text x="131.125" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">xOver</text>
+            fill="#000000" text-anchor="end">s16result</text>
       <polygon points="132.125,124.5 137.125,129.5 132.125,134.5" fill="#A3B08F"/>
       <text x="131.125" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">xOver</text>
+      <polygon points="132.125,141.5 137.125,146.5 132.125,151.5" fill="#A3B08F"/>
+      <text x="131.125" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">xUnder</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_N3_N</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_N3_N</text>
 
       <!-- Instance Name -->
       <text x="68.5625" y="-5"

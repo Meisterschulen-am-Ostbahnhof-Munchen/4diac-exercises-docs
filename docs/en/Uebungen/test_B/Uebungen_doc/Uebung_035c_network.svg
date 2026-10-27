@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1414.9 1022.0"
-     width="1415" height="1022">
+     viewBox="-69.8 -93.0 1537.7 1022.0"
+     width="1538" height="1022">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1414.9" height="1022.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1400.9" height="1008.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1400.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1460.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Spiegelabfolge V2 mit Schrittkette</text>
+  <rect x="-69.8" y="-93.0" width="1537.7" height="1022.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1523.7" height="1008.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1523.7" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1460.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Spiegelabfolge V2 mit Schrittkette</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -58,7 +58,7 @@
     <polyline points="466.0,529.5 499.0,529.5 504.0,524.5 504.0,254.5 509.0,249.5 735.0,249.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="466.0,546.5 509.0,546.5 514.0,541.5 514.0,400.5 519.0,395.5 735.0,395.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="466.0,563.5 520.0,563.5 525.0,558.5 525.0,547.5 530.0,542.5 735.0,542.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="1083.0,634.5 1183.4,634.5 1185.0,636.1 1185.0,636.9 1186.6,638.5 1305.0,638.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="1083.0,634.5 1180.0,634.5 1185.0,639.5 1185.0,650.5 1190.0,655.5 1305.0,655.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="466.0,614.5 544.0,614.5 549.0,619.5 549.0,629.5 554.0,634.5 960.0,634.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="466.0,631.5 494.0,631.5 499.0,626.5 499.0,175.5 504.0,170.5 735.0,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="466.0,648.5 504.0,648.5 509.0,643.5 509.0,322.5 514.0,317.5 735.0,317.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
@@ -882,10 +882,10 @@
             L 146.875 52
             L 152.875 52
             A 3 3 0 0 1 155.875 55
-            L 155.875 103
-            A 3 3 0 0 1 152.875 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 155.875 120
+            A 3 3 0 0 1 152.875 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -935,22 +935,28 @@
       <polygon points="150.875,22.5 155.875,27.5 150.875,32.5" fill="#63B31F"/>
       <text x="149.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u32NewValue</text>
-      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#BD8663"/>
+      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#A3B08F"/>
       <text x="149.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#BD8663"/>
       <text x="149.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u32OldValue</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="150.875,90.5 155.875,95.5 150.875,100.5" fill="#18519E"/>
       <text x="149.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">u32OldValue</text>
+      <polygon points="150.875,107.5 155.875,112.5 150.875,117.5" fill="#18519E"/>
+      <text x="149.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_N1</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_N1</text>
 
       <!-- Instance Name -->
       <text x="77.9375" y="-5"

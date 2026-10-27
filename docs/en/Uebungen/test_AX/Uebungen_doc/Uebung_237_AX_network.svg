@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-22.8 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AD_TO_AR-Bitfalle: derselbe Analogwert einmal FALSCH ueber AD_TO_AR
+  <rect x="-22.8" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-15.8" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-15.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-15.8" y1="-61.5" x2="1096.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-10.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AD_TO_AR-Bitfalle: derselbe Analogwert einmal FALSCH ueber AD_TO_AR
 (Bit-Reinterpretation) und einmal RICHTIG ueber AD_TO_AR_NUM (echter numerischer
 Cast) gelesen</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="411.1,358.5 481.1,358.5 486.1,353.5 486.1,243.5 491.1,238.5 536.8,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="411.1,358.5 481.1,358.5 486.1,353.5 486.1,243.5 491.1,238.5 536.8,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="637.4,238.5 722.4,238.5 727.4,233.5 727.4,123.5 732.4,118.5 836.8,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="637.4,238.5 722.4,238.5 727.4,233.5 727.4,123.5 732.4,118.5 836.8,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="637.4,255.5 722.4,255.5 727.4,260.5 727.4,353.5 732.4,358.5 845.4,358.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="637.4,255.5 722.4,255.5 727.4,260.5 727.4,353.5 732.4,358.5 845.4,358.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="368.9,358.5 438.9,358.5 443.9,353.5 443.9,243.5 448.9,238.5 494.7,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="368.9,358.5 438.9,358.5 443.9,353.5 443.9,243.5 448.9,238.5 494.7,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="595.2,238.5 680.2,238.5 685.2,233.5 685.2,123.5 690.2,118.5 794.7,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="595.2,238.5 680.2,238.5 685.2,233.5 685.2,123.5 690.2,118.5 794.7,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="595.2,255.5 680.2,255.5 685.2,260.5 685.2,353.5 690.2,358.5 803.2,358.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="595.2,255.5 680.2,255.5 685.2,260.5 685.2,353.5 690.2,358.5 803.2,358.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_AnalogInput_I4" transform="translate(266.8, 195.0)">
+    <g id="fb_AnalogInput_I4" transform="translate(224.7, 195.0)">
       <path d="M 3 0
             L 141.25 0
             A 3 3 0 0 1 144.25 3
@@ -184,7 +184,7 @@ Cast) gelesen</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogInput_I4</text>
     </g>
-    <g id="fb_AD_SPLIT_2" transform="translate(536.8, 195.0)">
+    <g id="fb_AD_SPLIT_2" transform="translate(494.7, 195.0)">
       <path d="M 3 0
             L 97.5625 0
             A 3 3 0 0 1 100.5625 3
@@ -288,7 +288,7 @@ Cast) gelesen</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AD_SPLIT_2</text>
     </g>
-    <g id="fb_AD_TO_AR_WRONG" transform="translate(836.8, 75.0)">
+    <g id="fb_AD_TO_AR_WRONG" transform="translate(794.7, 75.0)">
       <path d="M 3 0
             L 98.625 0
             A 3 3 0 0 1 101.625 3
@@ -377,7 +377,7 @@ Cast) gelesen</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AD_TO_AR_WRONG</text>
     </g>
-    <g id="fb_AD_TO_AR_NUM_CORRECT" transform="translate(845.4, 315.0)">
+    <g id="fb_AD_TO_AR_NUM_CORRECT" transform="translate(803.2, 315.0)">
       <path d="M 3 0
             L 116.75 0
             A 3 3 0 0 1 119.75 3

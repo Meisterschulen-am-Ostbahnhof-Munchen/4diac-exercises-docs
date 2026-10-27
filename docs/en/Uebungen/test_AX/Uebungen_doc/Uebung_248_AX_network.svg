@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 2521.2 820.0"
-     width="2521" height="820">
+     viewBox="13.0 -93.0 2561.2 820.0"
+     width="2561" height="820">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="2521.2" height="820.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="2507.2" height="806.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="2507.2" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="2567.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_246_AX (Hoch/Runter auf 75/50/25%), zusaetzlich echter
+  <rect x="13.0" y="-93.0" width="2561.2" height="820.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="2547.2" height="806.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="2547.2" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="2567.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_246_AX (Hoch/Runter auf 75/50/25%), zusaetzlich echter
 logiBUS_QDA_PWM-Ausgang Q1 zum Nachmessen</text>
   <g id="sidebars">
   </g>

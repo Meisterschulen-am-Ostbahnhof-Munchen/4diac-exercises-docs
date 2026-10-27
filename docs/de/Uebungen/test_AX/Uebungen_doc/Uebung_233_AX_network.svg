@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 797.0"
+     viewBox="13.0 -93.0 1126.0 797.0"
      width="1126" height="797">
   <style>
     @font-face {
@@ -40,36 +40,36 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="797.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="783.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">3 Taster (I1/I2/I3) auf 1 SR-Latch (Last-Wins) via 3x AX_ASR_RF_TRIG +
+  <rect x="13.0" y="-93.0" width="1126.0" height="797.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="783.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">3 Taster (I1/I2/I3) auf 1 SR-Latch (Last-Wins) via 3x AX_ASR_RF_TRIG +
 ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="214.3,187.5 259.3,187.5 264.3,192.5 264.3,203.5 269.3,208.5 327.7,208.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="214.3,187.5 259.3,187.5 264.3,192.5 264.3,203.5 269.3,208.5 327.7,208.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="214.3,367.5 259.3,367.5 264.3,372.5 264.3,383.5 269.3,388.5 327.7,388.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="214.3,367.5 259.3,367.5 264.3,372.5 264.3,383.5 269.3,388.5 327.7,388.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="214.3,562.5 261.9,562.5 264.3,564.9 264.3,566.1 266.7,568.5 327.7,568.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="214.3,562.5 261.9,562.5 264.3,564.9 264.3,566.1 266.7,568.5 327.7,568.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="456.4,208.5 523.4,208.5 528.4,213.5 528.4,368.5 533.4,373.5 567.7,373.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="456.4,208.5 523.4,208.5 528.4,213.5 528.4,368.5 533.4,373.5 567.7,373.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="456.4,388.5 527.6,388.5 528.4,389.3 528.4,389.7 529.2,390.5 567.7,390.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="456.4,388.5 527.6,388.5 528.4,389.3 528.4,389.7 529.2,390.5 567.7,390.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="456.4,568.5 523.4,568.5 528.4,563.5 528.4,412.5 533.4,407.5 567.7,407.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="456.4,568.5 523.4,568.5 528.4,563.5 528.4,412.5 533.4,407.5 567.7,407.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="683.8,373.5 777.7,373.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="683.8,373.5 777.7,373.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="879.0,373.5 949.0,373.5 954.0,368.5 954.0,357.5 959.0,352.5 1017.7,352.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="879.0,373.5 949.0,373.5 954.0,368.5 954.0,357.5 959.0,352.5 1017.7,352.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="194.3,187.5 239.3,187.5 244.3,192.5 244.3,203.5 249.3,208.5 307.7,208.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="194.3,187.5 239.3,187.5 244.3,192.5 244.3,203.5 249.3,208.5 307.7,208.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="194.3,367.5 239.3,367.5 244.3,372.5 244.3,383.5 249.3,388.5 307.7,388.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="194.3,367.5 239.3,367.5 244.3,372.5 244.3,383.5 249.3,388.5 307.7,388.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="194.3,562.5 241.9,562.5 244.3,564.9 244.3,566.1 246.7,568.5 307.7,568.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="194.3,562.5 241.9,562.5 244.3,564.9 244.3,566.1 246.7,568.5 307.7,568.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="436.4,208.5 503.4,208.5 508.4,213.5 508.4,368.5 513.4,373.5 547.7,373.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="436.4,208.5 503.4,208.5 508.4,213.5 508.4,368.5 513.4,373.5 547.7,373.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="436.4,388.5 507.6,388.5 508.4,389.3 508.4,389.7 509.2,390.5 547.7,390.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="436.4,388.5 507.6,388.5 508.4,389.3 508.4,389.7 509.2,390.5 547.7,390.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="436.4,568.5 503.4,568.5 508.4,563.5 508.4,412.5 513.4,407.5 547.7,407.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="436.4,568.5 503.4,568.5 508.4,563.5 508.4,412.5 513.4,407.5 547.7,407.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="663.8,373.5 757.7,373.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="663.8,373.5 757.7,373.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="859.0,373.5 929.0,373.5 934.0,368.5 934.0,357.5 939.0,352.5 997.7,352.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="859.0,373.5 929.0,373.5 934.0,368.5 934.0,357.5 939.0,352.5 997.7,352.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I1" transform="translate(102.7, 75.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(82.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -166,7 +166,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(102.7, 255.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(82.7, 255.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -263,7 +263,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_DigitalInput_I3" transform="translate(102.7, 450.0)">
+    <g id="fb_DigitalInput_I3" transform="translate(82.7, 450.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -360,7 +360,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I3</text>
     </g>
-    <g id="fb_AX_ASR_RF_TRIG_1" transform="translate(327.7, 165.0)">
+    <g id="fb_AX_ASR_RF_TRIG_1" transform="translate(307.7, 165.0)">
       <path d="M 3 0
             L 125.6875 0
             A 3 3 0 0 1 128.6875 3
@@ -449,7 +449,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_ASR_RF_TRIG_1</text>
     </g>
-    <g id="fb_AX_ASR_RF_TRIG_2" transform="translate(327.7, 345.0)">
+    <g id="fb_AX_ASR_RF_TRIG_2" transform="translate(307.7, 345.0)">
       <path d="M 3 0
             L 125.6875 0
             A 3 3 0 0 1 128.6875 3
@@ -538,7 +538,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_ASR_RF_TRIG_2</text>
     </g>
-    <g id="fb_AX_ASR_RF_TRIG_3" transform="translate(327.7, 525.0)">
+    <g id="fb_AX_ASR_RF_TRIG_3" transform="translate(307.7, 525.0)">
       <path d="M 3 0
             L 125.6875 0
             A 3 3 0 0 1 128.6875 3
@@ -627,7 +627,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_ASR_RF_TRIG_3</text>
     </g>
-    <g id="fb_ASR_MERGE_3" transform="translate(567.7, 330.0)">
+    <g id="fb_ASR_MERGE_3" transform="translate(547.7, 330.0)">
       <path d="M 3 0
             L 113.0625 0
             A 3 3 0 0 1 116.0625 3
@@ -746,7 +746,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASR_MERGE_3</text>
     </g>
-    <g id="fb_ASR_AX_SR" transform="translate(777.7, 330.0)">
+    <g id="fb_ASR_AX_SR" transform="translate(757.7, 330.0)">
       <path d="M 3 0
             L 98.25 0
             A 3 3 0 0 1 101.25 3
@@ -835,7 +835,7 @@ ASR_MERGE_3 + ASR_AX_SR, Ausgang Q1</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASR_AX_SR</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(1017.7, 240.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(997.7, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

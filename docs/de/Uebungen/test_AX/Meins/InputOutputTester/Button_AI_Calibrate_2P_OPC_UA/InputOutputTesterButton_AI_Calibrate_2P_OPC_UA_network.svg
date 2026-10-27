@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 3451.0"
-     width="1126" height="3451">
+     viewBox="-9.2 -93.0 1126.0 3783.0"
+     width="1126" height="3783">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="3451.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="3437.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AI Calibrate Tester (OPC-UA): 8 Analog-Eingaenge mit 2-Punkt-Kalibrierung
+  <rect x="-9.2" y="-93.0" width="1126.0" height="3783.0" fill="white"/>
+  <rect x="-2.2" y="-86.0" width="1112.0" height="3769.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-2.2" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-2.2" y1="-61.5" x2="1109.8" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="2.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AI Calibrate Tester (OPC-UA): 8 Analog-Eingaenge mit 2-Punkt-Kalibrierung
 (Rohwert+kalibrierter Wert+Bargraph+CO/CS) + 12 unveraenderte digitale Ausgaenge</text>
   <g id="sidebars">
   </g>
@@ -53,7 +53,7 @@
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_AnalogChannel_I1" transform="translate(807.2, 75.0)">
+    <g id="fb_AnalogChannel_I1" transform="translate(858.7, 75.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -63,10 +63,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -107,114 +107,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I01_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I01_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I1</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I1'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I01_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I01_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I1</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I1'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I01_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I1_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I1</text>
     </g>
-    <g id="fb_AnalogChannel_I2" transform="translate(807.2, 465.0)">
+    <g id="fb_AnalogChannel_I2" transform="translate(858.7, 510.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -224,10 +235,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -268,114 +279,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I02_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I02_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I2</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I2'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I02_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I02_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I2</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I2'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I02_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I2_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I2</text>
     </g>
-    <g id="fb_AnalogChannel_I3" transform="translate(807.2, 855.0)">
+    <g id="fb_AnalogChannel_I3" transform="translate(858.7, 945.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -385,10 +407,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -429,114 +451,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I03_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I03_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I3</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I3'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I03_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I03_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I3</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I3'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I03_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I3_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I3</text>
     </g>
-    <g id="fb_AnalogChannel_I4" transform="translate(807.2, 1245.0)">
+    <g id="fb_AnalogChannel_I4" transform="translate(858.7, 1380.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -546,10 +579,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -590,114 +623,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I04_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I04_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I4</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I4'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I04_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I04_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I4</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I4'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I04_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I4_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I4</text>
     </g>
-    <g id="fb_AnalogChannel_I5" transform="translate(807.2, 1635.0)">
+    <g id="fb_AnalogChannel_I5" transform="translate(858.7, 1815.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -707,10 +751,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -751,114 +795,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I05_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I05_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I5</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I5'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I05_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I05_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I5</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I5'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I05_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I5_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I5</text>
     </g>
-    <g id="fb_AnalogChannel_I6" transform="translate(807.2, 2025.0)">
+    <g id="fb_AnalogChannel_I6" transform="translate(858.7, 2250.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -868,10 +923,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -912,114 +967,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I06_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I06_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I6</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I6'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I06_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I06_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I6</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I6'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I06_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I6_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I6</text>
     </g>
-    <g id="fb_AnalogChannel_I7" transform="translate(807.2, 2415.0)">
+    <g id="fb_AnalogChannel_I7" transform="translate(858.7, 2685.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -1029,10 +1095,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1073,114 +1139,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I07_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I07_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I7</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I7'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I07_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I07_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I7</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I7'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I07_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I7_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I7</text>
     </g>
-    <g id="fb_AnalogChannel_I8" transform="translate(807.2, 2805.0)">
+    <g id="fb_AnalogChannel_I8" transform="translate(858.7, 3120.0)">
       <path d="M 3 0
             L 154.5 0
             A 3 3 0 0 1 157.5 3
@@ -1190,10 +1267,10 @@
             L 148.5 35
             L 154.5 35
             A 3 3 0 0 1 157.5 38
-            L 157.5 426
-            A 3 3 0 0 1 154.5 429
-            L 3 429
-            A 3 3 0 0 1 0 426
+            L 157.5 443
+            A 3 3 0 0 1 154.5 446
+            L 3 446
+            A 3 3 0 0 1 0 443
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1234,114 +1311,125 @@
       <text x="44.40625" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">logiBUS_AI_Cali…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="152.5,5.5 157.5,10.5 152.5,15.5" fill="#63B31F"/>
+      <text x="151.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_RAW…</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjCal</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+            fill="#000000">u16ObjId_RAW…</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CO</text>
+            fill="#000000">stObjCal</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId_CS</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
+            fill="#000000">u16ObjId_CO</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#18519E"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Input</text>
-      <polygon points="0,124.5 5,129.5 0,134.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId_CS</text>
+      <polygon points="0,124.5 5,129.5 0,134.5" fill="#3366FF"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">sSection</text>
+            fill="#000000">Input</text>
       <polygon points="0,141.5 5,146.5 0,151.5" fill="#BD8663"/>
       <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_RAW_WRITE</text>
+            fill="#000000">sSection</text>
       <polygon points="0,158.5 5,163.5 0,168.5" fill="#BD8663"/>
       <text x="6" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CAL_WRITE</text>
+            fill="#000000">ID_RAW_WRITE</text>
       <polygon points="0,175.5 5,180.5 0,185.5" fill="#BD8663"/>
       <text x="6" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CO_METHOD</text>
+            fill="#000000">ID_CAL_WRITE</text>
       <polygon points="0,192.5 5,197.5 0,202.5" fill="#BD8663"/>
       <text x="6" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_CS_METHOD</text>
-      <polygon points="0,209.5 5,214.5 0,219.5" fill="#3366FF"/>
+            fill="#000000">ID_CO_METHOD</text>
+      <polygon points="0,209.5 5,214.5 0,219.5" fill="#BD8663"/>
       <text x="6" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZero</text>
+            fill="#000000">ID_CS_METHOD</text>
       <polygon points="0,226.5 5,231.5 0,236.5" fill="#3366FF"/>
       <text x="6" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpan</text>
-      <polygon points="0,243.5 5,248.5 0,253.5" fill="#BD8663"/>
+            fill="#000000">stObjZero</text>
+      <polygon points="0,243.5 5,248.5 0,253.5" fill="#3366FF"/>
       <text x="6" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_READ</text>
+            fill="#000000">stObjSpan</text>
       <polygon points="0,260.5 5,265.5 0,270.5" fill="#BD8663"/>
       <text x="6" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_WRIT…</text>
+            fill="#000000">ID_ZERO_READ</text>
       <polygon points="0,277.5 5,282.5 0,287.5" fill="#BD8663"/>
       <text x="6" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_READ</text>
+            fill="#000000">ID_ZERO_WRIT…</text>
       <polygon points="0,294.5 5,299.5 0,304.5" fill="#BD8663"/>
       <text x="6" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_WRIT…</text>
-      <polygon points="0,311.5 5,316.5 0,321.5" fill="#3366FF"/>
+            fill="#000000">ID_SPAN_READ</text>
+      <polygon points="0,311.5 5,316.5 0,321.5" fill="#BD8663"/>
       <text x="6" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjZeroRaw</text>
+            fill="#000000">ID_SPAN_WRIT…</text>
       <polygon points="0,328.5 5,333.5 0,338.5" fill="#3366FF"/>
       <text x="6" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">stObjSpanRaw</text>
-      <polygon points="0,345.5 5,350.5 0,355.5" fill="#BD8663"/>
+            fill="#000000">stObjZeroRaw</text>
+      <polygon points="0,345.5 5,350.5 0,355.5" fill="#3366FF"/>
       <text x="6" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_ZERO_RAW_…</text>
+            fill="#000000">stObjSpanRaw</text>
       <polygon points="0,362.5 5,367.5 0,372.5" fill="#BD8663"/>
       <text x="6" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_SPAN_RAW_…</text>
-      <polygon points="0,379.5 5,384.5 0,389.5" fill="#DBB418"/>
+            fill="#000000">ID_ZERO_RAW_…</text>
+      <polygon points="0,379.5 5,384.5 0,389.5" fill="#BD8663"/>
       <text x="6" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">rLowRefDefau…</text>
+            fill="#000000">ID_SPAN_RAW_…</text>
       <polygon points="0,396.5 5,401.5 0,406.5" fill="#DBB418"/>
       <text x="6" y="405.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">rLowRefDefau…</text>
+      <polygon points="0,413.5 5,418.5 0,423.5" fill="#DBB418"/>
+      <text x="6" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rHighRefDefa…</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I08_CO</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I08_CS</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I8</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I8'</text>
-      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_RAW_WRITE</text>
-      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CAL_WRITE</text>
-      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CO_METHOD</text>
-      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CS_METHOD</text>
-      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_ZE…</text>
-      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_SP…</text>
-      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_READ</text>
-      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_WRITE</text>
-      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_READ</text>
-      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_WRITE</text>
-      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_ZE…</text>
-      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_SP…</text>
-      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_RAW_WRITE</text>
-      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_RAW_WRITE</text>
-      <path d="M 147.5 413.5
-            L 150.0 413.5
-            L 150.0 415.1666666666667
-            L 152.5 415.1666666666667
-            L 152.5 413.5
-            L 157.5 413.5
-            L 157.5 423.5
-            L 152.5 423.5
-            L 152.5 421.8333333333333
-            L 150.0 421.8333333333333
-            L 150.0 423.5
-            L 147.5 423.5
+      <polygon points="152.5,39.5 157.5,44.5 152.5,49.5" fill="#A3B08F"/>
+      <text x="151.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_RAW_I0…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_CAL_I0…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I08_CO</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_AIC_I08_CS</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AnalogInput_I8</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'AI_Calibrate_I8'</text>
+      <text x="-3" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_RAW_WRITE</text>
+      <text x="-3" y="184.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CAL_WRITE</text>
+      <text x="-3" y="201.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CO_METHOD</text>
+      <text x="-3" y="218.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_CS_METHOD</text>
+      <text x="-3" y="235.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_ZE…</text>
+      <text x="-3" y="252.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_SP…</text>
+      <text x="-3" y="269.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_READ</text>
+      <text x="-3" y="286.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_WRITE</text>
+      <text x="-3" y="303.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_READ</text>
+      <text x="-3" y="320.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_WRITE</text>
+      <text x="-3" y="337.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_ZE…</text>
+      <text x="-3" y="354.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_AIC_I08_SP…</text>
+      <text x="-3" y="371.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_ZERO_RAW_WRITE</text>
+      <text x="-3" y="388.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">AIC_I8_SPAN_RAW_WRITE</text>
+      <path d="M 147.5 430.5
+            L 150.0 430.5
+            L 150.0 432.1666666666667
+            L 152.5 432.1666666666667
+            L 152.5 430.5
+            L 157.5 430.5
+            L 157.5 440.5
+            L 152.5 440.5
+            L 152.5 438.8333333333333
+            L 150.0 438.8333333333333
+            L 150.0 440.5
+            L 147.5 440.5
             Z" fill="#845DAF"/>
-      <text x="144.5" y="422.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="144.5" y="439.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CAL_OUT</text>
       <!-- Instance Name -->
       <text x="78.75" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AnalogChannel_I8</text>
     </g>
-    <g id="fb_Output_Q1" transform="translate(267.2, 180.0)">
+    <g id="fb_Output_Q1" transform="translate(153.7, 180.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1351,10 +1439,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1395,30 +1483,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q01</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q01_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q01_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q01</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q1</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q01_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q01_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q1</text>
     </g>
-    <g id="fb_Output_Q2" transform="translate(267.2, 300.0)">
+    <g id="fb_Output_Q2" transform="translate(153.7, 315.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1428,10 +1527,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1472,30 +1571,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q02</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q02_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q02_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q02</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q2</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q02_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q02_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q2</text>
     </g>
-    <g id="fb_Output_Q3" transform="translate(267.2, 420.0)">
+    <g id="fb_Output_Q3" transform="translate(153.7, 450.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1505,10 +1615,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1549,30 +1659,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q03</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q3</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q03_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q03_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q03</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q3</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q03_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q03_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q3</text>
     </g>
-    <g id="fb_Output_Q4" transform="translate(267.2, 540.0)">
+    <g id="fb_Output_Q4" transform="translate(153.7, 585.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1582,10 +1703,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1626,30 +1747,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q04</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q4</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q04_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q04_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q04</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q4</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q04_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q04_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q4</text>
     </g>
-    <g id="fb_Output_Q5" transform="translate(267.2, 660.0)">
+    <g id="fb_Output_Q5" transform="translate(153.7, 720.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1659,10 +1791,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1703,30 +1835,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q05</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q5</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q05_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q05_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q05</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q5</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q05_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q05_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q5</text>
     </g>
-    <g id="fb_Output_Q6" transform="translate(267.2, 780.0)">
+    <g id="fb_Output_Q6" transform="translate(153.7, 855.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1736,10 +1879,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1780,30 +1923,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q06</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q6</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q06_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q06_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q06</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q6</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q06_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q06_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q6</text>
     </g>
-    <g id="fb_Output_Q7" transform="translate(267.2, 900.0)">
+    <g id="fb_Output_Q7" transform="translate(153.7, 990.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1813,10 +1967,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1857,30 +2011,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q07</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q7</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q07_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q07_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q07</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q7</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q07_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q07_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q7</text>
     </g>
-    <g id="fb_Output_Q8" transform="translate(267.2, 1020.0)">
+    <g id="fb_Output_Q8" transform="translate(153.7, 1125.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1890,10 +2055,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -1934,30 +2099,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q08</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q8</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q08_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q08_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q08</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q8</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q08_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q08_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q8</text>
     </g>
-    <g id="fb_Output_Q9" transform="translate(267.2, 1140.0)">
+    <g id="fb_Output_Q9" transform="translate(153.7, 1260.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -1967,10 +2143,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -2011,30 +2187,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q09</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q9</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q09_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q09_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q09</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q9</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q09_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q09_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q9</text>
     </g>
-    <g id="fb_Output_Q10" transform="translate(267.2, 1260.0)">
+    <g id="fb_Output_Q10" transform="translate(168.7, 1395.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -2044,10 +2231,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -2088,30 +2275,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q10</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q10</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q10_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q10_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q10</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q10</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q10_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q10_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q10</text>
     </g>
-    <g id="fb_Output_Q11" transform="translate(267.2, 1380.0)">
+    <g id="fb_Output_Q11" transform="translate(168.7, 1530.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -2121,10 +2319,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -2165,30 +2363,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q11</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q11</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q11_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q11_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q11</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q11</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q11_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q11_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q11</text>
     </g>
-    <g id="fb_Output_Q12" transform="translate(267.2, 1500.0)">
+    <g id="fb_Output_Q12" transform="translate(168.7, 1665.0)">
       <path d="M 3 0
             L 127.4375 0
             A 3 3 0 0 1 130.4375 3
@@ -2198,10 +2407,10 @@
             L 121.4375 35
             L 127.4375 35
             A 3 3 0 0 1 130.4375 38
-            L 130.4375 103
-            A 3 3 0 0 1 127.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 130.4375 120
+            A 3 3 0 0 1 127.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -2242,30 +2451,41 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Button_IXA_TO_l…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="125.4375,5.5 130.4375,10.5 125.4375,15.5" fill="#63B31F"/>
+      <text x="124.4375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">Output</text>
-      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ID_READ</text>
+            fill="#000000">Output</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#BD8663"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ID_READ</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#BD8663"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q12</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q12</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q12_READ</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q12_WRITE</text>
+      <polygon points="125.4375,39.5 130.4375,44.5 125.4375,49.5" fill="#A3B08F"/>
+      <text x="124.4375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_Q12</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Output_Q12</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q12_READ</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Q12_WRITE</text>
 
       <!-- Instance Name -->
       <text x="65.21875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Output_Q12</text>
     </g>
-    <g id="fb_SystemTickSender" transform="translate(297.2, 105.0)">
+    <g id="fb_SystemTickSender" transform="translate(213.7, 75.0)">
       <path d="M 3 0
             L 138.6875 0
             A 3 3 0 0 1 141.6875 3
@@ -2275,10 +2495,10 @@
             L 132.6875 35
             L 138.6875 35
             A 3 3 0 0 1 141.6875 38
-            L 141.6875 69
-            A 3 3 0 0 1 138.6875 72
-            L 3 72
-            A 3 3 0 0 1 0 69
+            L 141.6875 86
+            A 3 3 0 0 1 138.6875 89
+            L 3 89
+            A 3 3 0 0 1 0 86
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -2319,15 +2539,26 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">SystemTickSende…</text>
-
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="136.6875,5.5 141.6875,10.5 136.6875,15.5" fill="#63B31F"/>
+      <text x="135.6875" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#BD8663"/>
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#BD8663"/>
+      <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">ID_WRITE</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_Tick</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Tick_WRITE</text>
+      <polygon points="136.6875,39.5 141.6875,44.5 136.6875,49.5" fill="#A3B08F"/>
+      <text x="135.6875" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">OutputNumber_Tick</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Tick_WRITE</text>
 
       <!-- Instance Name -->
       <text x="70.84375" y="-5"

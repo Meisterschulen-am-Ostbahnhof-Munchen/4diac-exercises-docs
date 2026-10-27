@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1190.6 685.0"
-     width="1191" height="685">
+     viewBox="21.0 -93.0 1240.4 715.0"
+     width="1240" height="715">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,29 +40,29 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1190.6" height="685.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1176.6" height="671.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1176.6" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1236.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">WBSD auf UT ausgeben, Q1 Schalten wenn Speed &gt;0</text>
+  <rect x="21.0" y="-93.0" width="1240.4" height="715.0" fill="white"/>
+  <rect x="28.0" y="-86.0" width="1226.4" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="28.0" y="-86.0" width="1226.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="28.0" y1="-61.5" x2="1254.4" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="33.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">WBSD auf UT ausgeben, Q1 Schalten wenn Speed &gt;0</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="200.1,102.5 1051.8,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="965.2,370.5 1044.3,370.5 1045.1,371.3 1045.1,371.7 1045.9,372.5 1125.0,372.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="200.1,102.5 397.1,102.5 402.1,107.5 402.1,217.5 407.1,222.5 1043.2,222.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="200.1,102.5 381.1,102.5 386.1,107.5 386.1,365.5 391.1,370.5 600.0,370.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="733.8,370.5 885.0,370.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="200.1,238.5 316.1,238.5 321.1,233.5 321.1,158.5 326.1,153.5 1051.8,153.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="965.2,404.5 1002.2,404.5 1007.2,409.5 1007.2,435.5 1012.2,440.5 1125.0,440.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="200.1,255.5 483.1,255.5 488.1,260.5 488.1,268.5 493.1,273.5 1043.2,273.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="200.1,255.5 357.1,255.5 362.1,260.5 362.1,399.5 367.1,404.5 600.0,404.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="733.8,404.5 885.0,404.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,132.5 589.1,132.5 594.1,127.5 594.1,107.5 599.1,102.5 1051.8,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="965.2,400.5 1041.4,400.5 1042.2,401.3 1042.2,401.7 1043.0,402.5 1125.0,402.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,132.5 397.1,132.5 402.1,137.5 402.1,247.5 407.1,252.5 1043.2,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,132.5 381.1,132.5 386.1,137.5 386.1,395.5 391.1,400.5 600.0,400.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="733.8,400.5 885.0,400.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,268.5 316.1,268.5 321.1,263.5 321.1,175.5 326.1,170.5 1051.8,170.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="965.2,434.5 1002.2,434.5 1007.2,439.5 1007.2,465.5 1012.2,470.5 1125.0,470.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,285.5 483.1,285.5 488.1,290.5 488.1,315.5 493.1,320.5 1043.2,320.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="200.1,285.5 357.1,285.5 362.1,290.5 362.1,429.5 367.1,434.5 600.0,434.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="733.8,434.5 885.0,434.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_I_WBSD" transform="translate(60.0, 75.0)">
+    <g id="fb_I_WBSD" transform="translate(60.0, 105.0)">
       <path d="M 3 0
             L 137.0625 0
             A 3 3 0 0 1 140.0625 3
@@ -181,10 +181,10 @@
             L 146.875 52
             L 152.875 52
             A 3 3 0 0 1 155.875 55
-            L 155.875 103
-            A 3 3 0 0 1 152.875 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 155.875 120
+            A 3 3 0 0 1 152.875 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -234,29 +234,35 @@
       <polygon points="150.875,22.5 155.875,27.5 150.875,32.5" fill="#63B31F"/>
       <text x="149.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u32NewValue</text>
-      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#BD8663"/>
+      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#A3B08F"/>
       <text x="149.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#BD8663"/>
       <text x="149.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u32OldValue</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="150.875,90.5 155.875,95.5 150.875,100.5" fill="#18519E"/>
       <text x="149.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">u32OldValue</text>
+      <polygon points="150.875,107.5 155.875,112.5 150.875,117.5" fill="#18519E"/>
+      <text x="149.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Wheel_base…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Wheel_base…</text>
 
       <!-- Instance Name -->
       <text x="77.9375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Q_NumberVariable_Wheel_based_machine_speed</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(1125.0, 345.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(1125.0, 375.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -345,7 +351,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_RangeBasedPulse" transform="translate(600.0, 360.0)">
+    <g id="fb_RangeBasedPulse" transform="translate(600.0, 390.0)">
       <path d="M 3 0
             L 130.8125 0
             A 3 3 0 0 1 133.8125 3
@@ -425,7 +431,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">RangeBasedPulse</text>
     </g>
-    <g id="fb_E_D_FF" transform="translate(885.0, 360.0)">
+    <g id="fb_E_D_FF" transform="translate(885.0, 390.0)">
       <path d="M 3 0
             L 77.1875 0
             A 3 3 0 0 1 80.1875 3
@@ -495,7 +501,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_D_FF</text>
     </g>
-    <g id="fb_Q_NumberVariable_Wheel_based_machine_distance" transform="translate(1043.2, 195.0)">
+    <g id="fb_Q_NumberVariable_Wheel_based_machine_distance" transform="translate(1043.2, 225.0)">
       <path d="M 3 0
             L 152.875 0
             A 3 3 0 0 1 155.875 3
@@ -505,10 +511,10 @@
             L 146.875 52
             L 152.875 52
             A 3 3 0 0 1 155.875 55
-            L 155.875 103
-            A 3 3 0 0 1 152.875 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 155.875 120
+            A 3 3 0 0 1 152.875 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -558,22 +564,28 @@
       <polygon points="150.875,22.5 155.875,27.5 150.875,32.5" fill="#63B31F"/>
       <text x="149.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
+      <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u32NewValue</text>
-      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#BD8663"/>
+      <polygon points="150.875,56.5 155.875,61.5 150.875,66.5" fill="#A3B08F"/>
       <text x="149.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="150.875,73.5 155.875,78.5 150.875,83.5" fill="#BD8663"/>
       <text x="149.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">u32OldValue</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="150.875,90.5 155.875,95.5 150.875,100.5" fill="#18519E"/>
       <text x="149.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">u32OldValue</text>
+      <polygon points="150.875,107.5 155.875,112.5 150.875,117.5" fill="#18519E"/>
+      <text x="149.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Wheel_base…</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Wheel_base…</text>
 
       <!-- Instance Name -->
       <text x="77.9375" y="-5"

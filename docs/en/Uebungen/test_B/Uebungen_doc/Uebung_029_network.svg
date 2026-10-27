@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 807.0"
+     viewBox="13.0 -93.0 1126.0 807.0"
      width="1126" height="807">
   <style>
     @font-face {
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="807.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="793.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LED_DO Blinkende LED</text>
+  <rect x="13.0" y="-93.0" width="1126.0" height="807.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="793.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LED_DO Blinkende LED</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="432.5,119.5 600.7,119.5 601.5,118.7 601.5,118.3 602.3,117.5 770.9,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.5,299.5 600.7,299.5 601.5,298.7 601.5,298.3 602.3,297.5 770.9,297.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.5,479.5 600.7,479.5 601.5,478.7 601.5,478.3 602.3,477.5 770.9,477.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.5,187.5 600.7,187.5 601.5,186.7 601.5,186.3 602.3,185.5 770.9,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.5,367.5 600.7,367.5 601.5,366.7 601.5,366.3 602.3,365.5 770.9,365.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="432.5,547.5 600.7,547.5 601.5,546.7 601.5,546.3 602.3,545.5 770.9,545.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,119.5 580.7,119.5 581.5,118.7 581.5,118.3 582.3,117.5 750.9,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,299.5 580.7,299.5 581.5,298.7 581.5,298.3 582.3,297.5 750.9,297.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,479.5 580.7,479.5 581.5,478.7 581.5,478.3 582.3,477.5 750.9,477.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,187.5 580.7,187.5 581.5,186.7 581.5,186.3 582.3,185.5 750.9,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,367.5 580.7,367.5 581.5,366.7 581.5,366.3 582.3,365.5 750.9,365.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="412.5,547.5 580.7,547.5 581.5,546.7 581.5,546.3 582.3,545.5 750.9,545.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_LED_Q1_5HZ" transform="translate(770.9, 90.0)">
+    <g id="fb_LED_Q1_5HZ" transform="translate(750.9, 90.0)">
       <path d="M 3 0
             L 137.1875 0
             A 3 3 0 0 1 140.1875 3
@@ -151,7 +151,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_Q1_5HZ</text>
     </g>
-    <g id="fb_DigitalInput_I1" transform="translate(320.9, 75.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(300.9, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -243,7 +243,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_LED_Q1_1HZ" transform="translate(770.9, 270.0)">
+    <g id="fb_LED_Q1_1HZ" transform="translate(750.9, 270.0)">
       <path d="M 3 0
             L 137.1875 0
             A 3 3 0 0 1 140.1875 3
@@ -336,7 +336,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_Q1_1HZ</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(320.9, 255.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(300.9, 255.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -428,7 +428,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_LED_Q1_ON" transform="translate(770.9, 450.0)">
+    <g id="fb_LED_Q1_ON" transform="translate(750.9, 450.0)">
       <path d="M 3 0
             L 137.1875 0
             A 3 3 0 0 1 140.1875 3
@@ -521,7 +521,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_Q1_ON</text>
     </g>
-    <g id="fb_DigitalInput_I3" transform="translate(320.9, 435.0)">
+    <g id="fb_DigitalInput_I3" transform="translate(300.9, 435.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
