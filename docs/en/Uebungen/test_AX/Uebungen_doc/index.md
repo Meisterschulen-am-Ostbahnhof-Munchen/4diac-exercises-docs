@@ -521,6 +521,7 @@ Here you will find all exercises from the `test_AX` workspace in ascending order
 - [Uebung_248_AX](Uebung_248_AX.md)
 - [Uebung_249_AX](Uebung_249_AX.md)
 - [Uebung_249b_AX](Uebung_249b_AX.md)
+- [Uebung_250_AX](Uebung_250_AX.md)
 - [Uebung_Isobus_Softkeys_Index](Uebung_Isobus_Softkeys_Index.md)
 - [Uebungen_Basis_Index](Uebungen_Basis_Index.md)
 - [Uebungen_doc_Index](Uebungen_doc_Index.md)

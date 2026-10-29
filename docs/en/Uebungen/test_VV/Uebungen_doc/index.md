@@ -21,5 +21,7 @@ Here you will find all exercises from the `test_VV` workspace in ascending order
 - [Training_14_OPC_UA_RES](../03_OPC_UA/Training_14_OPC_UA_RES/Training_14_OPC_UA_RES.md)
 - [Training_15_OPC_UA_RES](../03_OPC_UA/Training_15_OPC_UA_RES/Training_15_OPC_UA_RES.md)
 - [Training_16_OPC_UA_RES](../03_OPC_UA/Training_16_OPC_UA_RES/Training_16_OPC_UA_RES.md)
+- [Training_16b_OPC_UA_RES](../03_OPC_UA/Training_16b_OPC_UA_RES/Training_16b_OPC_UA_RES.md)
 - [Training_17_OPC_UA_RES](../03_OPC_UA/Training_17_OPC_UA_RES/Training_17_OPC_UA_RES.md)
+- [Training_17b_OPC_UA_RES](../03_OPC_UA/Training_17b_OPC_UA_RES/Training_17b_OPC_UA_RES.md)
 - [Training_18_OPC_UA_RES](../03_OPC_UA/Training_18_OPC_UA_RES/Training_18_OPC_UA_RES.md)
