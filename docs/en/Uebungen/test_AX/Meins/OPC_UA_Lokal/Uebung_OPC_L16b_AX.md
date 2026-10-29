@@ -134,6 +134,8 @@ The IDs come from `const/OpcUaLokal.gcf` (package `Meins::OPC_UA_Lokal::const`).
 
 ## Note / Result
 
+A subscription reports only changes: if `Input_I1` writes `INT#42` to `Increment` again, the value does not change, `INCREMENT.IND` does not fire again, and `INCREMENTED.CNF` does not trigger another read. Presumably only the first key press therefore works (not checked on the device).
+
 Not tested on the device. Expected: after `Input_I1`, `READ_INCD` returns the value 43 (42 + 1).
 
 The same example on two devices: [Training_16b_OPC_UA_RES](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/Uebungen/test_VV/03_OPC_UA/Training_16b_OPC_UA_RES/Training_16b_OPC_UA_RES/).

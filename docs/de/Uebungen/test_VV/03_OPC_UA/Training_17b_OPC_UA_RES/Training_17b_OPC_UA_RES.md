@@ -8,7 +8,7 @@
 
 `Training_17b_OPC_UA_RES` setzt das Beispiel „Client-Subscription“ aus `opcua.adoc` auf zwei Geräten um. Es entspricht `Training_16b_OPC_UA_RES` (Gerät A schreibt 42 auf `Increment` von B und liest `Incremented` per CLIENT, sobald B gemeldet hat; Gerät B addiert 1). Anders als dort wird der abonnierte Wert hier ausgewertet: Gerät A besitzt ein [`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/) mit Endpunkt auf den Knoten `Incremented` von Gerät B.
 
-**B-Version von `Training_17_OPC_UA_RES`:** `READ_INCD.REQ` kommt nicht mehr von `WRITE_INC.CNF` (das bestätigt nur das Schreiben auf B), sondern von `SUBSCRIPTION.IND`, also erst, wenn B `Incremented` veröffentlicht hat. Die Konstanten heißen `T17B_*`, die Knoten liegen unter `/Objects/T17B/`.
+**B-Version von `Training_17_OPC_UA_RES`:** `READ_INCD.REQ` kommt nicht mehr von `WRITE_INC.CNF` (das bestätigt nur das Schreiben auf B), sondern von `SUBSCRIPTION.IND`, also erst, wenn B `Incremented` veröffentlicht hat. Die Konstanten heißen `T17B_*`, die Knoten liegen unter `/Objects/T17B/`. `SUBSCRIPTION.IND` kann auch beim ersten Abo-Wert feuern, bevor B inkrementiert hat; `READ_INCD` läuft daher bei jeder Subscription-Meldung und nicht genau einmal je Tastendruck. Eine Subscription meldet nur Änderungen: Schreibt `WRITE_INC` erneut `INT#42` auf `Increment`, ändert sich der Wert nicht, und es kommt keine neue Meldung. Vermutlich funktioniert daher nur der erste Tastendruck (nicht auf dem Gerät geprüft).
 
 Das Training ist das Zwei-Geräte-Gegenstück zu `L17` in `test_AX/Meins/OPC_UA_Lokal`.
 
@@ -66,7 +66,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 
 ## Technische Besonderheiten
 
-- **Zwei Wege zum selben Wert**: `READ_INCD` ([`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/)) liest `Incremented` einmalig nach dem Schreiben (ausgelöst durch die Meldung von B), `SUBSCRIPTION` ([`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/)) abonniert denselben Knoten von B (`T17B_INCD_SUBSCRIBE`, `F_OPC_REMOTE` mit `SUBSCRIBE`) und meldet jede Änderung mit `IND`.
+- **Zwei Wege zum selben Wert**: `READ_INCD` ([`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/)) liest `Incremented` bei jeder Meldung der Subscription (ausgelöst durch `SUBSCRIPTION.IND`, nicht durch das Schreiben), `SUBSCRIPTION` ([`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/)) abonniert denselben Knoten von B (`T17B_INCD_SUBSCRIBE`, `F_OPC_REMOTE` mit `SUBSCRIBE`) und meldet jede Änderung mit `IND`.
 - **Unterschied zum lokalen Zugriff**: B liest `Increment` lokal mit `SUBSCRIBE_1` (`F_OPC_LOCAL`, `READ`), A abonniert einen Knoten von B mit Endpunkt (`F_OPC_REMOTE`, `SUBSCRIBE`).
 - **Typumwandlung**: wie in `Training_16b_OPC_UA_RES`; zusätzlich wandelt `SUB_TO_DINT` den abonnierten Wert auf `DINT`.
 

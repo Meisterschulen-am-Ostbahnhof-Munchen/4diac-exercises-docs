@@ -8,7 +8,7 @@
 
 `Training_16b_OPC_UA_RES` implements the "objects/variables via CLIENT" example from `opcua.adoc` on two devices, but reads only after an acknowledgement from B: device A writes 42 to `Increment` on B, device B adds 1 and publishes `Incremented`. Device A subscribes to `Incremented` with [`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/) (with B's endpoint) and uses its `IND` to trigger the read via [`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/). The subscribed value itself is not evaluated; the subscription only serves as a trigger.
 
-**B version of `Training_16_OPC_UA_RES`:** `READ_INCD.REQ` is no longer triggered by `WRITE_INC.CNF` (which only confirms the write to B) but by `SUBSCRIPTION.IND`, i.e. only once B has published `Incremented`. For this, device A additionally has a `SUBSCRIPTION` (`SUBSCRIBE_1`). The constants are named `T16B_*`, the nodes are under `/Objects/T16B/`.
+**B version of `Training_16_OPC_UA_RES`:** `READ_INCD.REQ` is no longer triggered by `WRITE_INC.CNF` (which only confirms the write to B) but by `SUBSCRIPTION.IND`, i.e. only once B has published `Incremented`. For this, device A additionally has a `SUBSCRIPTION` (`SUBSCRIBE_1`). The constants are named `T16B_*`, the nodes are under `/Objects/T16B/`. A subscription reports only changes: if `WRITE_INC` writes `INT#42` to `Increment` again, the value does not change and no new notification arrives. Presumably only the first key press therefore works (not checked on the device).
 
 
 ## System Structure
@@ -74,7 +74,7 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 
 ## Learning Objectives
 
-- Trigger a read only after an acknowledgement from the other device instead of directly after the write.
+- Trigger the read operation only after an acknowledgement from the other device instead of directly after the write.
 - Use `SUBSCRIBE_1` (with endpoint) as the trigger for a read via `CLIENT_0_1`.
 
 **Recommended sequence**: `Training_16_OPC_UA_RES`.
