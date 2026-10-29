@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-`Training_18_OPC_UA_RES` setzt das Beispiel „Objekte/Variablen per `PUBLISH_0`“ aus `opcua.adoc` auf zwei Geräten um: Gerät B legt mit vier Tastern und je einem [`PUBLISH_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/PUBLISH_0/) ein OPC-UA-Objekt an (`Input_I1`), eine Variable darin an (`Input_I2`), löscht die Variable (`Input_I3`) und löscht das Objekt (`Input_I4`). Gerät A liest die Variable beim Drücken von `Input_I1` mit [`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/) von Gerät B.
+`Training_18_OPC_UA_RES` setzt das Beispiel „Objekte/Variablen per `PUBLISH_0`“ aus `opcua.adoc` auf zwei Geräten um: Gerät B legt mit vier Tastern und je einem [`PUBLISH_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/PUBLISH_0/) ein OPC-UA-Objekt an (`Input_I1`), eine Variable direkt unter `/Objects` an, nicht im Objekt `T18_MyObject` (`Input_I2`), löscht die Variable (`Input_I3`) und löscht das Objekt (`Input_I4`). Gerät A liest die Variable beim Drücken von `Input_I1` mit [`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/) von Gerät B.
 
 Das Training ist das Zwei-Geräte-Gegenstück zu `L18` in `test_AX/Meins/OPC_UA_Lokal`.
 

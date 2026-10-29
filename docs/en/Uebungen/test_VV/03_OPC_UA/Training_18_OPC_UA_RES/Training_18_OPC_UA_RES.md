@@ -6,7 +6,7 @@
 
 ## Introduction
 
-`Training_18_OPC_UA_RES` implements the "objects/variables via `PUBLISH_0`" example from `opcua.adoc` on two devices: device B uses four buttons with one [`PUBLISH_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/PUBLISH_0/) each to create an OPC-UA object (`Input_I1`), create a variable (`Input_I2`), delete the variable (`Input_I3`) and delete the object (`Input_I4`). Device A reads the variable from device B with [`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/) when `Input_I1` is pressed.
+`Training_18_OPC_UA_RES` implements the "objects/variables via `PUBLISH_0`" example from `opcua.adoc` on two devices: device B uses four buttons with one [`PUBLISH_0`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/PUBLISH_0/) each to create an OPC-UA object (`Input_I1`), create a variable directly under `/Objects`, not inside the object `T18_MyObject` (`Input_I2`), delete the variable (`Input_I3`) and delete the object (`Input_I4`). Device A reads the variable from device B with [`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/) when `Input_I1` is pressed.
 
 The training is the two-device counterpart of `L18` in `test_AX/Meins/OPC_UA_Lokal`.
 
