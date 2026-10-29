@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 627.0"
+     viewBox="-69.8 -93.0 1126.0 627.0"
      width="1126" height="627">
   <style>
     @font-face {
@@ -40,28 +40,28 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="627.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="613.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei gegenseitig verriegelte Toggle-Flip-Flops (Radio-Button-Logik) via
+  <rect x="-69.8" y="-93.0" width="1126.0" height="627.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="613.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei gegenseitig verriegelte Toggle-Flip-Flops (Radio-Button-Logik) via
 Event-Verdrahtung</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="350.3,314.5 407.5,314.5 408.3,313.7 408.3,313.3 409.1,312.5 500.2,312.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="630.2,100.5 748.4,100.5 749.2,101.3 749.2,101.7 750.0,102.5 905.2,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="335.3,119.5 400.5,119.5 401.3,118.7 401.3,118.3 402.1,117.5 485.2,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="645.2,295.5 767.2,295.5 772.2,290.5 772.2,272.5 777.2,267.5 905.2,267.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="645.2,312.5 651.2,312.5 655.2,308.5 655.2,219.5 650.2,214.5 480.2,214.5 475.2,209.5 475.2,104.5 479.2,100.5 485.2,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="630.2,117.5 636.2,117.5 640.2,121.5 640.2,240.5 635.2,245.5 495.2,245.5 490.2,250.5 490.2,291.5 494.2,295.5 500.2,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="645.2,346.5 767.8,346.5 772.2,342.1 772.2,339.9 776.6,335.5 905.2,335.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="630.2,151.5 744.2,151.5 749.2,156.5 749.2,165.5 754.2,170.5 905.2,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="288.9,314.5 346.1,314.5 346.9,313.7 346.9,313.3 347.7,312.5 438.8,312.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="568.8,100.5 687.0,100.5 687.8,101.3 687.8,101.7 688.6,102.5 843.8,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="273.9,119.5 339.1,119.5 339.9,118.7 339.9,118.3 340.7,117.5 423.8,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="583.8,295.5 705.8,295.5 710.8,290.5 710.8,272.5 715.8,267.5 843.8,267.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="583.8,312.5 589.8,312.5 593.8,308.5 593.8,219.5 588.8,214.5 418.8,214.5 413.8,209.5 413.8,104.5 417.8,100.5 423.8,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="568.8,117.5 574.8,117.5 578.8,121.5 578.8,240.5 573.8,245.5 433.8,245.5 428.8,250.5 428.8,291.5 432.8,295.5 438.8,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="583.8,346.5 706.4,346.5 710.8,342.1 710.8,339.9 715.2,335.5 843.8,335.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="568.8,151.5 682.8,151.5 687.8,156.5 687.8,165.5 692.8,170.5 843.8,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(905.2, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(843.8, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -150,7 +150,7 @@ Event-Verdrahtung</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(215.2, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(153.8, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -243,7 +243,7 @@ Event-Verdrahtung</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(905.2, 240.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(843.8, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -332,7 +332,7 @@ Event-Verdrahtung</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(230.2, 270.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(168.8, 270.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -425,7 +425,7 @@ Event-Verdrahtung</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_Uebung_004b3b_sub1" transform="translate(485.2, 90.0)">
+    <g id="fb_Uebung_004b3b_sub1" transform="translate(423.8, 90.0)">
       <path d="M 3 0
             L 142.0 0
             A 3 3 0 0 1 145.0 3
@@ -501,7 +501,7 @@ Event-Verdrahtung</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Uebung_004b3b_sub1</text>
     </g>
-    <g id="fb_Uebung_004b3b_sub2" transform="translate(500.2, 285.0)">
+    <g id="fb_Uebung_004b3b_sub2" transform="translate(438.8, 285.0)">
       <path d="M 3 0
             L 142.0 0
             A 3 3 0 0 1 145.0 3

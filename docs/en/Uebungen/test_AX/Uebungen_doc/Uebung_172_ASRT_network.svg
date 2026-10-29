@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 792.0"
+     viewBox="-69.8 -93.0 1126.0 792.0"
      width="1126" height="792">
   <style>
     @font-face {
@@ -40,26 +40,26 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="792.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="778.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for ASRT_AX_T_FF_SR</text>
+  <rect x="-69.8" y="-93.0" width="1126.0" height="792.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="778.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1049.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for ASRT_AX_T_FF_SR</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="342.8,119.5 367.8,119.5 372.8,124.5 372.8,155.5 377.8,160.5 402.7,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="342.8,299.5 367.8,299.5 372.8,294.5 372.8,182.5 377.8,177.5 402.7,177.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="342.8,479.5 367.8,479.5 372.8,474.5 372.8,199.5 377.8,194.5 402.7,194.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="551.9,227.5 608.5,227.5 612.9,231.9 612.9,234.1 617.3,238.5 687.7,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="551.9,227.5 608.5,227.5 612.9,231.9 612.9,234.1 617.3,238.5 687.7,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="824.7,238.5 871.7,238.5 876.7,233.5 876.7,222.5 881.7,217.5 897.7,217.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="824.7,238.5 871.7,238.5 876.7,233.5 876.7,222.5 881.7,217.5 897.7,217.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="281.4,119.5 306.4,119.5 311.4,124.5 311.4,155.5 316.4,160.5 341.3,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="281.4,299.5 306.4,299.5 311.4,294.5 311.4,182.5 316.4,177.5 341.3,177.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="281.4,479.5 306.4,479.5 311.4,474.5 311.4,199.5 316.4,194.5 341.3,194.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="490.5,227.5 547.1,227.5 551.5,231.9 551.5,234.1 555.9,238.5 626.3,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="490.5,227.5 547.1,227.5 551.5,231.9 551.5,234.1 555.9,238.5 626.3,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="763.3,238.5 810.3,238.5 815.3,233.5 815.3,222.5 820.3,217.5 836.3,217.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="763.3,238.5 810.3,238.5 815.3,233.5 815.3,222.5 820.3,217.5 836.3,217.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_ASRT_AX_T_FF_SR_1" transform="translate(687.7, 195.0)">
+    <g id="fb_ASRT_AX_T_FF_SR_1" transform="translate(626.3, 195.0)">
       <path d="M 3 0
             L 134.0 0
             A 3 3 0 0 1 137.0 3
@@ -148,7 +148,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASRT_AX_T_FF_SR_1</text>
     </g>
-    <g id="fb_ASRT_3EVENTS_TO_SRT_1" transform="translate(402.7, 150.0)">
+    <g id="fb_ASRT_3EVENTS_TO_SRT_1" transform="translate(341.3, 150.0)">
       <path d="M 3 0
             L 146.1875 0
             A 3 3 0 0 1 149.1875 3
@@ -230,7 +230,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ASRT_3EVENTS_TO_SRT_1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(222.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(161.3, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -323,7 +323,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(897.7, 105.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(836.3, 105.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -420,7 +420,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(222.7, 255.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(161.3, 255.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -513,7 +513,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I3" transform="translate(222.7, 435.0)">
+    <g id="fb_DigitalInput_CLK_I3" transform="translate(161.3, 435.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3

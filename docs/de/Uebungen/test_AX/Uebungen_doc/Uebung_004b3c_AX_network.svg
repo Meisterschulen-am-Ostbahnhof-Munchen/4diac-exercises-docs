@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 612.0"
-     width="1126" height="612">
+     viewBox="-69.8 -93.0 1133.4 612.0"
+     width="1133" height="612">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,28 +40,28 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="612.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei gegenseitig verriegelte Toggle-Flip-Flops unter Verwendung von
+  <rect x="-69.8" y="-93.0" width="1133.4" height="612.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1119.4" height="598.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1119.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1056.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei gegenseitig verriegelte Toggle-Flip-Flops unter Verwendung von
 bidirektionalen Adaptern</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="237.8,299.5 294.2,299.5 295.8,297.9 295.8,297.1 297.4,295.5 627.7,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="237.8,119.5 298.8,119.5 303.8,114.5 303.8,105.5 308.8,100.5 387.7,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="527.7,150.5 552.7,150.5 557.7,155.5 557.7,323.5 562.7,328.5 627.7,328.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="527.7,150.5 552.7,150.5 557.7,155.5 557.7,323.5 562.7,328.5 627.7,328.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="527.7,133.5 641.7,133.5 646.7,138.5 646.7,182.5 651.7,187.5 1002.7,187.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="527.7,133.5 641.7,133.5 646.7,138.5 646.7,182.5 651.7,187.5 1002.7,187.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="767.7,328.5 889.7,328.5 894.7,333.5 894.7,347.5 899.7,352.5 1002.7,352.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="767.7,328.5 889.7,328.5 894.7,333.5 894.7,347.5 899.7,352.5 1002.7,352.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="180.1,299.5 236.5,299.5 238.1,297.9 238.1,297.1 239.7,295.5 570.0,295.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,119.5 241.1,119.5 246.1,114.5 246.1,105.5 251.1,100.5 330.0,100.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="469.9,150.5 494.9,150.5 499.9,155.5 499.9,323.5 504.9,328.5 570.0,328.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="469.9,150.5 494.9,150.5 499.9,155.5 499.9,323.5 504.9,328.5 570.0,328.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="469.9,133.5 583.9,133.5 588.9,138.5 588.9,182.5 593.9,187.5 945.0,187.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="469.9,133.5 583.9,133.5 588.9,138.5 588.9,182.5 593.9,187.5 945.0,187.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="709.9,328.5 831.9,328.5 836.9,333.5 836.9,347.5 841.9,352.5 945.0,352.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="709.9,328.5 831.9,328.5 836.9,333.5 836.9,347.5 841.9,352.5 945.0,352.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(1002.7, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(945.0, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -158,7 +158,7 @@ bidirektionalen Adaptern</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(117.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -251,7 +251,7 @@ bidirektionalen Adaptern</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(1002.7, 240.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(945.0, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -348,7 +348,7 @@ bidirektionalen Adaptern</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I2" transform="translate(117.7, 255.0)">
+    <g id="fb_DigitalInput_CLK_I2" transform="translate(60.0, 255.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -441,7 +441,7 @@ bidirektionalen Adaptern</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I2</text>
     </g>
-    <g id="fb_Uebung_004b3b_sub1" transform="translate(387.7, 90.0)">
+    <g id="fb_Uebung_004b3b_sub1" transform="translate(330.0, 90.0)">
       <path d="M 3 0
             L 136.9375 0
             A 3 3 0 0 1 139.9375 3
@@ -550,7 +550,7 @@ bidirektionalen Adaptern</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Uebung_004b3b_sub1</text>
     </g>
-    <g id="fb_Uebung_004b3b_sub2" transform="translate(627.7, 285.0)">
+    <g id="fb_Uebung_004b3b_sub2" transform="translate(570.0, 285.0)">
       <path d="M 3 0
             L 136.9375 0
             A 3 3 0 0 1 139.9375 3

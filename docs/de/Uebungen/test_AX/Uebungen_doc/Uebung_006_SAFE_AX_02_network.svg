@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1715.6 1112.0"
-     width="1716" height="1112">
+     viewBox="-54.8 -93.0 1823.4 1112.0"
+     width="1823" height="1112">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1715.6" height="1112.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1701.6" height="1098.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1701.6" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1761.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_006_SAFE_AX, aber mit SF_EmergencyStop statt StartPermit/StartGate</text>
+  <rect x="-54.8" y="-93.0" width="1823.4" height="1112.0" fill="white"/>
+  <rect x="-47.8" y="-86.0" width="1809.4" height="1098.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-47.8" y="-86.0" width="1809.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-47.8" y1="-61.5" x2="1761.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-42.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_006_SAFE_AX, aber mit SF_EmergencyStop statt StartPermit/StartGate</text>
   <g id="sidebars">
   </g>
   <g id="connections">

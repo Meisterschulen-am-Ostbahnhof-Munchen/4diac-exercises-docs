@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-14.7 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,22 +40,22 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 auf DataPanel_1A; BLINKER</text>
+  <rect x="-14.7" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-7.7" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-7.7" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-7.7" y1="-61.5" x2="1104.3" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-2.7" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 auf DataPanel_1A; BLINKER</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="827.6,85.5 917.6,85.5 922.6,80.5 922.6,29.5 917.6,24.5 350.4,24.5 345.4,29.5 345.4,110.5 350.4,115.5 404.4,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="503.6,200.5 580.0,200.5 581.6,202.1 581.6,202.9 583.2,204.5 689.4,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="503.6,200.5 580.0,200.5 581.6,202.1 581.6,202.9 583.2,204.5 689.4,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="793.7,85.5 883.7,85.5 888.7,80.5 888.7,29.5 883.7,24.5 316.6,24.5 311.6,29.5 311.6,110.5 316.6,115.5 370.6,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="469.8,200.5 546.2,200.5 547.8,202.1 547.8,202.9 549.4,204.5 655.6,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="469.8,200.5 546.2,200.5 547.8,202.1 547.8,202.9 549.4,204.5 655.6,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_AX_BLINK" transform="translate(404.4, 105.0)">
+    <g id="fb_AX_BLINK" transform="translate(370.6, 105.0)">
       <path d="M 3 0
             L 96.1875 0
             A 3 3 0 0 1 99.1875 3
@@ -140,7 +140,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_BLINK</text>
     </g>
-    <g id="fb_DigitalOutput_1A" transform="translate(689.4, 75.0)">
+    <g id="fb_DigitalOutput_1A" transform="translate(655.6, 75.0)">
       <path d="M 3 0
             L 135.125 0
             A 3 3 0 0 1 138.125 3

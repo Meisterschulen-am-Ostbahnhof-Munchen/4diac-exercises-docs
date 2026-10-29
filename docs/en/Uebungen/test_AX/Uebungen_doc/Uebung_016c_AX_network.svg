@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 597.0"
-     width="1126" height="597">
+     viewBox="-26.1 -93.0 1194.6 597.0"
+     width="1195" height="597">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="597.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Background Colour umschalten -- mit SubApp für SEL und INITVAL</text>
+  <rect x="-26.1" y="-93.0" width="1194.6" height="597.0" fill="white"/>
+  <rect x="-19.1" y="-86.0" width="1180.6" height="583.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-19.1" y="-86.0" width="1180.6" height="25.0" fill="white" stroke="none"/>
+  <line x1="-19.1" y1="-61.5" x2="1161.4" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-14.1" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Background Colour umschalten -- mit SubApp für SEL und INITVAL</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="185.4,119.5 244.8,119.5 246.4,117.9 246.4,117.1 248.0,115.5 320.3,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="185.4,284.5 251.4,284.5 256.4,279.5 256.4,137.5 261.4,132.5 320.3,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="396.0,165.5 494.0,165.5 499.0,170.5 499.0,208.5 504.0,213.5 605.3,213.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="396.0,165.5 494.0,165.5 499.0,170.5 499.0,208.5 504.0,213.5 605.3,213.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="752.0,213.5 886.0,213.5 891.0,218.5 891.0,225.5 896.0,230.5 1025.3,230.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="752.0,213.5 886.0,213.5 891.0,218.5 891.0,225.5 896.0,230.5 1025.3,230.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="180.1,119.5 239.5,119.5 241.1,117.9 241.1,117.1 242.7,115.5 315.0,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="180.1,284.5 246.1,284.5 251.1,279.5 251.1,137.5 256.1,132.5 315.0,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="390.7,165.5 488.7,165.5 493.7,170.5 493.7,208.5 498.7,213.5 600.0,213.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="390.7,165.5 488.7,165.5 493.7,170.5 493.7,208.5 498.7,213.5 600.0,213.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="746.7,213.5 880.7,213.5 885.7,218.5 885.7,242.5 890.7,247.5 1020.0,247.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="746.7,213.5 880.7,213.5 885.7,218.5 885.7,242.5 890.7,247.5 1020.0,247.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_SoftKey_UP_F1" transform="translate(65.3, 75.0)">
+    <g id="fb_SoftKey_UP_F1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -151,7 +151,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_UP_F1</text>
     </g>
-    <g id="fb_SoftKey_UP_F2" transform="translate(65.3, 240.0)">
+    <g id="fb_SoftKey_UP_F2" transform="translate(60.0, 240.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -244,7 +244,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_UP_F2</text>
     </g>
-    <g id="fb_AX_SR" transform="translate(320.3, 105.0)">
+    <g id="fb_AX_SR" transform="translate(315.0, 105.0)">
       <path d="M 3 0
             L 72.6875 0
             A 3 3 0 0 1 75.6875 3
@@ -323,7 +323,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_SR</text>
     </g>
-    <g id="fb_Q_BackgroundColour_AUS" transform="translate(1025.3, 135.0)">
+    <g id="fb_Q_BackgroundColour_AUS" transform="translate(1020.0, 135.0)">
       <path d="M 3 0
             L 138.4375 0
             A 3 3 0 0 1 141.4375 3
@@ -333,10 +333,10 @@
             L 132.4375 52
             L 138.4375 52
             A 3 3 0 0 1 141.4375 55
-            L 141.4375 103
-            A 3 3 0 0 1 138.4375 106
-            L 3 106
-            A 3 3 0 0 1 0 103
+            L 141.4375 120
+            A 3 3 0 0 1 138.4375 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -383,52 +383,58 @@
       <polygon points="136.4375,22.5 141.4375,27.5 136.4375,32.5" fill="#63B31F"/>
       <text x="135.4375" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">QI</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
+      <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u16ObjId</text>
-      <polygon points="136.4375,56.5 141.4375,61.5 136.4375,66.5" fill="#BD8663"/>
+      <polygon points="136.4375,56.5 141.4375,61.5 136.4375,66.5" fill="#A3B08F"/>
       <text x="135.4375" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="136.4375,73.5 141.4375,78.5 136.4375,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="136.4375,73.5 141.4375,78.5 136.4375,83.5" fill="#BD8663"/>
       <text x="135.4375" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">STATUS</text>
+      <polygon points="136.4375,90.5 141.4375,95.5 136.4375,100.5" fill="#18519E"/>
+      <text x="135.4375" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">SoftKey_F7</text>
-      <path d="M 0 90.5
-            L 5.0 90.5
-            L 5.0 92.16666666666667
-            L 7.5 92.16666666666667
-            L 7.5 90.5
-            L 10 90.5
-            L 10 100.5
-            L 7.5 100.5
-            L 7.5 98.83333333333333
-            L 5.0 98.83333333333333
-            L 5.0 100.5
-            L 0 100.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">SoftKey_F7</text>
+      <path d="M 0 107.5
+            L 5.0 107.5
+            L 5.0 109.16666666666667
+            L 7.5 109.16666666666667
+            L 7.5 107.5
+            L 10 107.5
+            L 10 117.5
+            L 7.5 117.5
+            L 7.5 115.83333333333333
+            L 5.0 115.83333333333333
+            L 5.0 117.5
+            L 0 117.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u8Colour</text>
-      <path d="M 131.4375 90.5
-            L 133.9375 90.5
-            L 133.9375 92.16666666666667
-            L 136.4375 92.16666666666667
-            L 136.4375 90.5
-            L 141.4375 90.5
-            L 141.4375 100.5
-            L 136.4375 100.5
-            L 136.4375 98.83333333333333
-            L 133.9375 98.83333333333333
-            L 133.9375 100.5
-            L 131.4375 100.5
+      <path d="M 131.4375 107.5
+            L 133.9375 107.5
+            L 133.9375 109.16666666666667
+            L 136.4375 109.16666666666667
+            L 136.4375 107.5
+            L 141.4375 107.5
+            L 141.4375 117.5
+            L 136.4375 117.5
+            L 136.4375 115.83333333333333
+            L 133.9375 115.83333333333333
+            L 133.9375 117.5
+            L 131.4375 117.5
             Z" fill="#845DAF"/>
-      <text x="128.4375" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="128.4375" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">u8OldColour</text>
       <!-- Instance Name -->
       <text x="70.71875" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Q_BackgroundColour_AUS</text>
     </g>
-    <g id="fb_Select_Colour" transform="translate(605.3, 135.0)">
+    <g id="fb_Select_Colour" transform="translate(600.0, 135.0)">
       <path d="M 3 0
             L 143.6875 0
             A 3 3 0 0 1 146.6875 3

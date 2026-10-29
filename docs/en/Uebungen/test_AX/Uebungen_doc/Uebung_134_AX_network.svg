@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1370.7 647.0"
-     width="1371" height="647">
+     viewBox="-29.7 -93.0 1453.4 647.0"
+     width="1453" height="647">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1370.7" height="647.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1356.7" height="633.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1356.7" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1416.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Übung zu ISOBUS Receive from Unclaimed Partner</text>
+  <rect x="-29.7" y="-93.0" width="1453.4" height="647.0" fill="white"/>
+  <rect x="-22.7" y="-86.0" width="1439.4" height="633.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-22.7" y="-86.0" width="1439.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-22.7" y1="-61.5" x2="1416.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-17.7" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Übung zu ISOBUS Receive from Unclaimed Partner</text>
   <g id="sidebars">
   </g>
   <g id="connections">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-24.8 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_094b2_AX, aber mit MyLib::sys::NumericValue_TO_AUI2 als wiederverwendbarem Baustein statt der inline verdrahteten Kette (NumericValue_IDA+AD_TO_AUI+AUI_TO_AUI2+AUI_TO_AUDI+Q_NumericValue_AUDI).</text>
+  <rect x="-24.8" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-17.8" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-17.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-17.8" y1="-61.5" x2="1094.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-12.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Wie Uebung_094b2_AX, aber mit MyLib::sys::NumericValue_TO_AUI2 als wiederverwendbarem Baustein statt der inline verdrahteten Kette (NumericValue_IDA+AD_TO_AUI+AUI_TO_AUI2+AUI_TO_AUDI+Q_NumericValue_AUDI).</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="313.1,183.5 413.1,183.5 418.1,178.5 418.1,168.5 423.1,163.5 473.7,163.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="313.1,183.5 413.1,183.5 418.1,178.5 418.1,168.5 423.1,163.5 473.7,163.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="612.4,180.5 737.4,180.5 742.4,185.5 742.4,188.5 747.4,193.5 923.7,193.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="612.4,180.5 737.4,180.5 742.4,185.5 742.4,188.5 747.4,193.5 923.7,193.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="612.4,197.5 737.4,197.5 742.4,202.5 742.4,248.5 747.4,253.5 923.7,253.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="612.4,197.5 737.4,197.5 742.4,202.5 742.4,248.5 747.4,253.5 923.7,253.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="612.4,163.5 751.4,163.5 756.4,158.5 756.4,123.5 761.4,118.5 938.7,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="612.4,163.5 751.4,163.5 756.4,158.5 756.4,123.5 761.4,118.5 938.7,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="274.2,183.5 374.2,183.5 379.2,178.5 379.2,168.5 384.2,163.5 434.8,163.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="274.2,183.5 374.2,183.5 379.2,178.5 379.2,168.5 384.2,163.5 434.8,163.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="573.5,180.5 698.5,180.5 703.5,185.5 703.5,188.5 708.5,193.5 884.8,193.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="573.5,180.5 698.5,180.5 703.5,185.5 703.5,188.5 708.5,193.5 884.8,193.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="573.5,197.5 698.5,197.5 703.5,202.5 703.5,248.5 708.5,253.5 884.8,253.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="573.5,197.5 698.5,197.5 703.5,202.5 703.5,248.5 708.5,253.5 884.8,253.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="573.5,163.5 712.5,163.5 717.5,158.5 717.5,123.5 722.5,118.5 899.8,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="573.5,163.5 712.5,163.5 717.5,158.5 717.5,123.5 722.5,118.5 899.8,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_AOption_AUI_DEMUX_3" transform="translate(473.7, 120.0)">
+    <g id="fb_AOption_AUI_DEMUX_3" transform="translate(434.8, 120.0)">
       <path d="M 3 0
             L 135.6875 0
             A 3 3 0 0 1 138.6875 3
@@ -179,7 +179,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AOption_AUI_DEMUX_3</text>
     </g>
-    <g id="fb_NumericValue_TO_AUI2_1" transform="translate(173.7, 105.0)">
+    <g id="fb_NumericValue_TO_AUI2_1" transform="translate(134.8, 105.0)">
       <path d="M 3 0
             L 136.375 0
             A 3 3 0 0 1 139.375 3
@@ -269,7 +269,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">NumericValue_TO_AUI2_1</text>
     </g>
-    <g id="fb_OptionalGroup_001" transform="translate(923.7, 150.0)">
+    <g id="fb_OptionalGroup_001" transform="translate(884.8, 150.0)">
       <path d="M 3 0
             L 131.5625 0
             A 3 3 0 0 1 134.5625 3
@@ -346,7 +346,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">OptionalGroup_001</text>
     </g>
-    <g id="fb_OptionalGroup_002" transform="translate(923.7, 210.0)">
+    <g id="fb_OptionalGroup_002" transform="translate(884.8, 210.0)">
       <path d="M 3 0
             L 131.5625 0
             A 3 3 0 0 1 134.5625 3
@@ -423,7 +423,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">OptionalGroup_002</text>
     </g>
-    <g id="fb_DummyGroup" transform="translate(938.7, 75.0)">
+    <g id="fb_DummyGroup" transform="translate(899.8, 75.0)">
       <path d="M 3 0
             L 108.3125 0
             A 3 3 0 0 1 111.3125 3

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1500.9 775.0"
-     width="1501" height="775">
+     viewBox="-92.6 -93.0 1646.4 792.0"
+     width="1646" height="792">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1500.9" height="775.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1486.9" height="761.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1486.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1546.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Dreieck-Sollwertmarker (wie Uebung_225 in test_B, aber ein reiner
+  <rect x="-92.6" y="-93.0" width="1646.4" height="792.0" fill="white"/>
+  <rect x="-85.6" y="-86.0" width="1632.4" height="778.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-85.6" y="-86.0" width="1632.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-85.6" y1="-61.5" x2="1546.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-80.6" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Dreieck-Sollwertmarker (wie Uebung_225 in test_B, aber ein reiner
 Adapter-Spiegel: NumericValue_PHYSA, AR_ADD_2, AR_TO_AI, Q_ChildPosition_AI,
 Q_NumericValue_PHYSA)</text>
   <g id="sidebars">
@@ -52,18 +52,18 @@ Q_NumericValue_PHYSA)</text>
   <g id="connections">
     <polyline points="200.8,292.5 272.3,292.5 274.7,294.9 274.7,296.1 277.1,298.5 345.0,298.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="200.8,292.5 272.3,292.5 274.7,294.9 274.7,296.1 277.1,298.5 345.0,298.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="445.6,315.5 590.6,315.5 595.6,320.5 595.6,525.5 600.6,530.5 945.0,530.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="445.6,315.5 590.6,315.5 595.6,320.5 595.6,525.5 600.6,530.5 945.0,530.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="445.6,315.5 590.6,315.5 595.6,320.5 595.6,542.5 600.6,547.5 945.0,547.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="445.6,315.5 590.6,315.5 595.6,320.5 595.6,542.5 600.6,547.5 945.0,547.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="445.6,298.5 472.6,298.5 477.6,293.5 477.6,153.5 482.6,148.5 795.0,148.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="445.6,298.5 472.6,298.5 477.6,293.5 477.6,153.5 482.6,148.5 795.0,148.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="694.3,256.5 730.3,256.5 735.3,251.5 735.3,170.5 740.3,165.5 795.0,165.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="694.3,256.5 730.3,256.5 735.3,251.5 735.3,170.5 740.3,165.5 795.0,165.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="886.9,148.5 960.0,148.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="886.9,148.5 960.0,148.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="1056.8,148.5 1116.7,148.5 1121.7,153.5 1121.7,199.5 1126.7,204.5 1380.0,204.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="1056.8,148.5 1116.7,148.5 1121.7,153.5 1121.7,199.5 1126.7,204.5 1380.0,204.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="1159.3,316.5 1255.3,316.5 1260.3,311.5 1260.3,226.5 1265.3,221.5 1380.0,221.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="1159.3,316.5 1255.3,316.5 1260.3,311.5 1260.3,226.5 1265.3,221.5 1380.0,221.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="1056.8,148.5 1116.7,148.5 1121.7,153.5 1121.7,216.5 1126.7,221.5 1380.0,221.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="1056.8,148.5 1116.7,148.5 1121.7,153.5 1121.7,216.5 1126.7,221.5 1380.0,221.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="1159.3,316.5 1255.3,316.5 1260.3,311.5 1260.3,243.5 1265.3,238.5 1380.0,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="1159.3,316.5 1255.3,316.5 1260.3,311.5 1260.3,243.5 1265.3,238.5 1380.0,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
@@ -279,10 +279,10 @@ Q_NumericValue_PHYSA)</text>
             L 128.125 52
             L 134.125 52
             A 3 3 0 0 1 137.125 55
-            L 137.125 120
-            A 3 3 0 0 1 134.125 123
-            L 3 123
-            A 3 3 0 0 1 0 120
+            L 137.125 137
+            A 3 3 0 0 1 134.125 140
+            L 3 140
+            A 3 3 0 0 1 0 137
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -329,46 +329,37 @@ Q_NumericValue_PHYSA)</text>
       <polygon points="132.125,22.5 137.125,27.5 132.125,32.5" fill="#63B31F"/>
       <text x="131.125" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">QI</text>
+      <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
+      <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">stObj</text>
-      <polygon points="132.125,56.5 137.125,61.5 132.125,66.5" fill="#BD8663"/>
+      <polygon points="132.125,56.5 137.125,61.5 132.125,66.5" fill="#A3B08F"/>
       <text x="131.125" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="132.125,73.5 137.125,78.5 132.125,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="132.125,73.5 137.125,78.5 132.125,83.5" fill="#BD8663"/>
       <text x="131.125" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">STATUS</text>
+      <polygon points="132.125,90.5 137.125,95.5 132.125,100.5" fill="#18519E"/>
+      <text x="131.125" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Istwert_N</text>
-      <path d="M 0 90.5
-            L 5.0 90.5
-            L 5.0 92.16666666666667
-            L 7.5 92.16666666666667
-            L 7.5 90.5
-            L 10 90.5
-            L 10 100.5
-            L 7.5 100.5
-            L 7.5 98.83333333333333
-            L 5.0 98.83333333333333
-            L 5.0 100.5
-            L 0 100.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">NumberVariable_Istwert_N</text>
+      <path d="M 0 107.5
+            L 5.0 107.5
+            L 5.0 109.16666666666667
+            L 7.5 109.16666666666667
+            L 7.5 107.5
+            L 10 107.5
+            L 10 117.5
+            L 7.5 117.5
+            L 7.5 115.83333333333333
+            L 5.0 115.83333333333333
+            L 5.0 117.5
+            L 0 117.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
-      <path d="M 127.125 90.5
-            L 129.625 90.5
-            L 129.625 92.16666666666667
-            L 132.125 92.16666666666667
-            L 132.125 90.5
-            L 137.125 90.5
-            L 137.125 100.5
-            L 132.125 100.5
-            L 132.125 98.83333333333333
-            L 129.625 98.83333333333333
-            L 129.625 100.5
-            L 127.125 100.5
-            Z" fill="#845DAF"/>
-      <text x="124.125" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">xOver</text>
       <path d="M 127.125 107.5
             L 129.625 107.5
             L 129.625 109.16666666666667
@@ -383,6 +374,21 @@ Q_NumericValue_PHYSA)</text>
             L 127.125 117.5
             Z" fill="#845DAF"/>
       <text x="124.125" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">xOver</text>
+      <path d="M 127.125 124.5
+            L 129.625 124.5
+            L 129.625 126.16666666666667
+            L 132.125 126.16666666666667
+            L 132.125 124.5
+            L 137.125 124.5
+            L 137.125 134.5
+            L 132.125 134.5
+            L 132.125 132.83333333333334
+            L 129.625 132.83333333333334
+            L 129.625 134.5
+            L 127.125 134.5
+            Z" fill="#845DAF"/>
+      <text x="124.125" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">xUnder</text>
       <!-- Instance Name -->
       <text x="68.5625" y="-5"
@@ -673,10 +679,10 @@ Q_NumericValue_PHYSA)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -723,45 +729,36 @@ Q_NumericValue_PHYSA)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
+      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">xScale</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_Bargraph_Mittelma…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Sollwertmarker</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <path d="M 0 124.5
-            L 5.0 124.5
-            L 5.0 126.16666666666667
-            L 7.5 126.16666666666667
-            L 7.5 124.5
-            L 10 124.5
-            L 10 134.5
-            L 7.5 134.5
-            L 7.5 132.83333333333334
-            L 5.0 132.83333333333334
-            L 5.0 134.5
-            L 0 134.5
-            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">s16Xposition</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_Bargraph_Mittelma…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Sollwertmarker</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
       <path d="M 0 141.5
             L 5.0 141.5
             L 5.0 143.16666666666666
@@ -776,6 +773,21 @@ Q_NumericValue_PHYSA)</text>
             L 0 151.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
       <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">s16Xposition</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">s16Yposition</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-92.6 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,22 +40,22 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Split-Bargraph: Sollwert-Eingabe treibt zwei nebeneinanderliegende Bargraphen
+  <rect x="-92.6" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-85.6" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-85.6" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-85.6" y1="-61.5" x2="1026.4" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-80.6" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Split-Bargraph: Sollwert-Eingabe treibt zwei nebeneinanderliegende Bargraphen
 als vorzeichenbehafteten Ausschlag</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="405.6,162.5 495.6,162.5 500.6,157.5 500.6,107.5 505.6,102.5 834.8,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="405.6,230.5 550.6,230.5 555.6,225.5 555.6,158.5 560.6,153.5 834.8,153.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="332.8,162.5 422.8,162.5 427.8,157.5 427.8,107.5 432.8,102.5 762.0,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="332.8,230.5 477.8,230.5 482.8,225.5 482.8,158.5 487.8,153.5 762.0,153.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_Sollwert_N" transform="translate(264.8, 135.0)">
+    <g id="fb_Sollwert_N" transform="translate(192.0, 135.0)">
       <path d="M 3 0
             L 137.75 0
             A 3 3 0 0 1 140.75 3
@@ -144,7 +144,7 @@ als vorzeichenbehafteten Ausschlag</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Sollwert_N</text>
     </g>
-    <g id="fb_SplitBar" transform="translate(834.8, 75.0)">
+    <g id="fb_SplitBar" transform="translate(762.0, 75.0)">
       <path d="M 3 0
             L 129.375 0
             A 3 3 0 0 1 132.375 3

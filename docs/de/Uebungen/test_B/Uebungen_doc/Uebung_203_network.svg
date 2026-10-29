@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="13.0 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Interlock: ILOCK_SWITCH (Umschalt-Priorität Last-Wins)</text>
+  <rect x="13.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Interlock: ILOCK_SWITCH (Umschalt-Priorität Last-Wins)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="341.8,119.5 366.8,119.5 371.8,124.5 371.8,140.5 376.8,145.5 560.2,145.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="341.8,269.5 366.8,269.5 371.8,264.5 371.8,167.5 376.8,162.5 560.2,162.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="679.5,145.5 704.5,145.5 709.5,140.5 709.5,107.5 714.5,102.5 890.2,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="679.5,162.5 704.5,162.5 709.5,167.5 709.5,247.5 714.5,252.5 890.2,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="341.8,187.5 368.2,187.5 371.8,191.1 371.8,192.9 375.4,196.5 560.2,196.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="341.8,337.5 366.8,337.5 371.8,332.5 371.8,218.5 376.8,213.5 560.2,213.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="679.5,196.5 704.5,196.5 709.5,191.5 709.5,175.5 714.5,170.5 890.2,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="679.5,213.5 704.5,213.5 709.5,218.5 709.5,315.5 714.5,320.5 890.2,320.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="321.8,119.5 346.8,119.5 351.8,124.5 351.8,140.5 356.8,145.5 540.2,145.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="321.8,269.5 346.8,269.5 351.8,264.5 351.8,167.5 356.8,162.5 540.2,162.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="659.5,145.5 684.5,145.5 689.5,140.5 689.5,107.5 694.5,102.5 870.2,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="659.5,162.5 684.5,162.5 689.5,167.5 689.5,247.5 694.5,252.5 870.2,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="321.8,187.5 348.2,187.5 351.8,191.1 351.8,192.9 355.4,196.5 540.2,196.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="321.8,337.5 346.8,337.5 351.8,332.5 351.8,218.5 356.8,213.5 540.2,213.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="659.5,196.5 684.5,196.5 689.5,191.5 689.5,175.5 694.5,170.5 870.2,170.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="659.5,213.5 684.5,213.5 689.5,218.5 689.5,315.5 694.5,320.5 870.2,320.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_I1" transform="translate(230.2, 75.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(210.2, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -152,7 +152,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_DigitalInput_I2" transform="translate(230.2, 225.0)">
+    <g id="fb_DigitalInput_I2" transform="translate(210.2, 225.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -244,7 +244,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I2</text>
     </g>
-    <g id="fb_ILOCK" transform="translate(560.2, 135.0)">
+    <g id="fb_ILOCK" transform="translate(540.2, 135.0)">
       <path d="M 3 0
             L 116.25 0
             A 3 3 0 0 1 119.25 3
@@ -326,7 +326,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">ILOCK</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(890.2, 75.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(870.2, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -415,7 +415,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(890.2, 225.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(870.2, 225.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

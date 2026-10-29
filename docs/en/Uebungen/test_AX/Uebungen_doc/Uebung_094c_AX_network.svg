@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1349.9 850.0"
-     width="1350" height="850">
+     viewBox="-24.8 -93.0 1427.6 850.0"
+     width="1428" height="850">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1349.9" height="850.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1335.9" height="836.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1335.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1395.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei unabhaengige VT-Dropdowns (InputNumber_I1/I2) schalten je eine eigene Optionsgruppe frei: AD_TO_AUI -&gt; AOption_AUI_DEMUX_1 -&gt; OptionalGroup_001/002 per AOption-Adapter und QI. Noch OHNE gegenseitigen Ausschluss zwischen den beiden Gruppen - das braeuchte einen vorgeschalteten Arbiter, der aus den zwei unabhaengigen Dropdown-Events einen gemeinsamen K-Wert ableitet (offene Rueckfrage aus Krauternter: Bunker_Klappen/Aufnahme_Rechts, 'letzter Aktiviert gewinnt' + Boot-Tiebreak).</text>
+  <rect x="-24.8" y="-93.0" width="1427.6" height="850.0" fill="white"/>
+  <rect x="-17.8" y="-86.0" width="1413.6" height="836.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-17.8" y="-86.0" width="1413.6" height="25.0" fill="white" stroke="none"/>
+  <line x1="-17.8" y1="-61.5" x2="1395.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-12.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Zwei unabhaengige VT-Dropdowns (InputNumber_I1/I2) schalten je eine eigene Optionsgruppe frei: AD_TO_AUI -&gt; AOption_AUI_DEMUX_1 -&gt; OptionalGroup_001/002 per AOption-Adapter und QI. Noch OHNE gegenseitigen Ausschluss zwischen den beiden Gruppen - das braeuchte einen vorgeschalteten Arbiter, der aus den zwei unabhaengigen Dropdown-Events einen gemeinsamen K-Wert ableitet (offene Rueckfrage aus Krauternter: Bunker_Klappen/Aufnahme_Rechts, 'letzter Aktiviert gewinnt' + Boot-Tiebreak).</text>
   <g id="sidebars">
   </g>
   <g id="connections">

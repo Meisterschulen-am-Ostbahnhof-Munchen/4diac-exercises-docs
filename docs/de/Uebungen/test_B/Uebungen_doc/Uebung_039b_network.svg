@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 715.0"
+     viewBox="-5.3 -93.0 1126.0 715.0"
      width="1126" height="715">
   <style>
     @font-face {
@@ -40,29 +40,29 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="715.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Spiegelabfolge V2 mit Schrittkette</text>
+  <rect x="-5.3" y="-93.0" width="1126.0" height="715.0" fill="white"/>
+  <rect x="1.7" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="1.7" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="1.7" y1="-61.5" x2="1113.7" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="6.7" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Spiegelabfolge V2 mit Schrittkette</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="619.7,130.5 744.7,130.5 749.7,125.5 749.7,122.5 754.7,117.5 882.7,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="634.7,415.5 729.7,415.5 734.7,410.5 734.7,407.5 739.7,402.5 837.7,402.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="619.7,130.5 711.7,130.5 716.7,135.5 716.7,262.5 711.7,267.5 332.7,267.5 327.7,272.5 327.7,425.5 332.7,430.5 372.7,430.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="447.3,430.5 472.3,430.5 477.3,425.5 477.3,420.5 482.3,415.5 567.7,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="349.3,119.5 405.9,119.5 410.3,123.9 410.3,126.1 414.7,130.5 552.7,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="634.7,466.5 734.6,466.5 736.2,468.1 736.2,468.9 737.8,470.5 837.7,470.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="619.7,181.5 749.6,181.5 751.2,183.1 751.2,183.9 752.8,185.5 882.7,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="619.7,181.5 674.7,181.5 679.7,186.5 679.7,220.5 674.7,225.5 252.7,225.5 247.7,230.5 247.7,459.5 252.7,464.5 372.7,464.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="447.3,464.5 506.7,464.5 507.5,465.3 507.5,465.7 508.3,466.5 567.7,466.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="349.3,187.5 448.6,187.5 451.0,185.1 451.0,183.9 453.4,181.5 552.7,181.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="590.5,130.5 715.5,130.5 720.5,125.5 720.5,122.5 725.5,117.5 853.6,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="605.5,415.5 700.5,415.5 705.5,410.5 705.5,407.5 710.5,402.5 808.6,402.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="590.5,130.5 682.5,130.5 687.5,135.5 687.5,262.5 682.5,267.5 303.6,267.5 298.6,272.5 298.6,425.5 303.6,430.5 343.6,430.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="418.2,430.5 443.2,430.5 448.2,425.5 448.2,420.5 453.2,415.5 538.6,415.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="320.1,119.5 376.7,119.5 381.1,123.9 381.1,126.1 385.5,130.5 523.6,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="605.5,466.5 705.4,466.5 707.0,468.1 707.0,468.9 708.6,470.5 808.6,470.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="590.5,181.5 720.4,181.5 722.0,183.1 722.0,183.9 723.6,185.5 853.6,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="590.5,181.5 645.5,181.5 650.5,186.5 650.5,220.5 645.5,225.5 223.6,225.5 218.6,230.5 218.6,459.5 223.6,464.5 343.6,464.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="418.2,464.5 477.6,464.5 478.4,465.3 478.4,465.7 479.2,466.5 538.6,466.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="320.1,187.5 419.4,187.5 421.8,185.1 421.8,183.9 424.2,181.5 523.6,181.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(882.7, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(853.6, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -151,7 +151,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(837.7, 375.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(808.6, 375.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -240,7 +240,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_SoftKey_F1" transform="translate(237.7, 75.0)">
+    <g id="fb_SoftKey_F1" transform="translate(208.6, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -332,7 +332,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_F1</text>
     </g>
-    <g id="fb_E_TP_Q1" transform="translate(552.7, 120.0)">
+    <g id="fb_E_TP_Q1" transform="translate(523.6, 120.0)">
       <path d="M 3 0
             L 63.9375 0
             A 3 3 0 0 1 66.9375 3
@@ -408,7 +408,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_TP_Q1</text>
     </g>
-    <g id="fb_E_TP_Q2" transform="translate(567.7, 405.0)">
+    <g id="fb_E_TP_Q2" transform="translate(538.6, 405.0)">
       <path d="M 3 0
             L 63.9375 0
             A 3 3 0 0 1 66.9375 3
@@ -484,7 +484,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_TP_Q2</text>
     </g>
-    <g id="fb_E_TON" transform="translate(372.7, 420.0)">
+    <g id="fb_E_TON" transform="translate(343.6, 420.0)">
       <path d="M 3 0
             L 71.625 0
             A 3 3 0 0 1 74.625 3

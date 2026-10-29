@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 1004.0"
+     viewBox="12.2 -93.0 1126.0 1004.0"
      width="1126" height="1004">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="1004.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="990.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LED Strip Blinkende LED</text>
+  <rect x="12.2" y="-93.0" width="1126.0" height="1004.0" fill="white"/>
+  <rect x="19.2" y="-86.0" width="1112.0" height="990.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="19.2" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="19.2" y1="-61.5" x2="1131.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="24.2" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">LED Strip Blinkende LED</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="404.1,119.5 602.3,119.5 603.1,118.7 603.1,118.3 603.9,117.5 802.6,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,284.5 602.3,284.5 603.1,283.7 603.1,283.3 603.9,282.5 802.6,282.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,479.5 602.3,479.5 603.1,478.7 603.1,478.3 603.9,477.5 802.6,477.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,659.5 602.3,659.5 603.1,658.7 603.1,658.3 603.9,657.5 802.6,657.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,187.5 602.3,187.5 603.1,186.7 603.1,186.3 603.9,185.5 802.6,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,352.5 602.3,352.5 603.1,351.7 603.1,351.3 603.9,350.5 802.6,350.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,547.5 602.3,547.5 603.1,546.7 603.1,546.3 603.9,545.5 802.6,545.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="404.1,727.5 602.3,727.5 603.1,726.7 603.1,726.3 603.9,725.5 802.6,725.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,119.5 582.0,119.5 582.8,118.7 582.8,118.3 583.6,117.5 782.2,117.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,284.5 582.0,284.5 582.8,283.7 582.8,283.3 583.6,282.5 782.2,282.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,479.5 582.0,479.5 582.8,478.7 582.8,478.3 583.6,477.5 782.2,477.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,659.5 582.0,659.5 582.8,658.7 582.8,658.3 583.6,657.5 782.2,657.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,187.5 582.0,187.5 582.8,186.7 582.8,186.3 583.6,185.5 782.2,185.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,352.5 582.0,352.5 582.8,351.7 582.8,351.3 583.6,350.5 782.2,350.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,547.5 582.0,547.5 582.8,546.7 582.8,546.3 583.6,545.5 782.2,545.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="383.8,727.5 582.0,727.5 582.8,726.7 582.8,726.3 583.6,725.5 782.2,725.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_LED_GREEN_5HZ" transform="translate(802.6, 90.0)">
+    <g id="fb_LED_GREEN_5HZ" transform="translate(782.2, 90.0)">
       <path d="M 3 0
             L 133.875 0
             A 3 3 0 0 1 136.875 3
@@ -157,7 +157,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_GREEN_5HZ</text>
     </g>
-    <g id="fb_BUTTON_GREEN" transform="translate(292.6, 75.0)">
+    <g id="fb_BUTTON_GREEN" transform="translate(272.2, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -249,7 +249,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_GREEN</text>
     </g>
-    <g id="fb_BUTTON_YELLOW" transform="translate(292.6, 240.0)">
+    <g id="fb_BUTTON_YELLOW" transform="translate(272.2, 240.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -341,7 +341,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_YELLOW</text>
     </g>
-    <g id="fb_LED_YELLOW_5HZ" transform="translate(802.6, 255.0)">
+    <g id="fb_LED_YELLOW_5HZ" transform="translate(782.2, 255.0)">
       <path d="M 3 0
             L 133.875 0
             A 3 3 0 0 1 136.875 3
@@ -438,7 +438,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_YELLOW_5HZ</text>
     </g>
-    <g id="fb_BUTTON_RED" transform="translate(292.6, 435.0)">
+    <g id="fb_BUTTON_RED" transform="translate(272.2, 435.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -530,7 +530,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_RED</text>
     </g>
-    <g id="fb_LED_RED_5HZ" transform="translate(802.6, 450.0)">
+    <g id="fb_LED_RED_5HZ" transform="translate(782.2, 450.0)">
       <path d="M 3 0
             L 133.875 0
             A 3 3 0 0 1 136.875 3
@@ -627,7 +627,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">LED_RED_5HZ</text>
     </g>
-    <g id="fb_BUTTON_BLUE" transform="translate(292.6, 615.0)">
+    <g id="fb_BUTTON_BLUE" transform="translate(272.2, 615.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -719,7 +719,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">BUTTON_BLUE</text>
     </g>
-    <g id="fb_LED_BLUE_5HZ" transform="translate(802.6, 630.0)">
+    <g id="fb_LED_BLUE_5HZ" transform="translate(782.2, 630.0)">
       <path d="M 3 0
             L 133.875 0
             A 3 3 0 0 1 136.875 3

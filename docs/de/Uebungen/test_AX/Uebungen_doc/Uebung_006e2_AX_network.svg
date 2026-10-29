@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 625.0"
+     viewBox="13.0 -93.0 1126.0 625.0"
      width="1126" height="625">
   <style>
     @font-face {
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="625.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="611.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">RS-Flip-Flop mit 2x IXA</text>
+  <rect x="13.0" y="-93.0" width="1126.0" height="625.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="611.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">RS-Flip-Flop mit 2x IXA</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="662.7,283.5 727.3,283.5 729.7,281.1 729.7,279.9 732.1,277.5 792.7,277.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="662.7,283.5 727.3,283.5 729.7,281.1 729.7,279.9 732.1,277.5 792.7,277.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="439.3,187.5 524.3,187.5 529.3,192.5 529.3,278.5 534.3,283.5 567.7,283.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="439.3,187.5 524.3,187.5 529.3,192.5 529.3,278.5 534.3,283.5 567.7,283.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="439.3,397.5 527.3,397.5 532.3,392.5 532.3,305.5 537.3,300.5 567.7,300.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="439.3,397.5 527.3,397.5 532.3,392.5 532.3,305.5 537.3,300.5 567.7,300.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="642.7,283.5 707.3,283.5 709.7,281.1 709.7,279.9 712.1,277.5 772.7,277.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="642.7,283.5 707.3,283.5 709.7,281.1 709.7,279.9 712.1,277.5 772.7,277.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="419.3,187.5 504.3,187.5 509.3,192.5 509.3,278.5 514.3,283.5 547.7,283.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="419.3,187.5 504.3,187.5 509.3,192.5 509.3,278.5 514.3,283.5 547.7,283.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="419.3,397.5 507.3,397.5 512.3,392.5 512.3,305.5 517.3,300.5 547.7,300.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="419.3,397.5 507.3,397.5 512.3,392.5 512.3,305.5 517.3,300.5 547.7,300.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_MOTOR" transform="translate(792.7, 165.0)">
+    <g id="fb_MOTOR" transform="translate(772.7, 165.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -155,7 +155,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">MOTOR</text>
     </g>
-    <g id="fb_START" transform="translate(327.7, 75.0)">
+    <g id="fb_START" transform="translate(307.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -252,7 +252,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">START</text>
     </g>
-    <g id="fb_STOP" transform="translate(327.7, 285.0)">
+    <g id="fb_STOP" transform="translate(307.7, 285.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -349,7 +349,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">STOP</text>
     </g>
-    <g id="fb_AX_FB_RS" transform="translate(567.7, 240.0)">
+    <g id="fb_AX_FB_RS" transform="translate(547.7, 240.0)">
       <path d="M 3 0
             L 92.0 0
             A 3 3 0 0 1 95.0 3

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1778.9 608.0"
-     width="1779" height="608">
+     viewBox="-69.3 -93.0 1901.2 608.0"
+     width="1901" height="608">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1778.9" height="608.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1764.9" height="594.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1764.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1824.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Demo: Servo an Output_Q2, Winkel 0-180 Grad per Web-Slider (OPC-UA),
+  <rect x="-69.3" y="-93.0" width="1901.2" height="608.0" fill="white"/>
+  <rect x="-62.3" y="-86.0" width="1887.2" height="594.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.3" y="-86.0" width="1887.2" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.3" y1="-61.5" x2="1824.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.3" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Demo: Servo an Output_Q2, Winkel 0-180 Grad per Web-Slider (OPC-UA),
 aktueller Winkel wird als Echo zurueckpubliziert</text>
   <g id="sidebars">
   </g>

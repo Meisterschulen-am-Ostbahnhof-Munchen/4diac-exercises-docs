@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1490.6 767.0"
-     width="1491" height="767">
+     viewBox="-24.8 -93.0 1568.3 767.0"
+     width="1568" height="767">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1490.6" height="767.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1476.6" height="753.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1476.6" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1536.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket und DEMUX</text>
+  <rect x="-24.8" y="-93.0" width="1568.3" height="767.0" fill="white"/>
+  <rect x="-17.8" y="-86.0" width="1554.3" height="753.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-17.8" y="-86.0" width="1554.3" height="25.0" fill="white" stroke="none"/>
+  <line x1="-17.8" y1="-61.5" x2="1536.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-12.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket und DEMUX</text>
   <g id="sidebars">
   </g>
   <g id="connections">
@@ -321,9 +321,7 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">AX_AUI_DEMUX_3</text>
-      <polygon points="126.5625,5.5 131.5625,10.5 126.5625,15.5" fill="#63B31F"/>
-      <text x="125.5625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">CNF</text>
+
 
 
       <path d="M 0 38.5
@@ -457,9 +455,7 @@
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">AX_AUI_MUX_3</text>
-      <polygon points="111.625,5.5 116.625,10.5 111.625,15.5" fill="#63B31F"/>
-      <text x="110.625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">CNF</text>
+
 
 
       <path d="M 0 38.5

@@ -1,6 +1,6 @@
 # OPC-UA-Adressen (`myOpcUaAddresses.gcf`)
 
-Die OPC-UA-IDs für die Trainings `test_VV/sys/03_OPC_UA/Training_01` bis `_12`
+Die OPC-UA-IDs für die Trainings `test_VV/sys/03_OPC_UA/Training_01` bis `_18`
 werden in der GCF aus wenigen Grundwerten berechnet. Die Functions dafür
 ([`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/), [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/), [`F_MGR_TO_OPC`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_MGR_TO_OPC/)) stehen in der Lib `MyLib_OPC`. Der 4diac-Export wertet sie aus, im
 Bootfile stehen die fertigen Strings.

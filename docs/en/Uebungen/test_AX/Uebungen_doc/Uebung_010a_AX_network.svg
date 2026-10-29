@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 610.0"
+     viewBox="-7.8 -93.0 1126.0 610.0"
      width="1126" height="610">
   <style>
     @font-face {
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="610.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="596.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SoftKey_F1/_F2 auf DigitalOutput_Q1/_Q2</text>
+  <rect x="-7.8" y="-93.0" width="1126.0" height="610.0" fill="white"/>
+  <rect x="-0.8" y="-86.0" width="1112.0" height="596.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-0.8" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-0.8" y1="-61.5" x2="1111.2" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="4.2" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">SoftKey_F1/_F2 auf DigitalOutput_Q1/_Q2</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="446.8,367.5 606.8,367.5 611.8,372.5 611.8,377.5 616.8,382.5 785.2,382.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="446.8,367.5 606.8,367.5 611.8,372.5 611.8,377.5 616.8,382.5 785.2,382.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="446.8,187.5 606.8,187.5 611.8,192.5 611.8,197.5 616.8,202.5 785.2,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="446.8,187.5 606.8,187.5 611.8,192.5 611.8,197.5 616.8,202.5 785.2,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="416.4,367.5 576.4,367.5 581.4,372.5 581.4,377.5 586.4,382.5 754.8,382.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="416.4,367.5 576.4,367.5 581.4,372.5 581.4,377.5 586.4,382.5 754.8,382.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="416.4,187.5 576.4,187.5 581.4,192.5 581.4,197.5 586.4,202.5 754.8,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="416.4,187.5 576.4,187.5 581.4,192.5 581.4,197.5 586.4,202.5 754.8,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(785.2, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(754.8, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -153,7 +153,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_SoftKey_F1" transform="translate(335.2, 75.0)">
+    <g id="fb_SoftKey_F1" transform="translate(304.8, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -250,7 +250,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_F1</text>
     </g>
-    <g id="fb_SoftKey_F2" transform="translate(335.2, 255.0)">
+    <g id="fb_SoftKey_F2" transform="translate(304.8, 255.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -347,7 +347,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_F2</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(785.2, 270.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(754.8, 270.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

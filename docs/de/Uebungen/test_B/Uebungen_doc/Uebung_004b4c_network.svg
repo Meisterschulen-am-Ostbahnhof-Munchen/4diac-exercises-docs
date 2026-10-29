@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1190.6 807.0"
-     width="1191" height="807">
+     viewBox="-69.8 -93.0 1313.4 807.0"
+     width="1313" height="807">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,11 +40,11 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1190.6" height="807.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1176.6" height="793.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1176.6" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1236.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Drei gegenseitig verriegelte Toggle-Flip-Flops in einer Kette via AE2-Adapter</text>
+  <rect x="-69.8" y="-93.0" width="1313.4" height="807.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1299.4" height="793.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1299.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1236.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Drei gegenseitig verriegelte Toggle-Flip-Flops in einer Kette via AE2-Adapter</text>
   <g id="sidebars">
   </g>
   <g id="connections">

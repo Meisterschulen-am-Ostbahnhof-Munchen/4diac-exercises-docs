@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="15.4 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,25 +40,25 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 negiert mit INIT und Delay auf DigitalOutput_Q1</text>
+  <rect x="15.4" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="22.4" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="22.4" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="22.4" y1="-61.5" x2="1134.4" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="27.4" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">DigitalInput_I1 negiert mit INIT und Delay auf DigitalOutput_Q1</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="431.8,145.5 463.8,145.5 468.8,140.5 468.8,90.5 473.8,85.5 515.2,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="603.6,85.5 610.8,85.5 615.6,90.3 615.6,162.5 610.6,167.5 553.2,167.5 548.2,172.5 548.2,200.7 553.0,205.5 560.2,205.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="431.8,247.5 491.2,247.5 494.8,243.9 494.8,242.1 498.4,238.5 560.2,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="431.8,247.5 491.2,247.5 494.8,243.9 494.8,242.1 498.4,238.5 560.2,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="665.5,238.5 731.9,238.5 735.5,242.1 735.5,243.9 739.1,247.5 800.2,247.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="665.5,238.5 731.9,238.5 735.5,242.1 735.5,243.9 739.1,247.5 800.2,247.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="413.0,145.5 445.0,145.5 450.0,140.5 450.0,90.5 455.0,85.5 496.4,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="584.8,85.5 592.0,85.5 596.8,90.3 596.8,162.5 591.8,167.5 534.4,167.5 529.4,172.5 529.4,200.7 534.2,205.5 541.4,205.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="413.0,247.5 472.4,247.5 476.0,243.9 476.0,242.1 479.6,238.5 541.4,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="413.0,247.5 472.4,247.5 476.0,243.9 476.0,242.1 479.6,238.5 541.4,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="646.8,238.5 713.2,238.5 716.8,242.1 716.8,243.9 720.4,247.5 781.4,247.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="646.8,238.5 713.2,238.5 716.8,242.1 716.8,243.9 720.4,247.5 781.4,247.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(800.2, 135.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(781.4, 135.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -155,7 +155,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_DigitalInput_I1" transform="translate(320.2, 135.0)">
+    <g id="fb_DigitalInput_I1" transform="translate(301.4, 135.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -252,7 +252,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_I1</text>
     </g>
-    <g id="fb_AX_NOT_INIT" transform="translate(560.2, 195.0)">
+    <g id="fb_AX_NOT_INIT" transform="translate(541.4, 195.0)">
       <path d="M 3 0
             L 102.3125 0
             A 3 3 0 0 1 105.3125 3
@@ -346,7 +346,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_NOT_INIT</text>
     </g>
-    <g id="fb_E_DELAY" transform="translate(515.2, 75.0)">
+    <g id="fb_E_DELAY" transform="translate(496.4, 75.0)">
       <path d="M 3 0
             L 85.375 0
             A 3 3 0 0 1 88.375 3

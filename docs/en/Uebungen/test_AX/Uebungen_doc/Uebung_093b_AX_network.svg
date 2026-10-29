@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 835.0"
-     width="1126" height="835">
+     viewBox="-69.8 -93.0 1193.4 835.0"
+     width="1193" height="835">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,32 +40,32 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="835.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="821.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Beispiel für E_N_TABLE</text>
+  <rect x="-69.8" y="-93.0" width="1193.4" height="835.0" fill="white"/>
+  <rect x="-62.8" y="-86.0" width="1179.4" height="821.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-62.8" y="-86.0" width="1179.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-62.8" y1="-61.5" x2="1116.6" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-57.8" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Beispiel für E_N_TABLE</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="207.8,119.5 311.2,119.5 312.8,117.9 312.8,117.1 314.4,115.5 417.7,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="518.3,115.5 867.7,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="518.3,132.5 685.3,132.5 690.3,137.5 690.3,245.5 695.3,250.5 867.7,250.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="518.3,149.5 670.3,149.5 675.3,154.5 675.3,380.5 680.3,385.5 867.7,385.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="518.3,166.5 647.3,166.5 652.3,171.5 652.3,515.5 657.3,520.5 867.7,520.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="954.1,148.5 989.1,148.5 994.1,153.5 994.1,197.5 999.1,202.5 1032.7,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="954.1,148.5 989.1,148.5 994.1,153.5 994.1,197.5 999.1,202.5 1032.7,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="954.1,553.5 989.1,553.5 994.1,558.5 994.1,602.5 999.1,607.5 1032.7,607.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="954.1,553.5 989.1,553.5 994.1,558.5 994.1,602.5 999.1,607.5 1032.7,607.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="954.1,283.5 989.1,283.5 994.1,288.5 994.1,332.5 999.1,337.5 1032.7,337.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="954.1,283.5 989.1,283.5 994.1,288.5 994.1,332.5 999.1,337.5 1032.7,337.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="954.1,418.5 989.1,418.5 994.1,423.5 994.1,467.5 999.1,472.5 1032.7,472.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="954.1,418.5 989.1,418.5 994.1,423.5 994.1,467.5 999.1,472.5 1032.7,472.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="180.1,119.5 283.5,119.5 285.1,117.9 285.1,117.1 286.7,115.5 390.0,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="490.6,115.5 840.0,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="490.6,132.5 657.6,132.5 662.6,137.5 662.6,245.5 667.6,250.5 840.0,250.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="490.6,149.5 642.6,149.5 647.6,154.5 647.6,380.5 652.6,385.5 840.0,385.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="490.6,166.5 619.6,166.5 624.6,171.5 624.6,515.5 629.6,520.5 840.0,520.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="926.4,148.5 961.4,148.5 966.4,153.5 966.4,197.5 971.4,202.5 1005.0,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="926.4,148.5 961.4,148.5 966.4,153.5 966.4,197.5 971.4,202.5 1005.0,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="926.4,553.5 961.4,553.5 966.4,558.5 966.4,602.5 971.4,607.5 1005.0,607.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="926.4,553.5 961.4,553.5 966.4,558.5 966.4,602.5 971.4,607.5 1005.0,607.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="926.4,283.5 961.4,283.5 966.4,288.5 966.4,332.5 971.4,337.5 1005.0,337.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="926.4,283.5 961.4,283.5 966.4,288.5 966.4,332.5 971.4,337.5 1005.0,337.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="926.4,418.5 961.4,418.5 966.4,423.5 966.4,467.5 971.4,472.5 1005.0,472.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="926.4,418.5 961.4,418.5 966.4,423.5 966.4,467.5 971.4,472.5 1005.0,472.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_E_N_TABLE" transform="translate(417.7, 105.0)">
+    <g id="fb_E_N_TABLE" transform="translate(390.0, 105.0)">
       <path d="M 3 0
             L 97.625 0
             A 3 3 0 0 1 100.625 3
@@ -148,7 +148,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_N_TABLE</text>
     </g>
-    <g id="fb_DigitalInput_CLK_I1" transform="translate(87.7, 75.0)">
+    <g id="fb_DigitalInput_CLK_I1" transform="translate(60.0, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -241,7 +241,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK_I1</text>
     </g>
-    <g id="fb_E_T_FF_Q2" transform="translate(867.7, 240.0)">
+    <g id="fb_E_T_FF_Q2" transform="translate(840.0, 240.0)">
       <path d="M 3 0
             L 83.375 0
             A 3 3 0 0 1 86.375 3
@@ -317,7 +317,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF_Q2</text>
     </g>
-    <g id="fb_E_T_FF_Q4" transform="translate(867.7, 510.0)">
+    <g id="fb_E_T_FF_Q4" transform="translate(840.0, 510.0)">
       <path d="M 3 0
             L 83.375 0
             A 3 3 0 0 1 86.375 3
@@ -393,7 +393,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF_Q4</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(1032.7, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(1005.0, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -490,7 +490,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_E_T_FF_Q3" transform="translate(867.7, 375.0)">
+    <g id="fb_E_T_FF_Q3" transform="translate(840.0, 375.0)">
       <path d="M 3 0
             L 83.375 0
             A 3 3 0 0 1 86.375 3
@@ -566,7 +566,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF_Q3</text>
     </g>
-    <g id="fb_DigitalOutput_Q3" transform="translate(1032.7, 360.0)">
+    <g id="fb_DigitalOutput_Q3" transform="translate(1005.0, 360.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -663,7 +663,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q3</text>
     </g>
-    <g id="fb_E_T_FF_Q1" transform="translate(867.7, 105.0)">
+    <g id="fb_E_T_FF_Q1" transform="translate(840.0, 105.0)">
       <path d="M 3 0
             L 83.375 0
             A 3 3 0 0 1 86.375 3
@@ -739,7 +739,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">E_T_FF_Q1</text>
     </g>
-    <g id="fb_DigitalOutput_Q2" transform="translate(1032.7, 225.0)">
+    <g id="fb_DigitalOutput_Q2" transform="translate(1005.0, 225.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -836,7 +836,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q2</text>
     </g>
-    <g id="fb_DigitalOutput_Q4" transform="translate(1032.7, 495.0)">
+    <g id="fb_DigitalOutput_Q4" transform="translate(1005.0, 495.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

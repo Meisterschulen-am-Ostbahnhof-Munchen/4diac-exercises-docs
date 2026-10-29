@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-26.9 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,22 +40,22 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Analog-Eingang</text>
+  <rect x="-26.9" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-19.9" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-19.9" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-19.9" y1="-61.5" x2="1092.1" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-14.9" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Analog-Eingang</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="514.7,102.5 565.7,102.5 570.7,107.5 570.7,125.5 575.7,130.5 707.3,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="514.7,119.5 566.3,119.5 570.7,123.9 570.7,126.1 575.1,130.5 707.3,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="514.7,187.5 610.7,187.5 615.7,182.5 615.7,169.5 620.7,164.5 707.3,164.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="474.8,102.5 525.8,102.5 530.8,107.5 530.8,125.5 535.8,130.5 667.4,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="474.8,119.5 526.4,119.5 530.8,123.9 530.8,126.1 535.2,130.5 667.4,130.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="474.8,187.5 570.8,187.5 575.8,182.5 575.8,169.5 580.8,164.5 667.4,164.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DataPanel_MI_IW_0_10V" transform="translate(377.3, 75.0)">
+    <g id="fb_DataPanel_MI_IW_0_10V" transform="translate(337.4, 75.0)">
       <path d="M 3 0
             L 134.375 0
             A 3 3 0 0 1 137.375 3
@@ -155,7 +155,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DataPanel_MI_IW_0_10V</text>
     </g>
-    <g id="fb_F_DWORD_TO_UDINT_I8" transform="translate(707.3, 120.0)">
+    <g id="fb_F_DWORD_TO_UDINT_I8" transform="translate(667.4, 120.0)">
       <path d="M 3 0
             L 144.3125 0
             A 3 3 0 0 1 147.3125 3

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-26.1 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,23 +40,23 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Container (visible/invisible)</text>
+  <rect x="-26.1" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-19.1" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-19.1" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-19.1" y1="-61.5" x2="1092.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-14.1" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Container (visible/invisible)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="402.4,119.5 461.8,119.5 463.4,117.9 463.4,117.1 465.0,115.5 537.2,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="402.4,269.5 468.4,269.5 473.4,264.5 473.4,137.5 478.4,132.5 537.2,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="612.9,165.5 708.9,165.5 708.9,166.5 807.2,166.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="612.9,165.5 708.9,165.5 708.9,166.5 807.2,166.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="362.8,119.5 422.2,119.5 423.8,117.9 423.8,117.1 425.4,115.5 497.7,115.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="362.8,269.5 428.8,269.5 433.8,264.5 433.8,137.5 438.8,132.5 497.7,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="573.4,165.5 664.4,165.5 669.4,170.5 669.4,178.5 674.4,183.5 767.7,183.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="573.4,165.5 664.4,165.5 669.4,170.5 669.4,178.5 674.4,183.5 767.7,183.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_SoftKey_UP_F1" transform="translate(282.2, 75.0)">
+    <g id="fb_SoftKey_UP_F1" transform="translate(242.7, 75.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -149,7 +149,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_UP_F1</text>
     </g>
-    <g id="fb_SoftKey_UP_F2" transform="translate(282.2, 225.0)">
+    <g id="fb_SoftKey_UP_F2" transform="translate(242.7, 225.0)">
       <path d="M 3 0
             L 117.125 0
             A 3 3 0 0 1 120.125 3
@@ -242,7 +242,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">SoftKey_UP_F2</text>
     </g>
-    <g id="fb_AX_SR" transform="translate(537.2, 105.0)">
+    <g id="fb_AX_SR" transform="translate(497.7, 105.0)">
       <path d="M 3 0
             L 72.6875 0
             A 3 3 0 0 1 75.6875 3
@@ -321,7 +321,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">AX_SR</text>
     </g>
-    <g id="fb_Q_ObjHideShow" transform="translate(807.2, 105.0)">
+    <g id="fb_Q_ObjHideShow" transform="translate(767.7, 105.0)">
       <path d="M 3 0
             L 139.5 0
             A 3 3 0 0 1 142.5 3
@@ -331,10 +331,10 @@
             L 133.5 35
             L 139.5 35
             A 3 3 0 0 1 142.5 38
-            L 142.5 69
-            A 3 3 0 0 1 139.5 72
-            L 3 72
-            A 3 3 0 0 1 0 69
+            L 142.5 86
+            A 3 3 0 0 1 139.5 89
+            L 3 89
+            A 3 3 0 0 1 0 86
             L 0 38
             A 3 3 0 0 1 3 35
             L 9 35
@@ -378,39 +378,45 @@
       <polygon points="137.5,5.5 142.5,10.5 137.5,15.5" fill="#63B31F"/>
       <text x="136.5" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">INITO</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">QI</text>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">u16ObjId</text>
-      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_B</text>
-      <path d="M 0 56.5
-            L 5.0 56.5
-            L 5.0 58.166666666666664
-            L 7.5 58.166666666666664
-            L 7.5 56.5
-            L 10 56.5
-            L 10 66.5
-            L 7.5 66.5
-            L 7.5 64.83333333333333
-            L 5.0 64.83333333333333
-            L 5.0 66.5
-            L 0 66.5
+      <polygon points="137.5,39.5 142.5,44.5 137.5,49.5" fill="#A3B08F"/>
+      <text x="136.5" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_B</text>
+      <path d="M 0 73.5
+            L 5.0 73.5
+            L 5.0 75.16666666666667
+            L 7.5 75.16666666666667
+            L 7.5 73.5
+            L 10 73.5
+            L 10 83.5
+            L 7.5 83.5
+            L 7.5 81.83333333333333
+            L 5.0 81.83333333333333
+            L 5.0 83.5
+            L 0 83.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">qVisible</text>
-      <path d="M 132.5 56.5
-            L 135.0 56.5
-            L 135.0 58.166666666666664
-            L 137.5 58.166666666666664
-            L 137.5 56.5
-            L 142.5 56.5
-            L 142.5 66.5
-            L 137.5 66.5
-            L 137.5 64.83333333333333
-            L 135.0 64.83333333333333
-            L 135.0 66.5
-            L 132.5 66.5
+      <path d="M 132.5 73.5
+            L 135.0 73.5
+            L 135.0 75.16666666666667
+            L 137.5 75.16666666666667
+            L 137.5 73.5
+            L 142.5 73.5
+            L 142.5 83.5
+            L 137.5 83.5
+            L 137.5 81.83333333333333
+            L 135.0 81.83333333333333
+            L 135.0 83.5
+            L 132.5 83.5
             Z" fill="#845DAF"/>
-      <text x="129.5" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="129.5" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">qOldVisible</text>
       <!-- Instance Name -->
       <text x="71.25" y="-5"

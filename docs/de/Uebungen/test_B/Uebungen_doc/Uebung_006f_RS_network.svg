@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 715.0"
+     viewBox="13.0 -93.0 1126.0 715.0"
      width="1126" height="715">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="715.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop)</text>
+  <rect x="13.0" y="-93.0" width="1126.0" height="715.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="701.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="259.3,119.5 284.3,119.5 289.3,124.5 289.3,230.5 294.3,235.5 597.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="259.3,269.5 284.3,269.5 289.3,264.5 289.3,240.5 294.3,235.5 597.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="259.3,419.5 284.3,419.5 289.3,414.5 289.3,240.5 294.3,235.5 597.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="703.2,235.5 728.2,235.5 733.2,240.5 733.2,247.5 738.2,252.5 972.7,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="259.3,187.5 344.3,187.5 349.3,192.5 349.3,264.5 354.3,269.5 597.7,269.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="259.3,337.5 336.3,337.5 341.3,332.5 341.3,291.5 346.3,286.5 597.7,286.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="259.3,487.5 379.3,487.5 384.3,482.5 384.3,308.5 389.3,303.5 597.7,303.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="703.2,269.5 728.2,269.5 733.2,274.5 733.2,315.5 738.2,320.5 972.7,320.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,119.5 264.3,119.5 269.3,124.5 269.3,230.5 274.3,235.5 577.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,269.5 264.3,269.5 269.3,264.5 269.3,240.5 274.3,235.5 577.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,419.5 264.3,419.5 269.3,414.5 269.3,240.5 274.3,235.5 577.7,235.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="683.2,235.5 708.2,235.5 713.2,240.5 713.2,247.5 718.2,252.5 952.7,252.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,187.5 324.3,187.5 329.3,192.5 329.3,264.5 334.3,269.5 577.7,269.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,337.5 316.3,337.5 321.3,332.5 321.3,291.5 326.3,286.5 577.7,286.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="239.3,487.5 359.3,487.5 364.3,482.5 364.3,308.5 369.3,303.5 577.7,303.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="683.2,269.5 708.2,269.5 713.2,274.5 713.2,315.5 718.2,320.5 952.7,320.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_S" transform="translate(147.7, 75.0)">
+    <g id="fb_DigitalInput_S" transform="translate(127.7, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -152,7 +152,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_S</text>
     </g>
-    <g id="fb_DigitalInput_R" transform="translate(147.7, 225.0)">
+    <g id="fb_DigitalInput_R" transform="translate(127.7, 225.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -244,7 +244,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_R</text>
     </g>
-    <g id="fb_DigitalInput_CLK" transform="translate(147.7, 375.0)">
+    <g id="fb_DigitalInput_CLK" transform="translate(127.7, 375.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -336,7 +336,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK</text>
     </g>
-    <g id="fb_RS_T_FF" transform="translate(597.7, 225.0)">
+    <g id="fb_RS_T_FF" transform="translate(577.7, 225.0)">
       <path d="M 3 0
             L 102.5 0
             A 3 3 0 0 1 105.5 3
@@ -412,7 +412,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">RS_T_FF</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(972.7, 225.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(952.7, 225.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

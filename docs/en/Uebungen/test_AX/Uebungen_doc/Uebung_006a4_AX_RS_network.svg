@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 685.0"
+     viewBox="13.0 -93.0 1126.0 685.0"
      width="1126" height="685">
   <style>
     @font-face {
@@ -40,27 +40,27 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="685.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="671.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)</text>
+  <rect x="13.0" y="-93.0" width="1126.0" height="685.0" fill="white"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="671.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="20.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="20.0" y1="-61.5" x2="1132.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="25.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="251.8,187.5 276.8,187.5 281.8,192.5 281.8,248.5 286.8,253.5 590.2,253.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="251.8,187.5 276.8,187.5 281.8,192.5 281.8,248.5 286.8,253.5 590.2,253.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="251.8,322.5 276.8,322.5 281.8,317.5 281.8,275.5 286.8,270.5 590.2,270.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="251.8,322.5 276.8,322.5 281.8,317.5 281.8,275.5 286.8,270.5 590.2,270.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="251.8,457.5 312.8,457.5 317.8,452.5 317.8,292.5 322.8,287.5 590.2,287.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="251.8,457.5 312.8,457.5 317.8,452.5 317.8,292.5 322.8,287.5 590.2,287.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="714.7,253.5 739.7,253.5 744.7,248.5 744.7,237.5 749.7,232.5 980.2,232.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="714.7,253.5 739.7,253.5 744.7,248.5 744.7,237.5 749.7,232.5 980.2,232.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="231.8,187.5 256.8,187.5 261.8,192.5 261.8,248.5 266.8,253.5 570.2,253.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="231.8,187.5 256.8,187.5 261.8,192.5 261.8,248.5 266.8,253.5 570.2,253.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="231.8,322.5 256.8,322.5 261.8,317.5 261.8,275.5 266.8,270.5 570.2,270.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="231.8,322.5 256.8,322.5 261.8,317.5 261.8,275.5 266.8,270.5 570.2,270.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="231.8,457.5 292.8,457.5 297.8,452.5 297.8,292.5 302.8,287.5 570.2,287.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="231.8,457.5 292.8,457.5 297.8,452.5 297.8,292.5 302.8,287.5 570.2,287.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="694.7,253.5 719.7,253.5 724.7,248.5 724.7,237.5 729.7,232.5 960.2,232.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="694.7,253.5 719.7,253.5 724.7,248.5 724.7,237.5 729.7,232.5 960.2,232.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalInput_SET" transform="translate(140.2, 75.0)">
+    <g id="fb_DigitalInput_SET" transform="translate(120.2, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -157,7 +157,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_SET</text>
     </g>
-    <g id="fb_DigitalInput_RESET" transform="translate(140.2, 210.0)">
+    <g id="fb_DigitalInput_RESET" transform="translate(120.2, 210.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -254,7 +254,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_RESET</text>
     </g>
-    <g id="fb_DigitalInput_CLK" transform="translate(140.2, 345.0)">
+    <g id="fb_DigitalInput_CLK" transform="translate(120.2, 345.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -351,7 +351,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalInput_CLK</text>
     </g>
-    <g id="fb_RS_T_FF" transform="translate(590.2, 210.0)">
+    <g id="fb_RS_T_FF" transform="translate(570.2, 210.0)">
       <path d="M 3 0
             L 121.5 0
             A 3 3 0 0 1 124.5 3
@@ -470,7 +470,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">RS_T_FF</text>
     </g>
-    <g id="fb_DigitalOutput_Q1" transform="translate(980.2, 120.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(960.2, 120.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

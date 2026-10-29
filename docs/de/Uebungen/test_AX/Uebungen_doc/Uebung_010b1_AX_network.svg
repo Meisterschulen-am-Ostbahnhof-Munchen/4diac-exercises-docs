@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1126.0 588.0"
+     viewBox="-33.2 -93.0 1126.0 588.0"
      width="1126" height="588">
   <style>
     @font-face {
@@ -40,21 +40,21 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1126.0" height="588.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1172.0" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AuxFunction2_X1 auf DigitalOutput_Q1</text>
+  <rect x="-33.2" y="-93.0" width="1126.0" height="588.0" fill="white"/>
+  <rect x="-26.2" y="-86.0" width="1112.0" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-26.2" y="-86.0" width="1112.0" height="25.0" fill="white" stroke="none"/>
+  <line x1="-26.2" y1="-61.5" x2="1085.8" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-21.2" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">AuxFunction2_X1 auf DigitalOutput_Q1</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="439.3,187.5 611.0,187.5 616.0,192.5 616.0,197.5 621.0,202.5 792.7,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="439.3,187.5 611.0,187.5 616.0,192.5 616.0,197.5 621.0,202.5 792.7,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="396.2,187.5 567.9,187.5 572.9,192.5 572.9,197.5 577.9,202.5 749.6,202.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="396.2,187.5 567.9,187.5 572.9,192.5 572.9,197.5 577.9,202.5 749.6,202.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_DigitalOutput_Q1" transform="translate(792.7, 90.0)">
+    <g id="fb_DigitalOutput_Q1" transform="translate(749.6, 90.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3
@@ -151,7 +151,7 @@
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DigitalOutput_Q1</text>
     </g>
-    <g id="fb_AuxFunction2_X1" transform="translate(327.7, 75.0)">
+    <g id="fb_AuxFunction2_X1" transform="translate(284.6, 75.0)">
       <path d="M 3 0
             L 108.5625 0
             A 3 3 0 0 1 111.5625 3

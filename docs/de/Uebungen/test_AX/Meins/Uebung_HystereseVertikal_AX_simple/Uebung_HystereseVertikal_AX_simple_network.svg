@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="53.0 -93.0 1260.9 1124.0"
-     width="1261" height="1124">
+     viewBox="-98.0 -93.0 1396.9 1186.0"
+     width="1397" height="1186">
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
@@ -40,37 +40,37 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="53.0" y="-93.0" width="1260.9" height="1124.0" fill="white"/>
-  <rect x="60.0" y="-86.0" width="1246.9" height="1110.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
-  <rect x="60.0" y="-86.0" width="1246.9" height="25.0" fill="white" stroke="none"/>
-  <line x1="60.0" y1="-61.5" x2="1306.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
-  <text x="65.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">MID/DEAD/HYSTERESIS-Eingabefelder bewegen live die 5 Schwellwert-Dreiecke im
+  <rect x="-98.0" y="-93.0" width="1396.9" height="1186.0" fill="white"/>
+  <rect x="-91.0" y="-86.0" width="1382.9" height="1172.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-91.0" y="-86.0" width="1382.9" height="25.0" fill="white" stroke="none"/>
+  <line x1="-91.0" y1="-61.5" x2="1291.9" y2="-61.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-86.0" y="-69.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">MID/DEAD/HYSTERESIS-Eingabefelder bewegen live die 5 Schwellwert-Dreiecke im
 vertikalen Bargraph (Type=1 BottomToTop, Pixelposition gespiegelt: hoher Wert =
 kleiner Top)</text>
   <g id="sidebars">
   </g>
   <g id="connections">
-    <polyline points="200.8,262.5 539.7,262.5 544.7,267.5 544.7,398.5 549.7,403.5 585.0,403.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="200.8,262.5 539.7,262.5 544.7,267.5 544.7,398.5 549.7,403.5 585.0,403.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="200.8,412.5 360.6,412.5 363.8,415.7 363.8,417.3 367.0,420.5 585.0,420.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="200.8,412.5 360.6,412.5 363.8,415.7 363.8,417.3 367.0,420.5 585.0,420.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="200.8,547.5 539.7,547.5 544.7,542.5 544.7,442.5 549.7,437.5 585.0,437.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="200.8,547.5 539.7,547.5 544.7,542.5 544.7,442.5 549.7,437.5 585.0,437.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="730.6,437.5 800.6,437.5 805.6,442.5 805.6,561.5 810.6,566.5 1125.0,566.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="730.6,437.5 800.6,437.5 805.6,442.5 805.6,561.5 810.6,566.5 1125.0,566.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="730.6,454.5 772.6,454.5 777.6,459.5 777.6,726.5 782.6,731.5 1125.0,731.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="730.6,454.5 772.6,454.5 777.6,459.5 777.6,726.5 782.6,731.5 1125.0,731.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="730.6,420.5 800.6,420.5 805.6,415.5 805.6,391.5 810.6,386.5 1140.0,386.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="730.6,420.5 800.6,420.5 805.6,415.5 805.6,391.5 810.6,386.5 1140.0,386.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="730.6,471.5 755.6,471.5 760.6,476.5 760.6,891.5 765.6,896.5 1125.0,896.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="730.6,471.5 755.6,471.5 760.6,476.5 760.6,891.5 765.6,896.5 1125.0,896.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="730.6,403.5 755.6,403.5 760.6,398.5 760.6,226.5 765.6,221.5 1140.0,221.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="730.6,403.5 755.6,403.5 760.6,398.5 760.6,226.5 765.6,221.5 1140.0,221.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="200.8,247.5 539.7,247.5 544.7,252.5 544.7,383.5 549.7,388.5 585.0,388.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="200.8,247.5 539.7,247.5 544.7,252.5 544.7,383.5 549.7,388.5 585.0,388.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="200.8,397.5 360.6,397.5 363.8,400.7 363.8,402.3 367.0,405.5 585.0,405.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="200.8,397.5 360.6,397.5 363.8,400.7 363.8,402.3 367.0,405.5 585.0,405.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="200.8,532.5 539.7,532.5 544.7,527.5 544.7,427.5 549.7,422.5 585.0,422.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="200.8,532.5 539.7,532.5 544.7,527.5 544.7,427.5 549.7,422.5 585.0,422.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="730.6,422.5 800.6,422.5 805.6,427.5 805.6,593.5 810.6,598.5 1125.0,598.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="730.6,422.5 800.6,422.5 805.6,427.5 805.6,593.5 810.6,598.5 1125.0,598.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="730.6,439.5 772.6,439.5 777.6,444.5 777.6,773.5 782.6,778.5 1125.0,778.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="730.6,439.5 772.6,439.5 777.6,444.5 777.6,773.5 782.6,778.5 1125.0,778.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="730.6,405.5 800.6,405.5 805.6,410.5 805.6,413.5 810.6,418.5 1125.0,418.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="730.6,405.5 800.6,405.5 805.6,410.5 805.6,413.5 810.6,418.5 1125.0,418.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="730.6,456.5 755.6,456.5 760.6,461.5 760.6,953.5 765.6,958.5 1125.0,958.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="730.6,456.5 755.6,456.5 760.6,461.5 760.6,953.5 765.6,958.5 1125.0,958.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="730.6,388.5 755.6,388.5 760.6,383.5 760.6,243.5 765.6,238.5 1125.0,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="730.6,388.5 755.6,388.5 760.6,383.5 760.6,243.5 765.6,238.5 1125.0,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
   <g id="instances">
-    <g id="fb_MID_N" transform="translate(60.0, 150.0)">
+    <g id="fb_MID_N" transform="translate(60.0, 135.0)">
       <path d="M 3 0
             L 137.75 0
             A 3 3 0 0 1 140.75 3
@@ -167,7 +167,7 @@ kleiner Top)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">MID_N</text>
     </g>
-    <g id="fb_DEAD_N" transform="translate(60.0, 300.0)">
+    <g id="fb_DEAD_N" transform="translate(60.0, 285.0)">
       <path d="M 3 0
             L 137.75 0
             A 3 3 0 0 1 140.75 3
@@ -264,7 +264,7 @@ kleiner Top)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">DEAD_N</text>
     </g>
-    <g id="fb_HYST_N" transform="translate(60.0, 435.0)">
+    <g id="fb_HYST_N" transform="translate(60.0, 420.0)">
       <path d="M 3 0
             L 137.75 0
             A 3 3 0 0 1 140.75 3
@@ -361,7 +361,7 @@ kleiner Top)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">HYST_N</text>
     </g>
-    <g id="fb_Thresholds" transform="translate(585.0, 360.0)">
+    <g id="fb_Thresholds" transform="translate(585.0, 345.0)">
       <path d="M 3 0
             L 142.625 0
             A 3 3 0 0 1 145.625 3
@@ -588,7 +588,7 @@ kleiner Top)</text>
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">Thresholds</text>
     </g>
-    <g id="fb_QPos_MID" transform="translate(1125.0, 420.0)">
+    <g id="fb_QPos_MID" transform="translate(1125.0, 435.0)">
       <path d="M 3 0
             L 163.875 0
             A 3 3 0 0 1 166.875 3
@@ -598,10 +598,10 @@ kleiner Top)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -651,59 +651,65 @@ kleiner Top)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">xScale</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#DBB418"/>
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ScalePx</text>
+            fill="#000000">xScale</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#DBB418"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ScalePx</text>
+      <polygon points="0,141.5 5,146.5 0,151.5" fill="#DBB418"/>
+      <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">LengthPx</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
-      <path d="M 0 141.5
-            L 5.0 141.5
-            L 5.0 143.16666666666666
-            L 7.5 143.16666666666666
-            L 7.5 141.5
-            L 10 141.5
-            L 10 151.5
-            L 7.5 151.5
-            L 7.5 149.83333333333334
-            L 5.0 149.83333333333334
-            L 5.0 151.5
-            L 0 151.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">QPos_MID</text>
     </g>
-    <g id="fb_QPos_MID_PLUS_DEAD" transform="translate(1125.0, 585.0)">
+    <g id="fb_QPos_MID_PLUS_DEAD" transform="translate(1125.0, 615.0)">
       <path d="M 3 0
             L 163.875 0
             A 3 3 0 0 1 166.875 3
@@ -713,10 +719,10 @@ kleiner Top)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -766,59 +772,65 @@ kleiner Top)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">xScale</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#DBB418"/>
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ScalePx</text>
+            fill="#000000">xScale</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#DBB418"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ScalePx</text>
+      <polygon points="0,141.5 5,146.5 0,151.5" fill="#DBB418"/>
+      <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">LengthPx</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_PLUS_DEAD</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
-      <path d="M 0 141.5
-            L 5.0 141.5
-            L 5.0 143.16666666666666
-            L 7.5 143.16666666666666
-            L 7.5 141.5
-            L 10 141.5
-            L 10 151.5
-            L 7.5 151.5
-            L 7.5 149.83333333333334
-            L 5.0 149.83333333333334
-            L 5.0 151.5
-            L 0 151.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_PLUS_DEAD</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">QPos_MID_PLUS_DEAD</text>
     </g>
-    <g id="fb_QPos_MID_MINUS_DEAD" transform="translate(1140.0, 240.0)">
+    <g id="fb_QPos_MID_MINUS_DEAD" transform="translate(1125.0, 255.0)">
       <path d="M 3 0
             L 163.875 0
             A 3 3 0 0 1 166.875 3
@@ -828,10 +840,10 @@ kleiner Top)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -881,59 +893,65 @@ kleiner Top)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">xScale</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#DBB418"/>
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ScalePx</text>
+            fill="#000000">xScale</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#DBB418"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ScalePx</text>
+      <polygon points="0,141.5 5,146.5 0,151.5" fill="#DBB418"/>
+      <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">LengthPx</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_MINUS_DEAD</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
-      <path d="M 0 141.5
-            L 5.0 141.5
-            L 5.0 143.16666666666666
-            L 7.5 143.16666666666666
-            L 7.5 141.5
-            L 10 141.5
-            L 10 151.5
-            L 7.5 151.5
-            L 7.5 149.83333333333334
-            L 5.0 149.83333333333334
-            L 5.0 151.5
-            L 0 151.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_MINUS_DEAD</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">QPos_MID_MINUS_DEAD</text>
     </g>
-    <g id="fb_QPos_MID_PLUS_DEAD_HYST" transform="translate(1125.0, 750.0)">
+    <g id="fb_QPos_MID_PLUS_DEAD_HYST" transform="translate(1125.0, 795.0)">
       <path d="M 3 0
             L 163.875 0
             A 3 3 0 0 1 166.875 3
@@ -943,10 +961,10 @@ kleiner Top)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -996,59 +1014,65 @@ kleiner Top)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">xScale</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#DBB418"/>
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ScalePx</text>
+            fill="#000000">xScale</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#DBB418"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ScalePx</text>
+      <polygon points="0,141.5 5,146.5 0,151.5" fill="#DBB418"/>
+      <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">LengthPx</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_PLUS_DEAD_HYS…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
-      <path d="M 0 141.5
-            L 5.0 141.5
-            L 5.0 143.16666666666666
-            L 7.5 143.16666666666666
-            L 7.5 141.5
-            L 10 141.5
-            L 10 151.5
-            L 7.5 151.5
-            L 7.5 149.83333333333334
-            L 5.0 149.83333333333334
-            L 5.0 151.5
-            L 0 151.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_PLUS_DEAD_HYS…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="middle">QPos_MID_PLUS_DEAD_HYST</text>
     </g>
-    <g id="fb_QPos_MID_MINUS_DEAD_HYST" transform="translate(1140.0, 75.0)">
+    <g id="fb_QPos_MID_MINUS_DEAD_HYST" transform="translate(1125.0, 75.0)">
       <path d="M 3 0
             L 163.875 0
             A 3 3 0 0 1 166.875 3
@@ -1058,10 +1082,10 @@ kleiner Top)</text>
             L 157.875 52
             L 163.875 52
             A 3 3 0 0 1 166.875 55
-            L 166.875 154
-            A 3 3 0 0 1 163.875 157
-            L 3 157
-            A 3 3 0 0 1 0 154
+            L 166.875 171
+            A 3 3 0 0 1 163.875 174
+            L 3 174
+            A 3 3 0 0 1 0 171
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -1111,52 +1135,58 @@ kleiner Top)</text>
       <polygon points="161.875,22.5 166.875,27.5 161.875,32.5" fill="#63B31F"/>
       <text x="160.875" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#18519E"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#A3B08F"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjId</text>
+            fill="#000000">QI</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#18519E"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">u16ObjIdPare…</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#A3B08F"/>
+            fill="#000000">u16ObjId</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">xScale</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#DBB418"/>
+            fill="#000000">u16ObjIdPare…</text>
+      <polygon points="0,107.5 5,112.5 0,117.5" fill="#A3B08F"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">ScalePx</text>
+            fill="#000000">xScale</text>
       <polygon points="0,124.5 5,129.5 0,134.5" fill="#DBB418"/>
       <text x="6" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">ScalePx</text>
+      <polygon points="0,141.5 5,146.5 0,151.5" fill="#DBB418"/>
+      <text x="6" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">LengthPx</text>
-      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#BD8663"/>
+      <polygon points="161.875,56.5 166.875,61.5 161.875,66.5" fill="#A3B08F"/>
       <text x="160.875" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">STATUS</text>
-      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#18519E"/>
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="161.875,73.5 166.875,78.5 161.875,83.5" fill="#BD8663"/>
       <text x="160.875" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldXposit…</text>
+            fill="#000000" text-anchor="end">STATUS</text>
       <polygon points="161.875,90.5 166.875,95.5 161.875,100.5" fill="#18519E"/>
       <text x="160.875" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">s16OldYposit…</text>
+            fill="#000000" text-anchor="end">s16OldXposit…</text>
       <polygon points="161.875,107.5 166.875,112.5 161.875,117.5" fill="#18519E"/>
       <text x="160.875" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">s16OldYposit…</text>
+      <polygon points="161.875,124.5 166.875,129.5 161.875,134.5" fill="#18519E"/>
+      <text x="160.875" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">s16result</text>
-      <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_MINUS_DEAD_HY…</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
-      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
-      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
-      <path d="M 0 141.5
-            L 5.0 141.5
-            L 5.0 143.16666666666666
-            L 7.5 143.16666666666666
-            L 7.5 141.5
-            L 10 141.5
-            L 10 151.5
-            L 7.5 151.5
-            L 7.5 149.83333333333334
-            L 5.0 149.83333333333334
-            L 5.0 151.5
-            L 0 151.5
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Polygon_MID_MINUS_DEAD_HY…</text>
+      <text x="-3" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Container_Schwellwerte</text>
+      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
+      <text x="-3" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_ScaleP…</text>
+      <text x="-3" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Bargraph_Hysterese_Length…</text>
+      <path d="M 0 158.5
+            L 5.0 158.5
+            L 5.0 160.16666666666666
+            L 7.5 160.16666666666666
+            L 7.5 158.5
+            L 10 158.5
+            L 10 168.5
+            L 7.5 168.5
+            L 7.5 166.83333333333334
+            L 5.0 166.83333333333334
+            L 5.0 168.5
+            L 0 168.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="150.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="167.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">rPhys</text>
       <!-- Instance Name -->
       <text x="83.4375" y="-5"
