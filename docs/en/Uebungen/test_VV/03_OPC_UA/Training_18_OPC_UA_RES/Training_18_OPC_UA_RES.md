@@ -56,7 +56,7 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 
 - **The ID is the command**: with `PUBLISH_0` the constants contain the complete action in the format `opc_ua[ACTION;...;path]` (`CREATE_OBJECT`, `CREATE_VARIABLE`, `DELETE_VARIABLE`, `DELETE_OBJECT`) and are used directly as `ID`; they are not computed with `F_OPC_LOCAL`/`F_OPC_REMOTE` (see [OPC-UA addresses](../OPC_UA_Adressen.md)). The paths contain the namespace index `1:`.
 - **No data connection on B**: `PUBLISH_0` transfers no data; each button only triggers its `REQ`.
-- **Reading on A**: the node of the variable (`T18_VAR_NODE`) is addressed with `F_OPC_REMOTE` (`READ`, B's endpoint). The value read is converted with `F_DINT_TO_INT`.
+- **Reading on A**: the node of the variable (`T18_VAR_CLIENT_READ`) is addressed with `F_OPC_REMOTE` (`READ`, B's endpoint). The value read is converted with `F_DINT_TO_INT`.
 - **SubApp comment of A**: the comment of `SubApp_PC_A` is the same as that of `SubApp_PC_B` (I1 … I4 for creating/deleting); in the SubApp of A only reading via `Input_I1` is wired.
 
 ## Note

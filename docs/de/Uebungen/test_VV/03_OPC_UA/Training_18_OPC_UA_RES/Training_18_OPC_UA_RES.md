@@ -56,7 +56,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 
 - **Die ID ist der Befehl**: bei `PUBLISH_0` enthalten die Konstanten die komplette Aktion im Format `opc_ua[AKTION;...;Pfad]` (`CREATE_OBJECT`, `CREATE_VARIABLE`, `DELETE_VARIABLE`, `DELETE_OBJECT`) und werden direkt als `ID` verwendet; sie werden nicht mit `F_OPC_LOCAL`/`F_OPC_REMOTE` berechnet (siehe [OPC-UA-Adressen](../OPC_UA_Adressen.md)). Die Pfade enthalten den Namensraumindex `1:`.
 - **Kein Datenanschluss auf B**: `PUBLISH_0` überträgt keine Daten; jeder Taster löst nur sein `REQ` aus.
-- **Lesen auf A**: der Knoten der Variable (`T18_VAR_NODE`) wird mit `F_OPC_REMOTE` (`READ`, Endpunkt von B) angesprochen. Der gelesene Wert wird mit `F_DINT_TO_INT` gewandelt.
+- **Lesen auf A**: der Knoten der Variable (`T18_VAR_CLIENT_READ`) wird mit `F_OPC_REMOTE` (`READ`, Endpunkt von B) angesprochen. Der gelesene Wert wird mit `F_DINT_TO_INT` gewandelt.
 - **SubApp-Kommentar von A**: der Kommentar von `SubApp_PC_A` ist derselbe wie der von `SubApp_PC_B` (I1 … I4 für Anlegen/Löschen); in der SubApp von A ist nur das Lesen über `Input_I1` verdrahtet.
 
 ## Hinweis
