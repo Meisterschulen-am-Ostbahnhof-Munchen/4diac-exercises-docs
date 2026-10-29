@@ -61,7 +61,7 @@ The IDs come from `myOpcUaAddresses.gcf`; the stations `PC_A`/`PC_B` are defined
 
 ## Technical Notes
 
-- **Write, then read**: `WRITE_INC.CNF` triggers `READ_INCD.REQ`; reading `Incremented` starts only after the write has been confirmed.
+- **Write, then read**: `WRITE_INC.CNF` triggers `READ_INCD.REQ`; reading `Incremented` starts only after the write has been confirmed. **Limitation:** This only confirms the write to B, not that B has already incremented and published `Incremented`. The first read may therefore still return the old value; a read only after an acknowledgement from B would be cleaner.
 - **INIT chain on A**: `TASTER_I1.INITO` → `WRITE_INC.INIT` → `READ_INCD.INIT`.
 - **Type conversion**: on B, `INT` is converted to `DINT` with `F_INT_TO_DINT`, 1 is added (`IN2` = `DINT#1`) and the result is converted back with `F_DINT_TO_INT`; on A the value read is converted to `DINT` with `F_INT_TO_DINT`.
 

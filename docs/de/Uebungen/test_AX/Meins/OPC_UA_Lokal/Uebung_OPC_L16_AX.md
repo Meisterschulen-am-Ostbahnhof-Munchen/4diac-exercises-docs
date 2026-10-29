@@ -132,7 +132,7 @@ Die IDs stammen aus `const/OpcUaLokal.gcf` (Paket `Meins::OPC_UA_Lokal::const`).
 
 ## Hinweis / Ergebnis
 
-Nicht auf dem Gerät getestet. Erwartet: Nach `Input_I1` liefert `READ_INCD` den Wert 43 (42 + 1).
+Nicht auf dem Gerät getestet. Erwartet: Nach `Input_I1` liefert `READ_INCD` den Wert 43 (42 + 1). **Achtung:** `READ_INCD.REQ` hängt direkt an `WRITE_INC.CNF`, nicht an einer Rückmeldung von `INCREMENTED`. Dass die Berechnung (`INCREMENT.IND` → `F_ADD` → `INCREMENTED.REQ`) bis dahin fertig ist, folgt nur aus der Abarbeitungsreihenfolge und ist nicht garantiert. Beim ersten Lesen kann daher noch der alte Wert (42) erscheinen.
 
 Dasselbe Beispiel auf zwei Geräten: [Training_16_OPC_UA_RES](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/de/latest/Uebungen/test_VV/03_OPC_UA/Training_16_OPC_UA_RES/Training_16_OPC_UA_RES/).
 

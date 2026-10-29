@@ -64,7 +64,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 
 ## Technische Besonderheiten
 
-- **Zwei Wege zum selben Wert**: `READ_INCD` ([`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/)) liest `Incremented` einmalig nach dem Schreiben, `SUBSCRIPTION` ([`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/)) abonniert denselben Knoten von B (`T17_INCD_SUBSCRIBE`, `F_OPC_REMOTE` mit `SUBSCRIBE`) und meldet jede Änderung mit `IND`.
+- **Zwei Wege zum selben Wert**: `READ_INCD` ([`CLIENT_0_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/CLIENT_0_1/)) liest `Incremented` einmalig nach dem Schreiben (ohne Rückmeldung von B, der Wert kann beim ersten Lesen noch alt sein), `SUBSCRIPTION` ([`SUBSCRIBE_1`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/StandardLibraries/net/SUBSCRIBE_1/)) abonniert denselben Knoten von B (`T17_INCD_SUBSCRIBE`, `F_OPC_REMOTE` mit `SUBSCRIBE`) und meldet jede Änderung mit `IND`.
 - **Unterschied zum lokalen Zugriff**: B liest `Increment` lokal mit `SUBSCRIBE_1` (`F_OPC_LOCAL`, `READ`), A abonniert einen Knoten von B mit Endpunkt (`F_OPC_REMOTE`, `SUBSCRIBE`).
 - **Typumwandlung**: wie in `Training_16_OPC_UA_RES`; zusätzlich wandelt `SUB_TO_DINT` den abonnierten Wert auf `DINT`.
 

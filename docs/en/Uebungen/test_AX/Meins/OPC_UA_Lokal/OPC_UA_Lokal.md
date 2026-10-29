@@ -17,7 +17,7 @@ The OPC-UA examples from `test_VV/sys/03_OPC_UA` (two devices) run here on **one
 | CALL_METHOD | CLIENT | no |
 | SUBSCRIBE (client subscription) | SUBSCRIBE | no |
 
-“Local” means: without endpoint. What is not allowed locally runs as a remote call with an endpoint to the own station, here `opc.tcp://localhost:4840#` (`LOCAL_OPC`). The own IP works the same way; both count as remote.
+“Local” means: without endpoint. What is not allowed locally runs as a remote call with an endpoint to the own station, here `opc.tcp://localhost:4840` (`LOCAL_OPC`). The own IP works the same way; both count as remote.
 
 The IDs are in `const/OpcUaLokal.gcf`, built with [`F_OPC_LOCAL`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_LOCAL/) / [`F_OPC_REMOTE`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_OPC/F_OPC_REMOTE/) and one `*_NODE` each.
 

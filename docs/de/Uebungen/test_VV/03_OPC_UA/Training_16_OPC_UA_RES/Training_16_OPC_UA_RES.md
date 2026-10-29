@@ -61,7 +61,7 @@ Die IDs stammen aus `myOpcUaAddresses.gcf`; die Stationen `PC_A`/`PC_B` stehen n
 
 ## Technische Besonderheiten
 
-- **Schreiben, dann Lesen**: `WRITE_INC.CNF` löst `READ_INCD.REQ` aus; das Lesen von `Incremented` beginnt erst nach der Bestätigung des Schreibens.
+- **Schreiben, dann Lesen**: `WRITE_INC.CNF` löst `READ_INCD.REQ` aus; das Lesen von `Incremented` beginnt erst nach der Bestätigung des Schreibens. **Einschränkung:** Das bestätigt nur das Schreiben auf B, nicht, dass B schon inkrementiert und `Incremented` veröffentlicht hat. Beim ersten Lesen kann daher noch der alte Wert stehen; sauber wäre ein Lesen erst nach einer Rückmeldung von B.
 - **INIT-Kette auf A**: `TASTER_I1.INITO` → `WRITE_INC.INIT` → `READ_INCD.INIT`.
 - **Typumwandlung**: auf B wird `INT` mit `F_INT_TO_DINT` auf `DINT` gewandelt, 1 addiert (`IN2` = `DINT#1`) und mit `F_DINT_TO_INT` zurückgewandelt; auf A wird das gelesene Ergebnis mit `F_INT_TO_DINT` auf `DINT` gewandelt.
 

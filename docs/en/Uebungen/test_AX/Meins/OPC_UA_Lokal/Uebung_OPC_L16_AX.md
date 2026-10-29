@@ -132,7 +132,7 @@ The IDs come from `const/OpcUaLokal.gcf` (package `Meins::OPC_UA_Lokal::const`).
 
 ## Note / Result
 
-Not tested on the device. Expected: after `Input_I1`, `READ_INCD` returns the value 43 (42 + 1).
+Not tested on the device. Expected: after `Input_I1`, `READ_INCD` returns the value 43 (42 + 1). **Note:** `READ_INCD.REQ` is wired directly to `WRITE_INC.CNF`, not to an acknowledgement from `INCREMENTED`. That the calculation (`INCREMENT.IND` → `F_ADD` → `INCREMENTED.REQ`) has finished by then follows only from execution order and is not guaranteed. The first read may therefore still return the old value (42).
 
 The same example on two devices: [Training_16_OPC_UA_RES](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/Uebungen/test_VV/03_OPC_UA/Training_16_OPC_UA_RES/Training_16_OPC_UA_RES/).
 
