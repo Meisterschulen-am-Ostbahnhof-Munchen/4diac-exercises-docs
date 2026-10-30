@@ -552,6 +552,7 @@ Hier finden Sie alle Übungen des Arbeitsbereichs `test_AX` in aufsteigender Rei
 - [Uebung_248_AX_Beschreibung](Uebung_248_AX_Beschreibung.md)
 - [Uebung_249_AX](Uebung_249_AX.md)
 - [Uebung_249b_AX](Uebung_249b_AX.md)
+- [Uebung_250_AX](Uebung_250_AX.md)
 - [Uebung_Isobus_Softkeys_Index](Uebung_Isobus_Softkeys_Index.md)
 - [Uebungen_Basis_Index](Uebungen_Basis_Index.md)
 - [Uebungen_doc_Index](Uebungen_doc_Index.md)

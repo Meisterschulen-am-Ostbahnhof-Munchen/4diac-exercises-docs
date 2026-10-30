@@ -34,6 +34,7 @@ The IDs are in `const/OpcUaLokal.gcf`, built with [`F_OPC_LOCAL`](https://meiste
 | [`L14`](./Uebung_OPC_L14_AX.md) | Adder (opcua.adoc): Num1 + Num2 = Result, values via UaExpert |
 | [`L15`](./Uebung_OPC_L15_AX.md) | Method AddValues: I1 calls via CLIENT_2_1 with 43 and 10 |
 | [`L16`](./Uebung_OPC_L16_AX.md) | Variables via CLIENT: I1 writes 42 to Increment, reads Incremented = 43 |
+| [`L16b`](./Uebung_OPC_L16b_AX.md) | B version of L16: read only after the acknowledgement from INCREMENTED |
 | [`L17`](./Uebung_OPC_L17_AX.md) | Client subscription: like L16, plus SUBSCRIBE with endpoint |
 | [`L18`](./Uebung_OPC_L18_AX.md) | PUBLISH_0: I1/I2 create object/variable, I3/I4 delete them |
 | [`L19`](./Uebung_OPC_L19_AX.md) | read twice locally: two SUBSCRIBE on one node (Q1 and Q2) (tested on FORTE_PC_AX) |
