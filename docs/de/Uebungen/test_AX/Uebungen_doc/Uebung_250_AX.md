@@ -10,7 +10,9 @@ Ein Analogeingang (AI) liefert keine Momentanwerte in beliebiger Geschwindigkeit
 
 **Firmware-Hintergrund (`IOHandleESP32AnalogIN.cpp`):** Der ESP32-P4 liest den ADC im Continuous-Mode mit insgesamt 20 kHz. Je Lesevorgang werden 64 Samples (ca. 3,2 ms) pro Kanal gemittelt, nur dieser Mittelwert wird an 4diac gemeldet. Das ergibt grob 300 AI-Werte pro Sekunde. Oberhalb einer gewissen Signalfrequenz mittelt der Treiber das Rechteck zu einem Wert um 50 % – der Schmitt-Trigger schaltet dann nicht mehr, und die AI-Frequenz fällt ab.
 
-> Die erwartete Grenzfrequenz (grob 100–150 Hz) ist eine Schätzung. Messergebnisse an der Maschine stehen noch aus.
+> **Messergebnis (Maschine, 2026-10-30):** Die Grenzfrequenz liegt zwischen **90 und 100 Hz**. Bis 90 Hz zählt der AI exakt, ab 100 Hz verliert er Flanken. Für Frequenzmessungen über ca. 90 Hz ist der PI-Eingang Pflicht. Details siehe Abschnitt „Messergebnis“.
+
+> **Voraussetzung:** Die Übung braucht ein Gerät, auf dem `I1` und `I2` nicht von einer anderen Ressource belegt sind. Läuft parallel eine weitere Ressource (z. B. ein Boot-File in `EMB_RES`), bekommt `EMB_RES_AX` keinen Handle: Alle Werte bleiben 0, und `OK` ist trotzdem TRUE. Erst nach dem Leeren der anderen Ressource lief die Messung.
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -50,7 +52,57 @@ Ein Analogeingang (AI) liefert keine Momentanwerte in beliebiger Geschwindigkeit
 3. Die Generatorfrequenz langsam steigern. Solange `OK.OUT` TRUE bleibt, folgt der AI dem Signal. `F_GRENZ.OUT` zeigt die bisher höchste Frequenz mit `OK`.
 4. Für eine neue Messung das Programm neu starten.
 
-**Hinweise:** Der erste Torzeit-Wert nach dem Start ist unzuverlässig. Ungeprüft ist noch, ob `PI.REQ` den Hardware-Zähler tatsächlich frisch liest.
+**Hinweise:** Der erste Torzeit-Wert nach dem Start ist unzuverlässig. Im Grenzbereich (ca. 90–100 Hz) ist `F_GRENZ` nicht belastbar, weil ein einzelner „glücklicher“ Sekundenwert genügt. Ungeprüft ist noch, ob `PI.REQ` den Hardware-Zähler tatsächlich frisch liest.
+
+## Messergebnis
+
+Rechteck 0–10 V an `I1` (AI) und `I2` (PI, Referenz), Torzeit 1 s:
+
+| f (Hz) | F_AI | F_PI | SAMPLES_S (AI-Werte/s) | Werte je Periode | OK |
+|-------:|-----:|-----:|-----------------------:|-----------------:|----|
+| 1 | 1 | 1 | 132 | – | TRUE |
+| 10 | 10 | 10 | 196 | 19,6 | TRUE |
+| 30 | 30 | 30 | 252 | 8,4 | TRUE |
+| 50 | 50 | 50 | 286 | 5,7 | TRUE |
+| 60 | 60 | 60 | 287 | 4,8 | TRUE |
+| 70 | 70 | 70 | 303 | 4,3 | TRUE |
+| 80 | 80 | 80 | 312 | 3,9 | TRUE |
+| 90 | 90 | 90 | 313 | 3,5 | TRUE |
+| 100 | 87 | 100 | 312 | 3,1 | FALSE (ABW 13) |
+| 110 | 81 | 110 | 312 | 2,8 | FALSE (ABW 29) |
+
+- **Bis 90 Hz** zählt der AI exakt. **Ab 100 Hz** verliert er Flanken, darüber tritt Aliasing auf: Die erkannte Frequenz **fällt**, obwohl die Signalfrequenz steigt.
+- Die AI-Rate ist nicht fest. Bei langsamem Signal kommen weniger Meldungen (Hysterese 1, nur Änderungen). Nach oben ist sie auf ca. 312 pro Sekunde begrenzt, also ein Mittelwert alle 3,2 ms.
+- Bei etwa 3 Werten je Periode verschmiert die Mittelung die Flanken, und die Schmitt-Schwellen (75 % / 25 %) werden nicht mehr sicher erreicht.
+- Im Grenzbereich schwankt die Zahl der erkannten Flanken von Sekunde zu Sekunde. `F_GRENZ` zeigte 100 Hz, weil in einer Sekunde zufällig alle Flanken erkannt wurden. Praktisch nutzbar sind ca. 90 Hz.
+
+## Einordnung im Markt
+
+Vergleich mit gängigen Kleinsteuerungen. Die Werte der Wettbewerber stammen aus den Herstellerhandbüchern ([LOGO! 8 Systemhandbuch](https://cache.industry.siemens.com/dl/files/041/109741041/att_924627/v1/logo_system_manual_de-DE_de-DE.pdf), [LOGO! Produktinformation 05/2024](https://cache.industry.siemens.com/dl/files/848/109971848/att_1286527/v1/Product_Information_for_LOGO_System_Manual_de-DE_de-DE.pdf), [easyE4 Handbuch MN050009](https://es-assets.eaton.com/DOCUMENTATION/AWB_MANUALS/MN050009_EN.pdf)), die Werte der logiBUS-Hardware aus eigenen Messungen.
+
+### Analogeingang (0–10 V)
+
+| | logiBUS (ESP32-P4) | Siemens LOGO! 8 | Eaton easyE4 |
+|---|---|---|---|
+| Auflösung | 12 Bit | Basismodul: nicht angegeben (Fehlergrenze ±1,5 %); AM2: 10 Bit, normiert auf 0–1000 | 12 Bit (0–4095) |
+| Aktualisierung | bis ca. 312 Werte/s (alle 3,2 ms) | Basismodul 300 ms, AM2 50 ms | in easySoft einstellbar; feste Angabe nicht gefunden |
+| Filter | Mittelung im Treiber (64 Samples) | Funktionsblöcke Analogfilter und Mittelwert | Rauschunterdrückung und Mittelung einstellbar, PT1-Filterbaustein |
+| Rechteck sauber messbar bis | ca. 90 Hz (Messung 30.10.2026) | nicht angegeben | nicht angegeben |
+
+### Pulseingang
+
+| | Eingang | Rechteck 12 V, Messung 30.08.2026 | Vergleich |
+|---|---|---|---|
+| logiBUS, schneller PI | `I1`, `I2` (4,7 kΩ + 100 pF) | gut bis 20 kHz, bei 23 kHz nicht mehr gut | LOGO! 8: max. 5 kHz an `I3`–`I6` (nur 12/24RCE/RCEo, 24CE/24CEo, direkt am Zähler) |
+| logiBUS, langsamer PI | `I3`–`I8` (4,7 kΩ + 100 nF) | 2,3 kHz | easyE4: Zähler und Frequenzmesser max. 5 kHz |
+
+**Hinweise zur Einordnung**
+
+- Der schnelle PI liegt mit 20 kHz etwa beim Vierfachen der 5 kHz der beiden Kleinsteuerungen. Der langsame PI ist durch den 100-nF-Filter bewusst für langsamere, analoge Signale ausgelegt und wird nicht mit den schnellen Zähleingängen der Wettbewerber verglichen.
+- Die Wettbewerber geben das Maximum der Zählerfunktion an. Bei logiBUS ist es die Frequenz, bis zu der der Eingang noch sauber zählt; darüber verliert er Flanken, er wird dadurch aber nicht beschädigt.
+- Beim Analogeingang gibt keiner der beiden Hersteller eine nutzbare Signalfrequenz an. Bei der LOGO! 8 begrenzt die Zykluszeit der Analogwertbildung (300 ms bzw. 50 ms) die Abtastung deutlich stärker als bei logiBUS.
+- Die easyE4-Datenblätter nennen die Wandlung „je CPU-Zyklus“; im Handbuch steht nur, dass die Update-Rate einstellbar ist. Ein Gerätedatenblatt nennt 10 kHz Zählfrequenz, das Handbuch 5 kHz; das ist nicht aufgelöst.
+- Messaufbau PI: FNIRSI SG-003A im Modus Pulse (Level, 12,0 V Spitze), je eine Messung je Eingang, Frequenz am Generator und im 4diac-Programm abgelesen. Innenwiderstand des Generators und Tastverhältnis sind nicht dokumentiert. Filterwerte aus der Stückliste `APIXON Node-ISO 20 v107`.
 
 ## Zusammenfassung
 
