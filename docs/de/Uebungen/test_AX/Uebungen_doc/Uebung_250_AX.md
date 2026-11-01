@@ -10,7 +10,7 @@ Ein Analogeingang (AI) liefert keine Momentanwerte in beliebiger Geschwindigkeit
 
 **Firmware-Hintergrund (`IOHandleESP32AnalogIN.cpp`):** Der ESP32-P4 liest den ADC im Continuous-Mode mit insgesamt 20 kHz. Je Lesevorgang werden 64 Samples (ca. 3,2 ms) pro Kanal gemittelt, nur dieser Mittelwert wird an 4diac gemeldet. Das ergibt grob 300 AI-Werte pro Sekunde. Oberhalb einer gewissen Signalfrequenz mittelt der Treiber das Rechteck zu einem Wert um 50 % – der Schmitt-Trigger schaltet dann nicht mehr, und die AI-Frequenz fällt ab.
 
-> Die erwartete Grenzfrequenz (grob 100–150 Hz) ist eine Schätzung. Messergebnisse an der Maschine stehen noch aus.
+> Gemessene Werte und die Einordnung zur Eingangsbeschaltung stehen auf der Hardware-Seite [APIXON Node-ISO 20](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/hw/logiBUS/APIXON_Node-ISO_20/).
 
 ## Verwendete Funktionsbausteine (FBs)
 

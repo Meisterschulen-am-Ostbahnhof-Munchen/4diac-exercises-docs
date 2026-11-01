@@ -10,7 +10,7 @@ An analog input (AI) does not deliver instantaneous values at an arbitrary rate.
 
 **Firmware background (`IOHandleESP32AnalogIN.cpp`):** The ESP32-P4 reads the ADC in continuous mode at 20 kHz in total. For each read, 64 samples (about 3.2 ms) per channel are averaged; only this average is reported to 4diac. That gives roughly 300 AI values per second. Above a certain signal frequency, the driver averages the square wave to a value around 50 %, the Schmitt trigger no longer switches and the AI frequency drops.
 
-> The expected limit frequency (roughly 100-150 Hz) is an estimate. Measurement results from the machine are still pending.
+> Measured values and the classification with respect to the input circuit are on the hardware page [APIXON Node-ISO 20](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/hw/logiBUS/APIXON_Node-ISO_20/).
 
 ## Function Blocks Used (FBs)
 
