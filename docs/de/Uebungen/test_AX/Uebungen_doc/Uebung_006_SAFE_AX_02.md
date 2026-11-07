@@ -47,7 +47,7 @@ Diese Übung ist die zweite SAFE-Variante von `Uebung_006_AX`. Statt der handgeb
     - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
     - **Erklärung**: Legt den Zustand von `MainSR.Q` auf den physischen Ausgang `Q1`.
 - **INIT**: Startimpuls
-    - **Typ**: [`iec61131::booleanOperators::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/INIT/)
+    - **Typ**: [`events::init::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/init_stages/events/init/INIT/)
     - **Parameter**: keine
     - **Erklärung**: `INITO` ist auf `REQ` zurückgeführt, `CNF` startet den zyklischen Baustein `Cycle`.
 - **Cycle**: Zyklische Auswertung von `SF_EmergencyStop` und `SF_ResetButton`

@@ -10,7 +10,7 @@ Extends `Versuch_402` with an array-to-array copy (`ARRAY2ARRAY_8_INT`): the ass
 
 ## Function Blocks Used (FBs)
 
-- **INIT** – Type: `iec61131::booleanOperators::INIT` – triggers the chain itself (see `Versuch_402`).
+- **INIT** – Type: `events::init::INIT` – triggers the chain itself (see `Versuch_402`).
 - **VALUES2ARRAY_8_INT** – Type: `eclipse4diac::convert::VALUES2ARRAY_8_INT`
     - Parameter: `IN_1..IN_8 = 1, 22, 333, 4444, 333, 22, 1, 0`
 - **GET_AT_INDEX** – Type: `eclipse4diac::convert::GET_AT_INDEX`, parameter: `INDEX = 0`

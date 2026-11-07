@@ -47,7 +47,7 @@ This exercise is the second SAFE variant of `Uebung_006_AX`. Instead of the hand
     - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
     - **Explanation**: Puts the state of `MainSR.Q` on the physical output `Q1`.
 - **INIT**: Start pulse
-    - **Type**: [`iec61131::booleanOperators::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/INIT/)
+    - **Type**: [`events::init::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/init_stages/events/init/INIT/)
     - **Parameters**: none
     - **Explanation**: `INITO` is fed back to `REQ`, `CNF` starts the cyclic block `Cycle`.
 - **Cycle**: Cyclic evaluation of `SF_EmergencyStop` and `SF_ResetButton`

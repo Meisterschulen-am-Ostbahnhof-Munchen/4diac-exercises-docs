@@ -19,7 +19,7 @@ Die Übung besteht aus der Subapplikation Uebung_175_AX.SUB, welche die folgende
 ### Verwendete Funktionsbausteine (FBs)
 
 - **E_TABLE_CTRL_1**: Instanz des Typs iec61499::events::E_TABLE_CTRL.
-- **INIT**: Instanz des Typs iec61131::booleanOperators::INIT.
+- **INIT**: Instanz des Typs `events::init::INIT`.
 
 ### Verbindungen und Schnittstellen
 

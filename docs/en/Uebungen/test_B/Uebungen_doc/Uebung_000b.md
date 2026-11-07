@@ -21,7 +21,7 @@ The exercise consists of the sub-application Uebung_000b.SUB, which uses the fol
 - **AND_2**: Instance of type iec61131::booleanOperators::AND_BOOL_2.
   - Parameter IN1 = TRUE
   - Parameter IN2 = TRUE
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type `events::init::INIT`.
 
 ### Connections and Interfaces
 

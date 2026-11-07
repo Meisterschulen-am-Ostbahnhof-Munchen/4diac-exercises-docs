@@ -27,7 +27,7 @@ This exercise drives an SR flip-flop (`AX_SR`) not via direct event lines but vi
     - **Parameters**: `EVENTTYPE = 'EInitOff'`
     - **Explanation**: On `REQ`, triggers all unconnected event inputs named `EInitOff` in the network.
 - **INIT_ON_OFF**: Pass-through for the two init channels
-    - **Type**: `iec61131::booleanOperators::INIT_ON_OFF`
+    - **Type**: `events::init::INIT_ON_OFF`
     - **Parameters**: none
     - **Explanation**: Besides `INIT` and `REQ` it has two independent pass-through channels: `INIT_ON` → `INITO_ON` (event type `EInitOn`) and `INIT_OFF` → `INITO_OFF` (event type `EInitOff`). In this exercise the inputs `INIT_ON` and `INIT_OFF` deliberately remain unconnected (see note in the model).
 - **AX_SR**: Set-reset flip-flop with adapter output

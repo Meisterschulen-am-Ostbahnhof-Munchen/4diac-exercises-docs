@@ -27,7 +27,7 @@ Diese Übung setzt ein SR-Flip-Flop (`AX_SR`) nicht über direkte Event-Leitunge
     - **Parameter**: `EVENTTYPE = 'EInitOff'`
     - **Erklärung**: Löst bei `REQ` alle unverbundenen Ereignis-Eingänge mit dem Namen `EInitOff` im Netzwerk aus.
 - **INIT_ON_OFF**: Durchreicher für die beiden Init-Kanäle
-    - **Typ**: `iec61131::booleanOperators::INIT_ON_OFF`
+    - **Typ**: `events::init::INIT_ON_OFF`
     - **Parameter**: keine
     - **Erklärung**: Besitzt neben `INIT` und `REQ` zwei eigenständige Pass-Through-Kanäle: `INIT_ON` → `INITO_ON` (Ereignistyp `EInitOn`) und `INIT_OFF` → `INITO_OFF` (Ereignistyp `EInitOff`). Die Eingänge `INIT_ON` und `INIT_OFF` bleiben in dieser Übung bewusst unverbunden (siehe Hinweis im Modell).
 - **AX_SR**: Set-Reset-Flip-Flop mit Adapter-Ausgang

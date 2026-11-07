@@ -10,7 +10,7 @@ Anders als die vorigen Versuche (feste Array-Konstante über `PROVIDE_ARR_0008_I
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **INIT** – Typ: `iec61131::booleanOperators::INIT`
+- **INIT** – Typ: `events::init::INIT`
     - Funktionsweise: feuert beim Start `INITO`, das direkt auf den eigenen `REQ`-Eingang zurückgeführt ist - löst dadurch die Verarbeitungskette an.
 - **VALUES2ARRAY_8_INT** – Typ: `eclipse4diac::convert::VALUES2ARRAY_8_INT`
     - Parameter: `IN_1..IN_8 = 1, 22, 333, 4444, 333, 22, 1, 0`

@@ -31,8 +31,8 @@ The exercise consists of the sub-application Uebung_121_AX.SUB, which uses the f
   - Parameter mask = FLT_ALL_PASS
 - **STRUCT_DEMUX_2**: Instance of type eclipse4diac::convert::STRUCT_DEMUX.
 - **STRUCT_DEMUX_3**: Instance of type eclipse4diac::convert::STRUCT_DEMUX.
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
-- **INIT_1**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type `events::init::INIT`.
+- **INIT_1**: Instance of type `events::init::INIT`.
 
 ### Connections and Interfaces
 

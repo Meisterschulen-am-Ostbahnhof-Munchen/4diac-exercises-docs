@@ -19,7 +19,7 @@ The exercise consists of the sub-application Uebung_172_AX.SUB, which uses the f
 ### Instantiated Function Blocks (FBs)
 
 - **E_MUX_2_1**: Instance of type iec61499::events::E_MUX_2.
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type `events::init::INIT`.
 
 ### Connections and Interfaces
 

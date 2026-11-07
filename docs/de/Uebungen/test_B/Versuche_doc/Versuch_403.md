@@ -10,7 +10,7 @@ Erweitert `Versuch_402` um eine Array-zu-Array-Kopie (`ARRAY2ARRAY_8_INT`): das 
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **INIT** – Typ: `iec61131::booleanOperators::INIT` – löst die Kette selbst aus (siehe `Versuch_402`).
+- **INIT** – Typ: `events::init::INIT` – löst die Kette selbst aus (siehe `Versuch_402`).
 - **VALUES2ARRAY_8_INT** – Typ: `eclipse4diac::convert::VALUES2ARRAY_8_INT`
     - Parameter: `IN_1..IN_8 = 1, 22, 333, 4444, 333, 22, 1, 0`
 - **GET_AT_INDEX** – Typ: `eclipse4diac::convert::GET_AT_INDEX`, Parameter: `INDEX = 0`

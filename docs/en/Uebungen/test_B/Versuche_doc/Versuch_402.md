@@ -10,7 +10,7 @@ Unlike the previous experiments (a fixed array constant via `PROVIDE_ARR_0008_IN
 
 ## Function Blocks Used (FBs)
 
-- **INIT** – Type: `iec61131::booleanOperators::INIT`
+- **INIT** – Type: `events::init::INIT`
     - Functionality: fires `INITO` on startup, which is fed straight back into its own `REQ` input - this kicks off the processing chain.
 - **VALUES2ARRAY_8_INT** – Type: `eclipse4diac::convert::VALUES2ARRAY_8_INT`
     - Parameter: `IN_1..IN_8 = 1, 22, 333, 4444, 333, 22, 1, 0`

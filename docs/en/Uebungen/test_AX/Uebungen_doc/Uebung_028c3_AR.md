@@ -52,7 +52,7 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I1) u
 - **AR_REAL_TO_R** (x2) (Type: `adapter::conversion::unidirectional::AR_REAL_TO_R`)
 - **Internal Parameters Used**: First: `OUT = 50.5`, Second: `OUT = 15.3`
 - **Functionality**: Converts a constant real value into an AR signal. Serves as the threshold (THRESHOLD = 50.5) and hysteresis width (HYSTERESIS = 15.3) for the hysteresis controller.
-- **INIT** (Type: `iec61131::booleanOperators::INIT`)
+- **INIT** (Type: `events::init::INIT`)
 - **Functionality**: Generates a one-time initialization event (INITO) at system startup. This event triggers the two AR_REAL_TO_R blocks to set the constant values.
 
 1. **Initialization**: At startup, the INIT block triggers the two AR_REAL_TO_R blocks, which set the constant threshold values (50.5 and 15.3) on the analog bus.
