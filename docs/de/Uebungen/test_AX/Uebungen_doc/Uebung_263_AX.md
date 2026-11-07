@@ -32,7 +32,7 @@ Die Rampe von [`logiBUS_QDA_PWM`](https://meisterschulen-am-ostbahnhof-munchen-d
 
 1. Übung `Uebungen::Uebung_263_AX` im `Control` einstellen.
 2. `Q2` beobachten (LED oder Oszilloskop): Das Blinken bleibt bei 5 Hz gleichmäßig, obwohl `Q1` ständig neue Werte bekommt.
-3. Watches auf `RAMPO_Count_Q1.CV` und `Life_Count.CV` setzen und vergleichen.
+3. Watches auf `RAMPO_Count_Q1.CV` und `Life_Count.CV` setzen und vergleichen. `Life_Count` zählt alle 100 ms und bleibt nach 65535 Zählungen (rund 109 Minuten) stehen, auch wenn `Q2` weiter blinkt. Die Zähler daher vor Erreichen dieser Grenze vergleichen.
 
 ## Zusammenfassung
 

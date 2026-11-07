@@ -35,9 +35,9 @@ Each PWM block reports with the event `RAMPO` that the new value is reached (see
 
 ## Operation
 
-1. Set the exercise `Uebungen::Uebung_262_AX` in the `Control`.
+1. Set the exercise `Uebungen::Uebung_262_AX` in the `Control` and deploy it to the board (or install its boot file). Otherwise the previously loaded calibration application keeps running and the counters are not available.
 2. Set watches on `RAMPO_Count_Q1.CV` and `RAMPO_Count_Q2.CV`.
-3. Turn the potentiometer at `I1` once and read the counter values afterwards. With further adjustments compare how the two counters develop: with the short ramp the counter can behave differently than with the long one.
+3. Turn the potentiometer at `I1` once and read the counter values afterwards. With further adjustments compare how the two counters develop: both outputs have `RAMP = T#2s`; the difference is the gamma correction at `Q2`. So the comparison is linear versus gamma.
 
 ## Summary
 

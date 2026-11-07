@@ -32,7 +32,7 @@ The ramp of [`logiBUS_QDA_PWM`](https://meisterschulen-am-ostbahnhof-munchen-doc
 
 1. Set the exercise `Uebungen::Uebung_263_AX` in the `Control`.
 2. Watch `Q2` (LED or oscilloscope): the blinking stays even at 5 Hz although `Q1` constantly gets new values.
-3. Set watches on `RAMPO_Count_Q1.CV` and `Life_Count.CV` and compare them.
+3. Set watches on `RAMPO_Count_Q1.CV` and `Life_Count.CV` and compare them. `Life_Count` counts every 100 ms and stops after 65535 counts (about 109 minutes) even though `Q2` keeps blinking. So compare the counters before this limit is reached.
 
 ## Summary
 

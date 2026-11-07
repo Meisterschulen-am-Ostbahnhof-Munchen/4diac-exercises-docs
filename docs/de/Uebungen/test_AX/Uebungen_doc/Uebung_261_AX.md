@@ -35,7 +35,7 @@ Jeder PWM-Baustein meldet mit dem Ereignis `RAMPO`, dass der neue Wert erreicht 
 
 ## Bedienung
 
-1. Übung `Uebungen::Uebung_261_AX` im `Control` einstellen.
+1. Übung `Uebungen::Uebung_261_AX` im `Control` einstellen und auf das Board laden (oder die Boot-Datei installieren). Sonst läuft weiter die zuvor geladene Kalibrier-Anwendung, und die Zähler stehen nicht zur Verfügung.
 2. Watches auf `RAMPO_Count_Q1.CV` und `RAMPO_Count_Q2.CV` setzen.
 3. Das Poti an `I1` einmal verstellen und danach die Zählerstände ablesen. Mit weiteren Verstellungen vergleichen, wie sich die beiden Zähler entwickeln: Bei der kurzen Rampe kann sich der Zähler anders verhalten als bei der langen.
 
