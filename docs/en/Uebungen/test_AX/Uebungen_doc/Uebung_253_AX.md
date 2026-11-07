@@ -6,7 +6,7 @@
 
 ## Introduction
 
-The section switcher [`SEC_SWITCH_LR_QUARTER_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_QUARTER_WORD/) switches 8 sections off and on again from both sides, like the section control of a sprayer. The exercise puts one section on each output `Q1` to `Q8`. `I1`/`I2` operate the left side, `I7`/`I8` the right side. All sections are off at start. Unlike exercise 251, the block delivers 2 bits per section here (QUARTER mask): `01` = free, `00` = locked. `AQ_TO_AX` turns each into one BOOL value for the output.
+The section switcher [`SEC_SWITCH_LR_QUARTER_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_QUARTER_WORD/) switches 8 sections off and on again from both sides, like the section control of a sprayer. The exercise puts one section on each output `Q1` to `Q8`. `I1`/`I2` operate the left side, `I8`/`I7` the right side. All sections are off at start. Unlike exercise 251, the block delivers 2 bits per section here (QUARTER mask): `01` = free, `00` = locked. `AQ_TO_AX` turns each into one BOOL value for the output.
 
 ## Function Blocks Used (FBs)
 

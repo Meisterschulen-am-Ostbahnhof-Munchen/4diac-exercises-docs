@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Section-Switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_BIT_WORD/) schaltet 8 Abschnitte (Sections) von beiden Seiten her ab und wieder zu, wie bei einer Spritze mit Teilbreitenschaltung. Die Übung legt je eine Section auf einen Ausgang `Q1` bis `Q8`. Mit `I1`/`I2` wird die linke Seite, mit `I7`/`I8` die rechte Seite bedient. Beim Start sind alle Sections aus. Zusätzlich lösen **lange** Tastendrücke die Befehle `ALL_OFF` (`I1`/`I8`) und `ALL_ON` (`I2`/`I7`) aus.
+Der Section-Switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_BIT_WORD/) schaltet 8 Abschnitte (Sections) von beiden Seiten her ab und wieder zu, wie bei einer Spritze mit Teilbreitenschaltung. Die Übung legt je eine Section auf einen Ausgang `Q1` bis `Q8`. Mit `I1`/`I2` wird die linke Seite, mit `I8`/`I7` die rechte Seite bedient. Beim Start sind alle Sections aus. Zusätzlich lösen **lange** Tastendrücke die Befehle `ALL_OFF` (`I1`/`I8`) und `ALL_ON` (`I2`/`I7`) aus.
 
 ## Verwendete Funktionsbausteine (FBs)
 
