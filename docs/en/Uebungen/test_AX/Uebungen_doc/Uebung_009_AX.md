@@ -11,7 +11,7 @@ This exercise demonstrates an adapter-based ticker: a clock generator makes an o
 ## Function Blocks (FBs) Used
 
 - **INIT**: Start trigger
-    - **Type**: [`iec61131::booleanOperators::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/INIT/)
+    - **Type**: [`events::init::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/init_stages/events/init/INIT/)
     - **Parameters**: none
     - **Explanation**: Forwards `INIT` without delay as `INITO` and `REQ` as `CNF`. `INITO` is fed back to `REQ`, `CNF` starts the clock generator.
 - **E_CYCLE**: Clock generator

@@ -38,7 +38,7 @@ The exercise consists of the sub-application Uebung_015b.SUB, which uses the fol
   - Parameter InputEvent = SK_RELEASED
 - **F_UINT_TO_UDINT_1**: Instance of type iec61131::conversion::F_UINT_TO_UDINT.
   - Parameter IN = Button_A2
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type events::init::INIT.
 
 ### Connections and Interfaces
 

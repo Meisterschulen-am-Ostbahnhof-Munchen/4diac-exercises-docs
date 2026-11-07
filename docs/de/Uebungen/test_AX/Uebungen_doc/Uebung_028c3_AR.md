@@ -51,7 +51,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 - **AR_REAL_TO_R** (x2) (Typ: `adapter::conversion::unidirectional::AR_REAL_TO_R`)
     - **Verwendete interne Parameter**: Erstes: `OUT = 50.5`, Zweites: `OUT = 15.3`
     - **Funktionsweise**: Wandelt einen konstanten realen Wert in ein AR-Signal um. Dient als Schwellwert (THRESHOLD = 50.5) und Hysteresebreite (HYSTERESIS = 15.3) für den Hysterese-Regler.
-- **INIT** (Typ: `iec61131::booleanOperators::INIT`)
+- **INIT** (Typ: `events::init::INIT`)
     - **Funktionsweise**: Erzeugt ein einmaliges Initialisierungsereignis (INITO) beim Systemstart. Dieses Ereignis triggert die beiden AR_REAL_TO_R-Bausteine, um die konstanten Werte zu setzen.
 
 ## Programmablauf und Verbindungen

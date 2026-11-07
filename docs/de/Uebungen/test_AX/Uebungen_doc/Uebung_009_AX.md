@@ -11,7 +11,7 @@ Diese Übung demonstriert einen adapterbasierten Ticker: Ein Taktgeber lässt ei
 ## Verwendete Funktionsbausteine (FBs)
 
 - **INIT**: Startauslöser
-    - **Typ**: [`iec61131::booleanOperators::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/INIT/)
+    - **Typ**: [`events::init::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/init_stages/events/init/INIT/)
     - **Parameter**: keine
     - **Erklärung**: Leitet `INIT` unverzögert als `INITO` und `REQ` als `CNF` weiter. `INITO` ist auf `REQ` zurückgeführt, `CNF` startet den Taktgeber.
 - **E_CYCLE**: Taktgeber

@@ -13,7 +13,7 @@ Implementation of a continuously running flasher as a basic building block. A cy
 ## Function Blocks (FBs) Used
 
 - **INIT**: start trigger
-    - **Type**: [`iec61131::booleanOperators::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/INIT/)
+    - **Type**: [`events::init::INIT`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/init_stages/events/init/INIT/)
     - **Parameters**: none
     - **Explanation**: Passes events through during the initialization phase. The output `INITO` is fed back to its own input `REQ`; the resulting confirmation `CNF` starts the clock.
 - **E_CYCLE**: clock generator

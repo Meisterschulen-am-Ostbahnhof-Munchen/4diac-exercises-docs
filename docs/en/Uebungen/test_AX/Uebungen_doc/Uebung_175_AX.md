@@ -19,7 +19,7 @@ The exercise consists of the sub-application Uebung_175_AX.SUB, which uses the f
 ### Instantiated Function Blocks (FBs)
 
 - **E_TABLE_CTRL_1**: Instance of type iec61499::events::E_TABLE_CTRL.
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type events::init::INIT.
 
 ### Connections and Interfaces
 

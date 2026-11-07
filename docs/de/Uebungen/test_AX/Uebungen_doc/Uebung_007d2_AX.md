@@ -30,7 +30,7 @@ Die Übung besteht aus der Subapplikation Uebung_007d2_AX.SUB, welche die folgen
 - **AR_GT**: Instanz des Typs adapter::iec61131::comparison::AR_GT.
 - **AX_D_FF_TMIN**: Instanz des Typs adapter::events::unidirectional::AX_D_FF_TMIN.
   - Parameter Tmin = T#3s
-- **INIT**: Instanz des Typs iec61131::booleanOperators::INIT.
+- **INIT**: Instanz des Typs events::init::INIT.
 
 ### Verbindungen und Schnittstellen
 

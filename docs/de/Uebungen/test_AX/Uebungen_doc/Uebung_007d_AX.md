@@ -26,7 +26,7 @@ Die Übung besteht aus der Subapplikation Uebung_007d_AX.SUB, welche die folgend
 - **E_T_FF**: Instanz des Typs adapter::events::unidirectional::AX_T_FF.
 - **E_TMIN**: Instanz des Typs iec61499::events::E_TMIN.
   - Parameter Tmin = T#10s
-- **INIT**: Instanz des Typs iec61131::booleanOperators::INIT.
+- **INIT**: Instanz des Typs events::init::INIT.
 
 ### Verbindungen und Schnittstellen
 

@@ -26,7 +26,7 @@ The exercise consists of the sub-application Uebung_007d_AX.SUB, which uses the 
 - **E_T_FF**: Instance of type adapter::events::unidirectional::AX_T_FF.
 - **E_TMIN**: Instance of type iec61499::events::E_TMIN.
   - Parameter Tmin = T#10s
-- **INIT**: Instance of type iec61131::booleanOperators::INIT.
+- **INIT**: Instance of type events::init::INIT.
 
 ### Connections and Interfaces
 

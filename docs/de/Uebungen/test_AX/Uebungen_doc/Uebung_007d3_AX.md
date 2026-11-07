@@ -30,7 +30,7 @@ Die Übung besteht aus der Subapplikation Uebung_007d3_AX.SUB, welche die folgen
 - **initval_AR**: Instanz des Typs adapter::types::unidirectional::AR::initval::initval_AR.
   - Parameter INIT_VAL = REAL#0.49
 - **AR_GT**: Instanz des Typs adapter::iec61131::comparison::AR_GT.
-- **INIT**: Instanz des Typs iec61131::booleanOperators::INIT.
+- **INIT**: Instanz des Typs events::init::INIT.
 
 ### Verbindungen und Schnittstellen
 
