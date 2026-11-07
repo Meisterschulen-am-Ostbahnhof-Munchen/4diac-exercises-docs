@@ -6,7 +6,7 @@
 
 ## Introduction
 
-The section switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_BIT_WORD/) switches 8 sections off and on again from both sides, like the section control of a sprayer. The exercise puts one section on each output `Q1` to `Q8`. `I1`/`I2` operate the left side, `I7`/`I8` the right side. All sections are off at start.
+The section switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/sections/SEC_SWITCH_LR_BIT_WORD/) switches 8 sections off and on again from both sides, like the section control of a sprayer. The exercise puts one section on each output `Q1` to `Q8`. `I1`/`I2` operate the left side, `I8`/`I7` the right side. All sections are off at start.
 
 ## Function Blocks Used (FBs)
 
