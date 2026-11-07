@@ -16,7 +16,7 @@ Der Section-Switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbah
     - **Parameter**: `QI = TRUE`, `N = 8`
     - **Erklärung**: Verwaltet die Maske der 8 Sections. `INITO` ist mit `ALL_OFF` verbunden, damit beim Start sicher alle Sections aus sind.
 - **MASK_TO_AW** (`AW_WORD_TO_W`): übernimmt die Maske (`MASK`, WORD) in den Adapter.
-- **SPLIT_MASK** (`SPLIT_AW_INTO_AX`): zerlegt das Wort in 8 BOOL-Werte (`BIT_00` bis `BIT_07`).
+- **SPLIT_MASK** (`SPLIT_AW_INTO_AX`): zerlegt das 16-Bit-Wort in BOOL-Werte (`BIT_00` bis `BIT_15`). Genutzt werden `BIT_00` bis `BIT_07`.
 - **DigitalOutput_Q1** bis **DigitalOutput_Q8**: digitale Ausgänge (Typ: [`logiBUS_QXA`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO/logiBUS_QXA/), `QI = TRUE`, `Output = Output_Q1` bis `Output_Q8`)
 
 ### Sub-Bausteine: keine
@@ -26,7 +26,7 @@ Der Section-Switcher [`SEC_SWITCH_LR_BIT_WORD`](https://meisterschulen-am-ostbah
 1. Die vier Taster lösen im `Section_Switch` die Befehle `LEFT_OFF_INC`, `LEFT_OFF_DEC`, `RIGHT_OFF_DEC` und `RIGHT_OFF_INC` aus.
 2. `Section_Switch.INITO` löst `ALL_OFF` aus: Beim Start sind alle Sections aus.
 3. Nach jeder Änderung meldet `Section_Switch.CNF` an `MASK_TO_AW.REQ`, und die Maske geht als Adapter-Signal in `SPLIT_MASK`.
-4. `SPLIT_MASK` verteilt die Maske auf acht Bits (`BIT_00` → `Q1` bis `BIT_07` → `Q8`).
+4. `SPLIT_MASK` verteilt die Maske auf acht der 16 Bits (`BIT_00` → `Q1` bis `BIT_07` → `Q8`).
 
 ## Bedienung
 
