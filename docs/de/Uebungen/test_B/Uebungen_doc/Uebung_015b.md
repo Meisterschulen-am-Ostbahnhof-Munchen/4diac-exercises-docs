@@ -38,7 +38,7 @@ Die Übung besteht aus der Subapplikation Uebung_015b.SUB, welche die folgende B
   - Parameter InputEvent = SK_RELEASED
 - **F_UINT_TO_UDINT_1**: Instanz des Typs iec61131::conversion::F_UINT_TO_UDINT.
   - Parameter IN = Button_A2
-- **INIT**: Instanz des Typs events::init::INIT.
+- **INIT**: Instanz des Typs `events::init::INIT`.
 
 ### Verbindungen und Schnittstellen
 

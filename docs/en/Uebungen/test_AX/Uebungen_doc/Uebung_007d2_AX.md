@@ -30,7 +30,7 @@ The exercise consists of the sub-application Uebung_007d2_AX.SUB, which uses the
 - **AR_GT**: Instance of type adapter::iec61131::comparison::AR_GT.
 - **AX_D_FF_TMIN**: Instance of type adapter::events::unidirectional::AX_D_FF_TMIN.
   - Parameter Tmin = T#3s
-- **INIT**: Instance of type events::init::INIT.
+- **INIT**: Instance of type `events::init::INIT`.
 
 ### Connections and Interfaces
 

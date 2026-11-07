@@ -31,8 +31,8 @@ Die Übung besteht aus der Subapplikation Uebung_121_AX.SUB, welche die folgende
   - Parameter mask = FLT_ALL_PASS
 - **STRUCT_DEMUX_2**: Instanz des Typs eclipse4diac::convert::STRUCT_DEMUX.
 - **STRUCT_DEMUX_3**: Instanz des Typs eclipse4diac::convert::STRUCT_DEMUX.
-- **INIT**: Instanz des Typs events::init::INIT.
-- **INIT_1**: Instanz des Typs events::init::INIT.
+- **INIT**: Instanz des Typs `events::init::INIT`.
+- **INIT_1**: Instanz des Typs `events::init::INIT`.
 
 ### Verbindungen und Schnittstellen
 

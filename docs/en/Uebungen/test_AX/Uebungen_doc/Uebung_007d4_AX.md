@@ -31,7 +31,7 @@ The exercise consists of the sub-application Uebung_007d4_AX.SUB, which uses the
 - **initval_AR**: Instance of type adapter::types::unidirectional::AR::initval::initval_AR.
   - Parameter INIT_VAL = REAL#0.49
 - **AR_GT**: Instance of type adapter::iec61131::comparison::AR_GT.
-- **INIT**: Instance of type events::init::INIT.
+- **INIT**: Instance of type `events::init::INIT`.
 
 ### Connections and Interfaces
 

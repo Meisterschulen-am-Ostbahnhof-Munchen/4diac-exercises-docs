@@ -21,7 +21,7 @@ Die Übung besteht aus der Subapplikation Uebung_000b.SUB, welche die folgende B
 - **AND_2**: Instanz des Typs iec61131::booleanOperators::AND_BOOL_2.
   - Parameter IN1 = TRUE
   - Parameter IN2 = TRUE
-- **INIT**: Instanz des Typs events::init::INIT.
+- **INIT**: Instanz des Typs `events::init::INIT`.
 
 ### Verbindungen und Schnittstellen
 
