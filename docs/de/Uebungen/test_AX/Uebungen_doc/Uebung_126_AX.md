@@ -12,6 +12,10 @@ Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Übung zu ISOB
 
 -----
 
+## Gegenstück
+
+Dieser Sender beantwortet auch Requests. Als Gegenstück passen der Empfänger [Uebung_130_AX](Uebung_130_AX.md) (nimmt jede Nachricht an), der zyklische Empfänger [Uebung_131_AX](Uebung_131_AX.md) sowie die anfragenden Übungen [Uebung_132_AX](Uebung_132_AX.md) und [Uebung_133_AX](Uebung_133_AX.md). Siehe auch die [CAN-Übersicht](Uebungen_CAN_Uebersicht.md).
+
 ## Beschreibung und Komponenten
 
 Die Übung besteht aus der Subapplikation Uebung_126_AX.SUB, welche die folgende Bausteinstruktur verwendet:
