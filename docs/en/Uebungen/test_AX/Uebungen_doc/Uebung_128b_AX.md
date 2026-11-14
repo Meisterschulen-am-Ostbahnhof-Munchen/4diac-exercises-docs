@@ -12,6 +12,10 @@ The main objective of this exercise is to implement the following requirement: *
 
 -----
 
+## Counterpart
+
+There is no counterpart yet: the existing receive blocks only pass 8 bytes on to the application, a receive block for longer PGNs (`AlPgnRxNew_TP`) is in progress. See also the [CAN overview](Uebungen_CAN_Uebersicht.md).
+
 ## Description and Components
 
 The exercise consists of the sub-application Uebung_128b_AX.SUB, which uses the following function block structure:

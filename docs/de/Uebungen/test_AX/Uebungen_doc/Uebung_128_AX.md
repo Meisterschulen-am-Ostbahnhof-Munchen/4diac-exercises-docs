@@ -12,6 +12,10 @@ Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Übung zu ISOB
 
 -----
 
+## Gegenstück
+
+Dieser Sender (global, ohne Antwort auf Requests) hat als Gegenstück die Empfänger [Uebung_130_AX](Uebung_130_AX.md) und [Uebung_131_AX](Uebung_131_AX.md). Die anfragenden Übungen [Uebung_132_AX](Uebung_132_AX.md) und [Uebung_133_AX](Uebung_133_AX.md) passen **nicht**, weil dieser Baustein kein Request for PGN beantwortet. Siehe auch die [CAN-Übersicht](Uebungen_CAN_Uebersicht.md).
+
 ## Beschreibung und Komponenten
 
 Die Übung besteht aus der Subapplikation Uebung_128_AX.SUB, welche die folgende Bausteinstruktur verwendet:
