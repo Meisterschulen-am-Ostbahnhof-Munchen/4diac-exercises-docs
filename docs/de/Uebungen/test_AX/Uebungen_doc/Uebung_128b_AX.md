@@ -28,7 +28,7 @@ Die Übung besteht aus der Subapplikation Uebung_128b_AX.SUB, welche die folgend
 - **STRUCT_DEMUX_5**: Instanz des Typs eclipse4diac::convert::STRUCT_DEMUX.
 - **AlPgnTxNew_TP**: Instanz des Typs isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA
-  - Parameter u16DaSize = 0
+  - Eingang u16DaSize: kommt von `F_LEN_ARRAY.OUT` (Länge von `INIT_ARR_0032_BYTE.D1`, 32 Byte), kein fester Wert
   - Parameter u8Priority = 3
 - **DigitalInput_CLK_I1**: Instanz des Typs logiBUS::io::DI::logiBUS_IE.
   - Parameter QI = TRUE

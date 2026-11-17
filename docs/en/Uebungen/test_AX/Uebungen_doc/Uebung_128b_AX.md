@@ -28,7 +28,7 @@ The exercise consists of the sub-application Uebung_128b_AX.SUB, which uses the 
 - **STRUCT_DEMUX_5**: Instance of type eclipse4diac::convert::STRUCT_DEMUX.
 - **AlPgnTxNew_TP**: Instance of type isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA
-  - Parameter u16DaSize = 0
+  - Input u16DaSize: comes from `F_LEN_ARRAY.OUT` (length of `INIT_ARR_0032_BYTE.D1`, 32 bytes), no fixed value
   - Parameter u8Priority = 3
 - **DigitalInput_CLK_I1**: Instance of type logiBUS::io::DI::logiBUS_IE.
   - Parameter QI = TRUE

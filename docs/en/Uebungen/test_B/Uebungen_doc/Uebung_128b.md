@@ -31,7 +31,7 @@ In this exercise, various function blocks are interconnected to implement networ
 - The actual send block for PGNs using the Transport Protocol (TP).
 - - **Parameters**:
 - `u32Pgn`: `61184` (Proprietary A PGN).
-- `u16DaSize`: `0` (Dynamic overwrites).
+- `u16DaSize`: no fixed value. The input comes from output `OUT` of `F_LEN_ARRAY` (length of the array `INIT_ARR_0032_BYTE.D1`, here 32 bytes). `F_LEN_ARRAY.CNF` also triggers `INIT` of the send block.
 - `u8Priority`: `3`.
 - **Inputs**:
 - `NmDestin`: Receives the destination information (Global) from `NetEv2NetEv`.

@@ -32,7 +32,7 @@ In dieser Übung werden verschiedene Funktionsbausteine verschaltet, um die Netz
     -   Der eigentliche Sende-Baustein für PGNs unter Verwendung des Transportprotokolls (TP).
     -   **Parameter**:
         -   `u32Pgn`: `61184` (Proprietary A PGN).
-        -   `u16DaSize`: `0` (Wird dynamisch überschrieben).
+        -   `u16DaSize`: kein fester Wert. Der Eingang kommt vom Ausgang `OUT` von `F_LEN_ARRAY` (Länge des Arrays `INIT_ARR_0032_BYTE.D1`, hier 32 Byte). `F_LEN_ARRAY.CNF` löst außerdem `INIT` des Sende-Bausteins aus.
         -   `u8Priority`: `3`.
     -   **Eingänge**:
         -   `NmDestin`: Erhält die Zielinformation (Global) vom `NetEv2NetEv`.
