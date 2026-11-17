@@ -12,6 +12,10 @@ The main objective of this exercise is to implement the following requirement: *
 
 -----
 
+## Counterpart
+
+This sender (global, does not answer requests) has the receivers [Uebung_130_AX](Uebung_130_AX.md) and [Uebung_131_AX](Uebung_131_AX.md) as counterparts. The requesting exercises [Uebung_132_AX](Uebung_132_AX.md) and [Uebung_133_AX](Uebung_133_AX.md) do **not** match, because this block does not answer a Request for PGN. See also the [CAN overview](Uebungen_CAN_Uebersicht.md).
+
 ## Description and Components
 
 The exercise consists of the sub-application Uebung_128_AX.SUB, which uses the following function block structure:

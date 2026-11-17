@@ -12,6 +12,10 @@ The main objective of this exercise is to implement the following requirement: *
 
 -----
 
+## Counterpart
+
+The counterpart is a sender with the same PGN: [Uebung_126_AX](Uebung_126_AX.md), [Uebung_126b_AX](Uebung_126b_AX.md), [Uebung_126b2_AX](Uebung_126b2_AX.md), [Uebung_127_AX](Uebung_127_AX.md) or [Uebung_128_AX](Uebung_128_AX.md). See also the [CAN overview](Uebungen_CAN_Uebersicht.md).
+
 ## Description and Components
 
 The exercise consists of the sub-application Uebung_130_AX.SUB, which uses the following function block structure:

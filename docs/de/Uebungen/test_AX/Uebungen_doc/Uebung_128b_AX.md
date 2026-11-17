@@ -12,6 +12,10 @@ Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Übung zu ISOB
 
 -----
 
+## Gegenstück
+
+Ein Gegenstück gibt es noch nicht: Die bisherigen Empfangsbausteine reichen nur 8 Byte an die Anwendung weiter, ein Empfangsbaustein für längere PGNs (`AlPgnRxNew_TP`) ist in Arbeit. Siehe auch die [CAN-Übersicht](Uebungen_CAN_Uebersicht.md).
+
 ## Beschreibung und Komponenten
 
 Die Übung besteht aus der Subapplikation Uebung_128b_AX.SUB, welche die folgende Bausteinstruktur verwendet:

@@ -12,6 +12,10 @@ Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Übung zu ISOB
 
 -----
 
+## Gegenstück
+
+Gegenstück ist ein zyklischer Sender mit gleicher PGN: [Uebung_126_AX](Uebung_126_AX.md), [Uebung_126b_AX](Uebung_126b_AX.md), [Uebung_126b2_AX](Uebung_126b2_AX.md) oder [Uebung_127_AX](Uebung_127_AX.md). Siehe auch die [CAN-Übersicht](Uebungen_CAN_Uebersicht.md).
+
 ## Beschreibung und Komponenten
 
 Die Übung besteht aus der Subapplikation Uebung_131_AX.SUB, welche die folgende Bausteinstruktur verwendet:

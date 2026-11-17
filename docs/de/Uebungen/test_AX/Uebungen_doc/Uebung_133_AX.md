@@ -12,6 +12,10 @@ Das Ziel dieser Übung ist die Umsetzung folgender Anforderung: **Übung zu ISOB
 
 -----
 
+## Gegenstück
+
+Gegenstück ist ein Sender, der Requests beantwortet: [Uebung_126_AX](Uebung_126_AX.md), [Uebung_126b_AX](Uebung_126b_AX.md), [Uebung_126b2_AX](Uebung_126b2_AX.md) oder [Uebung_127_AX](Uebung_127_AX.md). [Uebung_128_AX](Uebung_128_AX.md) beantwortet keine Requests. Siehe auch die [CAN-Übersicht](Uebungen_CAN_Uebersicht.md).
+
 ## Beschreibung und Komponenten
 
 Die Übung besteht aus der Subapplikation Uebung_133_AX.SUB, welche die folgende Bausteinstruktur verwendet:

@@ -12,6 +12,10 @@ The main objective of this exercise is to implement the following requirement: *
 
 -----
 
+## Counterpart
+
+This sender also answers requests. Matching counterparts are the receiver [Uebung_130_AX](Uebung_130_AX.md), the cyclic receiver [Uebung_131_AX](Uebung_131_AX.md) and the requesting exercises [Uebung_132_AX](Uebung_132_AX.md) and [Uebung_133_AX](Uebung_133_AX.md). It addresses the destination via `VT_ADD`, the other senders via `PEAK_ADD`. See also the [CAN overview](Uebungen_CAN_Uebersicht.md).
+
 ## Description and Components
 
 The exercise consists of the sub-application Uebung_127_AX.SUB, which uses the following function block structure:
