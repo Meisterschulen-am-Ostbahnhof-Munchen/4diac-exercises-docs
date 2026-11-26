@@ -20,7 +20,7 @@ Die Sendelänge einer PGN wird zur Laufzeit zwischen 32 und 16 Byte umgeschaltet
 - `DigitalInput_CLK_I1`: Klick auf `I1` sendet. `Taste_I2`: Klick auf `I2` schaltet um.
 - `Umschalten` (`E_T_FF`) und `Laenge` (`F_SEL`): `IN0 = UINT#32`, `IN1 = UINT#16`. Bei `Q = FALSE` gilt 32 Byte, bei `Q = TRUE` 16 Byte.
 - `Gedrueckt` (`E_SR`) und `Nur_nach_Taste` (`E_PERMIT`): `SIZE` wird erst nach dem ersten Klick auf `I2` gesetzt.
-- `F_STRING_TO_BYTES` und `INIT_ARR_0032_BYTE`: Text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` im 32-Byte-Puffer.
+- `F_STRING_TO_BYTES_TERM` und `INIT_ARR_0032_BYTE`: Text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` im 32-Byte-Puffer.
 
 Die Übung nutzt das gemeinsame Muster mit `NmGetCfInfo` (IND/RSP): `IND` löst `STRUCT_DEMUX` aus, `NetEv_Install` (`MyLib::sys::NetEv_Install_Filter`) verarbeitet das Ereignis und quittiert immer mit `RSP` (die RSP-Verbindungen sind in der IDE ausgeblendet). `INIT` ist als `EInit` nicht verbunden.
 

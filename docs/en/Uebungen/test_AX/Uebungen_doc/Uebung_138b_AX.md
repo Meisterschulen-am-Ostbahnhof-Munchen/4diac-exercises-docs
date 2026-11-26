@@ -30,7 +30,7 @@ The exercise consists of the sub-application Uebung_138b_AX.SUB, which uses the 
   - Parameter s16Handle = GLOBAL_A
 - **INIT_ARR_0256_BYTE**: Instance of type eclipse4diac::convert::providers::PROVIDE_ARR_0256_BYTE.
 - **F_LEN_ARRAY**: Instance of type eclipse4diac::utils::arrays::F_LEN_ARRAY.
-- **F_STRING_TO_BYTES**: Instance of type logiBUS::utils::dyn_arr::F_STRING_TO_BYTES.
+- **F_STRING_TO_BYTES_TERM**: Instance of type logiBUS::utils::dyn_arr::F_STRING_TO_BYTES_TERM.
 - **AlPgnTxNew_TP**: Instance of type isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA
   - Parameter u8Priority = 3

@@ -28,7 +28,7 @@ Die Übung besteht aus der Subapplikation Uebung_149_AX.SUB, welche die folgende
 - **STRUCT_DEMUX_5**: Instanz des Typs eclipse4diac::convert::STRUCT_DEMUX.
 - **INIT_ARR_4000_BYTE**: Instanz des Typs eclipse4diac::convert::providers::PROVIDE_ARR_4000_BYTE.
 - **F_LEN_ARRAY**: Instanz des Typs eclipse4diac::utils::arrays::F_LEN_ARRAY.
-- **F_STRING_TO_BYTES**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES.
+- **F_STRING_TO_BYTES_TERM**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES_TERM.
   - Parameter IN = STRING#'ETP-Test 4000 Byte'
 - **AlPgnTxNew_TP**: Instanz des Typs isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA2

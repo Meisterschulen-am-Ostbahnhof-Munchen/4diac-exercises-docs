@@ -30,7 +30,7 @@ Die Übung besteht aus der Subapplikation Uebung_138b.SUB, welche die folgende B
   - Parameter s16Handle = GLOBAL_A
 - **INIT_ARR_0256_BYTE**: Instanz des Typs eclipse4diac::convert::providers::PROVIDE_ARR_0256_BYTE.
 - **F_LEN_ARRAY**: Instanz des Typs eclipse4diac::utils::arrays::F_LEN_ARRAY.
-- **F_STRING_TO_BYTES**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES.
+- **F_STRING_TO_BYTES_TERM**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES_TERM.
 - **AlPgnTxNew_TP**: Instanz des Typs isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA
   - Parameter u8Priority = 3

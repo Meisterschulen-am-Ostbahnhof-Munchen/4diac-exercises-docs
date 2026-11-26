@@ -27,7 +27,7 @@ The exercise consists of the sub-application Uebung_149d.SUB, which uses the fol
 - **STRUCT_DEMUX_4**: Instance of type eclipse4diac::convert::STRUCT_DEMUX.
 - **STRUCT_DEMUX_5**: Instance of type eclipse4diac::convert::STRUCT_DEMUX.
 - **INIT_ARR_4000_BYTE**: Instance of type eclipse4diac::convert::providers::PROVIDE_ARR_4000_BYTE.
-- **F_STRING_TO_BYTES**: Instance of type logiBUS::utils::dyn_arr::F_STRING_TO_BYTES.
+- **F_STRING_TO_BYTES_TERM**: Instance of type logiBUS::utils::dyn_arr::F_STRING_TO_BYTES_TERM.
   - Parameter IN = STRING#'ETP-Test 4000 Byte'
 - **AlPgnTxNew_TP**: Instance of type isobus::pgn::tx::AlPgnTxNew_TP.
   - Parameter u32Pgn = PGN_PDU1_PropA2
