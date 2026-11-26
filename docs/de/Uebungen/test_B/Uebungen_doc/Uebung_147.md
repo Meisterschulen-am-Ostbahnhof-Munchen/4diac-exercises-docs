@@ -18,7 +18,7 @@ Eine PGN wird einmalig gesendet, ohne sie vorher zu installieren. Hier: Propriet
 
 - `DlPgnSend`: `isobus::pgn::tx::DlPgnSend` mit `u32Pgn = PGN_PDU1_PropA`, `u8Priority = 3`, `u16DaSize = 20`.
 - `DigitalInput_CLK_I1`: Klick auf `I1` sendet.
-- `F_STRING_TO_BYTES` und `INIT_ARR_0032_BYTE`: Text `ABCDEFGHIJKLMNOPQRS` plus `16#00` (20 Byte).
+- `F_STRING_TO_BYTES_TERM` und `INIT_ARR_0032_BYTE`: Text `ABCDEFGHIJKLMNOPQRS` plus `16#00` (20 Byte).
 - `NmGetCfInfo_1` (`thisMember`) und `NetEv2NetEv` (`s16Handle = GLOBAL`): ergeben das `NmDestin`. `s16OwnCfHnd` ist der Sender, `s16Handle = HANDLE::GLOBAL` das Ziel.
 
 Die Übung nutzt das gemeinsame Muster mit `NmGetCfInfo` (IND/RSP): `IND` löst `STRUCT_DEMUX` aus, `NetEv_Install` (`MyLib::sys::NetEv_Install_Filter`) verarbeitet das Ereignis und quittiert immer mit `RSP` (die RSP-Verbindungen sind in der IDE ausgeblendet). `INIT` ist als `EInit` nicht verbunden.

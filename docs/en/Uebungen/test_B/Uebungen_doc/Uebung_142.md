@@ -17,7 +17,7 @@ A PGN in the proprietary range `0x1FF00` with 32 bytes is sent as Fast Packet, n
 ### Function Blocks (FBs)
 
 - `DigitalInput_CLK_I1`: `logiBUS_IE` on `I1`, event `BUTTON_SINGLE_CLICK`, triggers sending.
-- `F_STRING_TO_BYTES`: converts the text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` to bytes. `INIT_ARR_0032_BYTE` provides the 32-byte buffer, `F_LEN_ARRAY` the length.
+- `F_STRING_TO_BYTES_TERM`: converts the text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` to bytes. `INIT_ARR_0032_BYTE` provides the 32-byte buffer, `F_LEN_ARRAY` the length.
 - `AlPgnTxNew_TP`: `isobus::pgn::tx::AlPgnTxNew_TP` with `u32Pgn = PGN_FPT_PROP_00` (0x1FF00) and `u8Priority = 3`. The destination is global (`NetEv2NetEv` with `s16Handle = GLOBAL_A`).
 - `NmGetCfInfo_1`, `STRUCT_DEMUX_*`, `NetEv_Install`: pattern with `thisMember`.
 

@@ -20,7 +20,7 @@ The send length of a PGN is switched between 32 and 16 bytes at runtime without 
 - `DigitalInput_CLK_I1`: a click on `I1` sends. `Taste_I2`: a click on `I2` toggles.
 - `Umschalten` (`E_T_FF`) and `Laenge` (`F_SEL`): `IN0 = UINT#32`, `IN1 = UINT#16`. With `Q = FALSE` 32 bytes apply, with `Q = TRUE` 16 bytes.
 - `Gedrueckt` (`E_SR`) and `Nur_nach_Taste` (`E_PERMIT`): `SIZE` is only set after the first click on `I2`.
-- `F_STRING_TO_BYTES` and `INIT_ARR_0032_BYTE`: text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` in the 32-byte buffer.
+- `F_STRING_TO_BYTES_TERM` and `INIT_ARR_0032_BYTE`: text `ABCDEFGHIJKLMNOPQRSTUVWXYZ01234` in the 32-byte buffer.
 
 The exercise uses the common pattern with `NmGetCfInfo` (IND/RSP): `IND` triggers `STRUCT_DEMUX`, `NetEv_Install` (`MyLib::sys::NetEv_Install_Filter`) handles the event and always acknowledges with `RSP` (the RSP connections are hidden in the IDE). `INIT` is left unconnected as `EInit`.
 
