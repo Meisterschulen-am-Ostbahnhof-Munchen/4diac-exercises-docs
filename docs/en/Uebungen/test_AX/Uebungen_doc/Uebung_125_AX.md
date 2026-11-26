@@ -53,6 +53,18 @@ The exercise consists of the sub-application Uebung_125_AX.SUB, which uses the f
 
 -----
 
+## Pattern with `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` reports a network event with `IND` and then waits for `RSP` (`bwaitingForRSP = TRUE`). Only after `RSP` does the block deliver the next event from its internal queue. This exercise is therefore built as follows:
+
+- `IND` triggers `STRUCT_DEMUX` (`sNetEv`). Its `CNF` goes to `NetEv_Install.REQ`, `eNetEvent` to `NetEv_Install.eNetEvent`.
+- The sub-application `NetEv_Install` (`MyLib::sys::NetEv_Install_Filter`) filters by event: for `Active` and `NewAddress` it outputs `INSTALL` (only the first time, afterwards `RSP`), all other events go directly to `RSP`. Event numbers from 7 on also end up at `RSP`.
+- `installO` goes to `NetEv_Install.SET` and to `RSP`, `pgnERR` also goes to `RSP`.
+- `INIT` stays unconnected (`EInit`), so the replay of all known events is triggered at start.
+- All connections to `RSP` are hidden in the IDE.
+
+State of the conversion: 2026-11-17, not yet tested on hardware. Open is whether the PGN still arrives after the partner logs off and on again, because it is installed only once per deploy.
+
 ## Sequence and Operation
 
 1. **Initialization**: Upon system startup, all participating function blocks are initialized.

@@ -67,6 +67,18 @@ Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
 -   **Funktionsweise**:
     Sobald der `CallbackFB` ein Event empfängt (getriggert durch den zyklischen Sender im Hauptprogramm), aktiviert er den `GEN_SIN`. Der aktuelle Sinuswert wird berechnet, konvertiert (LREAL -> USINT -> BYTE) und in das erste Byte eines Arrays geschrieben. Dieses Array wird in eine CAN-Nachricht-Struktur verpackt und über den `CallbackFB` zurück an das Hauptprogramm gegeben.
 
+## Muster mit `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` meldet ein Netzwerkereignis mit `IND` und wartet danach auf `RSP` (`bwaitingForRSP = TRUE`). Erst nach `RSP` liefert der Baustein das nächste Ereignis aus seiner internen Warteschlange. Diese Übung ist deshalb so aufgebaut:
+
+- `IND` löst `STRUCT_DEMUX` (`sNetEv`) aus. Dessen `CNF` geht an `NetEv_Install.REQ`, `eNetEvent` an `NetEv_Install.eNetEvent`.
+- Die SubApp `NetEv_Install` (`MyLib::sys::NetEv_Install_Filter`) filtert nach dem Ereignis: Bei `Active` und `NewAddress` gibt sie `INSTALL` aus (nur beim ersten Mal, danach `RSP`), alle anderen Ereignisse gehen direkt auf `RSP`. Ereignisnummern ab 7 landen ebenfalls auf `RSP`.
+- `installO` geht an `NetEv_Install.SET` und an `RSP`, `pgnERR` ebenfalls an `RSP`.
+- `INIT` bleibt unverbunden (`EInit`), so wird beim Start der Replay aller bekannten Ereignisse ausgelöst.
+- Alle Verbindungen auf `RSP` sind in der IDE ausgeblendet.
+
+Stand der Umstellung: 2026-11-17, noch nicht auf Hardware getestet. Offen ist, ob die PGN nach Abmelden und Wiederanmelden des Partners weiter ankommt, denn sie wird pro Deploy nur einmal installiert.
+
 ## Programmablauf und Verbindungen
 
 1.  **Initialisierung**: Der Baustein `NmGetCfInfo_1` ermittelt beim Start die notwendigen Netzwerkinformationen.

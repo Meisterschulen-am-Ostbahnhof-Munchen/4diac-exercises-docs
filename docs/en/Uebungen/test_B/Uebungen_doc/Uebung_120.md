@@ -28,3 +28,11 @@ In `Uebung_120.SUB`, the network is searched for active Control Functions CFs.
 ## Functionality
 
 The function block `NmGetCfInfo` delivers a data packet (`sCfInfo`) containing the name of a device during each scan. The program can then use the downstream analysis blocks to precisely "read" which devices (e.g., a terminal from company X or a joystick from company Y) are currently connected to the tractor. This is a prerequisite for automatic plug-and-play.
+
+## Pattern with `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` reports a network event with `IND` and then waits for `RSP` (`bwaitingForRSP = TRUE`). Only after `RSP` does the block deliver the next event from its internal queue. This exercise is therefore built as follows:
+
+- `NmGetCfInfo.sNetEv` goes to `STRUCT_DEMUX`, whose `CNF` goes to `NmGetCfInfo.RSP` (display only, the connection is hidden in the IDE).
+
+State of the conversion: 2026-11-17, not yet tested on hardware.
