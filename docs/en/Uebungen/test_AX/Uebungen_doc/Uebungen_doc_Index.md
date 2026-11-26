@@ -75,7 +75,6 @@ Uebung_006_AX
 Uebung_006a2_AX
 Uebung_006a2b_AX
 Uebung_006a3_AX
-Uebung_006a3_sub_AX
 Uebung_006a4_AX
 Uebung_006a4_AX_RS
 Uebung_006a4_AX_SR
@@ -102,9 +101,7 @@ Uebung_010b1_AX
 Uebung_010b2_AX
 Uebung_010b3_AX
 Uebung_010b4_AX
-Uebung_010b4_sub_AX
 Uebung_010b5_AX
-Uebung_010b5_sub_AX
 Uebung_010b6_AX
 Uebung_010b7_AX
 Uebung_010b8_AX

@@ -26,7 +26,6 @@ Hier finden Sie alle Übungen des Arbeitsbereichs `test_B` in aufsteigender Reih
 - [Uebung_003](Uebung_003.md)
 - [Uebung_003a](Uebung_003a.md)
 - [Uebung_003a0](Uebung_003a0.md)
-- [Uebung_003a_sub](Uebung_003a_sub.md)
 - [Uebung_003b](Uebung_003b.md)
 - [Uebung_003b2](Uebung_003b2.md)
 - [Uebung_003b2_sub](Uebung_003b2_sub.md)
