@@ -57,6 +57,14 @@ Die Übung besteht aus der Subapplikation Uebung_123_AX.SUB, welche die folgende
 
 -----
 
+## Muster mit `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` meldet ein Netzwerkereignis mit `IND` und wartet danach auf `RSP` (`bwaitingForRSP = TRUE`). Erst nach `RSP` liefert der Baustein das nächste Ereignis aus seiner internen Warteschlange. Diese Übung ist deshalb so aufgebaut:
+
+- `NmGetCfInfo.sNetEv` geht an `STRUCT_DEMUX`, dessen `CNF` an `NmGetCfInfo.RSP` (reine Anzeige, die Verbindung ist in der IDE ausgeblendet).
+
+Stand der Umstellung: 2026-11-17, noch nicht auf Hardware getestet.
+
 ## Programmablauf und Funktionsweise
 
 1. **Initialisierung**: Beim Systemstart werden alle beteiligten Bausteine initialisiert.

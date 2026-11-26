@@ -60,6 +60,14 @@ The exercise consists of the sub-application Uebung_121_AX.SUB, which uses the f
 
 -----
 
+## Pattern with `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` reports a network event with `IND` and then waits for `RSP` (`bwaitingForRSP = TRUE`). Only after `RSP` does the block deliver the next event from its internal queue. This exercise is therefore built as follows:
+
+- `NmGetCfInfo.sNetEv` goes to `STRUCT_DEMUX`, whose `CNF` goes to `NmGetCfInfo.RSP` (display only, the connection is hidden in the IDE).
+
+State of the conversion: 2026-11-17, not yet tested on hardware.
+
 ## Sequence and Operation
 
 1. **Initialization**: Upon system startup, all participating function blocks are initialized.

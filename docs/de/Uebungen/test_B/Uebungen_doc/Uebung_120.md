@@ -26,6 +26,14 @@ In `Uebung_120.SUB` wird das Netzwerk nach aktiven Control Functions (CF) durchs
 
 -----
 
+## Muster mit `NmGetCfInfo` (IND/RSP)
+
+`NmGetCfInfo` meldet ein Netzwerkereignis mit `IND` und wartet danach auf `RSP` (`bwaitingForRSP = TRUE`). Erst nach `RSP` liefert der Baustein das nächste Ereignis aus seiner internen Warteschlange. Diese Übung ist deshalb so aufgebaut:
+
+- `NmGetCfInfo.sNetEv` geht an `STRUCT_DEMUX`, dessen `CNF` an `NmGetCfInfo.RSP` (reine Anzeige, die Verbindung ist in der IDE ausgeblendet).
+
+Stand der Umstellung: 2026-11-17, noch nicht auf Hardware getestet.
+
 ## Funktionsweise
 
 Der Baustein `NmGetCfInfo` liefert bei jedem Scan-Vorgang ein Datenpaket (`sCfInfo`), das den Namen eines Teilnehmers enthält. Über die nachgeschalteten Analyse-Bausteine kann das Programm nun genau "lesen", welche Geräte (z.B. ein Terminal der Firma X oder ein Joystick der Firma Y) gerade am Traktor angeschlossen sind. Dies ist die Voraussetzung für automatisches Plug-and-Play.
