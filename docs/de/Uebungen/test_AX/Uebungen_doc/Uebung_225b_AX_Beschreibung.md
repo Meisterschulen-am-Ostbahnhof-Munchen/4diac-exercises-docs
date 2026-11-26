@@ -1,5 +1,7 @@
 # Übung 225b AX: Dreieck-Sollwertmarker mit AR-Adapter (PositionMarkerFS)
 
+![Uebung_225b_AX_network](./Uebung_225b_AX_network.svg)
+
 ## Thema: Virtual-Terminal-Objektpositionierung — AR-Adapter-Variante
 
 Adapter-Variante von [Übung 225b](../../test_B/Uebungen_doc/Uebung_225b_Beschreibung.md) (test_B): identische Funktion, aber Sollwert-

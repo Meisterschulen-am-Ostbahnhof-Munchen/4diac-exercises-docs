@@ -33,7 +33,7 @@ Die Übung besteht aus der Subapplikation Uebung_156_AX.SUB, welche die folgende
   - Parameter InputEvent = BUTTON_SINGLE_CLICK
 - **Nur_mit_Server**: Instanz des Typs iec61499::events::E_PERMIT.
 - **Puffer_Schreiben**: Instanz des Typs eclipse4diac::convert::providers::PROVIDE_ARR_0064_BYTE.
-- **Text_zu_Bytes**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES.
+- **Text_zu_Bytes**: Instanz des Typs logiBUS::utils::dyn_arr::F_STRING_TO_BYTES (Version 2.0: kopiert nur die Zeichen, ohne `16#00` am Dateiende).
   - Parameter IN = FS_TEXT
 - **Laenge**: Instanz des Typs iec61131::conversion::F_UINT_TO_UDINT.
 - **Schreiben**: Instanz des Typs isobus::fs::FsWrite.

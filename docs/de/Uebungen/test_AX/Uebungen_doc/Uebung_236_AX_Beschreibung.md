@@ -1,5 +1,7 @@
 # Übung 236: Derselbe Last-Wins-Effekt wie 229/230/233 — ohne Edge-Detektor und Latch
 
+![Uebung_236_AX_network](./Uebung_236_AX_network.svg)
+
 ## Thema: `AX_LAST_2` — gleiches Verhalten, drastisch weniger Bausteine
 
 ### Situationsbeschreibung

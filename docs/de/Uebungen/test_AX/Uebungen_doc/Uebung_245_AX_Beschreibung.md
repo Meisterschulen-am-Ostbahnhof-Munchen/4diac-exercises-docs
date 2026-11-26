@@ -1,5 +1,7 @@
 # Übung 245: Sollwert mit festem Korrekturfaktor skalieren — AR_MUL_2 zwischen zwei PHYSA-Zahlenfeldern
 
+![Uebung_245_AX_network](./Uebung_245_AX_network.svg)
+
 ## Thema: Feste lineare Korrektur eines REAL-Sollwerts, rein über AR-Adapter (kein REQ/CNF nötig)
 
 ### Situationsbeschreibung

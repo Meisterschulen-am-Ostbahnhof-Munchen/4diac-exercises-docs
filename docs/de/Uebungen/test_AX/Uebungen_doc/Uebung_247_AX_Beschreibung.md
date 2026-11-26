@@ -1,5 +1,7 @@
 # Übung 247: Korrekturfaktor mit echtem PWM-Ausgang zum Nachmessen
 
+![Uebung_247_AX_network](./Uebung_247_AX_network.svg)
+
 ## Thema: Von der VT-Anzeige zur echten Hardware — REAL-Prozent auf 13-Bit-PWM-Tastgrad, AR_SPLIT_2 zum Verzweigen
 
 ### Situationsbeschreibung

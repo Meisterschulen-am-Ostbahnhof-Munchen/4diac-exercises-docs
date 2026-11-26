@@ -1,5 +1,7 @@
 # Übung 227: Kombinierte Übung — Dreieck-Sollwertmarker + Split-Bargraph (AR-Adapter)
 
+![Uebung_227_AX_network](./Uebung_227_AX_network.svg)
+
 ## Thema: mehrere VT-Anzeigen aus einer Sollwertquelle — durchgängig über AR-Adapter
 
 Kombiniert [Übung 225b](Uebung_225b_AX_Beschreibung.md) (Dreieck-Sollwertmarker) und

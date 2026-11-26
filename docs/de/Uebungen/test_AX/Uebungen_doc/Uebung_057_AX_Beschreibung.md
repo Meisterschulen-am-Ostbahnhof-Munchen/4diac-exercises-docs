@@ -1,5 +1,7 @@
 # Übung 057: Reine Event-Schrittkette 5-Kanal
 
+![Uebung_057_AX_network](./Uebung_057_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

@@ -1,5 +1,7 @@
 # Übung 225 AX: Dreieck-Sollwertmarker mit AR-Adapter (reine Adapter-Kette)
 
+![Uebung_225_AX_network](./Uebung_225_AX_network.svg)
+
 ## Thema: Virtual-Terminal-Objektpositionierung — reine AR/AI-Adapterkette
 
 Adapter-Variante von [Übung 225](../../test_B/Uebungen_doc/Uebung_225_Beschreibung.md) (test_B): identische Funktion, aber

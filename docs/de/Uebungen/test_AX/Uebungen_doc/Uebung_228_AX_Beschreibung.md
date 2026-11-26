@@ -1,5 +1,7 @@
 # Übung 228: Kombinierte Übung mit Fenster-Farbrückmeldung
 
+![Uebung_228_AX_network](./Uebung_228_AX_network.svg)
+
 ## Thema: Change Fill Attributes (ISO 11783-6 F.32) als Statusanzeige
 
 Ableitung von [Übung 227](Uebung_227_AX_Beschreibung.md): identischer Aufbau (Dreieck +

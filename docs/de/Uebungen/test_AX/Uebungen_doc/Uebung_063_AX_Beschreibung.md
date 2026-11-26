@@ -1,5 +1,7 @@
 # Übung 063: Reine Zeitsteuerung 8-Kanal
 
+![Uebung_063_AX_network](./Uebung_063_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

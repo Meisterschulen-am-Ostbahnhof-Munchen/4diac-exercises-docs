@@ -1,5 +1,7 @@
 # Übung 235: Zweipunktregler mit Hysterese (VT-Variante)
 
+![Uebung_235_AX_network](./Uebung_235_AX_network.svg)
+
 ## Thema: `DualHysteresis_AR_A2X` — Totzone + Hysterese um einen Mittelwert, Messwert und Rückmeldung komplett auf dem VT
 
 ### Situationsbeschreibung

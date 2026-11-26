@@ -1,5 +1,7 @@
 # Übung 246: Hoch/Runter auf 3-Stufen-Sollwert — zwei AR_AX_SEL_AR verkettet
 
+![Uebung_246_AX_network](./Uebung_246_AX_network.svg)
+
 ## Thema: Digitale Taster als "3-Stufen-Joystick", Kaskadierung von binären AR-Selektoren
 
 ### Situationsbeschreibung

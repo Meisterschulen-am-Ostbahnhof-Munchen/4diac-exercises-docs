@@ -1,5 +1,7 @@
 # Übung 225b: Dreieck-Sollwertmarker mit PositionMarkerFS
 
+![Uebung_225b_network](./Uebung_225b_network.svg)
+
 ## Thema: Virtual-Terminal-Objektpositionierung (ISO 11783-6 Annex F.16) — wiederverwendbarer Baustein
 
 Variante von [Übung 225](Uebung_225_Beschreibung.md): dieselbe Aufgabe, aber statt die drei

@@ -1,5 +1,7 @@
 # Übung 229: Zwei Taster, ein SR-Latch (Last-Wins) — klassisch mit AX_RF_TRIG
 
+![Uebung_229_AX_network](./Uebung_229_AX_network.svg)
+
 ## Thema: Flankenerkennung + Set/Reset-Verriegelung, zwei Quellen auf einer Verriegelung
 
 ### Situationsbeschreibung

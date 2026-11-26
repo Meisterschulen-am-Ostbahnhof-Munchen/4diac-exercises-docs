@@ -1,5 +1,7 @@
 # Übung 035a: Lauflicht 4 reine Zeitsteuerung
 
+![Uebung_035a_AX_network](./Uebung_035a_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung
