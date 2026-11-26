@@ -1,5 +1,7 @@
 # Übung 046: Ablaufsteuerung 8-Kanal ENDLOS (Event & Zeit)
 
+![Uebung_046_AX_network](./Uebung_046_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

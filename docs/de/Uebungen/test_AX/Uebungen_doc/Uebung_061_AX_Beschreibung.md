@@ -1,5 +1,7 @@
 # Übung 061: Reine Zeitsteuerung 4-Kanal
 
+![Uebung_061_AX_network](./Uebung_061_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

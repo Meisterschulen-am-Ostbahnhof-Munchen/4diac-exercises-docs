@@ -1,5 +1,7 @@
 # Übung 037: Spiegelabfolge V2 mit Schrittkette ENDLOS
 
+![Uebung_037_AX_network](./Uebung_037_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

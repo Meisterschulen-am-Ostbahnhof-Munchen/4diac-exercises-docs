@@ -1,5 +1,7 @@
 # Übung 153 AX: Impulszähler & PID-Regler mit Adapter-Kopplung
 
+![Uebung_153_AX_network](./Uebung_153_AX_network.svg)
+
 ## Thema: Drehzahl-/Frequenzregelung mit Impulszähler und PID-Regler
 
 ### Situationsbeschreibung

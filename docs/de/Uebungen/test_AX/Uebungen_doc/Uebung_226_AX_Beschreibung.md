@@ -1,5 +1,7 @@
 # Übung 226 AX: Split-Bargraph mit AR-Adapter
 
+![Uebung_226_AX_network](./Uebung_226_AX_network.svg)
+
 ## Thema: Virtual-Terminal-Bargraphen — AR-Adapter-Variante
 
 Adapter-Variante von [Übung 226](../../test_B/Uebungen_doc/Uebung_226_Beschreibung.md): identische Funktion, aber das Lesen

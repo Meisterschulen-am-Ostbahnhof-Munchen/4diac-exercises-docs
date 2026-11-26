@@ -1,5 +1,7 @@
 # Übung 047: Reine Event-Schrittkette 4-Kanal
 
+![Uebung_047_AX_network](./Uebung_047_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

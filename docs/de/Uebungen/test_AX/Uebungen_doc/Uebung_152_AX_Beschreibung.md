@@ -1,5 +1,7 @@
 # Übung 152 AX: Impulszähler & PI-Regler mit Adapter-Kopplung
 
+![Uebung_152_AX_network](./Uebung_152_AX_network.svg)
+
 ## Thema: Drehzahl-/Frequenzregelung mit Impulszähler und PI-Regler
 
 ### Situationsbeschreibung

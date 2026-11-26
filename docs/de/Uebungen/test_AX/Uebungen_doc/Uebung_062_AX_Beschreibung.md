@@ -1,5 +1,7 @@
 # Übung 062: Reine Zeitsteuerung 5-Kanal
 
+![Uebung_062_AX_network](./Uebung_062_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

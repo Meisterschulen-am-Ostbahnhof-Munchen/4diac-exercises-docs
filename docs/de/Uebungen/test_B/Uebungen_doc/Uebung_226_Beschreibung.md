@@ -1,5 +1,7 @@
 # Übung 226: Split-Bargraph
 
+![Uebung_226_network](./Uebung_226_network.svg)
+
 ## Thema: Virtual-Terminal-Bargraphen (ISO 11783-6 Annex B.11.3) — vorzeichenbehafteter Ausschlag über zwei Balken
 
 ### Situationsbeschreibung

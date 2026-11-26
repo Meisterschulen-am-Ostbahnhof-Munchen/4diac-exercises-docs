@@ -1,5 +1,7 @@
 # Übung 248: Hoch/Runter-Sollwert mit echtem PWM-Ausgang zum Nachmessen
 
+![Uebung_248_AX_network](./Uebung_248_AX_network.svg)
+
 ## Thema: Von der VT-Anzeige zur echten Hardware — 3-Stufen-Sollwert auf 13-Bit-PWM-Tastgrad
 
 ### Situationsbeschreibung

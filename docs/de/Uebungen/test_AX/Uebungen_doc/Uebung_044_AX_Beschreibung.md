@@ -1,5 +1,7 @@
 # Übung 044: Spiegelabfolge 5-Kanal mit Schrittkette ENDLOS
 
+![Uebung_044_AX_network](./Uebung_044_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

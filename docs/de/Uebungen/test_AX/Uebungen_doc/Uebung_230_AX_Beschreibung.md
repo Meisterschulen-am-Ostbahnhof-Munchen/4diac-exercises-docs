@@ -1,5 +1,7 @@
 # Übung 230: Zwei Taster, ein SR-Latch (Last-Wins) — Umbau mit ASR-Adapter
 
+![Uebung_230_AX_network](./Uebung_230_AX_network.svg)
+
 ## Thema: Dieselbe Funktion wie Übung 229, aber mit gebündelten Set/Reset-Adaptern statt loser Events
 
 ### Situationsbeschreibung

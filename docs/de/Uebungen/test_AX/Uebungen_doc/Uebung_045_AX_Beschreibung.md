@@ -1,5 +1,7 @@
 # Übung 045: Ablaufsteuerung 8-Kanal (Event & Zeit)
 
+![Uebung_045_AX_network](./Uebung_045_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

@@ -1,5 +1,7 @@
 # Übung 064: Musterschrittkette 8-Kanal ENDLOS
 
+![Uebung_064_AX_network](./Uebung_064_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

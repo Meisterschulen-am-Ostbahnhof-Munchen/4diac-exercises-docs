@@ -1,5 +1,7 @@
 # Übung 225: Dreieck-Sollwertmarker
 
+![Uebung_225_network](./Uebung_225_network.svg)
+
 ## Thema: Virtual-Terminal-Objektpositionierung (ISO 11783-6 Annex F.16)
 
 ### Situationsbeschreibung

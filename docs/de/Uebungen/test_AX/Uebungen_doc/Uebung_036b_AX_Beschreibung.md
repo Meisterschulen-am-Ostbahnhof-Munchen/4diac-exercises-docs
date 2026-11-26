@@ -1,5 +1,7 @@
 # Übung 036b: Kombinierte 4-Kanal-Schrittkette (Event & Zeit) mit sequence_ET_04_AX
 
+![Uebung_036b_AX_network](./Uebung_036b_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung

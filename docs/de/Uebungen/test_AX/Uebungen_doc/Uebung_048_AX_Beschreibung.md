@@ -1,5 +1,7 @@
 # Übung 048: Reine Event-Schrittkette 4-Kanal ENDLOS
 
+![Uebung_048_AX_network](./Uebung_048_AX_network.svg)
+
 ## Thema: Ablaufsteuerungen in der Landtechnik
 
 ### Situationsbeschreibung
