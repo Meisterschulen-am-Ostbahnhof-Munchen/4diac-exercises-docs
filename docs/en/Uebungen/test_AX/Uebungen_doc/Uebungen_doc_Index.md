@@ -183,7 +183,6 @@ Uebung_035a3_AX
 Uebung_038_AX
 Uebung_039_AX
 Uebung_039_sub_NumbAnzeig_AS
-Uebung_039_sub_NumbAnzeig_AX
 Uebung_039_sub_Outputs_AX
 Uebung_040_AX
 Uebung_053_AB
@@ -223,7 +222,6 @@ Uebung_160b2_AX
 Uebung_160b_AX
 Uebung_170_AX
 Uebung_171_ASR
-Uebung_171_AX
 Uebung_177_AX
 Uebung_178_AX
 Uebung_201_AX

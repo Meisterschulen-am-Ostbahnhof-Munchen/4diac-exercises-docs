@@ -173,7 +173,6 @@ Here you will find all exercises from the `test_B` workspace in ascending order.
 - [Uebung_012l](Uebung_012l.md)
 - [Uebung_012m](Uebung_012m.md)
 - [Uebung_012m_sub](Uebung_012m_sub.md)
-- [Uebung_12x_sub](Uebung_12x_sub.md)
 - [Uebung_013](Uebung_013.md)
 - [Uebung_014](Uebung_014.md)
 - [Uebung_015](Uebung_015.md)
