@@ -61,11 +61,11 @@ Die Übung nutzt das gemeinsame Muster mit `NmGetCfInfo` (IND/RSP): `IND` löst 
 - File Server: Datei schreiben und zurücklesen (FsWrite, FsRead)
 - NmGetCfInfo (network, Filter FS_ADD/FS_FLT = NAME-Funktion 61) meldet den File Server, z. B. CCI 1200 mit USB-Stick.
 - I1 Klick (nur mit Server): FS_TEXT nach FS_DATEI schreiben, danach zurücklesen und vergleichen. Q1 an = gleich, Q1 aus = Fehler.
-- Watch bei ERR: Schreiben/Lesen.s16Status und .u16FsError (ISO 11783-13 B.9, ab 6400 Client). FS_DATEI an den Volume-Namen des Terminals anpassen.
-- Voraussetzungen: Firmware ab LOGIBUS f6afe1e4 (File Server Client), isobus_fs-ELF, PART_13_FSC = 1 in /data/functionalities.ini.
+- Watch bei ERR: Schreiben/Lesen.s16Status und .u16FsError (ISO 11783-13 B.9, ab 6400 Client). FS_DATEI ohne Volume landet im aktuellen Verzeichnis des File Servers (CCI 1200: USB-Stick).
+- Pfade: Am CCI 1200 gibt es kein festes Volume `\\USB\`, ein Stick heißt nach seiner FAT-Seriennummer. Deshalb steht in FS_DATEI ein Pfad ohne Volume (`logibus_test.txt`).
 - Weiter: Übung 156b (FsGet/FsPut über eine lokale Datei).
 
-Hinweis: Die Übung ist noch nicht auf Hardware getestet. Die Beschreibung stammt aus der Subapplikation und ihrem Kommentar, das Verhalten ist als erwartet zu lesen.
+Hinweis: Auf Hardware getestet am CCI 1200 mit USB-Stick (2026-11-26): FsWrite und FsRead bestanden. Q1 geht an, wenn der zurückgelesene Text gleich ist.
 
 -----
 

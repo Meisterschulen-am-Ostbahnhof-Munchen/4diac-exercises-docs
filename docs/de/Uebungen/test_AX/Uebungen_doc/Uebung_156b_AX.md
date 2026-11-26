@@ -54,10 +54,9 @@ Die Übung nutzt das gemeinsame Muster mit `NmGetCfInfo` (IND/RSP): `IND` löst 
 - NmGetCfInfo (network, Filter FS_ADD/FS_FLT = NAME-Funktion 61) meldet den File Server, z. B. CCI 1200 mit USB-Stick.
 - I1 Klick (nur mit Server): FS_DATEI nach FS_LOKAL (/data/fs/) holen, dann als FS_DATEI_2 zurückschreiben. Q1 an = fertig, Q1 aus = Fehler.
 - Watch: u32Bytes (PROG beim Holen), bei ERR s16Status und u16FsError. FS_DATEI muss es geben, z. B. aus Übung 156.
-- Voraussetzungen: Firmware ab LOGIBUS f6afe1e4 (File Server Client), isobus_fs-ELF, PART_13_FSC = 1 in /data/functionalities.ini.
-- Lokale Pfade nur unter /data/fs/ (bei einem logiBUS als Server: /data/).
+- Pfade: FS_DATEI steht ohne Volume (`logibus_test.txt`, aktuelles Verzeichnis des File Servers). Fehlende Verzeichnisse unter `/data/` legt FsGet selbst an.
 
-Hinweis: Die Übung ist noch nicht auf Hardware getestet. Die Beschreibung stammt aus der Subapplikation und ihrem Kommentar, das Verhalten ist als erwartet zu lesen.
+Hinweis: Auf Hardware ist bisher nur FsGet getestet (CCI 1200 mit USB-Stick, 2026-11-26, 24 Bytes). FsPut und der gesamte Ablauf dieser Übung sind noch nicht getestet, das Verhalten ist als erwartet zu lesen.
 
 -----
 
